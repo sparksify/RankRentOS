@@ -1,0 +1,455 @@
+[
+  {
+    "id": "epoxy-garage-floors",
+    "label": "Epoxy Garage Floors",
+    "query": "epoxy garage floor coating",
+    "acQuery": "epoxy flooring",
+    "domainTerms": [
+      "epoxyfloors",
+      "epoxyflooring",
+      "garagefloors",
+      "epoxy"
+    ],
+    "ticketLow": 2000,
+    "ticketHigh": 6000,
+    "margin": 0.5,
+    "seasonal": false,
+    "peRisk": "low",
+    "archetype": "affluent-suburb",
+    "need": false
+  },
+  {
+    "id": "artificial-turf",
+    "label": "Artificial Turf Installation",
+    "query": "artificial turf installation",
+    "acQuery": "artificial turf",
+    "domainTerms": [
+      "turf",
+      "artificialturf",
+      "turfinstall",
+      "syntheticgrass"
+    ],
+    "ticketLow": 8000,
+    "ticketHigh": 25000,
+    "margin": 0.45,
+    "seasonal": false,
+    "peRisk": "low",
+    "archetype": "affluent-suburb",
+    "need": false
+  },
+  {
+    "id": "landscape-lighting",
+    "label": "Landscape Lighting",
+    "query": "landscape lighting installation",
+    "acQuery": "landscape lighting",
+    "domainTerms": [
+      "landscapelighting",
+      "outdoorlighting",
+      "lighting"
+    ],
+    "ticketLow": 3000,
+    "ticketHigh": 8000,
+    "margin": 0.5,
+    "seasonal": false,
+    "peRisk": "low",
+    "archetype": "affluent-suburb",
+    "need": false
+  },
+  {
+    "id": "standby-generators",
+    "label": "Standby Generator Installation",
+    "query": "standby generator installation",
+    "acQuery": "generator installation",
+    "domainTerms": [
+      "generators",
+      "generatorinstall",
+      "standbygenerators",
+      "generac"
+    ],
+    "ticketLow": 10000,
+    "ticketHigh": 18000,
+    "margin": 0.35,
+    "seasonal": false,
+    "peRisk": "medium",
+    "archetype": "affluent-suburb",
+    "need": true
+  },
+  {
+    "id": "water-softeners",
+    "label": "Water Softener / Filtration",
+    "query": "water softener installation",
+    "acQuery": "water softener",
+    "domainTerms": [
+      "watersofteners",
+      "waterfiltration",
+      "softwater",
+      "watertreatment"
+    ],
+    "ticketLow": 3000,
+    "ticketHigh": 8000,
+    "margin": 0.5,
+    "seasonal": false,
+    "peRisk": "low",
+    "archetype": "affluent-suburb",
+    "need": true
+  },
+  {
+    "id": "popcorn-ceiling-removal",
+    "label": "Popcorn Ceiling Removal",
+    "query": "popcorn ceiling removal",
+    "acQuery": "popcorn ceiling removal",
+    "domainTerms": [
+      "popcornceilingremoval",
+      "ceilingremoval",
+      "popcornceiling"
+    ],
+    "ticketLow": 2000,
+    "ticketHigh": 20000,
+    "margin": 0.55,
+    "seasonal": false,
+    "peRisk": "low",
+    "archetype": "control-kyle",
+    "need": false
+  },
+  {
+    "id": "christmas-lights",
+    "label": "Christmas Light Installation",
+    "query": "christmas light installation",
+    "acQuery": "christmas light installation",
+    "domainTerms": [
+      "christmaslights",
+      "holidaylights",
+      "lightinstallation"
+    ],
+    "ticketLow": 1500,
+    "ticketHigh": 5000,
+    "margin": 0.6,
+    "seasonal": true,
+    "peRisk": "low",
+    "archetype": "seasonal-wildcard",
+    "need": false
+  },
+  {
+    "id": "fencing",
+    "label": "Fence Installation",
+    "query": "fence installation company",
+    "acQuery": "fence installation",
+    "domainTerms": [
+      "fence",
+      "fencing",
+      "fencecompany",
+      "fencepros"
+    ],
+    "ticketLow": 3000,
+    "ticketHigh": 15000,
+    "margin": 0.45,
+    "seasonal": false,
+    "peRisk": "low",
+    "archetype": "sop-proven",
+    "need": false
+  },
+  {
+    "id": "spray-foam-insulation",
+    "label": "Spray Foam Insulation",
+    "query": "spray foam insulation contractor",
+    "acQuery": "spray foam insulation",
+    "domainTerms": [
+      "sprayfoam",
+      "sprayfoaminsulation",
+      "foaminsulation",
+      "insulation"
+    ],
+    "ticketLow": 4000,
+    "ticketHigh": 12000,
+    "margin": 0.5,
+    "seasonal": false,
+    "peRisk": "low",
+    "archetype": "sop-proven",
+    "need": false
+  },
+  {
+    "id": "auto-glass",
+    "label": "Auto Glass Repair",
+    "query": "auto glass repair",
+    "acQuery": "windshield replacement",
+    "domainTerms": [
+      "autoglass",
+      "windshield",
+      "windshieldrepair",
+      "autoglassrepair"
+    ],
+    "ticketLow": 300,
+    "ticketHigh": 800,
+    "margin": 0.5,
+    "seasonal": false,
+    "peRisk": "low",
+    "archetype": "sop-proven",
+    "need": true
+  },
+  {
+    "id": "outdoor-kitchens",
+    "label": "Outdoor Kitchens",
+    "query": "outdoor kitchen builder",
+    "acQuery": "outdoor kitchen",
+    "domainTerms": [
+      "outdoorkitchens",
+      "outdoorkitchen",
+      "outdoorliving",
+      "patiokitchens"
+    ],
+    "ticketLow": 15000,
+    "ticketHigh": 60000,
+    "margin": 0.4,
+    "seasonal": false,
+    "peRisk": "low",
+    "archetype": "affluent-suburb",
+    "need": false
+  },
+  {
+    "id": "custom-closets",
+    "label": "Custom Closets & Garage Cabinets",
+    "query": "custom closet company",
+    "acQuery": "custom closets",
+    "domainTerms": [
+      "customclosets",
+      "closets",
+      "garagecabinets",
+      "closetsystems"
+    ],
+    "ticketLow": 3000,
+    "ticketHigh": 15000,
+    "margin": 0.5,
+    "seasonal": false,
+    "peRisk": "medium",
+    "archetype": "affluent-suburb",
+    "need": false
+  },
+  {
+    "id": "retaining-walls",
+    "label": "Retaining Walls",
+    "query": "retaining wall contractor",
+    "acQuery": "retaining wall",
+    "domainTerms": [
+      "retainingwalls",
+      "retainingwall",
+      "wallbuilders",
+      "hardscape"
+    ],
+    "ticketLow": 5000,
+    "ticketHigh": 30000,
+    "margin": 0.45,
+    "seasonal": false,
+    "peRisk": "low",
+    "archetype": "sop-proven",
+    "need": false
+  },
+  {
+    "id": "french-drains",
+    "label": "French Drains / Drainage",
+    "query": "french drain installation",
+    "acQuery": "french drain",
+    "domainTerms": [
+      "frenchdrains",
+      "drainage",
+      "draincontractor",
+      "yarddrainage"
+    ],
+    "ticketLow": 3000,
+    "ticketHigh": 15000,
+    "margin": 0.55,
+    "seasonal": false,
+    "peRisk": "low",
+    "archetype": "affluent-suburb",
+    "need": true
+  },
+  {
+    "id": "ev-chargers",
+    "label": "EV Charger Installation",
+    "query": "ev charger installation",
+    "acQuery": "ev charger installation",
+    "domainTerms": [
+      "evchargers",
+      "evcharger",
+      "evcharging",
+      "chargerinstall"
+    ],
+    "ticketLow": 1000,
+    "ticketHigh": 3000,
+    "margin": 0.5,
+    "seasonal": false,
+    "peRisk": "low",
+    "archetype": "affluent-suburb",
+    "need": false
+  },
+  {
+    "id": "gutter-installation",
+    "label": "Gutter Installation",
+    "query": "seamless gutter installation",
+    "acQuery": "gutter installation",
+    "domainTerms": [
+      "gutters",
+      "seamlessgutters",
+      "gutterinstall",
+      "gutterpros"
+    ],
+    "ticketLow": 1500,
+    "ticketHigh": 4000,
+    "margin": 0.5,
+    "seasonal": false,
+    "peRisk": "low",
+    "archetype": "sop-proven",
+    "need": true
+  },
+  {
+    "id": "deck-building",
+    "label": "Deck Building",
+    "query": "deck builder",
+    "acQuery": "deck builder",
+    "domainTerms": [
+      "deckbuilders",
+      "decks",
+      "deckbuilding",
+      "customdecks"
+    ],
+    "ticketLow": 10000,
+    "ticketHigh": 40000,
+    "margin": 0.4,
+    "seasonal": false,
+    "peRisk": "low",
+    "archetype": "sop-proven",
+    "need": false
+  },
+  {
+    "id": "land-clearing",
+    "label": "Land Clearing / Lot Grading",
+    "query": "land clearing service",
+    "acQuery": "land clearing",
+    "domainTerms": [
+      "landclearing",
+      "lotclearing",
+      "landgrading",
+      "clearing"
+    ],
+    "ticketLow": 3000,
+    "ticketHigh": 20000,
+    "margin": 0.5,
+    "seasonal": false,
+    "peRisk": "low",
+    "archetype": "growth-corridor",
+    "need": false
+  },
+  {
+    "id": "dumpster-rental",
+    "label": "Dumpster Rental",
+    "query": "dumpster rental",
+    "acQuery": "dumpster rental",
+    "domainTerms": [
+      "dumpsters",
+      "dumpsterrental",
+      "rolloffdumpsters",
+      "rolloff"
+    ],
+    "ticketLow": 400,
+    "ticketHigh": 800,
+    "margin": 0.5,
+    "seasonal": false,
+    "peRisk": "medium",
+    "archetype": "sop-proven",
+    "need": true
+  },
+  {
+    "id": "air-duct-cleaning",
+    "label": "Air Duct Cleaning",
+    "query": "air duct cleaning",
+    "acQuery": "air duct cleaning",
+    "domainTerms": [
+      "ductcleaning",
+      "airducts",
+      "airductcleaning",
+      "ducts"
+    ],
+    "ticketLow": 400,
+    "ticketHigh": 1000,
+    "margin": 0.9,
+    "seasonal": false,
+    "peRisk": "low",
+    "archetype": "need-evergreen",
+    "need": true
+  },
+  {
+    "id": "appliance-repair",
+    "label": "Appliance Repair",
+    "query": "appliance repair",
+    "acQuery": "appliance repair",
+    "domainTerms": [
+      "appliancerepair",
+      "appliances",
+      "appliancefix",
+      "repairpros"
+    ],
+    "ticketLow": 150,
+    "ticketHigh": 500,
+    "margin": 0.7,
+    "seasonal": false,
+    "peRisk": "low",
+    "archetype": "need-evergreen",
+    "need": true
+  },
+  {
+    "id": "mold-remediation",
+    "label": "Mold Remediation",
+    "query": "mold remediation",
+    "acQuery": "mold remediation",
+    "domainTerms": [
+      "moldremediation",
+      "moldremoval",
+      "mold",
+      "moldpros"
+    ],
+    "ticketLow": 2000,
+    "ticketHigh": 10000,
+    "margin": 0.5,
+    "seasonal": false,
+    "peRisk": "medium",
+    "archetype": "need-evergreen",
+    "need": true
+  },
+  {
+    "id": "stump-grinding",
+    "label": "Stump Grinding",
+    "query": "stump grinding service",
+    "acQuery": "stump grinding",
+    "domainTerms": [
+      "stumpgrinding",
+      "stumpremoval",
+      "stumps",
+      "grinding"
+    ],
+    "ticketLow": 200,
+    "ticketHigh": 600,
+    "margin": 0.75,
+    "seasonal": false,
+    "peRisk": "low",
+    "archetype": "subniche",
+    "need": true
+  },
+  {
+    "id": "sewer-line-repair",
+    "label": "Sewer Line Repair",
+    "query": "sewer line repair",
+    "acQuery": "sewer line repair",
+    "domainTerms": [
+      "sewerlinerepair",
+      "sewerrepair",
+      "sewerlines",
+      "hydrojetting"
+    ],
+    "ticketLow": 5000,
+    "ticketHigh": 10000,
+    "margin": 0.45,
+    "seasonal": false,
+    "peRisk": "low",
+    "archetype": "subniche",
+    "need": true
+  }
+]

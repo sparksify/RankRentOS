@@ -1,0 +1,16 @@
+# secrets
+.env
+.env.local
+app/.env.local
+
+# deps & builds
+node_modules/
+app/node_modules/
+app/.next/
+app/out/
+
+# bulk caches & generated output (data lives in Supabase)
+data/cache/
+out/
+*.log
+.DS_Store

@@ -1,0 +1,270 @@
+{
+  "geo": "US",
+  "builtAt": "2026-07-17T08:35:04.894Z",
+  "stats": {
+    "epoxy flooring": {
+      "mean": 2.9,
+      "peakMean": 3.3,
+      "peakMonths": [
+        "May",
+        "Jun",
+        "Jan"
+      ],
+      "weight": 0.75,
+      "weightPeak": 0.76
+    },
+    "artificial turf": {
+      "mean": 4.8,
+      "peakMean": 6.7,
+      "peakMonths": [
+        "Apr",
+        "May",
+        "Jun"
+      ],
+      "weight": 0.78,
+      "weightPeak": 0.82
+    },
+    "landscape lighting": {
+      "mean": 4.3,
+      "peakMean": 5.7,
+      "peakMonths": [
+        "May",
+        "Apr",
+        "Jun"
+      ],
+      "weight": 0.77,
+      "weightPeak": 0.8
+    },
+    "generator installation": {
+      "mean": 2,
+      "peakMean": 2.9,
+      "peakMonths": [
+        "Jun",
+        "May",
+        "Apr"
+      ],
+      "weight": 0.73,
+      "weightPeak": 0.75
+    },
+    "water softener": {
+      "mean": 26.2,
+      "peakMean": 30.7,
+      "peakMonths": [
+        "May",
+        "Feb",
+        "Jun"
+      ],
+      "weight": 1.15,
+      "weightPeak": 1.15
+    },
+    "popcorn ceiling removal": {
+      "mean": 0.8,
+      "peakMean": 0.9,
+      "peakMonths": [
+        "Jul",
+        "Mar",
+        "Jun"
+      ],
+      "weight": 0.71,
+      "weightPeak": 0.72
+    },
+    "christmas light installation": {
+      "mean": 0.8,
+      "peakMean": 1.7,
+      "peakMonths": [
+        "Nov",
+        "Oct",
+        "Dec"
+      ],
+      "weight": 0.71,
+      "weightPeak": 0.73
+    },
+    "fence installation": {
+      "mean": 3.6,
+      "peakMean": 4.7,
+      "peakMonths": [
+        "Jun",
+        "May",
+        "Apr"
+      ],
+      "weight": 0.76,
+      "weightPeak": 0.78
+    },
+    "spray foam insulation": {
+      "mean": 4.9,
+      "peakMean": 5.4,
+      "peakMonths": [
+        "Jan",
+        "Nov",
+        "Oct"
+      ],
+      "weight": 0.78,
+      "weightPeak": 0.79
+    },
+    "windshield replacement": {
+      "mean": 14.9,
+      "peakMean": 16.9,
+      "peakMonths": [
+        "Jun",
+        "Jul",
+        "May"
+      ],
+      "weight": 0.96,
+      "weightPeak": 0.99
+    },
+    "outdoor kitchen": {
+      "mean": 9.9,
+      "peakMean": 15.5,
+      "peakMonths": [
+        "May",
+        "Apr",
+        "Jun"
+      ],
+      "weight": 0.87,
+      "weightPeak": 0.97
+    },
+    "custom closets": {
+      "mean": 1,
+      "peakMean": 1.1,
+      "peakMonths": [
+        "Jun",
+        "Jul",
+        "Jan"
+      ],
+      "weight": 0.72,
+      "weightPeak": 0.72
+    },
+    "retaining wall": {
+      "mean": 10.5,
+      "peakMean": 15.2,
+      "peakMonths": [
+        "May",
+        "Apr",
+        "Jun"
+      ],
+      "weight": 0.88,
+      "weightPeak": 0.96
+    },
+    "french drain": {
+      "mean": 5,
+      "peakMean": 6.8,
+      "peakMonths": [
+        "Apr",
+        "May",
+        "Mar"
+      ],
+      "weight": 0.79,
+      "weightPeak": 0.82
+    },
+    "ev charger installation": {
+      "mean": 1,
+      "peakMean": 1.4,
+      "peakMonths": [
+        "Jun",
+        "May",
+        "Apr"
+      ],
+      "weight": 0.72,
+      "weightPeak": 0.72
+    },
+    "gutter installation": {
+      "mean": 3.6,
+      "peakMean": 4.6,
+      "peakMonths": [
+        "May",
+        "Jun",
+        "Jul"
+      ],
+      "weight": 0.76,
+      "weightPeak": 0.78
+    },
+    "deck builder": {
+      "mean": 3.3,
+      "peakMean": 3.8,
+      "peakMonths": [
+        "May",
+        "Jun",
+        "Aug"
+      ],
+      "weight": 0.76,
+      "weightPeak": 0.77
+    },
+    "land clearing": {
+      "mean": 2.3,
+      "peakMean": 2.6,
+      "peakMonths": [
+        "Apr",
+        "May",
+        "Mar"
+      ],
+      "weight": 0.74,
+      "weightPeak": 0.74
+    },
+    "dumpster rental": {
+      "mean": 19.1,
+      "peakMean": 21.6,
+      "peakMonths": [
+        "Jul",
+        "Aug",
+        "May"
+      ],
+      "weight": 1.03,
+      "weightPeak": 1.07
+    },
+    "air duct cleaning": {
+      "mean": 7.6,
+      "peakMean": 9.6,
+      "peakMonths": [
+        "Jun",
+        "Apr",
+        "May"
+      ],
+      "weight": 0.83,
+      "weightPeak": 0.86
+    },
+    "appliance repair": {
+      "mean": 24.3,
+      "peakMean": 27.1,
+      "peakMonths": [
+        "Jul",
+        "Aug",
+        "Jun"
+      ],
+      "weight": 1.12,
+      "weightPeak": 1.15
+    },
+    "mold remediation": {
+      "mean": 4.7,
+      "peakMean": 5.8,
+      "peakMonths": [
+        "Jun",
+        "May",
+        "Jul"
+      ],
+      "weight": 0.78,
+      "weightPeak": 0.8
+    },
+    "stump grinding": {
+      "mean": 2.1,
+      "peakMean": 2.7,
+      "peakMonths": [
+        "Jun",
+        "May",
+        "Apr"
+      ],
+      "weight": 0.74,
+      "weightPeak": 0.75
+    },
+    "sewer line repair": {
+      "mean": 1.3,
+      "peakMean": 2,
+      "peakMonths": [
+        "Jun",
+        "May",
+        "Apr"
+      ],
+      "weight": 0.72,
+      "weightPeak": 0.73
+    }
+  }
+}

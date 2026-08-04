@@ -1,0 +1,6962 @@
+{
+ "epoxy flooring prosper": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "epoxy flooring celina": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "epoxy flooring frisco": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "epoxy flooring mckinney": {
+  "vol": 10,
+  "cpc": null,
+  "competition": "HIGH"
+ },
+ "epoxy flooring allen": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "epoxy flooring little elm": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "epoxy flooring anna": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "epoxy flooring melissa": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "epoxy flooring southlake": {
+  "vol": 20,
+  "cpc": null,
+  "competition": null
+ },
+ "epoxy flooring flower mound": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "epoxy flooring keller": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "epoxy flooring rockwall": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "epoxy flooring wylie": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "epoxy flooring forney": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "epoxy flooring midlothian": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "epoxy flooring mansfield": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "epoxy flooring georgetown": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "epoxy flooring leander": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "epoxy flooring cedar park": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "epoxy flooring new braunfels": {
+  "vol": 30,
+  "cpc": 4.23,
+  "competition": "LOW"
+ },
+ "epoxy flooring conroe": {
+  "vol": 10,
+  "cpc": null,
+  "competition": "MEDIUM"
+ },
+ "epoxy flooring katy": {
+  "vol": 20,
+  "cpc": null,
+  "competition": "LOW"
+ },
+ "epoxy flooring gilbert": {
+  "vol": 10,
+  "cpc": 140.27,
+  "competition": "MEDIUM"
+ },
+ "epoxy flooring queen creek": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "epoxy flooring maricopa": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "epoxy flooring meridian": {
+  "vol": 20,
+  "cpc": null,
+  "competition": "LOW"
+ },
+ "epoxy flooring nampa": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "epoxy flooring lehi": {
+  "vol": 10,
+  "cpc": null,
+  "competition": "LOW"
+ },
+ "epoxy flooring south jordan": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "epoxy flooring herriman": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "epoxy flooring fishers": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "epoxy flooring carmel": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "epoxy flooring westfield": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "epoxy flooring franklin": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "epoxy flooring spring hill": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "epoxy flooring nolensville": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "epoxy flooring apex": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "epoxy flooring holly springs": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "epoxy flooring wake forest": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "epoxy flooring fuquay-varina": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "epoxy flooring fort mill": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "epoxy flooring indian trail": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "epoxy flooring summerville": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "epoxy flooring cumming": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "epoxy flooring parker": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "epoxy flooring castle rock": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "epoxy flooring erie": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "epoxy flooring windsor": {
+  "vol": 10,
+  "cpc": 4.65,
+  "competition": "MEDIUM"
+ },
+ "epoxy flooring bentonville": {
+  "vol": 20,
+  "cpc": 7.57,
+  "competition": "LOW"
+ },
+ "epoxy flooring rogers": {
+  "vol": 10,
+  "cpc": null,
+  "competition": null
+ },
+ "epoxy flooring owasso": {
+  "vol": 10,
+  "cpc": null,
+  "competition": null
+ },
+ "epoxy flooring jenks": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "epoxy flooring ankeny": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "epoxy flooring waukee": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "epoxy flooring papillion": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "epoxy flooring wesley chapel": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "epoxy flooring land o lakes": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "epoxy flooring nocatee": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "artificial turf prosper": {
+  "vol": 10,
+  "cpc": null,
+  "competition": null
+ },
+ "artificial turf celina": {
+  "vol": 10,
+  "cpc": null,
+  "competition": "HIGH"
+ },
+ "artificial turf frisco": {
+  "vol": 20,
+  "cpc": null,
+  "competition": null
+ },
+ "artificial turf mckinney": {
+  "vol": 20,
+  "cpc": 9.85,
+  "competition": "LOW"
+ },
+ "artificial turf allen": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "artificial turf little elm": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "artificial turf anna": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "artificial turf melissa": {
+  "vol": 10,
+  "cpc": null,
+  "competition": null
+ },
+ "artificial turf southlake": {
+  "vol": 10,
+  "cpc": null,
+  "competition": null
+ },
+ "artificial turf flower mound": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "artificial turf keller": {
+  "vol": 10,
+  "cpc": null,
+  "competition": null
+ },
+ "artificial turf rockwall": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "artificial turf wylie": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "artificial turf forney": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "artificial turf midlothian": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "artificial turf mansfield": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "artificial turf georgetown": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "artificial turf leander": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "artificial turf cedar park": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "artificial turf new braunfels": {
+  "vol": 10,
+  "cpc": 24.06,
+  "competition": "HIGH"
+ },
+ "artificial turf conroe": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "artificial turf katy": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "artificial turf gilbert": {
+  "vol": 50,
+  "cpc": 58.75,
+  "competition": "HIGH"
+ },
+ "artificial turf queen creek": {
+  "vol": 30,
+  "cpc": 14.73,
+  "competition": "MEDIUM"
+ },
+ "artificial turf maricopa": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "artificial turf meridian": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "artificial turf nampa": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "artificial turf lehi": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "artificial turf south jordan": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "artificial turf herriman": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "artificial turf fishers": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "artificial turf carmel": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "artificial turf westfield": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "artificial turf franklin": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "artificial turf spring hill": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "artificial turf nolensville": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "artificial turf apex": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "artificial turf holly springs": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "artificial turf wake forest": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "artificial turf fuquay-varina": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "artificial turf fort mill": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "artificial turf indian trail": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "artificial turf summerville": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "artificial turf cumming": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "artificial turf parker": {
+  "vol": 10,
+  "cpc": null,
+  "competition": "LOW"
+ },
+ "artificial turf castle rock": {
+  "vol": 20,
+  "cpc": 2.64,
+  "competition": "HIGH"
+ },
+ "artificial turf erie": {
+  "vol": 10,
+  "cpc": null,
+  "competition": null
+ },
+ "artificial turf windsor": {
+  "vol": 10,
+  "cpc": null,
+  "competition": "LOW"
+ },
+ "artificial turf bentonville": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "artificial turf rogers": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "artificial turf owasso": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "artificial turf jenks": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "artificial turf ankeny": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "artificial turf waukee": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "artificial turf papillion": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "artificial turf wesley chapel": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "artificial turf land o lakes": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "artificial turf nocatee": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "landscape lighting prosper": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "landscape lighting celina": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "landscape lighting frisco": {
+  "vol": 10,
+  "cpc": 0.01,
+  "competition": "HIGH"
+ },
+ "landscape lighting mckinney": {
+  "vol": 20,
+  "cpc": 15.79,
+  "competition": "HIGH"
+ },
+ "landscape lighting allen": {
+  "vol": 10,
+  "cpc": null,
+  "competition": null
+ },
+ "landscape lighting little elm": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "landscape lighting anna": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "landscape lighting melissa": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "landscape lighting southlake": {
+  "vol": 10,
+  "cpc": 8.18,
+  "competition": "LOW"
+ },
+ "landscape lighting flower mound": {
+  "vol": 20,
+  "cpc": null,
+  "competition": "MEDIUM"
+ },
+ "landscape lighting keller": {
+  "vol": 10,
+  "cpc": null,
+  "competition": "MEDIUM"
+ },
+ "landscape lighting rockwall": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "landscape lighting wylie": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "landscape lighting forney": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "landscape lighting midlothian": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "landscape lighting mansfield": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "landscape lighting georgetown": {
+  "vol": 10,
+  "cpc": null,
+  "competition": "LOW"
+ },
+ "landscape lighting leander": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "landscape lighting cedar park": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "landscape lighting new braunfels": {
+  "vol": 20,
+  "cpc": 7.77,
+  "competition": "HIGH"
+ },
+ "landscape lighting conroe": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "landscape lighting katy": {
+  "vol": 10,
+  "cpc": 41.54,
+  "competition": "MEDIUM"
+ },
+ "landscape lighting gilbert": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "landscape lighting queen creek": {
+  "vol": 10,
+  "cpc": null,
+  "competition": null
+ },
+ "landscape lighting maricopa": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "landscape lighting meridian": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "landscape lighting nampa": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "landscape lighting lehi": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "landscape lighting south jordan": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "landscape lighting herriman": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "landscape lighting fishers": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "landscape lighting carmel": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "landscape lighting westfield": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "landscape lighting franklin": {
+  "vol": 40,
+  "cpc": 16.18,
+  "competition": "HIGH"
+ },
+ "landscape lighting spring hill": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "landscape lighting nolensville": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "landscape lighting apex": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "landscape lighting holly springs": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "landscape lighting wake forest": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "landscape lighting fuquay-varina": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "landscape lighting fort mill": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "landscape lighting indian trail": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "landscape lighting summerville": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "landscape lighting cumming": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "landscape lighting parker": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "landscape lighting castle rock": {
+  "vol": 10,
+  "cpc": null,
+  "competition": "LOW"
+ },
+ "landscape lighting erie": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "landscape lighting windsor": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "landscape lighting bentonville": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "landscape lighting rogers": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "landscape lighting owasso": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "landscape lighting jenks": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "landscape lighting ankeny": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "landscape lighting waukee": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "landscape lighting papillion": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "landscape lighting wesley chapel": {
+  "vol": 10,
+  "cpc": null,
+  "competition": "HIGH"
+ },
+ "landscape lighting land o lakes": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "landscape lighting nocatee": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "generator installation prosper": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "generator installation celina": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "generator installation frisco": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "generator installation mckinney": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "generator installation allen": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "generator installation little elm": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "generator installation anna": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "generator installation melissa": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "generator installation southlake": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "generator installation flower mound": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "generator installation keller": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "generator installation rockwall": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "generator installation wylie": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "generator installation forney": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "generator installation midlothian": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "generator installation mansfield": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "generator installation georgetown": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "generator installation leander": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "generator installation cedar park": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "generator installation new braunfels": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "generator installation conroe": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "generator installation katy": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "generator installation gilbert": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "generator installation queen creek": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "generator installation maricopa": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "generator installation meridian": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "generator installation nampa": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "generator installation lehi": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "generator installation south jordan": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "generator installation herriman": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "generator installation fishers": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "generator installation carmel": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "generator installation westfield": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "generator installation franklin": {
+  "vol": 10,
+  "cpc": null,
+  "competition": "LOW"
+ },
+ "generator installation spring hill": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "generator installation nolensville": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "generator installation apex": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "generator installation holly springs": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "generator installation wake forest": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "generator installation fuquay-varina": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "generator installation fort mill": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "generator installation indian trail": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "generator installation summerville": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "generator installation cumming": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "generator installation parker": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "generator installation castle rock": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "generator installation erie": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "generator installation windsor": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "generator installation bentonville": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "generator installation rogers": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "generator installation owasso": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "generator installation jenks": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "generator installation ankeny": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "generator installation waukee": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "generator installation papillion": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "generator installation wesley chapel": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "generator installation land o lakes": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "generator installation nocatee": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "water softener prosper": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "water softener celina": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "water softener frisco": {
+  "vol": 10,
+  "cpc": null,
+  "competition": "LOW"
+ },
+ "water softener mckinney": {
+  "vol": 10,
+  "cpc": 3.22,
+  "competition": "HIGH"
+ },
+ "water softener allen": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "water softener little elm": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "water softener anna": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "water softener melissa": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "water softener southlake": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "water softener flower mound": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "water softener keller": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "water softener rockwall": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "water softener wylie": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "water softener forney": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "water softener midlothian": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "water softener mansfield": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "water softener georgetown": {
+  "vol": 20,
+  "cpc": 14.27,
+  "competition": "HIGH"
+ },
+ "water softener leander": {
+  "vol": 70,
+  "cpc": 21.63,
+  "competition": "HIGH"
+ },
+ "water softener cedar park": {
+  "vol": 10,
+  "cpc": null,
+  "competition": "HIGH"
+ },
+ "water softener new braunfels": {
+  "vol": 70,
+  "cpc": 30.27,
+  "competition": "HIGH"
+ },
+ "water softener conroe": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "water softener katy": {
+  "vol": 40,
+  "cpc": 5.97,
+  "competition": "HIGH"
+ },
+ "water softener gilbert": {
+  "vol": 140,
+  "cpc": 26.33,
+  "competition": "MEDIUM"
+ },
+ "water softener queen creek": {
+  "vol": 10,
+  "cpc": 0.1,
+  "competition": "HIGH"
+ },
+ "water softener maricopa": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "water softener meridian": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "water softener nampa": {
+  "vol": 10,
+  "cpc": 11.15,
+  "competition": "HIGH"
+ },
+ "water softener lehi": {
+  "vol": 10,
+  "cpc": null,
+  "competition": "HIGH"
+ },
+ "water softener south jordan": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "water softener herriman": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "water softener fishers": {
+  "vol": 20,
+  "cpc": 28.53,
+  "competition": "HIGH"
+ },
+ "water softener carmel": {
+  "vol": 10,
+  "cpc": null,
+  "competition": "MEDIUM"
+ },
+ "water softener westfield": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "water softener franklin": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "water softener spring hill": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "water softener nolensville": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "water softener apex": {
+  "vol": 50,
+  "cpc": 6.91,
+  "competition": "HIGH"
+ },
+ "water softener holly springs": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "water softener wake forest": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "water softener fuquay-varina": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "water softener fort mill": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "water softener indian trail": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "water softener summerville": {
+  "vol": 10,
+  "cpc": null,
+  "competition": "LOW"
+ },
+ "water softener cumming": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "water softener parker": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "water softener castle rock": {
+  "vol": 10,
+  "cpc": null,
+  "competition": "HIGH"
+ },
+ "water softener erie": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "water softener windsor": {
+  "vol": 20,
+  "cpc": 4.9,
+  "competition": "HIGH"
+ },
+ "water softener bentonville": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "water softener rogers": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "water softener owasso": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "water softener jenks": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "water softener ankeny": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "water softener waukee": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "water softener papillion": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "water softener wesley chapel": {
+  "vol": 10,
+  "cpc": 53.92,
+  "competition": "MEDIUM"
+ },
+ "water softener land o lakes": {
+  "vol": 10,
+  "cpc": null,
+  "competition": "HIGH"
+ },
+ "water softener nocatee": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "popcorn ceiling removal prosper": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "popcorn ceiling removal celina": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "popcorn ceiling removal frisco": {
+  "vol": 10,
+  "cpc": null,
+  "competition": null
+ },
+ "popcorn ceiling removal mckinney": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "popcorn ceiling removal allen": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "popcorn ceiling removal little elm": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "popcorn ceiling removal anna": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "popcorn ceiling removal melissa": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "popcorn ceiling removal southlake": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "popcorn ceiling removal flower mound": {
+  "vol": 10,
+  "cpc": null,
+  "competition": null
+ },
+ "popcorn ceiling removal keller": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "popcorn ceiling removal rockwall": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "popcorn ceiling removal wylie": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "popcorn ceiling removal forney": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "popcorn ceiling removal midlothian": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "popcorn ceiling removal mansfield": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "popcorn ceiling removal georgetown": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "popcorn ceiling removal leander": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "popcorn ceiling removal cedar park": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "popcorn ceiling removal new braunfels": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "popcorn ceiling removal conroe": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "popcorn ceiling removal katy": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "popcorn ceiling removal gilbert": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "popcorn ceiling removal queen creek": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "popcorn ceiling removal maricopa": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "popcorn ceiling removal meridian": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "popcorn ceiling removal nampa": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "popcorn ceiling removal lehi": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "popcorn ceiling removal south jordan": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "popcorn ceiling removal herriman": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "popcorn ceiling removal fishers": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "popcorn ceiling removal carmel": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "popcorn ceiling removal westfield": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "popcorn ceiling removal franklin": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "popcorn ceiling removal spring hill": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "popcorn ceiling removal nolensville": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "popcorn ceiling removal apex": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "popcorn ceiling removal holly springs": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "popcorn ceiling removal wake forest": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "popcorn ceiling removal fuquay-varina": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "popcorn ceiling removal fort mill": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "popcorn ceiling removal indian trail": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "popcorn ceiling removal summerville": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "popcorn ceiling removal cumming": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "popcorn ceiling removal parker": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "popcorn ceiling removal castle rock": {
+  "vol": 10,
+  "cpc": null,
+  "competition": null
+ },
+ "popcorn ceiling removal erie": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "popcorn ceiling removal windsor": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "popcorn ceiling removal bentonville": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "popcorn ceiling removal rogers": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "popcorn ceiling removal owasso": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "popcorn ceiling removal jenks": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "popcorn ceiling removal ankeny": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "popcorn ceiling removal waukee": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "popcorn ceiling removal papillion": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "popcorn ceiling removal wesley chapel": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "popcorn ceiling removal land o lakes": {
+  "vol": 10,
+  "cpc": null,
+  "competition": null
+ },
+ "popcorn ceiling removal nocatee": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "christmas light installation prosper": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "christmas light installation celina": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "christmas light installation frisco": {
+  "vol": 40,
+  "cpc": null,
+  "competition": "LOW"
+ },
+ "christmas light installation mckinney": {
+  "vol": 40,
+  "cpc": null,
+  "competition": "LOW"
+ },
+ "christmas light installation allen": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "christmas light installation little elm": {
+  "vol": 10,
+  "cpc": null,
+  "competition": null
+ },
+ "christmas light installation anna": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "christmas light installation melissa": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "christmas light installation southlake": {
+  "vol": 10,
+  "cpc": null,
+  "competition": null
+ },
+ "christmas light installation flower mound": {
+  "vol": 10,
+  "cpc": null,
+  "competition": "MEDIUM"
+ },
+ "christmas light installation keller": {
+  "vol": 10,
+  "cpc": null,
+  "competition": null
+ },
+ "christmas light installation rockwall": {
+  "vol": 10,
+  "cpc": null,
+  "competition": "MEDIUM"
+ },
+ "christmas light installation wylie": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "christmas light installation forney": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "christmas light installation midlothian": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "christmas light installation mansfield": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "christmas light installation georgetown": {
+  "vol": 20,
+  "cpc": 2.93,
+  "competition": "LOW"
+ },
+ "christmas light installation leander": {
+  "vol": 10,
+  "cpc": null,
+  "competition": "LOW"
+ },
+ "christmas light installation cedar park": {
+  "vol": 10,
+  "cpc": null,
+  "competition": "LOW"
+ },
+ "christmas light installation new braunfels": {
+  "vol": 10,
+  "cpc": null,
+  "competition": null
+ },
+ "christmas light installation conroe": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "christmas light installation katy": {
+  "vol": 40,
+  "cpc": null,
+  "competition": "LOW"
+ },
+ "christmas light installation gilbert": {
+  "vol": 10,
+  "cpc": null,
+  "competition": "MEDIUM"
+ },
+ "christmas light installation queen creek": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "christmas light installation maricopa": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "christmas light installation meridian": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "christmas light installation nampa": {
+  "vol": 10,
+  "cpc": null,
+  "competition": null
+ },
+ "christmas light installation lehi": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "christmas light installation south jordan": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "christmas light installation herriman": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "christmas light installation fishers": {
+  "vol": 10,
+  "cpc": null,
+  "competition": "LOW"
+ },
+ "christmas light installation carmel": {
+  "vol": 10,
+  "cpc": null,
+  "competition": null
+ },
+ "christmas light installation westfield": {
+  "vol": 10,
+  "cpc": null,
+  "competition": null
+ },
+ "christmas light installation franklin": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "christmas light installation spring hill": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "christmas light installation nolensville": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "christmas light installation apex": {
+  "vol": 10,
+  "cpc": null,
+  "competition": null
+ },
+ "christmas light installation holly springs": {
+  "vol": 10,
+  "cpc": null,
+  "competition": "LOW"
+ },
+ "christmas light installation wake forest": {
+  "vol": 10,
+  "cpc": null,
+  "competition": null
+ },
+ "christmas light installation fuquay-varina": {
+  "vol": 10,
+  "cpc": null,
+  "competition": null
+ },
+ "christmas light installation fort mill": {
+  "vol": 10,
+  "cpc": null,
+  "competition": "MEDIUM"
+ },
+ "christmas light installation indian trail": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "christmas light installation summerville": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "christmas light installation cumming": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "christmas light installation parker": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "christmas light installation castle rock": {
+  "vol": 10,
+  "cpc": null,
+  "competition": null
+ },
+ "christmas light installation erie": {
+  "vol": 10,
+  "cpc": null,
+  "competition": "LOW"
+ },
+ "christmas light installation windsor": {
+  "vol": 10,
+  "cpc": null,
+  "competition": "LOW"
+ },
+ "christmas light installation bentonville": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "christmas light installation rogers": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "christmas light installation owasso": {
+  "vol": 20,
+  "cpc": null,
+  "competition": null
+ },
+ "christmas light installation jenks": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "christmas light installation ankeny": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "christmas light installation waukee": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "christmas light installation papillion": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "christmas light installation wesley chapel": {
+  "vol": 10,
+  "cpc": null,
+  "competition": null
+ },
+ "christmas light installation land o lakes": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "christmas light installation nocatee": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "fence installation prosper": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "fence installation celina": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "fence installation frisco": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "fence installation mckinney": {
+  "vol": 10,
+  "cpc": null,
+  "competition": "LOW"
+ },
+ "fence installation allen": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "fence installation little elm": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "fence installation anna": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "fence installation melissa": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "fence installation southlake": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "fence installation flower mound": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "fence installation keller": {
+  "vol": 10,
+  "cpc": null,
+  "competition": null
+ },
+ "fence installation rockwall": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "fence installation wylie": {
+  "vol": 10,
+  "cpc": null,
+  "competition": null
+ },
+ "fence installation forney": {
+  "vol": 10,
+  "cpc": null,
+  "competition": null
+ },
+ "fence installation midlothian": {
+  "vol": 10,
+  "cpc": null,
+  "competition": null
+ },
+ "fence installation mansfield": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "fence installation georgetown": {
+  "vol": 10,
+  "cpc": null,
+  "competition": "LOW"
+ },
+ "fence installation leander": {
+  "vol": 10,
+  "cpc": null,
+  "competition": "LOW"
+ },
+ "fence installation cedar park": {
+  "vol": 70,
+  "cpc": null,
+  "competition": "LOW"
+ },
+ "fence installation new braunfels": {
+  "vol": 10,
+  "cpc": 13.63,
+  "competition": "HIGH"
+ },
+ "fence installation conroe": {
+  "vol": 10,
+  "cpc": null,
+  "competition": "LOW"
+ },
+ "fence installation katy": {
+  "vol": 10,
+  "cpc": null,
+  "competition": "LOW"
+ },
+ "fence installation gilbert": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "fence installation queen creek": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "fence installation maricopa": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "fence installation meridian": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "fence installation nampa": {
+  "vol": 10,
+  "cpc": null,
+  "competition": "LOW"
+ },
+ "fence installation lehi": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "fence installation south jordan": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "fence installation herriman": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "fence installation fishers": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "fence installation carmel": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "fence installation westfield": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "fence installation franklin": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "fence installation spring hill": {
+  "vol": 20,
+  "cpc": 21.74,
+  "competition": "HIGH"
+ },
+ "fence installation nolensville": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "fence installation apex": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "fence installation holly springs": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "fence installation wake forest": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "fence installation fuquay-varina": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "fence installation fort mill": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "fence installation indian trail": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "fence installation summerville": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "fence installation cumming": {
+  "vol": 20,
+  "cpc": null,
+  "competition": null
+ },
+ "fence installation parker": {
+  "vol": 10,
+  "cpc": 41.34,
+  "competition": "HIGH"
+ },
+ "fence installation castle rock": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "fence installation erie": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "fence installation windsor": {
+  "vol": 10,
+  "cpc": null,
+  "competition": "LOW"
+ },
+ "fence installation bentonville": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "fence installation rogers": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "fence installation owasso": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "fence installation jenks": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "fence installation ankeny": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "fence installation waukee": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "fence installation papillion": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "fence installation wesley chapel": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "fence installation land o lakes": {
+  "vol": 10,
+  "cpc": null,
+  "competition": "HIGH"
+ },
+ "fence installation nocatee": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "spray foam insulation prosper": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "spray foam insulation celina": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "spray foam insulation frisco": {
+  "vol": 10,
+  "cpc": null,
+  "competition": null
+ },
+ "spray foam insulation mckinney": {
+  "vol": 10,
+  "cpc": null,
+  "competition": "LOW"
+ },
+ "spray foam insulation allen": {
+  "vol": 10,
+  "cpc": null,
+  "competition": null
+ },
+ "spray foam insulation little elm": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "spray foam insulation anna": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "spray foam insulation melissa": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "spray foam insulation southlake": {
+  "vol": 10,
+  "cpc": null,
+  "competition": null
+ },
+ "spray foam insulation flower mound": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "spray foam insulation keller": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "spray foam insulation rockwall": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "spray foam insulation wylie": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "spray foam insulation forney": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "spray foam insulation midlothian": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "spray foam insulation mansfield": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "spray foam insulation georgetown": {
+  "vol": 10,
+  "cpc": null,
+  "competition": "HIGH"
+ },
+ "spray foam insulation leander": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "spray foam insulation cedar park": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "spray foam insulation new braunfels": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "spray foam insulation conroe": {
+  "vol": 10,
+  "cpc": null,
+  "competition": "LOW"
+ },
+ "spray foam insulation katy": {
+  "vol": 10,
+  "cpc": null,
+  "competition": "LOW"
+ },
+ "spray foam insulation gilbert": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "spray foam insulation queen creek": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "spray foam insulation maricopa": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "spray foam insulation meridian": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "spray foam insulation nampa": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "spray foam insulation lehi": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "spray foam insulation south jordan": {
+  "vol": 10,
+  "cpc": null,
+  "competition": null
+ },
+ "spray foam insulation herriman": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "spray foam insulation fishers": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "spray foam insulation carmel": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "spray foam insulation westfield": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "spray foam insulation franklin": {
+  "vol": 10,
+  "cpc": null,
+  "competition": "LOW"
+ },
+ "spray foam insulation spring hill": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "spray foam insulation nolensville": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "spray foam insulation apex": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "spray foam insulation holly springs": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "spray foam insulation wake forest": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "spray foam insulation fuquay-varina": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "spray foam insulation fort mill": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "spray foam insulation indian trail": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "spray foam insulation summerville": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "spray foam insulation cumming": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "spray foam insulation parker": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "spray foam insulation castle rock": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "spray foam insulation erie": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "spray foam insulation windsor": {
+  "vol": 10,
+  "cpc": null,
+  "competition": null
+ },
+ "spray foam insulation bentonville": {
+  "vol": 10,
+  "cpc": null,
+  "competition": null
+ },
+ "spray foam insulation rogers": {
+  "vol": 10,
+  "cpc": null,
+  "competition": null
+ },
+ "spray foam insulation owasso": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "spray foam insulation jenks": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "spray foam insulation ankeny": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "spray foam insulation waukee": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "spray foam insulation papillion": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "spray foam insulation wesley chapel": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "spray foam insulation land o lakes": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "spray foam insulation nocatee": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "windshield replacement prosper": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "windshield replacement celina": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "windshield replacement frisco": {
+  "vol": 320,
+  "cpc": 9.11,
+  "competition": "MEDIUM"
+ },
+ "windshield replacement mckinney": {
+  "vol": 390,
+  "cpc": 10.49,
+  "competition": "MEDIUM"
+ },
+ "windshield replacement allen": {
+  "vol": 70,
+  "cpc": 10.07,
+  "competition": "HIGH"
+ },
+ "windshield replacement little elm": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "windshield replacement anna": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "windshield replacement melissa": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "windshield replacement southlake": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "windshield replacement flower mound": {
+  "vol": 30,
+  "cpc": 8.99,
+  "competition": "HIGH"
+ },
+ "windshield replacement keller": {
+  "vol": 20,
+  "cpc": 4.01,
+  "competition": "MEDIUM"
+ },
+ "windshield replacement rockwall": {
+  "vol": 90,
+  "cpc": 11.11,
+  "competition": "HIGH"
+ },
+ "windshield replacement wylie": {
+  "vol": 20,
+  "cpc": 13.63,
+  "competition": "HIGH"
+ },
+ "windshield replacement forney": {
+  "vol": 40,
+  "cpc": 13.29,
+  "competition": "HIGH"
+ },
+ "windshield replacement midlothian": {
+  "vol": 140,
+  "cpc": 7.6,
+  "competition": "HIGH"
+ },
+ "windshield replacement mansfield": {
+  "vol": 10,
+  "cpc": null,
+  "competition": "HIGH"
+ },
+ "windshield replacement georgetown": {
+  "vol": 70,
+  "cpc": 9.62,
+  "competition": "HIGH"
+ },
+ "windshield replacement leander": {
+  "vol": 2400,
+  "cpc": 16.42,
+  "competition": "MEDIUM"
+ },
+ "windshield replacement cedar park": {
+  "vol": 50,
+  "cpc": 8.26,
+  "competition": "HIGH"
+ },
+ "windshield replacement new braunfels": {
+  "vol": 210,
+  "cpc": 8.36,
+  "competition": "HIGH"
+ },
+ "windshield replacement conroe": {
+  "vol": 140,
+  "cpc": 12.21,
+  "competition": "HIGH"
+ },
+ "windshield replacement katy": {
+  "vol": 480,
+  "cpc": 12.76,
+  "competition": "HIGH"
+ },
+ "windshield replacement gilbert": {
+  "vol": 210,
+  "cpc": 26.73,
+  "competition": "MEDIUM"
+ },
+ "windshield replacement queen creek": {
+  "vol": 90,
+  "cpc": 25.39,
+  "competition": "HIGH"
+ },
+ "windshield replacement maricopa": {
+  "vol": 70,
+  "cpc": 16.96,
+  "competition": "HIGH"
+ },
+ "windshield replacement meridian": {
+  "vol": 110,
+  "cpc": 18.57,
+  "competition": "HIGH"
+ },
+ "windshield replacement nampa": {
+  "vol": 170,
+  "cpc": 17.85,
+  "competition": "HIGH"
+ },
+ "windshield replacement lehi": {
+  "vol": 90,
+  "cpc": 19.39,
+  "competition": "HIGH"
+ },
+ "windshield replacement south jordan": {
+  "vol": 50,
+  "cpc": 17.65,
+  "competition": "HIGH"
+ },
+ "windshield replacement herriman": {
+  "vol": 30,
+  "cpc": 13.08,
+  "competition": "HIGH"
+ },
+ "windshield replacement fishers": {
+  "vol": 40,
+  "cpc": 10.31,
+  "competition": "HIGH"
+ },
+ "windshield replacement carmel": {
+  "vol": 40,
+  "cpc": 13.36,
+  "competition": "HIGH"
+ },
+ "windshield replacement westfield": {
+  "vol": 10,
+  "cpc": 3.23,
+  "competition": "HIGH"
+ },
+ "windshield replacement franklin": {
+  "vol": 90,
+  "cpc": 8.16,
+  "competition": "HIGH"
+ },
+ "windshield replacement spring hill": {
+  "vol": 70,
+  "cpc": 21.12,
+  "competition": "HIGH"
+ },
+ "windshield replacement nolensville": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "windshield replacement apex": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "windshield replacement holly springs": {
+  "vol": 10,
+  "cpc": 9.24,
+  "competition": "HIGH"
+ },
+ "windshield replacement wake forest": {
+  "vol": 70,
+  "cpc": 11.14,
+  "competition": "HIGH"
+ },
+ "windshield replacement fuquay-varina": {
+  "vol": 30,
+  "cpc": 9.94,
+  "competition": "HIGH"
+ },
+ "windshield replacement fort mill": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "windshield replacement indian trail": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "windshield replacement summerville": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "windshield replacement cumming": {
+  "vol": 30,
+  "cpc": 9.34,
+  "competition": "HIGH"
+ },
+ "windshield replacement parker": {
+  "vol": 110,
+  "cpc": 19.06,
+  "competition": "HIGH"
+ },
+ "windshield replacement castle rock": {
+  "vol": 140,
+  "cpc": 22.14,
+  "competition": "HIGH"
+ },
+ "windshield replacement erie": {
+  "vol": 170,
+  "cpc": 12.28,
+  "competition": "MEDIUM"
+ },
+ "windshield replacement windsor": {
+  "vol": 20,
+  "cpc": 3.59,
+  "competition": "HIGH"
+ },
+ "windshield replacement bentonville": {
+  "vol": 90,
+  "cpc": 7.79,
+  "competition": "HIGH"
+ },
+ "windshield replacement rogers": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "windshield replacement owasso": {
+  "vol": 70,
+  "cpc": 8.17,
+  "competition": "HIGH"
+ },
+ "windshield replacement jenks": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "windshield replacement ankeny": {
+  "vol": 40,
+  "cpc": 6.32,
+  "competition": "HIGH"
+ },
+ "windshield replacement waukee": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "windshield replacement papillion": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "windshield replacement wesley chapel": {
+  "vol": 90,
+  "cpc": 21.59,
+  "competition": "HIGH"
+ },
+ "windshield replacement land o lakes": {
+  "vol": 20,
+  "cpc": 22.96,
+  "competition": "HIGH"
+ },
+ "windshield replacement nocatee": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "outdoor kitchen prosper": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "outdoor kitchen celina": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "outdoor kitchen frisco": {
+  "vol": 20,
+  "cpc": 13.01,
+  "competition": "HIGH"
+ },
+ "outdoor kitchen mckinney": {
+  "vol": 10,
+  "cpc": 11.45,
+  "competition": "HIGH"
+ },
+ "outdoor kitchen allen": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "outdoor kitchen little elm": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "outdoor kitchen anna": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "outdoor kitchen melissa": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "outdoor kitchen southlake": {
+  "vol": 10,
+  "cpc": null,
+  "competition": "LOW"
+ },
+ "outdoor kitchen flower mound": {
+  "vol": 10,
+  "cpc": null,
+  "competition": null
+ },
+ "outdoor kitchen keller": {
+  "vol": 10,
+  "cpc": null,
+  "competition": null
+ },
+ "outdoor kitchen rockwall": {
+  "vol": 10,
+  "cpc": 3.63,
+  "competition": "HIGH"
+ },
+ "outdoor kitchen wylie": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "outdoor kitchen forney": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "outdoor kitchen midlothian": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "outdoor kitchen mansfield": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "outdoor kitchen georgetown": {
+  "vol": 10,
+  "cpc": null,
+  "competition": null
+ },
+ "outdoor kitchen leander": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "outdoor kitchen cedar park": {
+  "vol": 10,
+  "cpc": null,
+  "competition": "LOW"
+ },
+ "outdoor kitchen new braunfels": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "outdoor kitchen conroe": {
+  "vol": 10,
+  "cpc": 11.9,
+  "competition": "MEDIUM"
+ },
+ "outdoor kitchen katy": {
+  "vol": 30,
+  "cpc": 10.11,
+  "competition": "MEDIUM"
+ },
+ "outdoor kitchen gilbert": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "outdoor kitchen queen creek": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "outdoor kitchen maricopa": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "outdoor kitchen meridian": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "outdoor kitchen nampa": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "outdoor kitchen lehi": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "outdoor kitchen south jordan": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "outdoor kitchen herriman": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "outdoor kitchen fishers": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "outdoor kitchen carmel": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "outdoor kitchen westfield": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "outdoor kitchen franklin": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "outdoor kitchen spring hill": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "outdoor kitchen nolensville": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "outdoor kitchen apex": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "outdoor kitchen holly springs": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "outdoor kitchen wake forest": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "outdoor kitchen fuquay-varina": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "outdoor kitchen fort mill": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "outdoor kitchen indian trail": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "outdoor kitchen summerville": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "outdoor kitchen cumming": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "outdoor kitchen parker": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "outdoor kitchen castle rock": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "outdoor kitchen erie": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "outdoor kitchen windsor": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "outdoor kitchen bentonville": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "outdoor kitchen rogers": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "outdoor kitchen owasso": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "outdoor kitchen jenks": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "outdoor kitchen ankeny": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "outdoor kitchen waukee": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "outdoor kitchen papillion": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "outdoor kitchen wesley chapel": {
+  "vol": 40,
+  "cpc": 18.18,
+  "competition": "HIGH"
+ },
+ "outdoor kitchen land o lakes": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "outdoor kitchen nocatee": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "custom closets prosper": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "custom closets celina": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "custom closets frisco": {
+  "vol": 10,
+  "cpc": null,
+  "competition": "HIGH"
+ },
+ "custom closets mckinney": {
+  "vol": 10,
+  "cpc": 32.56,
+  "competition": "HIGH"
+ },
+ "custom closets allen": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "custom closets little elm": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "custom closets anna": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "custom closets melissa": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "custom closets southlake": {
+  "vol": 10,
+  "cpc": null,
+  "competition": "MEDIUM"
+ },
+ "custom closets flower mound": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "custom closets keller": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "custom closets rockwall": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "custom closets wylie": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "custom closets forney": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "custom closets midlothian": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "custom closets mansfield": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "custom closets georgetown": {
+  "vol": 10,
+  "cpc": null,
+  "competition": null
+ },
+ "custom closets leander": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "custom closets cedar park": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "custom closets new braunfels": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "custom closets conroe": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "custom closets katy": {
+  "vol": 10,
+  "cpc": null,
+  "competition": null
+ },
+ "custom closets gilbert": {
+  "vol": 10,
+  "cpc": null,
+  "competition": "MEDIUM"
+ },
+ "custom closets queen creek": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "custom closets maricopa": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "custom closets meridian": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "custom closets nampa": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "custom closets lehi": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "custom closets south jordan": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "custom closets herriman": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "custom closets fishers": {
+  "vol": 10,
+  "cpc": null,
+  "competition": null
+ },
+ "custom closets carmel": {
+  "vol": 10,
+  "cpc": null,
+  "competition": null
+ },
+ "custom closets westfield": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "custom closets franklin": {
+  "vol": 10,
+  "cpc": null,
+  "competition": "MEDIUM"
+ },
+ "custom closets spring hill": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "custom closets nolensville": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "custom closets apex": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "custom closets holly springs": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "custom closets wake forest": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "custom closets fuquay-varina": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "custom closets fort mill": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "custom closets indian trail": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "custom closets summerville": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "custom closets cumming": {
+  "vol": 10,
+  "cpc": null,
+  "competition": "HIGH"
+ },
+ "custom closets parker": {
+  "vol": 10,
+  "cpc": null,
+  "competition": null
+ },
+ "custom closets castle rock": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "custom closets erie": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "custom closets windsor": {
+  "vol": 10,
+  "cpc": null,
+  "competition": null
+ },
+ "custom closets bentonville": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "custom closets rogers": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "custom closets owasso": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "custom closets jenks": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "custom closets ankeny": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "custom closets waukee": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "custom closets papillion": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "custom closets wesley chapel": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "custom closets land o lakes": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "custom closets nocatee": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "retaining wall prosper": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "retaining wall celina": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "retaining wall frisco": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "retaining wall mckinney": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "retaining wall allen": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "retaining wall little elm": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "retaining wall anna": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "retaining wall melissa": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "retaining wall southlake": {
+  "vol": 10,
+  "cpc": null,
+  "competition": null
+ },
+ "retaining wall flower mound": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "retaining wall keller": {
+  "vol": 10,
+  "cpc": null,
+  "competition": null
+ },
+ "retaining wall rockwall": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "retaining wall wylie": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "retaining wall forney": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "retaining wall midlothian": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "retaining wall mansfield": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "retaining wall georgetown": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "retaining wall leander": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "retaining wall cedar park": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "retaining wall new braunfels": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "retaining wall conroe": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "retaining wall katy": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "retaining wall gilbert": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "retaining wall queen creek": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "retaining wall maricopa": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "retaining wall meridian": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "retaining wall nampa": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "retaining wall lehi": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "retaining wall south jordan": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "retaining wall herriman": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "retaining wall fishers": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "retaining wall carmel": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "retaining wall westfield": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "retaining wall franklin": {
+  "vol": 10,
+  "cpc": null,
+  "competition": "HIGH"
+ },
+ "retaining wall spring hill": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "retaining wall nolensville": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "retaining wall apex": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "retaining wall holly springs": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "retaining wall wake forest": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "retaining wall fuquay-varina": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "retaining wall fort mill": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "retaining wall indian trail": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "retaining wall summerville": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "retaining wall cumming": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "retaining wall parker": {
+  "vol": 10,
+  "cpc": null,
+  "competition": null
+ },
+ "retaining wall castle rock": {
+  "vol": 20,
+  "cpc": 0.2,
+  "competition": "HIGH"
+ },
+ "retaining wall erie": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "retaining wall windsor": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "retaining wall bentonville": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "retaining wall rogers": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "retaining wall owasso": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "retaining wall jenks": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "retaining wall ankeny": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "retaining wall waukee": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "retaining wall papillion": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "retaining wall wesley chapel": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "retaining wall land o lakes": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "retaining wall nocatee": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "french drain prosper": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "french drain celina": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "french drain frisco": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "french drain mckinney": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "french drain allen": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "french drain little elm": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "french drain anna": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "french drain melissa": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "french drain southlake": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "french drain flower mound": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "french drain keller": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "french drain rockwall": {
+  "vol": 10,
+  "cpc": null,
+  "competition": "LOW"
+ },
+ "french drain wylie": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "french drain forney": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "french drain midlothian": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "french drain mansfield": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "french drain georgetown": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "french drain leander": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "french drain cedar park": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "french drain new braunfels": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "french drain conroe": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "french drain katy": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "french drain gilbert": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "french drain queen creek": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "french drain maricopa": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "french drain meridian": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "french drain nampa": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "french drain lehi": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "french drain south jordan": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "french drain herriman": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "french drain fishers": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "french drain carmel": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "french drain westfield": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "french drain franklin": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "french drain spring hill": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "french drain nolensville": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "french drain apex": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "french drain holly springs": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "french drain wake forest": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "french drain fuquay-varina": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "french drain fort mill": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "french drain indian trail": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "french drain summerville": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "french drain cumming": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "french drain parker": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "french drain castle rock": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "french drain erie": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "french drain windsor": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "french drain bentonville": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "french drain rogers": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "french drain owasso": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "french drain jenks": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "french drain ankeny": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "french drain waukee": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "french drain papillion": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "french drain wesley chapel": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "french drain land o lakes": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "french drain nocatee": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "ev charger installation prosper": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "ev charger installation celina": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "ev charger installation frisco": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "ev charger installation mckinney": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "ev charger installation allen": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "ev charger installation little elm": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "ev charger installation anna": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "ev charger installation melissa": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "ev charger installation southlake": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "ev charger installation flower mound": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "ev charger installation keller": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "ev charger installation rockwall": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "ev charger installation wylie": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "ev charger installation forney": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "ev charger installation midlothian": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "ev charger installation mansfield": {
+  "vol": 10,
+  "cpc": null,
+  "competition": null
+ },
+ "ev charger installation georgetown": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "ev charger installation leander": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "ev charger installation cedar park": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "ev charger installation new braunfels": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "ev charger installation conroe": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "ev charger installation katy": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "ev charger installation gilbert": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "ev charger installation queen creek": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "ev charger installation maricopa": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "ev charger installation meridian": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "ev charger installation nampa": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "ev charger installation lehi": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "ev charger installation south jordan": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "ev charger installation herriman": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "ev charger installation fishers": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "ev charger installation carmel": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "ev charger installation westfield": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "ev charger installation franklin": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "ev charger installation spring hill": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "ev charger installation nolensville": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "ev charger installation apex": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "ev charger installation holly springs": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "ev charger installation wake forest": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "ev charger installation fuquay-varina": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "ev charger installation fort mill": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "ev charger installation indian trail": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "ev charger installation summerville": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "ev charger installation cumming": {
+  "vol": 10,
+  "cpc": null,
+  "competition": null
+ },
+ "ev charger installation parker": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "ev charger installation castle rock": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "ev charger installation erie": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "ev charger installation windsor": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "ev charger installation bentonville": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "ev charger installation rogers": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "ev charger installation owasso": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "ev charger installation jenks": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "ev charger installation ankeny": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "ev charger installation waukee": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "ev charger installation papillion": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "ev charger installation wesley chapel": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "ev charger installation land o lakes": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "ev charger installation nocatee": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "gutter installation prosper": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "gutter installation celina": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "gutter installation frisco": {
+  "vol": 10,
+  "cpc": 12.17,
+  "competition": "HIGH"
+ },
+ "gutter installation mckinney": {
+  "vol": 70,
+  "cpc": 22.62,
+  "competition": "LOW"
+ },
+ "gutter installation allen": {
+  "vol": 10,
+  "cpc": 45.4,
+  "competition": "MEDIUM"
+ },
+ "gutter installation little elm": {
+  "vol": 10,
+  "cpc": null,
+  "competition": null
+ },
+ "gutter installation anna": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "gutter installation melissa": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "gutter installation southlake": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "gutter installation flower mound": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "gutter installation keller": {
+  "vol": 10,
+  "cpc": null,
+  "competition": null
+ },
+ "gutter installation rockwall": {
+  "vol": 10,
+  "cpc": null,
+  "competition": "HIGH"
+ },
+ "gutter installation wylie": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "gutter installation forney": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "gutter installation midlothian": {
+  "vol": 10,
+  "cpc": null,
+  "competition": "LOW"
+ },
+ "gutter installation mansfield": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "gutter installation georgetown": {
+  "vol": 10,
+  "cpc": null,
+  "competition": "LOW"
+ },
+ "gutter installation leander": {
+  "vol": 10,
+  "cpc": 3.44,
+  "competition": "HIGH"
+ },
+ "gutter installation cedar park": {
+  "vol": 10,
+  "cpc": null,
+  "competition": "HIGH"
+ },
+ "gutter installation new braunfels": {
+  "vol": 110,
+  "cpc": 15.71,
+  "competition": "MEDIUM"
+ },
+ "gutter installation conroe": {
+  "vol": 10,
+  "cpc": null,
+  "competition": "HIGH"
+ },
+ "gutter installation katy": {
+  "vol": 110,
+  "cpc": 34.2,
+  "competition": "MEDIUM"
+ },
+ "gutter installation gilbert": {
+  "vol": 10,
+  "cpc": null,
+  "competition": null
+ },
+ "gutter installation queen creek": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "gutter installation maricopa": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "gutter installation meridian": {
+  "vol": 10,
+  "cpc": null,
+  "competition": "LOW"
+ },
+ "gutter installation nampa": {
+  "vol": 10,
+  "cpc": 14.66,
+  "competition": "HIGH"
+ },
+ "gutter installation lehi": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "gutter installation south jordan": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "gutter installation herriman": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "gutter installation fishers": {
+  "vol": 10,
+  "cpc": null,
+  "competition": "LOW"
+ },
+ "gutter installation carmel": {
+  "vol": 10,
+  "cpc": null,
+  "competition": null
+ },
+ "gutter installation westfield": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "gutter installation franklin": {
+  "vol": 10,
+  "cpc": null,
+  "competition": "LOW"
+ },
+ "gutter installation spring hill": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "gutter installation nolensville": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "gutter installation apex": {
+  "vol": 10,
+  "cpc": null,
+  "competition": "HIGH"
+ },
+ "gutter installation holly springs": {
+  "vol": 10,
+  "cpc": null,
+  "competition": null
+ },
+ "gutter installation wake forest": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "gutter installation fuquay-varina": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "gutter installation fort mill": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "gutter installation indian trail": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "gutter installation summerville": {
+  "vol": 10,
+  "cpc": null,
+  "competition": null
+ },
+ "gutter installation cumming": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "gutter installation parker": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "gutter installation castle rock": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "gutter installation erie": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "gutter installation windsor": {
+  "vol": 10,
+  "cpc": null,
+  "competition": "LOW"
+ },
+ "gutter installation bentonville": {
+  "vol": 10,
+  "cpc": null,
+  "competition": null
+ },
+ "gutter installation rogers": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "gutter installation owasso": {
+  "vol": 10,
+  "cpc": null,
+  "competition": null
+ },
+ "gutter installation jenks": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "gutter installation ankeny": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "gutter installation waukee": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "gutter installation papillion": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "gutter installation wesley chapel": {
+  "vol": 10,
+  "cpc": 30.03,
+  "competition": "HIGH"
+ },
+ "gutter installation land o lakes": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "gutter installation nocatee": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "deck builder prosper": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "deck builder celina": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "deck builder frisco": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "deck builder mckinney": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "deck builder allen": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "deck builder little elm": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "deck builder anna": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "deck builder melissa": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "deck builder southlake": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "deck builder flower mound": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "deck builder keller": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "deck builder rockwall": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "deck builder wylie": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "deck builder forney": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "deck builder midlothian": {
+  "vol": 10,
+  "cpc": null,
+  "competition": null
+ },
+ "deck builder mansfield": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "deck builder georgetown": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "deck builder leander": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "deck builder cedar park": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "deck builder new braunfels": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "deck builder conroe": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "deck builder katy": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "deck builder gilbert": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "deck builder queen creek": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "deck builder maricopa": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "deck builder meridian": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "deck builder nampa": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "deck builder lehi": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "deck builder south jordan": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "deck builder herriman": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "deck builder fishers": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "deck builder carmel": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "deck builder westfield": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "deck builder franklin": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "deck builder spring hill": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "deck builder nolensville": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "deck builder apex": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "deck builder holly springs": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "deck builder wake forest": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "deck builder fuquay-varina": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "deck builder fort mill": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "deck builder indian trail": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "deck builder summerville": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "deck builder cumming": {
+  "vol": 10,
+  "cpc": null,
+  "competition": "LOW"
+ },
+ "deck builder parker": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "deck builder castle rock": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "deck builder erie": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "deck builder windsor": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "deck builder bentonville": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "deck builder rogers": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "deck builder owasso": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "deck builder jenks": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "deck builder ankeny": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "deck builder waukee": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "deck builder papillion": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "deck builder wesley chapel": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "deck builder land o lakes": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "deck builder nocatee": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "land clearing prosper": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "land clearing celina": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "land clearing frisco": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "land clearing mckinney": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "land clearing allen": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "land clearing little elm": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "land clearing anna": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "land clearing melissa": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "land clearing southlake": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "land clearing flower mound": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "land clearing keller": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "land clearing rockwall": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "land clearing wylie": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "land clearing forney": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "land clearing midlothian": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "land clearing mansfield": {
+  "vol": 10,
+  "cpc": null,
+  "competition": null
+ },
+ "land clearing georgetown": {
+  "vol": 10,
+  "cpc": null,
+  "competition": "LOW"
+ },
+ "land clearing leander": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "land clearing cedar park": {
+  "vol": 10,
+  "cpc": null,
+  "competition": null
+ },
+ "land clearing new braunfels": {
+  "vol": 30,
+  "cpc": 0.51,
+  "competition": "MEDIUM"
+ },
+ "land clearing conroe": {
+  "vol": 140,
+  "cpc": 44.61,
+  "competition": "LOW"
+ },
+ "land clearing katy": {
+  "vol": 30,
+  "cpc": null,
+  "competition": "HIGH"
+ },
+ "land clearing gilbert": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "land clearing queen creek": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "land clearing maricopa": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "land clearing meridian": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "land clearing nampa": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "land clearing lehi": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "land clearing south jordan": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "land clearing herriman": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "land clearing fishers": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "land clearing carmel": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "land clearing westfield": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "land clearing franklin": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "land clearing spring hill": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "land clearing nolensville": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "land clearing apex": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "land clearing holly springs": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "land clearing wake forest": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "land clearing fuquay-varina": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "land clearing fort mill": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "land clearing indian trail": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "land clearing summerville": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "land clearing cumming": {
+  "vol": 10,
+  "cpc": null,
+  "competition": "LOW"
+ },
+ "land clearing parker": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "land clearing castle rock": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "land clearing erie": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "land clearing windsor": {
+  "vol": 10,
+  "cpc": null,
+  "competition": null
+ },
+ "land clearing bentonville": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "land clearing rogers": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "land clearing owasso": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "land clearing jenks": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "land clearing ankeny": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "land clearing waukee": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "land clearing papillion": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "land clearing wesley chapel": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "land clearing land o lakes": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "land clearing nocatee": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "dumpster rental prosper": {
+  "vol": 10,
+  "cpc": null,
+  "competition": "MEDIUM"
+ },
+ "dumpster rental celina": {
+  "vol": 70,
+  "cpc": 1.92,
+  "competition": "MEDIUM"
+ },
+ "dumpster rental frisco": {
+  "vol": 480,
+  "cpc": 11.66,
+  "competition": "LOW"
+ },
+ "dumpster rental mckinney": {
+  "vol": 320,
+  "cpc": 7.05,
+  "competition": "HIGH"
+ },
+ "dumpster rental allen": {
+  "vol": 110,
+  "cpc": 10.73,
+  "competition": "MEDIUM"
+ },
+ "dumpster rental little elm": {
+  "vol": 10,
+  "cpc": 8.2,
+  "competition": "HIGH"
+ },
+ "dumpster rental anna": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "dumpster rental melissa": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "dumpster rental southlake": {
+  "vol": 10,
+  "cpc": 18.22,
+  "competition": "MEDIUM"
+ },
+ "dumpster rental flower mound": {
+  "vol": 110,
+  "cpc": 4.15,
+  "competition": "MEDIUM"
+ },
+ "dumpster rental keller": {
+  "vol": 90,
+  "cpc": 12.27,
+  "competition": "HIGH"
+ },
+ "dumpster rental rockwall": {
+  "vol": 90,
+  "cpc": 3.65,
+  "competition": "HIGH"
+ },
+ "dumpster rental wylie": {
+  "vol": 70,
+  "cpc": 5.73,
+  "competition": "MEDIUM"
+ },
+ "dumpster rental forney": {
+  "vol": 90,
+  "cpc": 12.52,
+  "competition": "HIGH"
+ },
+ "dumpster rental midlothian": {
+  "vol": 40,
+  "cpc": 8.95,
+  "competition": "MEDIUM"
+ },
+ "dumpster rental mansfield": {
+  "vol": 590,
+  "cpc": 3.29,
+  "competition": "MEDIUM"
+ },
+ "dumpster rental georgetown": {
+  "vol": 260,
+  "cpc": 10.86,
+  "competition": "HIGH"
+ },
+ "dumpster rental leander": {
+  "vol": 210,
+  "cpc": 9.3,
+  "competition": "HIGH"
+ },
+ "dumpster rental cedar park": {
+  "vol": 70,
+  "cpc": 10.19,
+  "competition": "HIGH"
+ },
+ "dumpster rental new braunfels": {
+  "vol": 320,
+  "cpc": 10.49,
+  "competition": "HIGH"
+ },
+ "dumpster rental conroe": {
+  "vol": 480,
+  "cpc": 6.52,
+  "competition": "HIGH"
+ },
+ "dumpster rental katy": {
+  "vol": 320,
+  "cpc": 9.75,
+  "competition": "HIGH"
+ },
+ "dumpster rental gilbert": {
+  "vol": 20,
+  "cpc": 13.08,
+  "competition": "LOW"
+ },
+ "dumpster rental queen creek": {
+  "vol": 110,
+  "cpc": 9.23,
+  "competition": "MEDIUM"
+ },
+ "dumpster rental maricopa": {
+  "vol": 10,
+  "cpc": 5.6,
+  "competition": "MEDIUM"
+ },
+ "dumpster rental meridian": {
+  "vol": 390,
+  "cpc": 9.16,
+  "competition": "MEDIUM"
+ },
+ "dumpster rental nampa": {
+  "vol": 170,
+  "cpc": 9.8,
+  "competition": "HIGH"
+ },
+ "dumpster rental lehi": {
+  "vol": 70,
+  "cpc": 9.75,
+  "competition": "HIGH"
+ },
+ "dumpster rental south jordan": {
+  "vol": 390,
+  "cpc": 5.7,
+  "competition": "MEDIUM"
+ },
+ "dumpster rental herriman": {
+  "vol": 30,
+  "cpc": 10.67,
+  "competition": "HIGH"
+ },
+ "dumpster rental fishers": {
+  "vol": 210,
+  "cpc": 8.27,
+  "competition": "HIGH"
+ },
+ "dumpster rental carmel": {
+  "vol": 170,
+  "cpc": 7.49,
+  "competition": "HIGH"
+ },
+ "dumpster rental westfield": {
+  "vol": 210,
+  "cpc": 5.08,
+  "competition": "HIGH"
+ },
+ "dumpster rental franklin": {
+  "vol": 320,
+  "cpc": 14.44,
+  "competition": "HIGH"
+ },
+ "dumpster rental spring hill": {
+  "vol": 320,
+  "cpc": 10.01,
+  "competition": "HIGH"
+ },
+ "dumpster rental nolensville": {
+  "vol": 10,
+  "cpc": 43.31,
+  "competition": "HIGH"
+ },
+ "dumpster rental apex": {
+  "vol": 90,
+  "cpc": 8.89,
+  "competition": "HIGH"
+ },
+ "dumpster rental holly springs": {
+  "vol": 20,
+  "cpc": 8.34,
+  "competition": "HIGH"
+ },
+ "dumpster rental wake forest": {
+  "vol": 140,
+  "cpc": 9.02,
+  "competition": "HIGH"
+ },
+ "dumpster rental fuquay-varina": {
+  "vol": 110,
+  "cpc": 8.23,
+  "competition": "HIGH"
+ },
+ "dumpster rental fort mill": {
+  "vol": 70,
+  "cpc": 17.95,
+  "competition": "MEDIUM"
+ },
+ "dumpster rental indian trail": {
+  "vol": 110,
+  "cpc": 1.81,
+  "competition": "MEDIUM"
+ },
+ "dumpster rental summerville": {
+  "vol": 320,
+  "cpc": 10.74,
+  "competition": "HIGH"
+ },
+ "dumpster rental cumming": {
+  "vol": 260,
+  "cpc": 7.5,
+  "competition": "MEDIUM"
+ },
+ "dumpster rental parker": {
+  "vol": 260,
+  "cpc": 8.63,
+  "competition": "HIGH"
+ },
+ "dumpster rental castle rock": {
+  "vol": 210,
+  "cpc": 7.14,
+  "competition": "HIGH"
+ },
+ "dumpster rental erie": {
+  "vol": 720,
+  "cpc": 4.76,
+  "competition": "MEDIUM"
+ },
+ "dumpster rental windsor": {
+  "vol": 30,
+  "cpc": 11.8,
+  "competition": "HIGH"
+ },
+ "dumpster rental bentonville": {
+  "vol": 480,
+  "cpc": 14.54,
+  "competition": "HIGH"
+ },
+ "dumpster rental rogers": {
+  "vol": 10,
+  "cpc": null,
+  "competition": "MEDIUM"
+ },
+ "dumpster rental owasso": {
+  "vol": 70,
+  "cpc": 7.19,
+  "competition": "HIGH"
+ },
+ "dumpster rental jenks": {
+  "vol": 20,
+  "cpc": 7.68,
+  "competition": "HIGH"
+ },
+ "dumpster rental ankeny": {
+  "vol": 70,
+  "cpc": 5.11,
+  "competition": "HIGH"
+ },
+ "dumpster rental waukee": {
+  "vol": 10,
+  "cpc": 6.57,
+  "competition": "HIGH"
+ },
+ "dumpster rental papillion": {
+  "vol": 50,
+  "cpc": 6.71,
+  "competition": "HIGH"
+ },
+ "dumpster rental wesley chapel": {
+  "vol": 90,
+  "cpc": 25.86,
+  "competition": "HIGH"
+ },
+ "dumpster rental land o lakes": {
+  "vol": 70,
+  "cpc": 17.8,
+  "competition": "HIGH"
+ },
+ "dumpster rental nocatee": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "air duct cleaning prosper": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "air duct cleaning celina": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "air duct cleaning frisco": {
+  "vol": 390,
+  "cpc": 37.23,
+  "competition": "MEDIUM"
+ },
+ "air duct cleaning mckinney": {
+  "vol": 170,
+  "cpc": 27.38,
+  "competition": "HIGH"
+ },
+ "air duct cleaning allen": {
+  "vol": 40,
+  "cpc": null,
+  "competition": "MEDIUM"
+ },
+ "air duct cleaning little elm": {
+  "vol": 10,
+  "cpc": 78.94,
+  "competition": "HIGH"
+ },
+ "air duct cleaning anna": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "air duct cleaning melissa": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "air duct cleaning southlake": {
+  "vol": 70,
+  "cpc": 51.95,
+  "competition": "HIGH"
+ },
+ "air duct cleaning flower mound": {
+  "vol": 140,
+  "cpc": 37.36,
+  "competition": "HIGH"
+ },
+ "air duct cleaning keller": {
+  "vol": 30,
+  "cpc": 274.3,
+  "competition": "MEDIUM"
+ },
+ "air duct cleaning rockwall": {
+  "vol": 140,
+  "cpc": 26.81,
+  "competition": "MEDIUM"
+ },
+ "air duct cleaning wylie": {
+  "vol": 50,
+  "cpc": 68.81,
+  "competition": "MEDIUM"
+ },
+ "air duct cleaning forney": {
+  "vol": 20,
+  "cpc": 42.77,
+  "competition": "HIGH"
+ },
+ "air duct cleaning midlothian": {
+  "vol": 50,
+  "cpc": 12.68,
+  "competition": "HIGH"
+ },
+ "air duct cleaning mansfield": {
+  "vol": 10,
+  "cpc": null,
+  "competition": "MEDIUM"
+ },
+ "air duct cleaning georgetown": {
+  "vol": 40,
+  "cpc": 20.34,
+  "competition": "LOW"
+ },
+ "air duct cleaning leander": {
+  "vol": 30,
+  "cpc": 61.4,
+  "competition": "HIGH"
+ },
+ "air duct cleaning cedar park": {
+  "vol": 70,
+  "cpc": 76.33,
+  "competition": "HIGH"
+ },
+ "air duct cleaning new braunfels": {
+  "vol": 50,
+  "cpc": 50.79,
+  "competition": "HIGH"
+ },
+ "air duct cleaning conroe": {
+  "vol": 10,
+  "cpc": null,
+  "competition": "HIGH"
+ },
+ "air duct cleaning katy": {
+  "vol": 210,
+  "cpc": 29.06,
+  "competition": "HIGH"
+ },
+ "air duct cleaning gilbert": {
+  "vol": 110,
+  "cpc": 12.57,
+  "competition": "HIGH"
+ },
+ "air duct cleaning queen creek": {
+  "vol": 20,
+  "cpc": 28.93,
+  "competition": "HIGH"
+ },
+ "air duct cleaning maricopa": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "air duct cleaning meridian": {
+  "vol": 90,
+  "cpc": 31.88,
+  "competition": "HIGH"
+ },
+ "air duct cleaning nampa": {
+  "vol": 70,
+  "cpc": 26.88,
+  "competition": "HIGH"
+ },
+ "air duct cleaning lehi": {
+  "vol": 20,
+  "cpc": 52.94,
+  "competition": "HIGH"
+ },
+ "air duct cleaning south jordan": {
+  "vol": 20,
+  "cpc": null,
+  "competition": "HIGH"
+ },
+ "air duct cleaning herriman": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "air duct cleaning fishers": {
+  "vol": 30,
+  "cpc": 6.45,
+  "competition": "HIGH"
+ },
+ "air duct cleaning carmel": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "air duct cleaning westfield": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "air duct cleaning franklin": {
+  "vol": 90,
+  "cpc": 41.34,
+  "competition": "HIGH"
+ },
+ "air duct cleaning spring hill": {
+  "vol": 140,
+  "cpc": 28.91,
+  "competition": "HIGH"
+ },
+ "air duct cleaning nolensville": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "air duct cleaning apex": {
+  "vol": 720,
+  "cpc": 17,
+  "competition": "MEDIUM"
+ },
+ "air duct cleaning holly springs": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "air duct cleaning wake forest": {
+  "vol": 70,
+  "cpc": 17.8,
+  "competition": "HIGH"
+ },
+ "air duct cleaning fuquay-varina": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "air duct cleaning fort mill": {
+  "vol": 50,
+  "cpc": null,
+  "competition": "LOW"
+ },
+ "air duct cleaning indian trail": {
+  "vol": 10,
+  "cpc": null,
+  "competition": null
+ },
+ "air duct cleaning summerville": {
+  "vol": 90,
+  "cpc": 48.88,
+  "competition": "HIGH"
+ },
+ "air duct cleaning cumming": {
+  "vol": 70,
+  "cpc": 35.61,
+  "competition": "HIGH"
+ },
+ "air duct cleaning parker": {
+  "vol": 260,
+  "cpc": 9.89,
+  "competition": "HIGH"
+ },
+ "air duct cleaning castle rock": {
+  "vol": 210,
+  "cpc": 22.81,
+  "competition": "HIGH"
+ },
+ "air duct cleaning erie": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "air duct cleaning windsor": {
+  "vol": 320,
+  "cpc": 14.29,
+  "competition": "MEDIUM"
+ },
+ "air duct cleaning bentonville": {
+  "vol": 10,
+  "cpc": null,
+  "competition": "MEDIUM"
+ },
+ "air duct cleaning rogers": {
+  "vol": 10,
+  "cpc": null,
+  "competition": "LOW"
+ },
+ "air duct cleaning owasso": {
+  "vol": 10,
+  "cpc": 42.46,
+  "competition": "MEDIUM"
+ },
+ "air duct cleaning jenks": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "air duct cleaning ankeny": {
+  "vol": 20,
+  "cpc": 6.42,
+  "competition": "HIGH"
+ },
+ "air duct cleaning waukee": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "air duct cleaning papillion": {
+  "vol": 110,
+  "cpc": 36.29,
+  "competition": "HIGH"
+ },
+ "air duct cleaning wesley chapel": {
+  "vol": 40,
+  "cpc": 46.43,
+  "competition": "HIGH"
+ },
+ "air duct cleaning land o lakes": {
+  "vol": 10,
+  "cpc": null,
+  "competition": null
+ },
+ "air duct cleaning nocatee": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "appliance repair prosper": {
+  "vol": 320,
+  "cpc": 3.02,
+  "competition": "LOW"
+ },
+ "appliance repair celina": {
+  "vol": 40,
+  "cpc": 1.22,
+  "competition": "MEDIUM"
+ },
+ "appliance repair frisco": {
+  "vol": 590,
+  "cpc": 17.1,
+  "competition": "HIGH"
+ },
+ "appliance repair mckinney": {
+  "vol": 720,
+  "cpc": 15.93,
+  "competition": "HIGH"
+ },
+ "appliance repair allen": {
+  "vol": 70,
+  "cpc": 12.37,
+  "competition": "HIGH"
+ },
+ "appliance repair little elm": {
+  "vol": 90,
+  "cpc": 14.21,
+  "competition": "HIGH"
+ },
+ "appliance repair anna": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "appliance repair melissa": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "appliance repair southlake": {
+  "vol": 90,
+  "cpc": 8.26,
+  "competition": "HIGH"
+ },
+ "appliance repair flower mound": {
+  "vol": 170,
+  "cpc": 23.1,
+  "competition": "HIGH"
+ },
+ "appliance repair keller": {
+  "vol": 260,
+  "cpc": 14.41,
+  "competition": "HIGH"
+ },
+ "appliance repair rockwall": {
+  "vol": 260,
+  "cpc": 10.31,
+  "competition": "MEDIUM"
+ },
+ "appliance repair wylie": {
+  "vol": 90,
+  "cpc": 10.91,
+  "competition": "HIGH"
+ },
+ "appliance repair forney": {
+  "vol": 140,
+  "cpc": 7.74,
+  "competition": "MEDIUM"
+ },
+ "appliance repair midlothian": {
+  "vol": 170,
+  "cpc": 10.59,
+  "competition": "HIGH"
+ },
+ "appliance repair mansfield": {
+  "vol": 210,
+  "cpc": 12.38,
+  "competition": "HIGH"
+ },
+ "appliance repair georgetown": {
+  "vol": 50,
+  "cpc": 6.72,
+  "competition": "HIGH"
+ },
+ "appliance repair leander": {
+  "vol": 140,
+  "cpc": 19.37,
+  "competition": "HIGH"
+ },
+ "appliance repair cedar park": {
+  "vol": 110,
+  "cpc": 17.34,
+  "competition": "HIGH"
+ },
+ "appliance repair new braunfels": {
+  "vol": 260,
+  "cpc": 16.17,
+  "competition": "HIGH"
+ },
+ "appliance repair conroe": {
+  "vol": 90,
+  "cpc": 32.52,
+  "competition": "HIGH"
+ },
+ "appliance repair katy": {
+  "vol": 390,
+  "cpc": 16.52,
+  "competition": "HIGH"
+ },
+ "appliance repair gilbert": {
+  "vol": 390,
+  "cpc": 15.79,
+  "competition": "HIGH"
+ },
+ "appliance repair queen creek": {
+  "vol": 210,
+  "cpc": 11.65,
+  "competition": "HIGH"
+ },
+ "appliance repair maricopa": {
+  "vol": 90,
+  "cpc": 13.53,
+  "competition": "HIGH"
+ },
+ "appliance repair meridian": {
+  "vol": 210,
+  "cpc": 11.63,
+  "competition": "HIGH"
+ },
+ "appliance repair nampa": {
+  "vol": 260,
+  "cpc": 13.21,
+  "competition": "HIGH"
+ },
+ "appliance repair lehi": {
+  "vol": 90,
+  "cpc": 24.03,
+  "competition": "HIGH"
+ },
+ "appliance repair south jordan": {
+  "vol": 70,
+  "cpc": 21.12,
+  "competition": "HIGH"
+ },
+ "appliance repair herriman": {
+  "vol": 40,
+  "cpc": 34.48,
+  "competition": "HIGH"
+ },
+ "appliance repair fishers": {
+  "vol": 210,
+  "cpc": 10.53,
+  "competition": "HIGH"
+ },
+ "appliance repair carmel": {
+  "vol": 260,
+  "cpc": 9.74,
+  "competition": "HIGH"
+ },
+ "appliance repair westfield": {
+  "vol": 170,
+  "cpc": 7.27,
+  "competition": "MEDIUM"
+ },
+ "appliance repair franklin": {
+  "vol": 320,
+  "cpc": 5.96,
+  "competition": "HIGH"
+ },
+ "appliance repair spring hill": {
+  "vol": 210,
+  "cpc": 14.32,
+  "competition": "HIGH"
+ },
+ "appliance repair nolensville": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "appliance repair apex": {
+  "vol": 20,
+  "cpc": 2.09,
+  "competition": "HIGH"
+ },
+ "appliance repair holly springs": {
+  "vol": 70,
+  "cpc": 8.53,
+  "competition": "HIGH"
+ },
+ "appliance repair wake forest": {
+  "vol": 170,
+  "cpc": 8.47,
+  "competition": "HIGH"
+ },
+ "appliance repair fuquay-varina": {
+  "vol": 140,
+  "cpc": 8.52,
+  "competition": "HIGH"
+ },
+ "appliance repair fort mill": {
+  "vol": 170,
+  "cpc": 20.09,
+  "competition": "HIGH"
+ },
+ "appliance repair indian trail": {
+  "vol": 30,
+  "cpc": 14.6,
+  "competition": "HIGH"
+ },
+ "appliance repair summerville": {
+  "vol": 20,
+  "cpc": 21.22,
+  "competition": "HIGH"
+ },
+ "appliance repair cumming": {
+  "vol": 320,
+  "cpc": 11.56,
+  "competition": "HIGH"
+ },
+ "appliance repair parker": {
+  "vol": 260,
+  "cpc": 8.29,
+  "competition": "HIGH"
+ },
+ "appliance repair castle rock": {
+  "vol": 260,
+  "cpc": 12.41,
+  "competition": "HIGH"
+ },
+ "appliance repair erie": {
+  "vol": 590,
+  "cpc": 6.99,
+  "competition": "HIGH"
+ },
+ "appliance repair windsor": {
+  "vol": 90,
+  "cpc": 6.48,
+  "competition": "MEDIUM"
+ },
+ "appliance repair bentonville": {
+  "vol": 170,
+  "cpc": 10.66,
+  "competition": "MEDIUM"
+ },
+ "appliance repair rogers": {
+  "vol": 320,
+  "cpc": 3.87,
+  "competition": "MEDIUM"
+ },
+ "appliance repair owasso": {
+  "vol": 140,
+  "cpc": 5.47,
+  "competition": "HIGH"
+ },
+ "appliance repair jenks": {
+  "vol": 10,
+  "cpc": 9.54,
+  "competition": "HIGH"
+ },
+ "appliance repair ankeny": {
+  "vol": 170,
+  "cpc": 9.57,
+  "competition": "HIGH"
+ },
+ "appliance repair waukee": {
+  "vol": 30,
+  "cpc": 8.72,
+  "competition": "HIGH"
+ },
+ "appliance repair papillion": {
+  "vol": 30,
+  "cpc": 13.19,
+  "competition": "HIGH"
+ },
+ "appliance repair wesley chapel": {
+  "vol": 320,
+  "cpc": 25.67,
+  "competition": "HIGH"
+ },
+ "appliance repair land o lakes": {
+  "vol": 110,
+  "cpc": 23.98,
+  "competition": "HIGH"
+ },
+ "appliance repair nocatee": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "mold remediation prosper": {
+  "vol": 10,
+  "cpc": null,
+  "competition": null
+ },
+ "mold remediation celina": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "mold remediation frisco": {
+  "vol": 170,
+  "cpc": 27.98,
+  "competition": "MEDIUM"
+ },
+ "mold remediation mckinney": {
+  "vol": 50,
+  "cpc": 83.89,
+  "competition": "MEDIUM"
+ },
+ "mold remediation allen": {
+  "vol": 10,
+  "cpc": null,
+  "competition": null
+ },
+ "mold remediation little elm": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "mold remediation anna": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "mold remediation melissa": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "mold remediation southlake": {
+  "vol": 10,
+  "cpc": null,
+  "competition": "LOW"
+ },
+ "mold remediation flower mound": {
+  "vol": 10,
+  "cpc": null,
+  "competition": "MEDIUM"
+ },
+ "mold remediation keller": {
+  "vol": 10,
+  "cpc": null,
+  "competition": "LOW"
+ },
+ "mold remediation rockwall": {
+  "vol": 110,
+  "cpc": 40.52,
+  "competition": "HIGH"
+ },
+ "mold remediation wylie": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "mold remediation forney": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "mold remediation midlothian": {
+  "vol": 10,
+  "cpc": 107.9,
+  "competition": "HIGH"
+ },
+ "mold remediation mansfield": {
+  "vol": 10,
+  "cpc": 5.89,
+  "competition": "LOW"
+ },
+ "mold remediation georgetown": {
+  "vol": 10,
+  "cpc": null,
+  "competition": "MEDIUM"
+ },
+ "mold remediation leander": {
+  "vol": 10,
+  "cpc": 327.72,
+  "competition": "HIGH"
+ },
+ "mold remediation cedar park": {
+  "vol": 30,
+  "cpc": 50.46,
+  "competition": "HIGH"
+ },
+ "mold remediation new braunfels": {
+  "vol": 20,
+  "cpc": 45.11,
+  "competition": "HIGH"
+ },
+ "mold remediation conroe": {
+  "vol": 30,
+  "cpc": 27.12,
+  "competition": "MEDIUM"
+ },
+ "mold remediation katy": {
+  "vol": 70,
+  "cpc": 82.38,
+  "competition": "HIGH"
+ },
+ "mold remediation gilbert": {
+  "vol": 70,
+  "cpc": null,
+  "competition": "LOW"
+ },
+ "mold remediation queen creek": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "mold remediation maricopa": {
+  "vol": 10,
+  "cpc": null,
+  "competition": null
+ },
+ "mold remediation meridian": {
+  "vol": 10,
+  "cpc": null,
+  "competition": "HIGH"
+ },
+ "mold remediation nampa": {
+  "vol": 10,
+  "cpc": 0.78,
+  "competition": "HIGH"
+ },
+ "mold remediation lehi": {
+  "vol": 10,
+  "cpc": null,
+  "competition": "LOW"
+ },
+ "mold remediation south jordan": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "mold remediation herriman": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "mold remediation fishers": {
+  "vol": 50,
+  "cpc": null,
+  "competition": "LOW"
+ },
+ "mold remediation carmel": {
+  "vol": 10,
+  "cpc": null,
+  "competition": "LOW"
+ },
+ "mold remediation westfield": {
+  "vol": 10,
+  "cpc": null,
+  "competition": null
+ },
+ "mold remediation franklin": {
+  "vol": 210,
+  "cpc": 14.9,
+  "competition": "LOW"
+ },
+ "mold remediation spring hill": {
+  "vol": 20,
+  "cpc": 165.13,
+  "competition": "HIGH"
+ },
+ "mold remediation nolensville": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "mold remediation apex": {
+  "vol": 50,
+  "cpc": null,
+  "competition": null
+ },
+ "mold remediation holly springs": {
+  "vol": 50,
+  "cpc": null,
+  "competition": "LOW"
+ },
+ "mold remediation wake forest": {
+  "vol": 50,
+  "cpc": null,
+  "competition": "LOW"
+ },
+ "mold remediation fuquay-varina": {
+  "vol": 50,
+  "cpc": null,
+  "competition": "HIGH"
+ },
+ "mold remediation fort mill": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "mold remediation indian trail": {
+  "vol": 10,
+  "cpc": null,
+  "competition": null
+ },
+ "mold remediation summerville": {
+  "vol": 50,
+  "cpc": 67.25,
+  "competition": "HIGH"
+ },
+ "mold remediation cumming": {
+  "vol": 40,
+  "cpc": 31.49,
+  "competition": "HIGH"
+ },
+ "mold remediation parker": {
+  "vol": 10,
+  "cpc": null,
+  "competition": null
+ },
+ "mold remediation castle rock": {
+  "vol": 40,
+  "cpc": 160.82,
+  "competition": "LOW"
+ },
+ "mold remediation erie": {
+  "vol": 90,
+  "cpc": 0.87,
+  "competition": "HIGH"
+ },
+ "mold remediation windsor": {
+  "vol": 50,
+  "cpc": 11,
+  "competition": "HIGH"
+ },
+ "mold remediation bentonville": {
+  "vol": 40,
+  "cpc": 31.42,
+  "competition": "MEDIUM"
+ },
+ "mold remediation rogers": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "mold remediation owasso": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "mold remediation jenks": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "mold remediation ankeny": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "mold remediation waukee": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "mold remediation papillion": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "mold remediation wesley chapel": {
+  "vol": 70,
+  "cpc": 67.31,
+  "competition": "MEDIUM"
+ },
+ "mold remediation land o lakes": {
+  "vol": 10,
+  "cpc": null,
+  "competition": "HIGH"
+ },
+ "mold remediation nocatee": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "stump grinding prosper": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "stump grinding celina": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "stump grinding frisco": {
+  "vol": 10,
+  "cpc": null,
+  "competition": null
+ },
+ "stump grinding mckinney": {
+  "vol": 110,
+  "cpc": null,
+  "competition": "LOW"
+ },
+ "stump grinding allen": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "stump grinding little elm": {
+  "vol": 10,
+  "cpc": null,
+  "competition": null
+ },
+ "stump grinding anna": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "stump grinding melissa": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "stump grinding southlake": {
+  "vol": 10,
+  "cpc": null,
+  "competition": null
+ },
+ "stump grinding flower mound": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "stump grinding keller": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "stump grinding rockwall": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "stump grinding wylie": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "stump grinding forney": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "stump grinding midlothian": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "stump grinding mansfield": {
+  "vol": 10,
+  "cpc": null,
+  "competition": null
+ },
+ "stump grinding georgetown": {
+  "vol": 10,
+  "cpc": 23.38,
+  "competition": "HIGH"
+ },
+ "stump grinding leander": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "stump grinding cedar park": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "stump grinding new braunfels": {
+  "vol": 10,
+  "cpc": null,
+  "competition": "MEDIUM"
+ },
+ "stump grinding conroe": {
+  "vol": 10,
+  "cpc": 4.21,
+  "competition": "LOW"
+ },
+ "stump grinding katy": {
+  "vol": 10,
+  "cpc": 4.74,
+  "competition": "LOW"
+ },
+ "stump grinding gilbert": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "stump grinding queen creek": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "stump grinding maricopa": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "stump grinding meridian": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "stump grinding nampa": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "stump grinding lehi": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "stump grinding south jordan": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "stump grinding herriman": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "stump grinding fishers": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "stump grinding carmel": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "stump grinding westfield": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "stump grinding franklin": {
+  "vol": 20,
+  "cpc": 8.75,
+  "competition": "MEDIUM"
+ },
+ "stump grinding spring hill": {
+  "vol": 50,
+  "cpc": null,
+  "competition": "LOW"
+ },
+ "stump grinding nolensville": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "stump grinding apex": {
+  "vol": 10,
+  "cpc": null,
+  "competition": null
+ },
+ "stump grinding holly springs": {
+  "vol": 10,
+  "cpc": null,
+  "competition": "MEDIUM"
+ },
+ "stump grinding wake forest": {
+  "vol": 20,
+  "cpc": 2.94,
+  "competition": "HIGH"
+ },
+ "stump grinding fuquay-varina": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "stump grinding fort mill": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "stump grinding indian trail": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "stump grinding summerville": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "stump grinding cumming": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "stump grinding parker": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "stump grinding castle rock": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "stump grinding erie": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "stump grinding windsor": {
+  "vol": 10,
+  "cpc": null,
+  "competition": "LOW"
+ },
+ "stump grinding bentonville": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "stump grinding rogers": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "stump grinding owasso": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "stump grinding jenks": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "stump grinding ankeny": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "stump grinding waukee": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "stump grinding papillion": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "stump grinding wesley chapel": {
+  "vol": 10,
+  "cpc": 85.5,
+  "competition": "LOW"
+ },
+ "stump grinding land o lakes": {
+  "vol": 10,
+  "cpc": 12.32,
+  "competition": "HIGH"
+ },
+ "stump grinding nocatee": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "sewer line repair prosper": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "sewer line repair celina": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "sewer line repair frisco": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "sewer line repair mckinney": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "sewer line repair allen": {
+  "vol": 10,
+  "cpc": null,
+  "competition": "LOW"
+ },
+ "sewer line repair little elm": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "sewer line repair anna": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "sewer line repair melissa": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "sewer line repair southlake": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "sewer line repair flower mound": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "sewer line repair keller": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "sewer line repair rockwall": {
+  "vol": 10,
+  "cpc": null,
+  "competition": "LOW"
+ },
+ "sewer line repair wylie": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "sewer line repair forney": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "sewer line repair midlothian": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "sewer line repair mansfield": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "sewer line repair georgetown": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "sewer line repair leander": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "sewer line repair cedar park": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "sewer line repair new braunfels": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "sewer line repair conroe": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "sewer line repair katy": {
+  "vol": 10,
+  "cpc": null,
+  "competition": "LOW"
+ },
+ "sewer line repair gilbert": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "sewer line repair queen creek": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "sewer line repair maricopa": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "sewer line repair meridian": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "sewer line repair nampa": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "sewer line repair lehi": {
+  "vol": 10,
+  "cpc": null,
+  "competition": "LOW"
+ },
+ "sewer line repair south jordan": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "sewer line repair herriman": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "sewer line repair fishers": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "sewer line repair carmel": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "sewer line repair westfield": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "sewer line repair franklin": {
+  "vol": 10,
+  "cpc": null,
+  "competition": "LOW"
+ },
+ "sewer line repair spring hill": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "sewer line repair nolensville": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "sewer line repair apex": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "sewer line repair holly springs": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "sewer line repair wake forest": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "sewer line repair fuquay-varina": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "sewer line repair fort mill": {
+  "vol": 10,
+  "cpc": null,
+  "competition": null
+ },
+ "sewer line repair indian trail": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "sewer line repair summerville": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "sewer line repair cumming": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "sewer line repair parker": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "sewer line repair castle rock": {
+  "vol": 10,
+  "cpc": null,
+  "competition": "LOW"
+ },
+ "sewer line repair erie": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "sewer line repair windsor": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "sewer line repair bentonville": {
+  "vol": 10,
+  "cpc": null,
+  "competition": null
+ },
+ "sewer line repair rogers": {
+  "vol": 10,
+  "cpc": null,
+  "competition": null
+ },
+ "sewer line repair owasso": {
+  "vol": 10,
+  "cpc": null,
+  "competition": null
+ },
+ "sewer line repair jenks": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "sewer line repair ankeny": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "sewer line repair waukee": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "sewer line repair papillion": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "sewer line repair wesley chapel": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "sewer line repair land o lakes": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ },
+ "sewer line repair nocatee": {
+  "vol": 0,
+  "cpc": null,
+  "competition": null
+ }
+}

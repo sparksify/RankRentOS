@@ -1,0 +1,11 @@
+{
+  "name": "leadgen-scout",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Rank-and-rent market scout: scores (niche, city) pairs for organic winnability and finds available exact-match domains",
+  "scripts": {
+    "domains": "node src/run.js --domains-only",
+    "scout": "node src/run.js",
+    "report": "node src/report.js"
+  }
+}
