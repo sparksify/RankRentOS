@@ -7,9 +7,10 @@ import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
-const SUPABASE_URL = process.env.SUPABASE_URL ?? 'https://drnsdklutxuohdpkjaou.supabase.co';
+// `||` not `??`: CI sets unset secrets to empty strings.
+const SUPABASE_URL = process.env.SUPABASE_URL || 'https://drnsdklutxuohdpkjaou.supabase.co';
 const SUPABASE_KEY =
-  process.env.SUPABASE_SERVICE_KEY ?? process.env.SUPABASE_ANON_KEY ??
+  process.env.SUPABASE_SERVICE_KEY || process.env.SUPABASE_ANON_KEY ||
   'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImRybnNka2x1dHh1b2hkcGtqYW91Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODU1MTQyNzYsImV4cCI6MjEwMTA5MDI3Nn0.w_gowG5WCCC7lrASxXBKVjCnSHCor9Up2ceydnlih5E';
 
 const headers = (extra = {}) => ({
