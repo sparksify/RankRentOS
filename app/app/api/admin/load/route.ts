@@ -35,8 +35,11 @@ export async function GET(req: Request) {
       let rows = 0, updates = 0;
       for (const op of ops) {
         if (op.op === 'upsert') {
-          for (let i = 0; i < op.rows.length; i += 400) {
-            const chunk = op.rows.slice(i, i + 400);
+          // PostgREST bulk inserts require identical keys on every row (PGRST102).
+          const keys = [...new Set(op.rows.flatMap((r) => Object.keys(r)))];
+          const normalized = op.rows.map((r) => Object.fromEntries(keys.map((k) => [k, r[k] ?? null])));
+          for (let i = 0; i < normalized.length; i += 400) {
+            const chunk = normalized.slice(i, i + 400);
             const params = op.onConflict ? `?on_conflict=${op.onConflict}` : '';
             const res = await fetch(`${SUPABASE_URL}/rest/v1/${op.table}${params}`, {
               method: 'POST',
