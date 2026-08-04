@@ -1,5 +1,6 @@
 import { NextResponse } from 'next/server';
 import { readFile, readdir } from 'fs/promises';
+import { gunzipSync } from 'zlib';
 import path from 'path';
 import { appPassword } from '@/lib/auth';
 
@@ -26,9 +27,11 @@ export async function GET(req: Request) {
   const dir = path.join(process.cwd(), 'data-snapshot');
   const summary: Record<string, unknown>[] = [];
   try {
-    const files = (await readdir(dir)).filter((f) => f.startsWith('db-rows-') && f.endsWith('.json')).sort();
+    const files = (await readdir(dir)).filter((f) => f.startsWith('db-rows-') && (f.endsWith('.json') || f.endsWith('.json.gz'))).sort();
     for (const file of files) {
-      const { stage, ops } = JSON.parse(await readFile(path.join(dir, file), 'utf8')) as { stage: string; ops: LoadOp[] };
+      const raw = await readFile(path.join(dir, file));
+      const text = file.endsWith('.gz') ? gunzipSync(raw).toString('utf8') : raw.toString('utf8');
+      const { stage, ops } = JSON.parse(text) as { stage: string; ops: LoadOp[] };
       let rows = 0, updates = 0;
       for (const op of ops) {
         if (op.op === 'upsert') {
