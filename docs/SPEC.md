@@ -11,12 +11,23 @@ intelligence lives in the **Playbooks**.
 
 ---
 
-## 0. The six engines
+## 0. The seven engines
 
 ```
 Research Engine → Scoring Engine → Planning Engine → Builder Engine → Operations Engine → Portfolio Engine
         ↑______________________________ outcome flywheel ______________________________|
+                                        ↕
+                              KNOWLEDGE GRAPH ENGINE
+                 (every scan deposits forever; the database IS a product)
 ```
+
+**The database doctrine:** every scan is permanent. The builder is valuable,
+the discovery engine is differentiated, **the database is the moat**. After a
+year of operation: hundreds of thousands of business entities with history,
+millions of keyword observations, neighborhood-level intelligence, operator
+quality scores, acquisition candidates, domain intelligence, asset valuations
+— a proprietary market-intelligence platform that powers our own decisions,
+feeds FounderScout, and eventually sells as a product in its own right.
 
 Entity lifecycle (each stage is its own table + screen + KPIs):
 
@@ -205,6 +216,54 @@ underneath, debuggable jobs (`research.neighborhoods`, `build.content`, …).
 
 ---
 
+## 10.5 Knowledge Graph Engine (seventh engine)
+
+### Entities + observations, append-only (the temporal design)
+- `businesses` — one row per real company (identity: name+domain+phone,
+  fuzzy-deduped across scans and across FounderScout).
+- `business_observations` — append-only timestamped facts per scan (rank,
+  reviews, rating, content depth, tech stack, GBP state…). Day-90 sits beside
+  Day-1; **nothing is ever overwritten** — history is a query.
+- `domain_observations` (availability flips feed the morning brief),
+  `serp_snapshots` (raw payloads move from local disk → Supabase Storage:
+  if the database is a product it cannot live on one laptop).
+- Relationships are foreign keys done seriously (neighborhood ↔ business ↔
+  operator ↔ domain ↔ asset ↔ lead ↔ revenue). **Postgres, not a graph DB** —
+  the flagship query ("plumbers within 10mi of Windsong Ranch, <50 reviews,
+  answers <70%, no exact-match domain") is SQL + a geo index. Graph infra only
+  if multi-hop reasoning ever demands it.
+
+### Data tiers (every field is tagged by acquisition cost)
+| Tier | Examples | Source |
+|---|---|---|
+| **Scan-time** (free, at scale) | ranks, reviews, website/phone, content depth, schema, domain age, tech, franchise flags | automatic on every scan |
+| **Enrichment-time** (pennies, on promotion) | owner name, verified email, employees, revenue est., backlinks/DR, PE ownership | FullEnrich / AnyMailFinder / Perplexity / DataForSEO |
+| **Operate-time** (only earnable) | answers-phone rate, response speed, close rate, lead feedback | routing leads + secret shopping — **the uncopyable tier** |
+
+### Derived scores (each shows its data tiers + confidence)
+- **Acquisition Score** — owner-age (inferred, labeled), website quality, SEO/AI
+  absence, single-location, recurring revenue, review strength. Scan-tier =
+  hypothesis; +enrichment = lead; +contact history = target. Feeds Steve's
+  buy-side plays AND is sellable to FounderScout's PE-rollup customers.
+- **Operator Score** — reviews/reputation/website (scan) + answers/closes
+  (operate). Best operators get first access to new lead flow.
+- **Lead/Prospect Scores** — pipeline-specific.
+
+### Pipeline memberships (FounderScout integration)
+One business, many roles: `lead | prospect | seo_client | rankrent_partner |
+acquisition_target | franchise_candidate`. RankRentOS is the system of record
+for the entity; FounderScout is one pipeline it can enter.
+
+### Website Marketplace (Phase 4)
+Every asset carries revenue, traffic, leads, profit, valuation
+(profit × 30–40x monthly multiple), estimated sale price, one-click
+listing export. Prerequisite: real `outcomes` history.
+
+### Compliance (day one, cheap now / expensive later)
+Every datum records its source; personal fields (owner name/email) are
+B2B-context only, outreach stays CAN-SPAM/TCPA-clean via the existing
+Smartlead stack; deletion requests honored.
+
 ## 11. Infrastructure decisions
 
 - **Job runner v1**: plain Node poller (`npm run worker`) on the Mac Studio
@@ -236,9 +295,13 @@ underneath, debuggable jobs (`research.neighborhoods`, `build.content`, …).
 
 ## 13. Build order
 
+Left nav adds: **Businesses · Acquisitions · Marketplace** (alongside
+Dashboard, Research, Opportunities, Assets, Leads, Operators, Analytics,
+Settings).
+
 | Session | Delivers |
 |---|---|
-| A | Schema v3 (playbooks/jobs/lifecycle/outcomes/snapshots) · Census cities import · playbook seeding (~30 from SOPs+scans) · `npm run worker` poller · cost governor |
+| A | Schema v4 (playbooks/jobs/lifecycle/outcomes/snapshots **+ businesses/observations — cannot be retrofitted, every scan must deposit from day one**) · backfill entities from the 1,392-market corpus + raw caches · Census cities import · playbook seeding (~30) · `npm run worker` poller · cost governor |
 | B | Research query UI + job progress stream + guardrail flags + Markets grid on new schema |
 | C | Neighborhood Research (Census/OSM/LLM) · AI Demand Discovery loop |
 | D | CI deep cards · six sub-scores + Confidence · Opportunity page (Zillow-style) |
