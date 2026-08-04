@@ -1,0 +1,53 @@
+{
+  "marketKey": "outdoor-kitchens|Katy|TX",
+  "nicheSlug": "outdoor-kitchens",
+  "city": "Katy",
+  "state": "TX",
+  "collectedAt": "2026-08-04T16:31:00Z",
+  "serp": {
+    "provider": "web_search",
+    "query": "outdoor kitchen builder Katy TX",
+    "engine": "web",
+    "device": "desktop",
+    "geoParams": {"location": "Katy, TX"},
+    "observedAt": "2026-08-04T16:30:10Z",
+    "results": [
+      {"position": 1, "resultType": "organic", "url": "https://www.pergolabuilderhouston.com/katy-outdoor-kitchen-job.html", "title": "Outdoor Kitchen Design – Katy, TX | (832) 509-5457", "snippet": "Pergola Builder Houston: custom outdoor kitchens, pergolas and patio covers throughout the Houston area."},
+      {"position": 2, "resultType": "organic", "url": "https://gazzinico.com/outdoor-kitchens/katy-tx/", "title": "Outdoor Kitchen Builders Katy, TX | Gazzini Construction", "snippet": "Gazzini Construction builds outdoor kitchens in Katy, TX; 832-244-7140."},
+      {"position": 3, "resultType": "organic", "url": "https://creekstoneoutdoors.com/service/outdoor-kitchen-construction-in-katy-texas/", "title": "Outdoor Kitchen Construction in Katy, Texas - Creekstone Outdoors", "snippet": "Creekstone Outdoors service page for outdoor kitchen construction in Katy."},
+      {"position": 4, "resultType": "organic", "url": "https://traditionoutdoorliving.com/katy-texas-outdoor-kitchen/", "title": "Katy, Texas Outdoor Kitchen", "snippet": "Tradition Outdoor Living city page for Katy outdoor kitchens."},
+      {"position": 5, "resultType": "organic", "url": "https://www.ecoworkstx.com/outdoor-kitchens/", "title": "Custom Outdoor Kitchen Katy ,TX | EcoWorks", "snippet": "EcoWorks in Katy Texas designs and builds custom outdoor kitchens."},
+      {"position": 6, "resultType": "organic", "url": "https://www.sagescapesanddesign.com/outdoor-living-contractors/custom-outdoor-kitchens/", "title": "Custom Outdoor Kitchen Contractors Fulshear Houston Katy & Cypress TX", "snippet": "Sage Scapes & Design: custom outdoor kitchens for Fulshear, Houston, Katy and Cypress."},
+      {"position": 7, "resultType": "organic", "url": "https://harrisonbuildingservices.com/exterior-remodeling/outdoor-kitchen-installation-design-contractors/", "title": "Outdoor Kitchen Installers Katy Houston Fulshear & Cypress TX", "snippet": "Harrison Construction & Remodeling, 22136 Westheimer Pkwy #403, Katy TX 77450; (713) 409-7632."},
+      {"position": 8, "resultType": "organic", "url": "https://yourtexaspatio.com/outdoor-kitchens-katy/", "title": "Outdoor Kitchens Katy TX | Your Texas Patio", "snippet": "Your Texas Patio: 7+ years focused solely on backyard kitchens and patios."},
+      {"position": 9, "resultType": "organic", "url": "https://yourgreatoutdoors.net/", "title": "Outdoor Living Design and Building Services - Your Great Outdoors Katy TX", "snippet": "Your Great Outdoors: showroom at 21930 Royal Montreal Dr, Katy TX 77450; serves Greater Houston and Katy."},
+      {"position": 10, "resultType": "organic", "url": "https://www.homeadvisor.com/tloc/katy-TX/Outdoor-Kitchen-Build", "title": "Outdoor Kitchen Build", "snippet": "HomeAdvisor category/location page for outdoor kitchen builds in Katy."}
+    ]
+  },
+  "competitors": [
+    {"name": "Pergola Builder Houston", "domain": "pergolabuilderhouston.com", "url": "https://www.pergolabuilderhouston.com/katy-outdoor-kitchen-job.html", "position": 1, "kind": "out_of_town", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "Houston-anchored brand (domain says Houston) ranking number 1 via a Katy project/job page."}},
+    {"name": "Gazzini Construction", "domain": "gazzinico.com", "url": "https://gazzinico.com/outdoor-kitchens/katy-tx/", "position": 2, "kind": "out_of_town", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "Houston-area builder targeting Katy through a service+city inner page."}},
+    {"name": "Creekstone Outdoors", "domain": "creekstoneoutdoors.com", "url": "https://creekstoneoutdoors.com/service/outdoor-kitchen-construction-in-katy-texas/", "position": 3, "kind": "out_of_town", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "Houston-metro outdoor living firm ranking via a Katy service-area page."}},
+    {"name": "Tradition Outdoor Living", "domain": "traditionoutdoorliving.com", "url": "https://traditionoutdoorliving.com/katy-texas-outdoor-kitchen/", "position": 4, "kind": "out_of_town", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "Houston-area outdoor living builder with a Katy city page."}},
+    {"name": "EcoWorks", "domain": "ecoworkstx.com", "url": "https://www.ecoworkstx.com/outdoor-kitchens/", "position": 5, "kind": "local_business", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "Katy-based outdoor space builder; service page title targets Katy."}},
+    {"name": "Sage Scapes & Design", "domain": "sagescapesanddesign.com", "url": "https://www.sagescapesanddesign.com/outdoor-living-contractors/custom-outdoor-kitchens/", "position": 6, "kind": "local_business", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "Fulshear/Katy-area contractor covering multiple west-Houston suburbs on one page."}},
+    {"name": "Harrison Construction & Remodeling", "domain": "harrisonbuildingservices.com", "url": "https://harrisonbuildingservices.com/exterior-remodeling/outdoor-kitchen-installation-design-contractors/", "position": 7, "kind": "local_business", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "Physically located in Katy (22136 Westheimer Pkwy #403) but markets Katy/Houston/Fulshear/Cypress broadly."}},
+    {"name": "Your Texas Patio", "domain": "yourtexaspatio.com", "url": "https://yourtexaspatio.com/outdoor-kitchens-katy/", "position": 8, "kind": "local_business", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "Niche-focused patio/outdoor kitchen builder with a Katy city page; 7+ years in business."}},
+    {"name": "Your Great Outdoors", "domain": "yourgreatoutdoors.net", "url": "https://yourgreatoutdoors.net/", "position": 9, "kind": "local_business", "signals": {"cityInTitle": true, "innerPage": false, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "Katy showroom (21930 Royal Montreal Dr) but positions itself for all of Greater Houston; ranks on homepage."}},
+    {"name": "HomeAdvisor", "domain": "homeadvisor.com", "url": "https://www.homeadvisor.com/tloc/katy-TX/Outdoor-Kitchen-Build", "position": 10, "kind": "directory", "signals": {"cityInTitle": false, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "Lead-gen directory city/category page; title in SERP did not show the city."}}
+    ],
+  "operatorCandidates": [
+    {"name": "EcoWorks", "domain": "ecoworkstx.com", "whyCandidate": "Katy-based builder ranking only position 5 behind four Houston-anchored companies targeting its home city.", "source": "web_search"},
+    {"name": "Harrison Construction & Remodeling", "domain": "harrisonbuildingservices.com", "whyCandidate": "Katy-headquartered contractor sitting at position 7 on a generic multi-city service page.", "source": "web_search"},
+    {"name": "Your Texas Patio", "domain": "yourtexaspatio.com", "whyCandidate": "Outdoor-kitchen-only specialist ranking position 8 for its core keyword in Katy - high lead value fit.", "source": "web_search"},
+    {"name": "Your Great Outdoors", "domain": "yourgreatoutdoors.net", "whyCandidate": "Has a physical Katy showroom yet only ranks position 9 with an unfocused homepage.", "source": "web_search"},
+    {"name": "Sage Scapes & Design", "domain": "sagescapesanddesign.com", "whyCandidate": "West-Houston/Katy-area contractor at position 6 with no dedicated Katy page, splitting relevance across four cities.", "source": "web_search"}
+  ],
+  "domains": [],
+  "notes": [
+    "Top 4 organic slots are all Houston-anchored companies ranking with Katy service-area/city pages - no dedicated Katy-only site ranks at all.",
+    "Only one directory (HomeAdvisor, position 10) in the top 10; this SERP is dominated by contractor sites, unlike the auto-glass markets.",
+    "No national franchise (e.g. System Pavers, Archadeck) appeared in the top 10.",
+    "Genuinely Katy-based businesses cluster at positions 5-9, below out-of-town Houston firms - a strong signal they could benefit from purchased local leads."
+  ]
+}

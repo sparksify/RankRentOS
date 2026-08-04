@@ -1,0 +1,52 @@
+{
+  "marketKey": "outdoor-kitchens|McKinney|TX",
+  "nicheSlug": "outdoor-kitchens",
+  "city": "McKinney",
+  "state": "TX",
+  "collectedAt": "2026-08-04T16:31:00Z",
+  "serp": {
+    "provider": "web_search",
+    "query": "outdoor kitchen builder McKinney TX",
+    "engine": "web",
+    "device": "desktop",
+    "geoParams": {"location": "McKinney, TX"},
+    "observedAt": "2026-08-04T16:30:50Z",
+    "results": [
+      {"position": 1, "resultType": "organic", "url": "https://www.archadeck.com/dfw-north/resources/blog/2025/november/outdoor-kitchen-builders-in-north-texas-designs-/", "title": "Outdoor Kitchen Builders in North Texas: Designs That Impress in Frisco, Prosper & McKinney", "snippet": "Archadeck DFW North franchise blog post about outdoor kitchens in Frisco, Prosper and McKinney."},
+      {"position": 2, "resultType": "organic", "url": "https://www.yelp.com/search?find_desc=Outdoor+Kitchen+Design&find_loc=McKinney%2C+TX", "title": "TOP 10 BEST Outdoor Kitchen Design in McKinney, TX - Updated 2026 - Quality & Affordability - Yelp", "snippet": "Yelp search page for outdoor kitchen design in McKinney."},
+      {"position": 3, "resultType": "organic", "url": "https://www.houzz.com/professionals/kitchen-remodelers/mckinney-tx-us-project-type-outdoor-kitchen-construction-probr1-bo~t_34334~r_4710178~sv_29408?fi=75", "title": "Best 15 Outdoor Kitchen Construction Companies in McKinney, TX | Houzz", "snippet": "Houzz professionals directory for outdoor kitchen construction in McKinney."},
+      {"position": 4, "resultType": "organic", "url": "https://www.yelp.com/search?find_desc=Outdoor+Kitchen+Construction&find_loc=McKinney,+TX", "title": "TOP 10 BEST Outdoor Kitchen Construction in McKinney, TX - Updated 2025 - Yelp", "snippet": "Second Yelp search page; mentions Premium Brick and Stone Works, Kingsway Entities, Texas Backyard Living, Modern Views."},
+      {"position": 5, "resultType": "organic", "url": "https://keanelandscaping.com/built-in-outdoor-kitchen-installer-in-mckinney-tx/", "title": "Built in outdoor kitchen installer & Contractors in McKinney, TX", "snippet": "Keane Landscaping: family-owned DFW landscape construction company, 40+ years experience, McKinney city page."},
+      {"position": 6, "resultType": "organic", "url": "https://www.bluesurfdesigns.com/outdoor-kitchens", "title": "Outdoor Kitchen Installation | Outdoor Kitchen Builder in McKinney & Prosper, TX | Blue Surf Designs", "snippet": "Blue Surf Designs: outdoor kitchen installation in McKinney and Prosper, TX."},
+      {"position": 7, "resultType": "organic", "url": "https://dallasoutdoorkitchens.com/portfolio/craig-ranch-mckinney-tx/", "title": "Craig Ranch Project at McKinney, TX - Dallas Outdoor Kitchens", "snippet": "Dallas Outdoor Kitchens portfolio page for a Craig Ranch, McKinney project."},
+      {"position": 8, "resultType": "organic", "url": "https://imaginativeos.com/outdoor-living/", "title": "Outdoor Kitchens and Patio Design McKinney TX - Imaginative Outdoor Solutions", "snippet": "Imaginative Outdoor Solutions: McKinney TX outdoor living company, 17 years of experience."},
+      {"position": 9, "resultType": "organic", "url": "https://alterradesignllc.com/mckinney-tx/outdoor-living/outdoor-kitchens/", "title": "Outdoor Kitchen Contractor Serving McKinney, TX | Alterra Landscape Design", "snippet": "Alterra Landscape Design: outdoor kitchens serving McKinney, Texas."}
+    ]
+  },
+  "competitors": [
+    {"name": "Archadeck of DFW North", "domain": "archadeck.com", "url": "https://www.archadeck.com/dfw-north/resources/blog/2025/november/outdoor-kitchen-builders-in-north-texas-designs-/", "position": 1, "kind": "franchise", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "National franchise ranking number 1 with a territory blog post, not a service page."}},
+    {"name": "Yelp (Outdoor Kitchen Design search)", "domain": "yelp.com", "url": "https://www.yelp.com/search?find_desc=Outdoor+Kitchen+Design&find_loc=McKinney%2C+TX", "position": 2, "kind": "directory", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "Yelp category search page."}},
+    {"name": "Houzz", "domain": "houzz.com", "url": "https://www.houzz.com/professionals/kitchen-remodelers/mckinney-tx-us-project-type-outdoor-kitchen-construction-probr1-bo~t_34334~r_4710178~sv_29408?fi=75", "position": 3, "kind": "directory", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "Houzz pros directory claiming 15 outdoor kitchen construction companies in McKinney."}},
+    {"name": "Yelp (Outdoor Kitchen Construction search)", "domain": "yelp.com", "url": "https://www.yelp.com/search?find_desc=Outdoor+Kitchen+Construction&find_loc=McKinney,+TX", "position": 4, "kind": "directory", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "Second Yelp slot in top 4; snippet names local firms Premium Brick and Stone Works, Kingsway Entities, Texas Backyard Living, Modern Views."}},
+    {"name": "Keane Landscaping", "domain": "keanelandscaping.com", "url": "https://keanelandscaping.com/built-in-outdoor-kitchen-installer-in-mckinney-tx/", "position": 5, "kind": "local_business", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "DFW landscaping company using per-city pages (also ranks in Frisco SERP); 40+ years experience."}},
+    {"name": "Blue Surf Designs", "domain": "bluesurfdesigns.com", "url": "https://www.bluesurfdesigns.com/outdoor-kitchens", "position": 6, "kind": "local_business", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "McKinney/Prosper-focused outdoor kitchen builder - closest to a dedicated local player in this SERP."}},
+    {"name": "Dallas Outdoor Kitchens", "domain": "dallasoutdoorkitchens.com", "url": "https://dallasoutdoorkitchens.com/portfolio/craig-ranch-mckinney-tx/", "position": 7, "kind": "local_business", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "Frisco-based specialist ranking via a McKinney (Craig Ranch) portfolio page rather than a service page."}},
+    {"name": "Imaginative Outdoor Solutions", "domain": "imaginativeos.com", "url": "https://imaginativeos.com/outdoor-living/", "position": 8, "kind": "local_business", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "McKinney-based patio/outdoor living company with 17 years experience."}},
+    {"name": "Alterra Landscape Design", "domain": "alterradesignllc.com", "url": "https://alterradesignllc.com/mckinney-tx/outdoor-living/outdoor-kitchens/", "position": 9, "kind": "local_business", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "DFW landscape design firm with a structured /mckinney-tx/ city section."}}
+  ],
+  "operatorCandidates": [
+    {"name": "Blue Surf Designs", "domain": "bluesurfdesigns.com", "whyCandidate": "McKinney/Prosper outdoor kitchen builder ranking position 6, below a franchise blog and three directory pages.", "source": "web_search"},
+    {"name": "Imaginative Outdoor Solutions", "domain": "imaginativeos.com", "whyCandidate": "17-year McKinney outdoor living company stuck at position 8 on a generic service page.", "source": "web_search"},
+    {"name": "Alterra Landscape Design", "domain": "alterradesignllc.com", "whyCandidate": "Ranks last (position 9) for its McKinney outdoor kitchens page despite dedicated city-level site structure.", "source": "web_search"},
+    {"name": "Dallas Outdoor Kitchens", "domain": "dallasoutdoorkitchens.com", "whyCandidate": "Nearby Frisco specialist reaching McKinney only via a portfolio page at position 7 - clear appetite for McKinney projects.", "source": "web_search"},
+    {"name": "Texas Backyard Living", "domain": null, "whyCandidate": "Named in Yelp's top outdoor kitchen construction snippet for McKinney but absent from organic results.", "source": "web_search"},
+    {"name": "Premium Brick and Stone Works", "domain": null, "whyCandidate": "Listed in Yelp's McKinney outdoor kitchen construction snippet with no organic presence of its own.", "source": "web_search"}
+  ],
+  "domains": [],
+  "notes": [
+    "Weakest local organic field of the three outdoor-kitchen markets: positions 1-4 are a franchise blog post (Archadeck) plus three directory pages (two Yelp, one Houzz).",
+    "No contractor ranks above position 5, and none has a McKinney-dedicated domain - a rank-and-rent site could plausibly enter the top 5.",
+    "Yelp snippet reveals additional directory-only local businesses (Texas Backyard Living, Premium Brick and Stone Works, Kingsway Entities, Modern Views) - potential lead buyers.",
+    "Keane Landscaping's per-city page template ranks in both McKinney and Frisco SERPs, showing city-page SEO works in this niche."
+  ]
+}

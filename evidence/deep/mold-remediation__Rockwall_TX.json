@@ -1,0 +1,48 @@
+{
+  "marketKey": "mold-remediation|Rockwall|TX",
+  "nicheSlug": "mold-remediation",
+  "city": "Rockwall",
+  "state": "TX",
+  "collectedAt": "2026-08-04T16:29:39Z",
+  "serp": {
+    "provider": "web_search",
+    "query": "mold remediation Rockwall TX",
+    "engine": "web",
+    "device": "desktop",
+    "geoParams": {"location": "Rockwall, TX"},
+    "observedAt": "2026-08-04T16:29:39Z",
+    "results": [
+      {"position": 1, "resultType": "organic", "url": "https://myvoda.com/dallas-mesquite/mold-remediation-rockwall-tx/", "title": "Professional Mold Remediation Service in Rockwall, TX with Over 9,000 5-Star Reviews", "snippet": "Voda Cleaning & Restoration offers specialized mold remediation services across Rockwall, TX; over 9,000 five-star testimonials."},
+      {"position": 2, "resultType": "organic", "url": "https://rockwall.pauldavis.com/residential/mold-damage/", "title": "Expert Mold Remediation for Rockwall TX", "snippet": "Paul Davis Restoration provides the Rockwall, TX area with black mold removal services; located at 7828 Irma Dr, Royse City, TX 75189."},
+      {"position": 3, "resultType": "organic", "url": "https://www.servpro.com/locations/tx/servpro-of-rockwall-rowlett/services/mold-remediation", "title": "Professional Mold Remediation, Removal, and Mitigation Services near Rowlett, TX | SERVPRO of Rockwall / Rowlett", "snippet": "24/7 mold remediation, inspection through removal, by certified technicians in Rockwall, TX."},
+      {"position": 4, "resultType": "organic", "url": "https://www.pauldavisrockwall.com/mold.html", "title": "Mold Remediation - Water Damage Repair | Rockwall, TX", "snippet": "Paul Davis Rockwall mold remediation and water damage repair."},
+      {"position": 5, "resultType": "organic", "url": "https://www.angi.com/companylist/us/tx/rockwall/mold-testing-and-remediation.htm", "title": "Top 10 Best Mold testing and remediation specialists in Rockwall, TX | Angi", "snippet": "Directory list of mold testing and remediation specialists in Rockwall, TX."},
+      {"position": 6, "resultType": "organic", "url": "https://www.olympicrestoration.com/residential-mold-removal/before-after/79568-mold-remediation-in-rockwall-tx.html", "title": "Olympic Restoration Systems Before & After Photo Set - Mold Remediation in Rockwall, TX", "snippet": "Licensed mold remediation with containment, HEPA air scrubbing, drywall/flooring removal, EPA-registered antimicrobial treatment."},
+      {"position": 7, "resultType": "organic", "url": "https://rockwall-tx.moldremovalcoloradosprings.org/services/post-flood-mold-remediation", "title": "Best Post-Flood Mold Remediation in Rockwall, TX Near Me", "snippet": "Post-flood mold remediation service page on a city-subdomain lead-gen site."},
+      {"position": 8, "resultType": "organic", "url": "https://restopros.com/service-areas/rockwall/", "title": "Remediation & Restoration Services | Rockwall, TX | RestoPros, Inc.", "snippet": "RestoPros can remove mold and restore water damage in Rockwall area homes. Phone (855) 587-3786."}
+    ]
+  },
+  "competitors": [
+    {"name": "Voda Cleaning & Restoration (Dallas-Mesquite)", "domain": "myvoda.com", "url": "https://myvoda.com/dallas-mesquite/mold-remediation-rockwall-tx/", "position": 1, "kind": "franchise", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": 9000, "notes": "National franchise brand; Dallas-Mesquite location page targeting Rockwall; title touts 9,000+ 5-star reviews (brand-wide)."}},
+    {"name": "Paul Davis Restoration of Rockwall", "domain": "rockwall.pauldavis.com", "url": "https://rockwall.pauldavis.com/residential/mold-damage/", "position": 2, "kind": "franchise", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "City subdomain of national Paul Davis franchise platform; office physically in Royse City, TX."}},
+    {"name": "SERVPRO of Rockwall / Rowlett", "domain": "servpro.com", "url": "https://www.servpro.com/locations/tx/servpro-of-rockwall-rowlett/services/mold-remediation", "position": 3, "kind": "franchise", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "National franchise corporate-domain location page."}},
+    {"name": "Paul Davis Rockwall (legacy site)", "domain": "pauldavisrockwall.com", "url": "https://www.pauldavisrockwall.com/mold.html", "position": 4, "kind": "franchise", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": true, "contentDepthWords": null, "reviewCount": null, "notes": "City-match domain dedicated to Rockwall, but it is a Paul Davis franchise property; same franchisee also ranks at position 2."}},
+    {"name": "Angi", "domain": "angi.com", "url": "https://www.angi.com/companylist/us/tx/rockwall/mold-testing-and-remediation.htm", "position": 5, "kind": "directory", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "National directory city-category page."}},
+    {"name": "Olympic Restoration Systems", "domain": "olympicrestoration.com", "url": "https://www.olympicrestoration.com/residential-mold-removal/before-after/79568-mold-remediation-in-rockwall-tx.html", "position": 6, "kind": "out_of_town", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "DFW-metro-wide restoration company ranking via a Rockwall before/after project page, not a Rockwall-anchored business."}},
+    {"name": "Mold Removal Colorado Springs (Rockwall subdomain)", "domain": "rockwall-tx.moldremovalcoloradosprings.org", "url": "https://rockwall-tx.moldremovalcoloradosprings.org/services/post-flood-mold-remediation", "position": 7, "kind": "other", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "City subdomain hung off an out-of-state (.org, Colorado Springs) root domain; looks like a programmatic lead-gen / rank-and-rent network site, not a real local operator."}},
+    {"name": "RestoPros, Inc.", "domain": "restopros.com", "url": "https://restopros.com/service-areas/rockwall/", "position": 8, "kind": "franchise", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "National restoration franchise service-area page with toll-free (855) number."}}
+  ],
+  "operatorCandidates": [
+    {"name": "Doiggs Restoration", "domain": "doiggs.com", "whyCandidate": "Family owned and operated restoration company serving Rockwall and surrounding areas that appeared only in the follow-up 'near Rockwall' search, ranking behind the national franchises.", "source": "web_search"},
+    {"name": "PuroClean of Rockwall", "domain": "puroclean.com", "whyCandidate": "Locally owned PuroClean franchisee with a Rockwall location page and local (972) phone number, but only surfaced in the follow-up search rather than the top-3 for the primary query.", "source": "web_search"},
+    {"name": "Olympic Restoration Systems", "domain": "olympicrestoration.com", "whyCandidate": "Licensed DFW mold remediation contractor that only ranks in Rockwall via a single before/after project page (position 6), suggesting it lacks dedicated Rockwall visibility.", "source": "web_search"},
+    {"name": "Texas Mold Removal Pros", "domain": null, "whyCandidate": "Mold removal specialist serving Rockwall homes and businesses seen in follow-up search results (via mold-advisor listing, phone 833-573-0644) with no visible first-page ranking of its own.", "source": "web_search"}
+  ],
+  "domains": [],
+  "notes": [
+    "Extremely franchise-saturated SERP: Voda, Paul Davis (twice, positions 2 and 4), SERVPRO, and RestoPros occupy 5 of 8 organic results.",
+    "A rank-and-rent style competitor already ranks at position 7 (rockwall-tx.moldremovalcoloradosprings.org), a city subdomain on an out-of-state lead-gen root domain — evidence the model works in this market but also that a competitor exists.",
+    "Only one directory (Angi, position 5) on page one; very few genuinely Rockwall-anchored independent local businesses rank organically.",
+    "Follow-up query 'mold removal company near Rockwall TX' surfaced additional candidates (PuroClean, Doiggs, Texas Mold Removal Pros, mold-advisor.com directory) not present for the primary query."
+  ]
+}

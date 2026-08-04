@@ -1,0 +1,51 @@
+{
+  "marketKey": "gutter-installation|Katy|TX",
+  "nicheSlug": "gutter-installation",
+  "city": "Katy",
+  "state": "TX",
+  "collectedAt": "2026-08-04T16:31:00Z",
+  "serp": {
+    "provider": "web_search",
+    "query": "seamless gutter installation Katy TX",
+    "engine": "web",
+    "device": "desktop",
+    "geoParams": {"location": "Katy, TX"},
+    "observedAt": "2026-08-04T16:30:00Z",
+    "results": [
+      {"position": 1, "resultType": "organic", "url": "https://west-houston.brothersgutters.com/areas-served/katy/seamless-gutter-installation/", "title": "Seamless Gutter Installation | Katy, TX | The Brothers that just do Gutters", "snippet": "Installs seamless gutters made of copper, aluminum, and galvalume; (281) 712-7737."},
+      {"position": 2, "resultType": "organic", "url": "https://www.precisionseamlessgutterstx.com/katy-gutter-installation", "title": "Gutter Installation in Katy, TX | Precision Seamless Gutters", "snippet": "Locally-owned company offering affordable seamless gutter installations, repair, and cleaning."},
+      {"position": 3, "resultType": "organic", "url": "https://www.rainmizergutters.com/katy-tx-gutter-installation", "title": "Gutter Installation Katy TX | Seamless Gutters | RainMizer Gutters", "snippet": "Gutter installation, seamless gutters, gutter repair, and gutter replacement for local homes and businesses."},
+      {"position": 4, "resultType": "organic", "url": "https://keyseamlessgutterinstallation.com/seamless-gutter-installation/tx/katy/seamless-gutter-installation", "title": "Seamless Gutter Installation in Katy TX | Key Seamless Gutter Installation", "snippet": "Programmatic state/city URL structure (tx/katy)."},
+      {"position": 5, "resultType": "organic", "url": "https://ajsgutters.com/rain-gutters-in-katy-tx/", "title": "Seamless Rain Gutters in Katy, TX", "snippet": "Full-service rain gutters contractor servicing the Katy area since 1994."},
+      {"position": 6, "resultType": "organic", "url": "https://kustomgutters.com/", "title": "Gutter Installation in Houston, Tx | Seamless Gutters | Katy Kustom Gutters | Gutter Repair | Gutter Clean Out", "snippet": "Seamless gutter installation, replacement, repair and gutter cleanouts; (281) 599-0599."},
+      {"position": 7, "resultType": "organic", "url": "https://www.gutterprosamerica.com/katy/gutters-installation-katy-tx/", "title": "Gutter Installation Katy, TX - Seamless, Rain Gutter And Gutter Drain Installation Services", "snippet": "Seamless gutter installation using advanced seamless gutter machines; multi-city site."},
+      {"position": 8, "resultType": "organic", "url": "https://guttersgutters.co/seamless-gutter-installation-in-katy-texas/", "title": "Seamless Gutter Installation in Katy, TX", "snippet": "Seamless gutter installation, repair, cleaning, and replacement across Katy; lifetime warranty."},
+      {"position": 9, "resultType": "organic", "url": "https://guttertex.com/katy-tx/", "title": "Best Katy, TX Gutter Service: Installation, Cleaning, Guards, Repair | 24/7 Quotes", "snippet": "Texas regional gutter company with a Katy service-area page."},
+      {"position": 10, "resultType": "organic", "url": "https://www.homeadvisor.com/tloc/Katy-TX/Seamless-Metal-Gutters-Install", "title": "Seamless Metal Gutters Install", "snippet": "HomeAdvisor local category page for seamless metal gutter installation in Katy."}
+    ]
+  },
+  "competitors": [
+    {"name": "The Brothers that just do Gutters (West Houston)", "domain": "west-houston.brothersgutters.com", "url": "https://west-houston.brothersgutters.com/areas-served/katy/seamless-gutter-installation/", "position": 1, "kind": "franchise", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "National gutter franchise; West Houston territory subdomain with a Katy areas-served page ranks number 1."}},
+    {"name": "Precision Seamless Gutters", "domain": "precisionseamlessgutterstx.com", "url": "https://www.precisionseamlessgutterstx.com/katy-gutter-installation", "position": 2, "kind": "local_business", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "Locally-owned Houston-area company; TX-wide domain with a Katy city page."}},
+    {"name": "RainMizer Gutters", "domain": "rainmizergutters.com", "url": "https://www.rainmizergutters.com/katy-tx-gutter-installation", "position": 3, "kind": "local_business", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "Houston-area gutter company ranking with a Katy city page."}},
+    {"name": "Key Seamless Gutter Installation", "domain": "keyseamlessgutterinstallation.com", "url": "https://keyseamlessgutterinstallation.com/seamless-gutter-installation/tx/katy/seamless-gutter-installation", "position": 4, "kind": "other", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "Programmatic /tx/katy/ URL pattern suggests a national lead-gen site generating city pages at scale."}},
+    {"name": "A.J.'s Seamless Gutters", "domain": "ajsgutters.com", "url": "https://ajsgutters.com/rain-gutters-in-katy-tx/", "position": 5, "kind": "local_business", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "Established Houston-metro contractor (since 1994) ranking via a Katy service-area page."}},
+    {"name": "Katy Kustom Gutters", "domain": "kustomgutters.com", "url": "https://kustomgutters.com/", "position": 6, "kind": "local_business", "signals": {"cityInTitle": true, "innerPage": false, "dedicatedLocalSite": true, "contentDepthWords": null, "reviewCount": null, "notes": "Katy-named local business ranking with its homepage; title also targets Houston."}},
+    {"name": "Gutter Pros America", "domain": "gutterprosamerica.com", "url": "https://www.gutterprosamerica.com/katy/gutters-installation-katy-tx/", "position": 7, "kind": "national", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "Multi-city site; also ranks in the New Braunfels SERP with the same template, suggesting programmatic city pages."}},
+    {"name": "Gutters and Gutters", "domain": "guttersgutters.co", "url": "https://guttersgutters.co/seamless-gutter-installation-in-katy-texas/", "position": 8, "kind": "local_business", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "Houston-area company with a Katy service page; advertises lifetime warranty."}},
+    {"name": "GutterTex", "domain": "guttertex.com", "url": "https://guttertex.com/katy-tx/", "position": 9, "kind": "out_of_town", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "Texas regional brand (also ranks in New Braunfels) reaching Katy via a city service-area page."}},
+    {"name": "HomeAdvisor", "domain": "homeadvisor.com", "url": "https://www.homeadvisor.com/tloc/Katy-TX/Seamless-Metal-Gutters-Install", "position": 10, "kind": "directory", "signals": {"cityInTitle": false, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "Directory category page; only directory in the visible top 10."}}
+  ],
+  "operatorCandidates": [
+    {"name": "Katy Kustom Gutters", "domain": "kustomgutters.com", "whyCandidate": "Katy-named local installer ranking only 6th with a homepage that splits focus between Houston and Katy, so incremental Katy leads would be valuable.", "source": "web_search"},
+    {"name": "Gutters and Gutters", "domain": "guttersgutters.co", "whyCandidate": "Local Katy/Houston installer ranking 8th, below two franchises-slash-programmatic sites, with a thin .co domain.", "source": "web_search"},
+    {"name": "A.J.'s Seamless Gutters", "domain": "ajsgutters.com", "whyCandidate": "Long-established (since 1994) Houston-metro contractor sitting at position 5 behind a franchise and a programmatic lead-gen site.", "source": "web_search"},
+    {"name": "RainMizer Gutters", "domain": "rainmizergutters.com", "whyCandidate": "Local gutter company at position 3 competing directly with the number 1 national franchise for Katy work.", "source": "web_search"}
+  ],
+  "domains": [],
+  "notes": [
+    "SERP is contested: a national franchise (Brothers that just do Gutters) holds position 1 and at least two programmatic/lead-gen style sites (Key Seamless Gutter Installation, Gutter Pros America) rank in the top 7.",
+    "Only one truly Katy-dedicated business site appeared (Katy Kustom Gutters, position 6); most competitors are Houston-metro companies ranking via Katy city pages.",
+    "Only one directory (HomeAdvisor, position 10) in the visible results, indicating organic slots are mostly held by company sites."
+  ]
+}

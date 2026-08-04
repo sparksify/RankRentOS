@@ -1,11 +1,23 @@
 {
-  "name": "leadgen-scout",
-  "version": "0.1.0",
+  "name": "rankrentos",
+  "version": "1.0.0",
   "type": "module",
-  "description": "Rank-and-rent market scout: scores (niche, city) pairs for organic winnability and finds available exact-match domains",
+  "description": "RankRentOS Discovery MVP — market intelligence pipeline for rank & rent asset discovery",
   "scripts": {
-    "domains": "node src/run.js --domains-only",
-    "scout": "node src/run.js",
-    "report": "node src/report.js"
+    "ingest": "tsx src/scripts/ingest-v0.ts",
+    "qualify": "tsx src/scripts/run-qualify.ts",
+    "score": "tsx src/scripts/run-score.ts",
+    "select": "tsx src/scripts/run-select.ts",
+    "blueprints": "tsx src/scripts/run-blueprints.ts",
+    "emit-sql": "tsx src/scripts/emit-sql.ts",
+    "pipeline": "npm run ingest && npm run qualify && npm run score && npm run select && npm run blueprints",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.7.0",
+    "vitest": "^2.1.0"
   }
 }

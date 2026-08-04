@@ -1,0 +1,53 @@
+{
+  "marketKey": "air-duct-cleaning|Windsor|CO",
+  "nicheSlug": "air-duct-cleaning",
+  "city": "Windsor",
+  "state": "CO",
+  "collectedAt": "2026-08-04T16:31:30Z",
+  "serp": {
+    "provider": "web_search",
+    "query": "air duct cleaning Windsor CO",
+    "engine": "web",
+    "device": "desktop",
+    "geoParams": {"location": "Windsor, CO"},
+    "observedAt": "2026-08-04T16:31:30Z",
+    "results": [
+      {"position": 1, "resultType": "organic", "url": "https://nextdoor.com/pages/windsor-duct-cleaning-windsor-co/", "title": "Windsor Duct Cleaning - Nextdoor", "snippet": "Nextdoor business page for Windsor Duct Cleaning, Windsor CO."},
+      {"position": 2, "resultType": "organic", "url": "https://www.facebook.com/windsorduct/", "title": "Windsor Duct Cleaning (@windsorduct)", "snippet": "Facebook page for Windsor Duct Cleaning."},
+      {"position": 3, "resultType": "organic", "url": "https://www.yelp.com/search?cflt=airductcleaning&find_loc=Windsor,+CO+80550", "title": "THE BEST 10 AIR DUCT CLEANING near WINDSOR, CO 80550 - Updated 2026 - Hours - Yelp", "snippet": "Yelp category search results for air duct cleaning near Windsor, CO 80550."},
+      {"position": 4, "resultType": "organic", "url": "https://lionhomeservice.com/duct-cleaning-windsor-co/", "title": "Air Duct Cleaning Services Windsor CO | Duct Cleaning | Lion Home Service", "snippet": "Lion Home Service duct cleaning in Windsor; BBB accredited, 100% satisfaction guarantee."},
+      {"position": 5, "resultType": "organic", "url": "https://levairductcleaning.com/services/air-duct-cleaning/windsor-co/", "title": "Air Duct Cleaning Windsor, CO | LEV Air Duct Cleaning", "snippet": "Professional air duct cleaning in Weld County, CO; free consultation at 970-659-0554."},
+      {"position": 6, "resultType": "organic", "url": "https://fortcollinsheating.com/service-areas/co/windsor/air-duct-cleaning/", "title": "Air Duct Cleaning Services Windsor CO | Fort Collins Heating and Air Conditioning, Inc.", "snippet": "Comprehensive air duct cleaning in Windsor, CO; 970-533-8570; average cost cited around $623."},
+      {"position": 7, "resultType": "organic", "url": "https://windsorduct.com/", "title": "Windsor Duct Cleaning — Northern Colorado's Most Trusted", "snippet": "Local family-owned air duct and dryer vent cleaning for Northern Colorado; licensed, bonded, insured; 400+ five-star reviews; 970-775-3434."},
+      {"position": 8, "resultType": "organic", "url": "https://www.dryerventprosco.com/windsor-air-duct-cleaning", "title": "Windsor Air Duct Cleaning - Windsor CO | Duct&Dryer Pros", "snippet": "Duct & Dryer Pros air duct cleaning service page for Windsor, CO."},
+      {"position": 9, "resultType": "organic", "url": "https://ductcleaning-co.com/windsor-air-duct-cleaning/", "title": "Bee's Windsor Air Duct Cleaning - Free Quote for Cleaner Air", "snippet": "Bee's air duct cleaning Windsor page offering free quotes."},
+      {"position": 10, "resultType": "organic", "url": "https://ductworks.com/colorado-air-duct-cleaning/windsor-air-duct-cleaning-services/", "title": "Windsor Air Duct Cleaning Services - Ductworks", "snippet": "30+ years of professional air duct cleaning for Windsor homes and commercial properties; NADCA certified."}
+    ]
+  },
+  "competitors": [
+    {"name": "Windsor Duct Cleaning (Nextdoor page)", "domain": "nextdoor.com", "url": "https://nextdoor.com/pages/windsor-duct-cleaning-windsor-co/", "position": 1, "kind": "directory", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "Nextdoor profile of the local incumbent ranking above the incumbent's own site."}},
+    {"name": "Windsor Duct Cleaning (Facebook page)", "domain": "facebook.com", "url": "https://www.facebook.com/windsorduct/", "position": 2, "kind": "directory", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "Facebook business page for the same local incumbent."}},
+    {"name": "Yelp", "domain": "yelp.com", "url": "https://www.yelp.com/search?cflt=airductcleaning&find_loc=Windsor,+CO+80550", "position": 3, "kind": "directory", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "Yelp category search page."}},
+    {"name": "Lion Home Service", "domain": "lionhomeservice.com", "url": "https://lionhomeservice.com/duct-cleaning-windsor-co/", "position": 4, "kind": "out_of_town", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "Large Fort Collins-anchored multi-trade home services company ranking via a Windsor service-area page."}},
+    {"name": "LEV Air Duct Cleaning", "domain": "levairductcleaning.com", "url": "https://levairductcleaning.com/services/air-duct-cleaning/windsor-co/", "position": 5, "kind": "local_business", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": true, "contentDepthWords": null, "reviewCount": null, "notes": "Weld County (Windsor's county) duct-cleaning specialist with a niche-dedicated domain and Windsor city page; local 970 number."}},
+    {"name": "Fort Collins Heating and Air Conditioning, Inc.", "domain": "fortcollinsheating.com", "url": "https://fortcollinsheating.com/service-areas/co/windsor/air-duct-cleaning/", "position": 6, "kind": "out_of_town", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "Fort Collins-anchored HVAC company (city name in its own domain) serving Windsor via nested service-area page."}},
+    {"name": "Windsor Duct Cleaning", "domain": "windsorduct.com", "url": "https://windsorduct.com/", "position": 7, "kind": "local_business", "signals": {"cityInTitle": true, "innerPage": false, "dedicatedLocalSite": true, "contentDepthWords": null, "reviewCount": 400, "notes": "Exact-match-domain, family-owned local incumbent; licensed/bonded/insured; 400+ five-star reviews; homepage ranks below its own social/directory profiles."}},
+    {"name": "Duct & Dryer Pros", "domain": "dryerventprosco.com", "url": "https://www.dryerventprosco.com/windsor-air-duct-cleaning", "position": 8, "kind": "local_business", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "Colorado duct and dryer vent specialist; exact home base unclear from SERP; ranks via a Windsor service-area page."}},
+    {"name": "Bee's Air Duct Cleaning", "domain": "ductcleaning-co.com", "url": "https://ductcleaning-co.com/windsor-air-duct-cleaning/", "position": 9, "kind": "local_business", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "Colorado duct-cleaning operator on a generic statewide domain with a Windsor city page; free-quote oriented."}},
+    {"name": "Ductworks, Inc.", "domain": "ductworks.com", "url": "https://ductworks.com/colorado-air-duct-cleaning/windsor-air-duct-cleaning-services/", "position": 10, "kind": "out_of_town", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "Long-established (30+ years) NADCA-certified Colorado duct cleaner anchored to the Denver-metro area, ranking via a Windsor services page."}}
+  ],
+  "operatorCandidates": [
+    {"name": "LEV Air Duct Cleaning", "domain": "levairductcleaning.com", "whyCandidate": "Weld County duct-cleaning specialist ranking mid-page (position 5) below three directories, with a local 970 number and free-consultation offer — a natural lead buyer for Windsor.", "source": "web_search"},
+    {"name": "Duct & Dryer Pros", "domain": "dryerventprosco.com", "whyCandidate": "Colorado duct/dryer-vent specialist ranking at position 8 via a Windsor service-area page, below the local incumbent and directories.", "source": "web_search"},
+    {"name": "Bee's Air Duct Cleaning", "domain": "ductcleaning-co.com", "whyCandidate": "Quote-focused Colorado duct cleaner at position 9 with only a thin Windsor city page, indicating appetite for Windsor jobs without strong local rankings.", "source": "web_search"},
+    {"name": "Ductworks, Inc.", "domain": "ductworks.com", "whyCandidate": "30+ year NADCA-certified duct cleaning company stuck at position 10 for Windsor via a service-area page; established operator that services the town without local dominance.", "source": "web_search"},
+    {"name": "Lion Home Service", "domain": "lionhomeservice.com", "whyCandidate": "Regional Fort Collins home-services company actively targeting Windsor duct cleaning (position 4 service-area page); large operation likely to pay for incremental local leads.", "source": "web_search"}
+  ],
+  "domains": [],
+  "notes": [
+    "Top 3 organic positions are all directory/social properties (Nextdoor, Facebook, Yelp) — no company website ranks above position 4.",
+    "There is a strong exact-match local incumbent, Windsor Duct Cleaning (windsorduct.com, 400+ five-star reviews), but its own homepage only ranks at position 7, below its Nextdoor and Facebook profiles.",
+    "No national franchises (Stanley Steemer, COIT, Ductz) appeared on page one; competition is directories plus nearby Northern Colorado operators using service-area pages.",
+    "Several out-of-town operators (Lion Home Service, Fort Collins Heating & Air, Ductworks) target Windsor with service-area pages, indicating demand worth chasing from adjacent metros."
+  ]
+}

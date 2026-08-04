@@ -1,0 +1,45 @@
+{
+  "marketKey": "water-softeners|Apex|NC",
+  "nicheSlug": "water-softeners",
+  "city": "Apex",
+  "state": "NC",
+  "collectedAt": "2026-08-04T16:29:35Z",
+  "serp": {
+    "provider": "web_search",
+    "query": "water softener installation Apex NC",
+    "engine": "web",
+    "device": "desktop",
+    "geoParams": {"location": "Apex, NC"},
+    "observedAt": "2026-08-04T16:29:35Z",
+    "results": [
+      {"position": 1, "resultType": "organic", "url": "https://www.yelp.com/search?find_desc=Water+Softener+Installation&find_loc=Apex,+NC", "title": "TOP 10 BEST Water Softener Installation in Apex, NC - Updated 2025 - Yelp", "snippet": "Directory of top-rated water softener installation providers in Apex, NC."},
+      {"position": 2, "resultType": "organic", "url": "https://www.bbb.org/us/nc/apex/category/water-softener-installation-and-repair", "title": "Water Softener Installation and Repair near Apex, NC | Better Business Bureau", "snippet": "BBB directory of water softener installation and repair companies near Apex."},
+      {"position": 3, "resultType": "organic", "url": "https://www.angi.com/companylist/us/nc/apex/water-softeners.htm", "title": "Top 10 Best Water softener pros in Apex, NC | Angi", "snippet": "Angi directory list of water softener pros in Apex, NC."},
+      {"position": 4, "resultType": "organic", "url": "https://callelement.com/services/plumbing/water-softeners", "title": "Water Softener Installation Apex NC", "snippet": "Element Service Group water softener services page; 16+ years of experience serving Apex area."},
+      {"position": 5, "resultType": "organic", "url": "https://sweetwater-plumbing.com/water-softener-installation-repair-apex-nc/", "title": "Professional Water Softener Installation and Repair ...", "snippet": "Sweetwater Plumbing, licensed & insured plumber in Apex, NC offering free estimates."},
+      {"position": 6, "resultType": "organic", "url": "https://www.thermodirectinc.com/water-softeners-apex/", "title": "Water Softener System Installation in Apex, NC", "snippet": "Thermo Direct, serving local homeowners since 2000; BBB, NCI, BPI, Energy Star certified."},
+      {"position": 7, "resultType": "organic", "url": "https://www.actionwellandpump.com/contact/water-softener-service-area/apex-nc", "title": "Water Softener | Apex, NC | Action Well & Pump", "snippet": "Action Well & Pump, 3rd generation family business with 30+ years in well services and water softening, serving Apex; same-day free estimates."},
+      {"position": 8, "resultType": "organic", "url": "https://callelement.com/service-areas/apex/zip/27539/water-softeners", "title": "Water Softeners in Apex 27539 | Element Service Group | Element Service Group", "snippet": "Element Service Group zip-code-level service area page for water softeners in Apex 27539."}
+    ]
+  },
+  "competitors": [
+    {"name": "Element Service Group", "domain": "callelement.com", "url": "https://callelement.com/services/plumbing/water-softeners", "position": 4, "kind": "local_business", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "Triangle-area plumbing/HVAC company; ranks twice (positions 4 and 8) with a services page plus a zip-code-level programmatic service-area page."}},
+    {"name": "Sweetwater Plumbing", "domain": "sweetwater-plumbing.com", "url": "https://sweetwater-plumbing.com/water-softener-installation-repair-apex-nc/", "position": 5, "kind": "local_business", "signals": {"cityInTitle": false, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "Licensed and insured plumber ranking with a city-specific inner page (URL slug includes apex-nc); city not visible in the truncated title."}},
+    {"name": "Thermo Direct Inc", "domain": "thermodirectinc.com", "url": "https://www.thermodirectinc.com/water-softeners-apex/", "position": 6, "kind": "out_of_town", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "Raleigh-anchored HVAC/plumbing company since 2000 ranking via an Apex service-area page; BBB/NCI/BPI/Energy Star certified."}},
+    {"name": "Action Well & Pump", "domain": "actionwellandpump.com", "url": "https://www.actionwellandpump.com/contact/water-softener-service-area/apex-nc", "position": 7, "kind": "local_business", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "3rd-generation family well and pump business serving Apex since 2000; ranking via a deep service-area page, not a homepage."}},
+    {"name": "Element Service Group (zip page)", "domain": "callelement.com", "url": "https://callelement.com/service-areas/apex/zip/27539/water-softeners", "position": 8, "kind": "local_business", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "Second listing for callelement.com; programmatic zip-level page (27539) indicating an aggressive local-SEO page architecture."}}
+  ],
+  "operatorCandidates": [
+    {"name": "Sweetwater Plumbing", "domain": "sweetwater-plumbing.com", "whyCandidate": "Local licensed plumber ranking mid-SERP (position 5) with a single city page; would benefit from extra Apex water softener leads.", "source": "web_search"},
+    {"name": "Action Well & Pump", "domain": "actionwellandpump.com", "whyCandidate": "Family-owned well/pump business ranking at position 7 via a buried service-area page rather than a dedicated water softener presence.", "source": "web_search"},
+    {"name": "Thermo Direct Inc", "domain": "thermodirectinc.com", "whyCandidate": "Raleigh-based multi-trade company reaching Apex only through a service-area page (position 6), suggesting appetite for city-specific lead flow.", "source": "web_search"},
+    {"name": "Element Service Group", "domain": "callelement.com", "whyCandidate": "Multi-trade local operator already investing heavily in Apex water softener SEO (two SERP listings), signaling this niche is a revenue priority for them.", "source": "web_search"}
+  ],
+  "domains": [],
+  "notes": [
+    "Top 3 organic positions are all directories (Yelp, BBB, Angi) — no local business owns the top of the SERP, a strong rank-and-rent signal.",
+    "No dedicated single-city water softener site ranks; every business result is a plumbing/HVAC/well company's inner service page.",
+    "No national franchise (e.g. Culligan) appeared in the observed results for this query.",
+    "callelement.com holds two of the eight observed positions via programmatic service-area/zip pages."
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "marketKey": "gutter-installation|New Braunfels|TX",
+  "nicheSlug": "gutter-installation",
+  "city": "New Braunfels",
+  "state": "TX",
+  "collectedAt": "2026-08-04T16:32:00Z",
+  "serp": {
+    "provider": "web_search",
+    "query": "seamless gutter installation New Braunfels TX",
+    "engine": "web",
+    "device": "desktop",
+    "geoParams": {"location": "New Braunfels, TX"},
+    "observedAt": "2026-08-04T16:30:00Z",
+    "results": [
+      {"position": 1, "resultType": "organic", "url": "https://www.yelp.com/biz/r-and-r-seamless-gutters-new-braunfels", "title": "R & R Seamless Gutters - New Braunfels, TX", "snippet": "Yelp business listing for R & R Seamless Gutters in New Braunfels."},
+      {"position": 2, "resultType": "organic", "url": "https://keyseamlessgutterinstallation.com/seamless-gutter-installation/tx/new-braunfels/seamless-gutter-installation", "title": "Seamless Gutter Installation in New Braunfels TX | Key Seamless Gutter Installation", "snippet": "Programmatic state/city URL structure (tx/new-braunfels)."},
+      {"position": 3, "resultType": "organic", "url": "https://www.asrgs.com/seamless-gutters-new-braunfels-tx/", "title": "Seamless Gutters New Braunfels TX - Gutters Made Easy", "snippet": "Installs and maintains seamless gutters in New Braunfels with custom-built on-site systems."},
+      {"position": 4, "resultType": "organic", "url": "https://rrseamlessgutters.com/", "title": "R&R Seamless Gutters | New Braunfels, TX", "snippet": "Installs 5-inch and 6-inch seamless gutters in New Braunfels; 830-214-6627 for free estimates."},
+      {"position": 5, "resultType": "organic", "url": "https://www.newbraunfelsraingutterpros.com/seamless-gutters", "title": "Seamless Gutters | New Braunfels Rain Gutter Pros", "snippet": "Installs seamless gutters in New Braunfels, Seguin, Canyon Lake and San Antonio; 1493 Hillview Ave Suite 100, New Braunfels; 830-500-3090."},
+      {"position": 6, "resultType": "organic", "url": "https://www.gutterprosamerica.com/new-braunfels/gutters-installation-new-braunfels-tx/", "title": "Gutter Installation New Braunfels, TX - Seamless, Rain Gutter And Gutter Drain Installation Services", "snippet": "Seamless gutter installation in New Braunfels using advanced seamless gutter machines; multi-city site."},
+      {"position": 7, "resultType": "organic", "url": "https://www.townsendresidentialservices.com/services/gutter", "title": "Seamless Gutters New Braunfels - Townsend Residential", "snippet": "Installs seamless gutters in New Braunfels with clean curb appeal and performance-focused layout."},
+      {"position": 8, "resultType": "organic", "url": "https://guttertex.com/new-braunfels-tx/", "title": "Gutters New Braunfels TX: Gutter Install, Clean, Repair", "snippet": "Installs seamless K-Style and Half-Round gutter systems; Texas regional company city page."}
+    ]
+  },
+  "competitors": [
+    {"name": "Yelp (R & R Seamless Gutters listing)", "domain": "yelp.com", "url": "https://www.yelp.com/biz/r-and-r-seamless-gutters-new-braunfels", "position": 1, "kind": "directory", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "A single Yelp business profile outranks every company website, including the business's own site at position 4."}},
+    {"name": "Key Seamless Gutter Installation", "domain": "keyseamlessgutterinstallation.com", "url": "https://keyseamlessgutterinstallation.com/seamless-gutter-installation/tx/new-braunfels/seamless-gutter-installation", "position": 2, "kind": "other", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "Same programmatic national lead-gen template that ranks in the Katy SERP; holds position 2 here."}},
+    {"name": "Gutters Made Easy (ASR Gutter Services)", "domain": "asrgs.com", "url": "https://www.asrgs.com/seamless-gutters-new-braunfels-tx/", "position": 3, "kind": "out_of_town", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "Regional Texas gutter company ranking via a New Braunfels service-area page on a non-local domain."}},
+    {"name": "R&R Seamless Gutters", "domain": "rrseamlessgutters.com", "url": "https://rrseamlessgutters.com/", "position": 4, "kind": "local_business", "signals": {"cityInTitle": true, "innerPage": false, "dedicatedLocalSite": true, "contentDepthWords": null, "reviewCount": null, "notes": "New Braunfels local installer (830 area code) ranking with its homepage; its Yelp profile ranks number 1."}},
+    {"name": "New Braunfels Rain Gutter Pros", "domain": "newbraunfelsraingutterpros.com", "url": "https://www.newbraunfelsraingutterpros.com/seamless-gutters", "position": 5, "kind": "local_business", "signals": {"cityInTitle": false, "innerPage": true, "dedicatedLocalSite": true, "contentDepthWords": null, "reviewCount": null, "notes": "Exact-match city domain with a physical New Braunfels address; brand name (not the literal city string alone) in title."}},
+    {"name": "Gutter Pros America", "domain": "gutterprosamerica.com", "url": "https://www.gutterprosamerica.com/new-braunfels/gutters-installation-new-braunfels-tx/", "position": 6, "kind": "national", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "Multi-city programmatic site; ranks in both Katy and New Braunfels SERPs with identical URL template."}},
+    {"name": "Townsend Residential Services", "domain": "townsendresidentialservices.com", "url": "https://www.townsendresidentialservices.com/services/gutter", "position": 7, "kind": "local_business", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "Local multi-service residential contractor; gutters are one service line rather than the whole business."}},
+    {"name": "GutterTex", "domain": "guttertex.com", "url": "https://guttertex.com/new-braunfels-tx/", "position": 8, "kind": "out_of_town", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "Texas regional brand (Austin/San Antonio footprint) ranking via a New Braunfels city page; also ranks in Katy."}}
+  ],
+  "operatorCandidates": [
+    {"name": "R&R Seamless Gutters", "domain": "rrseamlessgutters.com", "whyCandidate": "Local New Braunfels installer whose own homepage ranks 4th while its Yelp profile takes the number 1 spot, showing demand it does not fully capture on its own site.", "source": "web_search"},
+    {"name": "New Braunfels Rain Gutter Pros", "domain": "newbraunfelsraingutterpros.com", "whyCandidate": "Local company with a physical NB address ranking 5th behind a directory and a programmatic lead-gen site.", "source": "web_search"},
+    {"name": "Townsend Residential Services", "domain": "townsendresidentialservices.com", "whyCandidate": "Local residential contractor ranking 7th with gutters as one of several service lines; likely wants more gutter-specific leads.", "source": "web_search"},
+    {"name": "Gutters Made Easy (ASR Gutter Services)", "domain": "asrgs.com", "whyCandidate": "Regional gutter company already investing in a New Braunfels service-area page (position 3), signaling appetite for work in this city.", "source": "web_search"}
+  ],
+  "domains": [],
+  "notes": [
+    "Position 1 is a Yelp profile rather than any company website, and a programmatic lead-gen site holds position 2 - the organic top is soft for a dedicated local site.",
+    "Only two genuinely New Braunfels-anchored companies rank (R&R Seamless Gutters, New Braunfels Rain Gutter Pros); the rest are regional/programmatic city pages.",
+    "Gutter Pros America, Key Seamless Gutter Installation, and GutterTex all rank in both the Katy and New Braunfels SERPs with templated city pages."
+  ]
+}

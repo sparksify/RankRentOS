@@ -1,0 +1,47 @@
+{
+  "marketKey": "dumpster-rental|McKinney|TX",
+  "nicheSlug": "dumpster-rental",
+  "city": "McKinney",
+  "state": "TX",
+  "collectedAt": "2026-08-04T16:30:00Z",
+  "serp": {
+    "provider": "web_search",
+    "query": "dumpster rental McKinney TX",
+    "engine": "web",
+    "device": "desktop",
+    "geoParams": {"location": "McKinney, TX"},
+    "observedAt": "2026-08-04T16:29:30Z",
+    "results": [
+      {"position": 1, "resultType": "organic", "url": "https://www.wasteconnections.com/mckinney", "title": "Mckinney TX | Dumpster Rentals & Garbage Pickup", "snippet": "Waste Connections residential dumpster rental; 469-452-8000."},
+      {"position": 2, "resultType": "organic", "url": "https://www.budgetdumpster.com/mckinney-tx-dumpster-rental-texas.php", "title": "Roll Off Dumpster Rentals in McKinney, TX | Budget Dumpster", "snippet": "Low-cost dumpster rentals fit for any cleanup in McKinney with speedy delivery."},
+      {"position": 3, "resultType": "organic", "url": "https://www.redboxplus.com/dallas/dumpster-rental-mckinney-tx/", "title": "Dumpster Rental McKinney, TX | redbox+ Dumpsters of Dallas", "snippet": "redbox+ Dumpsters of Dallas; order at 214-295-1006; Standard dumpster series most popular."},
+      {"position": 4, "resultType": "organic", "url": "https://dumpsterdudez.com/north-texas", "title": "Dumpster Rental in McKinney, TX", "snippet": "Dumpster Dudez North Texas; sizes from 10 to 25 yards."},
+      {"position": 5, "resultType": "organic", "url": "https://alfordservicesinc.com/mckinney-roll-off-container-rental/", "title": "McKinney Roll Off Container Dumpster Rental Service In McKinney TX", "snippet": "Locally owned and operated dumpster service in McKinney TX, in business over 20 years."},
+      {"position": 6, "resultType": "organic", "url": "https://www.goodguysjunkremovalnorthtx.com/mckinney-tx-junk-removal-service/", "title": "McKinney Junk Removal and Dumpster Rental Services – Good Guys Junk Removal & Dumpster Rentals", "snippet": "Junk hauling, property cleanouts and dumpster rentals in McKinney; (214) 532-7349."},
+      {"position": 7, "resultType": "organic", "url": "https://gladiatordumpsters.com/", "title": "Gladiator Dumpsters | Dumpster Rentals & Junk Removal in McKinney, TX", "snippet": "Fast, affordable dumpster rentals and junk removal in McKinney, TX."},
+      {"position": 8, "resultType": "organic", "url": "https://dumpsterquestdfw.com/dumpster-rental-mckinney/", "title": "Dumpster Rental in McKinney, TX | Dumpster Quest", "snippet": "Rentals in McKinney start at $370 for a 1-day rental with 2 tons included; (469) 770-7346."}
+    ]
+  },
+  "competitors": [
+    {"name": "Waste Connections", "domain": "wasteconnections.com", "url": "https://www.wasteconnections.com/mckinney", "position": 1, "kind": "national", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "National waste hauler's McKinney location page at position 1."}},
+    {"name": "Budget Dumpster", "domain": "budgetdumpster.com", "url": "https://www.budgetdumpster.com/mckinney-tx-dumpster-rental-texas.php", "position": 2, "kind": "national", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "National dumpster broker programmatic city page."}},
+    {"name": "redbox+ Dumpsters of Dallas", "domain": "redboxplus.com", "url": "https://www.redboxplus.com/dallas/dumpster-rental-mckinney-tx/", "position": 3, "kind": "franchise", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "National franchise; Dallas territory's McKinney city page."}},
+    {"name": "Dumpster Dudez North Texas", "domain": "dumpsterdudez.com", "url": "https://dumpsterdudez.com/north-texas", "position": 4, "kind": "franchise", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "Franchise brand; North Texas territory page ranking for the McKinney query."}},
+    {"name": "Alford Services Inc", "domain": "alfordservicesinc.com", "url": "https://alfordservicesinc.com/mckinney-roll-off-container-rental/", "position": 5, "kind": "local_business", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": true, "contentDepthWords": null, "reviewCount": null, "notes": "Locally owned McKinney company (20+ years) ranking via a service page on its own site."}},
+    {"name": "Good Guys Junk Removal & Dumpster Rentals", "domain": "goodguysjunkremovalnorthtx.com", "url": "https://www.goodguysjunkremovalnorthtx.com/mckinney-tx-junk-removal-service/", "position": 6, "kind": "local_business", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "North-Texas regional operator ranking via a McKinney city page; same company also ranks in Frisco."}},
+    {"name": "Gladiator Dumpsters", "domain": "gladiatordumpsters.com", "url": "https://gladiatordumpsters.com/", "position": 7, "kind": "local_business", "signals": {"cityInTitle": true, "innerPage": false, "dedicatedLocalSite": true, "contentDepthWords": null, "reviewCount": null, "notes": "Local McKinney-focused company ranking on its homepage with city in the title."}},
+    {"name": "Dumpster Quest", "domain": "dumpsterquestdfw.com", "url": "https://dumpsterquestdfw.com/dumpster-rental-mckinney/", "position": 8, "kind": "local_business", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "DFW-wide operator ranking via a McKinney service-area page; $370 flat-rate entry price."}}
+  ],
+  "operatorCandidates": [
+    {"name": "Alford Services Inc", "domain": "alfordservicesinc.com", "whyCandidate": "20+ year locally owned McKinney roll-off company ranking at position 5, below two national brands and two franchises.", "source": "web_search"},
+    {"name": "Gladiator Dumpsters", "domain": "gladiatordumpsters.com", "whyCandidate": "Local McKinney dumpster and junk removal company stuck at position 7 despite a city-targeted homepage.", "source": "web_search"},
+    {"name": "Good Guys Junk Removal & Dumpster Rentals", "domain": "goodguysjunkremovalnorthtx.com", "whyCandidate": "Regional North-Texas operator ranking at position 6 via a service-area page and actively targeting multiple Collin County cities.", "source": "web_search"},
+    {"name": "Dumpster Quest", "domain": "dumpsterquestdfw.com", "whyCandidate": "DFW operator at the bottom of the SERP (position 8) with published flat-rate pricing, indicating a volume-driven business.", "source": "web_search"}
+  ],
+  "domains": [],
+  "notes": [
+    "No directories in this SERP — unusually, all 8 results are actual providers; top 4 are nationals/franchises (Waste Connections, Budget Dumpster, redbox+, Dumpster Dudez).",
+    "Franchise saturation is notable: redbox+ and Dumpster Dudez both target McKinney via territory pages.",
+    "Local operators (Alford, Gladiator, Good Guys, Dumpster Quest) hold positions 5-8, all plausible lead buyers; no exact-match-domain local site exists for McKinney."
+  ]
+}

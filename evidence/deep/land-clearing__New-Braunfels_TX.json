@@ -1,0 +1,55 @@
+{
+  "marketKey": "land-clearing|New Braunfels|TX",
+  "nicheSlug": "land-clearing",
+  "city": "New Braunfels",
+  "state": "TX",
+  "collectedAt": "2026-08-04T16:35:00Z",
+  "serp": {
+    "provider": "web_search",
+    "query": "land clearing service New Braunfels TX",
+    "engine": "web",
+    "device": "desktop",
+    "geoParams": {"location": "New Braunfels, TX"},
+    "observedAt": "2026-08-04T16:30:00Z",
+    "results": [
+      {"position": 1, "resultType": "organic", "url": "https://www.yelp.com/search?find_desc=Land+Clearing&find_loc=New+Braunfels,+TX+78130", "title": "TOP 10 BEST Land Clearing near New Braunfels, TX 78130 - Updated 2025 - Yelp", "snippet": "Yelp results naming Shelton Land & Ranch Services, Hat Creek Land Services, Grigonis Excavation Contractors, J316 Excavation, Two Men & A Hoe, and Joe Knows Land Clearing."},
+      {"position": 2, "resultType": "organic", "url": "https://www.bbb.org/us/tx/new-braunfels/category/land-clearing", "title": "Land Clearing near New Braunfels, TX | Better Business Bureau", "snippet": "BBB directory category page for land clearing near New Braunfels."},
+      {"position": 3, "resultType": "organic", "url": "https://landclearing.org/new-braunfels-tx/", "title": "Land Clearing Services in New Braunfels, TX", "snippet": "National land clearing site with a New Braunfels city page."},
+      {"position": 4, "resultType": "organic", "url": "https://alamolandservice.com/landclearing/", "title": "Land Clearing Service | San Antonio & New Braunfels TX", "snippet": "Established, locally owned land service company offering rock milling, land clearing, tree mulching, and site prep."},
+      {"position": 5, "resultType": "organic", "url": "https://newbraunfelslandclearing.com/", "title": "Land Clearing New Braunfels TX", "snippet": "Exact-match domain land clearing site for New Braunfels."},
+      {"position": 6, "resultType": "organic", "url": "https://alamolandservice.com/", "title": "Land Clearing, Rock Crushing & Rock Milling, Brush Cutting, Tree Mulching & Pulling Service Company San Antonio & New Braunfels TX", "snippet": "Homepage of Alamo Land Service; second listing from the same domain."},
+      {"position": 7, "resultType": "organic", "url": "https://www.badhoglandclearing.com/new-braunfels-tx/", "title": "Land Clearing & Forestry Mulching | New Braunfels, TX", "snippet": "Expert land clearing for residential and commercial properties, specializing in forestry mulching."},
+      {"position": 8, "resultType": "organic", "url": "https://newbraunfelslandclearing.com/leveling-and-grading/", "title": "Land Leveling and Grading In New Braunfels | Local Experts | Call Now", "snippet": "Inner service page from the same exact-match domain at position 5."},
+      {"position": 9, "resultType": "organic", "url": "https://brittcolandclearing.com/", "title": "New Braunfels Landscaping: BrittCo Land Clearing Landscaping", "snippet": "New Braunfels land clearing and landscaping company."},
+      {"position": 10, "resultType": "organic", "url": "https://www.hunterlandclearing.com/", "title": "Land Clearing Services in Texas Hill Country | Hunter Land Clearing", "snippet": "Fast, affordable land clearing serving New Braunfels; (830) 832-7065."}
+    ]
+  },
+  "competitors": [
+    {"name": "Yelp", "domain": "yelp.com", "url": "https://www.yelp.com/search?find_desc=Land+Clearing&find_loc=New+Braunfels,+TX+78130", "position": 1, "kind": "directory", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "Directory at position 1; its snippet surfaces several local operators not ranking on their own sites."}},
+    {"name": "Better Business Bureau", "domain": "bbb.org", "url": "https://www.bbb.org/us/tx/new-braunfels/category/land-clearing", "position": 2, "kind": "directory", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "Directory category page at position 2."}},
+    {"name": "LandClearing.org", "domain": "landclearing.org", "url": "https://landclearing.org/new-braunfels-tx/", "position": 3, "kind": "other", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "National programmatic lead-gen site ranking via a New Braunfels city page."}},
+    {"name": "Alamo Land Service", "domain": "alamolandservice.com", "url": "https://alamolandservice.com/landclearing/", "position": 4, "kind": "local_business", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "Locally owned New Braunfels/San Antonio land service company; double-listed (positions 4 and 6)."}},
+    {"name": "New Braunfels Land Clearing", "domain": "newbraunfelslandclearing.com", "url": "https://newbraunfelslandclearing.com/", "position": 5, "kind": "local_business", "signals": {"cityInTitle": true, "innerPage": false, "dedicatedLocalSite": true, "contentDepthWords": null, "reviewCount": null, "notes": "Exact-match keyword domain; double-listed (positions 5 and 8). Style suggests possible existing rank-and-rent/lead-gen site."}},
+    {"name": "Alamo Land Service (homepage)", "domain": "alamolandservice.com", "url": "https://alamolandservice.com/", "position": 6, "kind": "local_business", "signals": {"cityInTitle": true, "innerPage": false, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "Second listing from the same domain; homepage title targets San Antonio and New Braunfels."}},
+    {"name": "Bad Hog Land Clearing", "domain": "badhoglandclearing.com", "url": "https://www.badhoglandclearing.com/new-braunfels-tx/", "position": 7, "kind": "out_of_town", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "Texas land clearing company reaching New Braunfels through a templated city service-area page."}},
+    {"name": "New Braunfels Land Clearing (leveling page)", "domain": "newbraunfelslandclearing.com", "url": "https://newbraunfelslandclearing.com/leveling-and-grading/", "position": 8, "kind": "local_business", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": true, "contentDepthWords": null, "reviewCount": null, "notes": "Second listing for the exact-match domain - it holds two of the top 8 slots."}},
+    {"name": "BrittCo Land Clearing Landscaping", "domain": "brittcolandclearing.com", "url": "https://brittcolandclearing.com/", "position": 9, "kind": "local_business", "signals": {"cityInTitle": true, "innerPage": false, "dedicatedLocalSite": true, "contentDepthWords": null, "reviewCount": null, "notes": "Local New Braunfels land clearing and landscaping company ranking with its homepage."}},
+    {"name": "Hunter Land Clearing", "domain": "hunterlandclearing.com", "url": "https://www.hunterlandclearing.com/", "position": 10, "kind": "local_business", "signals": {"cityInTitle": false, "innerPage": false, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "Hill Country regional operator with an 830 (New Braunfels area) phone number; title targets the region, not the city."}}
+  ],
+  "operatorCandidates": [
+    {"name": "Alamo Land Service", "domain": "alamolandservice.com", "whyCandidate": "Locally owned New Braunfels land service company ranking 4th and 6th but still below two directories and a national lead-gen site.", "source": "web_search"},
+    {"name": "BrittCo Land Clearing Landscaping", "domain": "brittcolandclearing.com", "whyCandidate": "Local NB land clearing company ranking 9th with its homepage, well below directories and exact-match domains.", "source": "web_search"},
+    {"name": "Hunter Land Clearing", "domain": "hunterlandclearing.com", "whyCandidate": "Hill Country operator with a local 830 phone number ranking last of the visible results with no city-specific page.", "source": "web_search"},
+    {"name": "Bad Hog Land Clearing", "domain": "badhoglandclearing.com", "whyCandidate": "Already builds city service-area pages for New Braunfels (position 7), indicating budget and appetite for leads in this market.", "source": "web_search"},
+    {"name": "Shelton Land & Ranch Services", "domain": null, "whyCandidate": "Named in the position-1 Yelp snippet as a top New Braunfels land clearing provider but has no visible ranking of its own site in this SERP.", "source": "web_search"},
+    {"name": "Joe Knows Land Clearing", "domain": null, "whyCandidate": "Appears only in the Yelp top-10 snippet, not on its own domain anywhere in the visible organic results.", "source": "web_search"}
+  ],
+  "domains": [],
+  "notes": [
+    "Directories hold positions 1-2 and a national programmatic site (landclearing.org) holds position 3 - the first real company site does not appear until position 4.",
+    "An exact-match domain (newbraunfelslandclearing.com) already ranks twice (positions 5 and 8), suggesting a rank-and-rent or lead-gen play may already exist in this market.",
+    "Both Alamo Land Service and newbraunfelslandclearing.com double-list, a sign of relatively thin organic competition.",
+    "Yelp's snippet reveals at least six local operators (Shelton Land & Ranch, Hat Creek, Grigonis Excavation, J316 Excavation, Two Men & A Hoe, Joe Knows Land Clearing) that are invisible in organic results - a deep pool of potential lead buyers.",
+    "No franchise presence observed in this niche."
+  ]
+}

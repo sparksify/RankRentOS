@@ -1,0 +1,50 @@
+{
+  "marketKey": "mold-remediation|Frisco|TX",
+  "nicheSlug": "mold-remediation",
+  "city": "Frisco",
+  "state": "TX",
+  "collectedAt": "2026-08-04T16:34:00Z",
+  "serp": {
+    "provider": "web_search",
+    "query": "mold remediation Frisco TX",
+    "engine": "web",
+    "device": "desktop",
+    "geoParams": {"location": "Frisco, TX"},
+    "observedAt": "2026-08-04T16:31:50Z",
+    "results": [
+      {"position": 1, "resultType": "organic", "url": "https://www.yelp.com/search?find_desc=Mold+Remediation&find_loc=Frisco%2C+TX", "title": "TOP 10 BEST Mold Remediation in Frisco, TX - Updated 2026 - Quality & Affordability - Yelp", "snippet": "Yelp directory results for mold remediation in Frisco, TX."},
+      {"position": 2, "resultType": "organic", "url": "https://www.servpro.com/locations/tx/servpro-of-allen/services/mold-remediation", "title": "Professional Mold Remediation, Removal, and Mitigation Services near Frisco, TX | SERVPRO of Allen", "snippet": "24/7 mold remediation from inspection through removal and cleanup."},
+      {"position": 3, "resultType": "organic", "url": "https://www.thumbtack.com/tx/frisco/mold-remediation", "title": "The 10 Best Mold Remediation Companies in Frisco, TX 2024", "snippet": "Thumbtack directory of mold remediation companies in Frisco."},
+      {"position": 4, "resultType": "organic", "url": "https://waterdamagefrisco.org/black-mold-frisco-tx-home-what-to-do-immediately/", "title": "Black Mold Frisco TX Home , What to Do Immediately", "snippet": "Common causes of mold in Frisco include slab leaks, plumbing drips, HVAC condensate clogs, and roof leaks."},
+      {"position": 5, "resultType": "organic", "url": "https://restopros.com/service-areas/frisco/", "title": "Remediation & Restoration Services | Frisco, TX | RestoPros, Inc.", "snippet": "Mold removal and water damage restoration in Frisco-area homes; (855) 587-3786."},
+      {"position": 6, "resultType": "organic", "url": "https://moldinspectionandtest.com/frisco-tx", "title": "Mold Inspection & Testing Frisco Texas", "snippet": "MI&T offers unbiased mold inspection and testing; 972-559-4115."},
+      {"position": 7, "resultType": "organic", "url": "https://www.barrettenv.com/frisco-tx-mold-inspection/", "title": "Trusted Mold & Indoor Air Quality Inspections for Frisco, TX – Barrett Environmental", "snippet": "Mold and indoor air quality inspections for Frisco, TX."},
+      {"position": 8, "resultType": "organic", "url": "https://www.resetdecon.com/mold-removal-prevention", "title": "Mold Cleanup | Frisco, TX | Reset Decon", "snippet": "Safe mold and mildew removal; (469) 871-6090."}
+    ]
+  },
+  "competitors": [
+    {"name": "Yelp", "domain": "yelp.com", "url": "https://www.yelp.com/search?find_desc=Mold+Remediation&find_loc=Frisco%2C+TX", "position": 1, "kind": "directory", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "Directory holds the #1 organic position."}},
+    {"name": "SERVPRO of Allen", "domain": "servpro.com", "url": "https://www.servpro.com/locations/tx/servpro-of-allen/services/mold-remediation", "position": 2, "kind": "franchise", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "National franchise; the ranking territory is Allen-based, serving 'near Frisco' — not even a Frisco-based franchise unit."}},
+    {"name": "Thumbtack", "domain": "thumbtack.com", "url": "https://www.thumbtack.com/tx/frisco/mold-remediation", "position": 3, "kind": "directory", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "Second directory in the top 3."}},
+    {"name": "Water Damage Frisco (waterdamagefrisco.org)", "domain": "waterdamagefrisco.org", "url": "https://waterdamagefrisco.org/black-mold-frisco-tx-home-what-to-do-immediately/", "position": 4, "kind": "other", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": true, "contentDepthWords": null, "reviewCount": null, "notes": "City-dedicated .org domain ranking with a blog post; looks like an existing lead-gen/rank-and-rent style site — direct evidence the model works in this SERP."}},
+    {"name": "RestoPros, Inc.", "domain": "restopros.com", "url": "https://restopros.com/service-areas/frisco/", "position": 5, "kind": "franchise", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "Restoration franchise brand ranking via a Frisco service-area page."}},
+    {"name": "Mold Inspection & Testing (MI&T)", "domain": "moldinspectionandtest.com", "url": "https://moldinspectionandtest.com/frisco-tx", "position": 6, "kind": "national", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "National inspection/testing-only chain with a Frisco city page."}},
+    {"name": "Barrett Environmental", "domain": "barrettenv.com", "url": "https://www.barrettenv.com/frisco-tx-mold-inspection/", "position": 7, "kind": "local_business", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "DFW-area environmental inspection firm (inspection/IAQ, not remediation) with a Frisco city page."}},
+    {"name": "Reset Decon", "domain": "resetdecon.com", "url": "https://www.resetdecon.com/mold-removal-prevention", "position": 8, "kind": "local_business", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "DFW-local decontamination/mold cleanup company; service page with Frisco, TX in the title."}}
+  ],
+  "operatorCandidates": [
+    {"name": "Reset Decon", "domain": "resetdecon.com", "whyCandidate": "DFW-local mold cleanup company ranking last (position 8) in the primary SERP, below directories and franchises — strong incentive to buy Frisco leads.", "source": "web_search"},
+    {"name": "Texas Water Doctor", "domain": "texaswaterdoctor.com", "whyCandidate": "Local restoration company seen in follow-up search with a Frisco mold removal page advertising same-day service, but absent from the primary SERP top results.", "source": "web_search"},
+    {"name": "The Duct Kings", "domain": "theductkings.com", "whyCandidate": "DFW company marketing itself as '#1 Mold Remediation Service in Frisco' in follow-up search results yet not ranking in the primary SERP.", "source": "web_search"},
+    {"name": "Tulip Carpet Cleaning Frisco", "domain": "friscocarpetcleaning.com", "whyCandidate": "Frisco-branded local cleaning company offering mold remediation, seen only in the secondary search — adjacent operator that monetizes mold leads.", "source": "web_search"},
+    {"name": "Ace Mold Remediation", "domain": null, "whyCandidate": "Local Frisco-area company specializing in black mold and mildew removal, surfaced only via the Expertise.com roundup in the follow-up search (no direct domain visible in results).", "source": "web_search"}
+  ],
+  "domains": [],
+  "notes": [
+    "Directories hold positions 1 and 3 (Yelp, Thumbtack) and the #2 franchise is SERVPRO of Allen — an out-of-city territory serving Frisco — so no Frisco-based remediator ranks in the top 3.",
+    "Position 4 is waterdamagefrisco.org, a city-dedicated .org that appears to be an existing lead-gen/rank-and-rent style site — evidence this model already ranks in this market.",
+    "Three of eight primary results are inspection/testing-only (MI&T, Barrett Environmental) or content pages, not remediation providers.",
+    "Follow-up search ('mold removal company Frisco TX') surfaced many additional operators (Restoration 1, ServiceMaster Restore, Voda, Regent Restoration, Paul Davis, Ace Mold Remediation, Texas Water Doctor, The Duct Kings, Tulip Carpet Cleaning), confirming a deep pool of potential lead buyers.",
+    "Voda claims 10,000+ five-star reviews in its follow-up-search title; no per-result review counts were visible in the primary SERP."
+  ]
+}

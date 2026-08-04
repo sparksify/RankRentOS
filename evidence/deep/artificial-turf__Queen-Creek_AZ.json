@@ -1,0 +1,46 @@
+{
+  "marketKey": "artificial-turf|Queen Creek|AZ",
+  "nicheSlug": "artificial-turf",
+  "city": "Queen Creek",
+  "state": "AZ",
+  "collectedAt": "2026-08-04T16:30:10Z",
+  "serp": {
+    "provider": "web_search",
+    "query": "artificial turf installation Queen Creek AZ",
+    "engine": "web",
+    "device": "desktop",
+    "geoParams": {"location": "Queen Creek, AZ"},
+    "observedAt": "2026-08-04T16:29:45Z",
+    "results": [
+      {"position": 1, "resultType": "organic", "url": "https://www.turfscapesofarizona.com/queen-creek-artificial-grass-turf-installation", "title": "Artificial Grass Installation in Queen Creek, AZ — Turfscapes Of Arizona LLC", "snippet": "Artificial grass installation in Queen Creek, AZ, offers a reliable and attractive solution for maintaining a green landscape without regular upkeep."},
+      {"position": 2, "resultType": "organic", "url": "https://theyardexperts.com/services/artificial-turf/", "title": "Artificial Grass Queen Creek | Synthetic Grass Installation AZ", "snippet": "The Yard Experts handle every step from site preparation and soil assessment to final installation, ensuring proper drainage and long-lasting results."},
+      {"position": 3, "resultType": "organic", "url": "https://arizonaturfprofessionals.com/artificial-turf-queen-creek-az/", "title": "Artificial Turf Installation Queen Creek - Arizona Turf Professionals Synthetic Grass Installers", "snippet": "Arizona Turf Professionals can complete most installation projects within a day."},
+      {"position": 4, "resultType": "organic", "url": "https://www.azdesertturf.com/", "title": "Artificial Grass Installer Queen Creek AZ | Turf Installation", "snippet": "Artificial turf installation typically takes 1-3 days depending on project size."},
+      {"position": 5, "resultType": "organic", "url": "https://pristinegreenaz.com/queen-creek-artificial-turf", "title": "Queen Creek AZ Artificial Turf Installation | Top-Rated Synthetic Grass Company | Licensed ROC #323493", "snippet": "Pristine Green AZ is licensed ROC #323493 and insured for all Queen Creek communities."},
+      {"position": 6, "resultType": "organic", "url": "https://www.queencreekturfpros.com/", "title": "Artificial Turf | Turf Contractor | Queen Creek, AZ", "snippet": "Queen Creek turf contractor offering artificial turf installation."},
+      {"position": 7, "resultType": "organic", "url": "https://www.queencreekturfandlandscape.com/", "title": "Expert Artificial Turf Installer Queen Creek | Free Quotes", "snippet": "Free quotes for artificial turf installation in Queen Creek."}
+    ]
+  },
+  "competitors": [
+    {"name": "Turfscapes of Arizona", "domain": "turfscapesofarizona.com", "url": "https://www.turfscapesofarizona.com/queen-creek-artificial-grass-turf-installation", "position": 1, "kind": "local_business", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "Phoenix East Valley turf company ranking with a Queen Creek city landing page; statewide brand, not city-dedicated."}},
+    {"name": "The Yard Experts", "domain": "theyardexperts.com", "url": "https://theyardexperts.com/services/artificial-turf/", "position": 2, "kind": "local_business", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "Local landscaping company; ranks with a service inner page whose title targets Queen Creek; multi-service site, not turf/city-dedicated."}},
+    {"name": "Arizona Turf Professionals", "domain": "arizonaturfprofessionals.com", "url": "https://arizonaturfprofessionals.com/artificial-turf-queen-creek-az/", "position": 3, "kind": "local_business", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "Statewide-branded Phoenix-metro installer using a Queen Creek city landing page."}},
+    {"name": "AZ Desert Turf", "domain": "azdesertturf.com", "url": "https://www.azdesertturf.com/", "position": 4, "kind": "local_business", "signals": {"cityInTitle": true, "innerPage": false, "dedicatedLocalSite": true, "contentDepthWords": null, "reviewCount": null, "notes": "Homepage ranking with Queen Creek in the title; site appears anchored to Queen Creek/East Valley turf installs."}},
+    {"name": "Pristine Green AZ", "domain": "pristinegreenaz.com", "url": "https://pristinegreenaz.com/queen-creek-artificial-turf", "position": 5, "kind": "local_business", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "Licensed contractor (ROC #323493); AZ-wide brand ranking via Queen Creek city page."}},
+    {"name": "Queen Creek Turf Pros", "domain": "queencreekturfpros.com", "url": "https://www.queencreekturfpros.com/", "position": 6, "kind": "local_business", "signals": {"cityInTitle": true, "innerPage": false, "dedicatedLocalSite": true, "contentDepthWords": null, "reviewCount": null, "notes": "Exact-match city+niche domain ranking on its homepage; classic single-city local site (possibly itself a lead-gen build)."}},
+    {"name": "Queen Creek Turf and Landscape", "domain": "queencreekturfandlandscape.com", "url": "https://www.queencreekturfandlandscape.com/", "position": 7, "kind": "local_business", "signals": {"cityInTitle": true, "innerPage": false, "dedicatedLocalSite": true, "contentDepthWords": null, "reviewCount": null, "notes": "Exact-match city domain, homepage ranking; single-city local business site."}}
+  ],
+  "operatorCandidates": [
+    {"name": "AZ Desert Turf", "domain": "azdesertturf.com", "whyCandidate": "Queen Creek-focused installer ranking at position 4, just below the top 3, so incremental leads would be valuable.", "source": "web_search"},
+    {"name": "Pristine Green AZ", "domain": "pristinegreenaz.com", "whyCandidate": "Licensed (ROC #323493) AZ installer ranking 5th via a city page; established contractor likely to buy Queen Creek leads.", "source": "web_search"},
+    {"name": "Queen Creek Turf Pros", "domain": "queencreekturfpros.com", "whyCandidate": "Single-city turf contractor at position 6 with an exact-match domain; below the fold and plausibly hungry for more local leads.", "source": "web_search"},
+    {"name": "Queen Creek Turf and Landscape", "domain": "queencreekturfandlandscape.com", "whyCandidate": "Local turf and landscape installer at position 7 offering free quotes; lowest-ranked local business observed in the SERP.", "source": "web_search"}
+  ],
+  "domains": [],
+  "notes": [
+    "No directories (Yelp/Angi/Thumbtack) and no national franchises appeared in the observed organic results — the SERP is entirely local and metro-area company sites.",
+    "Two exact-match city domains (queencreekturfpros.com, queencreekturfandlandscape.com) rank on their homepages, suggesting city+niche EMD sites can rank here.",
+    "Statewide Phoenix-metro brands win the top 3 via city landing pages; truly city-dedicated sites sit at positions 4-7.",
+    "No review counts were visible in the search results."
+  ]
+}

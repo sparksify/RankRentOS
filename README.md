@@ -1,44 +1,35 @@
-# RankRentOS
+# RankRentOS — Discovery MVP
 
-Rank-and-rent market intelligence and pipeline OS. Scans (niche × city) markets,
-scores organic winnability × demand, checks exact-match domains, estimates
-rent/commission value, and tracks each market from watchlist → renting.
+Market intelligence OS for rank & rent asset discovery. Turns the 1,392-market
+corpus (24 niches × 58 cities) plus current competitive/domain evidence into a
+ranked, evidence-backed recommendation of the first 10 local lead-gen assets to
+build — with approval workflow, provenance, and versioned scoring.
 
-## Structure
+**Current Batch 1: see [`docs/Batch-1-Selection.md`](docs/Batch-1-Selection.md).**
 
-- `src/` — data pipeline (Node, no framework)
-  - `run.js` — main scan: SerpAPI SERP + autocomplete + Trends, content crawls, RDAP domains
-  - `volume.js` — DataForSEO search volume + CPC for every market keyword
-  - `rescore.js` — volume/CPC gates applied to scores
-  - `value.js` — expected monthly $ value + value-weighted rank
-  - `deep.js` — keyword-variant verification of top markets
-  - `sync.js` — push results to Supabase (`runs`/`markets`/`domains`/`pipeline`)
-  - `dashboard.js` — static HTML report generator (artifact)
-- `app/` — Next.js app (the SaaS UI), reads Supabase, writes pipeline stages
-- `data/` — niche & city seed tables, cached volumes/trends
+## Layout
 
-## Run a scan
+- `src/` — TypeScript pipeline: providers, qualification (`qual-v1.0`),
+  Opportunity Lens (`rr-opportunity-v1.0`), identity resolution, selection,
+  Blueprint Lite. Run stages via `npm run ingest|qualify|score|select|blueprints`.
+- `app/` — Next.js app (Vercel project `rankrent-os`): dashboard, discovery
+  runner, candidate explorer, opportunity reports, Batch 1 approval board.
+- `db/migrations/` — canonical schema (`rros_*` tables in Supabase) + in-database
+  corpus loader and qualification functions.
+- `data/` — v0 corpus (niches, cities, DataForSEO volumes, trends) = raw evidence.
+- `evidence/` — committed raw research evidence (SERP snapshots, registrar
+  domain verification) referenced by `rros_raw_evidence.storage_ref`.
+- `docs/` — audit, architecture + decision log, scoring, providers, setup,
+  runbook, Batch 1 selection.
+- `legacy/` — the v0 pipeline and app, preserved.
 
-```bash
-node src/run.js            # full scan (SERP cached to data/cache/)
-node src/volume.js         # volume + CPC (cached)
-node src/rescore.js        # apply volume gates
-node src/value.js          # value model
-node src/deep.js --top 30  # verify top markets
-node src/sync.js --label "my run"
-```
-
-## App
+## Quick start
 
 ```bash
-cd app && npm install && npm run dev   # http://localhost:3311
+npm install && npm test        # 34 tests, offline
+npm run pipeline               # full discovery pipeline over committed data
+cd app && npm install && npm run dev   # UI on :3311
 ```
 
-Env (never committed): `.env` in root needs `SERPAPI_KEY`, `DATAFORSEO_AUTH`,
-`SUPABASE_URL`, `SUPABASE_ANON_KEY`. The app needs `APP_PASSWORD` (login) —
-set in `app/.env.local` locally and in Vercel project env for production.
-
-## Deploy (Vercel)
-
-Root directory: `app/`. Set env vars `APP_PASSWORD` (+ optional `APP_SECRET`).
-Domain: www.rankrentos.com → add in Vercel → CNAME per Vercel instructions.
+Setup, env vars and deployment: `docs/Discovery-MVP-Setup.md`.
+Operating and rerunning research: `docs/Discovery-MVP-Runbook.md`.

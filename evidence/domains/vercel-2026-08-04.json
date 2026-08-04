@@ -1,0 +1,1620 @@
+{
+ "provider": "vercel_registrar",
+ "observedAt": "2026-08-04T16:34:55.921Z",
+ "results": [
+  {
+   "domain": "apexwatersofteners.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "watersoftenersapex.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "apexwaterfiltration.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "waterfiltrationapex.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "apexsoftwater.com",
+   "available": false,
+   "price": null,
+   "message": "not available for purchase"
+  },
+  {
+   "domain": "softwaterapex.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "apexwatertreatment.com",
+   "available": false,
+   "price": null,
+   "message": "not available for purchase"
+  },
+  {
+   "domain": "watertreatmentapex.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "apexwatersoftenerspros.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "katywatersofteners.com",
+   "available": false,
+   "price": null,
+   "message": "not available for purchase"
+  },
+  {
+   "domain": "watersoftenerskaty.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "katywaterfiltration.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "waterfiltrationkaty.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "katysoftwater.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "softwaterkaty.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "katywatertreatment.com",
+   "available": false,
+   "price": null,
+   "message": "not available for purchase"
+  },
+  {
+   "domain": "watertreatmentkaty.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "katywatersoftenerspros.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "gilbertwatersofteners.com",
+   "available": false,
+   "price": null,
+   "message": "not available for purchase"
+  },
+  {
+   "domain": "watersoftenersgilbert.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "gilbertwaterfiltration.com",
+   "available": false,
+   "price": null,
+   "message": "not available for purchase"
+  },
+  {
+   "domain": "waterfiltrationgilbert.com",
+   "available": false,
+   "price": null,
+   "message": "not available for purchase"
+  },
+  {
+   "domain": "gilbertsoftwater.com",
+   "available": false,
+   "price": null,
+   "message": "not available for purchase"
+  },
+  {
+   "domain": "softwatergilbert.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "gilbertwatertreatment.com",
+   "available": false,
+   "price": null,
+   "message": "not available for purchase"
+  },
+  {
+   "domain": "watertreatmentgilbert.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "gilbertwatersoftenerspros.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "prosperappliancerepair.com",
+   "available": false,
+   "price": null,
+   "message": "not available for purchase"
+  },
+  {
+   "domain": "appliancerepairprosper.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "prosperappliances.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "appliancesprosper.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "prosperappliancefix.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "appliancefixprosper.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "prosperrepairpros.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "repairprosprosper.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "prosperappliancerepairpros.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "rockwallappliancerepair.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "appliancerepairrockwall.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "rockwallappliances.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "appliancesrockwall.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "rockwallappliancefix.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "appliancefixrockwall.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "rockwallrepairpros.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "repairprosrockwall.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "rockwallappliancerepairpros.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "forneyappliancerepair.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "appliancerepairforney.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "forneyappliances.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "appliancesforney.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "forneyappliancefix.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "appliancefixforney.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "forneyrepairpros.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "repairprosforney.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "forneyappliancerepairpros.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "friscodumpsters.com",
+   "available": false,
+   "price": null,
+   "message": "not available for purchase"
+  },
+  {
+   "domain": "dumpstersfrisco.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "friscodumpsterrental.com",
+   "available": false,
+   "price": null,
+   "message": "not available for purchase"
+  },
+  {
+   "domain": "dumpsterrentalfrisco.com",
+   "available": false,
+   "price": null,
+   "message": "not available for purchase"
+  },
+  {
+   "domain": "friscorolloffdumpsters.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "rolloffdumpstersfrisco.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "friscorolloff.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "rollofffrisco.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "friscodumpsterspros.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "mckinneydumpsters.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "dumpstersmckinney.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "mckinneydumpsterrental.com",
+   "available": false,
+   "price": null,
+   "message": "not available for purchase"
+  },
+  {
+   "domain": "dumpsterrentalmckinney.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "mckinneyrolloffdumpsters.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "rolloffdumpstersmckinney.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "mckinneyrolloff.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "rolloffmckinney.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "mckinneydumpsterspros.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "georgetowndumpsters.com",
+   "available": false,
+   "price": null,
+   "message": "not available for purchase"
+  },
+  {
+   "domain": "dumpstersgeorgetown.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "georgetowndumpsterrental.com",
+   "available": false,
+   "price": null,
+   "message": "not available for purchase"
+  },
+  {
+   "domain": "dumpsterrentalgeorgetown.com",
+   "available": false,
+   "price": null,
+   "message": "not available for purchase"
+  },
+  {
+   "domain": "georgetownrolloffdumpsters.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "rolloffdumpstersgeorgetown.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "georgetownrolloff.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "rolloffgeorgetown.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "georgetowndumpsterspros.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "friscoautoglass.com",
+   "available": false,
+   "price": null,
+   "message": "not available for purchase"
+  },
+  {
+   "domain": "autoglassfrisco.com",
+   "available": false,
+   "price": null,
+   "message": "not available for purchase"
+  },
+  {
+   "domain": "friscowindshield.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "windshieldfrisco.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "friscowindshieldrepair.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "windshieldrepairfrisco.com",
+   "available": false,
+   "price": null,
+   "message": "not available for purchase"
+  },
+  {
+   "domain": "friscoautoglassrepair.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "autoglassrepairfrisco.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "friscoautoglasspros.com",
+   "available": false,
+   "price": null,
+   "message": "not available for purchase"
+  },
+  {
+   "domain": "mckinneyautoglass.com",
+   "available": false,
+   "price": null,
+   "message": "not available for purchase"
+  },
+  {
+   "domain": "autoglassmckinney.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "mckinneywindshield.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "windshieldmckinney.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "mckinneywindshieldrepair.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "windshieldrepairmckinney.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "mckinneyautoglassrepair.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "autoglassrepairmckinney.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "mckinneyautoglasspros.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "midlothianautoglass.com",
+   "available": false,
+   "price": null,
+   "message": "not available for purchase"
+  },
+  {
+   "domain": "autoglassmidlothian.com",
+   "available": false,
+   "price": null,
+   "message": "not available for purchase"
+  },
+  {
+   "domain": "midlothianwindshield.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "windshieldmidlothian.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "midlothianwindshieldrepair.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "windshieldrepairmidlothian.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "midlothianautoglassrepair.com",
+   "available": true,
+   "price": null,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "autoglassrepairmidlothian.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "midlothianautoglasspros.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "katyoutdoorkitchens.com",
+   "available": false,
+   "price": null,
+   "message": "not available for purchase"
+  },
+  {
+   "domain": "outdoorkitchenskaty.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "katyoutdoorkitchen.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "outdoorkitchenkaty.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "katyoutdoorliving.com",
+   "available": false,
+   "price": null,
+   "message": "not available for purchase"
+  },
+  {
+   "domain": "outdoorlivingkaty.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "katypatiokitchens.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "patiokitchenskaty.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "katyoutdoorkitchenspros.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "friscooutdoorkitchens.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "outdoorkitchensfrisco.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "friscooutdoorkitchen.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "outdoorkitchenfrisco.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "friscooutdoorliving.com",
+   "available": false,
+   "price": null,
+   "message": "not available for purchase"
+  },
+  {
+   "domain": "outdoorlivingfrisco.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "friscopatiokitchens.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "patiokitchensfrisco.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "friscooutdoorkitchenspros.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "queencreekturf.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "turfqueencreek.com",
+   "available": false,
+   "price": null,
+   "message": "not available for purchase"
+  },
+  {
+   "domain": "queencreekartificialturf.com",
+   "available": false,
+   "price": null,
+   "message": "not available for purchase"
+  },
+  {
+   "domain": "artificialturfqueencreek.com",
+   "available": false,
+   "price": null,
+   "message": "not available for purchase"
+  },
+  {
+   "domain": "queencreekturfinstall.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "turfinstallqueencreek.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "queencreeksyntheticgrass.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "syntheticgrassqueencreek.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "queencreekturfpros.com",
+   "available": false,
+   "price": null,
+   "message": "not available for purchase"
+  },
+  {
+   "domain": "mckinneyoutdoorkitchens.com",
+   "available": false,
+   "price": null,
+   "message": "not available for purchase"
+  },
+  {
+   "domain": "outdoorkitchensmckinney.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "mckinneyoutdoorkitchen.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "outdoorkitchenmckinney.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "mckinneyoutdoorliving.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "outdoorlivingmckinney.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "mckinneypatiokitchens.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "patiokitchensmckinney.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "mckinneyoutdoorkitchenspros.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "franklinmoldremediation.com",
+   "available": false,
+   "price": null,
+   "message": "not available for purchase"
+  },
+  {
+   "domain": "moldremediationfranklin.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "franklinmoldremoval.com",
+   "available": false,
+   "price": null,
+   "message": "not available for purchase"
+  },
+  {
+   "domain": "moldremovalfranklin.com",
+   "available": false,
+   "price": null,
+   "message": "not available for purchase"
+  },
+  {
+   "domain": "franklinmold.com",
+   "available": false,
+   "price": null,
+   "message": "not available for purchase"
+  },
+  {
+   "domain": "moldfranklin.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "franklinmoldpros.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "moldprosfranklin.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "franklinmoldremediationpros.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "castlerockturf.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "turfcastlerock.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "castlerockartificialturf.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "artificialturfcastlerock.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "castlerockturfinstall.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "turfinstallcastlerock.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "castlerocksyntheticgrass.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "syntheticgrasscastlerock.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "castlerockturfpros.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "friscomoldremediation.com",
+   "available": false,
+   "price": null,
+   "message": "not available for purchase"
+  },
+  {
+   "domain": "moldremediationfrisco.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "friscomoldremoval.com",
+   "available": false,
+   "price": null,
+   "message": "not available for purchase"
+  },
+  {
+   "domain": "moldremovalfrisco.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "friscomold.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "moldfrisco.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "friscomoldpros.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "moldprosfrisco.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "friscomoldremediationpros.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "rockwallmoldremediation.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "moldremediationrockwall.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "rockwallmoldremoval.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "moldremovalrockwall.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "rockwallmold.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "moldrockwall.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "rockwallmoldpros.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "moldprosrockwall.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "rockwallmoldremediationpros.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "windsorductcleaning.com",
+   "available": false,
+   "price": null,
+   "message": "not available for purchase"
+  },
+  {
+   "domain": "ductcleaningwindsor.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "windsorairducts.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "airductswindsor.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "windsorairductcleaning.com",
+   "available": false,
+   "price": null,
+   "message": "not available for purchase"
+  },
+  {
+   "domain": "airductcleaningwindsor.com",
+   "available": false,
+   "price": null,
+   "message": "not available for purchase"
+  },
+  {
+   "domain": "windsorducts.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "ductswindsor.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "windsorductcleaningpros.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "mckinneyturf.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "turfmckinney.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "mckinneyartificialturf.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "artificialturfmckinney.com",
+   "available": false,
+   "price": null,
+   "message": "not available for purchase"
+  },
+  {
+   "domain": "mckinneyturfinstall.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "turfinstallmckinney.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "mckinneysyntheticgrass.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "syntheticgrassmckinney.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "mckinneyturfpros.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "gilbertductcleaning.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "ductcleaninggilbert.com",
+   "available": false,
+   "price": null,
+   "message": "not available for purchase"
+  },
+  {
+   "domain": "gilbertairducts.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "airductsgilbert.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "gilbertairductcleaning.com",
+   "available": false,
+   "price": null,
+   "message": "not available for purchase"
+  },
+  {
+   "domain": "airductcleaninggilbert.com",
+   "available": false,
+   "price": null,
+   "message": "not available for purchase"
+  },
+  {
+   "domain": "gilbertducts.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "ductsgilbert.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "gilbertductcleaningpros.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "parkerductcleaning.com",
+   "available": false,
+   "price": null,
+   "message": "not available for purchase"
+  },
+  {
+   "domain": "ductcleaningparker.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "parkerairducts.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "airductsparker.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "parkerairductcleaning.com",
+   "available": false,
+   "price": null,
+   "message": "not available for purchase"
+  },
+  {
+   "domain": "airductcleaningparker.com",
+   "available": false,
+   "price": null,
+   "message": "not available for purchase"
+  },
+  {
+   "domain": "parkerducts.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "ductsparker.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "parkerductcleaningpros.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "conroelandclearing.com",
+   "available": false,
+   "price": null,
+   "message": "not available for purchase"
+  },
+  {
+   "domain": "landclearingconroe.com",
+   "available": false,
+   "price": null,
+   "message": "not available for purchase"
+  },
+  {
+   "domain": "conroelotclearing.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "lotclearingconroe.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "conroelandgrading.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "landgradingconroe.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "conroeclearing.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "clearingconroe.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "conroelandclearingpros.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "katygutters.com",
+   "available": false,
+   "price": null,
+   "message": "not available for purchase"
+  },
+  {
+   "domain": "gutterskaty.com",
+   "available": false,
+   "price": null,
+   "message": "not available for purchase"
+  },
+  {
+   "domain": "katyseamlessgutters.com",
+   "available": false,
+   "price": null,
+   "message": "not available for purchase"
+  },
+  {
+   "domain": "seamlessgutterskaty.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "katygutterinstall.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "gutterinstallkaty.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "katygutterpros.com",
+   "available": false,
+   "price": null,
+   "message": "not available for purchase"
+  },
+  {
+   "domain": "gutterproskaty.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "katygutterspros.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "newbraunfelsfence.com",
+   "available": false,
+   "price": null,
+   "message": "not available for purchase"
+  },
+  {
+   "domain": "fencenewbraunfels.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "newbraunfelsfencing.com",
+   "available": false,
+   "price": null,
+   "message": "not available for purchase"
+  },
+  {
+   "domain": "fencingnewbraunfels.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "newbraunfelsfencecompany.com",
+   "available": false,
+   "price": null,
+   "message": "not available for purchase"
+  },
+  {
+   "domain": "fencecompanynewbraunfels.com",
+   "available": false,
+   "price": null,
+   "message": "not available for purchase"
+  },
+  {
+   "domain": "newbraunfelsfencepros.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "fenceprosnewbraunfels.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "newbraunfelsgutters.com",
+   "available": false,
+   "price": null,
+   "message": "not available for purchase"
+  },
+  {
+   "domain": "guttersnewbraunfels.com",
+   "available": false,
+   "price": null,
+   "message": "not available for purchase"
+  },
+  {
+   "domain": "newbraunfelsseamlessgutters.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "seamlessguttersnewbraunfels.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "newbraunfelsgutterinstall.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "gutterinstallnewbraunfels.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "newbraunfelsgutterpros.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "gutterprosnewbraunfels.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "newbraunfelsgutterspros.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "castlerockretainingwalls.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "retainingwallscastlerock.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "castlerockretainingwall.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "retainingwallcastlerock.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "castlerockwallbuilders.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "wallbuilderscastlerock.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "castlerockhardscape.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "hardscapecastlerock.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "castlerockretainingwallspros.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "newbraunfelslandclearing.com",
+   "available": false,
+   "price": null,
+   "message": "not available for purchase"
+  },
+  {
+   "domain": "landclearingnewbraunfels.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "newbraunfelslotclearing.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "lotclearingnewbraunfels.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "newbraunfelslandgrading.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "landgradingnewbraunfels.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "newbraunfelsclearing.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "clearingnewbraunfels.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  },
+  {
+   "domain": "newbraunfelslandclearingpros.com",
+   "available": true,
+   "price": 11.25,
+   "message": "available via Vercel registrar"
+  }
+ ]
+}

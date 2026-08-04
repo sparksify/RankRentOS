@@ -1,0 +1,51 @@
+{
+  "marketKey": "retaining-walls|Castle Rock|CO",
+  "nicheSlug": "retaining-walls",
+  "city": "Castle Rock",
+  "state": "CO",
+  "collectedAt": "2026-08-04T16:34:00Z",
+  "serp": {
+    "provider": "web_search",
+    "query": "retaining wall contractor Castle Rock CO",
+    "engine": "web",
+    "device": "desktop",
+    "geoParams": {"location": "Castle Rock, CO"},
+    "observedAt": "2026-08-04T16:30:00Z",
+    "results": [
+      {"position": 1, "resultType": "organic", "url": "https://www.bbb.org/us/co/castle-rock/category/retaining-wall-contractors", "title": "Retaining Wall Contractors near Castle Rock, CO | Better Business Bureau. Start with Trust ®", "snippet": "BBB directory category page for retaining wall contractors near Castle Rock."},
+      {"position": 2, "resultType": "organic", "url": "https://www.houzz.com/professionals/stone-pavers-and-concrete/castle-rock-co-us-project-type-retaining-wall-construction-probr1-bo~t_11824~r_5416329~sv_29438", "title": "Best 15 Retaining Wall Construction Companies in Castle Rock, CO | Houzz", "snippet": "Houzz directory of top-rated Castle Rock retaining wall construction services with ratings and reviews."},
+      {"position": 3, "resultType": "organic", "url": "https://www.yelp.com/search?find_desc=Retaining+Wall+Contractor&find_loc=Castle+Rock,+CO", "title": "TOP 10 BEST Retaining Wall Contractor in Castle Rock, CO - Updated 2026 - Quality & Affordability - Yelp", "snippet": "Yelp search results page for retaining wall contractors in Castle Rock."},
+      {"position": 4, "resultType": "organic", "url": "https://www.paradiselandscapingco.com/retaining-walls-flatwork/", "title": "Custom Retaining Wall Contractors in CO - Landscaping & Design", "snippet": "Expert landscaping and retaining wall designs for Monument, Colorado Springs, and Castle Rock, CO."},
+      {"position": 5, "resultType": "organic", "url": "https://www.coloradoconcreteexperts.com/castle-rock-co-residential-concrete-services/retaining-walls/", "title": "Residential Retaining Walls in Castle Rock, CO - Colorado Concrete Experts", "snippet": "Professional residential retaining wall installation service in Castle Rock, CO."},
+      {"position": 6, "resultType": "organic", "url": "https://www.coloradoconcreteexperts.com/castle-rock-co-commercial-concrete-services/retaining-walls/", "title": "Commercial Retaining Walls in Castle Rock, CO - Colorado Concrete Experts", "snippet": "Commercial retaining wall page from the same Colorado Concrete Experts city-page structure."},
+      {"position": 7, "resultType": "organic", "url": "https://www.hvhardscapellc.com/castle-rock-co/", "title": "Hardscape Contractor Castle Rock, CO | HV HARDSCAPE LLC", "snippet": "Hardscaping team with 10+ years experience serving Castle Rock; (719) 517-7647 for a free estimate."},
+      {"position": 8, "resultType": "organic", "url": "https://daillandscaping.com/retaining_walls.html", "title": "Retaining Walls | Dail & Son Landscaping | Monument | Castle Rock | Colorado Springs", "snippet": "Landscaper with completed retaining wall projects in Castle Rock; anchored to Monument/Colorado Springs."},
+      {"position": 9, "resultType": "organic", "url": "https://castlerockconcreteservices.com/retaining-walls", "title": "Retaining Walls - Castle Rock Concrete Services | Castle Rock Concrete Services", "snippet": "Durable retaining walls for commercial and residential; 6+ years experience, dozens of installs around Castle Rock."}
+    ]
+  },
+  "competitors": [
+    {"name": "Better Business Bureau", "domain": "bbb.org", "url": "https://www.bbb.org/us/co/castle-rock/category/retaining-wall-contractors", "position": 1, "kind": "directory", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "Directory category page at position 1."}},
+    {"name": "Houzz", "domain": "houzz.com", "url": "https://www.houzz.com/professionals/stone-pavers-and-concrete/castle-rock-co-us-project-type-retaining-wall-construction-probr1-bo~t_11824~r_5416329~sv_29438", "position": 2, "kind": "directory", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "Directory listing page at position 2."}},
+    {"name": "Yelp", "domain": "yelp.com", "url": "https://www.yelp.com/search?find_desc=Retaining+Wall+Contractor&find_loc=Castle+Rock,+CO", "position": 3, "kind": "directory", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "Yelp search results page at position 3; directories sweep the entire top 3."}},
+    {"name": "Paradise Landscaping Co.", "domain": "paradiselandscapingco.com", "url": "https://www.paradiselandscapingco.com/retaining-walls-flatwork/", "position": 4, "kind": "out_of_town", "signals": {"cityInTitle": false, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "Anchored to Monument/Colorado Springs; serves Castle Rock via a general CO retaining-wall page. Highest non-directory result."}},
+    {"name": "Colorado Concrete Experts", "domain": "coloradoconcreteexperts.com", "url": "https://www.coloradoconcreteexperts.com/castle-rock-co-residential-concrete-services/retaining-walls/", "position": 5, "kind": "out_of_town", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "Regional concrete company with templated Castle Rock city pages; holds two consecutive SERP slots (5 and 6)."}},
+    {"name": "Colorado Concrete Experts (commercial page)", "domain": "coloradoconcreteexperts.com", "url": "https://www.coloradoconcreteexperts.com/castle-rock-co-commercial-concrete-services/retaining-walls/", "position": 6, "kind": "out_of_town", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "Second page from the same domain - double-listing shows weak competition for the query."}},
+    {"name": "HV Hardscape LLC", "domain": "hvhardscapellc.com", "url": "https://www.hvhardscapellc.com/castle-rock-co/", "position": 7, "kind": "out_of_town", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "719 (Colorado Springs) phone number; reaches Castle Rock via a city service-area page."}},
+    {"name": "Dail & Son Landscaping", "domain": "daillandscaping.com", "url": "https://daillandscaping.com/retaining_walls.html", "position": 8, "kind": "out_of_town", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "Monument/Colorado Springs landscaper listing Castle Rock in its title; dated .html URL structure."}},
+    {"name": "Castle Rock Concrete Services", "domain": "castlerockconcreteservices.com", "url": "https://castlerockconcreteservices.com/retaining-walls", "position": 9, "kind": "local_business", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": true, "contentDepthWords": null, "reviewCount": null, "notes": "The only Castle Rock-anchored business in the SERP, ranking last of the visible results (position 9)."}}
+  ],
+  "operatorCandidates": [
+    {"name": "Castle Rock Concrete Services", "domain": "castlerockconcreteservices.com", "whyCandidate": "The only truly local Castle Rock company in the SERP yet ranks 9th, below three directories and four out-of-town firms.", "source": "web_search"},
+    {"name": "HV Hardscape LLC", "domain": "hvhardscapellc.com", "whyCandidate": "Colorado Springs-based hardscaper already maintaining a Castle Rock city page (position 7), showing it wants Castle Rock jobs.", "source": "web_search"},
+    {"name": "Colorado Concrete Experts", "domain": "coloradoconcreteexperts.com", "whyCandidate": "Regional company investing in templated Castle Rock residential and commercial retaining wall pages (positions 5-6).", "source": "web_search"},
+    {"name": "Dail & Son Landscaping", "domain": "daillandscaping.com", "whyCandidate": "Monument/COS landscaper with completed Castle Rock retaining wall projects ranking 8th on an outdated site.", "source": "web_search"},
+    {"name": "Paradise Landscaping Co.", "domain": "paradiselandscapingco.com", "whyCandidate": "Highest-ranking non-directory (position 4) but anchored to Monument/Colorado Springs with no Castle Rock-specific page.", "source": "web_search"}
+  ],
+  "domains": [],
+  "notes": [
+    "Directories (BBB, Houzz, Yelp) occupy the entire top 3 - a strong signal that no local business site is dominant and a dedicated local site could break in.",
+    "No Castle Rock-based retaining wall specialist ranks in the top 8; every non-directory competitor is anchored to Monument, Colorado Springs, or the wider Denver region.",
+    "Colorado Concrete Experts double-lists (positions 5 and 6) with templated city pages, another sign of thin competition.",
+    "No franchise presence observed in this niche/city."
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "marketKey": "dumpster-rental|Frisco|TX",
+  "nicheSlug": "dumpster-rental",
+  "city": "Frisco",
+  "state": "TX",
+  "collectedAt": "2026-08-04T16:30:00Z",
+  "serp": {
+    "provider": "web_search",
+    "query": "dumpster rental Frisco TX",
+    "engine": "web",
+    "device": "desktop",
+    "geoParams": {"location": "Frisco, TX"},
+    "observedAt": "2026-08-04T16:29:04Z",
+    "results": [
+      {"position": 1, "resultType": "organic", "url": "https://www.yelp.com/search?cflt=dumpsterrental&find_loc=Frisco%2C+TX", "title": "THE BEST 10 DUMPSTER RENTAL IN FRISCO, TX - UPDATED JULY 2026 - HOURS - YELP", "snippet": "Yelp list including DFW Easy Dumpsters, Dumpster Dudez, Maverick Dumpster Rentals, Quality Junk Removal, NTX Junk Hauling, Grouchy's Dumpster Rental, Red E Bins, Texas Junk Guys."},
+      {"position": 2, "resultType": "organic", "url": "https://www.thumbtack.com/tx/frisco/dumpster-rentals", "title": "Dumpster rental providers near Frisco, TX", "snippet": "Thumbtack directory of dumpster rental providers near Frisco."},
+      {"position": 3, "resultType": "organic", "url": "https://www.bintheredumpthat.com/dallas-metro-dumpster-rentals/service-areas/frisco-tx/", "title": "Frisco, TX Dumpster Rentals | Bin There Dump That", "snippet": "Franchise service-area page; dumpster sizes from 4 to 20 cubic yards."},
+      {"position": 4, "resultType": "organic", "url": "https://www.budgetdumpster.com/frisco-tx-dumpster-rental-texas.php", "title": "Roll Off Dumpster Rentals in Frisco, TX | Budget Dumpster", "snippet": "National broker; services Frisco zip codes 75033, 75034, 75036 and 75068."},
+      {"position": 5, "resultType": "organic", "url": "https://dumpsterrentalsfrisco.com/", "title": "Roll-Off Dumpster Rental, Frisco TX | Fast Delivery, Great Pricing!", "snippet": "Family owned for over 20 years, offering various dumpster sizes for projects."},
+      {"position": 6, "resultType": "organic", "url": "https://www.goodguysjunkremovalnorthtx.com/frisco-tx-junk-removal-service/", "title": "Frisco Junk Removal and Dumpster Rental Services – Good Guys Junk Removal & Dumpster Rentals", "snippet": "More than 25 years of combined industry experience; (214) 532-7349."},
+      {"position": 7, "resultType": "organic", "url": "https://dumpsterquestdfw.com/dumpster-rental-frisco/", "title": "Dumpster Rental in Frisco, TX | Dumpster Quest", "snippet": "Flat-rate from $370; (469) 770-7346."}
+    ]
+  },
+  "competitors": [
+    {"name": "Yelp (search page)", "domain": "yelp.com", "url": "https://www.yelp.com/search?cflt=dumpsterrental&find_loc=Frisco%2C+TX", "position": 1, "kind": "directory", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "Directory category page at position 1; lists many small local haulers."}},
+    {"name": "Thumbtack", "domain": "thumbtack.com", "url": "https://www.thumbtack.com/tx/frisco/dumpster-rentals", "position": 2, "kind": "directory", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "Directory lead-gen marketplace page."}},
+    {"name": "Bin There Dump That", "domain": "bintheredumpthat.com", "url": "https://www.bintheredumpthat.com/dallas-metro-dumpster-rentals/service-areas/frisco-tx/", "position": 3, "kind": "franchise", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "National franchise; Dallas-metro territory's Frisco service-area page."}},
+    {"name": "Budget Dumpster", "domain": "budgetdumpster.com", "url": "https://www.budgetdumpster.com/frisco-tx-dumpster-rental-texas.php", "position": 4, "kind": "national", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "National dumpster broker with programmatic city page."}},
+    {"name": "Dumpster Rentals Frisco", "domain": "dumpsterrentalsfrisco.com", "url": "https://dumpsterrentalsfrisco.com/", "position": 5, "kind": "local_business", "signals": {"cityInTitle": true, "innerPage": false, "dedicatedLocalSite": true, "contentDepthWords": null, "reviewCount": null, "notes": "Exact-match domain, family owned 20+ years, ranking on its homepage."}},
+    {"name": "Good Guys Junk Removal & Dumpster Rentals", "domain": "goodguysjunkremovalnorthtx.com", "url": "https://www.goodguysjunkremovalnorthtx.com/frisco-tx-junk-removal-service/", "position": 6, "kind": "local_business", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "North-Texas regional company ranking via a Frisco city page."}},
+    {"name": "Dumpster Quest", "domain": "dumpsterquestdfw.com", "url": "https://dumpsterquestdfw.com/dumpster-rental-frisco/", "position": 7, "kind": "local_business", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "DFW-wide company ranking via a Frisco service-area page; flat-rate pricing from $370."}}
+  ],
+  "operatorCandidates": [
+    {"name": "Good Guys Junk Removal & Dumpster Rentals", "domain": "goodguysjunkremovalnorthtx.com", "whyCandidate": "Real North-Texas operator ranking at position 6 via a service-area page, below directories and national brands that dominate the top of the SERP.", "source": "web_search"},
+    {"name": "Dumpster Quest", "domain": "dumpsterquestdfw.com", "whyCandidate": "DFW operator with transparent flat-rate pricing ranking last (position 7) for the Frisco query.", "source": "web_search"},
+    {"name": "Maverick Dumpster Rentals", "domain": null, "whyCandidate": "Appears only inside the Yelp Best-10 list for Frisco with no own-site presence in organic results.", "source": "web_search"},
+    {"name": "Grouchy's Dumpster Rental", "domain": null, "whyCandidate": "Listed in Yelp's Frisco dumpster rental results but absent from organic SERP, so it lacks owned search visibility.", "source": "web_search"},
+    {"name": "DFW Easy Dumpsters", "domain": null, "whyCandidate": "Named in the Yelp Frisco dumpster rental list without any own-domain ranking in the organic results.", "source": "web_search"}
+  ],
+  "domains": [],
+  "notes": [
+    "Positions 1-4 are directories, a franchise, and a national broker; local operators only start at position 5.",
+    "One strong exact-match-domain local site (dumpsterrentalsfrisco.com) holds position 5, but there is room since only 3 of 7 results are local companies.",
+    "Yelp snippet reveals a long tail of small local haulers (Maverick, Grouchy's, DFW Easy, Red E Bins, Texas Junk Guys) with no organic presence — a healthy pool of potential lead buyers."
+  ]
+}

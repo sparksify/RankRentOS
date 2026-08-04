@@ -1,0 +1,50 @@
+{
+  "marketKey": "auto-glass|Frisco|TX",
+  "nicheSlug": "auto-glass",
+  "city": "Frisco",
+  "state": "TX",
+  "collectedAt": "2026-08-04T16:30:00Z",
+  "serp": {
+    "provider": "web_search",
+    "query": "auto glass repair Frisco TX",
+    "engine": "web",
+    "device": "desktop",
+    "geoParams": {"location": "Frisco, TX"},
+    "observedAt": "2026-08-04T16:30:00Z",
+    "results": [
+      {"position": 1, "resultType": "organic", "url": "https://www.caliber.com/find-a-location/glass-frisco-75034", "title": "Auto Glass Replacement & Repair in Frisco | 75034 | Caliber Auto Glass", "snippet": "Caliber Auto Glass location page for Frisco 75034."},
+      {"position": 2, "resultType": "organic", "url": "https://autoglassrepairtx.com/auto-glass-repair-frisco/", "title": "Auto Glass Repair Frisco - Auto Glass Replair Dallas Plano Irving TX 469-789-4106", "snippet": "Same-day mobile auto glass replacement; (469) 789-4106; serves Dallas, Plano, Irving."},
+      {"position": 3, "resultType": "organic", "url": "https://www.safelite.com/stores/frisco-tx", "title": "Windshield Repair & Replacement in Frisco, TX | Safelite", "snippet": "Quality auto glass repair and replacement, mobile service and safety systems recalibration."},
+      {"position": 4, "resultType": "organic", "url": "https://www.friscoautoglassdoctors.com/", "title": "Auto Glass Repair and Windshield Repalcement in Frisco, Texas", "snippet": "Fast, affordable solutions for chips, cracks, and minor damage."},
+      {"position": 5, "resultType": "organic", "url": "https://www.autoglassinfriscotx.com/", "title": "Frisco Windshield Replacement & Auto Glass Repair", "snippet": "Auto Glass of Frisco: mobile windshield replacement with same-day service; 972-232-2358."},
+      {"position": 6, "resultType": "organic", "url": "https://adkinsglasstx.com/", "title": "Adkins Glass - Auto Glass Shop in Frisco, TX", "snippet": "Glass repair and replacement for windshield, side/rear window and ADAS recalibration."},
+      {"position": 7, "resultType": "organic", "url": "https://www.mysafeglass.com/locations/auto-glass-frisco", "title": "Auto Glass Frisco Repair and Windshield Replacement | MySafeGlas", "snippet": "MySafeGlass location page for Frisco auto glass repair."},
+      {"position": 8, "resultType": "organic", "url": "https://friscoautoglasspros.com/", "title": "Frisco Auto Glass -Windshield Repair, Replacement Frisco,TX", "snippet": "Mobile windshield replacement; (972) 607-5809 for free quote."},
+      {"position": 9, "resultType": "organic", "url": "https://titanautoglass.net/auto-glass-frisco/", "title": "Frisco Auto Glass - Auto Glass Repair & Windshield Replacement - Titan Auto Glass", "snippet": "Complete windshield replacement and auto glass repair with in-shop service and free mobile service."}
+    ]
+  },
+  "competitors": [
+    {"name": "Caliber Auto Glass", "domain": "caliber.com", "url": "https://www.caliber.com/find-a-location/glass-frisco-75034", "position": 1, "kind": "national", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "National collision/glass chain's Frisco location page at position 1."}},
+    {"name": "Auto Glass Repair TX (My Safe Auto Glass)", "domain": "autoglassrepairtx.com", "url": "https://autoglassrepairtx.com/auto-glass-repair-frisco/", "position": 2, "kind": "out_of_town", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "DFW-wide mobile operator (title anchors Dallas/Plano/Irving) ranking via a Frisco service-area page."}},
+    {"name": "Safelite", "domain": "safelite.com", "url": "https://www.safelite.com/stores/frisco-tx", "position": 3, "kind": "franchise", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "National auto glass brand's Frisco store page."}},
+    {"name": "Frisco Auto Glass Doctors", "domain": "friscoautoglassdoctors.com", "url": "https://www.friscoautoglassdoctors.com/", "position": 4, "kind": "local_business", "signals": {"cityInTitle": true, "innerPage": false, "dedicatedLocalSite": true, "contentDepthWords": null, "reviewCount": null, "notes": "Exact-match city domain ranking on its homepage; title has a typo (Repalcement), suggesting low-polish site."}},
+    {"name": "Auto Glass of Frisco", "domain": "autoglassinfriscotx.com", "url": "https://www.autoglassinfriscotx.com/", "position": 5, "kind": "local_business", "signals": {"cityInTitle": true, "innerPage": false, "dedicatedLocalSite": true, "contentDepthWords": null, "reviewCount": null, "notes": "Exact-match city domain, mobile same-day service, ranking on its homepage."}},
+    {"name": "Adkins Glass", "domain": "adkinsglasstx.com", "url": "https://adkinsglasstx.com/", "position": 6, "kind": "local_business", "signals": {"cityInTitle": true, "innerPage": false, "dedicatedLocalSite": true, "contentDepthWords": null, "reviewCount": null, "notes": "Brick-and-mortar auto glass shop in Frisco with ADAS recalibration capability."}},
+    {"name": "MySafeGlass", "domain": "mysafeglass.com", "url": "https://www.mysafeglass.com/locations/auto-glass-frisco", "position": 7, "kind": "out_of_town", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "Multi-location DFW operator ranking via a Frisco locations page."}},
+    {"name": "Frisco Auto Glass Pros", "domain": "friscoautoglasspros.com", "url": "https://friscoautoglasspros.com/", "position": 8, "kind": "local_business", "signals": {"cityInTitle": true, "innerPage": false, "dedicatedLocalSite": true, "contentDepthWords": null, "reviewCount": null, "notes": "Exact-match city domain, mobile-only operator ranking on its homepage."}},
+    {"name": "Titan Auto Glass", "domain": "titanautoglass.net", "url": "https://titanautoglass.net/auto-glass-frisco/", "position": 9, "kind": "local_business", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "DFW-area shop with in-shop plus free mobile service, ranking via a Frisco city page."}}
+  ],
+  "operatorCandidates": [
+    {"name": "Frisco Auto Glass Doctors", "domain": "friscoautoglassdoctors.com", "whyCandidate": "First local business in the SERP (position 4, just below the national top 3) with a typo in its title tag indicating weak SEO investment.", "source": "web_search"},
+    {"name": "Auto Glass of Frisco", "domain": "autoglassinfriscotx.com", "whyCandidate": "Mobile same-day operator at position 5 competing under Caliber and Safelite for the same query.", "source": "web_search"},
+    {"name": "Adkins Glass", "domain": "adkinsglasstx.com", "whyCandidate": "Physical Frisco shop with ADAS recalibration ranking mid-pack at position 6, a service-heavy business that benefits from steady job flow.", "source": "web_search"},
+    {"name": "Frisco Auto Glass Pros", "domain": "friscoautoglasspros.com", "whyCandidate": "Mobile windshield operator ranking near the bottom (position 8) despite an exact-match domain, quoting jobs by phone.", "source": "web_search"},
+    {"name": "Titan Auto Glass", "domain": "titanautoglass.net", "whyCandidate": "Last-place result (position 9) via a Frisco city page; offers free mobile service across DFW so incremental leads are low-cost to serve.", "source": "web_search"}
+  ],
+  "domains": [],
+  "notes": [
+    "Zero directories in this SERP — all 9 results are actual glass companies, an unusually commercial results page.",
+    "Heavy exact-match-domain saturation: four separate local sites use Frisco+auto-glass domains (friscoautoglassdoctors, autoglassinfriscotx, friscoautoglasspros, plus titanautoglass city page), so a new rank-and-rent EMD faces direct lookalike competition.",
+    "National brands Caliber and Safelite hold positions 1 and 3, but local businesses own the entire middle of the SERP (positions 4-6 and 8), showing local sites can rank well here."
+  ]
+}

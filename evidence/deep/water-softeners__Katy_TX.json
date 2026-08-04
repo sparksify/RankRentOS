@@ -1,0 +1,49 @@
+{
+  "marketKey": "water-softeners|Katy|TX",
+  "nicheSlug": "water-softeners",
+  "city": "Katy",
+  "state": "TX",
+  "collectedAt": "2026-08-04T16:29:35Z",
+  "serp": {
+    "provider": "web_search",
+    "query": "water softener installation Katy TX",
+    "engine": "web",
+    "device": "desktop",
+    "geoParams": {"location": "Katy, TX"},
+    "observedAt": "2026-08-04T16:29:35Z",
+    "results": [
+      {"position": 1, "resultType": "organic", "url": "https://www.yelp.com/biz/texas-water-softeners-katy", "title": "Texas Water Softeners - Katy, TX", "snippet": "Yelp business listing for Texas Water Softeners, serving Katy homeowners for over 32 years with water purification, softener, and RO installation."},
+      {"position": 2, "resultType": "organic", "url": "https://www.met-plumbing.com/plumbing/water-softeners-and-filtration-systems/", "title": "Water Softeners Katy TX - Home Water Filter Systems Katy TX", "snippet": "MET Plumbing LLC installs water softeners and filtration systems in Houston & Katy TX area."},
+      {"position": 3, "resultType": "organic", "url": "https://filtrationbrothers.com/locations/katy-tx/water-softeners", "title": "Water Softener Installation in Katy, TX | Filtration Brothers", "snippet": "Filtration Brothers offers free water testing, professional installation, and ongoing support."},
+      {"position": 4, "resultType": "organic", "url": "https://qualitytx.com/katy-water-softener-installation/", "title": "Katy Water Softener Installation | Quality Home Products", "snippet": "Quality Home Products of Texas water softener installation page for Katy."},
+      {"position": 5, "resultType": "organic", "url": "https://www.airtechofkaty.com/plumbing/water-softeners/", "title": "Water Softeners in Katy, TX, Installation and Service to Protect Pipes and Appliances", "snippet": "Air Tech of Katy installs whole-home water softener systems sized for household usage and plumbing configuration."},
+      {"position": 6, "resultType": "organic", "url": "https://qualitytx.com/water-softener-katy-tx/", "title": "Water Softener Katy TX | Quality Home Products of Texas", "snippet": "Second Quality Home Products of Texas page targeting the Katy water softener query."},
+      {"position": 7, "resultType": "organic", "url": "https://katyplumbers.com/commercial-water-softeners/", "title": "Commercial Water Softener Installation & Service in Katy, TX", "snippet": "The Katy Plumbing Company; free water hardness test and consultation with upfront pricing."},
+      {"position": 8, "resultType": "organic", "url": "https://jrchomesolutionsoftexas.com/katy/", "title": "Home Water Softener System & Installation Katy, Texas | JRC", "snippet": "JRC Home Solutions of Texas specializes in water softener installation for Katy-area homes."}
+    ]
+  },
+  "competitors": [
+    {"name": "Texas Water Softeners", "domain": "yelp.com", "url": "https://www.yelp.com/biz/texas-water-softeners-katy", "position": 1, "kind": "directory", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "Yelp business profile page (not the company's own domain) for a 32+ year Katy water softener specialist; the business itself is a strong local player whose own site did not appear."}},
+    {"name": "MET Plumbing LLC", "domain": "met-plumbing.com", "url": "https://www.met-plumbing.com/plumbing/water-softeners-and-filtration-systems/", "position": 2, "kind": "local_business", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "Katy/Houston-area plumber ranking with a general water softener service page; title targets Katy TX."}},
+    {"name": "Filtration Brothers", "domain": "filtrationbrothers.com", "url": "https://filtrationbrothers.com/locations/katy-tx/water-softeners", "position": 3, "kind": "local_business", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "Water filtration specialist ranking via a /locations/katy-tx/ programmatic location page; multi-city site structure."}},
+    {"name": "Quality Home Products of Texas", "domain": "qualitytx.com", "url": "https://qualitytx.com/katy-water-softener-installation/", "position": 4, "kind": "out_of_town", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "Large Houston-metro home products dealer holding two SERP slots (positions 4 and 6) with near-duplicate Katy landing pages."}},
+    {"name": "Air Tech of Katy", "domain": "airtechofkaty.com", "url": "https://www.airtechofkaty.com/plumbing/water-softeners/", "position": 5, "kind": "local_business", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": true, "contentDepthWords": null, "reviewCount": null, "notes": "HVAC/plumbing company whose entire domain is anchored to Katy (airtechofkaty.com); water softeners is one service line among several."}},
+    {"name": "Quality Home Products of Texas (2nd page)", "domain": "qualitytx.com", "url": "https://qualitytx.com/water-softener-katy-tx/", "position": 6, "kind": "out_of_town", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "Second qualitytx.com landing page for the same query — double-serving indicates heavy SEO investment in Katy."}},
+    {"name": "The Katy Plumbing Company", "domain": "katyplumbers.com", "url": "https://katyplumbers.com/commercial-water-softeners/", "position": 7, "kind": "local_business", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": true, "contentDepthWords": null, "reviewCount": null, "notes": "City-branded plumbing company (katyplumbers.com) ranking with a commercial water softener page; domain is dedicated to Katy."}},
+    {"name": "JRC Home Solutions of Texas", "domain": "jrchomesolutionsoftexas.com", "url": "https://jrchomesolutionsoftexas.com/katy/", "position": 8, "kind": "local_business", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "Water softener installer ranking via a /katy/ city page on a broader Texas home-solutions site."}}
+  ],
+  "operatorCandidates": [
+    {"name": "Texas Water Softeners", "domain": "yelp.com/biz/texas-water-softeners-katy", "whyCandidate": "32+ year Katy water softener specialist visible only through its Yelp profile at position 1 — its own domain is absent from the SERP.", "source": "web_search"},
+    {"name": "JRC Home Solutions of Texas", "domain": "jrchomesolutionsoftexas.com", "whyCandidate": "Niche water softener installer sitting at the bottom of the observed results (position 8) behind larger multi-trade competitors.", "source": "web_search"},
+    {"name": "MET Plumbing LLC", "domain": "met-plumbing.com", "whyCandidate": "Katy-area plumber with a softener service line ranking at position 2 but competing against dedicated filtration specialists.", "source": "web_search"},
+    {"name": "Filtration Brothers", "domain": "filtrationbrothers.com", "whyCandidate": "Growing filtration specialist using programmatic location pages; offers free water tests, a lead-driven sales model that fits purchased leads.", "source": "web_search"},
+    {"name": "Air Tech of Katy", "domain": "airtechofkaty.com", "whyCandidate": "Katy-dedicated HVAC/plumbing brand at position 5 for which water softeners is an expansion service line.", "source": "web_search"}
+  ],
+  "domains": [],
+  "notes": [
+    "Competitive market: 7 of 8 results are actual businesses (only one directory result, a Yelp business profile at position 1).",
+    "Every result title contains the city name and every URL is an inner page — heavy city-page SEO saturation.",
+    "qualitytx.com double-serves the SERP with two near-duplicate Katy landing pages (positions 4 and 6).",
+    "Two dedicated-to-Katy domains rank (airtechofkaty.com, katyplumbers.com); no national franchise like Culligan appeared in the observed results."
+  ]
+}

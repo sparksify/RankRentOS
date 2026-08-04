@@ -1,0 +1,50 @@
+{
+  "marketKey": "auto-glass|McKinney|TX",
+  "nicheSlug": "auto-glass",
+  "city": "McKinney",
+  "state": "TX",
+  "collectedAt": "2026-08-04T16:31:00Z",
+  "serp": {
+    "provider": "web_search",
+    "query": "auto glass repair McKinney TX",
+    "engine": "web",
+    "device": "desktop",
+    "geoParams": {"location": "McKinney, TX"},
+    "observedAt": "2026-08-04T16:29:30Z",
+    "results": [
+      {"position": 1, "resultType": "organic", "url": "https://www.safelite.com/stores/mckinney-tx", "title": "Windshield Repair & Replacement in Mckinney, TX | Safelite", "snippet": "Safelite AutoGlass store at 417 Powerhouse, Suite A, McKinney, TX 75071; national warranty, repairs in as little as 30 minutes."},
+      {"position": 2, "resultType": "organic", "url": "https://www.yelp.com/biz/safelite-autoglass-mckinney", "title": "SAFELITE AUTOGLASS - Updated July 2026 - 31 Photos & 45 Reviews - 417 Powerhouse, McKinney, Texas - Windshield Installation & Repair - Phone Number - Yelp", "snippet": "Yelp listing for the Safelite AutoGlass McKinney location with 45 reviews."},
+      {"position": 3, "resultType": "organic", "url": "https://www.windshieldhub.com/texas/mckinney", "title": "Auto Glass Repair & Replacement McKinney, TX | WindshieldHUB®", "snippet": "National mobile auto glass network city page for McKinney."},
+      {"position": 4, "resultType": "organic", "url": "https://glassdoctor.com/dallas/geo/mckinney/home-glass", "title": "Home Glass Services in McKinney| Glass Doctor of Dallas Metroplex", "snippet": "Glass Doctor of Dallas Metroplex franchise geo page for McKinney."},
+      {"position": 5, "resultType": "organic", "url": "https://www.windshieldreplacementmckinney.com/", "title": "Auto Glass & Windshield Replacement | McKinney, TX", "snippet": "First Choice Glass Service: OEM auto glass and windshield replacement in McKinney TX, certified mobile technicians."},
+      {"position": 6, "resultType": "organic", "url": "https://moonautoglass.com/windshield-replacement-mckinney-texas/", "title": "Windshield replacement Mckinney Texas", "snippet": "Moon Auto Glass serves Plano, Dallas, Frisco, McKinney and surrounding areas; same-day mobile service."},
+      {"position": 7, "resultType": "organic", "url": "https://www.txstarglass.com/", "title": "Auto Glass Repair | Texas Star Automotive Services | Tyler, TX", "snippet": "Texas Star Automotive Services, based in Tyler TX, offering windshield repair and replacement."},
+      {"position": 8, "resultType": "organic", "url": "https://titanautoglass.net/auto-glass-mckinney/", "title": "McKinney Auto Glass - Auto Glass Repair & Windshield Replacement - Titan Auto Glass", "snippet": "Titan Auto Glass McKinney city page: windshields, side door glass, vent glass, quarter glass; in-shop and free mobile service."}
+    ]
+  },
+  "competitors": [
+    {"name": "Safelite AutoGlass", "domain": "safelite.com", "url": "https://www.safelite.com/stores/mckinney-tx", "position": 1, "kind": "franchise", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "National chain store-locator page for its McKinney shop at 417 Powerhouse."}},
+    {"name": "Safelite AutoGlass (Yelp listing)", "domain": "yelp.com", "url": "https://www.yelp.com/biz/safelite-autoglass-mckinney", "position": 2, "kind": "directory", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": 45, "notes": "Yelp business page for Safelite McKinney; 45 reviews shown in title."}},
+    {"name": "WindshieldHUB", "domain": "windshieldhub.com", "url": "https://www.windshieldhub.com/texas/mckinney", "position": 3, "kind": "national", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "National mobile auto-glass booking network with a programmatic Texas/McKinney city page."}},
+    {"name": "Glass Doctor of Dallas Metroplex", "domain": "glassdoctor.com", "url": "https://glassdoctor.com/dallas/geo/mckinney/home-glass", "position": 4, "kind": "franchise", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "Neighborly franchise; Dallas Metroplex territory geo page for McKinney (home glass focus)."}},
+    {"name": "First Choice Glass Service", "domain": "windshieldreplacementmckinney.com", "url": "https://www.windshieldreplacementmckinney.com/", "position": 5, "kind": "local_business", "signals": {"cityInTitle": true, "innerPage": false, "dedicatedLocalSite": true, "contentDepthWords": null, "reviewCount": null, "notes": "Exact-match domain (windshieldreplacementmckinney.com) dedicated to McKinney; mobile OEM glass service."}},
+    {"name": "Moon Auto Glass", "domain": "moonautoglass.com", "url": "https://moonautoglass.com/windshield-replacement-mckinney-texas/", "position": 6, "kind": "out_of_town", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "Plano/Dallas-anchored company reaching McKinney via a service-area page."}},
+    {"name": "Texas Star Automotive Services", "domain": "txstarglass.com", "url": "https://www.txstarglass.com/", "position": 7, "kind": "out_of_town", "signals": {"cityInTitle": false, "innerPage": false, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "Tyler, TX company (about 100 miles away) ranking on the homepage; title anchored to Tyler, not McKinney."}},
+    {"name": "Titan Auto Glass", "domain": "titanautoglass.net", "url": "https://titanautoglass.net/auto-glass-mckinney/", "position": 8, "kind": "out_of_town", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "DFW-area shop (Plano-based) with a dedicated McKinney city page; in-shop plus free mobile service."}}
+  ],
+  "operatorCandidates": [
+    {"name": "Titan Auto Glass", "domain": "titanautoglass.net", "whyCandidate": "DFW shop ranking only at position 8 via a McKinney city page, actively targeting McKinney with mobile service.", "source": "web_search"},
+    {"name": "Moon Auto Glass", "domain": "moonautoglass.com", "whyCandidate": "Plano-based mobile company listing McKinney among service cities but ranking mid-page (position 6) on a service-area page.", "source": "web_search"},
+    {"name": "Auto Eclipse of McKinney", "domain": "mckinneywindowtint.com", "whyCandidate": "Local McKinney tint/glass shop offering windshield replacement; appeared only in the follow-up 'near McKinney' search, not in the primary top results.", "source": "web_search"},
+    {"name": "Texas Windshield Service", "domain": "txwindshieldservice.com", "whyCandidate": "Mobile McKinney windshield company naming Stonebridge Ranch, Craig Ranch and Trinity Falls; visible only in the secondary search.", "source": "web_search"},
+    {"name": "McKinney Auto Glass Pros (Frisco Auto Glass Pros)", "domain": "friscoautoglasspros.com", "whyCandidate": "20+ year operator reaching McKinney through an inner page on a Frisco-branded domain, absent from the primary SERP top 8.", "source": "web_search"},
+    {"name": "Budget Auto Glass", "domain": "budgetautoglasstx.com", "whyCandidate": "Texas auto glass company with a McKinney windshield replacement page seen only in the follow-up search results.", "source": "web_search"}
+  ],
+  "domains": [],
+  "notes": [
+    "Positions 1-2 are both Safelite (own site plus its Yelp listing), and position 4 is Glass Doctor - heavy franchise presence at the top of the SERP.",
+    "Only one truly dedicated local site ranks (windshieldreplacementmckinney.com at position 5), an exact-match domain operated by First Choice Glass Service - evidence that EMD-style local sites can rank here.",
+    "A Tyler TX company (txstarglass.com, ~100 miles away) ranks at position 7, suggesting relatively weak local organic competition below the franchises.",
+    "Many additional local operators (Auto Eclipse, Texas Windshield Service, Budget Auto Glass, Frisco Auto Glass Pros) surface only in secondary searches - a deep pool of potential lead buyers."
+  ]
+}

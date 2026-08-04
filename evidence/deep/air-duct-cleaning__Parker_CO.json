@@ -1,0 +1,47 @@
+{
+  "marketKey": "air-duct-cleaning|Parker|CO",
+  "nicheSlug": "air-duct-cleaning",
+  "city": "Parker",
+  "state": "CO",
+  "collectedAt": "2026-08-04T16:35:30Z",
+  "serp": {
+    "provider": "web_search",
+    "query": "air duct cleaning Parker CO",
+    "engine": "web",
+    "device": "desktop",
+    "geoParams": {"location": "Parker, CO"},
+    "observedAt": "2026-08-04T16:35:30Z",
+    "results": [
+      {"position": 1, "resultType": "organic", "url": "https://www.bbb.org/us/co/parker/category/air-duct-cleaning", "title": "Air Duct Cleaning near Parker, CO | Better Business Bureau", "snippet": "BBB category directory for air duct cleaning near Parker, CO."},
+      {"position": 2, "resultType": "organic", "url": "https://www.angi.com/companylist/us/co/parker/air-duct-cleaning.htm", "title": "Top 10 Best Air duct cleaners in Parker, CO | Angi", "snippet": "Angi directory list of air duct cleaners in Parker, CO."},
+      {"position": 3, "resultType": "organic", "url": "https://www.facebook.com/parkerductcleaning/", "title": "Parker Duct Cleaning | Parker CO | Facebook", "snippet": "Facebook page of Parker Duct Cleaning offering air duct and dryer vent cleaning."},
+      {"position": 4, "resultType": "organic", "url": "https://www.milehighducts.com/air-duct-cleaning-parker", "title": "Air Duct Cleaning in Parker, Colorado | Mile High Ducts", "snippet": "Professional air duct cleaning in Parker, CO; A+ BBB rating; improve air quality, reduce allergens, boost HVAC efficiency."},
+      {"position": 5, "resultType": "organic", "url": "https://www.exactchoicellc.com/", "title": "Parker Air Duct Cleaning - Parker CO | Exact Choice Duct and Dryer Cleaning", "snippet": "Reliable air duct cleaning in Parker and surrounding Colorado areas."},
+      {"position": 6, "resultType": "organic", "url": "https://ductworks.com/colorado-air-duct-cleaning/parker-air-duct-cleaning-services/", "title": "Parker Air Duct Cleaning Services - Ductworks", "snippet": "NADCA-certified, locally owned team providing Parker, CO vent cleaning for 30+ years."},
+      {"position": 7, "resultType": "organic", "url": "https://www.theductguy.com/air-duct-cleaning-parker-co", "title": "Air Duct Cleaning Parker Colorado - The Duct Guys at Your Service", "snippet": "Trusted local experts serving Parker, CO homeowners; healthy home environment and lower utility bills."}
+    ]
+  },
+  "competitors": [
+    {"name": "Better Business Bureau", "domain": "bbb.org", "url": "https://www.bbb.org/us/co/parker/category/air-duct-cleaning", "position": 1, "kind": "directory", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "BBB category page holds position 1."}},
+    {"name": "Angi", "domain": "angi.com", "url": "https://www.angi.com/companylist/us/co/parker/air-duct-cleaning.htm", "position": 2, "kind": "directory", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "Angi city-category page."}},
+    {"name": "Parker Duct Cleaning (Facebook page)", "domain": "facebook.com", "url": "https://www.facebook.com/parkerductcleaning/", "position": 3, "kind": "directory", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "City-named local operator ranking only through its Facebook page — no own website visible on page one."}},
+    {"name": "Mile High Ducts", "domain": "milehighducts.com", "url": "https://www.milehighducts.com/air-duct-cleaning-parker", "position": 4, "kind": "local_business", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "Denver-metro duct cleaning specialist (A+ BBB) targeting Parker with a city landing page."}},
+    {"name": "Exact Choice Duct and Dryer Cleaning", "domain": "exactchoicellc.com", "url": "https://www.exactchoicellc.com/", "position": 5, "kind": "local_business", "signals": {"cityInTitle": true, "innerPage": false, "dedicatedLocalSite": true, "contentDepthWords": null, "reviewCount": null, "notes": "Homepage title anchors Parker CO; small local duct/dryer cleaning operator serving Parker and surrounding areas."}},
+    {"name": "Ductworks, Inc.", "domain": "ductworks.com", "url": "https://ductworks.com/colorado-air-duct-cleaning/parker-air-duct-cleaning-services/", "position": 6, "kind": "local_business", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "Long-established (30+ years) NADCA-certified Colorado company ranking via Parker service-area page; also seen ranking in Windsor CO — statewide service-area strategy."}},
+    {"name": "The Duct Guys", "domain": "theductguy.com", "url": "https://www.theductguy.com/air-duct-cleaning-parker-co", "position": 7, "kind": "local_business", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "Denver-area duct cleaning company with a Parker city page."}}
+  ],
+  "operatorCandidates": [
+    {"name": "Parker Duct Cleaning", "domain": null, "whyCandidate": "City-named local operator whose only page-one presence is its Facebook page (position 3) — appears to have no ranking website of its own, making it a prime lead buyer.", "source": "web_search"},
+    {"name": "Exact Choice Duct and Dryer Cleaning", "domain": "exactchoicellc.com", "whyCandidate": "Small Parker-anchored duct/dryer cleaner ranking mid-page (position 5) on a generic LLC domain, below two directories and a Facebook page.", "source": "web_search"},
+    {"name": "The Duct Guys", "domain": "theductguy.com", "whyCandidate": "Local duct cleaning company sitting at the bottom of page one (position 7) via a Parker city page.", "source": "web_search"},
+    {"name": "Mile High Ducts", "domain": "milehighducts.com", "whyCandidate": "A+ BBB-rated Denver-metro specialist actively targeting Parker with a dedicated landing page but ranking below the directories.", "source": "web_search"},
+    {"name": "Lucky Duct", "domain": null, "whyCandidate": "Mentioned in search results as serving Parker, Castle Rock, Lone Tree and nearby suburbs, but with no first-page organic ranking of its own for this query.", "source": "web_search"}
+  ],
+  "domains": [],
+  "notes": [
+    "Only 7 organic results surfaced; positions 1-3 are all directory/social properties (BBB, Angi, Facebook).",
+    "The city-named incumbent 'Parker Duct Cleaning' ranks only via Facebook — no dedicated Parker website holds an organic slot, so a dedicated local site could plausibly take top-3.",
+    "Zero national franchises on page one; the field is small local and Denver-metro operators using service-area pages.",
+    "Ductworks appears in both Parker and Windsor SERPs, running a statewide city-page strategy across Colorado."
+  ]
+}

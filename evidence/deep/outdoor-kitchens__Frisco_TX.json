@@ -1,0 +1,53 @@
+{
+  "marketKey": "outdoor-kitchens|Frisco|TX",
+  "nicheSlug": "outdoor-kitchens",
+  "city": "Frisco",
+  "state": "TX",
+  "collectedAt": "2026-08-04T16:31:00Z",
+  "serp": {
+    "provider": "web_search",
+    "query": "outdoor kitchen builder Frisco TX",
+    "engine": "web",
+    "device": "desktop",
+    "geoParams": {"location": "Frisco, TX"},
+    "observedAt": "2026-08-04T16:30:30Z",
+    "results": [
+      {"position": 1, "resultType": "organic", "url": "https://www.yelp.com/biz/dallas-outdoor-kitchens-frisco", "title": "Dallas Outdoor Kitchens - Frisco, TX", "snippet": "Yelp listing: Dallas Outdoor Kitchens, 11625 Custer Rd Ste 110-205, Frisco TX 75035; 25+ years experience."},
+      {"position": 2, "resultType": "organic", "url": "https://www.eleganceoutdoorliving.com/outdoor-kitchen-contractor-frisco-tx", "title": "Frisco Outdoor Kitchen Builders | Elegance Outdoor Living 🌱", "snippet": "Elegance Outdoor Living: outdoor kitchen contractor page for Frisco, TX."},
+      {"position": 3, "resultType": "organic", "url": "https://keanelandscaping.com/built-in-outdoor-kitchen-installer-in-frisco-tx/", "title": "Built in outdoor kitchen installer & Contractors in Frisco, TX", "snippet": "Keane Landscaping city page for built-in outdoor kitchens in Frisco."},
+      {"position": 4, "resultType": "organic", "url": "https://bobcatcustomconstruction.com/outdoor-kitchens/frisco-outdoor-kitchen-contractor/", "title": "Outdoor Kitchen Contractor in Frisco - Bobcat Custom Construction", "snippet": "Bobcat Custom Construction: outdoor kitchens specialty; (214) 886-5052."},
+      {"position": 5, "resultType": "organic", "url": "https://sunstonepools.com/outdoor-kitchens/frisco/", "title": "Outdoor Kitchens - Frisco, TX | Outdoor Kitchen Designers and Builders Near Frisco , Texas", "snippet": "Sunstone Pools outdoor kitchens city page for Frisco."},
+      {"position": 6, "resultType": "organic", "url": "https://www.mtrcontractors.com/outdoorkitchens", "title": "Premium Custom Outdoor Kitchen Builders in Frisco, Texas", "snippet": "MTR Contractors: 8,000+ outdoor kitchen projects, 5-star reputation, hand-cut stone."},
+      {"position": 7, "resultType": "organic", "url": "https://pgoutdoorkitchens.com/", "title": "Custom Outdoor Kitchens in Frisco, TX - PG Outdoor Kitchens", "snippet": "PG Outdoor Kitchens: building outdoor kitchens in North Texas since 2009, thousands built in DFW."},
+      {"position": 8, "resultType": "organic", "url": "https://www.mtrcontractors.com/outdoor-kitchens", "title": "Outdoor Kitchens | MTR Contractors | Frisco, TX", "snippet": "Second MTR Contractors outdoor kitchens page ranking for the same query."},
+      {"position": 9, "resultType": "organic", "url": "https://www.beautifulbackyardliving.com/", "title": "Beautiful Backyard Living®| Patio & Outdoor Kitchen Contractor | 2000 Old Witt Rd, Frisco, TX USA", "snippet": "Beautiful Backyard Living: design/build contractor since 2011 serving Collin, Denton and northern Dallas counties."},
+      {"position": 10, "resultType": "organic", "url": "https://www.kjcustom.com/dallas-outdoor-kitchens/", "title": "Outdoor Kitchens & Bars Dallas, Fort Worth, Arlington and Surrounding", "snippet": "KJ Custom: outdoor kitchens and bars for Dallas, Fort Worth, Arlington and surrounding areas."}
+    ]
+  },
+  "competitors": [
+    {"name": "Dallas Outdoor Kitchens (Yelp listing)", "domain": "yelp.com", "url": "https://www.yelp.com/biz/dallas-outdoor-kitchens-frisco", "position": 1, "kind": "directory", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "Yelp business page for Frisco-based Dallas Outdoor Kitchens outranking the company's own site."}},
+    {"name": "Elegance Outdoor Living", "domain": "eleganceoutdoorliving.com", "url": "https://www.eleganceoutdoorliving.com/outdoor-kitchen-contractor-frisco-tx", "position": 2, "kind": "local_business", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "DFW outdoor living contractor ranking via a Frisco city page; emoji in SERP title."}},
+    {"name": "Keane Landscaping", "domain": "keanelandscaping.com", "url": "https://keanelandscaping.com/built-in-outdoor-kitchen-installer-in-frisco-tx/", "position": 3, "kind": "local_business", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "Family-owned DFW landscaping firm with programmatic city pages (also ranks for McKinney)."}},
+    {"name": "Bobcat Custom Construction", "domain": "bobcatcustomconstruction.com", "url": "https://bobcatcustomconstruction.com/outdoor-kitchens/frisco-outdoor-kitchen-contractor/", "position": 4, "kind": "local_business", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "DFW custom construction firm with a Frisco outdoor kitchen city page."}},
+    {"name": "Sunstone Pools", "domain": "sunstonepools.com", "url": "https://sunstonepools.com/outdoor-kitchens/frisco/", "position": 5, "kind": "local_business", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "DFW pool builder cross-selling outdoor kitchens via a Frisco city page."}},
+    {"name": "MTR Contractors", "domain": "mtrcontractors.com", "url": "https://www.mtrcontractors.com/outdoorkitchens", "position": 6, "kind": "local_business", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "Frisco-based; claims 8,000+ outdoor kitchen projects; holds two SERP slots (positions 6 and 8)."}},
+    {"name": "PG Outdoor Kitchens", "domain": "pgoutdoorkitchens.com", "url": "https://pgoutdoorkitchens.com/", "position": 7, "kind": "local_business", "signals": {"cityInTitle": true, "innerPage": false, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "North Texas outdoor-kitchen specialist since 2009; homepage title targets Frisco but the brand serves all of DFW."}},
+    {"name": "MTR Contractors (second listing)", "domain": "mtrcontractors.com", "url": "https://www.mtrcontractors.com/outdoor-kitchens", "position": 8, "kind": "local_business", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "Duplicate/second outdoor kitchens URL from mtrcontractors.com in the same SERP."}},
+    {"name": "Beautiful Backyard Living", "domain": "beautifulbackyardliving.com", "url": "https://www.beautifulbackyardliving.com/", "position": 9, "kind": "local_business", "signals": {"cityInTitle": true, "innerPage": false, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "Frisco address (2000 Old Witt Rd) in title; serves Collin/Denton/north Dallas counties; since 2011."}},
+    {"name": "KJ Custom", "domain": "kjcustom.com", "url": "https://www.kjcustom.com/dallas-outdoor-kitchens/", "position": 10, "kind": "local_business", "signals": {"cityInTitle": false, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "Broad DFW page (Dallas/Fort Worth/Arlington) ranking without mentioning Frisco in the title."}}
+  ],
+  "operatorCandidates": [
+    {"name": "Dallas Outdoor Kitchens", "domain": "dallasoutdoorkitchens.com", "whyCandidate": "Frisco-headquartered specialist whose own site does not rank in the top 10 - only its Yelp listing at position 1 does.", "source": "web_search"},
+    {"name": "Bobcat Custom Construction", "domain": "bobcatcustomconstruction.com", "whyCandidate": "Outdoor-kitchen specialist ranking position 4, just below the top 3, actively targeting Frisco.", "source": "web_search"},
+    {"name": "PG Outdoor Kitchens", "domain": "pgoutdoorkitchens.com", "whyCandidate": "DFW niche pure-play since 2009 stuck at position 7 on its homepage for the Frisco query.", "source": "web_search"},
+    {"name": "Beautiful Backyard Living", "domain": "beautifulbackyardliving.com", "whyCandidate": "Frisco-based design/build contractor ranking only position 9 despite a physical local address.", "source": "web_search"},
+    {"name": "KJ Custom", "domain": "kjcustom.com", "whyCandidate": "DFW outdoor kitchen builder at position 10 with a Dallas-focused page and no Frisco-specific presence.", "source": "web_search"}
+  ],
+  "domains": [],
+  "notes": [
+    "Highly competitive niche-dense SERP: 8 of 10 results are real DFW contractor sites, most with dedicated Frisco city pages.",
+    "A Yelp listing holds position 1, outranking the featured business's own domain (dallasoutdoorkitchens.com absent from top 10).",
+    "mtrcontractors.com occupies two slots (positions 6 and 8) with near-duplicate outdoor kitchen URLs.",
+    "No national franchises or big-box chains in the top 10; no pure directories besides the single Yelp result."
+  ]
+}

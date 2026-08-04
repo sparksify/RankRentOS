@@ -1,0 +1,48 @@
+{
+  "marketKey": "dumpster-rental|Georgetown|TX",
+  "nicheSlug": "dumpster-rental",
+  "city": "Georgetown",
+  "state": "TX",
+  "collectedAt": "2026-08-04T16:30:00Z",
+  "serp": {
+    "provider": "web_search",
+    "query": "dumpster rental Georgetown TX",
+    "engine": "web",
+    "device": "desktop",
+    "geoParams": {"location": "Georgetown, TX"},
+    "observedAt": "2026-08-04T16:29:30Z",
+    "results": [
+      {"position": 1, "resultType": "organic", "url": "https://www.yelp.com/search?cflt=dumpsterrental&find_loc=Georgetown,+TX", "title": "THE BEST 10 DUMPSTER RENTAL in GEORGETOWN, TX - Updated 2026 - Hours - Yelp", "snippet": "Yelp list including Haul Guys, Austin Dumpsters, Tony's Dumpsters, Waste Hero, Texas Disposal Systems Georgetown, Hernandez Junk Solutions & Dumpster Rentals."},
+      {"position": 2, "resultType": "organic", "url": "https://www.wm.com/us/en/location/tx/georgetown/dumpster-rental-georgetown-tx", "title": "Dumpster Rental in Georgetown, TX | WM", "snippet": "WM rents 20-, 30- and 40-yard dumpsters; service area includes Weir, Jonah, Circleville, Taylor and Walburg."},
+      {"position": 3, "resultType": "organic", "url": "https://www.budgetdumpster.com/georgetown-tx-dumpster-rental-texas.php", "title": "Dumpster Rentals in Georgetown, TX | Budget Dumpster", "snippet": "Affordable dumpster rentals throughout Georgetown with delivery and pickup bundled into one upfront rate."},
+      {"position": 4, "resultType": "organic", "url": "https://www.junk-king.com/locations/georgetown/dumpster-rental", "title": "Dumpster Rental in Georgetown, TX | Junk King Georgetown", "snippet": "Junk King dumpsters hold up to 12 cubic yards."},
+      {"position": 5, "resultType": "organic", "url": "https://frontierwaste.com/dumpster-rental-georgetown-tx/", "title": "Dumpster Rental Georgetown, TX | Frontier Waste Solutions", "snippet": "Roll-off dumpster service in Georgetown for contractors, roofers, and homeowners; 20- and 30-yard containers."},
+      {"position": 6, "resultType": "organic", "url": "https://agsdumpsters.com/georgetown/", "title": "Dumpster Rental in Georgetown - AGS Dumpsters", "snippet": "AGS Dumpsters Georgetown service-area page."},
+      {"position": 7, "resultType": "organic", "url": "http://texas1stchoicedumpsterrental.com/", "title": "Dumpster Rental Georgetown TX | Roll-Off Dumpster Rentals | Texas 1st Choice", "snippet": "Rents 15, 18, 20, and 25 yard roll-off dumpsters in Georgetown and nearby Central Texas areas."},
+      {"position": 8, "resultType": "organic", "url": "https://www.bvrwasteandrecycling.com/georgetown", "title": "Georgetown, Texas | BVRWasteandRecycling", "snippet": "BVR Waste and Recycling Georgetown service page."}
+    ]
+  },
+  "competitors": [
+    {"name": "Yelp (search page)", "domain": "yelp.com", "url": "https://www.yelp.com/search?cflt=dumpsterrental&find_loc=Georgetown,+TX", "position": 1, "kind": "directory", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "Directory category page at position 1 listing many small local haulers."}},
+    {"name": "WM (Waste Management)", "domain": "wm.com", "url": "https://www.wm.com/us/en/location/tx/georgetown/dumpster-rental-georgetown-tx", "position": 2, "kind": "national", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "National waste giant's Georgetown location page."}},
+    {"name": "Budget Dumpster", "domain": "budgetdumpster.com", "url": "https://www.budgetdumpster.com/georgetown-tx-dumpster-rental-texas.php", "position": 3, "kind": "national", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "National dumpster broker programmatic city page."}},
+    {"name": "Junk King Georgetown", "domain": "junk-king.com", "url": "https://www.junk-king.com/locations/georgetown/dumpster-rental", "position": 4, "kind": "franchise", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "National junk removal franchise with a Georgetown territory page; 12-yard dumpsters only."}},
+    {"name": "Frontier Waste Solutions", "domain": "frontierwaste.com", "url": "https://frontierwaste.com/dumpster-rental-georgetown-tx/", "position": 5, "kind": "out_of_town", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "Texas-wide regional waste hauler reaching Georgetown via a city landing page."}},
+    {"name": "AGS Dumpsters", "domain": "agsdumpsters.com", "url": "https://agsdumpsters.com/georgetown/", "position": 6, "kind": "local_business", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "Austin-area local operator serving Georgetown via a service-area page."}},
+    {"name": "Texas 1st Choice Dumpster Rental", "domain": "texas1stchoicedumpsterrental.com", "url": "http://texas1stchoicedumpsterrental.com/", "position": 7, "kind": "local_business", "signals": {"cityInTitle": true, "innerPage": false, "dedicatedLocalSite": true, "contentDepthWords": null, "reviewCount": null, "notes": "Central Texas local operator whose homepage title targets Georgetown; site is HTTP (not HTTPS), a sign of a dated web presence."}},
+    {"name": "BVR Waste and Recycling", "domain": "bvrwasteandrecycling.com", "url": "https://www.bvrwasteandrecycling.com/georgetown", "position": 8, "kind": "out_of_town", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "Brazos Valley (College Station) anchored hauler reaching Georgetown via a service-area page."}}
+    ],
+  "operatorCandidates": [
+    {"name": "Texas 1st Choice Dumpster Rental", "domain": "texas1stchoicedumpsterrental.com", "whyCandidate": "Local Central-Texas operator at position 7 on an HTTP-only homepage, clearly under-invested in SEO despite targeting Georgetown in its title.", "source": "web_search"},
+    {"name": "AGS Dumpsters", "domain": "agsdumpsters.com", "whyCandidate": "Austin-area operator ranking at position 6 via a Georgetown service-area page, below directories, WM, and national brokers.", "source": "web_search"},
+    {"name": "Tony's Dumpsters", "domain": null, "whyCandidate": "Appears only in Yelp's Georgetown Best-10 list with no own-site presence in the organic results.", "source": "web_search"},
+    {"name": "Hernandez Junk Solutions & Dumpster Rentals", "domain": null, "whyCandidate": "Listed on Yelp for Georgetown dumpster rental but absent from the organic SERP.", "source": "web_search"},
+    {"name": "Waste Hero", "domain": null, "whyCandidate": "Named in the Yelp Georgetown list without any own-domain organic visibility.", "source": "web_search"}
+  ],
+  "domains": [],
+  "notes": [
+    "Top 4 positions are Yelp, WM, Budget Dumpster, and Junk King — no genuinely Georgetown-based company ranks in the top half.",
+    "No exact-match Georgetown domain exists in the SERP; every local-ish result reaches Georgetown via service-area pages from Austin, statewide, or Brazos Valley bases.",
+    "Yelp snippet reveals several small operators (Haul Guys, Tony's Dumpsters, Waste Hero, Hernandez Junk Solutions) with zero organic presence — strong lead-buyer pool for a rank-and-rent site."
+  ]
+}

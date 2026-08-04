@@ -1,0 +1,52 @@
+{
+  "marketKey": "auto-glass|Midlothian|TX",
+  "nicheSlug": "auto-glass",
+  "city": "Midlothian",
+  "state": "TX",
+  "collectedAt": "2026-08-04T16:31:00Z",
+  "serp": {
+    "provider": "web_search",
+    "query": "auto glass repair Midlothian TX",
+    "engine": "web",
+    "device": "desktop",
+    "geoParams": {"location": "Midlothian, TX"},
+    "observedAt": "2026-08-04T16:29:50Z",
+    "results": [
+      {"position": 1, "resultType": "organic", "url": "https://www.glass.net/local/tx/midlothian", "title": "MIDLOTHIAN, TX Windshield Replacement: Multiple Instant Auto Glass Replacement Quotes.", "snippet": "Quote-comparison network; average windshield replacement cost in Midlothian $316.20 (range $169.74-$1014.52)."},
+      {"position": 2, "resultType": "organic", "url": "https://www.yellowpages.com/midlothian-tx/windshield-repair", "title": "Best 30 Windshield Repair in Midlothian, TX with Reviews | The Real Yellow Pages®", "snippet": "Yellowpages directory list of windshield repair shops in Midlothian."},
+      {"position": 3, "resultType": "organic", "url": "https://www.yelp.com/search?cflt=autoglass&find_loc=Midlothian%2C+TX+76065", "title": "THE BEST 10 AUTO GLASS SERVICES NEAR MIDLOTHIAN, TX 76065 - UPDATED 2026 - HOURS - YELP", "snippet": "Yelp search page; mentions Midlothian Auto Glass, Jerry's Paint & Body Shop, Auto Glass Express, Texan Auto Glass Repair, Johnny's Windshields and Glass."},
+      {"position": 4, "resultType": "organic", "url": "https://www.autoglassonly.com/service-areas/tx/midlothian/", "title": "Auto Glass Repair and Replacement in Midlothian, TX | AutoGlassOnly.com", "snippet": "National mobile windshield repair/replacement service-area page; book online or call 1-866-410-5628."},
+      {"position": 5, "resultType": "organic", "url": "https://www.autoglassnative.com/midlothian-auto-glass", "title": "Auto Glass Shop in Midlothian, Texas — Mobile Windshield Replacement Ellis County TX | Auto Glass Native", "snippet": "Auto Glass Native: 20+ years experience, Google Guaranteed in DFW region, free mobile service; (972) 903-7640."},
+      {"position": 6, "resultType": "organic", "url": "https://autoglassexpresstx.com/", "title": "Auto Glass Express TX", "snippet": "Auto Glass Express, 300 N Bryant Avenue Suite 112, Midlothian, TX."},
+      {"position": 7, "resultType": "organic", "url": "https://www.glassgenie.co/midlothian-tx", "title": "Windshield Replacement & Auto Glass Repair in Midlothian, TX | Glass Genie", "snippet": "Family-owned DFW mobile glass company, 20+ years; ADAS calibration, sunroof replacement; 1-866-231-1781."},
+      {"position": 8, "resultType": "organic", "url": "https://www.autoglassmidlothian.com/", "title": "Auto Glass Replacement in Midlothian, Texas - 20 Years Experience | Auto Glass Native", "snippet": "Dedicated Midlothian site operated by Auto Glass Native; 20 years of installation experience."},
+      {"position": 9, "resultType": "organic", "url": "https://midlothianautoglass.com/", "title": "Auto Glass Midlothian TX | Windshield Repair & Replacement Experts", "snippet": "Midlothian Auto Glass; (972) 833-2411; free quote, same-day windshield service."}
+    ]
+  },
+  "competitors": [
+    {"name": "Glass.net", "domain": "glass.net", "url": "https://www.glass.net/local/tx/midlothian", "position": 1, "kind": "directory", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "Quote-comparison marketplace ranking number 1 with a programmatic city page including local pricing data."}},
+    {"name": "Yellowpages", "domain": "yellowpages.com", "url": "https://www.yellowpages.com/midlothian-tx/windshield-repair", "position": 2, "kind": "directory", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "Directory category page claiming 30 windshield repair listings for Midlothian."}},
+    {"name": "Yelp", "domain": "yelp.com", "url": "https://www.yelp.com/search?cflt=autoglass&find_loc=Midlothian%2C+TX+76065", "position": 3, "kind": "directory", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "Yelp search results page; snippet names several small local shops."}},
+    {"name": "AutoGlassOnly", "domain": "autoglassonly.com", "url": "https://www.autoglassonly.com/service-areas/tx/midlothian/", "position": 4, "kind": "national", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "National mobile auto-glass brand with a templated Midlothian service-area page."}},
+    {"name": "Auto Glass Native", "domain": "autoglassnative.com", "url": "https://www.autoglassnative.com/midlothian-auto-glass", "position": 5, "kind": "local_business", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "DFW/Ellis County operator with a Midlothian shop page; Google Guaranteed; also ranks position 8 via a separate dedicated domain."}},
+    {"name": "Auto Glass Express", "domain": "autoglassexpresstx.com", "url": "https://autoglassexpresstx.com/", "position": 6, "kind": "local_business", "signals": {"cityInTitle": false, "innerPage": false, "dedicatedLocalSite": true, "contentDepthWords": null, "reviewCount": null, "notes": "Physical Midlothian address (300 N Bryant Ave Suite 112); single-location local site but title lacks the city name."}},
+    {"name": "Glass Genie", "domain": "glassgenie.co", "url": "https://www.glassgenie.co/midlothian-tx", "position": 7, "kind": "out_of_town", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "DFW-wide mobile glass company reaching Midlothian via a city service-area page."}},
+    {"name": "Auto Glass Native (dedicated Midlothian site)", "domain": "autoglassmidlothian.com", "url": "https://www.autoglassmidlothian.com/", "position": 8, "kind": "local_business", "signals": {"cityInTitle": true, "innerPage": false, "dedicatedLocalSite": true, "contentDepthWords": null, "reviewCount": null, "notes": "Exact-match domain autoglassmidlothian.com operated by Auto Glass Native - effectively a second SERP slot for the same operator."}},
+    {"name": "Midlothian Auto Glass", "domain": "midlothianautoglass.com", "url": "https://midlothianautoglass.com/", "position": 9, "kind": "local_business", "signals": {"cityInTitle": true, "innerPage": false, "dedicatedLocalSite": true, "contentDepthWords": null, "reviewCount": null, "notes": "Exact-match domain local shop; same-day service, free quotes."}}
+  ],
+  "operatorCandidates": [
+    {"name": "Midlothian Auto Glass", "domain": "midlothianautoglass.com", "whyCandidate": "Local exact-match-domain shop ranking only at position 9, below three directories and a national brand.", "source": "web_search"},
+    {"name": "Auto Glass Express", "domain": "autoglassexpresstx.com", "whyCandidate": "Brick-and-mortar Midlothian shop (300 N Bryant Ave) ranking mid-page at position 6 with a weakly optimized homepage title.", "source": "web_search"},
+    {"name": "Auto Glass Native", "domain": "autoglassnative.com", "whyCandidate": "Ellis County/DFW operator investing in two Midlothian web properties, signaling strong appetite for Midlothian leads.", "source": "web_search"},
+    {"name": "Glass Genie", "domain": "glassgenie.co", "whyCandidate": "Family-owned DFW mobile glass company targeting Midlothian via a service-area page at position 7.", "source": "web_search"},
+    {"name": "Texan Auto Glass Repair", "domain": null, "whyCandidate": "Named in the Yelp best-of snippet for Midlothian but absent from organic results - directory-only visibility.", "source": "web_search"},
+    {"name": "Johnny's Windshields and Glass", "domain": null, "whyCandidate": "Named in the Yelp best-of snippet for Midlothian with no organic ranking of its own.", "source": "web_search"}
+  ],
+  "domains": [],
+  "notes": [
+    "Top 3 positions are all directories/aggregators (Glass.net, Yellowpages, Yelp) - no company site outranks them, indicating a beatable organic field.",
+    "Two exact-match domains rank (autoglassmidlothian.com and midlothianautoglass.com) at positions 8-9, confirming EMD sites rank in this market; one is itself a dedicated city site run by regional operator Auto Glass Native.",
+    "Glass.net snippet exposes local pricing: average windshield replacement $316.20, side window $236.87.",
+    "No Safelite result in the top 9 - unusual for auto glass and a gap versus larger DFW cities."
+  ]
+}

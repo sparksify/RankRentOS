@@ -1,0 +1,49 @@
+{
+  "marketKey": "fencing|New Braunfels|TX",
+  "nicheSlug": "fencing",
+  "city": "New Braunfels",
+  "state": "TX",
+  "collectedAt": "2026-08-04T16:33:00Z",
+  "serp": {
+    "provider": "web_search",
+    "query": "fence installation company New Braunfels TX",
+    "engine": "web",
+    "device": "desktop",
+    "geoParams": {"location": "New Braunfels, TX"},
+    "observedAt": "2026-08-04T16:30:00Z",
+    "results": [
+      {"position": 1, "resultType": "organic", "url": "https://toprailfences.com/new-braunfels/", "title": "New Braunfels, TX Fence Installation Company | Top Rail Fence", "snippet": "Professional fence installation following ASTM guidelines; national franchise city page."},
+      {"position": 2, "resultType": "organic", "url": "https://fencesoftexas.com/location/fence-company-new-braunfels-tx/", "title": "Fence Company in New Braunfels, TX - Fences of Texas", "snippet": "Expert fence installation, fence repair, and custom fencing for residential and commercial properties."},
+      {"position": 3, "resultType": "organic", "url": "https://sheltonsoutbackfence.com/", "title": "Fencing Company in New Braunfels, TX", "snippet": "Local deck and fencing company combining decades of local experience with Hill Country craftsmanship."},
+      {"position": 4, "resultType": "organic", "url": "https://stainingisthename.com/", "title": "Fence Installation in New Braunfels, TX | Ansley Staining & Fence Experts", "snippet": "Custom wood, privacy, and residential fencing with quality craftsmanship."},
+      {"position": 5, "resultType": "organic", "url": "https://www.fencecompanynewbraunfels.com/", "title": "New Braunfels Fence Company | Fence Installation & Repair", "snippet": "Fence installation and repair in New Braunfels."},
+      {"position": 6, "resultType": "organic", "url": "https://www.kustomfence.com/", "title": "Fence Installation New Braunfels, TX | Kustom Fence", "snippet": "Serving New Braunfels and the Texas Hill Country since 1978, residential and commercial."},
+      {"position": 7, "resultType": "organic", "url": "https://www.alliedfenceandsecurity.com/new-braunfels-fence-installation/", "title": "Fence Installation New Braunfels - Fence Company in New Braunfels - Allied Fence", "snippet": "Central Texas fence and security company for over 70 years; New Braunfels service page."},
+      {"position": 8, "resultType": "organic", "url": "https://www.newbraunfelsfencing.com/", "title": "New Braunfels Fencing Pros | Fence Contractor in New Braunfels, TX", "snippet": "Fence contractor site on an exact-match New Braunfels domain."},
+      {"position": 9, "resultType": "organic", "url": "https://newbraunfelsfencecompany.com/", "title": "New Braunfels Fence Company - #1 High Quality Fencing New Braunfels", "snippet": "Exact-match domain fencing site claiming number 1 quality fencing in New Braunfels."}
+    ]
+  },
+  "competitors": [
+    {"name": "Top Rail Fence", "domain": "toprailfences.com", "url": "https://toprailfences.com/new-braunfels/", "position": 1, "kind": "franchise", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "National fence franchise holding position 1 via a New Braunfels location page."}},
+    {"name": "Fences of Texas", "domain": "fencesoftexas.com", "url": "https://fencesoftexas.com/location/fence-company-new-braunfels-tx/", "position": 2, "kind": "local_business", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "Hill Country regional fence company using a /location/ page structure for multiple cities."}},
+    {"name": "Shelton's Outback Fence Co.", "domain": "sheltonsoutbackfence.com", "url": "https://sheltonsoutbackfence.com/", "position": 3, "kind": "local_business", "signals": {"cityInTitle": true, "innerPage": false, "dedicatedLocalSite": true, "contentDepthWords": null, "reviewCount": null, "notes": "Local New Braunfels deck and fence company ranking with its homepage."}},
+    {"name": "Ansley Staining & Fence Experts", "domain": "stainingisthename.com", "url": "https://stainingisthename.com/", "position": 4, "kind": "local_business", "signals": {"cityInTitle": true, "innerPage": false, "dedicatedLocalSite": true, "contentDepthWords": null, "reviewCount": null, "notes": "Single-city New Braunfels staining and fence business; non-obvious brand domain."}},
+    {"name": "New Braunfels Fence Company (fencecompanynewbraunfels.com)", "domain": "fencecompanynewbraunfels.com", "url": "https://www.fencecompanynewbraunfels.com/", "position": 5, "kind": "local_business", "signals": {"cityInTitle": true, "innerPage": false, "dedicatedLocalSite": true, "contentDepthWords": null, "reviewCount": null, "notes": "Exact-match keyword domain; possibly a lead-gen/rank-and-rent style site rather than an established brand."}},
+    {"name": "Kustom Fence", "domain": "kustomfence.com", "url": "https://www.kustomfence.com/", "position": 6, "kind": "local_business", "signals": {"cityInTitle": true, "innerPage": false, "dedicatedLocalSite": true, "contentDepthWords": null, "reviewCount": null, "notes": "Established local company (since 1978) serving New Braunfels and the Hill Country; ranks with homepage."}},
+    {"name": "Allied Fence & Security", "domain": "alliedfenceandsecurity.com", "url": "https://www.alliedfenceandsecurity.com/new-braunfels-fence-installation/", "position": 7, "kind": "out_of_town", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "San Antonio/Central Texas company (70+ years) reaching New Braunfels via a service-area page."}},
+    {"name": "New Braunfels Fencing Pros", "domain": "newbraunfelsfencing.com", "url": "https://www.newbraunfelsfencing.com/", "position": 8, "kind": "local_business", "signals": {"cityInTitle": true, "innerPage": false, "dedicatedLocalSite": true, "contentDepthWords": null, "reviewCount": null, "notes": "Exact-match city domain; generic 'Pros' branding suggests possible lead-gen site."}},
+    {"name": "New Braunfels Fence Company (newbraunfelsfencecompany.com)", "domain": "newbraunfelsfencecompany.com", "url": "https://newbraunfelsfencecompany.com/", "position": 9, "kind": "local_business", "signals": {"cityInTitle": true, "innerPage": false, "dedicatedLocalSite": true, "contentDepthWords": null, "reviewCount": null, "notes": "Second exact-match 'New Braunfels Fence Company' domain in the same SERP; '#1 High Quality' title reads like a lead-gen site."}}
+  ],
+  "operatorCandidates": [
+    {"name": "Shelton's Outback Fence Co.", "domain": "sheltonsoutbackfence.com", "whyCandidate": "Genuine local fence and deck builder at position 3, directly under a national franchise that owns position 1.", "source": "web_search"},
+    {"name": "Ansley Staining & Fence Experts", "domain": "stainingisthename.com", "whyCandidate": "Local NB fence installer at position 4 handicapped by an off-topic domain name (stainingisthename.com).", "source": "web_search"},
+    {"name": "Kustom Fence", "domain": "kustomfence.com", "whyCandidate": "48-year-old local company ranking only 6th behind franchise and exact-match-domain sites; an obvious buyer for overflow leads.", "source": "web_search"},
+    {"name": "Fences of Texas", "domain": "fencesoftexas.com", "whyCandidate": "Regional Hill Country company already building city location pages (position 2), demonstrating willingness to pay for New Braunfels visibility.", "source": "web_search"}
+  ],
+  "domains": [],
+  "notes": [
+    "Every one of the 9 visible titles contains 'New Braunfels' - highly optimized, competitive SERP with zero directories in the visible results.",
+    "Franchise pressure at the top: Top Rail Fence (national franchise) holds position 1.",
+    "Three exact-match keyword domains (fencecompanynewbraunfels.com, newbraunfelsfencing.com, newbraunfelsfencecompany.com) rank at positions 5, 8, and 9 - rank-and-rent style competition already exists in this market."
+  ]
+}

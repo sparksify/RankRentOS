@@ -1,0 +1,46 @@
+{
+  "marketKey": "land-clearing|Conroe|TX",
+  "nicheSlug": "land-clearing",
+  "city": "Conroe",
+  "state": "TX",
+  "collectedAt": "2026-08-04T16:37:30Z",
+  "serp": {
+    "provider": "web_search",
+    "query": "land clearing service Conroe TX",
+    "engine": "web",
+    "device": "desktop",
+    "geoParams": {"location": "Conroe, TX"},
+    "observedAt": "2026-08-04T16:37:30Z",
+    "results": [
+      {"position": 1, "resultType": "organic", "url": "https://www.yelp.com/search?find_desc=Land+Clearing&find_loc=Conroe,+TX", "title": "TOP 10 BEST Land Clearing in Conroe, TX - Updated 2026 - Quality & Affordability - Yelp", "snippet": "Yelp category search page for land clearing in Conroe, TX."},
+      {"position": 2, "resultType": "organic", "url": "https://www.yelp.com/biz/a-and-e-clearing-land-services-conroe", "title": "A&E Clearing Land Services - Conroe, TX", "snippet": "Yelp business listing; 14160 Willis Waukegan Rd, Conroe, TX 77303; (936) 444-5237."},
+      {"position": 3, "resultType": "organic", "url": "https://www.monstertreeservice.com/northwest-houston/areas-served/conroe-tx/land-clearing/", "title": "Land Clearing - Tree Pruning & Removal", "snippet": "Monster Tree Service (Northwest Houston) land clearing throughout Conroe: tree removal, brush removal, stump grinding, debris hauling."},
+      {"position": 4, "resultType": "organic", "url": "https://www.conroedirtworks.com/land-clearing", "title": "Land Clearing Services - Conroe, TX & Montgomery County", "snippet": "Conroe Dirt Works: brush removal, lot clearing, pasture clearing, site prep in Montgomery County and northern Houston metro; free quote 936-245-8884."},
+      {"position": 5, "resultType": "organic", "url": "https://www.danieldean.com/land-clearing-conroe-tx/", "title": "Land Clearing Conroe TX - Daniel Dean Get A Free Quote Today!", "snippet": "Thick brush removal through detailed site preparation in Conroe, TX."},
+      {"position": 6, "resultType": "organic", "url": "https://www.llewellynsconstruction.com/land-clearing-conroe.php", "title": "Land Clearing in Conroe, TX", "snippet": "Llewellyn's Construction: professional land clearing and construction in Conroe, TX and surrounding areas for over 20 years."},
+      {"position": 7, "resultType": "organic", "url": "https://www.dirtwirx.com/land-clearing-in-conroe", "title": "Land Clearing in Conroe l Dirtwirx Inc.", "snippet": "Dirt Wirx specializes in land clearing, invasive plant removal and rural landscaping."}
+    ]
+  },
+  "competitors": [
+    {"name": "Yelp (land clearing)", "domain": "yelp.com", "url": "https://www.yelp.com/search?find_desc=Land+Clearing&find_loc=Conroe,+TX", "position": 1, "kind": "directory", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "Yelp category page holds position 1."}},
+    {"name": "A&E Clearing Land Services (Yelp listing)", "domain": "yelp.com", "url": "https://www.yelp.com/biz/a-and-e-clearing-land-services-conroe", "position": 2, "kind": "directory", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "Yelp business page for a genuinely Conroe-based operator (Willis Waukegan Rd address) that has no own site on page one."}},
+    {"name": "Monster Tree Service of Northwest Houston", "domain": "monstertreeservice.com", "url": "https://www.monstertreeservice.com/northwest-houston/areas-served/conroe-tx/land-clearing/", "position": 3, "kind": "franchise", "signals": {"cityInTitle": false, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "National tree-service franchise; Northwest Houston territory ranking via a Conroe areas-served page."}},
+    {"name": "Conroe Dirt Works", "domain": "conroedirtworks.com", "url": "https://www.conroedirtworks.com/land-clearing", "position": 4, "kind": "local_business", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": true, "contentDepthWords": null, "reviewCount": null, "notes": "Exact city-match domain; Conroe/Montgomery County land clearing contractor with local 936 number."}},
+    {"name": "Daniel Dean", "domain": "danieldean.com", "url": "https://www.danieldean.com/land-clearing-conroe-tx/", "position": 5, "kind": "out_of_town", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "Regional Texas land-clearing contractor ranking via a Conroe city page; home base not shown in SERP."}},
+    {"name": "Llewellyn's Construction", "domain": "llewellynsconstruction.com", "url": "https://www.llewellynsconstruction.com/land-clearing-conroe.php", "position": 6, "kind": "local_business", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": true, "contentDepthWords": null, "reviewCount": null, "notes": "Conroe-anchored construction and land clearing company, 20+ years in the area; dated .php site."}},
+    {"name": "Dirt Wirx Inc.", "domain": "dirtwirx.com", "url": "https://www.dirtwirx.com/land-clearing-in-conroe", "position": 7, "kind": "out_of_town", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "Texas land-clearing/rural-landscaping specialist targeting Conroe via a city landing page; anchored outside the Conroe area."}}
+  ],
+  "operatorCandidates": [
+    {"name": "A&E Clearing Land Services", "domain": null, "whyCandidate": "Conroe-based land clearing company (14160 Willis Waukegan Rd, 936-444-5237) whose only page-one presence is its Yelp listing at position 2 — no website of its own visible, ideal lead buyer.", "source": "web_search"},
+    {"name": "Conroe Dirt Works", "domain": "conroedirtworks.com", "whyCandidate": "Local Montgomery County dirt work and land clearing contractor ranking just below the top 3 (position 4) with a free-quote CTA and local number.", "source": "web_search"},
+    {"name": "Llewellyn's Construction", "domain": "llewellynsconstruction.com", "whyCandidate": "20+ year Conroe construction/land clearing operator ranking at position 6 on an older .php website that could be outranked.", "source": "web_search"},
+    {"name": "Dirt Wirx Inc.", "domain": "dirtwirx.com", "whyCandidate": "Land-clearing specialist actively targeting Conroe with a dedicated city page but stuck at position 7.", "source": "web_search"}
+  ],
+  "domains": [],
+  "notes": [
+    "Yelp takes both position 1 (category page) and position 2 (business listing) — a local operator, A&E Clearing, ranks only through Yelp rather than its own site.",
+    "Only one franchise on page one (Monster Tree Service, position 3, via its Northwest Houston territory) — far less franchise pressure than the restoration niches.",
+    "Two genuinely Conroe-anchored businesses rank (Conroe Dirt Works at 4, Llewellyn's at 6), but neither holds a top-3 slot, and Llewellyn's site is dated.",
+    "Multiple regional Texas operators (Daniel Dean, Dirt Wirx) chase Conroe with city landing pages, suggesting healthy commercial demand for land clearing in Montgomery County."
+  ]
+}

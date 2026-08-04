@@ -1,0 +1,51 @@
+{
+  "marketKey": "air-duct-cleaning|Gilbert|AZ",
+  "nicheSlug": "air-duct-cleaning",
+  "city": "Gilbert",
+  "state": "AZ",
+  "collectedAt": "2026-08-04T16:33:30Z",
+  "serp": {
+    "provider": "web_search",
+    "query": "air duct cleaning Gilbert AZ",
+    "engine": "web",
+    "device": "desktop",
+    "geoParams": {"location": "Gilbert, AZ"},
+    "observedAt": "2026-08-04T16:33:30Z",
+    "results": [
+      {"position": 1, "resultType": "organic", "url": "https://www.yelp.com/search?cflt=airductcleaning&find_loc=Gilbert%2C+AZ", "title": "THE BEST 10 AIR DUCT CLEANING IN GILBERT, AZ - UPDATED JUNE 2026 - HOURS - YELP", "snippet": "Yelp category page; listings include Integrity Duct Cleaning, King Air Duct Cleaning, Natural Air Duct, A-Z Air Duct, A1 Dryer Vent Cleaning."},
+      {"position": 2, "resultType": "organic", "url": "https://www.bbb.org/us/az/gilbert/category/air-duct-cleaning", "title": "Air Duct Cleaning near Gilbert, AZ | Better Business Bureau", "snippet": "BBB category directory for air duct cleaning near Gilbert, AZ."},
+      {"position": 3, "resultType": "organic", "url": "https://www.thumbtack.com/az/gilbert/duct-cleaning", "title": "The 10 Best Duct Cleaning Services in Gilbert, AZ (with Free Estimates)", "snippet": "Thumbtack directory of duct cleaning services in Gilbert with free estimates."},
+      {"position": 4, "resultType": "organic", "url": "https://www.yelp.com/search?find_desc=Dryer+Vent+Cleaning&find_loc=Gilbert,+AZ", "title": "TOP 10 BEST Dryer Vent Cleaning in Gilbert, AZ - Updated 2026 - Quality & Affordability - Yelp", "snippet": "Second Yelp category page (dryer vent cleaning) for Gilbert, AZ."},
+      {"position": 5, "resultType": "organic", "url": "https://larsonairaz.com/hvac/gilbert-az/duct-cleaning/", "title": "Duct Cleaning in Gilbert, AZ | Larson Air Conditioning", "snippet": "Larson Air Conditioning duct cleaning service page for Gilbert, AZ."},
+      {"position": 6, "resultType": "organic", "url": "https://www.ductcleaningaz.com/service-area?location=Gilbert%2C+AZ", "title": "Integrity Duct Cleaning - Gilbert, AZ", "snippet": "Integrity Duct Cleaning service-area page for Gilbert; air duct sealing, dryer vent cleaning, Aeroseal."},
+      {"position": 7, "resultType": "organic", "url": "https://www.mrductcleaningcompany.com/", "title": "Air Duct Cleaning & Sealing | Mr Duct Cleaning | Gilbert, Scottsdale & Phoenix, AZ", "snippet": "Residential and commercial air duct services in Gilbert and Greater Phoenix; licensed and insured, 30+ years experience, free estimates."},
+      {"position": 8, "resultType": "organic", "url": "https://www.steamyconcepts.com/air-duct-cleaning-gilbert/", "title": "Improve Air Quality with Our Air Duct Cleaning Service In Gilbert, AZ | 7,000+ 5-Star Reviews!!", "snippet": "Steamy Concepts local air duct cleaning service in Gilbert, AZ; 7,000+ (elsewhere 8,400+) reviews cited."},
+      {"position": 9, "resultType": "organic", "url": "https://dryerventcleaningaz.us/", "title": "Home - Dryer Vent Cleaning AZ", "snippet": "Professional dryer vent, air duct, chimney and vent cleaning in Gilbert with flat-fee pricing."}
+    ]
+  },
+  "competitors": [
+    {"name": "Yelp (air duct cleaning)", "domain": "yelp.com", "url": "https://www.yelp.com/search?cflt=airductcleaning&find_loc=Gilbert%2C+AZ", "position": 1, "kind": "directory", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "Yelp holds position 1."}},
+    {"name": "Better Business Bureau", "domain": "bbb.org", "url": "https://www.bbb.org/us/az/gilbert/category/air-duct-cleaning", "position": 2, "kind": "directory", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "BBB category page."}},
+    {"name": "Thumbtack", "domain": "thumbtack.com", "url": "https://www.thumbtack.com/az/gilbert/duct-cleaning", "position": 3, "kind": "directory", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "Thumbtack category page."}},
+    {"name": "Yelp (dryer vent cleaning)", "domain": "yelp.com", "url": "https://www.yelp.com/search?find_desc=Dryer+Vent+Cleaning&find_loc=Gilbert,+AZ", "position": 4, "kind": "directory", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "Second Yelp property on page one (adjacent dryer-vent query)."}},
+    {"name": "Larson Air Conditioning", "domain": "larsonairaz.com", "url": "https://larsonairaz.com/hvac/gilbert-az/duct-cleaning/", "position": 5, "kind": "out_of_town", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "Scottsdale-anchored HVAC company ranking via a nested Gilbert service-area page."}},
+    {"name": "Integrity Duct Cleaning", "domain": "ductcleaningaz.com", "url": "https://www.ductcleaningaz.com/service-area?location=Gilbert%2C+AZ", "position": 6, "kind": "local_business", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "Phoenix East Valley duct specialist on a statewide-branded domain; ranks via parameterized service-area page, not a dedicated Gilbert site."}},
+    {"name": "Mr Duct Cleaning", "domain": "mrductcleaningcompany.com", "url": "https://www.mrductcleaningcompany.com/", "position": 7, "kind": "local_business", "signals": {"cityInTitle": true, "innerPage": false, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "Metro-wide (Gilbert, Scottsdale, Phoenix) duct specialist homepage; licensed/insured, 30+ years experience."}},
+    {"name": "Steamy Concepts", "domain": "steamyconcepts.com", "url": "https://www.steamyconcepts.com/air-duct-cleaning-gilbert/", "position": 8, "kind": "out_of_town", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": 7000, "notes": "Tucson-headquartered cleaning/restoration company targeting Gilbert via a city landing page; touts 7,000+ 5-star reviews (company-wide)."}},
+    {"name": "Dryer Vent Cleaning AZ", "domain": "dryerventcleaningaz.us", "url": "https://dryerventcleaningaz.us/", "position": 9, "kind": "local_business", "signals": {"cityInTitle": false, "innerPage": false, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "Statewide-branded AZ vent/duct cleaner homepage with flat-fee pricing; no Gilbert in title."}}
+  ],
+  "operatorCandidates": [
+    {"name": "Integrity Duct Cleaning", "domain": "ductcleaningaz.com", "whyCandidate": "East Valley duct specialist ranking only at position 6 via a parameterized service-area page and also listed on Yelp's top-10; well positioned to buy dedicated Gilbert leads.", "source": "web_search"},
+    {"name": "Mr Duct Cleaning", "domain": "mrductcleaningcompany.com", "whyCandidate": "30+ year licensed metro duct cleaner whose homepage sits at position 7 with no Gilbert-dedicated page, below four directories.", "source": "web_search"},
+    {"name": "Dryer Vent Cleaning AZ", "domain": "dryerventcleaningaz.us", "whyCandidate": "Flat-fee duct/vent cleaner serving Gilbert ranking last on page one (position 9) with a generic statewide homepage.", "source": "web_search"},
+    {"name": "A-Z Air Duct", "domain": null, "whyCandidate": "Appeared only inside Yelp's top-10 listing snippet for Gilbert, not with its own organic ranking.", "source": "web_search"},
+    {"name": "King Air Duct Cleaning", "domain": null, "whyCandidate": "Listed among top-rated providers within the Yelp Gilbert results snippet but has no first-page organic presence of its own.", "source": "web_search"}
+  ],
+  "domains": [],
+  "notes": [
+    "Directories dominate: positions 1-4 are all directory pages (Yelp twice, BBB, Thumbtack) — the strongest directory wall of the five markets researched.",
+    "No competitor has a Gilbert-dedicated website; every company ranks via metro homepages or service-area pages, leaving the dedicated-local-site angle wide open.",
+    "No national franchise brands (Stanley Steemer, COIT, Ductz) on page one despite Gilbert being a large Phoenix-metro suburb.",
+    "Steamy Concepts (Tucson-based) advertises 7,000+ reviews on its Gilbert landing page, showing out-of-metro operators actively buying into this market."
+  ]
+}

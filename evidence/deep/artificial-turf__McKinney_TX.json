@@ -1,0 +1,47 @@
+{
+  "marketKey": "artificial-turf|McKinney|TX",
+  "nicheSlug": "artificial-turf",
+  "city": "McKinney",
+  "state": "TX",
+  "collectedAt": "2026-08-04T16:32:00Z",
+  "serp": {
+    "provider": "web_search",
+    "query": "artificial turf installation McKinney TX",
+    "engine": "web",
+    "device": "desktop",
+    "geoParams": {"location": "McKinney, TX"},
+    "observedAt": "2026-08-04T16:30:50Z",
+    "results": [
+      {"position": 1, "resultType": "organic", "url": "https://bigbullyturf.com/locations/tx/mckinney/", "title": "Artificial Turf Installation in McKinney TX | Big Bully Turf", "snippet": "Big Bully Turf installs premium pet-friendly turf in McKinney TX; turf that lasts 20+ years."},
+      {"position": 2, "resultType": "organic", "url": "https://www.thumbtack.com/tx/mckinney/artificial-turf-installation", "title": "The 10 Best Artificial Turf Installers in McKinney, TX 2025", "snippet": "Directory listing of artificial turf installers in McKinney; average install cost cited at $3,458."},
+      {"position": 3, "resultType": "organic", "url": "https://nexgenlawns.com/artificial-grass-mckinney-tx/", "title": "Artificial Grass McKinney, Artificial Turf in McKinney, TX - NexGen Lawns", "snippet": "NexGen Lawns provides artificial turf in McKinney, TX for commercial and residential properties."},
+      {"position": 4, "resultType": "organic", "url": "https://dfwturf.com/mckinney/", "title": "Artificial Turf Installation in McKinney, TX", "snippet": "DFW Turf Solutions provides McKinney homeowners and businesses with premium, American-made artificial turf."},
+      {"position": 5, "resultType": "organic", "url": "https://syntheticgrasswarehouse.com/service-areas/mckinney-texas/", "title": "McKinney, TX's Premier Artificial Turf Distributor | SGW", "snippet": "Synthetic Grass Warehouse — national turf distributor with a McKinney service-area page."},
+      {"position": 6, "resultType": "organic", "url": "https://texasartificiallawns.com/mckinney-artifical-grass/", "title": "McKinney TX Artificial Grass Installation | Residential Lawns | SYNLawn", "snippet": "SYNLawn Texas — plant-based and USDA-certified artificial turf in McKinney, TX."},
+      {"position": 7, "resultType": "organic", "url": "https://www.turfrocks.com/mckinney-artificial-grass", "title": "McKinney Texas | TurfRocks", "snippet": "TurfRocks has over 500 local installations and understands North Texas clay soils, drainage, and HOA requirements."},
+      {"position": 8, "resultType": "organic", "url": "https://find.fusionturf.com/texas/mckinney/75072/", "title": "McKinney, Texas 75072 Artificial Turf Installers | FusionTurf", "snippet": "FusionTurf installer locator — 13 artificial turf installers available in McKinney and the surrounding area."}
+    ]
+  },
+  "competitors": [
+    {"name": "Big Bully Turf", "domain": "bigbullyturf.com", "url": "https://bigbullyturf.com/locations/tx/mckinney/", "position": 1, "kind": "national", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "California-origin multi-state turf company ranking #1 via a /locations/tx/mckinney/ page."}},
+    {"name": "Thumbtack", "domain": "thumbtack.com", "url": "https://www.thumbtack.com/tx/mckinney/artificial-turf-installation", "position": 2, "kind": "directory", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "Directory at position 2; lists local installers and cites $3,458 average install cost."}},
+    {"name": "NexGen Lawns", "domain": "nexgenlawns.com", "url": "https://nexgenlawns.com/artificial-grass-mckinney-tx/", "position": 3, "kind": "franchise", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "Multi-state turf dealer/franchise network ranking via a McKinney city page."}},
+    {"name": "DFW Turf Solutions", "domain": "dfwturf.com", "url": "https://dfwturf.com/mckinney/", "position": 4, "kind": "local_business", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "DFW-metro turf installer; McKinney is one of its metro city pages, site is DFW-wide rather than city-dedicated."}},
+    {"name": "Synthetic Grass Warehouse (SGW)", "domain": "syntheticgrasswarehouse.com", "url": "https://syntheticgrasswarehouse.com/service-areas/mckinney-texas/", "position": 5, "kind": "national", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "National turf distributor (sells material, refers installers) with a McKinney service-area page."}},
+    {"name": "SYNLawn Texas", "domain": "texasartificiallawns.com", "url": "https://texasartificiallawns.com/mckinney-artifical-grass/", "position": 6, "kind": "franchise", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "SYNLawn national franchise's Texas licensee; note misspelled URL slug 'artifical'."}},
+    {"name": "TurfRocks", "domain": "turfrocks.com", "url": "https://www.turfrocks.com/mckinney-artificial-grass", "position": 7, "kind": "local_business", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "North Texas local installer claiming 500+ local installations; DFW-wide site with a McKinney page."}},
+    {"name": "FusionTurf installer locator", "domain": "find.fusionturf.com", "url": "https://find.fusionturf.com/texas/mckinney/75072/", "position": 8, "kind": "directory", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "Manufacturer's installer-locator directory listing 13 installers for McKinney/75072."}}
+  ],
+  "operatorCandidates": [
+    {"name": "DFW Turf Solutions", "domain": "dfwturf.com", "whyCandidate": "DFW-metro installer ranking 4th, just below the top 3 which are held by a national brand, a directory, and a franchise.", "source": "web_search"},
+    {"name": "TurfRocks", "domain": "turfrocks.com", "whyCandidate": "North Texas independent with 500+ claimed local installs sitting at position 7, outranked by national brands and directories.", "source": "web_search"}
+  ],
+  "domains": [],
+  "notes": [
+    "Heavy national/franchise saturation: Big Bully Turf (#1), NexGen Lawns (#3), SGW distributor (#5), SYNLawn (#6), plus FusionTurf's locator (#8) — only two results are DFW-local independents.",
+    "Two directory-type results (Thumbtack #2, FusionTurf locator #8); FusionTurf claims 13 installers in the McKinney area, so operator supply exists beyond the SERP.",
+    "No McKinney-dedicated domain or site appears anywhere in the results — a dedicated local-site gap.",
+    "Thumbtack cites an average install cost of $3,458, useful for lead-value modeling.",
+    "No review counts were visible in the search results."
+  ]
+}

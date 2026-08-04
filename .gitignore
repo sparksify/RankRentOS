@@ -14,3 +14,4 @@ data/cache/
 out/
 *.log
 .DS_Store
+app/.next/

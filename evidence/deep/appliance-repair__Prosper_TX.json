@@ -1,0 +1,49 @@
+{
+  "marketKey": "appliance-repair|Prosper|TX",
+  "nicheSlug": "appliance-repair",
+  "city": "Prosper",
+  "state": "TX",
+  "collectedAt": "2026-08-04T16:29:35Z",
+  "serp": {
+    "provider": "web_search",
+    "query": "appliance repair Prosper TX",
+    "engine": "web",
+    "device": "desktop",
+    "geoParams": {"location": "Prosper, TX"},
+    "observedAt": "2026-08-04T16:29:35Z",
+    "results": [
+      {"position": 1, "resultType": "organic", "url": "https://appliancerepairprospertx.dudaone.com/about-Us", "title": "About Prosper Appliance Repair | Trusted & Local", "snippet": "Prosper Appliance Repair; 40+ years of experience, same-day appliance repair in Prosper TX and surrounding North Texas."},
+      {"position": 2, "resultType": "organic", "url": "https://www.facebook.com/PromptApplianceRepair/", "title": "Prompt Appliance Repair | Prosper TX | Facebook", "snippet": "Prompt Appliance Repair Facebook page; in-home diagnostics and repair for refrigerators, washers, dryers, dishwashers, ovens, ranges."},
+      {"position": 3, "resultType": "organic", "url": "https://www.mrappliance.com/plano/geo/prosper/", "title": "Expert Appliance Repair in Prosper, Texas | Certified Techs", "snippet": "Mr. Appliance of Plano geo page targeting Prosper, Texas."},
+      {"position": 4, "resultType": "organic", "url": "https://www.yelp.com/search?cflt=homeappliancerepair&find_loc=Prosper%2C+TX+75078", "title": "THE BEST 10 APPLIANCES & REPAIR NEAR PROSPER, TX 75078 - UPDATED JULY 2026 - HOURS - YELP", "snippet": "Yelp directory search for appliance repair near Prosper, TX 75078."},
+      {"position": 5, "resultType": "organic", "url": "https://www.angi.com/companylist/us/tx/prosper/appliance-repair.htm", "title": "Top 10 Best Appliance repair pros in Prosper, TX | Angi", "snippet": "Angi directory list of appliance repair pros in Prosper, TX."},
+      {"position": 6, "resultType": "organic", "url": "https://insideprosper.com/trades/chosen-appliance-repair/", "title": "Chosen Appliance Repair — Trades in Prosper, TX | Inside Prosper", "snippet": "Local directory listing for Chosen Appliance Repair; owner-operated, serving Celina, Prosper, Aubrey; 700+ Facebook recommendations, 1,000+ Nextdoor reviews, Neighborhood Favorite 2024 and 2025."},
+      {"position": 7, "resultType": "organic", "url": "https://prosperappliancerepair.weebly.com/", "title": "Prosper Appliance Repair - Home", "snippet": "Prosper Appliance Repair site hosted on Weebly."},
+      {"position": 8, "resultType": "organic", "url": "https://www.callahansappliance.com/", "title": "Appliance Repair Prosper, TX | Callahan's Appliance Inc", "snippet": "Callahan's Appliance serves Prosper & North Dallas with licensed & insured technicians for refrigerators, washers, dryers, ovens."},
+      {"position": 9, "resultType": "organic", "url": "https://longhornappliance.com/prosper/", "title": "Prosper Appliance Repair – Longhorn Services", "snippet": "Longhorn Appliance Repair; no-extra-charge on-site diagnosis, same-day and next-day appointments."}
+    ]
+  },
+  "competitors": [
+    {"name": "Prosper Appliance Repair", "domain": "appliancerepairprospertx.dudaone.com", "url": "https://appliancerepairprospertx.dudaone.com/about-Us", "position": 1, "kind": "local_business", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": true, "contentDepthWords": null, "reviewCount": null, "notes": "Ranks number 1 on a free Duda subdomain (appliancerepairprospertx.dudaone.com) — city-dedicated site but no owned custom domain; 40+ years experience claimed."}},
+    {"name": "Prompt Appliance Repair", "domain": "facebook.com", "url": "https://www.facebook.com/PromptApplianceRepair/", "position": 2, "kind": "directory", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "Local repair business visible only via its Facebook page; no owned website observed in results."}},
+    {"name": "Mr. Appliance of Plano", "domain": "mrappliance.com", "url": "https://www.mrappliance.com/plano/geo/prosper/", "position": 3, "kind": "franchise", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "National Mr. Appliance franchise; the Plano territory ranks in Prosper via a /geo/prosper/ programmatic page."}},
+    {"name": "Chosen Appliance Repair", "domain": "insideprosper.com", "url": "https://insideprosper.com/trades/chosen-appliance-repair/", "position": 6, "kind": "local_business", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": 1000, "notes": "Owner-operated, serving Celina/Prosper/Aubrey; visible only through the Inside Prosper local directory; 700+ Facebook recommendations and 1,000+ Nextdoor reviews cited, Neighborhood Favorite 2024-2025."}},
+    {"name": "Prosper Appliance Repair (Weebly)", "domain": "prosperappliancerepair.weebly.com", "url": "https://prosperappliancerepair.weebly.com/", "position": 7, "kind": "local_business", "signals": {"cityInTitle": true, "innerPage": false, "dedicatedLocalSite": true, "contentDepthWords": null, "reviewCount": null, "notes": "City-dedicated homepage on a free Weebly subdomain; second Prosper-named repair presence on free site infrastructure."}},
+    {"name": "Callahan's Appliance Inc", "domain": "callahansappliance.com", "url": "https://www.callahansappliance.com/", "position": 8, "kind": "out_of_town", "signals": {"cityInTitle": true, "innerPage": false, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "North Dallas company whose homepage title targets Prosper; serves Prosper as part of a wider North Dallas territory."}},
+    {"name": "Longhorn Appliance Repair", "domain": "longhornappliance.com", "url": "https://longhornappliance.com/prosper/", "position": 9, "kind": "out_of_town", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "Multi-city North Texas operator ranking via a /prosper/ service-area page; same-day and next-day appointments."}}
+  ],
+  "operatorCandidates": [
+    {"name": "Chosen Appliance Repair", "domain": "insideprosper.com/trades/chosen-appliance-repair", "whyCandidate": "Highly reviewed (700+ Facebook recs, 1,000+ Nextdoor reviews) owner-operator visible only through a local directory listing, with no owned ranking website observed.", "source": "web_search"},
+    {"name": "Prompt Appliance Repair", "domain": "facebook.com/PromptApplianceRepair", "whyCandidate": "Prosper-based repair business ranking only via its Facebook page (position 2) with no owned domain in the SERP.", "source": "web_search"},
+    {"name": "Prosper Appliance Repair", "domain": "appliancerepairprospertx.dudaone.com", "whyCandidate": "Ranks number 1 but on a free Duda subdomain, indicating minimal web investment and vulnerability to a proper dedicated site.", "source": "web_search"},
+    {"name": "Longhorn Appliance Repair", "domain": "longhornappliance.com", "whyCandidate": "Multi-city operator reaching Prosper only through a service-area page at position 9, likely receptive to city-exclusive leads.", "source": "web_search"},
+    {"name": "Callahan's Appliance Inc", "domain": "callahansappliance.com", "whyCandidate": "North Dallas company targeting Prosper from its homepage title at position 8 without a dedicated Prosper presence.", "source": "web_search"}
+  ],
+  "domains": [],
+  "notes": [
+    "Weak-web-presence market: the number 1 result is a free Duda subdomain and position 7 is a free Weebly subdomain — no strong custom-domain local site owns this SERP.",
+    "Two well-reviewed local operators (Prompt, Chosen) surface only via Facebook and a community directory, classic lead-buyer profiles.",
+    "One national franchise present: Mr. Appliance (Plano territory) at position 3 via a programmatic geo page.",
+    "Directories (Yelp, Angi, Inside Prosper) occupy positions 4-6, mid-SERP rather than dominating the top."
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "marketKey": "appliance-repair|Forney|TX",
+  "nicheSlug": "appliance-repair",
+  "city": "Forney",
+  "state": "TX",
+  "collectedAt": "2026-08-04T16:30:00Z",
+  "serp": {
+    "provider": "web_search",
+    "query": "appliance repair Forney TX",
+    "engine": "web",
+    "device": "desktop",
+    "geoParams": {"location": "Forney, TX"},
+    "observedAt": "2026-08-04T16:29:04Z",
+    "results": [
+      {"position": 1, "resultType": "organic", "url": "https://www.yelp.com/biz/kaufman-county-appliance-repair-forney", "title": "Kaufman County Appliance Repair - Forney, TX", "snippet": "Over 50 years of combined experience; waived house call fees with repairs, 30-day labor and 90-day parts warranties. (214) 440-8550."},
+      {"position": 2, "resultType": "organic", "url": "https://www.searshomeservices.com/locations/tx/forney/sears-appliance-repair", "title": "Expert Sears Appliance Repair in Forney, TX - Fast, Reliable Service!", "snippet": "Sears Home Services delivers dependable appliance repair throughout Forney, Texas, including ovens, washers, and refrigerators."},
+      {"position": 3, "resultType": "organic", "url": "https://www.mrappliance.com/rockwall/geo/forney/", "title": "Appliance Repair in Forney, TX | Mr. Appliance Services", "snippet": "Mr. Appliance of Rockwall maintains appliances for families throughout Forney; brands include Sub-Zero, Viking, Miele, LG, Maytag, Bosch, Whirlpool, Samsung."},
+      {"position": 4, "resultType": "organic", "url": "https://puls.com/local/tx/forney/appliances", "title": "We've got the best appliance repair services in Forney, TX", "snippet": "Puls national on-demand appliance repair marketplace, local landing page for Forney."},
+      {"position": 5, "resultType": "organic", "url": "https://www.angi.com/companylist/us/tx/forney/appliance-repair.htm", "title": "Top 10 Best Appliance repair pros in Forney, TX | Angi", "snippet": "Angi directory list of appliance repair pros in Forney."},
+      {"position": 6, "resultType": "organic", "url": "https://www.yelp.com/search?cflt=homeappliancerepair&find_loc=Forney%2C+TX+75126", "title": "THE BEST 10 APPLIANCES & REPAIR NEAR FORNEY, TX 75126 - UPDATED JUNE 2026 - HOURS - YELP", "snippet": "Yelp category search page for appliance repair near Forney 75126."},
+      {"position": 7, "resultType": "organic", "url": "https://forney-appliance.net/", "title": "Forney Appliance Repair | Fast & Affordable Service for All", "snippet": "Local Forney appliance repair company on an exact-match city domain."},
+      {"position": 8, "resultType": "organic", "url": "https://superiorappliancesrepair.com/forney/", "title": "Appliance Repair in Forney, TX", "snippet": "Superior Appliances Repair: 90-day warranty on parts and labor, 7 days a week 7am-11pm, same-day service; Forney service-area page."},
+      {"position": 9, "resultType": "organic", "url": "https://tapforney.com/", "title": "TAP Trusted Appliance Professionals – TAP Appliance", "snippet": "Located in Forney at 10478 W US Highway 80; parts and service for all brands including Samsung, GE, Viking, Whirlpool, LG, Maytag."}
+    ]
+  },
+  "competitors": [
+    {"name": "Kaufman County Appliance Repair (via Yelp)", "domain": "yelp.com", "url": "https://www.yelp.com/biz/kaufman-county-appliance-repair-forney", "position": 1, "kind": "directory", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "Local business ranking only via its Yelp profile at position 1; no own website visible in results."}},
+    {"name": "Sears Home Services", "domain": "searshomeservices.com", "url": "https://www.searshomeservices.com/locations/tx/forney/sears-appliance-repair", "position": 2, "kind": "national", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "National chain location page for Forney."}},
+    {"name": "Mr. Appliance of Rockwall", "domain": "mrappliance.com", "url": "https://www.mrappliance.com/rockwall/geo/forney/", "position": 3, "kind": "franchise", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "National franchise; Rockwall territory geo page targeting Forney."}},
+    {"name": "Puls", "domain": "puls.com", "url": "https://puls.com/local/tx/forney/appliances", "position": 4, "kind": "national", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "National on-demand repair marketplace, programmatic local page."}},
+    {"name": "Angi", "domain": "angi.com", "url": "https://www.angi.com/companylist/us/tx/forney/appliance-repair.htm", "position": 5, "kind": "directory", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "Directory company-list page."}},
+    {"name": "Yelp (search page)", "domain": "yelp.com", "url": "https://www.yelp.com/search?cflt=homeappliancerepair&find_loc=Forney%2C+TX+75126", "position": 6, "kind": "directory", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "Yelp category search results page."}},
+    {"name": "Forney Appliance Repair", "domain": "forney-appliance.net", "url": "https://forney-appliance.net/", "position": 7, "kind": "local_business", "signals": {"cityInTitle": true, "innerPage": false, "dedicatedLocalSite": true, "contentDepthWords": null, "reviewCount": null, "notes": "Exact-match city domain, single-city local site ranking on its homepage."}},
+    {"name": "Superior Appliances Repair", "domain": "superiorappliancesrepair.com", "url": "https://superiorappliancesrepair.com/forney/", "position": 8, "kind": "out_of_town", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "Multi-city DFW repair company ranking via a Forney service-area page."}},
+    {"name": "TAP Trusted Appliance Professionals", "domain": "tapforney.com", "url": "https://tapforney.com/", "position": 9, "kind": "local_business", "signals": {"cityInTitle": false, "innerPage": false, "dedicatedLocalSite": true, "contentDepthWords": null, "reviewCount": null, "notes": "Physical location in Forney (10478 W US Highway 80); city name in domain but not in the result title."}}
+  ],
+  "operatorCandidates": [
+    {"name": "Kaufman County Appliance Repair", "domain": null, "whyCandidate": "Ranks only via its Yelp profile (position 1) with no own website visible in results, so it depends on third-party visibility for leads.", "source": "web_search"},
+    {"name": "TAP Trusted Appliance Professionals", "domain": "tapforney.com", "whyCandidate": "Real Forney storefront ranking last (position 9) below directories and franchises despite being physically located in the city.", "source": "web_search"},
+    {"name": "Forney Appliance Repair", "domain": "forney-appliance.net", "whyCandidate": "Local single-city operator ranking at position 7, below national chains and directories that occupy the top of the SERP.", "source": "web_search"},
+    {"name": "Superior Appliances Repair", "domain": "superiorappliancesrepair.com", "whyCandidate": "DFW-area repair company reaching Forney only via a service-area page at position 8; offers same-day 7-day service so likely hungry for volume.", "source": "web_search"}
+  ],
+  "domains": [],
+  "notes": [
+    "Top 6 positions are all directories, national chains, and a franchise (Yelp x2, Angi, Sears, Puls, Mr. Appliance) — genuinely local sites only appear at positions 7-9.",
+    "Only one true dedicated local homepage-ranking site (forney-appliance.net), suggesting a rank-and-rent site could realistically break into the local cluster.",
+    "The position 1 result is a Yelp business profile rather than a business's own site, indicating weak owned-web presence among local operators."
+  ]
+}

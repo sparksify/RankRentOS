@@ -1,0 +1,48 @@
+{
+  "marketKey": "appliance-repair|Rockwall|TX",
+  "nicheSlug": "appliance-repair",
+  "city": "Rockwall",
+  "state": "TX",
+  "collectedAt": "2026-08-04T16:29:35Z",
+  "serp": {
+    "provider": "web_search",
+    "query": "appliance repair Rockwall TX",
+    "engine": "web",
+    "device": "desktop",
+    "geoParams": {"location": "Rockwall, TX"},
+    "observedAt": "2026-08-04T16:29:35Z",
+    "results": [
+      {"position": 1, "resultType": "organic", "url": "https://www.bbb.org/us/tx/rockwall/category/appliance-repair", "title": "Appliance Repair near Rockwall, TX | Better Business Bureau", "snippet": "BBB directory of appliance repair services near Rockwall with ratings and customer reviews."},
+      {"position": 2, "resultType": "organic", "url": "https://www.mrappliance.com/rockwall/", "title": "Appliance Repair Service in Rockwall, TX | Mr. Appliance", "snippet": "Mr. Appliance of Rockwall; local appliance repair for homeowners and small businesses."},
+      {"position": 3, "resultType": "organic", "url": "https://repair.geappliances.com/service-area/a5O4P000001rw7OUAQ/rockwall", "title": "GE Appliance Repair in Rockwall, TX", "snippet": "GE Appliance Repair (Bodewell) service-area page for Rockwall; available Mon-Fri 8am-9pm ET."},
+      {"position": 4, "resultType": "organic", "url": "https://www.yelp.com/search?cflt=homeappliancerepair&find_loc=Rockwall%2C+TX", "title": "THE BEST 10 Appliances & Repair in ROCKWALL, TX - Updated 2026 - Verified Listings Only - Hours - Yelp", "snippet": "Yelp directory search for appliance repair in Rockwall, TX."},
+      {"position": 5, "resultType": "organic", "url": "https://www.angi.com/companylist/us/tx/rockwall/appliance-repair.htm", "title": "Top 10 Best Appliance repair pros in Rockwall, TX | Angi", "snippet": "Angi directory list of appliance repair pros in Rockwall, TX."},
+      {"position": 6, "resultType": "organic", "url": "https://www.thumbtack.com/tx/rockwall/appliance-repair", "title": "The 10 Best Appliance Repairers in Rockwall, TX (with Free Estimates)", "snippet": "Thumbtack directory of appliance repairers in Rockwall with free estimates."},
+      {"position": 7, "resultType": "organic", "url": "https://eliteappliancesolutions.com/", "title": "Appliance Repair Services in Rockwall - Elite Appliance Solutions", "snippet": "Elite Appliance Solutions; refrigerator, washer, dryer, dishwasher, oven, stove, ice maker, and freezer repair for all major brands."},
+      {"position": 8, "resultType": "organic", "url": "https://inhomeapplianceservices.com/", "title": "Appliance Repairs in Rockwall, Hunt and Eastern Dallas Counties, TX", "snippet": "In-Home Appliance Services; almost 55 years of experience serving Rockwall and Hunt counties."},
+      {"position": 9, "resultType": "organic", "url": "https://www.southernfixed.com/", "title": "Southern Fixed Appliance Repair | Rockwall County appliance repair | Rockwall, TX, USA", "snippet": "Southern Fixed Appliance Repair; fast, affordable same-day service for washers, dryers, refrigerators, freezers, dishwashers, ovens."},
+      {"position": 10, "resultType": "organic", "url": "https://rpsrepair.com/locations/texas/rockwall/", "title": "Appliance Repair Rockwall TX | Fast & Reliable Service", "snippet": "RPS Appliance Repair; flat-rate pricing, OEM parts, master-certified technicians serving Rockwall families."}
+    ]
+  },
+  "competitors": [
+    {"name": "Mr. Appliance of Rockwall", "domain": "mrappliance.com", "url": "https://www.mrappliance.com/rockwall/", "position": 2, "kind": "franchise", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "National Mr. Appliance franchise with a dedicated Rockwall territory page; highest-ranked business result."}},
+    {"name": "GE Appliance Repair (Bodewell)", "domain": "repair.geappliances.com", "url": "https://repair.geappliances.com/service-area/a5O4P000001rw7OUAQ/rockwall", "position": 3, "kind": "national", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "National manufacturer service arm ranking via a programmatic service-area page (GE brands only)."}},
+    {"name": "Elite Appliance Solutions", "domain": "eliteappliancesolutions.com", "url": "https://eliteappliancesolutions.com/", "position": 7, "kind": "local_business", "signals": {"cityInTitle": true, "innerPage": false, "dedicatedLocalSite": true, "contentDepthWords": null, "reviewCount": null, "notes": "Rockwall-focused independent repair company ranking with its homepage; all-major-brand coverage."}},
+    {"name": "In-Home Appliance Services", "domain": "inhomeapplianceservices.com", "url": "https://inhomeapplianceservices.com/", "position": 8, "kind": "local_business", "signals": {"cityInTitle": true, "innerPage": false, "dedicatedLocalSite": true, "contentDepthWords": null, "reviewCount": null, "notes": "Nearly 55 years in business serving Rockwall, Hunt, and eastern Dallas counties; homepage-level ranking."}},
+    {"name": "Southern Fixed Appliance Repair", "domain": "southernfixed.com", "url": "https://www.southernfixed.com/", "position": 9, "kind": "local_business", "signals": {"cityInTitle": true, "innerPage": false, "dedicatedLocalSite": true, "contentDepthWords": null, "reviewCount": null, "notes": "Rockwall County-branded same-day repair operator ranking with its homepage."}},
+    {"name": "RPS Appliance Repair", "domain": "rpsrepair.com", "url": "https://rpsrepair.com/locations/texas/rockwall/", "position": 10, "kind": "out_of_town", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "Multi-state operator ranking via a /locations/texas/rockwall/ programmatic location page; flat-rate pricing and OEM parts."}}
+  ],
+  "operatorCandidates": [
+    {"name": "Elite Appliance Solutions", "domain": "eliteappliancesolutions.com", "whyCandidate": "Rockwall-dedicated independent shop ranking at position 7, below four directories and the Mr. Appliance franchise.", "source": "web_search"},
+    {"name": "In-Home Appliance Services", "domain": "inhomeapplianceservices.com", "whyCandidate": "55-year multi-county veteran stuck at position 8 behind directories and national brands despite deep local tenure.", "source": "web_search"},
+    {"name": "Southern Fixed Appliance Repair", "domain": "southernfixed.com", "whyCandidate": "Same-day Rockwall County operator ranking at position 9; small independent with clear capacity appetite.", "source": "web_search"},
+    {"name": "RPS Appliance Repair", "domain": "rpsrepair.com", "whyCandidate": "Multi-location operator reaching Rockwall only via a location page at position 10, a profile that commonly buys city-level lead flow.", "source": "web_search"}
+  ],
+  "domains": [],
+  "notes": [
+    "Directory-heavy SERP: BBB, Yelp, Angi, and Thumbtack occupy 4 of the top 6 positions (including position 1).",
+    "Franchise/national saturation at the top: Mr. Appliance (franchise) at position 2 and GE/Bodewell (national) at position 3 are the first business results.",
+    "All independent local businesses are pushed to positions 7-10, ranking mostly with bare homepages — a strong rank-and-rent opportunity gap.",
+    "Three Rockwall-dedicated local domains observed (eliteappliancesolutions.com, inhomeapplianceservices.com, southernfixed.com), all below the fold."
+  ]
+}

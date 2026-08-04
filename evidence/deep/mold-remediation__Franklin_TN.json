@@ -1,0 +1,48 @@
+{
+  "marketKey": "mold-remediation|Franklin|TN",
+  "nicheSlug": "mold-remediation",
+  "city": "Franklin",
+  "state": "TN",
+  "collectedAt": "2026-08-04T16:33:00Z",
+  "serp": {
+    "provider": "web_search",
+    "query": "mold remediation Franklin TN",
+    "engine": "web",
+    "device": "desktop",
+    "geoParams": {"location": "Franklin, TN"},
+    "observedAt": "2026-08-04T16:31:20Z",
+    "results": [
+      {"position": 1, "resultType": "organic", "url": "https://www.servpro.com/locations/tn/servpro-of-south-williamson-county/services/mold-remediation", "title": "Professional Mold Remediation, Removal, and Mitigation Services near Franklin, TN | SERVPRO of South Williamson County", "snippet": "24/7 mold remediation services for residential and commercial properties with certified technicians."},
+      {"position": 2, "resultType": "organic", "url": "https://www.yelp.com/search?find_desc=Mold+Removal&find_loc=Franklin,+TN", "title": "TOP 10 BEST Mold Removal in Franklin, TN - Updated 2026 - Yelp", "snippet": "Yelp directory results for mold removal in Franklin, TN."},
+      {"position": 3, "resultType": "organic", "url": "https://www.facebook.com/groups/426847822712478/posts/824977786232811/", "title": "Franklin, Tennessee | Looking for a mold remediation company | Facebook", "snippet": "Local Facebook group post asking for mold remediation company recommendations."},
+      {"position": 4, "resultType": "organic", "url": "https://www.midtnmoldrem.com/", "title": "Middle Tennessee Mold Remediation LLC Franklin TN", "snippet": "Offers free inspections using fiberoptics, thermal imaging, and air testing to find mold."},
+      {"position": 5, "resultType": "organic", "url": "https://www.franklinenvironmentalservices.com/mold-remediation/", "title": "Mold Remediation – Franklin Environmental Services", "snippet": "Certified by the Professional Mold Institute for testing and remediation of mold."},
+      {"position": 6, "resultType": "organic", "url": "https://www.franklinenvironmentalservices.com/mold/", "title": "Mold | Franklin Environmental Services | Radon Testing | Mold Removal", "snippet": "Free visual inspections including moisture readings and thermal imaging; second listing for the same domain."},
+      {"position": 7, "resultType": "organic", "url": "https://www.claropure.com/locations/tn/franklin", "title": "Claro - Complete Mold Remediation - Franklin", "snippet": "Dry-fog treatment achieving up to 99% spore reduction; identifies and fixes moisture problems first."},
+      {"position": 8, "resultType": "organic", "url": "https://www.tennesseemoldinspectors.com/franklin", "title": "Franklin Mold Testing — Tennessee Mold Inspectors", "snippet": "Mold inspections, testing, and assessment; not associated with any mold remediation companies."}
+    ]
+  },
+  "competitors": [
+    {"name": "SERVPRO of South Williamson County", "domain": "servpro.com", "url": "https://www.servpro.com/locations/tn/servpro-of-south-williamson-county/services/mold-remediation", "position": 1, "kind": "franchise", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "National SERVPRO franchise territory page on the corporate domain ranking #1."}},
+    {"name": "Yelp", "domain": "yelp.com", "url": "https://www.yelp.com/search?find_desc=Mold+Removal&find_loc=Franklin,+TN", "position": 2, "kind": "directory", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "Directory search page at position 2."}},
+    {"name": "Facebook group post", "domain": "facebook.com", "url": "https://www.facebook.com/groups/426847822712478/posts/824977786232811/", "position": 3, "kind": "directory", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "Social/UGC result — a local group post asking for mold remediation recommendations ranking on page one signals weak competition."}},
+    {"name": "Middle Tennessee Mold Remediation LLC", "domain": "midtnmoldrem.com", "url": "https://www.midtnmoldrem.com/", "position": 4, "kind": "local_business", "signals": {"cityInTitle": true, "innerPage": false, "dedicatedLocalSite": true, "contentDepthWords": null, "reviewCount": null, "notes": "Franklin-based single-location remediation company ranking on its homepage; regional (Middle TN) service area anchored in Franklin."}},
+    {"name": "Franklin Environmental Services", "domain": "franklinenvironmentalservices.com", "url": "https://www.franklinenvironmentalservices.com/mold-remediation/", "position": 5, "kind": "local_business", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": true, "contentDepthWords": null, "reviewCount": null, "notes": "Local environmental services firm (mold + radon); 'Franklin' in title is the company name, which matches the city; holds positions 5 AND 6."}},
+    {"name": "Franklin Environmental Services (second listing)", "domain": "franklinenvironmentalservices.com", "url": "https://www.franklinenvironmentalservices.com/mold/", "position": 6, "kind": "local_business", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": true, "contentDepthWords": null, "reviewCount": null, "notes": "Duplicate-domain listing — a second mold page from the same local company."}},
+    {"name": "Claro (Complete Mold Remediation)", "domain": "claropure.com", "url": "https://www.claropure.com/locations/tn/franklin", "position": 7, "kind": "franchise", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "Multi-location dry-fog mold remediation brand ranking via a /locations/tn/franklin page."}},
+    {"name": "Tennessee Mold Inspectors", "domain": "tennesseemoldinspectors.com", "url": "https://www.tennesseemoldinspectors.com/franklin", "position": 8, "kind": "local_business", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "Middle-TN regional inspection/testing-only firm (explicitly not a remediator) with a Franklin city page."}}
+  ],
+  "operatorCandidates": [
+    {"name": "Middle Tennessee Mold Remediation LLC", "domain": "midtnmoldrem.com", "whyCandidate": "Franklin-based remediation company ranking 4th behind a franchise, a directory, and a Facebook post; the top true-local operator and an obvious lead buyer.", "source": "web_search"},
+    {"name": "Franklin Environmental Services", "domain": "franklinenvironmentalservices.com", "whyCandidate": "Certified local mold testing/remediation firm holding positions 5-6; established Franklin operator that could absorb additional local leads.", "source": "web_search"},
+    {"name": "Claro (Franklin location)", "domain": "claropure.com", "whyCandidate": "Expanding multi-location mold brand with a dedicated Franklin location page at position 7; growth-stage brands frequently supplement SEO with purchased leads.", "source": "web_search"}
+  ],
+  "domains": [],
+  "notes": [
+    "Weak-competition signals: a Yelp directory page at #2 and a raw Facebook group post at #3 — non-business results occupying two of the top three organic slots.",
+    "SERVPRO franchise holds #1 via the corporate servpro.com domain; only one other franchise-type brand (Claro) appears.",
+    "Franklin Environmental Services double-lists (positions 5 and 6), indicating limited unique competitor supply on page one.",
+    "Only two true local remediation companies were observed in the entire SERP; position 8 is an inspection-only firm that does not remediate.",
+    "No review counts were visible in the search results."
+  ]
+}

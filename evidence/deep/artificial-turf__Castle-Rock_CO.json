@@ -1,0 +1,47 @@
+{
+  "marketKey": "artificial-turf|Castle Rock|CO",
+  "nicheSlug": "artificial-turf",
+  "city": "Castle Rock",
+  "state": "CO",
+  "collectedAt": "2026-08-04T16:31:00Z",
+  "serp": {
+    "provider": "web_search",
+    "query": "artificial turf installation Castle Rock CO",
+    "engine": "web",
+    "device": "desktop",
+    "geoParams": {"location": "Castle Rock, CO"},
+    "observedAt": "2026-08-04T16:30:20Z",
+    "results": [
+      {"position": 1, "resultType": "organic", "url": "https://rocknblocklandscape.com/locations/colorado/", "title": "Artificial Turf Sales & Installation Services in Castle Rock, CO", "snippet": "Rock N Block Turf N Hardscapes — artificial turf sales and installation for homeowners and commercial properties, with meticulous site preparation, drainage and grading."},
+      {"position": 2, "resultType": "organic", "url": "https://waterlooturf.com/denver/artificial-turf-company-castle-rock-co/", "title": "Artificial Turf Company in Castle Rock, CO | Artificial Grass Turf Company Near Me", "snippet": "Waterloo Turf Denver provides a comprehensive range of services tailored to Castle Rock, CO residents."},
+      {"position": 3, "resultType": "organic", "url": "https://rocknblocklandscape.com/locations/denver-colorado/artificial-turf-castle-rock/", "title": "Artificial Turf Sales & Installation in Castle Rock, Denver, CO", "snippet": "Second Rock N Block listing — Denver-location subpage targeting Castle Rock."},
+      {"position": 4, "resultType": "organic", "url": "https://www.hineroutdoorliving.com/artificial-turf-in-castle-rock-co", "title": "Artificial Turf in Castle Rock, CO: Premium Installation Services — Hiner Outdoor Living", "snippet": "Premium artificial turf installation services in Castle Rock, CO."},
+      {"position": 5, "resultType": "organic", "url": "https://rmpslandscaping.com/artificial-turf-greens/", "title": "Artificial Grass Landscaping | Turf Installation | Castle Rock, CO", "snippet": "RMPS Landscaping offers leading brand artificial turf products."},
+      {"position": 6, "resultType": "organic", "url": "https://frsrllc.com/artificial-turf-castle-rock-co/", "title": "Artificial Turf Installation in Castle Rock, CO | FRSR Outdoor Living", "snippet": "FRSR installs water-wise artificial turf throughout Castle Rock and Douglas County communities like The Meadows, Terrain, and Founders Village."},
+      {"position": 7, "resultType": "organic", "url": "https://lawnpros.biz/artificial-grass-castle-rock-co/", "title": "Artificial Grass Installation Castle Rock, CO | Lawn Pros", "snippet": "Artificial grass installation suited for the Castle Rock, CO climate."}
+    ]
+  },
+  "competitors": [
+    {"name": "Rock N Block Turf N Hardscapes", "domain": "rocknblocklandscape.com", "url": "https://rocknblocklandscape.com/locations/colorado/", "position": 1, "kind": "franchise", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "Multi-state turf/hardscape brand with a locations-page architecture; holds TWO listings in this SERP (positions 1 and 3)."}},
+    {"name": "Waterloo Turf (Denver)", "domain": "waterlooturf.com", "url": "https://waterlooturf.com/denver/artificial-turf-company-castle-rock-co/", "position": 2, "kind": "franchise", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "Texas-origin multi-market turf brand; ranks via its Denver branch's Castle Rock city page."}},
+    {"name": "Rock N Block Turf N Hardscapes (Denver page)", "domain": "rocknblocklandscape.com", "url": "https://rocknblocklandscape.com/locations/denver-colorado/artificial-turf-castle-rock/", "position": 3, "kind": "franchise", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "Duplicate domain listing — same brand as position 1, deeper Castle Rock-specific page."}},
+    {"name": "Hiner Outdoor Living", "domain": "hineroutdoorliving.com", "url": "https://www.hineroutdoorliving.com/artificial-turf-in-castle-rock-co", "position": 4, "kind": "out_of_town", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "Colorado Springs-area outdoor living company reaching into Castle Rock via a service-area page."}},
+    {"name": "RMPS Landscaping", "domain": "rmpslandscaping.com", "url": "https://rmpslandscaping.com/artificial-turf-greens/", "position": 5, "kind": "local_business", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "Castle Rock-area landscaping company; turf is one service page on a multi-service site."}},
+    {"name": "FRSR Outdoor Living", "domain": "frsrllc.com", "url": "https://frsrllc.com/artificial-turf-castle-rock-co/", "position": 6, "kind": "local_business", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "Local Douglas County installer; snippet cites specific Castle Rock neighborhoods (The Meadows, Terrain, Founders Village)."}},
+    {"name": "Lawn Pros", "domain": "lawnpros.biz", "url": "https://lawnpros.biz/artificial-grass-castle-rock-co/", "position": 7, "kind": "out_of_town", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "Colorado Springs/Front Range company ranking via a Castle Rock city page."}}
+  ],
+  "operatorCandidates": [
+    {"name": "RMPS Landscaping", "domain": "rmpslandscaping.com", "whyCandidate": "Local Castle Rock-area landscaper ranking 5th behind two national turf brands; turf leads would feed an existing install crew.", "source": "web_search"},
+    {"name": "FRSR Outdoor Living", "domain": "frsrllc.com", "whyCandidate": "Douglas County local installer at position 6 that already markets neighborhood-level Castle Rock work but is outranked by multi-state brands.", "source": "web_search"},
+    {"name": "Hiner Outdoor Living", "domain": "hineroutdoorliving.com", "whyCandidate": "Colorado Springs outdoor-living company actively targeting Castle Rock with a dedicated city page at position 4; clearly wants this market's jobs.", "source": "web_search"},
+    {"name": "Lawn Pros", "domain": "lawnpros.biz", "whyCandidate": "Front Range turf installer at position 7 maintaining a Castle Rock service-area page; lowest-ranked installer observed and a plausible lead buyer.", "source": "web_search"}
+  ],
+  "domains": [],
+  "notes": [
+    "Multi-state turf brands dominate: Rock N Block holds two of the top three positions with different location pages, and Waterloo Turf (Austin-origin) is at position 2.",
+    "No directories (Yelp/Angi/Thumbtack) appeared in the observed results.",
+    "No competitor has a Castle Rock-dedicated domain or site — every result is a city landing page on a broader brand or multi-service site, leaving a dedicated-local-site gap.",
+    "Two of seven results are Colorado Springs companies reaching north into Castle Rock, indicating demand exceeds truly local supply.",
+    "No review counts were visible in the search results."
+  ]
+}

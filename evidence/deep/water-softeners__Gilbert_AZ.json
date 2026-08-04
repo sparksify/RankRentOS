@@ -1,0 +1,48 @@
+{
+  "marketKey": "water-softeners|Gilbert|AZ",
+  "nicheSlug": "water-softeners",
+  "city": "Gilbert",
+  "state": "AZ",
+  "collectedAt": "2026-08-04T16:29:35Z",
+  "serp": {
+    "provider": "web_search",
+    "query": "water softener installation Gilbert AZ",
+    "engine": "web",
+    "device": "desktop",
+    "geoParams": {"location": "Gilbert, AZ"},
+    "observedAt": "2026-08-04T16:29:35Z",
+    "results": [
+      {"position": 1, "resultType": "organic", "url": "https://www.yelp.com/search?find_desc=Water+Softener&find_loc=Gilbert%2C+AZ", "title": "TOP 10 BEST WATER SOFTENER IN GILBERT, AZ - UPDATED 2026 - QUALITY & AFFORDABILITY - YELP", "snippet": "Yelp directory search results for water softener providers in Gilbert, AZ."},
+      {"position": 2, "resultType": "organic", "url": "https://www.facebook.com/fidelisenterprisesllc/", "title": "Gilbert Water Softeners | Facebook", "snippet": "Facebook page for Gilbert Water Softeners (Fidelis Enterprises LLC)."},
+      {"position": 3, "resultType": "organic", "url": "https://theelitepros.com/water-filtration-softener-systems/", "title": "Residential Water Filtration & Softener Systems | Gilbert AZ", "snippet": "Elite Pro Services; expert installation in Gilbert and the East Valley including water quality assessment and system sizing."},
+      {"position": 4, "resultType": "organic", "url": "https://www.ableplumbingsolutions.com/water-softeners-gilbert-az/", "title": "Water Softeners - Gilbert, AZ | Able Plumbing Solutions", "snippet": "Able Plumbing Solutions; over 25 years serving Gilbert with water-softening technology."},
+      {"position": 5, "resultType": "organic", "url": "https://azcpg.com/water-purification/salt-free-water-softener-gilbert-az", "title": "Salt-Free Water Softener Gilbert, AZ | Water Treatment", "snippet": "The Cooling & Plumbing Co.; salt-free water softeners with certified technicians for installation, repair, and maintenance."},
+      {"position": 6, "resultType": "organic", "url": "https://youngplumbingaz.com/water-softener-installation/", "title": "Water Softener Installation in Gilbert & East Valley | Young Plumbing", "snippet": "Young Plumbing; water softener installation in Gilbert, Chandler, Mesa, Queen Creek & San Tan Valley."},
+      {"position": 7, "resultType": "organic", "url": "https://edwardsplumbingllc.com/water-softener-installation/", "title": "Water Softener Installation - Edwards Plumbing", "snippet": "Edwards Plumbing LLC water softener installation service page."},
+      {"position": 8, "resultType": "organic", "url": "https://gilbertwatersofteners.com/", "title": "Water Purification and RO Systems | Gilbert Water Softeners", "snippet": "Gilbert Water Softeners; professional softener installation, whole-house filtration, RO systems, and free in-home water test tailored to Arizona homes."}
+    ]
+  },
+  "competitors": [
+    {"name": "Gilbert Water Softeners (Fidelis Enterprises LLC)", "domain": "facebook.com", "url": "https://www.facebook.com/fidelisenterprisesllc/", "position": 2, "kind": "directory", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "Facebook page ranking at position 2 for the same business that owns gilbertwatersofteners.com (position 8)."}},
+    {"name": "Elite Pro Services", "domain": "theelitepros.com", "url": "https://theelitepros.com/water-filtration-softener-systems/", "position": 3, "kind": "local_business", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "Gilbert/East Valley service company; softener systems is one service page on a multi-service domain."}},
+    {"name": "Able Plumbing Solutions", "domain": "ableplumbingsolutions.com", "url": "https://www.ableplumbingsolutions.com/water-softeners-gilbert-az/", "position": 4, "kind": "local_business", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "25+ years serving Gilbert; ranks with a city-slug inner page (water-softeners-gilbert-az)."}},
+    {"name": "The Cooling & Plumbing Co.", "domain": "azcpg.com", "url": "https://azcpg.com/water-purification/salt-free-water-softener-gilbert-az", "position": 5, "kind": "local_business", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "Arizona HVAC/plumbing company ranking with a salt-free softener city page; statewide-branded domain."}},
+    {"name": "Young Plumbing", "domain": "youngplumbingaz.com", "url": "https://youngplumbingaz.com/water-softener-installation/", "position": 6, "kind": "local_business", "signals": {"cityInTitle": true, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "East Valley plumber covering Gilbert, Chandler, Mesa, Queen Creek, San Tan Valley from one service page."}},
+    {"name": "Edwards Plumbing LLC", "domain": "edwardsplumbingllc.com", "url": "https://edwardsplumbingllc.com/water-softener-installation/", "position": 7, "kind": "local_business", "signals": {"cityInTitle": false, "innerPage": true, "dedicatedLocalSite": false, "contentDepthWords": null, "reviewCount": null, "notes": "Local plumber ranking with a generic (non-city-titled) water softener installation page."}},
+    {"name": "Gilbert Water Softeners", "domain": "gilbertwatersofteners.com", "url": "https://gilbertwatersofteners.com/", "position": 8, "kind": "local_business", "signals": {"cityInTitle": true, "innerPage": false, "dedicatedLocalSite": true, "contentDepthWords": null, "reviewCount": null, "notes": "Exact-match city+niche domain homepage — the only dedicated local site observed, yet it ranks last of the eight results."}}
+  ],
+  "operatorCandidates": [
+    {"name": "Gilbert Water Softeners (Fidelis Enterprises LLC)", "domain": "gilbertwatersofteners.com", "whyCandidate": "Niche-dedicated exact-match-domain operator ranking only at position 8 on its own site (plus a Facebook page at 2), clearly hungry for more Gilbert softener visibility.", "source": "web_search"},
+    {"name": "Edwards Plumbing LLC", "domain": "edwardsplumbingllc.com", "whyCandidate": "Ranks at position 7 with a generic non-localized softener page, suggesting weak local SEO that purchased leads could offset.", "source": "web_search"},
+    {"name": "Young Plumbing", "domain": "youngplumbingaz.com", "whyCandidate": "East Valley plumber at position 6 spreading one page across five cities including Gilbert — a natural buyer for city-specific lead flow.", "source": "web_search"},
+    {"name": "Able Plumbing Solutions", "domain": "ableplumbingsolutions.com", "whyCandidate": "Long-tenured (25+ years) Gilbert plumber ranking mid-SERP behind directories and multi-service competitors.", "source": "web_search"},
+    {"name": "Elite Pro Services", "domain": "theelitepros.com", "whyCandidate": "Gilbert/East Valley installer at position 3 whose softener business is one line on a multi-service site; installation-focused sales model fits lead purchasing.", "source": "web_search"}
+  ],
+  "domains": [],
+  "notes": [
+    "Fragmented SERP: no franchise or national brand observed; all business results are independent local plumbers/water-treatment companies.",
+    "The only exact-match dedicated local site (gilbertwatersofteners.com) ranks last while its Facebook page ranks 2nd — social profile outranking the owned domain.",
+    "Positions 1-2 are a Yelp directory search page and a Facebook page, leaving the top of the SERP without a strong owned business site.",
+    "Gilbert's naturally hard water (high calcium/magnesium) is emphasized across results, indicating strong intrinsic demand for softener installs."
+  ]
+}
