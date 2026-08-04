@@ -1,11 +1,12 @@
-// Supabase anon credentials (public-scope key; project is private-use)
-export const SUPABASE_URL = "https://dmvkmbbpcvcetuepwhue.supabase.co";
-export const SUPABASE_KEY =
-  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImRtdmttYmJwY3ZjZXR1ZXB3aHVlIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODQyNDg5OTksImV4cCI6MjA5OTgyNDk5OX0.B4jKX3xW_fuA-x5J7J_lGYSQkTuyG-Zq6-xF6vlwvFM";
+// Server-side only. Credentials come from env; never shipped to the browser.
+const SUPABASE_URL = process.env.SUPABASE_URL;
+const SUPABASE_KEY = process.env.SUPABASE_ANON_KEY;
 
 export async function sb(path, opts = {}) {
+  if (!SUPABASE_URL || !SUPABASE_KEY) throw new Error("SUPABASE_URL / SUPABASE_ANON_KEY not set");
   const res = await fetch(`${SUPABASE_URL}/rest/v1/${path}`, {
     ...opts,
+    cache: "no-store",
     headers: {
       apikey: SUPABASE_KEY,
       authorization: `Bearer ${SUPABASE_KEY}`,

@@ -1,6 +1,5 @@
 "use client";
 import { useEffect, useMemo, useState } from "react";
-import { sb } from "../lib/config";
 
 const STAGES = ["watchlist", "domain_bought", "site_built", "ranking", "renting"];
 const STAGE_LABELS = { watchlist: "Watchlist", domain_bought: "Domain bought", site_built: "Site built", ranking: "Ranking", renting: "Renting 💰" };
@@ -67,28 +66,44 @@ export default function Page() {
 
   useEffect(() => {
     (async () => {
-      const runs = await sb("runs?select=id,label,started_at&order=started_at.desc&limit=1");
-      if (!runs.length) return setMarkets([]);
-      setRunLabel(runs[0].label);
-      const sel = `select=*,domains(domain,is_winner,winner_reason)`;
-      const a = await sb(`markets?run_id=eq.${runs[0].id}&${sel}&order=score.desc&limit=1000`);
-      const b = await sb(`markets?run_id=eq.${runs[0].id}&${sel}&order=score.desc&limit=1000&offset=1000`);
-      const all = [...a, ...b].map((m) => ({ ...m, winner: (m.domains || []).find((d) => d.is_winner) || null }));
-      setMarkets(all);
-      const pl = await sb("pipeline?select=market_id,status,id");
-      setPipeline(Object.fromEntries(pl.map((p) => [p.market_id, p])));
+      let d = await fetch("/api/markets").then((r) => r.json()).catch(() => ({ error: "route unreachable" }));
+      // Fallback: some local sandboxes block server-side egress — fetch from the browser instead.
+      if (d.error && process.env.NEXT_PUBLIC_SUPABASE_URL) {
+        const U = process.env.NEXT_PUBLIC_SUPABASE_URL, K = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
+        const h = { apikey: K, authorization: `Bearer ${K}` };
+        const runs = await fetch(`${U}/rest/v1/runs?select=id,label&order=started_at.desc&limit=1`, { headers: h }).then((r) => r.json());
+        const sel = "select=*,domains(domain,is_winner,winner_reason)";
+        const [a, b, pl] = await Promise.all([
+          fetch(`${U}/rest/v1/markets?run_id=eq.${runs[0].id}&${sel}&order=score.desc&limit=1000`, { headers: h }).then((r) => r.json()),
+          fetch(`${U}/rest/v1/markets?run_id=eq.${runs[0].id}&${sel}&order=score.desc&limit=1000&offset=1000`, { headers: h }).then((r) => r.json()),
+          fetch(`${U}/rest/v1/pipeline?select=id,market_id,status`, { headers: h }).then((r) => r.json()),
+        ]);
+        d = { runLabel: runs[0].label, pipeline: pl, markets: [...a, ...b].map((m) => ({ ...m, winner: (m.domains || []).find((x) => x.is_winner) || null })) };
+      }
+      if (d.error) throw new Error(d.error);
+      setRunLabel(d.runLabel || "");
+      setMarkets(d.markets || []);
+      setPipeline(Object.fromEntries((d.pipeline || []).map((p) => [p.market_id, p])));
     })().catch((e) => { console.error(e); setMarkets([]); });
   }, []);
 
   async function setStage(m, status) {
     const existing = pipeline[m.id];
-    if (existing) {
-      await sb(`pipeline?id=eq.${existing.id}`, { method: "PATCH", body: JSON.stringify({ status, updated_at: new Date().toISOString() }) });
-      setPipeline({ ...pipeline, [m.id]: { ...existing, status } });
-    } else {
-      const [row] = await sb("pipeline", { method: "POST", body: JSON.stringify({ market_id: m.id, status }) });
-      setPipeline({ ...pipeline, [m.id]: row });
+    setPipeline({ ...pipeline, [m.id]: { ...(existing || {}), market_id: m.id, status } });
+    let row = await fetch("/api/pipeline", {
+      method: "POST",
+      headers: { "content-type": "application/json" },
+      body: JSON.stringify({ marketId: m.id, status, id: existing?.id }),
+    }).then((r) => r.json()).catch(() => ({ error: "unreachable" }));
+    if (row?.error && process.env.NEXT_PUBLIC_SUPABASE_URL) {
+      const U = process.env.NEXT_PUBLIC_SUPABASE_URL, K = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
+      const h = { apikey: K, authorization: `Bearer ${K}`, "content-type": "application/json", prefer: "return=representation" };
+      const [r2] = existing?.id
+        ? await fetch(`${U}/rest/v1/pipeline?id=eq.${existing.id}`, { method: "PATCH", headers: h, body: JSON.stringify({ status, updated_at: new Date().toISOString() }) }).then((r) => r.json())
+        : await fetch(`${U}/rest/v1/pipeline`, { method: "POST", headers: h, body: JSON.stringify({ market_id: m.id, status }) }).then((r) => r.json());
+      row = r2;
     }
+    if (row?.id) setPipeline((p) => ({ ...p, [m.id]: row }));
   }
 
   const niches = useMemo(() => [...new Set((markets || []).map((m) => m.niche))].sort(), [markets]);
@@ -124,8 +139,8 @@ export default function Page() {
     <div className="shell">
       <div className="topbar">
         <div className="brand">
-          <div className="brand-mark">LS</div>
-          <div><h1>LeadGen Scout</h1><span>{runLabel || "no runs yet"}</span></div>
+          <div className="brand-mark">RR</div>
+          <div><h1>RankRentOS</h1><span>{runLabel || "no runs yet"}</span></div>
         </div>
       </div>
 
