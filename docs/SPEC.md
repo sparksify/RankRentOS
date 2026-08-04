@@ -1,206 +1,260 @@
 # RankRentOS — The Opportunity Operating System
-### Full build specification · v2 · 2026-08
+### Full specification · v3 · 2026-08
 
-> Everyone else builds tools that answer *"how do I rank this website?"*
-> RankRentOS answers *"what should I build next?"*
+> People think they're buying SEO.
+> They're buying **confidence about where to invest the next $500**.
 
-The system discovers underserved local-service markets before anyone notices,
-scores them 0–100 with practitioner-calibrated guardrails, finds the domain,
-builds the site, and tracks the asset from watchlist to renting. The loop:
+RankRentOS discovers underserved local-service markets, scores them with
+practitioner-calibrated judgment, plans exactly what to build, builds it,
+operates it, and learns from every outcome. The code is generic; the
+intelligence lives in the **Playbooks**.
+
+---
+
+## 0. The six engines
 
 ```
-DISCOVER → SCORE → BUILD → DEPLOY → MONITOR → MONETIZE
-                     ↑__________ outcome flywheel __________|
+Research Engine → Scoring Engine → Planning Engine → Builder Engine → Operations Engine → Portfolio Engine
+        ↑______________________________ outcome flywheel ______________________________|
+```
+
+Entity lifecycle (each stage is its own table + screen + KPIs):
+
+```
+Research → Opportunity → Project → Asset → Revenue
 ```
 
 ---
 
-## 0. What already exists (v1 assets, all kept)
+## 1. Playbooks — the company's brain (top-level module)
 
-| Asset | Location | Role in v2 |
+One playbook per niche. The OS "already knows how to think" when you click one.
+
+Each playbook stores:
+- **verdict**: `build | commission-only | avoid` + evidence (a Hair Salon
+  playbook exists to say *avoid: brand-loyalty purchase, low AOV* — knowing
+  why-not is as proprietary as knowing how)
+- discovery filters (population band, income floor, geography/climate match)
+- scoring weight overrides
+- keyword strategy (the 5–6 core service keywords; acQuery; long-tail patterns)
+- sitemap + schema templates; content depth targets
+- domain strategy (EMD vs PMD) + domainTerms
+- outreach scripts (trial close, no-business angle, cold email)
+- operator profile (who buys these leads; reachability; screen criteria)
+- pricing model (ticket, margin, flat-rent band vs commission %)
+- authority strategy (citations count, link approach, GBP stance)
+- **track record** (from the flywheel): assets built, avg time-to-rank,
+  prediction error, revenue accuracy — per-playbook, from asset #1 onward
+
+Seed: ~30 playbooks encoded from the 24 scanned niches + both SOPs (including
+avoid-verdict playbooks for plumbing/HVAC/roofing/solar/salons/etc.).
+Version-controlled; updated by outcomes, never overwritten silently.
+
+---
+
+## 2. Research Engine
+
+Eight research surfaces, all cached-first, all budget-governed:
+
+| Surface | Source | Status |
 |---|---|---|
-| Scan engine (SERP + autocomplete + Trends + content crawl + RDAP) | `src/serp.js, demand.js, domains.js` | Becomes the library the job runner calls |
-| Scoring + demand gates + value model | `src/score.js, rescore.js, value.js` | Core of Opportunity Scoring; weights become DB-config |
-| Deep-check (keyword variants) | `src/deep.js` | Auto-runs on anything entering the pipeline |
-| DataForSEO volume/CPC | `src/volume.js` | Demand pricing layer |
-| Supabase (runs/markets/domains/pipeline) | project `LeadGenScout` | Spine; schema extends, nothing dropped |
-| Next.js app w/ auth + pipeline stages | `app/` | Grows into the full left-nav product |
-| 1,392-market definitive dataset | Supabase + caches | Seed corpus + scoring calibration baseline |
-| Practitioner knowledge (32 videos, 2 SOPs) | encoded in score.js + niches.json | Becomes the explicit Criteria Guardrail layer |
+| Market Research | SerpAPI SERP scans | built |
+| Demand Research | autocomplete + Trends + DataForSEO volume/CPC | built |
+| Neighborhood Research | Census block groups + OSM + LLM (master-planned communities) + Maps validation | new |
+| Competitor Research | see Competitive Intelligence §3 | partial |
+| Domain Research | RDAP + winner picker + PMD generation + price | built (v1) |
+| Operator Research | below-#5 rankers per keyword (the SOP "20-list") → FounderScout outreach | data exists |
+| Entity Research | GBP categories, citations presence, brand-search checks | new |
+| AI Search Research | ChatGPT/Perplexity/Gemini answer probes per market | new |
+
+Research runs as **query-driven jobs** ("Roofing · 50mi of Prosper · pop 50k+ ·
+competition <35 · AOV $1.5k+ · recurring") with a projected-cost preview and a
+hard per-job budget cap. Full-US Census places DB (~19k cities) replaces the
+curated 58.
+
+**Criteria Guardrails** run before scoring (playbook verdicts + need/desire,
+ticket floors, brand-loyalty, PE saturation, GBP-dependence, DIY-ability).
+Failures are shown, not hidden: "scored 94 — flagged: brand-loyalty niche."
 
 ---
 
-## 1. Architecture
+## 3. Competitive Intelligence (own engine, feeds Builder)
 
-### 1.1 The job engine (structural decision everything hangs on)
-Discovery becomes **query-driven, not batch-driven**.
+Two depths, cost-scoped:
+- **Shallow** (every scanned market, ~free): top organic, inner-page/dir
+  composition, content word counts, domain ages — current behavior.
+- **Deep** (auto-runs on promotion to Opportunity): top-20 competitor cards —
+  services offered, review counts, GBP categories, internal links, schema,
+  backlinks (DataForSEO), entities, content coverage map, neighborhood
+  coverage, missing services, AI mentions.
 
-- `discovery_jobs` table: query params (service/radius/population/competition/
-  AOV/recurring filters), status, progress log, API budget, results count.
-- **Runner v1**: a persistent local/cron Node process that polls `discovery_jobs`
-  (Vercel functions can't run 40-min scans). The app inserts a job; the runner
-  streams progress rows; the UI subscribes. Identical UX to "cloud," zero infra.
-- **Runner v2** (later): move to a hosted worker (Supabase queue / Inngest / small VPS).
-- Every module call is cached-first (SERP, autocomplete, RDAP, volumes) — re-runs
-  and overlapping jobs cost near zero.
+The Builder consumes the deep card as "the bar to clear" (2–4× depth,
+missing-services exploitation). Flywheel: every built asset's ranking outcome
+validates which competitor weaknesses actually mattered.
 
-### 1.2 Cost governor
-- Each job gets a **projected-cost preview** (SerpAPI calls + DataForSEO cents)
-  before it runs, and a hard per-job cap.
-- Monthly budget tracker across all jobs; morning feed draws from a fixed
-  nightly allowance.
+---
 
-### 1.3 Data model (new/changed tables)
+## 4. Scoring Engine
+
+Six sub-scores → one overall:
+
+| Sub-score | Computed from |
+|---|---|
+| Demand | volume, CPC, autocomplete, trends, seasonality |
+| Competition | SERP composition, content depth, domain ages, backlinks, franchises |
+| Authority (required) | gap between competitor authority and zero-DR start |
+| Monetization | ticket × margin, rent band vs commission, operator availability, buyer proof |
+| Automation | how fully the playbook can build/operate this unattended |
+| **Confidence** | data completeness: measured volume? deep-checked? fresh <30d? CI deep card? |
+
+**Confidence is honest**: score 94 / confidence 42 renders as
+*"I don't know enough yet — run Deep Research ($0.40) to find out"* with a
+one-click job. No pretending.
+
+Weights live in DB config, overridable per playbook, calibrated by outcomes.
+
+---
+
+## 5. Planning Engine (new — sits between Score and Build)
+
+Click an opportunity → get a **blueprint**, not a build:
+
 ```
-niches          ← replaces niches.json; criteria attributes + source (manual|ai)
-cities          ← full US Census places (~19k) + income/pop/growth; kills the curated-58 limit
-neighborhoods   ← city_id, name, source (census|osm|llm), income, housing_age, validated bool
-discovery_jobs  ← query, filters, status, budget, progress jsonb
-markets         ← + neighborhood_id, keyword_set text[], freshness_at, flags text[]
-opportunities   ← view: markets × domains × pipeline × niche criteria (what the UI reads)
-sites           ← built assets: domain, stack, deploy url, gsc property, built_at
-leads           ← calls/forms per site (CallRail/Twilio webhook ingest)
-outcomes        ← predicted vs actual: rank_by_day, leads_mo, revenue_mo  ← THE FLYWHEEL
-api_keys        ← encrypted per-service creds (Settings UI)
+Epoxy Garage Floors — Prosper          Build Score 97
+Recommended assets: main site · 8 neighborhood pages · 6 service pages ·
+18 FAQs · 22 supporting articles · GBP · Facebook · YouTube · Nextdoor ·
+Chamber listing · 220 citations · authority goal DR18
+Estimated cost $42 · estimated time 18 min · projected revenue $2,700/mo
+[Approve → creates Project]
 ```
 
-### 1.4 Criteria Guardrails (non-negotiable layer)
-Hard filters that run BEFORE scoring, from the SOPs — a weak SERP in a bad
-niche is a trap, not an opportunity:
-- ticket floor OR ~100% margin; need > desire (desire allowed only as
-  commission-flagged); no brand-loyalty niches (solar, med-spa, roofing
-  replacement); no GBP-dependent niches; PE-saturation list; DIY-ability check.
-- Guardrail failures still display — as flagged warnings ("scored 94 but:
-  brand-loyalty niche") — the system explains its refusals.
+Rules:
+- Every number is **computed, never decorative**: cost from live API/token
+  price sheets; time from measured past builds; revenue from the value model
+  with assumptions labeled. V1 shows ranges + its work.
+- The blueprint = the SOP per-site build checklist instantiated from the
+  playbook template × the CI deep card × the neighborhood set.
+- Approving a blueprint promotes Opportunity → Project and locks a budget.
+- Freshness gate: research older than 30 days auto-reverifies before approval.
 
 ---
 
-## 2. Modules by phase
+## 6. Builder Engine
 
-### Phase 1 — Discovery OS (the moat)
-1. **Discovery Engine as a query**
-   UI: Service · Radius · Population · Competition · AOV · Recurring → [Build]
-   Streams: cities → demand → CPC → SERP → domains → done. Results ranked 0–100.
-2. **Full-US city database** — Census places import w/ income, pop, growth.
-3. **Neighborhood Finder** — per city: Census block groups + OSM place nodes +
-   LLM pass for master-planned communities (Windsong Ranch, Light Farms…),
-   validated against Maps. Neighborhoods = demographic precision + exact-match
-   domain angles + the site's location-page architecture (NOT separate SERPs —
-   Google localizes at city level; be honest about this in the UI).
-4. **AI Demand Discovery** — LLM proposes services for a demographic
-   ("what do affluent Windsong Ranch homeowners hire for?") → autocomplete
-   confirms → DataForSEO prices → guardrails filter → scan scores survivors.
-   Feeds the `niches` table forever; no more hand-curated lists.
-5. **Opportunity Page (Zillow-style report)** — score + letter grades
-   (Demand/Competition/EMD/Difficulty), "Why this scored highly" checklist,
-   neighborhoods count, monthly search, suggested revenue, keyword set,
-   who-you'd-outrank, domain picks w/ price + strategy (EMD vs PMD).
-6. **Domain Finder v2** — availability + live price, PMD/brand-name generation
-   (NashvilleTreePros pattern), one-click purchase link (buying stays manual).
-7. **Freshness** — opportunities decay; auto-reverify (cached-aware rescan +
-   deep-check) before Build unlocks on anything older than 30 days.
-8. **Morning Opportunity Feed** — nightly cron walks unscanned frontier combos
-   within budget; dashboard greets: "Good morning Steve — 17 new opportunities."
+Consumes an approved Project: keyword set = service pages; neighborhoods =
+location pages; CI card = content bar; playbook = templates/schema/design tier
+(simple for rent-model, professional for commission-grade).
 
-### Phase 2 — Builder (the machine)
-Wizard: Business → Location → Neighborhoods → Services → Brand → Pages → Deploy.
-- Consumes the opportunity row directly: keyword_set = service pages (§2.2:
-  keyword research IS the sitemap), neighborhoods = location pages, competitor
-  content map = the bar to clear (2–4× their depth).
-- Generates: homepage, service pages, neighborhood pages, FAQ/semantic blocks,
-  LocalBusiness+FAQ schema, images (alt/geo-tagged), internal links → homepage,
-  sitemap/robots, tracked number + form on every page, GSC + analytics.
-- Stack: Astro + Cloudflare (Kyle-host-validated: page one in ~1 week) with the
-  build encoded as a skill file. Ticket-calibrated design: simple for rent-model,
-  professional for commission-grade.
-- **Site #1 gets built manually first** — the SOP's own rule: learn the manual
-  criteria so you can debug the automated version. The Builder codifies what
-  site #1 taught us.
-- Build checklist enforcement incl. "noindex REMOVED" check.
+Generates: homepage, service pages, neighborhood pages, FAQ/semantic blocks,
+LocalBusiness+FAQ schema, geo-tagged images, internal links → homepage,
+sitemap/robots, tracked number + form every page, GSC + analytics, deploy
+(Astro + Cloudflare). Checklist enforcement incl. noindex-removed.
 
-### Phase 3 — Operate & Monetize
-9. **Lead Engine** — CallRail/Twilio + form webhooks → `leads`; call volume is
-   the health metric (never rankings); per-site occupancy.
-10. **Operators v1 = prospect-list generator** (NOT a marketplace): every scan
-    already stores businesses ranking below #5 — the SOP "20-list" of renters
-    getting nothing. One click → export to FounderScout outreach pipeline
-    (SerpAPI discovery → owner name → verified email → Smartlead). Trial-close
-    and no-business-angle scripts embedded.
-11. **Authority Engine** — citations orders, foundational-link checklists,
-    copycat-backlink pulls, GBP tracker (legit-only; organic-first doctrine).
-12. **Portfolio v2** — assets, revenue, occupancy %, leads, avg rank, winners;
-    predicted-vs-actual per site.
-13. **Outcome flywheel** — `outcomes` feeds scoring-weight calibration. After
-    ~20 sites the 0–100 score is calibrated on OUR portfolio, which no
-    competitor can copy. This is the compounding moat.
-
-### Phase 4 — Scale & Platform
-14. Analytics (traffic, calls, AI referrals: ChatGPT/Perplexity/Gemini).
-15. Settings UI (encrypted `api_keys`; no .env editing).
-16. Automation dashboard (the "AI employees" — architecturally: named jobs on
-    the queue; marketing language only at the surface).
-17. Operator Marketplace (self-serve operator accounts, capacity, close rates,
-    lead assignment) — a startup of its own; only after portfolio proof.
-18. Multi-user/SaaS hardening (RLS, roles, billing) IF it ever sells to others.
+**Asset #1 is built by hand** (SOP rule: learn the manual criteria before
+automating). The Builder codifies what it teaches.
 
 ---
 
-## 3. UI map (left nav)
+## 7. Operations Engine
 
-| Nav | Phase | Reads |
-|---|---|---|
-| Dashboard (morning feed, portfolio KPIs) | 1 | opportunities, outcomes |
-| Discovery (query builder + job progress) | 1 | discovery_jobs |
-| Markets (all scored, filters, heatmap) | 1 | opportunities |
-| Domains | 1 | domains |
-| Builders | 2 | sites, build jobs |
-| Portfolio | 1 (v1) / 3 (v2) | pipeline, sites, outcomes |
-| Leads | 3 | leads |
-| Operators | 3 | top_organic prospect lists |
-| Automation | 4 | job queue |
-| Analytics | 4 | leads, GSC, referrals |
-| Settings | 4 | api_keys |
-
-Design system: current SaaS look (light gray canvas, white cards, colored
-status words, segmented KPI cells) — already approved.
+- **Lead Engine**: CallRail/Twilio + form webhooks → `leads`; call volume is
+  the only health metric; alerts on drops.
+- **Operator pipeline v1** = prospect-list generator from stored below-#5
+  rankers → FounderScout stack (discovery → owner → verified email →
+  Smartlead) with playbook scripts. Marketplace is Phase 4+.
+- **Authority ops**: citation orders, foundational links, copycat pulls,
+  GBP tracker (legit-only; organic-first doctrine).
+- Occupancy per asset; renter screening notes; Stripe billing later.
 
 ---
 
-## 4. Honest constraints & guardrails (keep these visible)
+## 8. Portfolio Engine + the flywheel
 
-- **Neighborhood ≠ separate SERP.** Value = demographics + domain angle +
-  content architecture. Don't let the UI imply 22 neighborhoods = 22 markets.
-- **Keyword tools under-report hyper-local volume**; autocomplete floor
-  assumptions are labeled on every estimate until real sites calibrate them.
-- **Guru math is discounted 50%** everywhere revenue is projected.
-- **GBP is upside, never a dependency** (2026 verification regime).
-- **Buying is always a human click** — domains, citations, anything with money.
-- Rent bands stay realistic ($300–$2k flat; commission for high-ticket).
+Assets, revenue, occupancy %, leads, avg rank, winners/losers.
+`outcomes` table records predicted vs actual (rank-by-day, leads/mo, $/mo)
+**per asset AND per playbook**. The per-playbook track record ("Dumpster
+Rental: 6 assets, 3.1 wks avg to rank, ±18% prediction error") is the number
+that makes the OS credible — and eventually sellable. Recording starts at
+asset #1.
 
 ---
 
-## 5. Build order (working sessions)
+## 9. Morning Brief (the addictive surface)
 
-1. **Session A — Foundations:** cities import (Census), niches → DB, schema
-   migration (jobs/neighborhoods/outcomes/keyword_set), job runner v1 polling
-   loop, cost governor.
-2. **Session B — Discovery UI:** query builder, progress stream, results grid,
-   guardrail flags surfaced.
-3. **Session C — Neighborhood + AI discovery:** OSM/Census/LLM neighborhood
-   pipeline, AI niche proposal loop, both wired into jobs.
-4. **Session D — Opportunity page + Domain finder v2 + freshness.**
-5. **Session E — Morning feed cron + Dashboard v2.**
-6. **Session F+ — Builder** (after site #1 is built by hand).
+Nightly budgeted job: scans new frontier combos + re-scans a rotating slice of
+known opportunities/assets, then **diffs against snapshots**:
 
-Each session ends deployed (Vercel) and committed (GitHub: sparksify/RankRentOS).
+```
+Good Morning Steve — 17 new opportunities
+· 3 opportunities improved overnight   · 2 competitors disappeared
+· 5 domains became available           · 1 neighborhood passed demand threshold
+· 2 opportunities lost score           · 1 asset dropped rankings
+Estimated new monthly revenue: $8,300          [Review →]
+```
 
 ---
 
-## 6. North star
+## 10. AI employees (embraced, as presentation)
 
-Every morning RankRentOS wakes up and says:
-**"I found 17 businesses you should build today"** — not because someone
-searched keywords, but because the system found underserved neighborhoods,
-open exact-match domains, weak competitors, high CPC, high-income
-demographics, recurring demand, and AI-search gaps — scored them, explained
-itself, and put a Build button next to each one.
+Named personas over queue job types — visible work streams, real psychology;
+underneath, debuggable jobs (`research.neighborhoods`, `build.content`, …).
+
+- **Research**: 🔍 Scout · 🌎 Atlas · 🏘 Neighborhoods · 📊 Analyst · 🧠 Strategist
+- **Build**: 🏗 Builder · ✍ Writer · 🖼 Designer · 🔗 Linker · 📈 Optimizer
+- **Operations**: ☎ Dispatcher · 📞 Call Monitor · 💰 Revenue · 📈 Portfolio · 🤖 Automation
+
+---
+
+## 11. Infrastructure decisions
+
+- **Job runner v1**: plain Node poller (`npm run worker`) on the Mac Studio
+  against a Supabase `jobs` table (persistence, retry columns, progress
+  stream). **No BullMQ/Redis until concurrency demands it** — the job contract
+  is the table, so upgrading the runner later (VPS, BullMQ, Cloudflare Queues)
+  is zero-rewrite by design.
+- **API keys**: RankRentOS gets **dedicated keys** (own SerpAPI account before
+  the next big scan — the FounderScout quota collision taught this). Settings
+  UI stores encrypted creds with a per-service `Shared | Dedicated` toggle.
+- App: Next.js on Vercel (repo `sparksify/RankRentOS`, root `app/`), password
+  auth, server-side Supabase. Domain: www.rankrentos.com.
+- DB: Supabase `LeadGenScout` → new tables: `playbooks, jobs, neighborhoods,
+  opportunities, projects, assets, leads, outcomes, api_keys, snapshots`.
+
+---
+
+## 12. Honest constraints (visible in-product)
+
+- Neighborhoods ≠ separate SERPs — demographic precision + domain angle +
+  content architecture. UI never implies 22 neighborhoods = 22 markets.
+- Keyword tools under-report hyper-local; assumption floors are labeled until
+  the flywheel calibrates them.
+- Revenue projections discounted ~50% (guru-math rule) until own-portfolio data.
+- GBP = upside, never dependency. Buying anything = human click.
+- Confidence < threshold blocks the Build button, not the truth.
+
+---
+
+## 13. Build order
+
+| Session | Delivers |
+|---|---|
+| A | Schema v3 (playbooks/jobs/lifecycle/outcomes/snapshots) · Census cities import · playbook seeding (~30 from SOPs+scans) · `npm run worker` poller · cost governor |
+| B | Research query UI + job progress stream + guardrail flags + Markets grid on new schema |
+| C | Neighborhood Research (Census/OSM/LLM) · AI Demand Discovery loop |
+| D | CI deep cards · six sub-scores + Confidence · Opportunity page (Zillow-style) |
+| E | Planning Engine blueprints · freshness gate · Domain finder v2 |
+| F | Morning Brief cron + snapshot diffing + Dashboard v2 |
+| G | Asset #1 built by hand → Builder Engine codifies it |
+| H+ | Operations (leads, operator lists) · Portfolio v2 · employees UI |
+
+Each session ends deployed (Vercel) + committed (GitHub).
+
+---
+
+## 14. North star
+
+Every morning the OS says: *"I found 17 businesses you should build today"* —
+because it found underserved neighborhoods, open exact-match domains, weak
+competitors, high CPC, high-income demographics, recurring demand, and AI
+search gaps — scored them, **told you how confident it is**, showed you the
+blueprint and the cost, and put a Build button next to each one.
