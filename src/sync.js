@@ -30,7 +30,8 @@ async function insert(table, rows) {
   return res.json();
 }
 
-const results = JSON.parse(readFileSync(join(ROOT, "out", "results.json"), "utf8"));
+const FILE = args.includes("--file") ? args[args.indexOf("--file") + 1] : "results.json";
+const results = JSON.parse(readFileSync(join(ROOT, "out", FILE), "utf8"));
 const niches = JSON.parse(readFileSync(join(ROOT, "data", "niches.json"), "utf8"));
 const nicheById = Object.fromEntries(niches.map((n) => [n.id, n]));
 const scored = results.filter((r) => r.score !== undefined);
@@ -56,7 +57,13 @@ for (const r of scored) {
     suggested_rent: r.suggestedRent, commission_per_job: r.commissionPerJob || null,
     peak_months: r.peakMonths || null, content_depth: r.contentDepth || null,
     comp_ages: r.compAges?.length ? r.compAges : null,
-    signals: r.signals || {}, top_organic: r.topOrganic || [],
+    signals: { ...(r.signals || {}), strategyV2: r.strategy ? {
+      strategy: r.strategy, rankability: r.rankability, assetValue: r.assetValue,
+      arbitrage: r.arbitrage, overall: r.overallOpportunity, confidence: r.dataConfidence,
+      rentLow: r.rentLow, rentHigh: r.rentHigh, rentTier: r.rentTier,
+      coverage: r.coverageRatio, timeTo2kProb: r.timeTo2kProb, source: r.sourceDataset,
+    } : undefined },
+    top_organic: r.topOrganic || [],
     advertisers: r.advertisers?.length ? r.advertisers : null,
     deep_check: r.deepCheck || null,
     domain_strategy: r.domainStrategy || null,

@@ -1,0 +1,4421 @@
+[
+ {
+  "city": "Marysville",
+  "state": "WA",
+  "pop": 63269,
+  "income": 101440,
+  "county": "snohomish",
+  "growth": "medium",
+  "region": "WA"
+ },
+ {
+  "city": "Perris",
+  "state": "CA",
+  "pop": 72326,
+  "income": 86350,
+  "county": "riverside",
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "Worcester",
+  "state": "MA",
+  "pop": 182544,
+  "income": 86078,
+  "county": "worcester",
+  "growth": "medium",
+  "region": "MA"
+ },
+ {
+  "city": "Waterbury",
+  "state": "CT",
+  "pop": 109676,
+  "income": null,
+  "county": "\"new haven\"",
+  "growth": "medium",
+  "region": "CT"
+ },
+ {
+  "city": "Eagan",
+  "state": "MN",
+  "pop": 65453,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "MN"
+ },
+ {
+  "city": "Southfield",
+  "state": "MI",
+  "pop": 73006,
+  "income": 90801,
+  "county": "oakland",
+  "growth": "medium",
+  "region": "MI"
+ },
+ {
+  "city": "Boise City",
+  "state": "ID",
+  "pop": 214237,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "ID"
+ },
+ {
+  "city": "Buena Park",
+  "state": "CA",
+  "pop": 82882,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "Marietta",
+  "state": "GA",
+  "pop": 59089,
+  "income": 96798,
+  "county": "cobb",
+  "growth": "medium",
+  "region": "GA"
+ },
+ {
+  "city": "West Palm Beach",
+  "state": "FL",
+  "pop": 102436,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "FL"
+ },
+ {
+  "city": "Aurora",
+  "state": "IL",
+  "pop": 199963,
+  "income": 93475,
+  "county": "kane",
+  "growth": "medium",
+  "region": "IL"
+ },
+ {
+  "city": "Doral",
+  "state": "FL",
+  "pop": 50213,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "FL"
+ },
+ {
+  "city": "Westminster",
+  "state": "CA",
+  "pop": 91739,
+  "income": 106047,
+  "county": "orange",
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "Overland Park",
+  "state": "KS",
+  "pop": 181260,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "KS"
+ },
+ {
+  "city": "Jackson",
+  "state": "MS",
+  "pop": 172638,
+  "income": 72906,
+  "county": "rankin",
+  "growth": "medium",
+  "region": "MS"
+ },
+ {
+  "city": "Daytona Beach",
+  "state": "FL",
+  "pop": 62316,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "FL"
+ },
+ {
+  "city": "Burnsville",
+  "state": "MN",
+  "pop": 61434,
+  "income": 97727,
+  "county": "dakota",
+  "growth": "medium",
+  "region": "MN"
+ },
+ {
+  "city": "Rowlett",
+  "state": "TX",
+  "pop": 58043,
+  "income": 70871,
+  "county": "dallas",
+  "growth": "medium",
+  "region": "TX"
+ },
+ {
+  "city": "Allentown",
+  "state": "PA",
+  "pop": 118577,
+  "income": 72590,
+  "county": "lehigh",
+  "growth": "medium",
+  "region": "PA"
+ },
+ {
+  "city": "North Richland Hills",
+  "state": "TX",
+  "pop": 67317,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "TX"
+ },
+ {
+  "city": "Fort Smith",
+  "state": "AR",
+  "pop": 87650,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "AR"
+ },
+ {
+  "city": "Lakewood",
+  "state": "CO",
+  "pop": 147214,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "CO"
+ },
+ {
+  "city": "Henderson",
+  "state": "NV",
+  "pop": 270811,
+  "income": 70838,
+  "county": "clark",
+  "growth": "medium",
+  "region": "NV"
+ },
+ {
+  "city": "Stamford",
+  "state": "CT",
+  "pop": 126456,
+  "income": null,
+  "county": "fairfield",
+  "growth": "medium",
+  "region": "CT"
+ },
+ {
+  "city": "Kennewick",
+  "state": "WA",
+  "pop": 76762,
+  "income": 85144,
+  "county": "benton",
+  "growth": "medium",
+  "region": "WA"
+ },
+ {
+  "city": "Bellingham",
+  "state": "WA",
+  "pop": 82631,
+  "income": 78796,
+  "county": "whatcom",
+  "growth": "medium",
+  "region": "WA"
+ },
+ {
+  "city": "La Crosse",
+  "state": "WI",
+  "pop": 51522,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "WI"
+ },
+ {
+  "city": "Council Bluffs",
+  "state": "IA",
+  "pop": 61969,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "IA"
+ },
+ {
+  "city": "Antioch",
+  "state": "CA",
+  "pop": 107100,
+  "income": null,
+  "county": "\"contra costa\"",
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "Sterling Heights",
+  "state": "MI",
+  "pop": 131224,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "MI"
+ },
+ {
+  "city": "Deerfield Beach",
+  "state": "FL",
+  "pop": 78041,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "FL"
+ },
+ {
+  "city": "Fishers",
+  "state": "IN",
+  "pop": 83891,
+  "income": 117068,
+  "county": "hamilton",
+  "growth": "medium",
+  "region": "IN"
+ },
+ {
+  "city": "Cheyenne",
+  "state": "WY",
+  "pop": 62448,
+  "income": 71956,
+  "county": "laramie",
+  "growth": "medium",
+  "region": "WY"
+ },
+ {
+  "city": "Murrieta",
+  "state": "CA",
+  "pop": 107479,
+  "income": 86350,
+  "county": "riverside",
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "Lenexa",
+  "state": "KS",
+  "pop": 50344,
+  "income": 99174,
+  "county": "johnson",
+  "growth": "medium",
+  "region": "KS"
+ },
+ {
+  "city": "Noblesville",
+  "state": "IN",
+  "pop": 56540,
+  "income": 117068,
+  "county": "hamilton",
+  "growth": "medium",
+  "region": "IN"
+ },
+ {
+  "city": "Southaven",
+  "state": "MS",
+  "pop": 50997,
+  "income": 79967,
+  "county": "desoto",
+  "growth": "medium",
+  "region": "MS"
+ },
+ {
+  "city": "Chino",
+  "state": "CA",
+  "pop": 80988,
+  "income": null,
+  "county": "\"san bernardino\"",
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "Gaithersburg",
+  "state": "MD",
+  "pop": 65690,
+  "income": 118020,
+  "county": "montgomery",
+  "growth": "medium",
+  "region": "MD"
+ },
+ {
+  "city": "Fountain Valley",
+  "state": "CA",
+  "pop": 56707,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "Frederick",
+  "state": "MD",
+  "pop": 66893,
+  "income": 116796,
+  "county": "frederick",
+  "growth": "medium",
+  "region": "MD"
+ },
+ {
+  "city": "West Allis",
+  "state": "WI",
+  "pop": 60697,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "WI"
+ },
+ {
+  "city": "Thornton",
+  "state": "CO",
+  "pop": 127359,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "CO"
+ },
+ {
+  "city": "West Des Moines",
+  "state": "IA",
+  "pop": 61255,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "IA"
+ },
+ {
+  "city": "Fall River",
+  "state": "MA",
+  "pop": 88697,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "MA"
+ },
+ {
+  "city": "Chula Vista",
+  "state": "CA",
+  "pop": 256780,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "Coral Springs",
+  "state": "FL",
+  "pop": 126604,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "FL"
+ },
+ {
+  "city": "Smyrna",
+  "state": "GA",
+  "pop": 53438,
+  "income": 96798,
+  "county": "cobb",
+  "growth": "medium",
+  "region": "GA"
+ },
+ {
+  "city": "Naperville",
+  "state": "IL",
+  "pop": 144864,
+  "income": 97076,
+  "county": "will",
+  "growth": "medium",
+  "region": "IL"
+ },
+ {
+  "city": "Hollywood",
+  "state": "FL",
+  "pop": 146526,
+  "income": 70834,
+  "county": "broward",
+  "growth": "medium",
+  "region": "FL"
+ },
+ {
+  "city": "Rogers",
+  "state": "AR",
+  "pop": 60112,
+  "income": 86374,
+  "county": "benton",
+  "growth": "medium",
+  "region": "AR"
+ },
+ {
+  "city": "Lakewood",
+  "state": "WA",
+  "pop": 59097,
+  "income": 92793,
+  "county": "pierce",
+  "growth": "medium",
+  "region": "WA"
+ },
+ {
+  "city": "Oak Lawn",
+  "state": "IL",
+  "pop": 57073,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "IL"
+ },
+ {
+  "city": "Concord",
+  "state": "CA",
+  "pop": 125880,
+  "income": null,
+  "county": "\"contra costa\"",
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "St. Charles",
+  "state": "MO",
+  "pop": 67569,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "MO"
+ },
+ {
+  "city": "Waukesha",
+  "state": "WI",
+  "pop": 71016,
+  "income": 99525,
+  "county": "waukesha",
+  "growth": "medium",
+  "region": "WI"
+ },
+ {
+  "city": "Springfield",
+  "state": "IL",
+  "pop": 117006,
+  "income": 73684,
+  "county": "sangamon",
+  "growth": "medium",
+  "region": "IL"
+ },
+ {
+  "city": "Moreno Valley",
+  "state": "CA",
+  "pop": 201175,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "Kettering",
+  "state": "OH",
+  "pop": 55870,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "OH"
+ },
+ {
+  "city": "Lake Havasu City",
+  "state": "AZ",
+  "pop": 52844,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "AZ"
+ },
+ {
+  "city": "North Little Rock",
+  "state": "AR",
+  "pop": 66075,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "AR"
+ },
+ {
+  "city": "Reno",
+  "state": "NV",
+  "pop": 233294,
+  "income": 80245,
+  "county": "washoe",
+  "growth": "medium",
+  "region": "NV"
+ },
+ {
+  "city": "Dublin",
+  "state": "CA",
+  "pop": 52105,
+  "income": 121190,
+  "county": "alameda",
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "Portland",
+  "state": "ME",
+  "pop": 66318,
+  "income": 88571,
+  "county": "cumberland",
+  "growth": "medium",
+  "region": "ME"
+ },
+ {
+  "city": "Brooklyn Park",
+  "state": "MN",
+  "pop": 78373,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "MN"
+ },
+ {
+  "city": "West Haven",
+  "state": "CT",
+  "pop": 55046,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "CT"
+ },
+ {
+  "city": "Pittsburg",
+  "state": "CA",
+  "pop": 66695,
+  "income": null,
+  "county": "\"contra costa\"",
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "Buckeye",
+  "state": "AZ",
+  "pop": 56683,
+  "income": 83668,
+  "county": "maricopa",
+  "growth": "medium",
+  "region": "AZ"
+ },
+ {
+  "city": "Indio",
+  "state": "CA",
+  "pop": 83539,
+  "income": 86350,
+  "county": "riverside",
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "Scottsdale",
+  "state": "AZ",
+  "pop": 226918,
+  "income": 83668,
+  "county": "maricopa",
+  "growth": "medium",
+  "region": "AZ"
+ },
+ {
+  "city": "Lancaster",
+  "state": "PA",
+  "pop": 59325,
+  "income": 82434,
+  "county": "lancaster",
+  "growth": "medium",
+  "region": "PA"
+ },
+ {
+  "city": "Glendora",
+  "state": "CA",
+  "pop": 51074,
+  "income": null,
+  "county": "\"los angeles\"",
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "Rochester",
+  "state": "MN",
+  "pop": 110742,
+  "income": 88032,
+  "county": "olmsted",
+  "growth": "medium",
+  "region": "MN"
+ },
+ {
+  "city": "Florissant",
+  "state": "MO",
+  "pop": 52363,
+  "income": null,
+  "county": "\"saint louis\"",
+  "growth": "medium",
+  "region": "MO"
+ },
+ {
+  "city": "Pearland",
+  "state": "TX",
+  "pop": 100065,
+  "income": 86197,
+  "county": "brazoria",
+  "growth": "medium",
+  "region": "TX"
+ },
+ {
+  "city": "Gilbert",
+  "state": "AZ",
+  "pop": 229972,
+  "income": 83668,
+  "county": "maricopa",
+  "growth": "medium",
+  "region": "AZ"
+ },
+ {
+  "city": "Orange",
+  "state": "CA",
+  "pop": 139969,
+  "income": 106047,
+  "county": "orange",
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "Walnut Creek",
+  "state": "CA",
+  "pop": 66900,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "Conroe",
+  "state": "TX",
+  "pop": 63032,
+  "income": 95241,
+  "county": "montgomery",
+  "growth": "medium",
+  "region": "TX"
+ },
+ {
+  "city": "Hartford",
+  "state": "CT",
+  "pop": 125017,
+  "income": null,
+  "county": "hartford",
+  "growth": "medium",
+  "region": "CT"
+ },
+ {
+  "city": "Waterloo",
+  "state": "IA",
+  "pop": 68366,
+  "income": null,
+  "county": "\"black hawk\"",
+  "growth": "medium",
+  "region": "IA"
+ },
+ {
+  "city": "Meridian",
+  "state": "ID",
+  "pop": 83596,
+  "income": 87748,
+  "county": "ada",
+  "growth": "medium",
+  "region": "ID"
+ },
+ {
+  "city": "Weymouth Town",
+  "state": "MA",
+  "pop": 55419,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "MA"
+ },
+ {
+  "city": "Malden",
+  "state": "MA",
+  "pop": 60509,
+  "income": 118494,
+  "county": "middlesex",
+  "growth": "medium",
+  "region": "MA"
+ },
+ {
+  "city": "Allen",
+  "state": "TX",
+  "pop": 92020,
+  "income": 113943,
+  "county": "collin",
+  "growth": "medium",
+  "region": "TX"
+ },
+ {
+  "city": "Franklin",
+  "state": "TN",
+  "pop": 68886,
+  "income": 133486,
+  "county": "williamson",
+  "growth": "medium",
+  "region": "TN"
+ },
+ {
+  "city": "Yorba Linda",
+  "state": "CA",
+  "pop": 67032,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "St. Clair Shores",
+  "state": "MI",
+  "pop": 60070,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "MI"
+ },
+ {
+  "city": "San Buenaventura (Ventura)",
+  "state": "CA",
+  "pop": 108817,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "Fremont",
+  "state": "CA",
+  "pop": 224922,
+  "income": 121190,
+  "county": "alameda",
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "Bartlett",
+  "state": "TN",
+  "pop": 58226,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "TN"
+ },
+ {
+  "city": "Wichita Falls",
+  "state": "TX",
+  "pop": 104898,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "TX"
+ },
+ {
+  "city": "Missouri City",
+  "state": "TX",
+  "pop": 70185,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "TX"
+ },
+ {
+  "city": "Athens-Clarke County",
+  "state": "GA",
+  "pop": 119980,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "GA"
+ },
+ {
+  "city": "South Jordan",
+  "state": "UT",
+  "pop": 59366,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "UT"
+ },
+ {
+  "city": "North Las Vegas",
+  "state": "NV",
+  "pop": 226877,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "NV"
+ },
+ {
+  "city": "Pomona",
+  "state": "CA",
+  "pop": 151348,
+  "income": null,
+  "county": "\"los angeles\"",
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "Eastvale",
+  "state": "CA",
+  "pop": 55191,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "Midland",
+  "state": "TX",
+  "pop": 123933,
+  "income": 81187,
+  "county": "midland",
+  "growth": "medium",
+  "region": "TX"
+ },
+ {
+  "city": "Norwalk",
+  "state": "CT",
+  "pop": 87776,
+  "income": null,
+  "county": "fairfield",
+  "growth": "medium",
+  "region": "CT"
+ },
+ {
+  "city": "Kentwood",
+  "state": "MI",
+  "pop": 50233,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "MI"
+ },
+ {
+  "city": "Tustin",
+  "state": "CA",
+  "pop": 78327,
+  "income": 106047,
+  "county": "orange",
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "St. Cloud",
+  "state": "MN",
+  "pop": 66297,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "MN"
+ },
+ {
+  "city": "Escondido",
+  "state": "CA",
+  "pop": 148738,
+  "income": null,
+  "county": "\"san diego\"",
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "Berkeley",
+  "state": "CA",
+  "pop": 116768,
+  "income": 121190,
+  "county": "alameda",
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "San Clemente",
+  "state": "CA",
+  "pop": 65040,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "Eau Claire",
+  "state": "WI",
+  "pop": 67545,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "WI"
+ },
+ {
+  "city": "DeSoto",
+  "state": "TX",
+  "pop": 51483,
+  "income": 70871,
+  "county": "dallas",
+  "growth": "medium",
+  "region": "TX"
+ },
+ {
+  "city": "Fort Wayne",
+  "state": "IN",
+  "pop": 256496,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "IN"
+ },
+ {
+  "city": "Shoreline",
+  "state": "WA",
+  "pop": 54790,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "WA"
+ },
+ {
+  "city": "Medford",
+  "state": "MA",
+  "pop": 57170,
+  "income": 118494,
+  "county": "middlesex",
+  "growth": "medium",
+  "region": "MA"
+ },
+ {
+  "city": "La Habra",
+  "state": "CA",
+  "pop": 61653,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "Daly City",
+  "state": "CA",
+  "pop": 104739,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "Lynchburg",
+  "state": "VA",
+  "pop": 78014,
+  "income": null,
+  "county": "\"lynchburg city\"",
+  "growth": "medium",
+  "region": "VA"
+ },
+ {
+  "city": "Bowie",
+  "state": "MD",
+  "pop": 56759,
+  "income": null,
+  "county": "\"prince georges\"",
+  "growth": "medium",
+  "region": "MD"
+ },
+ {
+  "city": "Danbury",
+  "state": "CT",
+  "pop": 83684,
+  "income": null,
+  "county": "fairfield",
+  "growth": "medium",
+  "region": "CT"
+ },
+ {
+  "city": "El Monte",
+  "state": "CA",
+  "pop": 115708,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "Goodyear",
+  "state": "AZ",
+  "pop": 72864,
+  "income": 83668,
+  "county": "maricopa",
+  "growth": "medium",
+  "region": "AZ"
+ },
+ {
+  "city": "Salem",
+  "state": "OR",
+  "pop": 160614,
+  "income": 77156,
+  "county": "polk",
+  "growth": "medium",
+  "region": "OR"
+ },
+ {
+  "city": "Flower Mound",
+  "state": "TX",
+  "pop": 68609,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "TX"
+ },
+ {
+  "city": "Grapevine",
+  "state": "TX",
+  "pop": 50195,
+  "income": 76285,
+  "county": "tarrant",
+  "growth": "medium",
+  "region": "TX"
+ },
+ {
+  "city": "Mansfield",
+  "state": "TX",
+  "pop": 60872,
+  "income": 76285,
+  "county": "tarrant",
+  "growth": "medium",
+  "region": "TX"
+ },
+ {
+  "city": "Birmingham",
+  "state": "AL",
+  "pop": 212113,
+  "income": 98263,
+  "county": "shelby",
+  "growth": "medium",
+  "region": "AL"
+ },
+ {
+  "city": "Santa Barbara",
+  "state": "CA",
+  "pop": 90412,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "Normal",
+  "state": "IL",
+  "pop": 54664,
+  "income": 71825,
+  "county": "mclean",
+  "growth": "medium",
+  "region": "IL"
+ },
+ {
+  "city": "Coon Rapids",
+  "state": "MN",
+  "pop": 62103,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "MN"
+ },
+ {
+  "city": "San Mateo",
+  "state": "CA",
+  "pop": 101128,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "Orlando",
+  "state": "FL",
+  "pop": 255483,
+  "income": 72129,
+  "county": "orange",
+  "growth": "medium",
+  "region": "FL"
+ },
+ {
+  "city": "Casper",
+  "state": "WY",
+  "pop": 59628,
+  "income": 70142,
+  "county": "natrona",
+  "growth": "medium",
+  "region": "WY"
+ },
+ {
+  "city": "Kansas City",
+  "state": "KS",
+  "pop": 148483,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "KS"
+ },
+ {
+  "city": "Newton",
+  "state": "MA",
+  "pop": 87971,
+  "income": 118494,
+  "county": "middlesex",
+  "growth": "medium",
+  "region": "MA"
+ },
+ {
+  "city": "North Miami",
+  "state": "FL",
+  "pop": 61007,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "FL"
+ },
+ {
+  "city": "Blaine",
+  "state": "MN",
+  "pop": 60407,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "MN"
+ },
+ {
+  "city": "Denton",
+  "state": "TX",
+  "pop": 123099,
+  "income": 102711,
+  "county": "denton",
+  "growth": "medium",
+  "region": "TX"
+ },
+ {
+  "city": "Greenwood",
+  "state": "IN",
+  "pop": 53665,
+  "income": 83036,
+  "county": "johnson",
+  "growth": "medium",
+  "region": "IN"
+ },
+ {
+  "city": "Salinas",
+  "state": "CA",
+  "pop": 155662,
+  "income": 91450,
+  "county": "monterey",
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "Miami Gardens",
+  "state": "FL",
+  "pop": 111378,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "FL"
+ },
+ {
+  "city": "Melbourne",
+  "state": "FL",
+  "pop": 77508,
+  "income": 74899,
+  "county": "brevard",
+  "growth": "medium",
+  "region": "FL"
+ },
+ {
+  "city": "Palm Bay",
+  "state": "FL",
+  "pop": 104898,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "FL"
+ },
+ {
+  "city": "Parma",
+  "state": "OH",
+  "pop": 80429,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "OH"
+ },
+ {
+  "city": "Fort Collins",
+  "state": "CO",
+  "pop": 152061,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "CO"
+ },
+ {
+  "city": "San Leandro",
+  "state": "CA",
+  "pop": 87965,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "Vista",
+  "state": "CA",
+  "pop": 96929,
+  "income": null,
+  "county": "\"san diego\"",
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "Sanford",
+  "state": "FL",
+  "pop": 56002,
+  "income": 80296,
+  "county": "seminole",
+  "growth": "medium",
+  "region": "FL"
+ },
+ {
+  "city": "Newport News",
+  "state": "VA",
+  "pop": 182020,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "VA"
+ },
+ {
+  "city": "Sugar Land",
+  "state": "TX",
+  "pop": 83860,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "TX"
+ },
+ {
+  "city": "Huntsville",
+  "state": "AL",
+  "pop": 186254,
+  "income": 80426,
+  "county": "madison",
+  "growth": "medium",
+  "region": "AL"
+ },
+ {
+  "city": "Lodi",
+  "state": "CA",
+  "pop": 63338,
+  "income": null,
+  "county": "\"san joaquin\"",
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "Pontiac",
+  "state": "MI",
+  "pop": 59887,
+  "income": 90801,
+  "county": "oakland",
+  "growth": "medium",
+  "region": "MI"
+ },
+ {
+  "city": "National City",
+  "state": "CA",
+  "pop": 59834,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "Hayward",
+  "state": "CA",
+  "pop": 151574,
+  "income": 121190,
+  "county": "alameda",
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "Sparks",
+  "state": "NV",
+  "pop": 93282,
+  "income": 80245,
+  "county": "washoe",
+  "growth": "medium",
+  "region": "NV"
+ },
+ {
+  "city": "Redlands",
+  "state": "CA",
+  "pop": 69999,
+  "income": null,
+  "county": "\"san bernardino\"",
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "Nampa",
+  "state": "ID",
+  "pop": 86518,
+  "income": 70594,
+  "county": "canyon",
+  "growth": "medium",
+  "region": "ID"
+ },
+ {
+  "city": "Wheaton",
+  "state": "IL",
+  "pop": 53648,
+  "income": 102383,
+  "county": "dupage",
+  "growth": "medium",
+  "region": "IL"
+ },
+ {
+  "city": "Rialto",
+  "state": "CA",
+  "pop": 101910,
+  "income": null,
+  "county": "\"san bernardino\"",
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "Santa Rosa",
+  "state": "CA",
+  "pop": 171990,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "Lowell",
+  "state": "MA",
+  "pop": 108861,
+  "income": 118494,
+  "county": "middlesex",
+  "growth": "medium",
+  "region": "MA"
+ },
+ {
+  "city": "Broken Arrow",
+  "state": "OK",
+  "pop": 103500,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "OK"
+ },
+ {
+  "city": "Kent",
+  "state": "WA",
+  "pop": 124435,
+  "income": 116044,
+  "county": "king",
+  "growth": "medium",
+  "region": "WA"
+ },
+ {
+  "city": "Broomfield",
+  "state": "CO",
+  "pop": 59471,
+  "income": 102413,
+  "county": "jefferson",
+  "growth": "medium",
+  "region": "CO"
+ },
+ {
+  "city": "Cathedral City",
+  "state": "CA",
+  "pop": 52977,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "Lakeville",
+  "state": "MN",
+  "pop": 58562,
+  "income": 97727,
+  "county": "dakota",
+  "growth": "medium",
+  "region": "MN"
+ },
+ {
+  "city": "Sunnyvale",
+  "state": "CA",
+  "pop": 147559,
+  "income": null,
+  "county": "\"santa clara\"",
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "Santa Cruz",
+  "state": "CA",
+  "pop": 62864,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "Kenosha",
+  "state": "WI",
+  "pop": 99889,
+  "income": 75067,
+  "county": "kenosha",
+  "growth": "medium",
+  "region": "WI"
+ },
+ {
+  "city": "Pompano Beach",
+  "state": "FL",
+  "pop": 104410,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "FL"
+ },
+ {
+  "city": "San Angelo",
+  "state": "TX",
+  "pop": 97492,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "TX"
+ },
+ {
+  "city": "Bloomington",
+  "state": "IL",
+  "pop": 78902,
+  "income": 71825,
+  "county": "mclean",
+  "growth": "medium",
+  "region": "IL"
+ },
+ {
+  "city": "Tracy",
+  "state": "CA",
+  "pop": 84691,
+  "income": null,
+  "county": "\"san joaquin\"",
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "Palm Desert",
+  "state": "CA",
+  "pop": 50508,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "Chesapeake",
+  "state": "VA",
+  "pop": 230571,
+  "income": null,
+  "county": "\"chesapeake city\"",
+  "growth": "medium",
+  "region": "VA"
+ },
+ {
+  "city": "Camarillo",
+  "state": "CA",
+  "pop": 66086,
+  "income": 101981,
+  "county": "ventura",
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "Davie",
+  "state": "FL",
+  "pop": 96830,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "FL"
+ },
+ {
+  "city": "McKinney",
+  "state": "TX",
+  "pop": 148559,
+  "income": 113943,
+  "county": "collin",
+  "growth": "medium",
+  "region": "TX"
+ },
+ {
+  "city": "Mountain View",
+  "state": "CA",
+  "pop": 77846,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "Lake Elsinore",
+  "state": "CA",
+  "pop": 57525,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "Amarillo",
+  "state": "TX",
+  "pop": 196429,
+  "income": 77066,
+  "county": "randall",
+  "growth": "medium",
+  "region": "TX"
+ },
+ {
+  "city": "Provo",
+  "state": "UT",
+  "pop": 116288,
+  "income": 95085,
+  "county": "utah",
+  "growth": "medium",
+  "region": "UT"
+ },
+ {
+  "city": "Monterey Park",
+  "state": "CA",
+  "pop": 61085,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "Madera",
+  "state": "CA",
+  "pop": 63105,
+  "income": 71273,
+  "county": "madera",
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "Vallejo",
+  "state": "CA",
+  "pop": 118837,
+  "income": 92711,
+  "county": "solano",
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "Arcadia",
+  "state": "CA",
+  "pop": 57639,
+  "income": null,
+  "county": "\"los angeles\"",
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "Chandler",
+  "state": "AZ",
+  "pop": 249146,
+  "income": 83668,
+  "county": "maricopa",
+  "growth": "medium",
+  "region": "AZ"
+ },
+ {
+  "city": "Arvada",
+  "state": "CO",
+  "pop": 111707,
+  "income": 102413,
+  "county": "jefferson",
+  "growth": "medium",
+  "region": "CO"
+ },
+ {
+  "city": "Alhambra",
+  "state": "CA",
+  "pop": 84577,
+  "income": null,
+  "county": "\"los angeles\"",
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "Boynton Beach",
+  "state": "FL",
+  "pop": 71097,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "FL"
+ },
+ {
+  "city": "Mount Prospect",
+  "state": "IL",
+  "pop": 54771,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "IL"
+ },
+ {
+  "city": "Olathe",
+  "state": "KS",
+  "pop": 131885,
+  "income": 99174,
+  "county": "johnson",
+  "growth": "medium",
+  "region": "KS"
+ },
+ {
+  "city": "Johns Creek",
+  "state": "GA",
+  "pop": 82788,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "GA"
+ },
+ {
+  "city": "Tigard",
+  "state": "OR",
+  "pop": 50444,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "OR"
+ },
+ {
+  "city": "Citrus Heights",
+  "state": "CA",
+  "pop": 85285,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "Ankeny",
+  "state": "IA",
+  "pop": 51567,
+  "income": 77369,
+  "county": "polk",
+  "growth": "medium",
+  "region": "IA"
+ },
+ {
+  "city": "Hawthorne",
+  "state": "CA",
+  "pop": 86199,
+  "income": null,
+  "county": "\"los angeles\"",
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "Hoover",
+  "state": "AL",
+  "pop": 84126,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "AL"
+ },
+ {
+  "city": "Delray Beach",
+  "state": "FL",
+  "pop": 64072,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "FL"
+ },
+ {
+  "city": "Wellington",
+  "state": "FL",
+  "pop": 60202,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "FL"
+ },
+ {
+  "city": "Weston",
+  "state": "FL",
+  "pop": 68388,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "FL"
+ },
+ {
+  "city": "Troy",
+  "state": "MI",
+  "pop": 82821,
+  "income": 90801,
+  "county": "oakland",
+  "growth": "medium",
+  "region": "MI"
+ },
+ {
+  "city": "Stockton",
+  "state": "CA",
+  "pop": 298118,
+  "income": null,
+  "county": "\"san joaquin\"",
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "Royal Oak",
+  "state": "MI",
+  "pop": 58946,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "MI"
+ },
+ {
+  "city": "Laguna Niguel",
+  "state": "CA",
+  "pop": 64652,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "Spokane Valley",
+  "state": "WA",
+  "pop": 91113,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "WA"
+ },
+ {
+  "city": "Costa Mesa",
+  "state": "CA",
+  "pop": 112174,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "Grand Prairie",
+  "state": "TX",
+  "pop": 183372,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "TX"
+ },
+ {
+  "city": "Portsmouth",
+  "state": "VA",
+  "pop": 96205,
+  "income": null,
+  "county": "\"portsmouth city\"",
+  "growth": "medium",
+  "region": "VA"
+ },
+ {
+  "city": "Sioux City",
+  "state": "IA",
+  "pop": 82459,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "IA"
+ },
+ {
+  "city": "Encinitas",
+  "state": "CA",
+  "pop": 61588,
+  "income": null,
+  "county": "\"san diego\"",
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "Huntington Park",
+  "state": "CA",
+  "pop": 58879,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "Eden Prairie",
+  "state": "MN",
+  "pop": 62603,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "MN"
+ },
+ {
+  "city": "Peoria",
+  "state": "AZ",
+  "pop": 162592,
+  "income": 83668,
+  "county": "maricopa",
+  "growth": "medium",
+  "region": "AZ"
+ },
+ {
+  "city": "Tempe",
+  "state": "AZ",
+  "pop": 168228,
+  "income": 83668,
+  "county": "maricopa",
+  "growth": "medium",
+  "region": "AZ"
+ },
+ {
+  "city": "Wilmington",
+  "state": "DE",
+  "pop": 71525,
+  "income": null,
+  "county": "\"new castle\"",
+  "growth": "medium",
+  "region": "DE"
+ },
+ {
+  "city": "Taylorsville",
+  "state": "UT",
+  "pop": 60519,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "UT"
+ },
+ {
+  "city": "Mesquite",
+  "state": "TX",
+  "pop": 143484,
+  "income": 70871,
+  "county": "dallas",
+  "growth": "medium",
+  "region": "TX"
+ },
+ {
+  "city": "Garland",
+  "state": "TX",
+  "pop": 234566,
+  "income": 70871,
+  "county": "dallas",
+  "growth": "medium",
+  "region": "TX"
+ },
+ {
+  "city": "Richmond",
+  "state": "CA",
+  "pop": 107571,
+  "income": null,
+  "county": "\"contra costa\"",
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "Carson City",
+  "state": "NV",
+  "pop": 54080,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "NV"
+ },
+ {
+  "city": "Augusta-Richmond County",
+  "state": "GA",
+  "pop": 197350,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "GA"
+ },
+ {
+  "city": "Diamond Bar",
+  "state": "CA",
+  "pop": 56449,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "Chattanooga",
+  "state": "TN",
+  "pop": 173366,
+  "income": 75127,
+  "county": "hamilton",
+  "growth": "medium",
+  "region": "TN"
+ },
+ {
+  "city": "Baldwin Park",
+  "state": "CA",
+  "pop": 76635,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "Miami Beach",
+  "state": "FL",
+  "pop": 91026,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "FL"
+ },
+ {
+  "city": "Port Arthur",
+  "state": "TX",
+  "pop": 54135,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "TX"
+ },
+ {
+  "city": "Newport Beach",
+  "state": "CA",
+  "pop": 87273,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "Colton",
+  "state": "CA",
+  "pop": 53243,
+  "income": null,
+  "county": "\"san bernardino\"",
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "Montebello",
+  "state": "CA",
+  "pop": 63495,
+  "income": null,
+  "county": "\"los angeles\"",
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "Pleasanton",
+  "state": "CA",
+  "pop": 74110,
+  "income": 121190,
+  "county": "alameda",
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "Everett",
+  "state": "WA",
+  "pop": 105370,
+  "income": 101440,
+  "county": "snohomish",
+  "growth": "medium",
+  "region": "WA"
+ },
+ {
+  "city": "Fairfield",
+  "state": "CA",
+  "pop": 109320,
+  "income": 92711,
+  "county": "solano",
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "Avondale",
+  "state": "AZ",
+  "pop": 78822,
+  "income": 83668,
+  "county": "maricopa",
+  "growth": "medium",
+  "region": "AZ"
+ },
+ {
+  "city": "Battle Creek",
+  "state": "MI",
+  "pop": 51848,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "MI"
+ },
+ {
+  "city": "Bloomington",
+  "state": "MN",
+  "pop": 86319,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "MN"
+ },
+ {
+  "city": "Beaverton",
+  "state": "OR",
+  "pop": 93542,
+  "income": 98706,
+  "county": "washington",
+  "growth": "medium",
+  "region": "OR"
+ },
+ {
+  "city": "Milpitas",
+  "state": "CA",
+  "pop": 69783,
+  "income": null,
+  "county": "\"santa clara\"",
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "Des Plaines",
+  "state": "IL",
+  "pop": 58918,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "IL"
+ },
+ {
+  "city": "Placentia",
+  "state": "CA",
+  "pop": 52206,
+  "income": 106047,
+  "county": "orange",
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "Taunton",
+  "state": "MA",
+  "pop": 56069,
+  "income": 80702,
+  "county": "bristol",
+  "growth": "medium",
+  "region": "MA"
+ },
+ {
+  "city": "Johnson City",
+  "state": "TN",
+  "pop": 65123,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "TN"
+ },
+ {
+  "city": "Vancouver",
+  "state": "WA",
+  "pop": 167405,
+  "income": 91149,
+  "county": "clark",
+  "growth": "medium",
+  "region": "WA"
+ },
+ {
+  "city": "Sunrise",
+  "state": "FL",
+  "pop": 90116,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "FL"
+ },
+ {
+  "city": "Lehi",
+  "state": "UT",
+  "pop": 54382,
+  "income": 95085,
+  "county": "utah",
+  "growth": "medium",
+  "region": "UT"
+ },
+ {
+  "city": "Fontana",
+  "state": "CA",
+  "pop": 203003,
+  "income": null,
+  "county": "\"san bernardino\"",
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "Frisco",
+  "state": "TX",
+  "pop": 136791,
+  "income": 102711,
+  "county": "denton",
+  "growth": "medium",
+  "region": "TX"
+ },
+ {
+  "city": "Chino Hills",
+  "state": "CA",
+  "pop": 76572,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "Norfolk",
+  "state": "VA",
+  "pop": 246139,
+  "income": null,
+  "county": "\"norfolk city\"",
+  "growth": "medium",
+  "region": "VA"
+ },
+ {
+  "city": "Hillsboro",
+  "state": "OR",
+  "pop": 97368,
+  "income": 98706,
+  "county": "washington",
+  "growth": "medium",
+  "region": "OR"
+ },
+ {
+  "city": "Hamilton",
+  "state": "OH",
+  "pop": 62258,
+  "income": 74841,
+  "county": "butler",
+  "growth": "medium",
+  "region": "OH"
+ },
+ {
+  "city": "San Bernardino",
+  "state": "CA",
+  "pop": 213708,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "Victorville",
+  "state": "CA",
+  "pop": 121096,
+  "income": null,
+  "county": "\"san bernardino\"",
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "Casa Grande",
+  "state": "AZ",
+  "pop": 50111,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "AZ"
+ },
+ {
+  "city": "Dubuque",
+  "state": "IA",
+  "pop": 58253,
+  "income": 73492,
+  "county": "dubuque",
+  "growth": "medium",
+  "region": "IA"
+ },
+ {
+  "city": "Palatine",
+  "state": "IL",
+  "pop": 69350,
+  "income": 76614,
+  "county": "cook",
+  "growth": "medium",
+  "region": "IL"
+ },
+ {
+  "city": "Elk Grove",
+  "state": "CA",
+  "pop": 161007,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "Ogden",
+  "state": "UT",
+  "pop": 84249,
+  "income": 83465,
+  "county": "weber",
+  "growth": "medium",
+  "region": "UT"
+ },
+ {
+  "city": "Harrisonburg",
+  "state": "VA",
+  "pop": 51395,
+  "income": null,
+  "county": "\"harrisonburg city\"",
+  "growth": "medium",
+  "region": "VA"
+ },
+ {
+  "city": "Inglewood",
+  "state": "CA",
+  "pop": 111542,
+  "income": null,
+  "county": "\"los angeles\"",
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "Pasadena",
+  "state": "CA",
+  "pop": 139731,
+  "income": null,
+  "county": "\"los angeles\"",
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "Lawrence",
+  "state": "MA",
+  "pop": 77657,
+  "income": 92118,
+  "county": "essex",
+  "growth": "medium",
+  "region": "MA"
+ },
+ {
+  "city": "Petaluma",
+  "state": "CA",
+  "pop": 59440,
+  "income": 96312,
+  "county": "sonoma",
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "Napa",
+  "state": "CA",
+  "pop": 79068,
+  "income": 98580,
+  "county": "napa",
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "Duluth",
+  "state": "MN",
+  "pop": 86128,
+  "income": null,
+  "county": "\"saint louis\"",
+  "growth": "medium",
+  "region": "MN"
+ },
+ {
+  "city": "Roanoke",
+  "state": "VA",
+  "pop": 98465,
+  "income": null,
+  "county": "salem",
+  "growth": "medium",
+  "region": "VA"
+ },
+ {
+  "city": "Bend",
+  "state": "OR",
+  "pop": 81236,
+  "income": 84281,
+  "county": "deschutes",
+  "growth": "medium",
+  "region": "OR"
+ },
+ {
+  "city": "Apple Valley",
+  "state": "CA",
+  "pop": 70924,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "Waltham",
+  "state": "MA",
+  "pop": 62227,
+  "income": 118494,
+  "county": "middlesex",
+  "growth": "medium",
+  "region": "MA"
+ },
+ {
+  "city": "Fort Myers",
+  "state": "FL",
+  "pop": 68190,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "FL"
+ },
+ {
+  "city": "Upland",
+  "state": "CA",
+  "pop": 75413,
+  "income": null,
+  "county": "\"san bernardino\"",
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "Plantation",
+  "state": "FL",
+  "pop": 90268,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "FL"
+ },
+ {
+  "city": "Modesto",
+  "state": "CA",
+  "pop": 204933,
+  "income": 75249,
+  "county": "stanislaus",
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "Grand Rapids",
+  "state": "MI",
+  "pop": 192294,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "MI"
+ },
+ {
+  "city": "Oak Park",
+  "state": "IL",
+  "pop": 52066,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "IL"
+ },
+ {
+  "city": "Sarasota",
+  "state": "FL",
+  "pop": 53326,
+  "income": 78309,
+  "county": "sarasota",
+  "growth": "medium",
+  "region": "FL"
+ },
+ {
+  "city": "Jurupa Valley",
+  "state": "CA",
+  "pop": 98030,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "Bellflower",
+  "state": "CA",
+  "pop": 77593,
+  "income": null,
+  "county": "\"los angeles\"",
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "Boulder",
+  "state": "CO",
+  "pop": 103166,
+  "income": 96584,
+  "county": "boulder",
+  "growth": "medium",
+  "region": "CO"
+ },
+ {
+  "city": "Palmdale",
+  "state": "CA",
+  "pop": 157161,
+  "income": null,
+  "county": "\"los angeles\"",
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "Novato",
+  "state": "CA",
+  "pop": 54194,
+  "income": 135960,
+  "county": "marin",
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "Layton",
+  "state": "UT",
+  "pop": 70790,
+  "income": 103143,
+  "county": "davis",
+  "growth": "medium",
+  "region": "UT"
+ },
+ {
+  "city": "Bolingbrook",
+  "state": "IL",
+  "pop": 73936,
+  "income": 97076,
+  "county": "will",
+  "growth": "medium",
+  "region": "IL"
+ },
+ {
+  "city": "Mission Viejo",
+  "state": "CA",
+  "pop": 96346,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "Folsom",
+  "state": "CA",
+  "pop": 73098,
+  "income": 83985,
+  "county": "sacramento",
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "Schaumburg",
+  "state": "IL",
+  "pop": 74907,
+  "income": 76614,
+  "county": "cook",
+  "growth": "medium",
+  "region": "IL"
+ },
+ {
+  "city": "Warren",
+  "state": "MI",
+  "pop": 134873,
+  "income": 73927,
+  "county": "macomb",
+  "growth": "medium",
+  "region": "MI"
+ },
+ {
+  "city": "St. Peters",
+  "state": "MO",
+  "pop": 54842,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "MO"
+ },
+ {
+  "city": "Surprise",
+  "state": "AZ",
+  "pop": 123546,
+  "income": 83668,
+  "county": "maricopa",
+  "growth": "medium",
+  "region": "AZ"
+ },
+ {
+  "city": "Richardson",
+  "state": "TX",
+  "pop": 104475,
+  "income": 70871,
+  "county": "dallas",
+  "growth": "medium",
+  "region": "TX"
+ },
+ {
+  "city": "San Marcos",
+  "state": "TX",
+  "pop": 54076,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "TX"
+ },
+ {
+  "city": "Appleton",
+  "state": "WI",
+  "pop": 73596,
+  "income": 78808,
+  "county": "outagamie",
+  "growth": "medium",
+  "region": "WI"
+ },
+ {
+  "city": "Shawnee",
+  "state": "KS",
+  "pop": 64323,
+  "income": 99174,
+  "county": "johnson",
+  "growth": "medium",
+  "region": "KS"
+ },
+ {
+  "city": "Livermore",
+  "state": "CA",
+  "pop": 85156,
+  "income": 121190,
+  "county": "alameda",
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "Jupiter",
+  "state": "FL",
+  "pop": 58298,
+  "income": null,
+  "county": "\"palm beach\"",
+  "growth": "medium",
+  "region": "FL"
+ },
+ {
+  "city": "Billings",
+  "state": "MT",
+  "pop": 109059,
+  "income": 78216,
+  "county": "yellowstone",
+  "growth": "medium",
+  "region": "MT"
+ },
+ {
+  "city": "New Haven",
+  "state": "CT",
+  "pop": 130660,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "CT"
+ },
+ {
+  "city": "Knoxville",
+  "state": "TN",
+  "pop": 183270,
+  "income": 70013,
+  "county": "knox",
+  "growth": "medium",
+  "region": "TN"
+ },
+ {
+  "city": "Alameda",
+  "state": "CA",
+  "pop": 76419,
+  "income": 121190,
+  "county": "alameda",
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "Manteca",
+  "state": "CA",
+  "pop": 71948,
+  "income": null,
+  "county": "\"san joaquin\"",
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "Murfreesboro",
+  "state": "TN",
+  "pop": 117044,
+  "income": 77320,
+  "county": "rutherford",
+  "growth": "medium",
+  "region": "TN"
+ },
+ {
+  "city": "Yuba City",
+  "state": "CA",
+  "pop": 65416,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "Vacaville",
+  "state": "CA",
+  "pop": 94275,
+  "income": 92711,
+  "county": "solano",
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "Santa Monica",
+  "state": "CA",
+  "pop": 92472,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "Suffolk",
+  "state": "VA",
+  "pop": 85728,
+  "income": null,
+  "county": "\"suffolk city\"",
+  "growth": "medium",
+  "region": "VA"
+ },
+ {
+  "city": "Rochester Hills",
+  "state": "MI",
+  "pop": 72952,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "MI"
+ },
+ {
+  "city": "Corona",
+  "state": "CA",
+  "pop": 159503,
+  "income": 86350,
+  "county": "riverside",
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "Rocklin",
+  "state": "CA",
+  "pop": 59738,
+  "income": 106114,
+  "county": "placer",
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "Lee's Summit",
+  "state": "MO",
+  "pop": 93184,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "MO"
+ },
+ {
+  "city": "Palm Coast",
+  "state": "FL",
+  "pop": 78740,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "FL"
+ },
+ {
+  "city": "Sandy",
+  "state": "UT",
+  "pop": 90231,
+  "income": null,
+  "county": "\"salt lake\"",
+  "growth": "medium",
+  "region": "UT"
+ },
+ {
+  "city": "Santa Clarita",
+  "state": "CA",
+  "pop": 179590,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "New Braunfels",
+  "state": "TX",
+  "pop": 63279,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "TX"
+ },
+ {
+  "city": "Irving",
+  "state": "TX",
+  "pop": 228653,
+  "income": 70871,
+  "county": "dallas",
+  "growth": "medium",
+  "region": "TX"
+ },
+ {
+  "city": "Alexandria",
+  "state": "VA",
+  "pop": 148892,
+  "income": 144632,
+  "county": "fairfax",
+  "growth": "medium",
+  "region": "VA"
+ },
+ {
+  "city": "Hesperia",
+  "state": "CA",
+  "pop": 92147,
+  "income": null,
+  "county": "\"san bernardino\"",
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "Skokie",
+  "state": "IL",
+  "pop": 65176,
+  "income": 76614,
+  "county": "cook",
+  "growth": "medium",
+  "region": "IL"
+ },
+ {
+  "city": "Bethlehem",
+  "state": "PA",
+  "pop": 75018,
+  "income": 75468,
+  "county": "northampton",
+  "growth": "medium",
+  "region": "PA"
+ },
+ {
+  "city": "St. Joseph",
+  "state": "MO",
+  "pop": 77147,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "MO"
+ },
+ {
+  "city": "Redondo Beach",
+  "state": "CA",
+  "pop": 67815,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "Temecula",
+  "state": "CA",
+  "pop": 106780,
+  "income": 86350,
+  "county": "riverside",
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "Ann Arbor",
+  "state": "MI",
+  "pop": 117025,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "MI"
+ },
+ {
+  "city": "Santee",
+  "state": "CA",
+  "pop": 56105,
+  "income": null,
+  "county": "\"san diego\"",
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "Tamarac",
+  "state": "FL",
+  "pop": 63155,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "FL"
+ },
+ {
+  "city": "Bellevue",
+  "state": "NE",
+  "pop": 53663,
+  "income": 98619,
+  "county": "sarpy",
+  "growth": "medium",
+  "region": "NE"
+ },
+ {
+  "city": "Pembroke Pines",
+  "state": "FL",
+  "pop": 162329,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "FL"
+ },
+ {
+  "city": "Oxnard",
+  "state": "CA",
+  "pop": 203007,
+  "income": 101981,
+  "county": "ventura",
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "Brockton",
+  "state": "MA",
+  "pop": 94089,
+  "income": 102647,
+  "county": "plymouth",
+  "growth": "medium",
+  "region": "MA"
+ },
+ {
+  "city": "Paramount",
+  "state": "CA",
+  "pop": 54980,
+  "income": null,
+  "county": "\"los angeles\"",
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "St. Paul",
+  "state": "MN",
+  "pop": 294873,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "MN"
+ },
+ {
+  "city": "Iowa City",
+  "state": "IA",
+  "pop": 71591,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "IA"
+ },
+ {
+  "city": "Apple Valley",
+  "state": "MN",
+  "pop": 50201,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "MN"
+ },
+ {
+  "city": "Great Falls",
+  "state": "MT",
+  "pop": 59351,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "MT"
+ },
+ {
+  "city": "West Valley City",
+  "state": "UT",
+  "pop": 133579,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "UT"
+ },
+ {
+  "city": "Hampton",
+  "state": "VA",
+  "pop": 136699,
+  "income": 111346,
+  "county": "york",
+  "growth": "medium",
+  "region": "VA"
+ },
+ {
+  "city": "Georgetown",
+  "state": "TX",
+  "pop": 54898,
+  "income": 101891,
+  "county": "williamson",
+  "growth": "medium",
+  "region": "TX"
+ },
+ {
+  "city": "Orem",
+  "state": "UT",
+  "pop": 91648,
+  "income": 95085,
+  "county": "utah",
+  "growth": "medium",
+  "region": "UT"
+ },
+ {
+  "city": "Little Rock",
+  "state": "AR",
+  "pop": 197357,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "AR"
+ },
+ {
+  "city": "Idaho Falls",
+  "state": "ID",
+  "pop": 58292,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "ID"
+ },
+ {
+  "city": "Bellevue",
+  "state": "WA",
+  "pop": 133992,
+  "income": 116044,
+  "county": "king",
+  "growth": "medium",
+  "region": "WA"
+ },
+ {
+  "city": "Roseville",
+  "state": "CA",
+  "pop": 127035,
+  "income": 106114,
+  "county": "placer",
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "Peabody",
+  "state": "MA",
+  "pop": 52044,
+  "income": 92118,
+  "county": "essex",
+  "growth": "medium",
+  "region": "MA"
+ },
+ {
+  "city": "Grand Island",
+  "state": "NE",
+  "pop": 50550,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "NE"
+ },
+ {
+  "city": "Racine",
+  "state": "WI",
+  "pop": 78199,
+  "income": 72331,
+  "county": "racine",
+  "growth": "medium",
+  "region": "WI"
+ },
+ {
+  "city": "Carmel",
+  "state": "IN",
+  "pop": 85927,
+  "income": 117068,
+  "county": "hamilton",
+  "growth": "medium",
+  "region": "IN"
+ },
+ {
+  "city": "Woodland",
+  "state": "CA",
+  "pop": 56590,
+  "income": 82359,
+  "county": "yolo",
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "Revere",
+  "state": "MA",
+  "pop": 53756,
+  "income": 84548,
+  "county": "suffolk",
+  "growth": "medium",
+  "region": "MA"
+ },
+ {
+  "city": "Euless",
+  "state": "TX",
+  "pop": 53224,
+  "income": 76285,
+  "county": "tarrant",
+  "growth": "medium",
+  "region": "TX"
+ },
+ {
+  "city": "Arlington Heights",
+  "state": "IL",
+  "pop": 75994,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "IL"
+ },
+ {
+  "city": "Hemet",
+  "state": "CA",
+  "pop": 81750,
+  "income": 86350,
+  "county": "riverside",
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "Midwest City",
+  "state": "OK",
+  "pop": 56756,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "OK"
+ },
+ {
+  "city": "San Marcos",
+  "state": "CA",
+  "pop": 89387,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "Port Orange",
+  "state": "FL",
+  "pop": 57203,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "FL"
+ },
+ {
+  "city": "Lakewood",
+  "state": "CA",
+  "pop": 81121,
+  "income": null,
+  "county": "\"los angeles\"",
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "El Cajon",
+  "state": "CA",
+  "pop": 102211,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "St. Petersburg",
+  "state": "FL",
+  "pop": 249688,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "FL"
+ },
+ {
+  "city": "Milford",
+  "state": "CT",
+  "pop": 51644,
+  "income": null,
+  "county": "\"new haven\"",
+  "growth": "medium",
+  "region": "CT"
+ },
+ {
+  "city": "Port St. Lucie",
+  "state": "FL",
+  "pop": 171016,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "FL"
+ },
+ {
+  "city": "Cedar Rapids",
+  "state": "IA",
+  "pop": 128429,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "IA"
+ },
+ {
+  "city": "Quincy",
+  "state": "MA",
+  "pop": 93494,
+  "income": 115770,
+  "county": "norfolk",
+  "growth": "medium",
+  "region": "MA"
+ },
+ {
+  "city": "Miramar",
+  "state": "FL",
+  "pop": 130288,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "FL"
+ },
+ {
+  "city": "Rosemead",
+  "state": "CA",
+  "pop": 54561,
+  "income": null,
+  "county": "\"los angeles\"",
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "Minnetonka",
+  "state": "MN",
+  "pop": 51368,
+  "income": 89418,
+  "county": "hennepin",
+  "growth": "medium",
+  "region": "MN"
+ },
+ {
+  "city": "Rancho Cucamonga",
+  "state": "CA",
+  "pop": 171386,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "Watsonville",
+  "state": "CA",
+  "pop": 52477,
+  "income": null,
+  "county": "\"santa cruz\"",
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "Coconut Creek",
+  "state": "FL",
+  "pop": 56792,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "FL"
+ },
+ {
+  "city": "Bradenton",
+  "state": "FL",
+  "pop": 51763,
+  "income": 72176,
+  "county": "manatee",
+  "growth": "medium",
+  "region": "FL"
+ },
+ {
+  "city": "Carlsbad",
+  "state": "CA",
+  "pop": 110972,
+  "income": null,
+  "county": "\"san diego\"",
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "Wyoming",
+  "state": "MI",
+  "pop": 74100,
+  "income": 76923,
+  "county": "kent",
+  "growth": "medium",
+  "region": "MI"
+ },
+ {
+  "city": "Fort Lauderdale",
+  "state": "FL",
+  "pop": 172389,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "FL"
+ },
+ {
+  "city": "Warner Robins",
+  "state": "GA",
+  "pop": 72531,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "GA"
+ },
+ {
+  "city": "Terre Haute",
+  "state": "IN",
+  "pop": 61025,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "IN"
+ },
+ {
+  "city": "Margate",
+  "state": "FL",
+  "pop": 55456,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "FL"
+ },
+ {
+  "city": "Lake Charles",
+  "state": "LA",
+  "pop": 74024,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "LA"
+ },
+ {
+  "city": "Richland",
+  "state": "WA",
+  "pop": 52413,
+  "income": 85144,
+  "county": "benton",
+  "growth": "medium",
+  "region": "WA"
+ },
+ {
+  "city": "South San Francisco",
+  "state": "CA",
+  "pop": 66174,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "Plymouth",
+  "state": "MN",
+  "pop": 73987,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "MN"
+ },
+ {
+  "city": "South Bend",
+  "state": "IN",
+  "pop": 100886,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "IN"
+ },
+ {
+  "city": "Des Moines",
+  "state": "IA",
+  "pop": 207510,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "IA"
+ },
+ {
+  "city": "Whittier",
+  "state": "CA",
+  "pop": 86635,
+  "income": null,
+  "county": "\"los angeles\"",
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "Auburn",
+  "state": "WA",
+  "pop": 74860,
+  "income": 116044,
+  "county": "king",
+  "growth": "medium",
+  "region": "WA"
+ },
+ {
+  "city": "Renton",
+  "state": "WA",
+  "pop": 97003,
+  "income": 116044,
+  "county": "king",
+  "growth": "medium",
+  "region": "WA"
+ },
+ {
+  "city": "Centennial",
+  "state": "CO",
+  "pop": 106114,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "CO"
+ },
+ {
+  "city": "Richmond",
+  "state": "VA",
+  "pop": 214114,
+  "income": null,
+  "county": "\"richmond city\"",
+  "growth": "medium",
+  "region": "VA"
+ },
+ {
+  "city": "Pflugerville",
+  "state": "TX",
+  "pop": 53752,
+  "income": 95151,
+  "county": "travis",
+  "growth": "medium",
+  "region": "TX"
+ },
+ {
+  "city": "Norwalk",
+  "state": "CA",
+  "pop": 106589,
+  "income": null,
+  "county": "\"los angeles\"",
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "Highland",
+  "state": "CA",
+  "pop": 54291,
+  "income": null,
+  "county": "\"san bernardino\"",
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "Joliet",
+  "state": "IL",
+  "pop": 147806,
+  "income": 97076,
+  "county": "will",
+  "growth": "medium",
+  "region": "IL"
+ },
+ {
+  "city": "Rancho Cordova",
+  "state": "CA",
+  "pop": 67911,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "Dearborn Heights",
+  "state": "MI",
+  "pop": 56620,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "MI"
+ },
+ {
+  "city": "Carrollton",
+  "state": "TX",
+  "pop": 126700,
+  "income": 102711,
+  "county": "denton",
+  "growth": "medium",
+  "region": "TX"
+ },
+ {
+  "city": "Hoffman Estates",
+  "state": "IL",
+  "pop": 52398,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "IL"
+ },
+ {
+  "city": "North Port",
+  "state": "FL",
+  "pop": 59212,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "FL"
+ },
+ {
+  "city": "Rockville",
+  "state": "MD",
+  "pop": 64072,
+  "income": 118020,
+  "county": "montgomery",
+  "growth": "medium",
+  "region": "MD"
+ },
+ {
+  "city": "Burbank",
+  "state": "CA",
+  "pop": 104709,
+  "income": null,
+  "county": "\"los angeles\"",
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "Fullerton",
+  "state": "CA",
+  "pop": 138981,
+  "income": 106047,
+  "county": "orange",
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "Farmington Hills",
+  "state": "MI",
+  "pop": 81295,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "MI"
+ },
+ {
+  "city": "Pico Rivera",
+  "state": "CA",
+  "pop": 63771,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "Grand Junction",
+  "state": "CO",
+  "pop": 59778,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "CO"
+ },
+ {
+  "city": "Round Rock",
+  "state": "TX",
+  "pop": 109821,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "TX"
+ },
+ {
+  "city": "Maple Grove",
+  "state": "MN",
+  "pop": 65415,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "MN"
+ },
+ {
+  "city": "Norman",
+  "state": "OK",
+  "pop": 118197,
+  "income": 70923,
+  "county": "cleveland",
+  "growth": "medium",
+  "region": "OK"
+ },
+ {
+  "city": "Irvine",
+  "state": "CA",
+  "pop": 236716,
+  "income": 106047,
+  "county": "orange",
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "Bossier City",
+  "state": "LA",
+  "pop": 66333,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "LA"
+ },
+ {
+  "city": "Cedar Park",
+  "state": "TX",
+  "pop": 61238,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "TX"
+ },
+ {
+  "city": "Sandy Springs",
+  "state": "GA",
+  "pop": 99770,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "GA"
+ },
+ {
+  "city": "Moore",
+  "state": "OK",
+  "pop": 58414,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "OK"
+ },
+ {
+  "city": "Blue Springs",
+  "state": "MO",
+  "pop": 53294,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "MO"
+ },
+ {
+  "city": "Lancaster",
+  "state": "CA",
+  "pop": 159523,
+  "income": null,
+  "county": "\"los angeles\"",
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "Cape Coral",
+  "state": "FL",
+  "pop": 165831,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "FL"
+ },
+ {
+  "city": "Cupertino",
+  "state": "CA",
+  "pop": 60189,
+  "income": null,
+  "county": "\"santa clara\"",
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "Gilroy",
+  "state": "CA",
+  "pop": 51701,
+  "income": null,
+  "county": "\"santa clara\"",
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "Somerville",
+  "state": "MA",
+  "pop": 78804,
+  "income": 118494,
+  "county": "middlesex",
+  "growth": "medium",
+  "region": "MA"
+ },
+ {
+  "city": "Berwyn",
+  "state": "IL",
+  "pop": 56758,
+  "income": 76614,
+  "county": "cook",
+  "growth": "medium",
+  "region": "IL"
+ },
+ {
+  "city": "Palm Beach Gardens",
+  "state": "FL",
+  "pop": 50699,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "FL"
+ },
+ {
+  "city": "Alpharetta",
+  "state": "GA",
+  "pop": 62298,
+  "income": 89798,
+  "county": "fulton",
+  "growth": "medium",
+  "region": "GA"
+ },
+ {
+  "city": "O'Fallon",
+  "state": "MO",
+  "pop": 82809,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "MO"
+ },
+ {
+  "city": "Redwood City",
+  "state": "CA",
+  "pop": 80872,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "Union City",
+  "state": "CA",
+  "pop": 72528,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "Aliso Viejo",
+  "state": "CA",
+  "pop": 50175,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "Menifee",
+  "state": "CA",
+  "pop": 83447,
+  "income": 86350,
+  "county": "riverside",
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "Loveland",
+  "state": "CO",
+  "pop": 71334,
+  "income": 88338,
+  "county": "larimer",
+  "growth": "medium",
+  "region": "CO"
+ },
+ {
+  "city": "San Ramon",
+  "state": "CA",
+  "pop": 74513,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "Ontario",
+  "state": "CA",
+  "pop": 167500,
+  "income": null,
+  "county": "\"san bernardino\"",
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "Kirkland",
+  "state": "WA",
+  "pop": 84430,
+  "income": 116044,
+  "county": "king",
+  "growth": "medium",
+  "region": "WA"
+ },
+ {
+  "city": "St. George",
+  "state": "UT",
+  "pop": 76817,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "UT"
+ },
+ {
+  "city": "Glendale",
+  "state": "CA",
+  "pop": 196021,
+  "income": null,
+  "county": "\"los angeles\"",
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "Meriden",
+  "state": "CT",
+  "pop": 60456,
+  "income": null,
+  "county": "\"new haven\"",
+  "growth": "medium",
+  "region": "CT"
+ },
+ {
+  "city": "Gardena",
+  "state": "CA",
+  "pop": 59957,
+  "income": null,
+  "county": "\"los angeles\"",
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "Elgin",
+  "state": "IL",
+  "pop": 110145,
+  "income": 93475,
+  "county": "kane",
+  "growth": "medium",
+  "region": "IL"
+ },
+ {
+  "city": "Plano",
+  "state": "TX",
+  "pop": 274409,
+  "income": 113943,
+  "county": "collin",
+  "growth": "medium",
+  "region": "TX"
+ },
+ {
+  "city": "Longmont",
+  "state": "CO",
+  "pop": 89919,
+  "income": 90770,
+  "county": "weld",
+  "growth": "medium",
+  "region": "CO"
+ },
+ {
+  "city": "College Station",
+  "state": "TX",
+  "pop": 100050,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "TX"
+ },
+ {
+  "city": "Lynn",
+  "state": "MA",
+  "pop": 91589,
+  "income": 92118,
+  "county": "essex",
+  "growth": "medium",
+  "region": "MA"
+ },
+ {
+  "city": "Woodbury",
+  "state": "MN",
+  "pop": 65656,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "MN"
+ },
+ {
+  "city": "Sammamish",
+  "state": "WA",
+  "pop": 50169,
+  "income": 116044,
+  "county": "king",
+  "growth": "medium",
+  "region": "WA"
+ },
+ {
+  "city": "San Rafael",
+  "state": "CA",
+  "pop": 58994,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "Tacoma",
+  "state": "WA",
+  "pop": 203446,
+  "income": 92793,
+  "county": "pierce",
+  "growth": "medium",
+  "region": "WA"
+ },
+ {
+  "city": "Simi Valley",
+  "state": "CA",
+  "pop": 126181,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "West Covina",
+  "state": "CA",
+  "pop": 107740,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "Castle Rock",
+  "state": "CO",
+  "pop": 53063,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "CO"
+ },
+ {
+  "city": "Carson",
+  "state": "CA",
+  "pop": 92599,
+  "income": null,
+  "county": "\"los angeles\"",
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "Santa Maria",
+  "state": "CA",
+  "pop": 102216,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "La Mesa",
+  "state": "CA",
+  "pop": 58642,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "Westminster",
+  "state": "CO",
+  "pop": 110945,
+  "income": 89849,
+  "county": "adams",
+  "growth": "medium",
+  "region": "CO"
+ },
+ {
+  "city": "Reading",
+  "state": "PA",
+  "pop": 87893,
+  "income": 72157,
+  "county": "berks",
+  "growth": "medium",
+  "region": "PA"
+ },
+ {
+  "city": "Turlock",
+  "state": "CA",
+  "pop": 70365,
+  "income": 75249,
+  "county": "stanislaus",
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "Greeley",
+  "state": "CO",
+  "pop": 96539,
+  "income": 90770,
+  "county": "weld",
+  "growth": "medium",
+  "region": "CO"
+ },
+ {
+  "city": "Thousand Oaks",
+  "state": "CA",
+  "pop": 128731,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "Bridgeport",
+  "state": "CT",
+  "pop": 147216,
+  "income": null,
+  "county": "fairfield",
+  "growth": "medium",
+  "region": "CT"
+ },
+ {
+  "city": "Pasco",
+  "state": "WA",
+  "pop": 67599,
+  "income": 77820,
+  "county": "franklin",
+  "growth": "medium",
+  "region": "WA"
+ },
+ {
+  "city": "Torrance",
+  "state": "CA",
+  "pop": 147478,
+  "income": null,
+  "county": "\"los angeles\"",
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "Madison",
+  "state": "WI",
+  "pop": 243344,
+  "income": 85189,
+  "county": "dane",
+  "growth": "medium",
+  "region": "WI"
+ },
+ {
+  "city": "Waukegan",
+  "state": "IL",
+  "pop": 88826,
+  "income": 101621,
+  "county": "lake",
+  "growth": "medium",
+  "region": "IL"
+ },
+ {
+  "city": "Bowling Green",
+  "state": "KY",
+  "pop": 61488,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "KY"
+ },
+ {
+  "city": "Lewisville",
+  "state": "TX",
+  "pop": 101074,
+  "income": 102711,
+  "county": "denton",
+  "growth": "medium",
+  "region": "TX"
+ },
+ {
+  "city": "Palo Alto",
+  "state": "CA",
+  "pop": 66642,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "New Bedford",
+  "state": "MA",
+  "pop": 95078,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "MA"
+ },
+ {
+  "city": "Redmond",
+  "state": "WA",
+  "pop": 57530,
+  "income": 116044,
+  "county": "king",
+  "growth": "medium",
+  "region": "WA"
+ },
+ {
+  "city": "Brentwood",
+  "state": "CA",
+  "pop": 55000,
+  "income": null,
+  "county": "\"contra costa\"",
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "Davis",
+  "state": "CA",
+  "pop": 66205,
+  "income": 82359,
+  "county": "yolo",
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "Tinley Park",
+  "state": "IL",
+  "pop": 57282,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "IL"
+ },
+ {
+  "city": "Garden Grove",
+  "state": "CA",
+  "pop": 175140,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "Lynwood",
+  "state": "CA",
+  "pop": 71371,
+  "income": null,
+  "county": "\"los angeles\"",
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "Brookhaven",
+  "state": "GA",
+  "pop": 50603,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "GA"
+ },
+ {
+  "city": "Baton Rouge",
+  "state": "LA",
+  "pop": 229426,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "LA"
+ },
+ {
+  "city": "Bristol",
+  "state": "CT",
+  "pop": 60568,
+  "income": null,
+  "county": "hartford",
+  "growth": "medium",
+  "region": "CT"
+ },
+ {
+  "city": "Orland Park",
+  "state": "IL",
+  "pop": 58590,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "IL"
+ },
+ {
+  "city": "Green Bay",
+  "state": "WI",
+  "pop": 104779,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "WI"
+ },
+ {
+  "city": "Evanston",
+  "state": "IL",
+  "pop": 75570,
+  "income": 76614,
+  "county": "cook",
+  "growth": "medium",
+  "region": "IL"
+ },
+ {
+  "city": "Federal Way",
+  "state": "WA",
+  "pop": 92734,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "WA"
+ },
+ {
+  "city": "West Jordan",
+  "state": "UT",
+  "pop": 110077,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "UT"
+ },
+ {
+  "city": "Yucaipa",
+  "state": "CA",
+  "pop": 52536,
+  "income": null,
+  "county": "\"san bernardino\"",
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "Downey",
+  "state": "CA",
+  "pop": 113242,
+  "income": null,
+  "county": "\"los angeles\"",
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "Cicero",
+  "state": "IL",
+  "pop": 84103,
+  "income": 76614,
+  "county": "cook",
+  "growth": "medium",
+  "region": "IL"
+ },
+ {
+  "city": "South Gate",
+  "state": "CA",
+  "pop": 95677,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "League City",
+  "state": "TX",
+  "pop": 90983,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "TX"
+ },
+ {
+  "city": "Salt Lake City",
+  "state": "UT",
+  "pop": 191180,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "UT"
+ },
+ {
+  "city": "Corvallis",
+  "state": "OR",
+  "pop": 55298,
+  "income": 70117,
+  "county": "benton",
+  "growth": "medium",
+  "region": "OR"
+ },
+ {
+  "city": "Roswell",
+  "state": "GA",
+  "pop": 94034,
+  "income": 89798,
+  "county": "fulton",
+  "growth": "medium",
+  "region": "GA"
+ },
+ {
+  "city": "Huntington Beach",
+  "state": "CA",
+  "pop": 197575,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "Haverhill",
+  "state": "MA",
+  "pop": 62088,
+  "income": 92118,
+  "county": "essex",
+  "growth": "medium",
+  "region": "MA"
+ },
+ {
+  "city": "Cambridge",
+  "state": "MA",
+  "pop": 107289,
+  "income": 118494,
+  "county": "middlesex",
+  "growth": "medium",
+  "region": "MA"
+ },
+ {
+  "city": "Glendale",
+  "state": "AZ",
+  "pop": 234632,
+  "income": 83668,
+  "county": "maricopa",
+  "growth": "medium",
+  "region": "AZ"
+ },
+ {
+  "city": "Boca Raton",
+  "state": "FL",
+  "pop": 89407,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "FL"
+ },
+ {
+  "city": "New Britain",
+  "state": "CT",
+  "pop": 72939,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "CT"
+ },
+ {
+  "city": "Gresham",
+  "state": "OR",
+  "pop": 109397,
+  "income": 79432,
+  "county": "multnomah",
+  "growth": "medium",
+  "region": "OR"
+ },
+ {
+  "city": "Lauderhill",
+  "state": "FL",
+  "pop": 69813,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "FL"
+ },
+ {
+  "city": "Hendersonville",
+  "state": "TN",
+  "pop": 54068,
+  "income": 87453,
+  "county": "sumner",
+  "growth": "medium",
+  "region": "TN"
+ },
+ {
+  "city": "Santa Clara",
+  "state": "CA",
+  "pop": 120245,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "Oceanside",
+  "state": "CA",
+  "pop": 172794,
+  "income": null,
+  "county": "\"san diego\"",
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "Lake Forest",
+  "state": "CA",
+  "pop": 79312,
+  "income": null,
+  "county": null,
+  "growth": "medium",
+  "region": "CA"
+ },
+ {
+  "city": "Novi",
+  "state": "MI",
+  "pop": 57960,
+  "income": 90801,
+  "county": "oakland",
+  "growth": "medium",
+  "region": "MI"
+ },
+ {
+  "city": "Compton",
+  "state": "CA",
+  "pop": 97877,
+  "income": null,
+  "county": "\"los angeles\"",
+  "growth": "medium",
+  "region": "CA"
+ }
+]
