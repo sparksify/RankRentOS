@@ -1,0 +1,61 @@
+/**
+ * METRIC REGISTRY — the closed vocabulary of facts the system may record.
+ *
+ * The scoring engine can only ever consume metrics defined here, and the
+ * observation layer rejects writes for unknown metrics. This prevents
+ * stringly-typed drift and guarantees every number has a declared unit,
+ * staleness policy, and set of legitimate evidence types.
+ *
+ * Phase 1 seeds the registry with the metrics the Phase-2 importer and
+ * collectors will write. Later phases EXTEND this list (append entries);
+ * they never repurpose existing ids.
+ */
+import type { RegistryEntry } from "./types";
+
+const OBS = ["OBSERVED"] as const;
+const OBS_DER = ["OBSERVED", "DERIVED"] as const;
+const ANY_EST = ["OBSERVED", "DERIVED", "AI_ESTIMATED", "HUMAN_ASSUMED"] as const;
+const EST_ONLY = ["AI_ESTIMATED", "HUMAN_ASSUMED"] as const;
+
+export const METRICS: readonly RegistryEntry[] = [
+  // --- Keyword / demand (Phase 2 importer + collectors) ---
+  { id: "kw.volume.exact", kind: "number", unit: "searches/mo", allowedEvidenceTypes: OBS, staleAfterDays: 90, description: "Exact keyword monthly search volume (Google Ads data)" },
+  { id: "kw.volume.universe", kind: "number", unit: "searches/mo", allowedEvidenceTypes: OBS_DER, staleAfterDays: 90, description: "Summed monthly volume of the related-keyword universe" },
+  { id: "kw.cpc", kind: "number", unit: "usd", allowedEvidenceTypes: OBS, staleAfterDays: 90, description: "Cost-per-click advertisers pay for the primary keyword" },
+  { id: "kw.competition.index", kind: "number", unit: "0-1", allowedEvidenceTypes: OBS, staleAfterDays: 90, description: "Ads competition index for the primary keyword" },
+  { id: "kw.autocomplete.floor", kind: "number", unit: "0-1", allowedEvidenceTypes: OBS_DER, staleAfterDays: 120, description: "Autocomplete demand floor (1.0 city hit, 0.8 niche activity, 0.6 dead air)" },
+  { id: "kw.autocomplete.cityHit", kind: "string", unit: "none", allowedEvidenceTypes: OBS, staleAfterDays: 120, description: "Whether Google autocompletes the exact service+city pair (true/false)" },
+  { id: "kw.trend.weight", kind: "number", unit: "multiplier", allowedEvidenceTypes: OBS_DER, staleAfterDays: 365, description: "Niche demand weight from multi-year Google Trends comparison" },
+  { id: "kw.trend.direction", kind: "string", unit: "none", allowedEvidenceTypes: OBS_DER, staleAfterDays: 180, description: "Multi-year trend direction class: rising|flat|declining" },
+  { id: "kw.seasonality.peakMonths", kind: "string", unit: "none", allowedEvidenceTypes: OBS_DER, staleAfterDays: 365, description: "Comma-joined strongest demand months" },
+
+  // --- Geography demographics (Phase 2 importer; Census later) ---
+  { id: "geo.population", kind: "number", unit: "people", allowedEvidenceTypes: ANY_EST, staleAfterDays: 730, description: "Population of the geography" },
+  { id: "geo.income.household", kind: "number", unit: "usd/yr", allowedEvidenceTypes: ANY_EST, staleAfterDays: 730, description: "Median household income" },
+  { id: "geo.growth.class", kind: "string", unit: "none", allowedEvidenceTypes: ANY_EST, staleAfterDays: 365, description: "Growth classification: high|medium|low" },
+
+  // --- Service economics (Phase 2 importer seeds; Phase 5 AI research) ---
+  { id: "econ.ticket.avg", kind: "number", unit: "usd", allowedEvidenceTypes: ANY_EST, staleAfterDays: 365, description: "Average project/job value for the service" },
+  { id: "econ.margin.gross", kind: "number", unit: "0-1", allowedEvidenceTypes: ANY_EST, staleAfterDays: 365, description: "Typical gross margin for the service" },
+  { id: "econ.close.rate", kind: "number", unit: "0-1", allowedEvidenceTypes: ANY_EST, staleAfterDays: 365, description: "Typical qualified-lead close rate" },
+  { id: "econ.lead.value", kind: "number", unit: "usd", allowedEvidenceTypes: ANY_EST, staleAfterDays: 365, description: "Estimated market value of one qualified lead" },
+  { id: "econ.service.needType", kind: "string", unit: "none", allowedEvidenceTypes: EST_ONLY, staleAfterDays: null, description: "need|desire purchase classification" },
+  { id: "econ.service.seasonal", kind: "string", unit: "none", allowedEvidenceTypes: EST_ONLY, staleAfterDays: null, description: "Whether the service is seasonal (true/false)" },
+] as const;
+
+const byId = new Map(METRICS.map((m) => [m.id, m]));
+if (byId.size !== METRICS.length) {
+  throw new Error("METRIC REGISTRY CORRUPT: duplicate metric ids");
+}
+
+export function getMetric(id: string): RegistryEntry | undefined {
+  return byId.get(id);
+}
+
+export function requireMetric(id: string): RegistryEntry {
+  const m = byId.get(id);
+  if (!m) throw new Error(`Unknown metric: ${id}`);
+  return m;
+}
+
+export const METRIC_IDS: readonly string[] = METRICS.map((m) => m.id);
