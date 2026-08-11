@@ -1,7 +1,18 @@
 # RANKRENT OS V2 — IMPLEMENTATION MASTER PLAN
 
 Date: 2026-08-11
-Status: PLAN ONLY — no implementation performed. Companion to `docs/RANKRENT_V2_AUDIT.md` (Option B accepted).
+Status: APPROVED WITH AMENDMENTS — implementation authorized starting Phase 1. Companion to `docs/RANKRENT_V2_AUDIT.md` (Option B accepted).
+
+## AMENDMENTS (2026-08-11, approved before implementation)
+
+1. **AI provider neutrality.** The AI research architecture stays provider-neutral end to end. No provider (including Anthropic) is hardwired as the automatic first adapter; the concrete adapter is selected at Phase 5 via configuration (`AI_PROVIDER` env / model config), and §10/§27 are amended accordingly.
+2. **Low-Hanging economics.** Target ≈ **$750–$1,500+/month** plausible rental value with **~$750 as the normal floor**. Below-floor exceptions are permitted only with unusually strong Rankability, Speed, low test cost, Renter Depth, and Asymmetry, and must carry an explicit recorded justification on the selection.
+3. **High-Value economics.** Target ≈ **$2,000–$3,000+/month** plausible rental economics — a **target, not an absolute hard gate**, while evidence quality is still developing.
+4. **Incremental schema.** The §7 schema is the *conceptual* model. Tables/fields/indexes are physically created only when required by the current or immediately dependent phase.
+5. **AI_DISCOVERY neutrality.** AI-discovered opportunities receive no scoring advantage and pass the same empirical screening funnel as every other discovery source. AI narrative reasoning can never validate its own hypotheses.
+6. **V1 objective preserved.** Build the smallest research + data + discovery + scoring + experiment-selection engine that can make a better first 20-asset investment decision than manual analysis. No Site Engine, deployment, rank tracking, renter CRM, lead routing, billing, or generalized SaaS infrastructure.
+7. **Phase 0 deferred (not skipped).** The original V0 `out/` + `data/cache/` are believed to be on a currently unavailable MacBook — **not confirmed missing**. See `docs/V0_DATA_RECOVERY_PENDING.md`. The V2 importer must remain capable of ingesting the recovered data later; the archive does not block development.
+8. **Repo strategy execution change.** V0 is NOT moved to `legacy/v0/` at this time (avoids a large restructure while V0 data recovery is pending). V2 is built self-contained under `v2/` on the `v2` branch; promotion of `v2/` to the repo root (and V0 to `legacy/v0/`) is deferred to a later, deliberate restructure commit after V0 data is archived. §2's end-state remains the goal.
 Inspection performed for this plan: full repo re-inspection, local gitignored-directory check, and **read-only** Supabase inspection via existing credentials. No external system was modified.
 
 ---
@@ -126,7 +137,7 @@ Rules carried from the spec: no business logic in React; providers behind `lib/p
 
 ## 7. Convex Schema
 
-Minimal V1 set — 12 tables. (Names indicative; `v.id()` refs shown as →.)
+Minimal V1 set — 12 tables, **implemented incrementally per Amendment 4**: this section is the conceptual model; each table is physically created only in the phase that first requires it (Phase 1: subjects + evidence spine; Phase 2: serpSnapshots, budgetLedger; Phase 3: operators; Phase 4: scoringModels, scoreRuns; Phase 8: portfolioRuns/Selections; domainCandidates at first domain research). (Names indicative; `v.id()` refs shown as →.)
 
 **`services`** — why: the niche/service catalog, including AI-discovered candidates. Fields: `name, slug, synonyms[], category, discoveryType (SEED|AI_DISCOVERY|HUMAN_HYPOTHESIS|...), status (candidate|active|excluded), notes`. Index: `by_slug`, `by_status`. Queries: list active services; dedupe on slug. V1 because opportunities reference it.
 
@@ -184,7 +195,7 @@ async function researchAgent<T>(task: ResearchTask, evidence: EvidenceBag,
                                 schema: ZodSchema<T>): Promise<AiFinding<T>[]>
 ```
 
-- One `ResearchProvider` interface; V1 implements a single adapter (Anthropic first — key already in the ecosystem; the adapter is ~60 lines, so adding OpenAI later is trivial). Model id + prompt version recorded on each researchRun.
+- One `ResearchProvider` interface; V1 implements a single adapter whose concrete provider is **selected at Phase 5 via configuration** (`AI_PROVIDER` env + model config) — no provider is hardwired (Amendment 1). Adapters are ~60 lines each, so adding a second provider is trivial. Model id + prompt version recorded on each researchRun.
 - `researchAgent` always: (1) receives existing evidence so it doesn't re-research knowns, (2) returns **schema-validated structured output**, (3) requires each claimed fact to include `sourceUrl` + its own confidence, (4) writes results as AI_ESTIMATED observations via a mutation — never directly into scores.
 - V1 AI tasks (each a file in `convex/research/ai/tasks/`):
   - `economics.ts` — per-service ticket/margin/close-rate research with citations (Score D inputs).
@@ -274,7 +285,7 @@ Community × Service bucket score = weighted blend defined in the model config (
 | Asymmetry | — | — | 0.30 |
 | Confidence | multiplier* | multiplier* | 0.10 + floor |
 
-\*Confidence acts as a dampener (score × (0.7 + 0.3·I/100)) for LHF/HV so assumption-castles sink; for Unicorns it is also a scored dimension with a hard floor (default ≥35) because "surprising" must still be evidenced. Gates: LHF requires plausible rent ≥ ~$500/mo (soft floor toward the $750–1,500 target); HV requires plausible rent ceiling ≥ $1,500. All numbers are v1.0 hypotheses in config — changing any of them is a new model version.
+\*Confidence acts as a dampener (score × (0.7 + 0.3·I/100)) for LHF/HV so assumption-castles sink; for Unicorns it is also a scored dimension with a hard floor (default ≥35) because "surprising" must still be evidenced. Gates (Amendments 2–3): LHF targets $750–$1,500+/mo plausible rent with **$750 as the normal floor**; a below-floor selection requires unusually strong Rankability + Speed + low test cost + Renter Depth + Asymmetry and an explicit recorded justification on the `portfolioSelections` row. HV targets **$2,000–$3,000+/mo** plausible rental economics as a target (soft gate while evidence quality matures; the selector prefers-above rather than hard-excludes-below). All numbers are v1.0 hypotheses in config — changing any of them is a new model version.
 
 Diversity caps (ported + extended): ≤1 per exact city×service, ≤4 per service across the whole portfolio, ≤6 per state outside the intentional North-Texas cluster, ≥3 discoveryTypes represented among the 20 if quality permits. **No padding:** a bucket ships short before it ships junk.
 
@@ -282,7 +293,7 @@ Diversity caps (ported + extended): ≤1 per exact city×service, ≤4 per servi
 
 Stage-0 intake from six channels, all writing `opportunities` with `discoveryType`:
 1. **SEED** — importer crosses the 24 v0 niches × 58 curated cities (+ the 669 national survivors as pre-screened seeds).
-2. **AI_DISCOVERY** — `hypothesisGen.ts` prompted with: the seed list *to avoid duplicating it*, the scoring dimensions, and instructions to propose services/geographies **outside** current thinking (guarding §32); returns candidates with rationale.
+2. **AI_DISCOVERY** — `hypothesisGen.ts` prompted with: the seed list *to avoid duplicating it*, the scoring dimensions, and instructions to propose services/geographies **outside** current thinking (guarding §32); returns candidates with rationale. Per Amendment 5: AI-discovered candidates receive **no scoring advantage** and pass the identical empirical funnel (stages 1–4) as every other channel; the AI's rationale is recorded as hypothesis context only and never enters scoring — AI cannot validate its own hypotheses through narrative reasoning.
 3. **SEARCH_ANOMALY** — deterministic sweep of imported keyword data for oddities (high CPC + low competition, volume spikes vs trend).
 4. **COMMUNITY_DISCOVERY** — the North Texas community sweep (§18) generating Community × Service pairs.
 5. **HUMAN_HYPOTHESIS** — a simple "add hypothesis" form in the Discovery UI.
@@ -408,10 +419,10 @@ Only decisions where business judgment changes outcomes. **All have defaults; im
 
 1. **Total V1 research budget cap.** Matters: bounds funnel breadth. Default: **$250 hard cap** (projection $75–200). Consequence: lower cap → fewer stage-3 finalists → thinner Unicorn tail. Proceed on default: ✅.
 2. **Scoring model v1.0 weights/gates (§16 table).** Matters: directly shapes the portfolio. Default: ship the table as v1.0. Consequence: they're hypotheses by design; versioning makes revision cheap and auditable. Proceed: ✅ (review the draft portfolio, not the weights, unless something looks systematically off).
-3. **LHF minimum plausible rent.** Matters: kills/admits small easy markets. Default: soft floor $500/mo plausible, target band $750–1,500. Consequence: hard $750 floor would discard fast cheap validation experiments. Proceed: ✅.
+3. **LHF minimum plausible rent.** Matters: kills/admits small easy markets. Default (per Amendment 2): normal floor $750/mo plausible, target band $750–1,500+; below-floor exceptions only with unusually strong Rankability/Speed/test-cost/Renter-Depth/Asymmetry and explicit recorded justification. HV targets $2,000–3,000+ as a soft target (Amendment 3). Proceed: ✅.
 4. **Category exclusions.** Matters: e.g., v0 lore says avoid brand-loyalty niches (salons), roofing/solar PE wars, YMYL-adjacent services. Default: exclude v0's known-avoid list; log every exclusion as an eliminated candidate with reason. Proceed: ✅ — flag list shown in Data Quality for veto.
 5. **Google Places adoption** (new Google Cloud dependency). Matters: Score E quality. Default: yes, free tier. Consequence of no: fall back to DataForSEO Business Data (slightly weaker reviews fidelity). Proceed: ✅ but needs the key from Steve at P3.
-6. **AI provider first adapter.** Default: Anthropic. Consequence: none long-term (interface is neutral). Proceed: ✅ — needs a key at P5.
+6. **AI provider first adapter.** Per Amendment 1: no default provider is hardwired; the adapter is selected via configuration at Phase 5 and Steve supplies the chosen provider's key then. Interface is neutral either way. Proceed: ✅ — decision + key needed at P5, not before.
 7. **v0 API keys rotation** (they were shared with a sibling project). Default: rotate SerpAPI/DataForSEO keys when provisioning Convex env. Proceed: ✅ — 10 minutes of Steve's time at P2.
 8. **Ranking-horizon tolerance for High-Value** (how hard is "acceptable rankability"). Default: gate A ≥ 40 with no time cap; HV explicitly accepts 6–12+ month horizons. Consequence: raising the gate converges HV toward LHF. Proceed: ✅.
 9. **Phase 0 archive** — not a decision but the one blocking human *action*: only Steve can archive the original machine's `out/` + `data/cache/`.
