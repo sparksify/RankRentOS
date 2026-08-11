@@ -1,0 +1,15 @@
+# deps & builds
+node_modules/
+.next/
+out/
+
+# env — secrets never enter source control
+.env
+.env.*
+!.env.example
+
+# convex local artifacts
+.convex/
+
+# ts build artifacts
+tsconfig.tsbuildinfo

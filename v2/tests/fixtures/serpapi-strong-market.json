@@ -1,0 +1,18 @@
+{
+  "search_metadata": { "status": "Success" },
+  "organic_results": [
+    { "position": 1, "title": "Epoxy Flooring Prosper TX | Prosper Epoxy Co", "link": "https://prosperepoxy.com/" },
+    { "position": 2, "title": "Prosper Garage Floor Coatings | #1 Rated in Prosper", "link": "https://prospergaragefloors.com/" },
+    { "position": 3, "title": "GarageExperts of North Dallas - Prosper", "link": "https://garageexperts.com/north-dallas" },
+    { "position": 4, "title": "Epoxy Floors Prosper - Premier Coatings", "link": "https://premiercoatingstx.com/" },
+    { "position": 5, "title": "Prosper Epoxy Flooring Specialists", "link": "https://epoxyprosper.com/" }
+  ],
+  "local_results": {
+    "places": [
+      { "title": "Prosper Epoxy Co", "rating": 4.9, "reviews": 320, "links": { "website": "https://prosperepoxy.com" }, "type": "Flooring contractor" },
+      { "title": "Premier Coatings", "rating": 4.8, "reviews": 214, "links": { "website": "https://premiercoatingstx.com" }, "type": "Flooring contractor" },
+      { "title": "Garage Experts", "rating": 4.7, "reviews": 180, "links": { "website": "https://garageexperts.com" }, "type": "Flooring contractor" }
+    ]
+  },
+  "ads": []
+}
