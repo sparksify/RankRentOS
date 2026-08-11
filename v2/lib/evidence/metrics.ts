@@ -22,7 +22,8 @@ export const METRICS: readonly RegistryEntry[] = [
   { id: "kw.volume.exact", kind: "number", unit: "searches/mo", allowedEvidenceTypes: OBS, staleAfterDays: 90, description: "Exact keyword monthly search volume (Google Ads data)" },
   { id: "kw.volume.universe", kind: "number", unit: "searches/mo", allowedEvidenceTypes: OBS_DER, staleAfterDays: 90, description: "Summed monthly volume of the related-keyword universe" },
   { id: "kw.cpc", kind: "number", unit: "usd", allowedEvidenceTypes: OBS, staleAfterDays: 90, description: "Cost-per-click advertisers pay for the primary keyword" },
-  { id: "kw.competition.index", kind: "number", unit: "0-1", allowedEvidenceTypes: OBS, staleAfterDays: 90, description: "Ads competition index for the primary keyword" },
+  { id: "kw.competition.index", kind: "number", unit: "0-1", allowedEvidenceTypes: OBS, staleAfterDays: 90, description: "Ads competition index for the primary keyword (numeric)" },
+  { id: "kw.competition.class", kind: "string", unit: "none", allowedEvidenceTypes: OBS, staleAfterDays: 90, description: "Ads competition label for the primary keyword (HIGH|MEDIUM|LOW)" },
   { id: "kw.autocomplete.floor", kind: "number", unit: "0-1", allowedEvidenceTypes: OBS_DER, staleAfterDays: 120, description: "Autocomplete demand floor (1.0 city hit, 0.8 niche activity, 0.6 dead air)" },
   { id: "kw.autocomplete.cityHit", kind: "string", unit: "none", allowedEvidenceTypes: OBS, staleAfterDays: 120, description: "Whether Google autocompletes the exact service+city pair (true/false)" },
   { id: "kw.trend.weight", kind: "number", unit: "multiplier", allowedEvidenceTypes: OBS_DER, staleAfterDays: 365, description: "Niche demand weight from multi-year Google Trends comparison" },
@@ -41,6 +42,17 @@ export const METRICS: readonly RegistryEntry[] = [
   { id: "econ.lead.value", kind: "number", unit: "usd", allowedEvidenceTypes: ANY_EST, staleAfterDays: 365, description: "Estimated market value of one qualified lead" },
   { id: "econ.service.needType", kind: "string", unit: "none", allowedEvidenceTypes: EST_ONLY, staleAfterDays: null, description: "need|desire purchase classification" },
   { id: "econ.service.seasonal", kind: "string", unit: "none", allowedEvidenceTypes: EST_ONLY, staleAfterDays: null, description: "Whether the service is seasonal (true/false)" },
+
+  // --- V0 prior hypotheses (Phase 2 importer; historical artifacts, always legacy) ---
+  // These record what V0 concluded so V2's independent conclusions can later
+  // be compared against them. They are DERIVED (from V0's screening code over
+  // its observed data) and never feed V2 scoring as current evidence.
+  { id: "v0.prior.survivor", kind: "string", unit: "none", allowedEvidenceTypes: ["DERIVED"], staleAfterDays: null, description: "V0 national screen judged this market demand-qualified (true)" },
+
+  // --- Domain research summaries (Phase 2 collector; detail table arrives with the domain-research phase) ---
+  { id: "domain.available.count", kind: "number", unit: "domains", allowedEvidenceTypes: OBS, staleAfterDays: 14, description: "Number of candidate .com domains currently available for this opportunity" },
+  { id: "domain.exactMatch.available", kind: "string", unit: "none", allowedEvidenceTypes: OBS_DER, staleAfterDays: 14, description: "Whether a city-first exact-match .com is available (true/false)" },
+  { id: "domain.pick", kind: "string", unit: "none", allowedEvidenceTypes: OBS_DER, staleAfterDays: 14, description: "Best available domain candidate per deterministic ranking" },
 ] as const;
 
 const byId = new Map(METRICS.map((m) => [m.id, m]));

@@ -36,7 +36,23 @@ const observationArgs = {
   observedAt: v.number(),
   rationale: v.optional(v.string()),
   researchRunId: v.optional(v.id("researchRuns")),
+  legacy: v.optional(v.boolean()),
 };
+
+/**
+ * LEGACY SUPERSESSION RULE (V0 data must not become V2 truth by
+ * inheritance): among a subject's observations of a metric, ANY
+ * independently collected V2 observation (legacy !== true) beats ANY
+ * legacy one regardless of timestamps; within the same class, newest
+ * observedAt wins. Legacy evidence therefore only surfaces when V2 has
+ * not yet independently measured/estimated the metric — and it surfaces
+ * visibly flagged.
+ */
+function pickLatest(all: Doc<"observations">[]): Doc<"observations"> {
+  const nonLegacy = all.filter((o) => o.legacy !== true);
+  const pool = nonLegacy.length > 0 ? nonLegacy : all;
+  return pool.reduce((a, b) => (b.observedAt > a.observedAt ? b : a));
+}
 
 type ObservationArgs = {
   opportunityId?: Id<"opportunities">;
@@ -44,6 +60,7 @@ type ObservationArgs = {
   serviceId?: Id<"services">;
   rawValue?: number | string;
   researchRunId?: Id<"researchRuns">;
+  legacy?: boolean;
 } & ObservationInput;
 
 function validateForInsert(args: ObservationArgs, nowMs: number) {
@@ -144,15 +161,15 @@ const subjectArgs = {
 export const latestByMetric = query({
   args: { ...subjectArgs, metric: v.string(), asOf: v.optional(v.number()) },
   handler: async (ctx, { metric, asOf, ...subject }) => {
-    requireMetric(metric); // unknown metric is a programming error, fail loudly
+    const registry = requireMetric(metric); // unknown metric is a programming error, fail loudly
     const all = await collectForSubjectMetric(ctx, subject, metric);
     if (all.length === 0) return null;
-    const latest = all.reduce((a, b) => (b.observedAt > a.observedAt ? b : a));
-    const registry = requireMetric(metric);
+    const latest = pickLatest(all);
     const asOfMs = asOf ?? Date.now();
     return {
       observation: latest,
       stale: !isFresh(latest.observedAt, registry, asOfMs),
+      legacy: latest.legacy === true,
       observationCount: all.length,
     };
   },
@@ -179,14 +196,18 @@ export const evidenceBag = query({
     const asOfMs = asOf ?? Date.now();
     const bag: Record<
       string,
-      { observation: Doc<"observations">; stale: boolean }
+      { observation: Doc<"observations">; stale: boolean; legacy: boolean }
     > = {};
     const latestPerMetric: Doc<"observations">[] = [];
     for (const m of METRICS) {
       const all = await collectForSubjectMetric(ctx, subject, m.id);
       if (all.length === 0) continue;
-      const latest = all.reduce((a, b) => (b.observedAt > a.observedAt ? b : a));
-      bag[m.id] = { observation: latest, stale: !isFresh(latest.observedAt, m, asOfMs) };
+      const latest = pickLatest(all);
+      bag[m.id] = {
+        observation: latest,
+        stale: !isFresh(latest.observedAt, m, asOfMs),
+        legacy: latest.legacy === true,
+      };
       latestPerMetric.push(latest);
     }
     return {
@@ -194,6 +215,7 @@ export const evidenceBag = query({
       evidenceMix: evidenceMix(latestPerMetric),
       metricCount: latestPerMetric.length,
       staleCount: Object.values(bag).filter((e) => e.stale).length,
+      legacyCount: Object.values(bag).filter((e) => e.legacy).length,
     };
   },
 });

@@ -15,6 +15,9 @@ export const createService = mutation({
     name: v.string(),
     slug: v.string(),
     synonyms: v.array(v.string()),
+    queryPhrase: v.optional(v.string()),
+    acPhrase: v.optional(v.string()),
+    domainTerms: v.optional(v.array(v.string())),
     category: v.optional(v.string()),
     discoveryType,
     notes: v.optional(v.string()),
@@ -83,6 +86,36 @@ export const createOpportunity = mutation({
     });
     return { id, created: true };
   },
+});
+
+/**
+ * Manual/funnel stage transition. The automated promotion rules arrive with
+ * the funnel (Phase 6); until then stage changes are explicit and recorded.
+ * V0-imported priors NEVER advance stages — every opportunity re-qualifies
+ * empirically under V2.
+ */
+export const setFunnelStage = mutation({
+  args: {
+    id: v.id("opportunities"),
+    stage: v.number(),
+    reason: v.string(),
+  },
+  handler: async (ctx, { id, stage, reason }) => {
+    if (stage < 0 || stage > 4 || !Number.isInteger(stage)) {
+      throw new Error(`invalid funnel stage ${stage}`);
+    }
+    const opp = await ctx.db.get(id);
+    if (!opp) throw new Error("opportunity not found");
+    await ctx.db.patch(id, {
+      funnelStage: stage,
+      stageHistory: [...opp.stageHistory, { stage, at: Date.now(), reason }],
+    });
+  },
+});
+
+export const getService = query({
+  args: { id: v.id("services") },
+  handler: async (ctx, { id }) => ctx.db.get(id),
 });
 
 export const getOpportunity = query({

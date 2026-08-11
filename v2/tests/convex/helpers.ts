@@ -15,6 +15,9 @@ export async function seedSubjects(t: ReturnType<typeof testConvex>) {
     name: "Epoxy Garage Floors",
     slug: "epoxy-garage-floors",
     synonyms: ["epoxy flooring"],
+    queryPhrase: "epoxy garage floor coating",
+    acPhrase: "epoxy flooring",
+    domainTerms: ["epoxyfloors", "epoxyflooring", "epoxy"],
     discoveryType: "SEED",
   });
   const geography = await t.mutation(api.subjects.createGeography, {

@@ -1,0 +1,26 @@
+{
+  "search_metadata": { "status": "Success" },
+  "organic_results": [
+    { "position": 1, "title": "THE BEST 10 Epoxy Flooring near Prosper, TX", "link": "https://www.yelp.com/search?find_desc=epoxy+flooring&find_loc=Prosper" },
+    { "position": 2, "title": "Epoxy Garage Floor Coating - Angi", "link": "https://www.angi.com/companylist/us/tx/prosper/epoxy-flooring.htm" },
+    { "position": 3, "title": "Garage Floor Coating Services | Houston Coatings Co", "link": "https://houstoncoatingsco.com/service-area/north-texas" },
+    { "position": 4, "title": "Best Epoxy Floors in DFW", "link": "https://dfwfloorpros.com/services/epoxy" },
+    { "position": 5, "title": "How to Epoxy Your Garage Floor - Lowe's", "link": "https://www.lowes.com/n/how-to/epoxy-garage-floor" },
+    { "position": 6, "title": "Epoxy flooring contractors - HomeAdvisor", "link": "https://www.homeadvisor.com/c.Epoxy.Prosper.TX.html" },
+    { "position": 7, "title": "r/epoxy - anyone in north texas?", "link": "https://www.reddit.com/r/epoxy/comments/abc" },
+    { "position": 8, "title": "Prosper TX community page", "link": "https://www.facebook.com/groups/prospertx" },
+    { "position": 9, "title": "Metallic epoxy ideas", "link": "https://www.houzz.com/photos/epoxy-floor" },
+    { "position": 10, "title": "Garage makeovers", "link": "https://www.bobvila.com/articles/garage-floor-epoxy" }
+  ],
+  "local_results": {
+    "places": [
+      { "title": "Joe's Garage Floors", "rating": 4.2, "reviews": 12, "type": "Flooring contractor" },
+      { "title": "TX Epoxy Pros", "rating": 5, "reviews": 31, "links": { "website": "https://txepoxypros.com" }, "type": "Flooring contractor" },
+      { "title": "Shiny Floors LLC", "rating": 4.8, "reviews": 8, "type": "Flooring contractor" }
+    ]
+  },
+  "ads": [
+    { "title": "Epoxy Floors Prosper - Free Quote", "link": "https://garagekingsdfw.com/quote", "displayed_link": "garagekingsdfw.com" },
+    { "title": "Garage Floor Coatings", "link": "https://www.example-coatings.com", "displayed_link": "example-coatings.com" }
+  ]
+}

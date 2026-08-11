@@ -11,11 +11,16 @@
  *    points back to the run that produced it; also carries cost accounting
  *    and idempotency for Phase-2 collectors.
  *
+ * Phase 2 additions: serpSnapshots (SERPs are structured multi-part
+ * evidence a flat observation cannot hold queryably) and budgetLedger
+ * (append-only research-spend accounting enforcing the cost cap), plus
+ * `legacy` on observations (V0-imported evidence must never become V2
+ * truth by inheritance — see observations.ts selection rules).
+ *
  * Deliberately NOT implemented yet (conceptual only, see implementation
- * plan §7): serpSnapshots + budgetLedger (Phase 2 collectors),
- * operators (Phase 3), scoringModels + scoreRuns (Phase 4),
- * domainCandidates (first domain research), portfolioRuns/Selections
- * (Phase 8).
+ * plan §7): operators (Phase 3), scoringModels + scoreRuns (Phase 4),
+ * domainCandidates (first domain research phase — Phase-2 domain checks
+ * record summary observations instead), portfolioRuns/Selections (Phase 8).
  */
 import { defineSchema, defineTable } from "convex/server";
 import { v } from "convex/values";
@@ -42,6 +47,12 @@ export default defineSchema({
     name: v.string(),
     slug: v.string(),
     synonyms: v.array(v.string()),
+    /** Full SERP query phrase, e.g. "epoxy garage floor coating" (collectors). */
+    queryPhrase: v.optional(v.string()),
+    /** Short phrase people actually type, e.g. "epoxy flooring" (keywords/autocomplete). */
+    acPhrase: v.optional(v.string()),
+    /** Domain-name terms for candidate generation (domains collector). */
+    domainTerms: v.optional(v.array(v.string())),
     category: v.optional(v.string()),
     discoveryType,
     status: v.union(
@@ -115,11 +126,69 @@ export default defineSchema({
     recordedAt: v.number(), // epoch ms, when we wrote it
     rationale: v.optional(v.string()), // required for HUMAN_ASSUMED (enforced in mutation)
     researchRunId: v.optional(v.id("researchRuns")),
+    /**
+     * true = imported from V0 (or any pre-V2 system). Legacy observations
+     * seed research and provide fallback context, but evidence selection
+     * prefers ANY independently collected V2 observation over ANY legacy
+     * one, regardless of timestamps. Never authoritative by inheritance.
+     */
+    legacy: v.optional(v.boolean()),
   })
     .index("by_opportunity_metric", ["opportunityId", "metric", "observedAt"])
     .index("by_geography_metric", ["geographyId", "metric", "observedAt"])
     .index("by_service_metric", ["serviceId", "metric", "observedAt"])
     .index("by_researchRun", ["researchRunId"]),
+
+  serpSnapshots: defineTable({
+    opportunityId: v.id("opportunities"),
+    keyword: v.string(),
+    location: v.string(),
+    engine: v.string(), // "google"
+    variant: v.optional(v.string()), // deep-check variant label, if any
+    fetchedAt: v.number(),
+    organic: v.array(
+      v.object({
+        position: v.number(),
+        title: v.optional(v.string()),
+        link: v.optional(v.string()),
+        domain: v.optional(v.string()),
+        snippet: v.optional(v.string()),
+      }),
+    ),
+    localPack: v.array(
+      v.object({
+        name: v.string(),
+        rating: v.optional(v.number()),
+        reviews: v.optional(v.number()),
+        website: v.optional(v.string()),
+        type: v.optional(v.string()),
+      }),
+    ),
+    ads: v.array(
+      v.object({
+        title: v.optional(v.string()),
+        link: v.optional(v.string()),
+        displayedLink: v.optional(v.string()),
+      }),
+    ),
+    /** Deterministic extraction (lib/serp/signals.ts), versioned. */
+    signals: v.any(),
+    signalsVersion: v.string(),
+    /** true = imported from V0 raw cache when recovered; never used for freshness. */
+    historic: v.optional(v.boolean()),
+    researchRunId: v.optional(v.id("researchRuns")),
+    costUsd: v.number(),
+  })
+    .index("by_opportunity", ["opportunityId", "fetchedAt"])
+    .index("by_keyword_location", ["keyword", "location"]),
+
+  budgetLedger: defineTable({
+    researchRunId: v.id("researchRuns"),
+    kind: v.string(),
+    provider: v.string(),
+    usd: v.number(),
+    at: v.number(),
+  }).index("by_kind", ["kind"]),
 
   researchRuns: defineTable({
     kind: v.string(), // e.g. "import:v0", "serp", "keywords", "ai:economics"
