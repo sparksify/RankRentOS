@@ -1,0 +1,44 @@
+{
+  "_doc": "Industry -> Service taxonomy. source:'seed' = editorial starting point; source:'evidence' = discovered from SERP related_searches/PAA/autocomplete via families.js discovery (preferred long-term). parentService=null means top-level service of the industry.",
+  "concrete": {
+    "label": "Concrete",
+    "services": [
+      { "id": "concrete-leveling", "label": "Concrete Leveling", "parentService": null, "aliases": ["slab lifting", "mudjacking", "slabjacking"], "source": "seed" },
+      { "id": "driveway-leveling", "label": "Driveway Leveling", "parentService": "concrete-leveling", "aliases": [], "source": "seed" },
+      { "id": "sidewalk-leveling", "label": "Sidewalk Leveling", "parentService": "concrete-leveling", "aliases": [], "source": "seed" },
+      { "id": "pool-deck-leveling", "label": "Pool Deck Leveling", "parentService": "concrete-leveling", "aliases": [], "source": "seed" },
+      { "id": "polyjacking", "label": "Polyjacking", "parentService": "concrete-leveling", "aliases": ["polyurethane concrete lifting"], "source": "seed" },
+      { "id": "commercial-concrete-leveling", "label": "Commercial Concrete Leveling", "parentService": "concrete-leveling", "aliases": [], "source": "seed" },
+      { "id": "concrete-driveways", "label": "Concrete Driveways & Patios", "parentService": null, "aliases": [], "source": "seed" }
+    ]
+  },
+  "roofing": {
+    "label": "Roofing",
+    "services": [
+      { "id": "metal-roofing", "label": "Metal Roofing", "parentService": null, "aliases": ["standing seam roofing"], "source": "seed" },
+      { "id": "roof-repair", "label": "Roof Repair", "parentService": null, "aliases": [], "source": "seed" },
+      { "id": "roof-replacement", "label": "Roof Replacement", "parentService": null, "aliases": [], "source": "seed" },
+      { "id": "storm-damage-roofing", "label": "Storm Damage Roofing", "parentService": "roof-repair", "aliases": ["hail damage roof repair"], "source": "seed" },
+      { "id": "commercial-roofing", "label": "Commercial Roofing", "parentService": null, "aliases": ["flat roofing", "roof coating"], "source": "seed" },
+      { "id": "tile-roofing", "label": "Tile Roofing", "parentService": null, "aliases": [], "source": "seed" }
+    ]
+  },
+  "plumbing": {
+    "label": "Plumbing",
+    "services": [
+      { "id": "sewer-line-repair", "label": "Sewer Line Repair", "parentService": null, "aliases": ["sewer replacement"], "source": "seed" },
+      { "id": "hydro-jetting", "label": "Hydro Jetting", "parentService": "sewer-line-repair", "aliases": [], "source": "seed" },
+      { "id": "slab-leak-repair", "label": "Slab Leak Repair", "parentService": null, "aliases": ["slab leak detection"], "source": "seed" },
+      { "id": "water-heaters", "label": "Water Heater Replacement", "parentService": null, "aliases": ["tankless water heater installation"], "source": "seed" },
+      { "id": "repiping", "label": "Whole-House Repiping", "parentService": null, "aliases": [], "source": "seed" },
+      { "id": "drain-cleaning", "label": "Drain Cleaning", "parentService": null, "aliases": [], "source": "seed" }
+    ]
+  },
+  "tree-service": {
+    "label": "Tree Service",
+    "services": [
+      { "id": "stump-grinding", "label": "Stump Grinding", "parentService": null, "aliases": ["stump removal"], "source": "seed" },
+      { "id": "tree-removal", "label": "Tree Removal", "parentService": null, "aliases": [], "source": "seed" }
+    ]
+  }
+}
