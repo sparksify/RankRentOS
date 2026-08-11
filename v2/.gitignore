@@ -10,3 +10,6 @@ out/
 
 # convex local artifacts
 .convex/
+
+# ts build artifacts
+tsconfig.tsbuildinfo
