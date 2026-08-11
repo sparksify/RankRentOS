@@ -39,12 +39,12 @@ const fromRow = (r: any) => ({
 export function createSupabaseStore(): Store {
   return {
     async insertObservation(o) {
-      assertValidObservation(o);
+      assertValidObservation(o, Date.now());
       const [r] = await rest("observations", { method: "POST", body: JSON.stringify([toRow(o)]) });
       return fromRow(r);
     },
     async insertBatch(os) {
-      os.forEach((o) => assertValidObservation(o)); // validate all before sending; single POST = atomic
+      os.forEach((o) => assertValidObservation(o, Date.now())); // validate all before sending; single POST = atomic
       const rows = await rest("observations", { method: "POST", body: JSON.stringify(os.map(toRow)) });
       return rows.map(fromRow);
     },
@@ -82,7 +82,7 @@ export function createSupabaseStore(): Store {
     async charge(runId, provider, units, costUsd) {
       const run = await this.getRun(runId); if (!run) throw new Error(`no run ${runId}`);
       const already = await this.spent(runId);
-      try { assertBudget(run.budgetCapUsd, already, costUsd); }
+      try { assertBudget(provider, costUsd, run.budgetCapUsd - already); }
       catch (e) {
         await rest("budget_ledger", { method: "POST", body: JSON.stringify([{ run_id: runId, provider, units, cost_usd: costUsd, refused: true }]) });
         throw e;

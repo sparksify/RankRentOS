@@ -16,7 +16,7 @@ export function createMemoryStore(now: () => number = () => Date.now()): Store {
   const ledger: LedgerEntry[] = [];
 
   function validate(o: ObservationInput & { legacy?: boolean }) {
-    assertValidObservation(o); // taxonomy, metric registry, AI citation guard, subject rules
+    assertValidObservation(o, now()); // taxonomy, metric registry, AI citation guard
   }
 
   return {
@@ -75,7 +75,7 @@ export function createMemoryStore(now: () => number = () => Date.now()): Store {
       const r = runs.get(runId); if (!r) throw new Error(`no run ${runId}`);
       const already = ledger.filter((l) => l.runId === runId && !l.refused).reduce((s, l) => s + l.costUsd, 0);
       try {
-        assertBudget(r.budgetCapUsd, already, costUsd);
+        assertBudget(provider, costUsd, r.budgetCapUsd - already);
       } catch (e) {
         ledger.push({ id: nid("led"), runId, provider, units, costUsd, refused: true, createdAt: now() });
         throw e;
