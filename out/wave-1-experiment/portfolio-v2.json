@@ -10,15 +10,15 @@
   "note": "Both rankability models are carried separately on every asset. Neither is overwritten and neither is assumed correct; Wave 1 is the arbiter."
  },
  "selectionStandards": {
-  "groupA": "measured demand >= 100/mo AND F >= 50 AND organic-v1.1 >= 55 AND geography verified; max 3/service, 2/city",
+  "groupA": "measured demand >= 100/mo AND F >= 50 AND organic-v1.2 >= 55 AND viable renters >= 1 AND geography verified; max 3/service, 2/city",
   "groupB": "community assets are NOT gated on measured volume (that is the hypothesis); admitted on community scale, buildout, affluence, organic-v1.1 and domain availability; matched into pairs then split across architectures",
   "groupC": "selected for information value, explicitly labelled EXPERIMENTAL and never counted as investment-grade"
  },
  "totals": {
-  "rankablePages": 27,
-  "websites": 22,
-  "domainsRequired": 22,
-  "groupA": 6,
+  "rankablePages": 26,
+  "websites": 21,
+  "domainsRequired": 21,
+  "groupA": 5,
   "groupB1_standalone": 6,
   "groupB2_hub": 6,
   "groupB3_controls": 3,
@@ -64,11 +64,11 @@
   }
  ],
  "economics": {
-  "domainCost": 267.96,
-  "upfrontCapital": 618.96,
-  "monthlyCarrying": 35.5,
-  "sixMonthExperimentCost": 831.96,
-  "twelveMonthRiskCapital": 1378.92,
+  "domainCost": 255.78,
+  "upfrontCapital": 593.78,
+  "monthlyCarrying": 34,
+  "sixMonthExperimentCost": 797.78,
+  "twelveMonthRiskCapital": 1320.56,
   "costBasis": {
    "known": {
     "domainFirstYear": 12.18,
@@ -92,7 +92,7 @@
  "preRegistration": {
   "predictorsUnderTest": [
    "dimensionA",
-   "organicV1_1",
+   "organicV1_2",
    "measuredVolume",
    "cpc",
    "renterDepthE",
@@ -105,14 +105,80 @@
    "architectureTreatment"
   ],
   "chain": "rankability -> traffic -> leads -> rentability, each stage measured separately so failure can be localised",
-  "joinKey": "experimentId joins pre-launch evidence -> deployment -> ranking -> traffic -> leads -> rentability"
+  "joinKey": "experimentId joins pre-launch evidence -> deployment -> ranking -> traffic -> leads -> rentability",
+  "rankingTrajectory": {
+   "observationSchema": {
+    "experimentId": "string",
+    "query": "string",
+    "queryRole": "primary|secondary|community-modified|city-level|unpredicted",
+    "checkDate": "ISO date",
+    "position": "integer 1-100, or null = not in top 100 (UNKNOWN is not 101)",
+    "rankingUrl": "string",
+    "serpFeaturesPresent": "string[]",
+    "device": "desktop",
+    "location": "the asset's city/community"
+   },
+   "cadence": "weekly from publishDate through week 12, then fortnightly through week 26",
+   "queriesPerAsset": {
+    "primary": "1 — the exact service+geography query the asset targets",
+    "secondary": "2-4 close variants",
+    "communityModified": "community assets only: community-name and service+community queries",
+    "unpredicted": "any query Search Console reports impressions for that no keyword tool predicted — the direct test of hyper-local under-measurement"
+   },
+   "derived": [
+    "daysToFirstTop100",
+    "daysToTop50",
+    "daysToTop20",
+    "daysToTop10",
+    "daysToTop5",
+    "positionSlopePerWeek",
+    "positionVolatility",
+    "peakPosition",
+    "positionAtDay90",
+    "positionAtDay180"
+   ],
+   "nullHandling": "position null means NOT FOUND in the top 100 — it must never be stored as 101 or 0, and an unchecked week must be absent rather than null"
+  },
+  "primaryEndpoint": "daysToTop20 on the primary query",
+  "secondaryEndpoints": [
+   "positionAtDay90",
+   "daysToFirstImpression",
+   "impressionsAtDay180",
+   "leadsAtDay180"
+  ],
+  "analyses": [
+   {
+    "id": "H1-model-validation",
+    "question": "Does Dimension A or organic-v1.2 better predict ranking speed?",
+    "method": "Spearman rank correlation of each score against daysToTop20 across all city assets (Groups A and C, n=11). The six pre-identified disagreement assets carry the most weight because the models make opposite predictions there.",
+    "decisionRule": "If organic-v1.2 correlates more strongly with daysToTop20 AND both ~50-point disagreement assets (Rochester, Naperville) fail to reach top 20, rebuild Dimension A as A-2.0.0 around organic structure. If they rank, retain A unchanged."
+   },
+   {
+    "id": "H2-community-demand",
+    "question": "Do zero-volume community queries produce real search activity?",
+    "method": "Compare impressions and unpredicted-query counts for the 12 community assets against the 3 city controls, normalised by measured volume (Frisco 320 / McKinney 210 / Prosper 10 / community 0).",
+    "decisionRule": "If community assets generate impressions materially above what their 0/mo would imply relative to the control gradient, keyword tools under-measure hyper-local demand and community expansion is justified."
+   },
+   {
+    "id": "H3-architecture",
+    "question": "Standalone hyperlocal domain or page on a regional hub?",
+    "method": "WITHIN-PAIR difference in daysToTop20 and positionAtDay90 across the 6 matched pairs; paired sign test plus mean within-pair delta. Pairing is what controls for community quality.",
+    "decisionRule": "Requires >=4 of 6 pairs to yield interpretable data; otherwise the architecture verdict is declared VOID rather than reported weakly."
+   },
+   {
+    "id": "H4-rentability",
+    "question": "Does the $300/mo rentability floor sit in the right place?",
+    "method": "Compare realised monthlyRentRealized against assetValueF for every asset that acquires a renter, with House Cleaning Orlando (F=34) as the designated probe below the floor."
+   }
+  ]
  },
  "measurementFields": [
   "publishDate",
   "indexDate",
   "firstImpressionDate",
   "firstRankingDate",
-  "targetQueryRankingHistory",
+  "timeToTop100",
+  "timeToTop50",
   "timeToTop20",
   "timeToTop10",
   "timeToTop5",
@@ -131,154 +197,243 @@
   "rentalAgreementAchieved",
   "monthlyRentRealized"
  ],
+ "rankingTrajectory": {
+  "observationSchema": {
+   "experimentId": "string",
+   "query": "string",
+   "queryRole": "primary|secondary|community-modified|city-level|unpredicted",
+   "checkDate": "ISO date",
+   "position": "integer 1-100, or null = not in top 100 (UNKNOWN is not 101)",
+   "rankingUrl": "string",
+   "serpFeaturesPresent": "string[]",
+   "device": "desktop",
+   "location": "the asset's city/community"
+  },
+  "cadence": "weekly from publishDate through week 12, then fortnightly through week 26",
+  "queriesPerAsset": {
+   "primary": "1 — the exact service+geography query the asset targets",
+   "secondary": "2-4 close variants",
+   "communityModified": "community assets only: community-name and service+community queries",
+   "unpredicted": "any query Search Console reports impressions for that no keyword tool predicted — the direct test of hyper-local under-measurement"
+  },
+  "derived": [
+   "daysToFirstTop100",
+   "daysToTop50",
+   "daysToTop20",
+   "daysToTop10",
+   "daysToTop5",
+   "positionSlopePerWeek",
+   "positionVolatility",
+   "peakPosition",
+   "positionAtDay90",
+   "positionAtDay180"
+  ],
+  "nullHandling": "position null means NOT FOUND in the top 100 — it must never be stored as 101 or 0, and an unchecked week must be absent rather than null"
+ },
+ "frozen": {
+  "isFrozen": true,
+  "frozenAt": "2026-08-12",
+  "baseline": "WAVE-1-FROZEN-BASELINE",
+  "note": "Scores, selections, endpoints and analyses are FROZEN as of this build. Live outcomes are compared against these values; nothing here may be edited retrospectively. Any change requires a new version.",
+  "modelVersionsAtFreeze": {
+   "dimensionA": "ai-v1.0.0",
+   "organic": "organic-v1.2",
+   "weights": "w-balanced-v1.1",
+   "buckets": "buckets-1.1.0"
+  }
+ },
+ "purchaseList": [
+  {
+   "domain": "bathroomremodelingofarvada.com",
+   "role": "A-EXPLOITATION — Bathroom Remodeling Arvada",
+   "forAssets": [
+    "W1-A-001"
+   ],
+   "availableAtFreeze": true,
+   "approxFirstYearUsd": 12.18
+  },
+  {
+   "domain": "windowreplacementmidland.com",
+   "role": "A-EXPLOITATION — Window Replacement Midland",
+   "forAssets": [
+    "W1-A-002"
+   ],
+   "availableAtFreeze": true,
+   "approxFirstYearUsd": 12.18
+  },
+  {
+   "domain": "windowreplacementtemecula.com",
+   "role": "A-EXPLOITATION — Window Replacement Temecula",
+   "forAssets": [
+    "W1-A-003"
+   ],
+   "availableAtFreeze": true,
+   "approxFirstYearUsd": 12.18
+  },
+  {
+   "domain": "windowreplacementvancouverwa.com",
+   "role": "A-EXPLOITATION — Window Replacement Vancouver",
+   "forAssets": [
+    "W1-A-004"
+   ],
+   "availableAtFreeze": true,
+   "approxFirstYearUsd": 12.18
+  },
+  {
+   "domain": "kitchenremodelingfriscotx.com",
+   "role": "A-EXPLOITATION — Kitchen Remodeling Frisco",
+   "forAssets": [
+    "W1-A-005"
+   ],
+   "availableAtFreeze": true,
+   "approxFirstYearUsd": 12.18
+  },
+  {
+   "domain": "poolbuildersuttonfields.com",
+   "role": "B1-NTX-STANDALONE — Pool Builder Sutton Fields",
+   "forAssets": [
+    "W1-B1-001"
+   ],
+   "availableAtFreeze": true,
+   "approxFirstYearUsd": 12.18
+  },
+  {
+   "domain": "poolbuildersnorthtexas.com",
+   "role": "regional hub (shared by 6 community pages)",
+   "forAssets": [],
+   "availableAtFreeze": true,
+   "approxFirstYearUsd": 12.18
+  },
+  {
+   "domain": "poolbuildersandbrockranch.com",
+   "role": "B1-NTX-STANDALONE — Pool Builder Sandbrock Ranch",
+   "forAssets": [
+    "W1-B1-003"
+   ],
+   "availableAtFreeze": true,
+   "approxFirstYearUsd": 12.18
+  },
+  {
+   "domain": "poolbuilderpaintedtree.com",
+   "role": "B1-NTX-STANDALONE — Pool Builder Painted Tree",
+   "forAssets": [
+    "W1-B1-005"
+   ],
+   "availableAtFreeze": true,
+   "approxFirstYearUsd": 12.18
+  },
+  {
+   "domain": "poolbuildermosaic.com",
+   "role": "B1-NTX-STANDALONE — Pool Builder Mosaic",
+   "forAssets": [
+    "W1-B1-007"
+   ],
+   "availableAtFreeze": true,
+   "approxFirstYearUsd": 12.18
+  },
+  {
+   "domain": "poolbuildernewmanvillage.com",
+   "role": "B1-NTX-STANDALONE — Pool Builder Newman Village",
+   "forAssets": [
+    "W1-B1-009"
+   ],
+   "availableAtFreeze": true,
+   "approxFirstYearUsd": 12.18
+  },
+  {
+   "domain": "poolbuildercambridgecrossing.com",
+   "role": "B1-NTX-STANDALONE — Pool Builder Cambridge Crossing",
+   "forAssets": [
+    "W1-B1-011"
+   ],
+   "availableAtFreeze": true,
+   "approxFirstYearUsd": 12.18
+  },
+  {
+   "domain": "poolbuilderfriscotx.com",
+   "role": "B3-CITY-CONTROL — Pool Builder Frisco",
+   "forAssets": [
+    "W1-B3-001"
+   ],
+   "availableAtFreeze": true,
+   "approxFirstYearUsd": 12.18
+  },
+  {
+   "domain": "poolbuildermckinneytx.com",
+   "role": "B3-CITY-CONTROL — Pool Builder McKinney",
+   "forAssets": [
+    "W1-B3-002"
+   ],
+   "availableAtFreeze": true,
+   "approxFirstYearUsd": 12.18
+  },
+  {
+   "domain": "poolbuilderprospertx.com",
+   "role": "B3-CITY-CONTROL — Pool Builder Prosper",
+   "forAssets": [
+    "W1-B3-003"
+   ],
+   "availableAtFreeze": true,
+   "approxFirstYearUsd": 12.18
+  },
+  {
+   "domain": "metalroofingrochester.com",
+   "role": "C-MODEL-VALIDATION — Metal Roofing Rochester",
+   "forAssets": [
+    "W1-C-001"
+   ],
+   "availableAtFreeze": true,
+   "approxFirstYearUsd": 12.18
+  },
+  {
+   "domain": "basementwaterproofingofnaperville.com",
+   "role": "C-MODEL-VALIDATION — Basement Waterproofing Naperville",
+   "forAssets": [
+    "W1-C-002"
+   ],
+   "availableAtFreeze": true,
+   "approxFirstYearUsd": 12.18
+  },
+  {
+   "domain": "bathroomremodelingbellevuene.com",
+   "role": "C-MODEL-VALIDATION — Bathroom Remodeling Bellevue",
+   "forAssets": [
+    "W1-C-003"
+   ],
+   "availableAtFreeze": true,
+   "approxFirstYearUsd": 12.18
+  },
+  {
+   "domain": "housecleaningoforlando.com",
+   "role": "C-MODEL-VALIDATION — House Cleaning Orlando",
+   "forAssets": [
+    "W1-C-004"
+   ],
+   "availableAtFreeze": true,
+   "approxFirstYearUsd": 12.18
+  },
+  {
+   "domain": "kitchenremodelingrockvillemd.com",
+   "role": "C-MODEL-VALIDATION — Kitchen Remodeling Rockville",
+   "forAssets": [
+    "W1-C-005"
+   ],
+   "availableAtFreeze": true,
+   "approxFirstYearUsd": 12.18
+  },
+  {
+   "domain": "appliancerepairofaurora.com",
+   "role": "C-MODEL-VALIDATION — Appliance Repair Aurora",
+   "forAssets": [
+    "W1-C-006"
+   ],
+   "availableAtFreeze": true,
+   "approxFirstYearUsd": 12.18
+  }
+ ],
  "assets": [
   {
    "experimentId": "W1-A-001",
-   "cohort": "A-EXPLOITATION",
-   "treatment": "standalone-city-site",
-   "assetType": "standalone-site",
-   "service": "Bathroom Remodeling",
-   "serviceSlug": "bathroom-remodel",
-   "geography": "Conroe",
-   "state": "TX",
-   "geographyType": "city",
-   "urlArchitecture": "bathroomremodelingofconroe.com (root targets the city+service query)",
-   "measuredVolume": 260,
-   "volumeState": "measured",
-   "demandProven": true,
-   "cpc": 22.19,
-   "ticketAssumed": 18000,
-   "marginAssumed": 0.32,
-   "leadValueAssumedUsd": 576,
-   "dimensionA": 91,
-   "dimensionAVersion": "A-1.0.0",
-   "organicV1": 67,
-   "organicVerdict": "ORGANIC-VIABLE",
-   "organicVersion": "organic-v1.2",
-   "organicTop5": [
-    "1. en.wikipedia.org [reference]",
-    "2. ikea.com [national-brand]",
-    "3. lowes.com [directory]",
-    "4. homedepot.com [directory]",
-    "5. houzz.com [directory]"
-   ],
-   "organicStructure": {
-    "distinctHostsTop5": 5,
-    "displaceableTop5": 4,
-    "hardLocalTop3": 1,
-    "geoTargetedCompetitorsTop5": 0
-   },
-   "modelDisagreement": 24,
-   "incumbentTargeting": "0 of 5 distinct top-5 hosts explicitly target Conroe",
-   "renterDepthE": 9,
-   "leadEconomicsD": 78,
-   "assetValueF": 51,
-   "asymmetryH": 48,
-   "compositeAI": 58,
-   "aiBucket": null,
-   "evidenceConfidence": 80,
-   "evidenceCompleteness": 100,
-   "renterContext": {
-    "relevantOperators": 10,
-    "viableRenters": 0,
-    "websiteAdoptionPct": 0
-   },
-   "localPackEvidence": {
-    "mapPackSize": 3,
-    "avgReviews": 23,
-    "note": "market evidence only — excluded from organic scoring"
-   },
-   "contentBarWords": 1329,
-   "competitorDomainAgeYears": 26.3,
-   "contentDirective": "SERP-derived, not a fixed word count: this is a commercial service query, so the deployment engine should build a commercial service/location experience benchmarked against the observed content bar, not a long informational article.",
-   "geographyVerified": true,
-   "geographyVerdict": "verified",
-   "reasonIncluded": "Meets the full pre-stated standard: 260/mo measured demand, F=51 (rentable, ~$576/lead), organic-v1.1 67, geography verified.",
-   "hypothesis": "An asset with real economics AND a beatable organic SERP should rank and rent. A=91 vs organic=67; where they disagree this asset also contributes model-validation evidence.",
-   "successCondition": "top-10 organic for the primary query within 6 months AND >=1 inbound lead within 9 months.",
-   "failureCondition": "no top-20 within 6 months, OR top-10 with zero leads after 3 further months (which falsifies demand, not rankability).",
-   "wasInPrior28": false,
-   "evidenceRefs": {
-    "experiment": "experiment-3",
-    "rawSerp": "out/experiment-3/raw/serp-bathroom_remodel_Conroe_TX.json",
-    "scoreModel": "ai-v1.0.0",
-    "weights": "w-balanced-v1.1",
-    "buckets": "buckets-1.1.0"
-   },
-   "measurementPlan": [
-    "publishDate",
-    "indexDate",
-    "firstImpressionDate",
-    "firstRankingDate",
-    "targetQueryRankingHistory",
-    "timeToTop20",
-    "timeToTop10",
-    "timeToTop5",
-    "impressions",
-    "clicks",
-    "organicSessions",
-    "calls",
-    "forms",
-    "leadsTotal",
-    "qualifiedLeads",
-    "leadValueEstimated",
-    "leadValueRealized",
-    "renterOutreach",
-    "renterResponses",
-    "renterInterest",
-    "rentalAgreementAchieved",
-    "monthlyRentRealized"
-   ],
-   "preRegistration": {
-    "predictorsUnderTest": [
-     "dimensionA",
-     "organicV1_1",
-     "measuredVolume",
-     "cpc",
-     "renterDepthE",
-     "leadEconomicsD",
-     "assetValueF",
-     "contentBarWords",
-     "competitorDomainAgeYears",
-     "geographyType",
-     "incumbentTargeting",
-     "architectureTreatment"
-    ],
-    "chain": "rankability -> traffic -> leads -> rentability, each stage measured separately so failure can be localised",
-    "joinKey": "experimentId joins pre-launch evidence -> deployment -> ranking -> traffic -> leads -> rentability"
-   },
-   "domainCandidates": [
-    {
-     "domain": "bathroomremodelingconroe.com",
-     "available": false,
-     "approxFirstYearUsd": 12.18
-    },
-    {
-     "domain": "bathroomremodelingconroetx.com",
-     "available": false,
-     "approxFirstYearUsd": 12.18
-    },
-    {
-     "domain": "conroebathroomremodeling.com",
-     "available": false,
-     "approxFirstYearUsd": 12.18
-    },
-    {
-     "domain": "bathroomremodelingofconroe.com",
-     "available": true,
-     "approxFirstYearUsd": 12.18
-    },
-    {
-     "domain": "conroebathroomremodelingpros.com",
-     "available": true,
-     "approxFirstYearUsd": 12.18
-    }
-   ],
-   "preferredDomain": "bathroomremodelingofconroe.com",
-   "domainAvailable": true
-  },
-  {
-   "experimentId": "W1-A-002",
    "cohort": "A-EXPLOITATION",
    "treatment": "standalone-city-site",
    "assetType": "standalone-site",
@@ -355,7 +510,8 @@
     "indexDate",
     "firstImpressionDate",
     "firstRankingDate",
-    "targetQueryRankingHistory",
+    "timeToTop100",
+    "timeToTop50",
     "timeToTop20",
     "timeToTop10",
     "timeToTop5",
@@ -377,7 +533,7 @@
    "preRegistration": {
     "predictorsUnderTest": [
      "dimensionA",
-     "organicV1_1",
+     "organicV1_2",
      "measuredVolume",
      "cpc",
      "renterDepthE",
@@ -390,7 +546,72 @@
      "architectureTreatment"
     ],
     "chain": "rankability -> traffic -> leads -> rentability, each stage measured separately so failure can be localised",
-    "joinKey": "experimentId joins pre-launch evidence -> deployment -> ranking -> traffic -> leads -> rentability"
+    "joinKey": "experimentId joins pre-launch evidence -> deployment -> ranking -> traffic -> leads -> rentability",
+    "rankingTrajectory": {
+     "observationSchema": {
+      "experimentId": "string",
+      "query": "string",
+      "queryRole": "primary|secondary|community-modified|city-level|unpredicted",
+      "checkDate": "ISO date",
+      "position": "integer 1-100, or null = not in top 100 (UNKNOWN is not 101)",
+      "rankingUrl": "string",
+      "serpFeaturesPresent": "string[]",
+      "device": "desktop",
+      "location": "the asset's city/community"
+     },
+     "cadence": "weekly from publishDate through week 12, then fortnightly through week 26",
+     "queriesPerAsset": {
+      "primary": "1 — the exact service+geography query the asset targets",
+      "secondary": "2-4 close variants",
+      "communityModified": "community assets only: community-name and service+community queries",
+      "unpredicted": "any query Search Console reports impressions for that no keyword tool predicted — the direct test of hyper-local under-measurement"
+     },
+     "derived": [
+      "daysToFirstTop100",
+      "daysToTop50",
+      "daysToTop20",
+      "daysToTop10",
+      "daysToTop5",
+      "positionSlopePerWeek",
+      "positionVolatility",
+      "peakPosition",
+      "positionAtDay90",
+      "positionAtDay180"
+     ],
+     "nullHandling": "position null means NOT FOUND in the top 100 — it must never be stored as 101 or 0, and an unchecked week must be absent rather than null"
+    },
+    "primaryEndpoint": "daysToTop20 on the primary query",
+    "secondaryEndpoints": [
+     "positionAtDay90",
+     "daysToFirstImpression",
+     "impressionsAtDay180",
+     "leadsAtDay180"
+    ],
+    "analyses": [
+     {
+      "id": "H1-model-validation",
+      "question": "Does Dimension A or organic-v1.2 better predict ranking speed?",
+      "method": "Spearman rank correlation of each score against daysToTop20 across all city assets (Groups A and C, n=11). The six pre-identified disagreement assets carry the most weight because the models make opposite predictions there.",
+      "decisionRule": "If organic-v1.2 correlates more strongly with daysToTop20 AND both ~50-point disagreement assets (Rochester, Naperville) fail to reach top 20, rebuild Dimension A as A-2.0.0 around organic structure. If they rank, retain A unchanged."
+     },
+     {
+      "id": "H2-community-demand",
+      "question": "Do zero-volume community queries produce real search activity?",
+      "method": "Compare impressions and unpredicted-query counts for the 12 community assets against the 3 city controls, normalised by measured volume (Frisco 320 / McKinney 210 / Prosper 10 / community 0).",
+      "decisionRule": "If community assets generate impressions materially above what their 0/mo would imply relative to the control gradient, keyword tools under-measure hyper-local demand and community expansion is justified."
+     },
+     {
+      "id": "H3-architecture",
+      "question": "Standalone hyperlocal domain or page on a regional hub?",
+      "method": "WITHIN-PAIR difference in daysToTop20 and positionAtDay90 across the 6 matched pairs; paired sign test plus mean within-pair delta. Pairing is what controls for community quality.",
+      "decisionRule": "Requires >=4 of 6 pairs to yield interpretable data; otherwise the architecture verdict is declared VOID rather than reported weakly."
+     },
+     {
+      "id": "H4-rentability",
+      "question": "Does the $300/mo rentability floor sit in the right place?",
+      "method": "Compare realised monthlyRentRealized against assetValueF for every asset that acquires a renter, with House Cleaning Orlando (F=34) as the designated probe below the floor."
+     }
+    ]
    },
    "domainCandidates": [
     {
@@ -420,10 +641,11 @@
     }
    ],
    "preferredDomain": "bathroomremodelingofarvada.com",
-   "domainAvailable": true
+   "domainAvailable": true,
+   "domainVerifiedAtFreeze": true
   },
   {
-   "experimentId": "W1-A-003",
+   "experimentId": "W1-A-002",
    "cohort": "A-EXPLOITATION",
    "treatment": "standalone-city-site",
    "assetType": "standalone-site",
@@ -500,7 +722,8 @@
     "indexDate",
     "firstImpressionDate",
     "firstRankingDate",
-    "targetQueryRankingHistory",
+    "timeToTop100",
+    "timeToTop50",
     "timeToTop20",
     "timeToTop10",
     "timeToTop5",
@@ -522,7 +745,7 @@
    "preRegistration": {
     "predictorsUnderTest": [
      "dimensionA",
-     "organicV1_1",
+     "organicV1_2",
      "measuredVolume",
      "cpc",
      "renterDepthE",
@@ -535,7 +758,72 @@
      "architectureTreatment"
     ],
     "chain": "rankability -> traffic -> leads -> rentability, each stage measured separately so failure can be localised",
-    "joinKey": "experimentId joins pre-launch evidence -> deployment -> ranking -> traffic -> leads -> rentability"
+    "joinKey": "experimentId joins pre-launch evidence -> deployment -> ranking -> traffic -> leads -> rentability",
+    "rankingTrajectory": {
+     "observationSchema": {
+      "experimentId": "string",
+      "query": "string",
+      "queryRole": "primary|secondary|community-modified|city-level|unpredicted",
+      "checkDate": "ISO date",
+      "position": "integer 1-100, or null = not in top 100 (UNKNOWN is not 101)",
+      "rankingUrl": "string",
+      "serpFeaturesPresent": "string[]",
+      "device": "desktop",
+      "location": "the asset's city/community"
+     },
+     "cadence": "weekly from publishDate through week 12, then fortnightly through week 26",
+     "queriesPerAsset": {
+      "primary": "1 — the exact service+geography query the asset targets",
+      "secondary": "2-4 close variants",
+      "communityModified": "community assets only: community-name and service+community queries",
+      "unpredicted": "any query Search Console reports impressions for that no keyword tool predicted — the direct test of hyper-local under-measurement"
+     },
+     "derived": [
+      "daysToFirstTop100",
+      "daysToTop50",
+      "daysToTop20",
+      "daysToTop10",
+      "daysToTop5",
+      "positionSlopePerWeek",
+      "positionVolatility",
+      "peakPosition",
+      "positionAtDay90",
+      "positionAtDay180"
+     ],
+     "nullHandling": "position null means NOT FOUND in the top 100 — it must never be stored as 101 or 0, and an unchecked week must be absent rather than null"
+    },
+    "primaryEndpoint": "daysToTop20 on the primary query",
+    "secondaryEndpoints": [
+     "positionAtDay90",
+     "daysToFirstImpression",
+     "impressionsAtDay180",
+     "leadsAtDay180"
+    ],
+    "analyses": [
+     {
+      "id": "H1-model-validation",
+      "question": "Does Dimension A or organic-v1.2 better predict ranking speed?",
+      "method": "Spearman rank correlation of each score against daysToTop20 across all city assets (Groups A and C, n=11). The six pre-identified disagreement assets carry the most weight because the models make opposite predictions there.",
+      "decisionRule": "If organic-v1.2 correlates more strongly with daysToTop20 AND both ~50-point disagreement assets (Rochester, Naperville) fail to reach top 20, rebuild Dimension A as A-2.0.0 around organic structure. If they rank, retain A unchanged."
+     },
+     {
+      "id": "H2-community-demand",
+      "question": "Do zero-volume community queries produce real search activity?",
+      "method": "Compare impressions and unpredicted-query counts for the 12 community assets against the 3 city controls, normalised by measured volume (Frisco 320 / McKinney 210 / Prosper 10 / community 0).",
+      "decisionRule": "If community assets generate impressions materially above what their 0/mo would imply relative to the control gradient, keyword tools under-measure hyper-local demand and community expansion is justified."
+     },
+     {
+      "id": "H3-architecture",
+      "question": "Standalone hyperlocal domain or page on a regional hub?",
+      "method": "WITHIN-PAIR difference in daysToTop20 and positionAtDay90 across the 6 matched pairs; paired sign test plus mean within-pair delta. Pairing is what controls for community quality.",
+      "decisionRule": "Requires >=4 of 6 pairs to yield interpretable data; otherwise the architecture verdict is declared VOID rather than reported weakly."
+     },
+     {
+      "id": "H4-rentability",
+      "question": "Does the $300/mo rentability floor sit in the right place?",
+      "method": "Compare realised monthlyRentRealized against assetValueF for every asset that acquires a renter, with House Cleaning Orlando (F=34) as the designated probe below the floor."
+     }
+    ]
    },
    "domainCandidates": [
     {
@@ -565,10 +853,11 @@
     }
    ],
    "preferredDomain": "windowreplacementmidland.com",
-   "domainAvailable": true
+   "domainAvailable": true,
+   "domainVerifiedAtFreeze": true
   },
   {
-   "experimentId": "W1-A-004",
+   "experimentId": "W1-A-003",
    "cohort": "A-EXPLOITATION",
    "treatment": "standalone-city-site",
    "assetType": "standalone-site",
@@ -645,7 +934,8 @@
     "indexDate",
     "firstImpressionDate",
     "firstRankingDate",
-    "targetQueryRankingHistory",
+    "timeToTop100",
+    "timeToTop50",
     "timeToTop20",
     "timeToTop10",
     "timeToTop5",
@@ -667,7 +957,7 @@
    "preRegistration": {
     "predictorsUnderTest": [
      "dimensionA",
-     "organicV1_1",
+     "organicV1_2",
      "measuredVolume",
      "cpc",
      "renterDepthE",
@@ -680,7 +970,72 @@
      "architectureTreatment"
     ],
     "chain": "rankability -> traffic -> leads -> rentability, each stage measured separately so failure can be localised",
-    "joinKey": "experimentId joins pre-launch evidence -> deployment -> ranking -> traffic -> leads -> rentability"
+    "joinKey": "experimentId joins pre-launch evidence -> deployment -> ranking -> traffic -> leads -> rentability",
+    "rankingTrajectory": {
+     "observationSchema": {
+      "experimentId": "string",
+      "query": "string",
+      "queryRole": "primary|secondary|community-modified|city-level|unpredicted",
+      "checkDate": "ISO date",
+      "position": "integer 1-100, or null = not in top 100 (UNKNOWN is not 101)",
+      "rankingUrl": "string",
+      "serpFeaturesPresent": "string[]",
+      "device": "desktop",
+      "location": "the asset's city/community"
+     },
+     "cadence": "weekly from publishDate through week 12, then fortnightly through week 26",
+     "queriesPerAsset": {
+      "primary": "1 — the exact service+geography query the asset targets",
+      "secondary": "2-4 close variants",
+      "communityModified": "community assets only: community-name and service+community queries",
+      "unpredicted": "any query Search Console reports impressions for that no keyword tool predicted — the direct test of hyper-local under-measurement"
+     },
+     "derived": [
+      "daysToFirstTop100",
+      "daysToTop50",
+      "daysToTop20",
+      "daysToTop10",
+      "daysToTop5",
+      "positionSlopePerWeek",
+      "positionVolatility",
+      "peakPosition",
+      "positionAtDay90",
+      "positionAtDay180"
+     ],
+     "nullHandling": "position null means NOT FOUND in the top 100 — it must never be stored as 101 or 0, and an unchecked week must be absent rather than null"
+    },
+    "primaryEndpoint": "daysToTop20 on the primary query",
+    "secondaryEndpoints": [
+     "positionAtDay90",
+     "daysToFirstImpression",
+     "impressionsAtDay180",
+     "leadsAtDay180"
+    ],
+    "analyses": [
+     {
+      "id": "H1-model-validation",
+      "question": "Does Dimension A or organic-v1.2 better predict ranking speed?",
+      "method": "Spearman rank correlation of each score against daysToTop20 across all city assets (Groups A and C, n=11). The six pre-identified disagreement assets carry the most weight because the models make opposite predictions there.",
+      "decisionRule": "If organic-v1.2 correlates more strongly with daysToTop20 AND both ~50-point disagreement assets (Rochester, Naperville) fail to reach top 20, rebuild Dimension A as A-2.0.0 around organic structure. If they rank, retain A unchanged."
+     },
+     {
+      "id": "H2-community-demand",
+      "question": "Do zero-volume community queries produce real search activity?",
+      "method": "Compare impressions and unpredicted-query counts for the 12 community assets against the 3 city controls, normalised by measured volume (Frisco 320 / McKinney 210 / Prosper 10 / community 0).",
+      "decisionRule": "If community assets generate impressions materially above what their 0/mo would imply relative to the control gradient, keyword tools under-measure hyper-local demand and community expansion is justified."
+     },
+     {
+      "id": "H3-architecture",
+      "question": "Standalone hyperlocal domain or page on a regional hub?",
+      "method": "WITHIN-PAIR difference in daysToTop20 and positionAtDay90 across the 6 matched pairs; paired sign test plus mean within-pair delta. Pairing is what controls for community quality.",
+      "decisionRule": "Requires >=4 of 6 pairs to yield interpretable data; otherwise the architecture verdict is declared VOID rather than reported weakly."
+     },
+     {
+      "id": "H4-rentability",
+      "question": "Does the $300/mo rentability floor sit in the right place?",
+      "method": "Compare realised monthlyRentRealized against assetValueF for every asset that acquires a renter, with House Cleaning Orlando (F=34) as the designated probe below the floor."
+     }
+    ]
    },
    "domainCandidates": [
     {
@@ -710,10 +1065,11 @@
     }
    ],
    "preferredDomain": "windowreplacementtemecula.com",
-   "domainAvailable": true
+   "domainAvailable": true,
+   "domainVerifiedAtFreeze": true
   },
   {
-   "experimentId": "W1-A-005",
+   "experimentId": "W1-A-004",
    "cohort": "A-EXPLOITATION",
    "treatment": "standalone-city-site",
    "assetType": "standalone-site",
@@ -790,7 +1146,8 @@
     "indexDate",
     "firstImpressionDate",
     "firstRankingDate",
-    "targetQueryRankingHistory",
+    "timeToTop100",
+    "timeToTop50",
     "timeToTop20",
     "timeToTop10",
     "timeToTop5",
@@ -812,7 +1169,7 @@
    "preRegistration": {
     "predictorsUnderTest": [
      "dimensionA",
-     "organicV1_1",
+     "organicV1_2",
      "measuredVolume",
      "cpc",
      "renterDepthE",
@@ -825,7 +1182,72 @@
      "architectureTreatment"
     ],
     "chain": "rankability -> traffic -> leads -> rentability, each stage measured separately so failure can be localised",
-    "joinKey": "experimentId joins pre-launch evidence -> deployment -> ranking -> traffic -> leads -> rentability"
+    "joinKey": "experimentId joins pre-launch evidence -> deployment -> ranking -> traffic -> leads -> rentability",
+    "rankingTrajectory": {
+     "observationSchema": {
+      "experimentId": "string",
+      "query": "string",
+      "queryRole": "primary|secondary|community-modified|city-level|unpredicted",
+      "checkDate": "ISO date",
+      "position": "integer 1-100, or null = not in top 100 (UNKNOWN is not 101)",
+      "rankingUrl": "string",
+      "serpFeaturesPresent": "string[]",
+      "device": "desktop",
+      "location": "the asset's city/community"
+     },
+     "cadence": "weekly from publishDate through week 12, then fortnightly through week 26",
+     "queriesPerAsset": {
+      "primary": "1 — the exact service+geography query the asset targets",
+      "secondary": "2-4 close variants",
+      "communityModified": "community assets only: community-name and service+community queries",
+      "unpredicted": "any query Search Console reports impressions for that no keyword tool predicted — the direct test of hyper-local under-measurement"
+     },
+     "derived": [
+      "daysToFirstTop100",
+      "daysToTop50",
+      "daysToTop20",
+      "daysToTop10",
+      "daysToTop5",
+      "positionSlopePerWeek",
+      "positionVolatility",
+      "peakPosition",
+      "positionAtDay90",
+      "positionAtDay180"
+     ],
+     "nullHandling": "position null means NOT FOUND in the top 100 — it must never be stored as 101 or 0, and an unchecked week must be absent rather than null"
+    },
+    "primaryEndpoint": "daysToTop20 on the primary query",
+    "secondaryEndpoints": [
+     "positionAtDay90",
+     "daysToFirstImpression",
+     "impressionsAtDay180",
+     "leadsAtDay180"
+    ],
+    "analyses": [
+     {
+      "id": "H1-model-validation",
+      "question": "Does Dimension A or organic-v1.2 better predict ranking speed?",
+      "method": "Spearman rank correlation of each score against daysToTop20 across all city assets (Groups A and C, n=11). The six pre-identified disagreement assets carry the most weight because the models make opposite predictions there.",
+      "decisionRule": "If organic-v1.2 correlates more strongly with daysToTop20 AND both ~50-point disagreement assets (Rochester, Naperville) fail to reach top 20, rebuild Dimension A as A-2.0.0 around organic structure. If they rank, retain A unchanged."
+     },
+     {
+      "id": "H2-community-demand",
+      "question": "Do zero-volume community queries produce real search activity?",
+      "method": "Compare impressions and unpredicted-query counts for the 12 community assets against the 3 city controls, normalised by measured volume (Frisco 320 / McKinney 210 / Prosper 10 / community 0).",
+      "decisionRule": "If community assets generate impressions materially above what their 0/mo would imply relative to the control gradient, keyword tools under-measure hyper-local demand and community expansion is justified."
+     },
+     {
+      "id": "H3-architecture",
+      "question": "Standalone hyperlocal domain or page on a regional hub?",
+      "method": "WITHIN-PAIR difference in daysToTop20 and positionAtDay90 across the 6 matched pairs; paired sign test plus mean within-pair delta. Pairing is what controls for community quality.",
+      "decisionRule": "Requires >=4 of 6 pairs to yield interpretable data; otherwise the architecture verdict is declared VOID rather than reported weakly."
+     },
+     {
+      "id": "H4-rentability",
+      "question": "Does the $300/mo rentability floor sit in the right place?",
+      "method": "Compare realised monthlyRentRealized against assetValueF for every asset that acquires a renter, with House Cleaning Orlando (F=34) as the designated probe below the floor."
+     }
+    ]
    },
    "domainCandidates": [
     {
@@ -855,10 +1277,11 @@
     }
    ],
    "preferredDomain": "windowreplacementvancouverwa.com",
-   "domainAvailable": true
+   "domainAvailable": true,
+   "domainVerifiedAtFreeze": true
   },
   {
-   "experimentId": "W1-A-006",
+   "experimentId": "W1-A-005",
    "cohort": "A-EXPLOITATION",
    "treatment": "standalone-city-site",
    "assetType": "standalone-site",
@@ -935,7 +1358,8 @@
     "indexDate",
     "firstImpressionDate",
     "firstRankingDate",
-    "targetQueryRankingHistory",
+    "timeToTop100",
+    "timeToTop50",
     "timeToTop20",
     "timeToTop10",
     "timeToTop5",
@@ -957,7 +1381,7 @@
    "preRegistration": {
     "predictorsUnderTest": [
      "dimensionA",
-     "organicV1_1",
+     "organicV1_2",
      "measuredVolume",
      "cpc",
      "renterDepthE",
@@ -970,7 +1394,72 @@
      "architectureTreatment"
     ],
     "chain": "rankability -> traffic -> leads -> rentability, each stage measured separately so failure can be localised",
-    "joinKey": "experimentId joins pre-launch evidence -> deployment -> ranking -> traffic -> leads -> rentability"
+    "joinKey": "experimentId joins pre-launch evidence -> deployment -> ranking -> traffic -> leads -> rentability",
+    "rankingTrajectory": {
+     "observationSchema": {
+      "experimentId": "string",
+      "query": "string",
+      "queryRole": "primary|secondary|community-modified|city-level|unpredicted",
+      "checkDate": "ISO date",
+      "position": "integer 1-100, or null = not in top 100 (UNKNOWN is not 101)",
+      "rankingUrl": "string",
+      "serpFeaturesPresent": "string[]",
+      "device": "desktop",
+      "location": "the asset's city/community"
+     },
+     "cadence": "weekly from publishDate through week 12, then fortnightly through week 26",
+     "queriesPerAsset": {
+      "primary": "1 — the exact service+geography query the asset targets",
+      "secondary": "2-4 close variants",
+      "communityModified": "community assets only: community-name and service+community queries",
+      "unpredicted": "any query Search Console reports impressions for that no keyword tool predicted — the direct test of hyper-local under-measurement"
+     },
+     "derived": [
+      "daysToFirstTop100",
+      "daysToTop50",
+      "daysToTop20",
+      "daysToTop10",
+      "daysToTop5",
+      "positionSlopePerWeek",
+      "positionVolatility",
+      "peakPosition",
+      "positionAtDay90",
+      "positionAtDay180"
+     ],
+     "nullHandling": "position null means NOT FOUND in the top 100 — it must never be stored as 101 or 0, and an unchecked week must be absent rather than null"
+    },
+    "primaryEndpoint": "daysToTop20 on the primary query",
+    "secondaryEndpoints": [
+     "positionAtDay90",
+     "daysToFirstImpression",
+     "impressionsAtDay180",
+     "leadsAtDay180"
+    ],
+    "analyses": [
+     {
+      "id": "H1-model-validation",
+      "question": "Does Dimension A or organic-v1.2 better predict ranking speed?",
+      "method": "Spearman rank correlation of each score against daysToTop20 across all city assets (Groups A and C, n=11). The six pre-identified disagreement assets carry the most weight because the models make opposite predictions there.",
+      "decisionRule": "If organic-v1.2 correlates more strongly with daysToTop20 AND both ~50-point disagreement assets (Rochester, Naperville) fail to reach top 20, rebuild Dimension A as A-2.0.0 around organic structure. If they rank, retain A unchanged."
+     },
+     {
+      "id": "H2-community-demand",
+      "question": "Do zero-volume community queries produce real search activity?",
+      "method": "Compare impressions and unpredicted-query counts for the 12 community assets against the 3 city controls, normalised by measured volume (Frisco 320 / McKinney 210 / Prosper 10 / community 0).",
+      "decisionRule": "If community assets generate impressions materially above what their 0/mo would imply relative to the control gradient, keyword tools under-measure hyper-local demand and community expansion is justified."
+     },
+     {
+      "id": "H3-architecture",
+      "question": "Standalone hyperlocal domain or page on a regional hub?",
+      "method": "WITHIN-PAIR difference in daysToTop20 and positionAtDay90 across the 6 matched pairs; paired sign test plus mean within-pair delta. Pairing is what controls for community quality.",
+      "decisionRule": "Requires >=4 of 6 pairs to yield interpretable data; otherwise the architecture verdict is declared VOID rather than reported weakly."
+     },
+     {
+      "id": "H4-rentability",
+      "question": "Does the $300/mo rentability floor sit in the right place?",
+      "method": "Compare realised monthlyRentRealized against assetValueF for every asset that acquires a renter, with House Cleaning Orlando (F=34) as the designated probe below the floor."
+     }
+    ]
    },
    "domainCandidates": [
     {
@@ -1000,7 +1489,8 @@
     }
    ],
    "preferredDomain": "kitchenremodelingfriscotx.com",
-   "domainAvailable": true
+   "domainAvailable": true,
+   "domainVerifiedAtFreeze": true
   },
   {
    "experimentId": "W1-B1-001",
@@ -1103,7 +1593,8 @@
     "indexDate",
     "firstImpressionDate",
     "firstRankingDate",
-    "targetQueryRankingHistory",
+    "timeToTop100",
+    "timeToTop50",
     "timeToTop20",
     "timeToTop10",
     "timeToTop5",
@@ -1125,7 +1616,7 @@
    "preRegistration": {
     "predictorsUnderTest": [
      "dimensionA",
-     "organicV1_1",
+     "organicV1_2",
      "measuredVolume",
      "cpc",
      "renterDepthE",
@@ -1138,8 +1629,74 @@
      "architectureTreatment"
     ],
     "chain": "rankability -> traffic -> leads -> rentability, each stage measured separately so failure can be localised",
-    "joinKey": "experimentId joins pre-launch evidence -> deployment -> ranking -> traffic -> leads -> rentability"
-   }
+    "joinKey": "experimentId joins pre-launch evidence -> deployment -> ranking -> traffic -> leads -> rentability",
+    "rankingTrajectory": {
+     "observationSchema": {
+      "experimentId": "string",
+      "query": "string",
+      "queryRole": "primary|secondary|community-modified|city-level|unpredicted",
+      "checkDate": "ISO date",
+      "position": "integer 1-100, or null = not in top 100 (UNKNOWN is not 101)",
+      "rankingUrl": "string",
+      "serpFeaturesPresent": "string[]",
+      "device": "desktop",
+      "location": "the asset's city/community"
+     },
+     "cadence": "weekly from publishDate through week 12, then fortnightly through week 26",
+     "queriesPerAsset": {
+      "primary": "1 — the exact service+geography query the asset targets",
+      "secondary": "2-4 close variants",
+      "communityModified": "community assets only: community-name and service+community queries",
+      "unpredicted": "any query Search Console reports impressions for that no keyword tool predicted — the direct test of hyper-local under-measurement"
+     },
+     "derived": [
+      "daysToFirstTop100",
+      "daysToTop50",
+      "daysToTop20",
+      "daysToTop10",
+      "daysToTop5",
+      "positionSlopePerWeek",
+      "positionVolatility",
+      "peakPosition",
+      "positionAtDay90",
+      "positionAtDay180"
+     ],
+     "nullHandling": "position null means NOT FOUND in the top 100 — it must never be stored as 101 or 0, and an unchecked week must be absent rather than null"
+    },
+    "primaryEndpoint": "daysToTop20 on the primary query",
+    "secondaryEndpoints": [
+     "positionAtDay90",
+     "daysToFirstImpression",
+     "impressionsAtDay180",
+     "leadsAtDay180"
+    ],
+    "analyses": [
+     {
+      "id": "H1-model-validation",
+      "question": "Does Dimension A or organic-v1.2 better predict ranking speed?",
+      "method": "Spearman rank correlation of each score against daysToTop20 across all city assets (Groups A and C, n=11). The six pre-identified disagreement assets carry the most weight because the models make opposite predictions there.",
+      "decisionRule": "If organic-v1.2 correlates more strongly with daysToTop20 AND both ~50-point disagreement assets (Rochester, Naperville) fail to reach top 20, rebuild Dimension A as A-2.0.0 around organic structure. If they rank, retain A unchanged."
+     },
+     {
+      "id": "H2-community-demand",
+      "question": "Do zero-volume community queries produce real search activity?",
+      "method": "Compare impressions and unpredicted-query counts for the 12 community assets against the 3 city controls, normalised by measured volume (Frisco 320 / McKinney 210 / Prosper 10 / community 0).",
+      "decisionRule": "If community assets generate impressions materially above what their 0/mo would imply relative to the control gradient, keyword tools under-measure hyper-local demand and community expansion is justified."
+     },
+     {
+      "id": "H3-architecture",
+      "question": "Standalone hyperlocal domain or page on a regional hub?",
+      "method": "WITHIN-PAIR difference in daysToTop20 and positionAtDay90 across the 6 matched pairs; paired sign test plus mean within-pair delta. Pairing is what controls for community quality.",
+      "decisionRule": "Requires >=4 of 6 pairs to yield interpretable data; otherwise the architecture verdict is declared VOID rather than reported weakly."
+     },
+     {
+      "id": "H4-rentability",
+      "question": "Does the $300/mo rentability floor sit in the right place?",
+      "method": "Compare realised monthlyRentRealized against assetValueF for every asset that acquires a renter, with House Cleaning Orlando (F=34) as the designated probe below the floor."
+     }
+    ]
+   },
+   "domainVerifiedAtFreeze": true
   },
   {
    "experimentId": "W1-B2-002",
@@ -1231,7 +1788,8 @@
     "indexDate",
     "firstImpressionDate",
     "firstRankingDate",
-    "targetQueryRankingHistory",
+    "timeToTop100",
+    "timeToTop50",
     "timeToTop20",
     "timeToTop10",
     "timeToTop5",
@@ -1253,7 +1811,7 @@
    "preRegistration": {
     "predictorsUnderTest": [
      "dimensionA",
-     "organicV1_1",
+     "organicV1_2",
      "measuredVolume",
      "cpc",
      "renterDepthE",
@@ -1266,8 +1824,74 @@
      "architectureTreatment"
     ],
     "chain": "rankability -> traffic -> leads -> rentability, each stage measured separately so failure can be localised",
-    "joinKey": "experimentId joins pre-launch evidence -> deployment -> ranking -> traffic -> leads -> rentability"
-   }
+    "joinKey": "experimentId joins pre-launch evidence -> deployment -> ranking -> traffic -> leads -> rentability",
+    "rankingTrajectory": {
+     "observationSchema": {
+      "experimentId": "string",
+      "query": "string",
+      "queryRole": "primary|secondary|community-modified|city-level|unpredicted",
+      "checkDate": "ISO date",
+      "position": "integer 1-100, or null = not in top 100 (UNKNOWN is not 101)",
+      "rankingUrl": "string",
+      "serpFeaturesPresent": "string[]",
+      "device": "desktop",
+      "location": "the asset's city/community"
+     },
+     "cadence": "weekly from publishDate through week 12, then fortnightly through week 26",
+     "queriesPerAsset": {
+      "primary": "1 — the exact service+geography query the asset targets",
+      "secondary": "2-4 close variants",
+      "communityModified": "community assets only: community-name and service+community queries",
+      "unpredicted": "any query Search Console reports impressions for that no keyword tool predicted — the direct test of hyper-local under-measurement"
+     },
+     "derived": [
+      "daysToFirstTop100",
+      "daysToTop50",
+      "daysToTop20",
+      "daysToTop10",
+      "daysToTop5",
+      "positionSlopePerWeek",
+      "positionVolatility",
+      "peakPosition",
+      "positionAtDay90",
+      "positionAtDay180"
+     ],
+     "nullHandling": "position null means NOT FOUND in the top 100 — it must never be stored as 101 or 0, and an unchecked week must be absent rather than null"
+    },
+    "primaryEndpoint": "daysToTop20 on the primary query",
+    "secondaryEndpoints": [
+     "positionAtDay90",
+     "daysToFirstImpression",
+     "impressionsAtDay180",
+     "leadsAtDay180"
+    ],
+    "analyses": [
+     {
+      "id": "H1-model-validation",
+      "question": "Does Dimension A or organic-v1.2 better predict ranking speed?",
+      "method": "Spearman rank correlation of each score against daysToTop20 across all city assets (Groups A and C, n=11). The six pre-identified disagreement assets carry the most weight because the models make opposite predictions there.",
+      "decisionRule": "If organic-v1.2 correlates more strongly with daysToTop20 AND both ~50-point disagreement assets (Rochester, Naperville) fail to reach top 20, rebuild Dimension A as A-2.0.0 around organic structure. If they rank, retain A unchanged."
+     },
+     {
+      "id": "H2-community-demand",
+      "question": "Do zero-volume community queries produce real search activity?",
+      "method": "Compare impressions and unpredicted-query counts for the 12 community assets against the 3 city controls, normalised by measured volume (Frisco 320 / McKinney 210 / Prosper 10 / community 0).",
+      "decisionRule": "If community assets generate impressions materially above what their 0/mo would imply relative to the control gradient, keyword tools under-measure hyper-local demand and community expansion is justified."
+     },
+     {
+      "id": "H3-architecture",
+      "question": "Standalone hyperlocal domain or page on a regional hub?",
+      "method": "WITHIN-PAIR difference in daysToTop20 and positionAtDay90 across the 6 matched pairs; paired sign test plus mean within-pair delta. Pairing is what controls for community quality.",
+      "decisionRule": "Requires >=4 of 6 pairs to yield interpretable data; otherwise the architecture verdict is declared VOID rather than reported weakly."
+     },
+     {
+      "id": "H4-rentability",
+      "question": "Does the $300/mo rentability floor sit in the right place?",
+      "method": "Compare realised monthlyRentRealized against assetValueF for every asset that acquires a renter, with House Cleaning Orlando (F=34) as the designated probe below the floor."
+     }
+    ]
+   },
+   "domainVerifiedAtFreeze": true
   },
   {
    "experimentId": "W1-B1-003",
@@ -1370,7 +1994,8 @@
     "indexDate",
     "firstImpressionDate",
     "firstRankingDate",
-    "targetQueryRankingHistory",
+    "timeToTop100",
+    "timeToTop50",
     "timeToTop20",
     "timeToTop10",
     "timeToTop5",
@@ -1392,7 +2017,7 @@
    "preRegistration": {
     "predictorsUnderTest": [
      "dimensionA",
-     "organicV1_1",
+     "organicV1_2",
      "measuredVolume",
      "cpc",
      "renterDepthE",
@@ -1405,8 +2030,74 @@
      "architectureTreatment"
     ],
     "chain": "rankability -> traffic -> leads -> rentability, each stage measured separately so failure can be localised",
-    "joinKey": "experimentId joins pre-launch evidence -> deployment -> ranking -> traffic -> leads -> rentability"
-   }
+    "joinKey": "experimentId joins pre-launch evidence -> deployment -> ranking -> traffic -> leads -> rentability",
+    "rankingTrajectory": {
+     "observationSchema": {
+      "experimentId": "string",
+      "query": "string",
+      "queryRole": "primary|secondary|community-modified|city-level|unpredicted",
+      "checkDate": "ISO date",
+      "position": "integer 1-100, or null = not in top 100 (UNKNOWN is not 101)",
+      "rankingUrl": "string",
+      "serpFeaturesPresent": "string[]",
+      "device": "desktop",
+      "location": "the asset's city/community"
+     },
+     "cadence": "weekly from publishDate through week 12, then fortnightly through week 26",
+     "queriesPerAsset": {
+      "primary": "1 — the exact service+geography query the asset targets",
+      "secondary": "2-4 close variants",
+      "communityModified": "community assets only: community-name and service+community queries",
+      "unpredicted": "any query Search Console reports impressions for that no keyword tool predicted — the direct test of hyper-local under-measurement"
+     },
+     "derived": [
+      "daysToFirstTop100",
+      "daysToTop50",
+      "daysToTop20",
+      "daysToTop10",
+      "daysToTop5",
+      "positionSlopePerWeek",
+      "positionVolatility",
+      "peakPosition",
+      "positionAtDay90",
+      "positionAtDay180"
+     ],
+     "nullHandling": "position null means NOT FOUND in the top 100 — it must never be stored as 101 or 0, and an unchecked week must be absent rather than null"
+    },
+    "primaryEndpoint": "daysToTop20 on the primary query",
+    "secondaryEndpoints": [
+     "positionAtDay90",
+     "daysToFirstImpression",
+     "impressionsAtDay180",
+     "leadsAtDay180"
+    ],
+    "analyses": [
+     {
+      "id": "H1-model-validation",
+      "question": "Does Dimension A or organic-v1.2 better predict ranking speed?",
+      "method": "Spearman rank correlation of each score against daysToTop20 across all city assets (Groups A and C, n=11). The six pre-identified disagreement assets carry the most weight because the models make opposite predictions there.",
+      "decisionRule": "If organic-v1.2 correlates more strongly with daysToTop20 AND both ~50-point disagreement assets (Rochester, Naperville) fail to reach top 20, rebuild Dimension A as A-2.0.0 around organic structure. If they rank, retain A unchanged."
+     },
+     {
+      "id": "H2-community-demand",
+      "question": "Do zero-volume community queries produce real search activity?",
+      "method": "Compare impressions and unpredicted-query counts for the 12 community assets against the 3 city controls, normalised by measured volume (Frisco 320 / McKinney 210 / Prosper 10 / community 0).",
+      "decisionRule": "If community assets generate impressions materially above what their 0/mo would imply relative to the control gradient, keyword tools under-measure hyper-local demand and community expansion is justified."
+     },
+     {
+      "id": "H3-architecture",
+      "question": "Standalone hyperlocal domain or page on a regional hub?",
+      "method": "WITHIN-PAIR difference in daysToTop20 and positionAtDay90 across the 6 matched pairs; paired sign test plus mean within-pair delta. Pairing is what controls for community quality.",
+      "decisionRule": "Requires >=4 of 6 pairs to yield interpretable data; otherwise the architecture verdict is declared VOID rather than reported weakly."
+     },
+     {
+      "id": "H4-rentability",
+      "question": "Does the $300/mo rentability floor sit in the right place?",
+      "method": "Compare realised monthlyRentRealized against assetValueF for every asset that acquires a renter, with House Cleaning Orlando (F=34) as the designated probe below the floor."
+     }
+    ]
+   },
+   "domainVerifiedAtFreeze": true
   },
   {
    "experimentId": "W1-B2-004",
@@ -1498,7 +2189,8 @@
     "indexDate",
     "firstImpressionDate",
     "firstRankingDate",
-    "targetQueryRankingHistory",
+    "timeToTop100",
+    "timeToTop50",
     "timeToTop20",
     "timeToTop10",
     "timeToTop5",
@@ -1520,7 +2212,7 @@
    "preRegistration": {
     "predictorsUnderTest": [
      "dimensionA",
-     "organicV1_1",
+     "organicV1_2",
      "measuredVolume",
      "cpc",
      "renterDepthE",
@@ -1533,8 +2225,74 @@
      "architectureTreatment"
     ],
     "chain": "rankability -> traffic -> leads -> rentability, each stage measured separately so failure can be localised",
-    "joinKey": "experimentId joins pre-launch evidence -> deployment -> ranking -> traffic -> leads -> rentability"
-   }
+    "joinKey": "experimentId joins pre-launch evidence -> deployment -> ranking -> traffic -> leads -> rentability",
+    "rankingTrajectory": {
+     "observationSchema": {
+      "experimentId": "string",
+      "query": "string",
+      "queryRole": "primary|secondary|community-modified|city-level|unpredicted",
+      "checkDate": "ISO date",
+      "position": "integer 1-100, or null = not in top 100 (UNKNOWN is not 101)",
+      "rankingUrl": "string",
+      "serpFeaturesPresent": "string[]",
+      "device": "desktop",
+      "location": "the asset's city/community"
+     },
+     "cadence": "weekly from publishDate through week 12, then fortnightly through week 26",
+     "queriesPerAsset": {
+      "primary": "1 — the exact service+geography query the asset targets",
+      "secondary": "2-4 close variants",
+      "communityModified": "community assets only: community-name and service+community queries",
+      "unpredicted": "any query Search Console reports impressions for that no keyword tool predicted — the direct test of hyper-local under-measurement"
+     },
+     "derived": [
+      "daysToFirstTop100",
+      "daysToTop50",
+      "daysToTop20",
+      "daysToTop10",
+      "daysToTop5",
+      "positionSlopePerWeek",
+      "positionVolatility",
+      "peakPosition",
+      "positionAtDay90",
+      "positionAtDay180"
+     ],
+     "nullHandling": "position null means NOT FOUND in the top 100 — it must never be stored as 101 or 0, and an unchecked week must be absent rather than null"
+    },
+    "primaryEndpoint": "daysToTop20 on the primary query",
+    "secondaryEndpoints": [
+     "positionAtDay90",
+     "daysToFirstImpression",
+     "impressionsAtDay180",
+     "leadsAtDay180"
+    ],
+    "analyses": [
+     {
+      "id": "H1-model-validation",
+      "question": "Does Dimension A or organic-v1.2 better predict ranking speed?",
+      "method": "Spearman rank correlation of each score against daysToTop20 across all city assets (Groups A and C, n=11). The six pre-identified disagreement assets carry the most weight because the models make opposite predictions there.",
+      "decisionRule": "If organic-v1.2 correlates more strongly with daysToTop20 AND both ~50-point disagreement assets (Rochester, Naperville) fail to reach top 20, rebuild Dimension A as A-2.0.0 around organic structure. If they rank, retain A unchanged."
+     },
+     {
+      "id": "H2-community-demand",
+      "question": "Do zero-volume community queries produce real search activity?",
+      "method": "Compare impressions and unpredicted-query counts for the 12 community assets against the 3 city controls, normalised by measured volume (Frisco 320 / McKinney 210 / Prosper 10 / community 0).",
+      "decisionRule": "If community assets generate impressions materially above what their 0/mo would imply relative to the control gradient, keyword tools under-measure hyper-local demand and community expansion is justified."
+     },
+     {
+      "id": "H3-architecture",
+      "question": "Standalone hyperlocal domain or page on a regional hub?",
+      "method": "WITHIN-PAIR difference in daysToTop20 and positionAtDay90 across the 6 matched pairs; paired sign test plus mean within-pair delta. Pairing is what controls for community quality.",
+      "decisionRule": "Requires >=4 of 6 pairs to yield interpretable data; otherwise the architecture verdict is declared VOID rather than reported weakly."
+     },
+     {
+      "id": "H4-rentability",
+      "question": "Does the $300/mo rentability floor sit in the right place?",
+      "method": "Compare realised monthlyRentRealized against assetValueF for every asset that acquires a renter, with House Cleaning Orlando (F=34) as the designated probe below the floor."
+     }
+    ]
+   },
+   "domainVerifiedAtFreeze": true
   },
   {
    "experimentId": "W1-B1-005",
@@ -1637,7 +2395,8 @@
     "indexDate",
     "firstImpressionDate",
     "firstRankingDate",
-    "targetQueryRankingHistory",
+    "timeToTop100",
+    "timeToTop50",
     "timeToTop20",
     "timeToTop10",
     "timeToTop5",
@@ -1659,7 +2418,7 @@
    "preRegistration": {
     "predictorsUnderTest": [
      "dimensionA",
-     "organicV1_1",
+     "organicV1_2",
      "measuredVolume",
      "cpc",
      "renterDepthE",
@@ -1672,8 +2431,74 @@
      "architectureTreatment"
     ],
     "chain": "rankability -> traffic -> leads -> rentability, each stage measured separately so failure can be localised",
-    "joinKey": "experimentId joins pre-launch evidence -> deployment -> ranking -> traffic -> leads -> rentability"
-   }
+    "joinKey": "experimentId joins pre-launch evidence -> deployment -> ranking -> traffic -> leads -> rentability",
+    "rankingTrajectory": {
+     "observationSchema": {
+      "experimentId": "string",
+      "query": "string",
+      "queryRole": "primary|secondary|community-modified|city-level|unpredicted",
+      "checkDate": "ISO date",
+      "position": "integer 1-100, or null = not in top 100 (UNKNOWN is not 101)",
+      "rankingUrl": "string",
+      "serpFeaturesPresent": "string[]",
+      "device": "desktop",
+      "location": "the asset's city/community"
+     },
+     "cadence": "weekly from publishDate through week 12, then fortnightly through week 26",
+     "queriesPerAsset": {
+      "primary": "1 — the exact service+geography query the asset targets",
+      "secondary": "2-4 close variants",
+      "communityModified": "community assets only: community-name and service+community queries",
+      "unpredicted": "any query Search Console reports impressions for that no keyword tool predicted — the direct test of hyper-local under-measurement"
+     },
+     "derived": [
+      "daysToFirstTop100",
+      "daysToTop50",
+      "daysToTop20",
+      "daysToTop10",
+      "daysToTop5",
+      "positionSlopePerWeek",
+      "positionVolatility",
+      "peakPosition",
+      "positionAtDay90",
+      "positionAtDay180"
+     ],
+     "nullHandling": "position null means NOT FOUND in the top 100 — it must never be stored as 101 or 0, and an unchecked week must be absent rather than null"
+    },
+    "primaryEndpoint": "daysToTop20 on the primary query",
+    "secondaryEndpoints": [
+     "positionAtDay90",
+     "daysToFirstImpression",
+     "impressionsAtDay180",
+     "leadsAtDay180"
+    ],
+    "analyses": [
+     {
+      "id": "H1-model-validation",
+      "question": "Does Dimension A or organic-v1.2 better predict ranking speed?",
+      "method": "Spearman rank correlation of each score against daysToTop20 across all city assets (Groups A and C, n=11). The six pre-identified disagreement assets carry the most weight because the models make opposite predictions there.",
+      "decisionRule": "If organic-v1.2 correlates more strongly with daysToTop20 AND both ~50-point disagreement assets (Rochester, Naperville) fail to reach top 20, rebuild Dimension A as A-2.0.0 around organic structure. If they rank, retain A unchanged."
+     },
+     {
+      "id": "H2-community-demand",
+      "question": "Do zero-volume community queries produce real search activity?",
+      "method": "Compare impressions and unpredicted-query counts for the 12 community assets against the 3 city controls, normalised by measured volume (Frisco 320 / McKinney 210 / Prosper 10 / community 0).",
+      "decisionRule": "If community assets generate impressions materially above what their 0/mo would imply relative to the control gradient, keyword tools under-measure hyper-local demand and community expansion is justified."
+     },
+     {
+      "id": "H3-architecture",
+      "question": "Standalone hyperlocal domain or page on a regional hub?",
+      "method": "WITHIN-PAIR difference in daysToTop20 and positionAtDay90 across the 6 matched pairs; paired sign test plus mean within-pair delta. Pairing is what controls for community quality.",
+      "decisionRule": "Requires >=4 of 6 pairs to yield interpretable data; otherwise the architecture verdict is declared VOID rather than reported weakly."
+     },
+     {
+      "id": "H4-rentability",
+      "question": "Does the $300/mo rentability floor sit in the right place?",
+      "method": "Compare realised monthlyRentRealized against assetValueF for every asset that acquires a renter, with House Cleaning Orlando (F=34) as the designated probe below the floor."
+     }
+    ]
+   },
+   "domainVerifiedAtFreeze": true
   },
   {
    "experimentId": "W1-B2-006",
@@ -1765,7 +2590,8 @@
     "indexDate",
     "firstImpressionDate",
     "firstRankingDate",
-    "targetQueryRankingHistory",
+    "timeToTop100",
+    "timeToTop50",
     "timeToTop20",
     "timeToTop10",
     "timeToTop5",
@@ -1787,7 +2613,7 @@
    "preRegistration": {
     "predictorsUnderTest": [
      "dimensionA",
-     "organicV1_1",
+     "organicV1_2",
      "measuredVolume",
      "cpc",
      "renterDepthE",
@@ -1800,8 +2626,74 @@
      "architectureTreatment"
     ],
     "chain": "rankability -> traffic -> leads -> rentability, each stage measured separately so failure can be localised",
-    "joinKey": "experimentId joins pre-launch evidence -> deployment -> ranking -> traffic -> leads -> rentability"
-   }
+    "joinKey": "experimentId joins pre-launch evidence -> deployment -> ranking -> traffic -> leads -> rentability",
+    "rankingTrajectory": {
+     "observationSchema": {
+      "experimentId": "string",
+      "query": "string",
+      "queryRole": "primary|secondary|community-modified|city-level|unpredicted",
+      "checkDate": "ISO date",
+      "position": "integer 1-100, or null = not in top 100 (UNKNOWN is not 101)",
+      "rankingUrl": "string",
+      "serpFeaturesPresent": "string[]",
+      "device": "desktop",
+      "location": "the asset's city/community"
+     },
+     "cadence": "weekly from publishDate through week 12, then fortnightly through week 26",
+     "queriesPerAsset": {
+      "primary": "1 — the exact service+geography query the asset targets",
+      "secondary": "2-4 close variants",
+      "communityModified": "community assets only: community-name and service+community queries",
+      "unpredicted": "any query Search Console reports impressions for that no keyword tool predicted — the direct test of hyper-local under-measurement"
+     },
+     "derived": [
+      "daysToFirstTop100",
+      "daysToTop50",
+      "daysToTop20",
+      "daysToTop10",
+      "daysToTop5",
+      "positionSlopePerWeek",
+      "positionVolatility",
+      "peakPosition",
+      "positionAtDay90",
+      "positionAtDay180"
+     ],
+     "nullHandling": "position null means NOT FOUND in the top 100 — it must never be stored as 101 or 0, and an unchecked week must be absent rather than null"
+    },
+    "primaryEndpoint": "daysToTop20 on the primary query",
+    "secondaryEndpoints": [
+     "positionAtDay90",
+     "daysToFirstImpression",
+     "impressionsAtDay180",
+     "leadsAtDay180"
+    ],
+    "analyses": [
+     {
+      "id": "H1-model-validation",
+      "question": "Does Dimension A or organic-v1.2 better predict ranking speed?",
+      "method": "Spearman rank correlation of each score against daysToTop20 across all city assets (Groups A and C, n=11). The six pre-identified disagreement assets carry the most weight because the models make opposite predictions there.",
+      "decisionRule": "If organic-v1.2 correlates more strongly with daysToTop20 AND both ~50-point disagreement assets (Rochester, Naperville) fail to reach top 20, rebuild Dimension A as A-2.0.0 around organic structure. If they rank, retain A unchanged."
+     },
+     {
+      "id": "H2-community-demand",
+      "question": "Do zero-volume community queries produce real search activity?",
+      "method": "Compare impressions and unpredicted-query counts for the 12 community assets against the 3 city controls, normalised by measured volume (Frisco 320 / McKinney 210 / Prosper 10 / community 0).",
+      "decisionRule": "If community assets generate impressions materially above what their 0/mo would imply relative to the control gradient, keyword tools under-measure hyper-local demand and community expansion is justified."
+     },
+     {
+      "id": "H3-architecture",
+      "question": "Standalone hyperlocal domain or page on a regional hub?",
+      "method": "WITHIN-PAIR difference in daysToTop20 and positionAtDay90 across the 6 matched pairs; paired sign test plus mean within-pair delta. Pairing is what controls for community quality.",
+      "decisionRule": "Requires >=4 of 6 pairs to yield interpretable data; otherwise the architecture verdict is declared VOID rather than reported weakly."
+     },
+     {
+      "id": "H4-rentability",
+      "question": "Does the $300/mo rentability floor sit in the right place?",
+      "method": "Compare realised monthlyRentRealized against assetValueF for every asset that acquires a renter, with House Cleaning Orlando (F=34) as the designated probe below the floor."
+     }
+    ]
+   },
+   "domainVerifiedAtFreeze": true
   },
   {
    "experimentId": "W1-B1-007",
@@ -1904,7 +2796,8 @@
     "indexDate",
     "firstImpressionDate",
     "firstRankingDate",
-    "targetQueryRankingHistory",
+    "timeToTop100",
+    "timeToTop50",
     "timeToTop20",
     "timeToTop10",
     "timeToTop5",
@@ -1926,7 +2819,7 @@
    "preRegistration": {
     "predictorsUnderTest": [
      "dimensionA",
-     "organicV1_1",
+     "organicV1_2",
      "measuredVolume",
      "cpc",
      "renterDepthE",
@@ -1939,8 +2832,74 @@
      "architectureTreatment"
     ],
     "chain": "rankability -> traffic -> leads -> rentability, each stage measured separately so failure can be localised",
-    "joinKey": "experimentId joins pre-launch evidence -> deployment -> ranking -> traffic -> leads -> rentability"
-   }
+    "joinKey": "experimentId joins pre-launch evidence -> deployment -> ranking -> traffic -> leads -> rentability",
+    "rankingTrajectory": {
+     "observationSchema": {
+      "experimentId": "string",
+      "query": "string",
+      "queryRole": "primary|secondary|community-modified|city-level|unpredicted",
+      "checkDate": "ISO date",
+      "position": "integer 1-100, or null = not in top 100 (UNKNOWN is not 101)",
+      "rankingUrl": "string",
+      "serpFeaturesPresent": "string[]",
+      "device": "desktop",
+      "location": "the asset's city/community"
+     },
+     "cadence": "weekly from publishDate through week 12, then fortnightly through week 26",
+     "queriesPerAsset": {
+      "primary": "1 — the exact service+geography query the asset targets",
+      "secondary": "2-4 close variants",
+      "communityModified": "community assets only: community-name and service+community queries",
+      "unpredicted": "any query Search Console reports impressions for that no keyword tool predicted — the direct test of hyper-local under-measurement"
+     },
+     "derived": [
+      "daysToFirstTop100",
+      "daysToTop50",
+      "daysToTop20",
+      "daysToTop10",
+      "daysToTop5",
+      "positionSlopePerWeek",
+      "positionVolatility",
+      "peakPosition",
+      "positionAtDay90",
+      "positionAtDay180"
+     ],
+     "nullHandling": "position null means NOT FOUND in the top 100 — it must never be stored as 101 or 0, and an unchecked week must be absent rather than null"
+    },
+    "primaryEndpoint": "daysToTop20 on the primary query",
+    "secondaryEndpoints": [
+     "positionAtDay90",
+     "daysToFirstImpression",
+     "impressionsAtDay180",
+     "leadsAtDay180"
+    ],
+    "analyses": [
+     {
+      "id": "H1-model-validation",
+      "question": "Does Dimension A or organic-v1.2 better predict ranking speed?",
+      "method": "Spearman rank correlation of each score against daysToTop20 across all city assets (Groups A and C, n=11). The six pre-identified disagreement assets carry the most weight because the models make opposite predictions there.",
+      "decisionRule": "If organic-v1.2 correlates more strongly with daysToTop20 AND both ~50-point disagreement assets (Rochester, Naperville) fail to reach top 20, rebuild Dimension A as A-2.0.0 around organic structure. If they rank, retain A unchanged."
+     },
+     {
+      "id": "H2-community-demand",
+      "question": "Do zero-volume community queries produce real search activity?",
+      "method": "Compare impressions and unpredicted-query counts for the 12 community assets against the 3 city controls, normalised by measured volume (Frisco 320 / McKinney 210 / Prosper 10 / community 0).",
+      "decisionRule": "If community assets generate impressions materially above what their 0/mo would imply relative to the control gradient, keyword tools under-measure hyper-local demand and community expansion is justified."
+     },
+     {
+      "id": "H3-architecture",
+      "question": "Standalone hyperlocal domain or page on a regional hub?",
+      "method": "WITHIN-PAIR difference in daysToTop20 and positionAtDay90 across the 6 matched pairs; paired sign test plus mean within-pair delta. Pairing is what controls for community quality.",
+      "decisionRule": "Requires >=4 of 6 pairs to yield interpretable data; otherwise the architecture verdict is declared VOID rather than reported weakly."
+     },
+     {
+      "id": "H4-rentability",
+      "question": "Does the $300/mo rentability floor sit in the right place?",
+      "method": "Compare realised monthlyRentRealized against assetValueF for every asset that acquires a renter, with House Cleaning Orlando (F=34) as the designated probe below the floor."
+     }
+    ]
+   },
+   "domainVerifiedAtFreeze": true
   },
   {
    "experimentId": "W1-B2-008",
@@ -2032,7 +2991,8 @@
     "indexDate",
     "firstImpressionDate",
     "firstRankingDate",
-    "targetQueryRankingHistory",
+    "timeToTop100",
+    "timeToTop50",
     "timeToTop20",
     "timeToTop10",
     "timeToTop5",
@@ -2054,7 +3014,7 @@
    "preRegistration": {
     "predictorsUnderTest": [
      "dimensionA",
-     "organicV1_1",
+     "organicV1_2",
      "measuredVolume",
      "cpc",
      "renterDepthE",
@@ -2067,8 +3027,74 @@
      "architectureTreatment"
     ],
     "chain": "rankability -> traffic -> leads -> rentability, each stage measured separately so failure can be localised",
-    "joinKey": "experimentId joins pre-launch evidence -> deployment -> ranking -> traffic -> leads -> rentability"
-   }
+    "joinKey": "experimentId joins pre-launch evidence -> deployment -> ranking -> traffic -> leads -> rentability",
+    "rankingTrajectory": {
+     "observationSchema": {
+      "experimentId": "string",
+      "query": "string",
+      "queryRole": "primary|secondary|community-modified|city-level|unpredicted",
+      "checkDate": "ISO date",
+      "position": "integer 1-100, or null = not in top 100 (UNKNOWN is not 101)",
+      "rankingUrl": "string",
+      "serpFeaturesPresent": "string[]",
+      "device": "desktop",
+      "location": "the asset's city/community"
+     },
+     "cadence": "weekly from publishDate through week 12, then fortnightly through week 26",
+     "queriesPerAsset": {
+      "primary": "1 — the exact service+geography query the asset targets",
+      "secondary": "2-4 close variants",
+      "communityModified": "community assets only: community-name and service+community queries",
+      "unpredicted": "any query Search Console reports impressions for that no keyword tool predicted — the direct test of hyper-local under-measurement"
+     },
+     "derived": [
+      "daysToFirstTop100",
+      "daysToTop50",
+      "daysToTop20",
+      "daysToTop10",
+      "daysToTop5",
+      "positionSlopePerWeek",
+      "positionVolatility",
+      "peakPosition",
+      "positionAtDay90",
+      "positionAtDay180"
+     ],
+     "nullHandling": "position null means NOT FOUND in the top 100 — it must never be stored as 101 or 0, and an unchecked week must be absent rather than null"
+    },
+    "primaryEndpoint": "daysToTop20 on the primary query",
+    "secondaryEndpoints": [
+     "positionAtDay90",
+     "daysToFirstImpression",
+     "impressionsAtDay180",
+     "leadsAtDay180"
+    ],
+    "analyses": [
+     {
+      "id": "H1-model-validation",
+      "question": "Does Dimension A or organic-v1.2 better predict ranking speed?",
+      "method": "Spearman rank correlation of each score against daysToTop20 across all city assets (Groups A and C, n=11). The six pre-identified disagreement assets carry the most weight because the models make opposite predictions there.",
+      "decisionRule": "If organic-v1.2 correlates more strongly with daysToTop20 AND both ~50-point disagreement assets (Rochester, Naperville) fail to reach top 20, rebuild Dimension A as A-2.0.0 around organic structure. If they rank, retain A unchanged."
+     },
+     {
+      "id": "H2-community-demand",
+      "question": "Do zero-volume community queries produce real search activity?",
+      "method": "Compare impressions and unpredicted-query counts for the 12 community assets against the 3 city controls, normalised by measured volume (Frisco 320 / McKinney 210 / Prosper 10 / community 0).",
+      "decisionRule": "If community assets generate impressions materially above what their 0/mo would imply relative to the control gradient, keyword tools under-measure hyper-local demand and community expansion is justified."
+     },
+     {
+      "id": "H3-architecture",
+      "question": "Standalone hyperlocal domain or page on a regional hub?",
+      "method": "WITHIN-PAIR difference in daysToTop20 and positionAtDay90 across the 6 matched pairs; paired sign test plus mean within-pair delta. Pairing is what controls for community quality.",
+      "decisionRule": "Requires >=4 of 6 pairs to yield interpretable data; otherwise the architecture verdict is declared VOID rather than reported weakly."
+     },
+     {
+      "id": "H4-rentability",
+      "question": "Does the $300/mo rentability floor sit in the right place?",
+      "method": "Compare realised monthlyRentRealized against assetValueF for every asset that acquires a renter, with House Cleaning Orlando (F=34) as the designated probe below the floor."
+     }
+    ]
+   },
+   "domainVerifiedAtFreeze": true
   },
   {
    "experimentId": "W1-B1-009",
@@ -2171,7 +3197,8 @@
     "indexDate",
     "firstImpressionDate",
     "firstRankingDate",
-    "targetQueryRankingHistory",
+    "timeToTop100",
+    "timeToTop50",
     "timeToTop20",
     "timeToTop10",
     "timeToTop5",
@@ -2193,7 +3220,7 @@
    "preRegistration": {
     "predictorsUnderTest": [
      "dimensionA",
-     "organicV1_1",
+     "organicV1_2",
      "measuredVolume",
      "cpc",
      "renterDepthE",
@@ -2206,8 +3233,74 @@
      "architectureTreatment"
     ],
     "chain": "rankability -> traffic -> leads -> rentability, each stage measured separately so failure can be localised",
-    "joinKey": "experimentId joins pre-launch evidence -> deployment -> ranking -> traffic -> leads -> rentability"
-   }
+    "joinKey": "experimentId joins pre-launch evidence -> deployment -> ranking -> traffic -> leads -> rentability",
+    "rankingTrajectory": {
+     "observationSchema": {
+      "experimentId": "string",
+      "query": "string",
+      "queryRole": "primary|secondary|community-modified|city-level|unpredicted",
+      "checkDate": "ISO date",
+      "position": "integer 1-100, or null = not in top 100 (UNKNOWN is not 101)",
+      "rankingUrl": "string",
+      "serpFeaturesPresent": "string[]",
+      "device": "desktop",
+      "location": "the asset's city/community"
+     },
+     "cadence": "weekly from publishDate through week 12, then fortnightly through week 26",
+     "queriesPerAsset": {
+      "primary": "1 — the exact service+geography query the asset targets",
+      "secondary": "2-4 close variants",
+      "communityModified": "community assets only: community-name and service+community queries",
+      "unpredicted": "any query Search Console reports impressions for that no keyword tool predicted — the direct test of hyper-local under-measurement"
+     },
+     "derived": [
+      "daysToFirstTop100",
+      "daysToTop50",
+      "daysToTop20",
+      "daysToTop10",
+      "daysToTop5",
+      "positionSlopePerWeek",
+      "positionVolatility",
+      "peakPosition",
+      "positionAtDay90",
+      "positionAtDay180"
+     ],
+     "nullHandling": "position null means NOT FOUND in the top 100 — it must never be stored as 101 or 0, and an unchecked week must be absent rather than null"
+    },
+    "primaryEndpoint": "daysToTop20 on the primary query",
+    "secondaryEndpoints": [
+     "positionAtDay90",
+     "daysToFirstImpression",
+     "impressionsAtDay180",
+     "leadsAtDay180"
+    ],
+    "analyses": [
+     {
+      "id": "H1-model-validation",
+      "question": "Does Dimension A or organic-v1.2 better predict ranking speed?",
+      "method": "Spearman rank correlation of each score against daysToTop20 across all city assets (Groups A and C, n=11). The six pre-identified disagreement assets carry the most weight because the models make opposite predictions there.",
+      "decisionRule": "If organic-v1.2 correlates more strongly with daysToTop20 AND both ~50-point disagreement assets (Rochester, Naperville) fail to reach top 20, rebuild Dimension A as A-2.0.0 around organic structure. If they rank, retain A unchanged."
+     },
+     {
+      "id": "H2-community-demand",
+      "question": "Do zero-volume community queries produce real search activity?",
+      "method": "Compare impressions and unpredicted-query counts for the 12 community assets against the 3 city controls, normalised by measured volume (Frisco 320 / McKinney 210 / Prosper 10 / community 0).",
+      "decisionRule": "If community assets generate impressions materially above what their 0/mo would imply relative to the control gradient, keyword tools under-measure hyper-local demand and community expansion is justified."
+     },
+     {
+      "id": "H3-architecture",
+      "question": "Standalone hyperlocal domain or page on a regional hub?",
+      "method": "WITHIN-PAIR difference in daysToTop20 and positionAtDay90 across the 6 matched pairs; paired sign test plus mean within-pair delta. Pairing is what controls for community quality.",
+      "decisionRule": "Requires >=4 of 6 pairs to yield interpretable data; otherwise the architecture verdict is declared VOID rather than reported weakly."
+     },
+     {
+      "id": "H4-rentability",
+      "question": "Does the $300/mo rentability floor sit in the right place?",
+      "method": "Compare realised monthlyRentRealized against assetValueF for every asset that acquires a renter, with House Cleaning Orlando (F=34) as the designated probe below the floor."
+     }
+    ]
+   },
+   "domainVerifiedAtFreeze": true
   },
   {
    "experimentId": "W1-B2-010",
@@ -2299,7 +3392,8 @@
     "indexDate",
     "firstImpressionDate",
     "firstRankingDate",
-    "targetQueryRankingHistory",
+    "timeToTop100",
+    "timeToTop50",
     "timeToTop20",
     "timeToTop10",
     "timeToTop5",
@@ -2321,7 +3415,7 @@
    "preRegistration": {
     "predictorsUnderTest": [
      "dimensionA",
-     "organicV1_1",
+     "organicV1_2",
      "measuredVolume",
      "cpc",
      "renterDepthE",
@@ -2334,8 +3428,74 @@
      "architectureTreatment"
     ],
     "chain": "rankability -> traffic -> leads -> rentability, each stage measured separately so failure can be localised",
-    "joinKey": "experimentId joins pre-launch evidence -> deployment -> ranking -> traffic -> leads -> rentability"
-   }
+    "joinKey": "experimentId joins pre-launch evidence -> deployment -> ranking -> traffic -> leads -> rentability",
+    "rankingTrajectory": {
+     "observationSchema": {
+      "experimentId": "string",
+      "query": "string",
+      "queryRole": "primary|secondary|community-modified|city-level|unpredicted",
+      "checkDate": "ISO date",
+      "position": "integer 1-100, or null = not in top 100 (UNKNOWN is not 101)",
+      "rankingUrl": "string",
+      "serpFeaturesPresent": "string[]",
+      "device": "desktop",
+      "location": "the asset's city/community"
+     },
+     "cadence": "weekly from publishDate through week 12, then fortnightly through week 26",
+     "queriesPerAsset": {
+      "primary": "1 — the exact service+geography query the asset targets",
+      "secondary": "2-4 close variants",
+      "communityModified": "community assets only: community-name and service+community queries",
+      "unpredicted": "any query Search Console reports impressions for that no keyword tool predicted — the direct test of hyper-local under-measurement"
+     },
+     "derived": [
+      "daysToFirstTop100",
+      "daysToTop50",
+      "daysToTop20",
+      "daysToTop10",
+      "daysToTop5",
+      "positionSlopePerWeek",
+      "positionVolatility",
+      "peakPosition",
+      "positionAtDay90",
+      "positionAtDay180"
+     ],
+     "nullHandling": "position null means NOT FOUND in the top 100 — it must never be stored as 101 or 0, and an unchecked week must be absent rather than null"
+    },
+    "primaryEndpoint": "daysToTop20 on the primary query",
+    "secondaryEndpoints": [
+     "positionAtDay90",
+     "daysToFirstImpression",
+     "impressionsAtDay180",
+     "leadsAtDay180"
+    ],
+    "analyses": [
+     {
+      "id": "H1-model-validation",
+      "question": "Does Dimension A or organic-v1.2 better predict ranking speed?",
+      "method": "Spearman rank correlation of each score against daysToTop20 across all city assets (Groups A and C, n=11). The six pre-identified disagreement assets carry the most weight because the models make opposite predictions there.",
+      "decisionRule": "If organic-v1.2 correlates more strongly with daysToTop20 AND both ~50-point disagreement assets (Rochester, Naperville) fail to reach top 20, rebuild Dimension A as A-2.0.0 around organic structure. If they rank, retain A unchanged."
+     },
+     {
+      "id": "H2-community-demand",
+      "question": "Do zero-volume community queries produce real search activity?",
+      "method": "Compare impressions and unpredicted-query counts for the 12 community assets against the 3 city controls, normalised by measured volume (Frisco 320 / McKinney 210 / Prosper 10 / community 0).",
+      "decisionRule": "If community assets generate impressions materially above what their 0/mo would imply relative to the control gradient, keyword tools under-measure hyper-local demand and community expansion is justified."
+     },
+     {
+      "id": "H3-architecture",
+      "question": "Standalone hyperlocal domain or page on a regional hub?",
+      "method": "WITHIN-PAIR difference in daysToTop20 and positionAtDay90 across the 6 matched pairs; paired sign test plus mean within-pair delta. Pairing is what controls for community quality.",
+      "decisionRule": "Requires >=4 of 6 pairs to yield interpretable data; otherwise the architecture verdict is declared VOID rather than reported weakly."
+     },
+     {
+      "id": "H4-rentability",
+      "question": "Does the $300/mo rentability floor sit in the right place?",
+      "method": "Compare realised monthlyRentRealized against assetValueF for every asset that acquires a renter, with House Cleaning Orlando (F=34) as the designated probe below the floor."
+     }
+    ]
+   },
+   "domainVerifiedAtFreeze": true
   },
   {
    "experimentId": "W1-B1-011",
@@ -2438,7 +3598,8 @@
     "indexDate",
     "firstImpressionDate",
     "firstRankingDate",
-    "targetQueryRankingHistory",
+    "timeToTop100",
+    "timeToTop50",
     "timeToTop20",
     "timeToTop10",
     "timeToTop5",
@@ -2460,7 +3621,7 @@
    "preRegistration": {
     "predictorsUnderTest": [
      "dimensionA",
-     "organicV1_1",
+     "organicV1_2",
      "measuredVolume",
      "cpc",
      "renterDepthE",
@@ -2473,8 +3634,74 @@
      "architectureTreatment"
     ],
     "chain": "rankability -> traffic -> leads -> rentability, each stage measured separately so failure can be localised",
-    "joinKey": "experimentId joins pre-launch evidence -> deployment -> ranking -> traffic -> leads -> rentability"
-   }
+    "joinKey": "experimentId joins pre-launch evidence -> deployment -> ranking -> traffic -> leads -> rentability",
+    "rankingTrajectory": {
+     "observationSchema": {
+      "experimentId": "string",
+      "query": "string",
+      "queryRole": "primary|secondary|community-modified|city-level|unpredicted",
+      "checkDate": "ISO date",
+      "position": "integer 1-100, or null = not in top 100 (UNKNOWN is not 101)",
+      "rankingUrl": "string",
+      "serpFeaturesPresent": "string[]",
+      "device": "desktop",
+      "location": "the asset's city/community"
+     },
+     "cadence": "weekly from publishDate through week 12, then fortnightly through week 26",
+     "queriesPerAsset": {
+      "primary": "1 — the exact service+geography query the asset targets",
+      "secondary": "2-4 close variants",
+      "communityModified": "community assets only: community-name and service+community queries",
+      "unpredicted": "any query Search Console reports impressions for that no keyword tool predicted — the direct test of hyper-local under-measurement"
+     },
+     "derived": [
+      "daysToFirstTop100",
+      "daysToTop50",
+      "daysToTop20",
+      "daysToTop10",
+      "daysToTop5",
+      "positionSlopePerWeek",
+      "positionVolatility",
+      "peakPosition",
+      "positionAtDay90",
+      "positionAtDay180"
+     ],
+     "nullHandling": "position null means NOT FOUND in the top 100 — it must never be stored as 101 or 0, and an unchecked week must be absent rather than null"
+    },
+    "primaryEndpoint": "daysToTop20 on the primary query",
+    "secondaryEndpoints": [
+     "positionAtDay90",
+     "daysToFirstImpression",
+     "impressionsAtDay180",
+     "leadsAtDay180"
+    ],
+    "analyses": [
+     {
+      "id": "H1-model-validation",
+      "question": "Does Dimension A or organic-v1.2 better predict ranking speed?",
+      "method": "Spearman rank correlation of each score against daysToTop20 across all city assets (Groups A and C, n=11). The six pre-identified disagreement assets carry the most weight because the models make opposite predictions there.",
+      "decisionRule": "If organic-v1.2 correlates more strongly with daysToTop20 AND both ~50-point disagreement assets (Rochester, Naperville) fail to reach top 20, rebuild Dimension A as A-2.0.0 around organic structure. If they rank, retain A unchanged."
+     },
+     {
+      "id": "H2-community-demand",
+      "question": "Do zero-volume community queries produce real search activity?",
+      "method": "Compare impressions and unpredicted-query counts for the 12 community assets against the 3 city controls, normalised by measured volume (Frisco 320 / McKinney 210 / Prosper 10 / community 0).",
+      "decisionRule": "If community assets generate impressions materially above what their 0/mo would imply relative to the control gradient, keyword tools under-measure hyper-local demand and community expansion is justified."
+     },
+     {
+      "id": "H3-architecture",
+      "question": "Standalone hyperlocal domain or page on a regional hub?",
+      "method": "WITHIN-PAIR difference in daysToTop20 and positionAtDay90 across the 6 matched pairs; paired sign test plus mean within-pair delta. Pairing is what controls for community quality.",
+      "decisionRule": "Requires >=4 of 6 pairs to yield interpretable data; otherwise the architecture verdict is declared VOID rather than reported weakly."
+     },
+     {
+      "id": "H4-rentability",
+      "question": "Does the $300/mo rentability floor sit in the right place?",
+      "method": "Compare realised monthlyRentRealized against assetValueF for every asset that acquires a renter, with House Cleaning Orlando (F=34) as the designated probe below the floor."
+     }
+    ]
+   },
+   "domainVerifiedAtFreeze": true
   },
   {
    "experimentId": "W1-B2-012",
@@ -2566,7 +3793,8 @@
     "indexDate",
     "firstImpressionDate",
     "firstRankingDate",
-    "targetQueryRankingHistory",
+    "timeToTop100",
+    "timeToTop50",
     "timeToTop20",
     "timeToTop10",
     "timeToTop5",
@@ -2588,7 +3816,7 @@
    "preRegistration": {
     "predictorsUnderTest": [
      "dimensionA",
-     "organicV1_1",
+     "organicV1_2",
      "measuredVolume",
      "cpc",
      "renterDepthE",
@@ -2601,8 +3829,74 @@
      "architectureTreatment"
     ],
     "chain": "rankability -> traffic -> leads -> rentability, each stage measured separately so failure can be localised",
-    "joinKey": "experimentId joins pre-launch evidence -> deployment -> ranking -> traffic -> leads -> rentability"
-   }
+    "joinKey": "experimentId joins pre-launch evidence -> deployment -> ranking -> traffic -> leads -> rentability",
+    "rankingTrajectory": {
+     "observationSchema": {
+      "experimentId": "string",
+      "query": "string",
+      "queryRole": "primary|secondary|community-modified|city-level|unpredicted",
+      "checkDate": "ISO date",
+      "position": "integer 1-100, or null = not in top 100 (UNKNOWN is not 101)",
+      "rankingUrl": "string",
+      "serpFeaturesPresent": "string[]",
+      "device": "desktop",
+      "location": "the asset's city/community"
+     },
+     "cadence": "weekly from publishDate through week 12, then fortnightly through week 26",
+     "queriesPerAsset": {
+      "primary": "1 — the exact service+geography query the asset targets",
+      "secondary": "2-4 close variants",
+      "communityModified": "community assets only: community-name and service+community queries",
+      "unpredicted": "any query Search Console reports impressions for that no keyword tool predicted — the direct test of hyper-local under-measurement"
+     },
+     "derived": [
+      "daysToFirstTop100",
+      "daysToTop50",
+      "daysToTop20",
+      "daysToTop10",
+      "daysToTop5",
+      "positionSlopePerWeek",
+      "positionVolatility",
+      "peakPosition",
+      "positionAtDay90",
+      "positionAtDay180"
+     ],
+     "nullHandling": "position null means NOT FOUND in the top 100 — it must never be stored as 101 or 0, and an unchecked week must be absent rather than null"
+    },
+    "primaryEndpoint": "daysToTop20 on the primary query",
+    "secondaryEndpoints": [
+     "positionAtDay90",
+     "daysToFirstImpression",
+     "impressionsAtDay180",
+     "leadsAtDay180"
+    ],
+    "analyses": [
+     {
+      "id": "H1-model-validation",
+      "question": "Does Dimension A or organic-v1.2 better predict ranking speed?",
+      "method": "Spearman rank correlation of each score against daysToTop20 across all city assets (Groups A and C, n=11). The six pre-identified disagreement assets carry the most weight because the models make opposite predictions there.",
+      "decisionRule": "If organic-v1.2 correlates more strongly with daysToTop20 AND both ~50-point disagreement assets (Rochester, Naperville) fail to reach top 20, rebuild Dimension A as A-2.0.0 around organic structure. If they rank, retain A unchanged."
+     },
+     {
+      "id": "H2-community-demand",
+      "question": "Do zero-volume community queries produce real search activity?",
+      "method": "Compare impressions and unpredicted-query counts for the 12 community assets against the 3 city controls, normalised by measured volume (Frisco 320 / McKinney 210 / Prosper 10 / community 0).",
+      "decisionRule": "If community assets generate impressions materially above what their 0/mo would imply relative to the control gradient, keyword tools under-measure hyper-local demand and community expansion is justified."
+     },
+     {
+      "id": "H3-architecture",
+      "question": "Standalone hyperlocal domain or page on a regional hub?",
+      "method": "WITHIN-PAIR difference in daysToTop20 and positionAtDay90 across the 6 matched pairs; paired sign test plus mean within-pair delta. Pairing is what controls for community quality.",
+      "decisionRule": "Requires >=4 of 6 pairs to yield interpretable data; otherwise the architecture verdict is declared VOID rather than reported weakly."
+     },
+     {
+      "id": "H4-rentability",
+      "question": "Does the $300/mo rentability floor sit in the right place?",
+      "method": "Compare realised monthlyRentRealized against assetValueF for every asset that acquires a renter, with House Cleaning Orlando (F=34) as the designated probe below the floor."
+     }
+    ]
+   },
+   "domainVerifiedAtFreeze": true
   },
   {
    "experimentId": "W1-B3-001",
@@ -2681,7 +3975,8 @@
     "indexDate",
     "firstImpressionDate",
     "firstRankingDate",
-    "targetQueryRankingHistory",
+    "timeToTop100",
+    "timeToTop50",
     "timeToTop20",
     "timeToTop10",
     "timeToTop5",
@@ -2703,7 +3998,7 @@
    "preRegistration": {
     "predictorsUnderTest": [
      "dimensionA",
-     "organicV1_1",
+     "organicV1_2",
      "measuredVolume",
      "cpc",
      "renterDepthE",
@@ -2716,8 +4011,74 @@
      "architectureTreatment"
     ],
     "chain": "rankability -> traffic -> leads -> rentability, each stage measured separately so failure can be localised",
-    "joinKey": "experimentId joins pre-launch evidence -> deployment -> ranking -> traffic -> leads -> rentability"
-   }
+    "joinKey": "experimentId joins pre-launch evidence -> deployment -> ranking -> traffic -> leads -> rentability",
+    "rankingTrajectory": {
+     "observationSchema": {
+      "experimentId": "string",
+      "query": "string",
+      "queryRole": "primary|secondary|community-modified|city-level|unpredicted",
+      "checkDate": "ISO date",
+      "position": "integer 1-100, or null = not in top 100 (UNKNOWN is not 101)",
+      "rankingUrl": "string",
+      "serpFeaturesPresent": "string[]",
+      "device": "desktop",
+      "location": "the asset's city/community"
+     },
+     "cadence": "weekly from publishDate through week 12, then fortnightly through week 26",
+     "queriesPerAsset": {
+      "primary": "1 — the exact service+geography query the asset targets",
+      "secondary": "2-4 close variants",
+      "communityModified": "community assets only: community-name and service+community queries",
+      "unpredicted": "any query Search Console reports impressions for that no keyword tool predicted — the direct test of hyper-local under-measurement"
+     },
+     "derived": [
+      "daysToFirstTop100",
+      "daysToTop50",
+      "daysToTop20",
+      "daysToTop10",
+      "daysToTop5",
+      "positionSlopePerWeek",
+      "positionVolatility",
+      "peakPosition",
+      "positionAtDay90",
+      "positionAtDay180"
+     ],
+     "nullHandling": "position null means NOT FOUND in the top 100 — it must never be stored as 101 or 0, and an unchecked week must be absent rather than null"
+    },
+    "primaryEndpoint": "daysToTop20 on the primary query",
+    "secondaryEndpoints": [
+     "positionAtDay90",
+     "daysToFirstImpression",
+     "impressionsAtDay180",
+     "leadsAtDay180"
+    ],
+    "analyses": [
+     {
+      "id": "H1-model-validation",
+      "question": "Does Dimension A or organic-v1.2 better predict ranking speed?",
+      "method": "Spearman rank correlation of each score against daysToTop20 across all city assets (Groups A and C, n=11). The six pre-identified disagreement assets carry the most weight because the models make opposite predictions there.",
+      "decisionRule": "If organic-v1.2 correlates more strongly with daysToTop20 AND both ~50-point disagreement assets (Rochester, Naperville) fail to reach top 20, rebuild Dimension A as A-2.0.0 around organic structure. If they rank, retain A unchanged."
+     },
+     {
+      "id": "H2-community-demand",
+      "question": "Do zero-volume community queries produce real search activity?",
+      "method": "Compare impressions and unpredicted-query counts for the 12 community assets against the 3 city controls, normalised by measured volume (Frisco 320 / McKinney 210 / Prosper 10 / community 0).",
+      "decisionRule": "If community assets generate impressions materially above what their 0/mo would imply relative to the control gradient, keyword tools under-measure hyper-local demand and community expansion is justified."
+     },
+     {
+      "id": "H3-architecture",
+      "question": "Standalone hyperlocal domain or page on a regional hub?",
+      "method": "WITHIN-PAIR difference in daysToTop20 and positionAtDay90 across the 6 matched pairs; paired sign test plus mean within-pair delta. Pairing is what controls for community quality.",
+      "decisionRule": "Requires >=4 of 6 pairs to yield interpretable data; otherwise the architecture verdict is declared VOID rather than reported weakly."
+     },
+     {
+      "id": "H4-rentability",
+      "question": "Does the $300/mo rentability floor sit in the right place?",
+      "method": "Compare realised monthlyRentRealized against assetValueF for every asset that acquires a renter, with House Cleaning Orlando (F=34) as the designated probe below the floor."
+     }
+    ]
+   },
+   "domainVerifiedAtFreeze": true
   },
   {
    "experimentId": "W1-B3-002",
@@ -2796,7 +4157,8 @@
     "indexDate",
     "firstImpressionDate",
     "firstRankingDate",
-    "targetQueryRankingHistory",
+    "timeToTop100",
+    "timeToTop50",
     "timeToTop20",
     "timeToTop10",
     "timeToTop5",
@@ -2818,7 +4180,7 @@
    "preRegistration": {
     "predictorsUnderTest": [
      "dimensionA",
-     "organicV1_1",
+     "organicV1_2",
      "measuredVolume",
      "cpc",
      "renterDepthE",
@@ -2831,8 +4193,74 @@
      "architectureTreatment"
     ],
     "chain": "rankability -> traffic -> leads -> rentability, each stage measured separately so failure can be localised",
-    "joinKey": "experimentId joins pre-launch evidence -> deployment -> ranking -> traffic -> leads -> rentability"
-   }
+    "joinKey": "experimentId joins pre-launch evidence -> deployment -> ranking -> traffic -> leads -> rentability",
+    "rankingTrajectory": {
+     "observationSchema": {
+      "experimentId": "string",
+      "query": "string",
+      "queryRole": "primary|secondary|community-modified|city-level|unpredicted",
+      "checkDate": "ISO date",
+      "position": "integer 1-100, or null = not in top 100 (UNKNOWN is not 101)",
+      "rankingUrl": "string",
+      "serpFeaturesPresent": "string[]",
+      "device": "desktop",
+      "location": "the asset's city/community"
+     },
+     "cadence": "weekly from publishDate through week 12, then fortnightly through week 26",
+     "queriesPerAsset": {
+      "primary": "1 — the exact service+geography query the asset targets",
+      "secondary": "2-4 close variants",
+      "communityModified": "community assets only: community-name and service+community queries",
+      "unpredicted": "any query Search Console reports impressions for that no keyword tool predicted — the direct test of hyper-local under-measurement"
+     },
+     "derived": [
+      "daysToFirstTop100",
+      "daysToTop50",
+      "daysToTop20",
+      "daysToTop10",
+      "daysToTop5",
+      "positionSlopePerWeek",
+      "positionVolatility",
+      "peakPosition",
+      "positionAtDay90",
+      "positionAtDay180"
+     ],
+     "nullHandling": "position null means NOT FOUND in the top 100 — it must never be stored as 101 or 0, and an unchecked week must be absent rather than null"
+    },
+    "primaryEndpoint": "daysToTop20 on the primary query",
+    "secondaryEndpoints": [
+     "positionAtDay90",
+     "daysToFirstImpression",
+     "impressionsAtDay180",
+     "leadsAtDay180"
+    ],
+    "analyses": [
+     {
+      "id": "H1-model-validation",
+      "question": "Does Dimension A or organic-v1.2 better predict ranking speed?",
+      "method": "Spearman rank correlation of each score against daysToTop20 across all city assets (Groups A and C, n=11). The six pre-identified disagreement assets carry the most weight because the models make opposite predictions there.",
+      "decisionRule": "If organic-v1.2 correlates more strongly with daysToTop20 AND both ~50-point disagreement assets (Rochester, Naperville) fail to reach top 20, rebuild Dimension A as A-2.0.0 around organic structure. If they rank, retain A unchanged."
+     },
+     {
+      "id": "H2-community-demand",
+      "question": "Do zero-volume community queries produce real search activity?",
+      "method": "Compare impressions and unpredicted-query counts for the 12 community assets against the 3 city controls, normalised by measured volume (Frisco 320 / McKinney 210 / Prosper 10 / community 0).",
+      "decisionRule": "If community assets generate impressions materially above what their 0/mo would imply relative to the control gradient, keyword tools under-measure hyper-local demand and community expansion is justified."
+     },
+     {
+      "id": "H3-architecture",
+      "question": "Standalone hyperlocal domain or page on a regional hub?",
+      "method": "WITHIN-PAIR difference in daysToTop20 and positionAtDay90 across the 6 matched pairs; paired sign test plus mean within-pair delta. Pairing is what controls for community quality.",
+      "decisionRule": "Requires >=4 of 6 pairs to yield interpretable data; otherwise the architecture verdict is declared VOID rather than reported weakly."
+     },
+     {
+      "id": "H4-rentability",
+      "question": "Does the $300/mo rentability floor sit in the right place?",
+      "method": "Compare realised monthlyRentRealized against assetValueF for every asset that acquires a renter, with House Cleaning Orlando (F=34) as the designated probe below the floor."
+     }
+    ]
+   },
+   "domainVerifiedAtFreeze": true
   },
   {
    "experimentId": "W1-B3-003",
@@ -2911,7 +4339,8 @@
     "indexDate",
     "firstImpressionDate",
     "firstRankingDate",
-    "targetQueryRankingHistory",
+    "timeToTop100",
+    "timeToTop50",
     "timeToTop20",
     "timeToTop10",
     "timeToTop5",
@@ -2933,7 +4362,7 @@
    "preRegistration": {
     "predictorsUnderTest": [
      "dimensionA",
-     "organicV1_1",
+     "organicV1_2",
      "measuredVolume",
      "cpc",
      "renterDepthE",
@@ -2946,8 +4375,74 @@
      "architectureTreatment"
     ],
     "chain": "rankability -> traffic -> leads -> rentability, each stage measured separately so failure can be localised",
-    "joinKey": "experimentId joins pre-launch evidence -> deployment -> ranking -> traffic -> leads -> rentability"
-   }
+    "joinKey": "experimentId joins pre-launch evidence -> deployment -> ranking -> traffic -> leads -> rentability",
+    "rankingTrajectory": {
+     "observationSchema": {
+      "experimentId": "string",
+      "query": "string",
+      "queryRole": "primary|secondary|community-modified|city-level|unpredicted",
+      "checkDate": "ISO date",
+      "position": "integer 1-100, or null = not in top 100 (UNKNOWN is not 101)",
+      "rankingUrl": "string",
+      "serpFeaturesPresent": "string[]",
+      "device": "desktop",
+      "location": "the asset's city/community"
+     },
+     "cadence": "weekly from publishDate through week 12, then fortnightly through week 26",
+     "queriesPerAsset": {
+      "primary": "1 — the exact service+geography query the asset targets",
+      "secondary": "2-4 close variants",
+      "communityModified": "community assets only: community-name and service+community queries",
+      "unpredicted": "any query Search Console reports impressions for that no keyword tool predicted — the direct test of hyper-local under-measurement"
+     },
+     "derived": [
+      "daysToFirstTop100",
+      "daysToTop50",
+      "daysToTop20",
+      "daysToTop10",
+      "daysToTop5",
+      "positionSlopePerWeek",
+      "positionVolatility",
+      "peakPosition",
+      "positionAtDay90",
+      "positionAtDay180"
+     ],
+     "nullHandling": "position null means NOT FOUND in the top 100 — it must never be stored as 101 or 0, and an unchecked week must be absent rather than null"
+    },
+    "primaryEndpoint": "daysToTop20 on the primary query",
+    "secondaryEndpoints": [
+     "positionAtDay90",
+     "daysToFirstImpression",
+     "impressionsAtDay180",
+     "leadsAtDay180"
+    ],
+    "analyses": [
+     {
+      "id": "H1-model-validation",
+      "question": "Does Dimension A or organic-v1.2 better predict ranking speed?",
+      "method": "Spearman rank correlation of each score against daysToTop20 across all city assets (Groups A and C, n=11). The six pre-identified disagreement assets carry the most weight because the models make opposite predictions there.",
+      "decisionRule": "If organic-v1.2 correlates more strongly with daysToTop20 AND both ~50-point disagreement assets (Rochester, Naperville) fail to reach top 20, rebuild Dimension A as A-2.0.0 around organic structure. If they rank, retain A unchanged."
+     },
+     {
+      "id": "H2-community-demand",
+      "question": "Do zero-volume community queries produce real search activity?",
+      "method": "Compare impressions and unpredicted-query counts for the 12 community assets against the 3 city controls, normalised by measured volume (Frisco 320 / McKinney 210 / Prosper 10 / community 0).",
+      "decisionRule": "If community assets generate impressions materially above what their 0/mo would imply relative to the control gradient, keyword tools under-measure hyper-local demand and community expansion is justified."
+     },
+     {
+      "id": "H3-architecture",
+      "question": "Standalone hyperlocal domain or page on a regional hub?",
+      "method": "WITHIN-PAIR difference in daysToTop20 and positionAtDay90 across the 6 matched pairs; paired sign test plus mean within-pair delta. Pairing is what controls for community quality.",
+      "decisionRule": "Requires >=4 of 6 pairs to yield interpretable data; otherwise the architecture verdict is declared VOID rather than reported weakly."
+     },
+     {
+      "id": "H4-rentability",
+      "question": "Does the $300/mo rentability floor sit in the right place?",
+      "method": "Compare realised monthlyRentRealized against assetValueF for every asset that acquires a renter, with House Cleaning Orlando (F=34) as the designated probe below the floor."
+     }
+    ]
+   },
+   "domainVerifiedAtFreeze": true
   },
   {
    "experimentId": "W1-C-001",
@@ -3026,7 +4521,8 @@
     "indexDate",
     "firstImpressionDate",
     "firstRankingDate",
-    "targetQueryRankingHistory",
+    "timeToTop100",
+    "timeToTop50",
     "timeToTop20",
     "timeToTop10",
     "timeToTop5",
@@ -3048,7 +4544,7 @@
    "preRegistration": {
     "predictorsUnderTest": [
      "dimensionA",
-     "organicV1_1",
+     "organicV1_2",
      "measuredVolume",
      "cpc",
      "renterDepthE",
@@ -3061,7 +4557,72 @@
      "architectureTreatment"
     ],
     "chain": "rankability -> traffic -> leads -> rentability, each stage measured separately so failure can be localised",
-    "joinKey": "experimentId joins pre-launch evidence -> deployment -> ranking -> traffic -> leads -> rentability"
+    "joinKey": "experimentId joins pre-launch evidence -> deployment -> ranking -> traffic -> leads -> rentability",
+    "rankingTrajectory": {
+     "observationSchema": {
+      "experimentId": "string",
+      "query": "string",
+      "queryRole": "primary|secondary|community-modified|city-level|unpredicted",
+      "checkDate": "ISO date",
+      "position": "integer 1-100, or null = not in top 100 (UNKNOWN is not 101)",
+      "rankingUrl": "string",
+      "serpFeaturesPresent": "string[]",
+      "device": "desktop",
+      "location": "the asset's city/community"
+     },
+     "cadence": "weekly from publishDate through week 12, then fortnightly through week 26",
+     "queriesPerAsset": {
+      "primary": "1 — the exact service+geography query the asset targets",
+      "secondary": "2-4 close variants",
+      "communityModified": "community assets only: community-name and service+community queries",
+      "unpredicted": "any query Search Console reports impressions for that no keyword tool predicted — the direct test of hyper-local under-measurement"
+     },
+     "derived": [
+      "daysToFirstTop100",
+      "daysToTop50",
+      "daysToTop20",
+      "daysToTop10",
+      "daysToTop5",
+      "positionSlopePerWeek",
+      "positionVolatility",
+      "peakPosition",
+      "positionAtDay90",
+      "positionAtDay180"
+     ],
+     "nullHandling": "position null means NOT FOUND in the top 100 — it must never be stored as 101 or 0, and an unchecked week must be absent rather than null"
+    },
+    "primaryEndpoint": "daysToTop20 on the primary query",
+    "secondaryEndpoints": [
+     "positionAtDay90",
+     "daysToFirstImpression",
+     "impressionsAtDay180",
+     "leadsAtDay180"
+    ],
+    "analyses": [
+     {
+      "id": "H1-model-validation",
+      "question": "Does Dimension A or organic-v1.2 better predict ranking speed?",
+      "method": "Spearman rank correlation of each score against daysToTop20 across all city assets (Groups A and C, n=11). The six pre-identified disagreement assets carry the most weight because the models make opposite predictions there.",
+      "decisionRule": "If organic-v1.2 correlates more strongly with daysToTop20 AND both ~50-point disagreement assets (Rochester, Naperville) fail to reach top 20, rebuild Dimension A as A-2.0.0 around organic structure. If they rank, retain A unchanged."
+     },
+     {
+      "id": "H2-community-demand",
+      "question": "Do zero-volume community queries produce real search activity?",
+      "method": "Compare impressions and unpredicted-query counts for the 12 community assets against the 3 city controls, normalised by measured volume (Frisco 320 / McKinney 210 / Prosper 10 / community 0).",
+      "decisionRule": "If community assets generate impressions materially above what their 0/mo would imply relative to the control gradient, keyword tools under-measure hyper-local demand and community expansion is justified."
+     },
+     {
+      "id": "H3-architecture",
+      "question": "Standalone hyperlocal domain or page on a regional hub?",
+      "method": "WITHIN-PAIR difference in daysToTop20 and positionAtDay90 across the 6 matched pairs; paired sign test plus mean within-pair delta. Pairing is what controls for community quality.",
+      "decisionRule": "Requires >=4 of 6 pairs to yield interpretable data; otherwise the architecture verdict is declared VOID rather than reported weakly."
+     },
+     {
+      "id": "H4-rentability",
+      "question": "Does the $300/mo rentability floor sit in the right place?",
+      "method": "Compare realised monthlyRentRealized against assetValueF for every asset that acquires a renter, with House Cleaning Orlando (F=34) as the designated probe below the floor."
+     }
+    ]
    },
    "domainCandidates": [
     {
@@ -3091,7 +4652,8 @@
     }
    ],
    "preferredDomain": "metalroofingrochester.com",
-   "domainAvailable": true
+   "domainAvailable": true,
+   "domainVerifiedAtFreeze": true
   },
   {
    "experimentId": "W1-C-002",
@@ -3170,7 +4732,8 @@
     "indexDate",
     "firstImpressionDate",
     "firstRankingDate",
-    "targetQueryRankingHistory",
+    "timeToTop100",
+    "timeToTop50",
     "timeToTop20",
     "timeToTop10",
     "timeToTop5",
@@ -3192,7 +4755,7 @@
    "preRegistration": {
     "predictorsUnderTest": [
      "dimensionA",
-     "organicV1_1",
+     "organicV1_2",
      "measuredVolume",
      "cpc",
      "renterDepthE",
@@ -3205,7 +4768,72 @@
      "architectureTreatment"
     ],
     "chain": "rankability -> traffic -> leads -> rentability, each stage measured separately so failure can be localised",
-    "joinKey": "experimentId joins pre-launch evidence -> deployment -> ranking -> traffic -> leads -> rentability"
+    "joinKey": "experimentId joins pre-launch evidence -> deployment -> ranking -> traffic -> leads -> rentability",
+    "rankingTrajectory": {
+     "observationSchema": {
+      "experimentId": "string",
+      "query": "string",
+      "queryRole": "primary|secondary|community-modified|city-level|unpredicted",
+      "checkDate": "ISO date",
+      "position": "integer 1-100, or null = not in top 100 (UNKNOWN is not 101)",
+      "rankingUrl": "string",
+      "serpFeaturesPresent": "string[]",
+      "device": "desktop",
+      "location": "the asset's city/community"
+     },
+     "cadence": "weekly from publishDate through week 12, then fortnightly through week 26",
+     "queriesPerAsset": {
+      "primary": "1 — the exact service+geography query the asset targets",
+      "secondary": "2-4 close variants",
+      "communityModified": "community assets only: community-name and service+community queries",
+      "unpredicted": "any query Search Console reports impressions for that no keyword tool predicted — the direct test of hyper-local under-measurement"
+     },
+     "derived": [
+      "daysToFirstTop100",
+      "daysToTop50",
+      "daysToTop20",
+      "daysToTop10",
+      "daysToTop5",
+      "positionSlopePerWeek",
+      "positionVolatility",
+      "peakPosition",
+      "positionAtDay90",
+      "positionAtDay180"
+     ],
+     "nullHandling": "position null means NOT FOUND in the top 100 — it must never be stored as 101 or 0, and an unchecked week must be absent rather than null"
+    },
+    "primaryEndpoint": "daysToTop20 on the primary query",
+    "secondaryEndpoints": [
+     "positionAtDay90",
+     "daysToFirstImpression",
+     "impressionsAtDay180",
+     "leadsAtDay180"
+    ],
+    "analyses": [
+     {
+      "id": "H1-model-validation",
+      "question": "Does Dimension A or organic-v1.2 better predict ranking speed?",
+      "method": "Spearman rank correlation of each score against daysToTop20 across all city assets (Groups A and C, n=11). The six pre-identified disagreement assets carry the most weight because the models make opposite predictions there.",
+      "decisionRule": "If organic-v1.2 correlates more strongly with daysToTop20 AND both ~50-point disagreement assets (Rochester, Naperville) fail to reach top 20, rebuild Dimension A as A-2.0.0 around organic structure. If they rank, retain A unchanged."
+     },
+     {
+      "id": "H2-community-demand",
+      "question": "Do zero-volume community queries produce real search activity?",
+      "method": "Compare impressions and unpredicted-query counts for the 12 community assets against the 3 city controls, normalised by measured volume (Frisco 320 / McKinney 210 / Prosper 10 / community 0).",
+      "decisionRule": "If community assets generate impressions materially above what their 0/mo would imply relative to the control gradient, keyword tools under-measure hyper-local demand and community expansion is justified."
+     },
+     {
+      "id": "H3-architecture",
+      "question": "Standalone hyperlocal domain or page on a regional hub?",
+      "method": "WITHIN-PAIR difference in daysToTop20 and positionAtDay90 across the 6 matched pairs; paired sign test plus mean within-pair delta. Pairing is what controls for community quality.",
+      "decisionRule": "Requires >=4 of 6 pairs to yield interpretable data; otherwise the architecture verdict is declared VOID rather than reported weakly."
+     },
+     {
+      "id": "H4-rentability",
+      "question": "Does the $300/mo rentability floor sit in the right place?",
+      "method": "Compare realised monthlyRentRealized against assetValueF for every asset that acquires a renter, with House Cleaning Orlando (F=34) as the designated probe below the floor."
+     }
+    ]
    },
    "domainCandidates": [
     {
@@ -3235,7 +4863,8 @@
     }
    ],
    "preferredDomain": "basementwaterproofingofnaperville.com",
-   "domainAvailable": true
+   "domainAvailable": true,
+   "domainVerifiedAtFreeze": true
   },
   {
    "experimentId": "W1-C-003",
@@ -3314,7 +4943,8 @@
     "indexDate",
     "firstImpressionDate",
     "firstRankingDate",
-    "targetQueryRankingHistory",
+    "timeToTop100",
+    "timeToTop50",
     "timeToTop20",
     "timeToTop10",
     "timeToTop5",
@@ -3336,7 +4966,7 @@
    "preRegistration": {
     "predictorsUnderTest": [
      "dimensionA",
-     "organicV1_1",
+     "organicV1_2",
      "measuredVolume",
      "cpc",
      "renterDepthE",
@@ -3349,7 +4979,72 @@
      "architectureTreatment"
     ],
     "chain": "rankability -> traffic -> leads -> rentability, each stage measured separately so failure can be localised",
-    "joinKey": "experimentId joins pre-launch evidence -> deployment -> ranking -> traffic -> leads -> rentability"
+    "joinKey": "experimentId joins pre-launch evidence -> deployment -> ranking -> traffic -> leads -> rentability",
+    "rankingTrajectory": {
+     "observationSchema": {
+      "experimentId": "string",
+      "query": "string",
+      "queryRole": "primary|secondary|community-modified|city-level|unpredicted",
+      "checkDate": "ISO date",
+      "position": "integer 1-100, or null = not in top 100 (UNKNOWN is not 101)",
+      "rankingUrl": "string",
+      "serpFeaturesPresent": "string[]",
+      "device": "desktop",
+      "location": "the asset's city/community"
+     },
+     "cadence": "weekly from publishDate through week 12, then fortnightly through week 26",
+     "queriesPerAsset": {
+      "primary": "1 — the exact service+geography query the asset targets",
+      "secondary": "2-4 close variants",
+      "communityModified": "community assets only: community-name and service+community queries",
+      "unpredicted": "any query Search Console reports impressions for that no keyword tool predicted — the direct test of hyper-local under-measurement"
+     },
+     "derived": [
+      "daysToFirstTop100",
+      "daysToTop50",
+      "daysToTop20",
+      "daysToTop10",
+      "daysToTop5",
+      "positionSlopePerWeek",
+      "positionVolatility",
+      "peakPosition",
+      "positionAtDay90",
+      "positionAtDay180"
+     ],
+     "nullHandling": "position null means NOT FOUND in the top 100 — it must never be stored as 101 or 0, and an unchecked week must be absent rather than null"
+    },
+    "primaryEndpoint": "daysToTop20 on the primary query",
+    "secondaryEndpoints": [
+     "positionAtDay90",
+     "daysToFirstImpression",
+     "impressionsAtDay180",
+     "leadsAtDay180"
+    ],
+    "analyses": [
+     {
+      "id": "H1-model-validation",
+      "question": "Does Dimension A or organic-v1.2 better predict ranking speed?",
+      "method": "Spearman rank correlation of each score against daysToTop20 across all city assets (Groups A and C, n=11). The six pre-identified disagreement assets carry the most weight because the models make opposite predictions there.",
+      "decisionRule": "If organic-v1.2 correlates more strongly with daysToTop20 AND both ~50-point disagreement assets (Rochester, Naperville) fail to reach top 20, rebuild Dimension A as A-2.0.0 around organic structure. If they rank, retain A unchanged."
+     },
+     {
+      "id": "H2-community-demand",
+      "question": "Do zero-volume community queries produce real search activity?",
+      "method": "Compare impressions and unpredicted-query counts for the 12 community assets against the 3 city controls, normalised by measured volume (Frisco 320 / McKinney 210 / Prosper 10 / community 0).",
+      "decisionRule": "If community assets generate impressions materially above what their 0/mo would imply relative to the control gradient, keyword tools under-measure hyper-local demand and community expansion is justified."
+     },
+     {
+      "id": "H3-architecture",
+      "question": "Standalone hyperlocal domain or page on a regional hub?",
+      "method": "WITHIN-PAIR difference in daysToTop20 and positionAtDay90 across the 6 matched pairs; paired sign test plus mean within-pair delta. Pairing is what controls for community quality.",
+      "decisionRule": "Requires >=4 of 6 pairs to yield interpretable data; otherwise the architecture verdict is declared VOID rather than reported weakly."
+     },
+     {
+      "id": "H4-rentability",
+      "question": "Does the $300/mo rentability floor sit in the right place?",
+      "method": "Compare realised monthlyRentRealized against assetValueF for every asset that acquires a renter, with House Cleaning Orlando (F=34) as the designated probe below the floor."
+     }
+    ]
    },
    "domainCandidates": [
     {
@@ -3379,7 +5074,8 @@
     }
    ],
    "preferredDomain": "bathroomremodelingbellevuene.com",
-   "domainAvailable": true
+   "domainAvailable": true,
+   "domainVerifiedAtFreeze": true
   },
   {
    "experimentId": "W1-C-004",
@@ -3458,7 +5154,8 @@
     "indexDate",
     "firstImpressionDate",
     "firstRankingDate",
-    "targetQueryRankingHistory",
+    "timeToTop100",
+    "timeToTop50",
     "timeToTop20",
     "timeToTop10",
     "timeToTop5",
@@ -3480,7 +5177,7 @@
    "preRegistration": {
     "predictorsUnderTest": [
      "dimensionA",
-     "organicV1_1",
+     "organicV1_2",
      "measuredVolume",
      "cpc",
      "renterDepthE",
@@ -3493,7 +5190,72 @@
      "architectureTreatment"
     ],
     "chain": "rankability -> traffic -> leads -> rentability, each stage measured separately so failure can be localised",
-    "joinKey": "experimentId joins pre-launch evidence -> deployment -> ranking -> traffic -> leads -> rentability"
+    "joinKey": "experimentId joins pre-launch evidence -> deployment -> ranking -> traffic -> leads -> rentability",
+    "rankingTrajectory": {
+     "observationSchema": {
+      "experimentId": "string",
+      "query": "string",
+      "queryRole": "primary|secondary|community-modified|city-level|unpredicted",
+      "checkDate": "ISO date",
+      "position": "integer 1-100, or null = not in top 100 (UNKNOWN is not 101)",
+      "rankingUrl": "string",
+      "serpFeaturesPresent": "string[]",
+      "device": "desktop",
+      "location": "the asset's city/community"
+     },
+     "cadence": "weekly from publishDate through week 12, then fortnightly through week 26",
+     "queriesPerAsset": {
+      "primary": "1 — the exact service+geography query the asset targets",
+      "secondary": "2-4 close variants",
+      "communityModified": "community assets only: community-name and service+community queries",
+      "unpredicted": "any query Search Console reports impressions for that no keyword tool predicted — the direct test of hyper-local under-measurement"
+     },
+     "derived": [
+      "daysToFirstTop100",
+      "daysToTop50",
+      "daysToTop20",
+      "daysToTop10",
+      "daysToTop5",
+      "positionSlopePerWeek",
+      "positionVolatility",
+      "peakPosition",
+      "positionAtDay90",
+      "positionAtDay180"
+     ],
+     "nullHandling": "position null means NOT FOUND in the top 100 — it must never be stored as 101 or 0, and an unchecked week must be absent rather than null"
+    },
+    "primaryEndpoint": "daysToTop20 on the primary query",
+    "secondaryEndpoints": [
+     "positionAtDay90",
+     "daysToFirstImpression",
+     "impressionsAtDay180",
+     "leadsAtDay180"
+    ],
+    "analyses": [
+     {
+      "id": "H1-model-validation",
+      "question": "Does Dimension A or organic-v1.2 better predict ranking speed?",
+      "method": "Spearman rank correlation of each score against daysToTop20 across all city assets (Groups A and C, n=11). The six pre-identified disagreement assets carry the most weight because the models make opposite predictions there.",
+      "decisionRule": "If organic-v1.2 correlates more strongly with daysToTop20 AND both ~50-point disagreement assets (Rochester, Naperville) fail to reach top 20, rebuild Dimension A as A-2.0.0 around organic structure. If they rank, retain A unchanged."
+     },
+     {
+      "id": "H2-community-demand",
+      "question": "Do zero-volume community queries produce real search activity?",
+      "method": "Compare impressions and unpredicted-query counts for the 12 community assets against the 3 city controls, normalised by measured volume (Frisco 320 / McKinney 210 / Prosper 10 / community 0).",
+      "decisionRule": "If community assets generate impressions materially above what their 0/mo would imply relative to the control gradient, keyword tools under-measure hyper-local demand and community expansion is justified."
+     },
+     {
+      "id": "H3-architecture",
+      "question": "Standalone hyperlocal domain or page on a regional hub?",
+      "method": "WITHIN-PAIR difference in daysToTop20 and positionAtDay90 across the 6 matched pairs; paired sign test plus mean within-pair delta. Pairing is what controls for community quality.",
+      "decisionRule": "Requires >=4 of 6 pairs to yield interpretable data; otherwise the architecture verdict is declared VOID rather than reported weakly."
+     },
+     {
+      "id": "H4-rentability",
+      "question": "Does the $300/mo rentability floor sit in the right place?",
+      "method": "Compare realised monthlyRentRealized against assetValueF for every asset that acquires a renter, with House Cleaning Orlando (F=34) as the designated probe below the floor."
+     }
+    ]
    },
    "domainCandidates": [
     {
@@ -3523,7 +5285,8 @@
     }
    ],
    "preferredDomain": "housecleaningoforlando.com",
-   "domainAvailable": true
+   "domainAvailable": true,
+   "domainVerifiedAtFreeze": true
   },
   {
    "experimentId": "W1-C-005",
@@ -3602,7 +5365,8 @@
     "indexDate",
     "firstImpressionDate",
     "firstRankingDate",
-    "targetQueryRankingHistory",
+    "timeToTop100",
+    "timeToTop50",
     "timeToTop20",
     "timeToTop10",
     "timeToTop5",
@@ -3624,7 +5388,7 @@
    "preRegistration": {
     "predictorsUnderTest": [
      "dimensionA",
-     "organicV1_1",
+     "organicV1_2",
      "measuredVolume",
      "cpc",
      "renterDepthE",
@@ -3637,7 +5401,72 @@
      "architectureTreatment"
     ],
     "chain": "rankability -> traffic -> leads -> rentability, each stage measured separately so failure can be localised",
-    "joinKey": "experimentId joins pre-launch evidence -> deployment -> ranking -> traffic -> leads -> rentability"
+    "joinKey": "experimentId joins pre-launch evidence -> deployment -> ranking -> traffic -> leads -> rentability",
+    "rankingTrajectory": {
+     "observationSchema": {
+      "experimentId": "string",
+      "query": "string",
+      "queryRole": "primary|secondary|community-modified|city-level|unpredicted",
+      "checkDate": "ISO date",
+      "position": "integer 1-100, or null = not in top 100 (UNKNOWN is not 101)",
+      "rankingUrl": "string",
+      "serpFeaturesPresent": "string[]",
+      "device": "desktop",
+      "location": "the asset's city/community"
+     },
+     "cadence": "weekly from publishDate through week 12, then fortnightly through week 26",
+     "queriesPerAsset": {
+      "primary": "1 — the exact service+geography query the asset targets",
+      "secondary": "2-4 close variants",
+      "communityModified": "community assets only: community-name and service+community queries",
+      "unpredicted": "any query Search Console reports impressions for that no keyword tool predicted — the direct test of hyper-local under-measurement"
+     },
+     "derived": [
+      "daysToFirstTop100",
+      "daysToTop50",
+      "daysToTop20",
+      "daysToTop10",
+      "daysToTop5",
+      "positionSlopePerWeek",
+      "positionVolatility",
+      "peakPosition",
+      "positionAtDay90",
+      "positionAtDay180"
+     ],
+     "nullHandling": "position null means NOT FOUND in the top 100 — it must never be stored as 101 or 0, and an unchecked week must be absent rather than null"
+    },
+    "primaryEndpoint": "daysToTop20 on the primary query",
+    "secondaryEndpoints": [
+     "positionAtDay90",
+     "daysToFirstImpression",
+     "impressionsAtDay180",
+     "leadsAtDay180"
+    ],
+    "analyses": [
+     {
+      "id": "H1-model-validation",
+      "question": "Does Dimension A or organic-v1.2 better predict ranking speed?",
+      "method": "Spearman rank correlation of each score against daysToTop20 across all city assets (Groups A and C, n=11). The six pre-identified disagreement assets carry the most weight because the models make opposite predictions there.",
+      "decisionRule": "If organic-v1.2 correlates more strongly with daysToTop20 AND both ~50-point disagreement assets (Rochester, Naperville) fail to reach top 20, rebuild Dimension A as A-2.0.0 around organic structure. If they rank, retain A unchanged."
+     },
+     {
+      "id": "H2-community-demand",
+      "question": "Do zero-volume community queries produce real search activity?",
+      "method": "Compare impressions and unpredicted-query counts for the 12 community assets against the 3 city controls, normalised by measured volume (Frisco 320 / McKinney 210 / Prosper 10 / community 0).",
+      "decisionRule": "If community assets generate impressions materially above what their 0/mo would imply relative to the control gradient, keyword tools under-measure hyper-local demand and community expansion is justified."
+     },
+     {
+      "id": "H3-architecture",
+      "question": "Standalone hyperlocal domain or page on a regional hub?",
+      "method": "WITHIN-PAIR difference in daysToTop20 and positionAtDay90 across the 6 matched pairs; paired sign test plus mean within-pair delta. Pairing is what controls for community quality.",
+      "decisionRule": "Requires >=4 of 6 pairs to yield interpretable data; otherwise the architecture verdict is declared VOID rather than reported weakly."
+     },
+     {
+      "id": "H4-rentability",
+      "question": "Does the $300/mo rentability floor sit in the right place?",
+      "method": "Compare realised monthlyRentRealized against assetValueF for every asset that acquires a renter, with House Cleaning Orlando (F=34) as the designated probe below the floor."
+     }
+    ]
    },
    "domainCandidates": [
     {
@@ -3667,7 +5496,8 @@
     }
    ],
    "preferredDomain": "kitchenremodelingrockvillemd.com",
-   "domainAvailable": true
+   "domainAvailable": true,
+   "domainVerifiedAtFreeze": true
   },
   {
    "experimentId": "W1-C-006",
@@ -3746,7 +5576,8 @@
     "indexDate",
     "firstImpressionDate",
     "firstRankingDate",
-    "targetQueryRankingHistory",
+    "timeToTop100",
+    "timeToTop50",
     "timeToTop20",
     "timeToTop10",
     "timeToTop5",
@@ -3768,7 +5599,7 @@
    "preRegistration": {
     "predictorsUnderTest": [
      "dimensionA",
-     "organicV1_1",
+     "organicV1_2",
      "measuredVolume",
      "cpc",
      "renterDepthE",
@@ -3781,7 +5612,72 @@
      "architectureTreatment"
     ],
     "chain": "rankability -> traffic -> leads -> rentability, each stage measured separately so failure can be localised",
-    "joinKey": "experimentId joins pre-launch evidence -> deployment -> ranking -> traffic -> leads -> rentability"
+    "joinKey": "experimentId joins pre-launch evidence -> deployment -> ranking -> traffic -> leads -> rentability",
+    "rankingTrajectory": {
+     "observationSchema": {
+      "experimentId": "string",
+      "query": "string",
+      "queryRole": "primary|secondary|community-modified|city-level|unpredicted",
+      "checkDate": "ISO date",
+      "position": "integer 1-100, or null = not in top 100 (UNKNOWN is not 101)",
+      "rankingUrl": "string",
+      "serpFeaturesPresent": "string[]",
+      "device": "desktop",
+      "location": "the asset's city/community"
+     },
+     "cadence": "weekly from publishDate through week 12, then fortnightly through week 26",
+     "queriesPerAsset": {
+      "primary": "1 — the exact service+geography query the asset targets",
+      "secondary": "2-4 close variants",
+      "communityModified": "community assets only: community-name and service+community queries",
+      "unpredicted": "any query Search Console reports impressions for that no keyword tool predicted — the direct test of hyper-local under-measurement"
+     },
+     "derived": [
+      "daysToFirstTop100",
+      "daysToTop50",
+      "daysToTop20",
+      "daysToTop10",
+      "daysToTop5",
+      "positionSlopePerWeek",
+      "positionVolatility",
+      "peakPosition",
+      "positionAtDay90",
+      "positionAtDay180"
+     ],
+     "nullHandling": "position null means NOT FOUND in the top 100 — it must never be stored as 101 or 0, and an unchecked week must be absent rather than null"
+    },
+    "primaryEndpoint": "daysToTop20 on the primary query",
+    "secondaryEndpoints": [
+     "positionAtDay90",
+     "daysToFirstImpression",
+     "impressionsAtDay180",
+     "leadsAtDay180"
+    ],
+    "analyses": [
+     {
+      "id": "H1-model-validation",
+      "question": "Does Dimension A or organic-v1.2 better predict ranking speed?",
+      "method": "Spearman rank correlation of each score against daysToTop20 across all city assets (Groups A and C, n=11). The six pre-identified disagreement assets carry the most weight because the models make opposite predictions there.",
+      "decisionRule": "If organic-v1.2 correlates more strongly with daysToTop20 AND both ~50-point disagreement assets (Rochester, Naperville) fail to reach top 20, rebuild Dimension A as A-2.0.0 around organic structure. If they rank, retain A unchanged."
+     },
+     {
+      "id": "H2-community-demand",
+      "question": "Do zero-volume community queries produce real search activity?",
+      "method": "Compare impressions and unpredicted-query counts for the 12 community assets against the 3 city controls, normalised by measured volume (Frisco 320 / McKinney 210 / Prosper 10 / community 0).",
+      "decisionRule": "If community assets generate impressions materially above what their 0/mo would imply relative to the control gradient, keyword tools under-measure hyper-local demand and community expansion is justified."
+     },
+     {
+      "id": "H3-architecture",
+      "question": "Standalone hyperlocal domain or page on a regional hub?",
+      "method": "WITHIN-PAIR difference in daysToTop20 and positionAtDay90 across the 6 matched pairs; paired sign test plus mean within-pair delta. Pairing is what controls for community quality.",
+      "decisionRule": "Requires >=4 of 6 pairs to yield interpretable data; otherwise the architecture verdict is declared VOID rather than reported weakly."
+     },
+     {
+      "id": "H4-rentability",
+      "question": "Does the $300/mo rentability floor sit in the right place?",
+      "method": "Compare realised monthlyRentRealized against assetValueF for every asset that acquires a renter, with House Cleaning Orlando (F=34) as the designated probe below the floor."
+     }
+    ]
    },
    "domainCandidates": [
     {
@@ -3811,7 +5707,8 @@
     }
    ],
    "preferredDomain": "appliancerepairofaurora.com",
-   "domainAvailable": true
+   "domainAvailable": true,
+   "domainVerifiedAtFreeze": true
   }
  ]
 }

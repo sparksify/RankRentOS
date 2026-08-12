@@ -54,15 +54,50 @@ async function domains(svc: string, place: string, state: string) {
 }
 
 // Outcome fields — the join from pre-launch evidence through to rentability.
-const MEASUREMENT = ["publishDate", "indexDate", "firstImpressionDate", "firstRankingDate", "targetQueryRankingHistory",
-  "timeToTop20", "timeToTop10", "timeToTop5", "impressions", "clicks", "organicSessions", "calls", "forms",
+const MEASUREMENT = ["publishDate", "indexDate", "firstImpressionDate", "firstRankingDate",
+  "timeToTop100", "timeToTop50", "timeToTop20", "timeToTop10", "timeToTop5",
+  "impressions", "clicks", "organicSessions", "calls", "forms",
   "leadsTotal", "qualifiedLeads", "leadValueEstimated", "leadValueRealized", "renterOutreach", "renterResponses",
   "renterInterest", "rentalAgreementAchieved", "monthlyRentRealized"];
+
+// RANKING TRAJECTORY — the primary instrument for validating the two rankability
+// models. A single end-state rank cannot distinguish "ranked fast then stalled" from
+// "climbed steadily"; the models are claims about SPEED, so speed must be sampled.
+const RANKING_TRAJECTORY = {
+  observationSchema: { experimentId: "string", query: "string", queryRole: "primary|secondary|community-modified|city-level|unpredicted",
+    checkDate: "ISO date", position: "integer 1-100, or null = not in top 100 (UNKNOWN is not 101)",
+    rankingUrl: "string", serpFeaturesPresent: "string[]", device: "desktop", location: "the asset's city/community" },
+  cadence: "weekly from publishDate through week 12, then fortnightly through week 26",
+  queriesPerAsset: { primary: "1 — the exact service+geography query the asset targets",
+    secondary: "2-4 close variants",
+    communityModified: "community assets only: community-name and service+community queries",
+    unpredicted: "any query Search Console reports impressions for that no keyword tool predicted — the direct test of hyper-local under-measurement" },
+  derived: ["daysToFirstTop100", "daysToTop50", "daysToTop20", "daysToTop10", "daysToTop5",
+    "positionSlopePerWeek", "positionVolatility", "peakPosition", "positionAtDay90", "positionAtDay180"],
+  nullHandling: "position null means NOT FOUND in the top 100 — it must never be stored as 101 or 0, and an unchecked week must be absent rather than null",
+};
 const PREREG = {
-  predictorsUnderTest: ["dimensionA", "organicV1_1", "measuredVolume", "cpc", "renterDepthE", "leadEconomicsD", "assetValueF",
+  predictorsUnderTest: ["dimensionA", "organicV1_2", "measuredVolume", "cpc", "renterDepthE", "leadEconomicsD", "assetValueF",
     "contentBarWords", "competitorDomainAgeYears", "geographyType", "incumbentTargeting", "architectureTreatment"],
   chain: "rankability -> traffic -> leads -> rentability, each stage measured separately so failure can be localised",
   joinKey: "experimentId joins pre-launch evidence -> deployment -> ranking -> traffic -> leads -> rentability",
+  rankingTrajectory: RANKING_TRAJECTORY,
+  // Endpoints fixed BEFORE launch so the analysis cannot be chosen to fit the result.
+  primaryEndpoint: "daysToTop20 on the primary query",
+  secondaryEndpoints: ["positionAtDay90", "daysToFirstImpression", "impressionsAtDay180", "leadsAtDay180"],
+  analyses: [
+    { id: "H1-model-validation", question: "Does Dimension A or organic-v1.2 better predict ranking speed?",
+      method: "Spearman rank correlation of each score against daysToTop20 across all city assets (Groups A and C, n=11). The six pre-identified disagreement assets carry the most weight because the models make opposite predictions there.",
+      decisionRule: "If organic-v1.2 correlates more strongly with daysToTop20 AND both ~50-point disagreement assets (Rochester, Naperville) fail to reach top 20, rebuild Dimension A as A-2.0.0 around organic structure. If they rank, retain A unchanged." },
+    { id: "H2-community-demand", question: "Do zero-volume community queries produce real search activity?",
+      method: "Compare impressions and unpredicted-query counts for the 12 community assets against the 3 city controls, normalised by measured volume (Frisco 320 / McKinney 210 / Prosper 10 / community 0).",
+      decisionRule: "If community assets generate impressions materially above what their 0/mo would imply relative to the control gradient, keyword tools under-measure hyper-local demand and community expansion is justified." },
+    { id: "H3-architecture", question: "Standalone hyperlocal domain or page on a regional hub?",
+      method: "WITHIN-PAIR difference in daysToTop20 and positionAtDay90 across the 6 matched pairs; paired sign test plus mean within-pair delta. Pairing is what controls for community quality.",
+      decisionRule: "Requires >=4 of 6 pairs to yield interpretable data; otherwise the architecture verdict is declared VOID rather than reported weakly." },
+    { id: "H4-rentability", question: "Does the $300/mo rentability floor sit in the right place?",
+      method: "Compare realised monthlyRentRealized against assetValueF for every asset that acquires a renter, with House Cleaning Orlando (F=34) as the designated probe below the floor." },
+  ],
 };
 const mk = (o: any) => ({ ...o, measurementPlan: MEASUREMENT, preRegistration: PREREG });
 
@@ -72,10 +107,15 @@ const mk = (o: any) => ({ ...o, measurementPlan: MEASUREMENT, preRegistration: P
 // Contrarian assets are reserved for Group C and cannot also be exploitation assets.
 const CONTRARIAN_IDS = new Set(["metal-roofing|Rochester|MN", "basement-waterproofing|Naperville|IL",
   "house-cleaning|Orlando|FL", "kitchen-remodel|Rockville|MD", "bathroom-remodel|Bellevue|NE", "appliance-repair|Aurora|IL"]);
-const A_MIN_ORG = 55, A_MIN_F = 50, A_MIN_VOL = 100;
+const A_MIN_ORG = 55, A_MIN_F = 50, A_MIN_VOL = 100, A_MIN_VIABLE_RENTERS = 1;
 const aPool = scored
   .filter((r) => !CONTRARIAN_IDS.has(r.id))
   .filter((r) => (r.vol ?? 0) >= A_MIN_VOL && (r.score.dims.F.score ?? 0) >= A_MIN_F)
+  // RENTER GATE (defect fix): an asset with no viable renter cannot be rented, which
+  // is the entire business model. bucketOf() enforces opViable >= 1 for every bucketed
+  // candidate; the Group-A filter previously omitted it and admitted Conroe TX
+  // (viableRenters 0, website adoption 0%). Exploitation assets must clear it too.
+  .filter((r) => (r.operators?.viableOperatorCount ?? 0) >= A_MIN_VIABLE_RENTERS)
   .filter((r) => { const g = geo.get(r.id); return !g || (g.verdict !== "unverified-no-address-evidence" && g.verdict !== "serp-not-localized"); })
   .map((r) => ({ r, o: cityOrg(r) }))
   .filter((x) => x.o && (x.o.score ?? 0) >= A_MIN_ORG)
@@ -290,6 +330,25 @@ for (const a of [...groupA, ...groupC]) {
 }
 
 const all = [...groupA, ...groupB, ...groupC];
+
+// ---------- FINAL LIVE RE-VERIFICATION of every domain we would actually buy ----------
+// Availability decays; the purchase list must reflect a check made at freeze time.
+const purchaseSet = new Map<string, any>();
+for (const a of all) {
+  if (!a.preferredDomain) continue;
+  if (a.assetType === "hub-page") { purchaseSet.set(HUB_DOMAIN, { domain: HUB_DOMAIN, role: "regional hub (shared by 6 community pages)", forAssets: [] }); continue; }
+  purchaseSet.set(a.preferredDomain, { domain: a.preferredDomain, role: `${a.cohort} — ${a.service} ${a.geography}`, forAssets: [a.experimentId] });
+}
+for (const [d, rec] of purchaseSet) {
+  rec.availableAtFreeze = await rdap(d);
+  rec.approxFirstYearUsd = 12.18;
+}
+for (const a of all) {
+  const d = a.assetType === "hub-page" ? HUB_DOMAIN : a.preferredDomain;
+  a.domainVerifiedAtFreeze = d ? purchaseSet.get(d)?.availableAtFreeze ?? null : null;
+  a.domainAvailable = a.domainVerifiedAtFreeze === true;
+}
+const unavailable = [...purchaseSet.values()].filter((r) => r.availableAtFreeze !== true);
 const sites = new Set(all.filter((a) => a.assetType === "standalone-site").map((a) => a.experimentId));
 const websites = sites.size + 1;                       // + the single shared regional hub
 const rankablePages = all.length;                      // every asset is one rankable target
@@ -304,7 +363,7 @@ writeFileSync(new URL("portfolio-v2.json", OUT), JSON.stringify({
   design: "Four questions: (1) find rentable assets, (2) validate organic-v1.1 vs Dimension A, (3) test zero-volume community demand, (4) test STANDALONE hyperlocal vs REGIONAL HUB architecture on matched pairs.",
   models: { dimensionA: MODEL_VERSION, organic: "organic-v1.1", weights: WEIGHTS_DEFAULT.id, buckets: BUCKETS_VERSION,
     note: "Both rankability models are carried separately on every asset. Neither is overwritten and neither is assumed correct; Wave 1 is the arbiter." },
-  selectionStandards: { groupA: `measured demand >= ${A_MIN_VOL}/mo AND F >= ${A_MIN_F} AND organic-v1.1 >= ${A_MIN_ORG} AND geography verified; max 3/service, 2/city`,
+  selectionStandards: { groupA: `measured demand >= ${A_MIN_VOL}/mo AND F >= ${A_MIN_F} AND organic-v1.2 >= ${A_MIN_ORG} AND viable renters >= ${A_MIN_VIABLE_RENTERS} AND geography verified; max 3/service, 2/city`,
     groupB: "community assets are NOT gated on measured volume (that is the hypothesis); admitted on community scale, buildout, affluence, organic-v1.1 and domain availability; matched into pairs then split across architectures",
     groupC: "selected for information value, explicitly labelled EXPERIMENTAL and never counted as investment-grade" },
   totals: { rankablePages, websites, domainsRequired: domainCount,
@@ -315,7 +374,11 @@ writeFileSync(new URL("portfolio-v2.json", OUT), JSON.stringify({
   economics: { domainCost: +(domainCount * COST.known.domainFirstYear).toFixed(2), upfrontCapital: +upfront.toFixed(2),
     monthlyCarrying: +monthly.toFixed(2), sixMonthExperimentCost: +(upfront + monthly * 6).toFixed(2),
     twelveMonthRiskCapital: +(upfront + monthly * 12 + domainCount * COST.known.domainRenewal).toFixed(2), costBasis: COST },
-  preRegistration: PREREG, measurementFields: MEASUREMENT,
+  preRegistration: PREREG, measurementFields: MEASUREMENT, rankingTrajectory: RANKING_TRAJECTORY,
+  frozen: { isFrozen: true, frozenAt: "2026-08-12", baseline: "WAVE-1-FROZEN-BASELINE",
+    note: "Scores, selections, endpoints and analyses are FROZEN as of this build. Live outcomes are compared against these values; nothing here may be edited retrospectively. Any change requires a new version.",
+    modelVersionsAtFreeze: { dimensionA: MODEL_VERSION, organic: "organic-v1.2", weights: WEIGHTS_DEFAULT.id, buckets: BUCKETS_VERSION } },
+  purchaseList: [...purchaseSet.values()],
   assets: all,
 }, null, 1));
 
@@ -332,6 +395,11 @@ for (const p of PAIRS) {
 }
 console.log("  controls:"); groupB.filter((a) => a.cohort === "B3-CITY-CONTROL").forEach((a) => console.log("    " + f(a)));
 console.log("\n--- C: MODEL VALIDATION ---"); groupC.forEach((a) => console.log("  " + f(a) + `  Δ(A-org)=${a.modelDisagreement}`));
+console.log(`\n=== DOMAIN RE-VERIFICATION AT FREEZE (${purchaseSet.size} domains) ===`);
+for (const r of [...purchaseSet.values()].sort((a, b) => a.domain.localeCompare(b.domain)))
+  console.log(`  ${r.availableAtFreeze === true ? "AVAILABLE" : r.availableAtFreeze === false ? "TAKEN    " : "UNKNOWN  "} | ${r.domain.padEnd(36)} | ${r.role}`);
+if (unavailable.length) console.log(`\n!! ${unavailable.length} domain(s) NOT confirmed available — portfolio change required`);
+else console.log("\nall domains confirmed available at freeze");
 const dropped = [...prior28].filter((k) => !all.some((a) => `${a.service}|${a.geography}` === k));
 console.log(`\nREMOVED (${dropped.length}): ${dropped.join(" · ")}`);
 console.log(`ADDED (${all.filter((a) => !a.wasInPrior28).length}): ${all.filter((a) => !a.wasInPrior28).map((a) => `${a.service}|${a.geography}`).join(" · ")}`);
