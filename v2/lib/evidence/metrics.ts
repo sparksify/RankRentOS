@@ -82,6 +82,11 @@ export const METRICS: readonly RegistryEntry[] = [
   { id: "op.rating.median", kind: "number", unit: "stars", allowedEvidenceTypes: OBS_DER, staleAfterDays: 90, description: "Median rating across observed operators" },
   { id: "op.website.adoptionpct", kind: "number", unit: "percent", allowedEvidenceTypes: OBS_DER, staleAfterDays: 90, description: "Percent of observed operators with a website" },
   { id: "op.concentration.class", kind: "string", unit: "none", allowedEvidenceTypes: OBS_DER, staleAfterDays: 90, description: "fragmented|moderate|concentrated|insufficient-evidence by review share" },
+  // Scoring outputs (A–I v1). DERIVED only — recomputable, never facts.
+  { id: "score.composite", kind: "number", unit: "0-100", allowedEvidenceTypes: ["DERIVED"], staleAfterDays: 30, description: "A–I composite score under a named weight set" },
+  { id: "score.confidence", kind: "number", unit: "0-100", allowedEvidenceTypes: ["DERIVED"], staleAfterDays: 30, description: "Dimension I — evidence-quality confidence, independent of composite" },
+  { id: "score.completeness", kind: "number", unit: "percent", allowedEvidenceTypes: ["DERIVED"], staleAfterDays: 30, description: "Share of A–H dimensions scoreable from available evidence" },
+  { id: "score.bucket", kind: "string", unit: "none", allowedEvidenceTypes: ["DERIVED"], staleAfterDays: 30, description: "Portfolio bucket: LOW-HANGING|HIGH-VALUE|UNICORN|null" },
   { id: "domain.available.count", kind: "number", unit: "domains", allowedEvidenceTypes: OBS, staleAfterDays: 14, description: "Number of candidate .com domains currently available for this opportunity" },
   { id: "domain.exactMatch.available", kind: "string", unit: "none", allowedEvidenceTypes: OBS_DER, staleAfterDays: 14, description: "Whether a city-first exact-match .com is available (true/false)" },
   { id: "domain.pick", kind: "string", unit: "none", allowedEvidenceTypes: OBS_DER, staleAfterDays: 14, description: "Best available domain candidate per deterministic ranking" },
