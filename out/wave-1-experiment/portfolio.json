@@ -123,6 +123,38 @@
     "scoreModel": "ai-v1.0.0",
     "weights": "w-balanced-v1.1",
     "buckets": "buckets-1.1.0"
+   },
+   "organicRankability": {
+    "version": "organic-v1",
+    "score": 12,
+    "verdict": "ORGANIC-BRUTAL",
+    "displaceableTop5": 1,
+    "hardLocalTop3": 2,
+    "geoTargetedCompetitorsTop5": 4,
+    "contentBarWords": 3192,
+    "competitorDomainAgeYears": 10.2,
+    "topSlots": [
+     "1. eastsidekb.com [local-specialist*]",
+     "2. oasisbathsolutions.com [local-specialist*]",
+     "3. thumbtack.com [directory]",
+     "4. kitchenmore.com [local-specialist*]",
+     "5. rwandersonhomes.com [local-specialist*]"
+    ],
+    "rationale": [
+     "1 of the top 5 organic slots are directories/marketplaces/social — displaceable by a purpose-built local page",
+     "4 top-5 competitors explicitly target \"Bellevue\" in title or domain",
+     "content bar ~3192 words — expensive to beat",
+     "competitors rank with inner pages, not dedicated local pages"
+    ],
+    "priorDimensionA": 58,
+    "deltaVsDimensionA": -46
+   },
+   "localPackEvidence": {
+    "mapPackSize": 3,
+    "avgReviews": 44,
+    "listingsWithoutWebsite": null,
+    "interpretation": "moderate pack strength — market evidence only",
+    "note": "MARKET EVIDENCE ONLY — never added to the organic score; an organic-only asset cannot enter the pack"
    }
   },
   {
@@ -202,6 +234,39 @@
     "scoreModel": "ai-v1.0.0",
     "weights": "w-balanced-v1.1",
     "buckets": "buckets-1.1.0"
+   },
+   "organicRankability": {
+    "version": "organic-v1",
+    "score": 16,
+    "verdict": "ORGANIC-BRUTAL",
+    "displaceableTop5": 1,
+    "hardLocalTop3": 2,
+    "geoTargetedCompetitorsTop5": 3,
+    "contentBarWords": 1556,
+    "competitorDomainAgeYears": 24,
+    "topSlots": [
+     "1. eastsidekb.com [local-specialist*]",
+     "2. rebath.com [national-brand*]",
+     "3. thumbtack.com [directory]",
+     "4. designersmarble.com [local-specialist*]",
+     "5. elevatedhomeremodel.com [local-specialist*]"
+    ],
+    "rationale": [
+     "1 of the top 5 organic slots are directories/marketplaces/social — displaceable by a purpose-built local page",
+     "3 top-5 competitors explicitly target \"Kirkland\" in title or domain",
+     "content bar ~1556 words",
+     "competitor domains average 24y — long authority head start",
+     "competitors rank with inner pages, not dedicated local pages"
+    ],
+    "priorDimensionA": 67,
+    "deltaVsDimensionA": -51
+   },
+   "localPackEvidence": {
+    "mapPackSize": 3,
+    "avgReviews": 54,
+    "listingsWithoutWebsite": null,
+    "interpretation": "moderate pack strength — market evidence only",
+    "note": "MARKET EVIDENCE ONLY — never added to the organic score; an organic-only asset cannot enter the pack"
    }
   },
   {
@@ -281,6 +346,37 @@
     "scoreModel": "ai-v1.0.0",
     "weights": "w-balanced-v1.1",
     "buckets": "buckets-1.1.0"
+   },
+   "organicRankability": {
+    "version": "organic-v1",
+    "score": 39,
+    "verdict": "ORGANIC-BRUTAL",
+    "displaceableTop5": 2,
+    "hardLocalTop3": 2,
+    "geoTargetedCompetitorsTop5": 3,
+    "contentBarWords": 1345,
+    "competitorDomainAgeYears": 9.2,
+    "topSlots": [
+     "1. homeadvisor.com [directory]",
+     "2. bunzandsonzconstruction.com [local-specialist*]",
+     "3. kitchenmore.com [local-specialist*]",
+     "4. yelp.com [directory]",
+     "5. eastsidekb.com [local-specialist*]"
+    ],
+    "rationale": [
+     "2 of the top 5 organic slots are directories/marketplaces/social — displaceable by a purpose-built local page",
+     "3 top-5 competitors explicitly target \"Bellevue\" in title or domain",
+     "competitors rank with inner pages, not dedicated local pages"
+    ],
+    "priorDimensionA": 60,
+    "deltaVsDimensionA": -21
+   },
+   "localPackEvidence": {
+    "mapPackSize": 3,
+    "avgReviews": 89,
+    "listingsWithoutWebsite": null,
+    "interpretation": "moderate pack strength — market evidence only",
+    "note": "MARKET EVIDENCE ONLY — never added to the organic score; an organic-only asset cannot enter the pack"
    }
   },
   {
@@ -360,6 +456,36 @@
     "scoreModel": "ai-v1.0.0",
     "weights": "w-balanced-v1.1",
     "buckets": "buckets-1.1.0"
+   },
+   "organicRankability": {
+    "version": "organic-v1",
+    "score": 48,
+    "verdict": "ORGANIC-CONTESTED",
+    "displaceableTop5": 3,
+    "hardLocalTop3": 1,
+    "geoTargetedCompetitorsTop5": 1,
+    "contentBarWords": 1174,
+    "competitorDomainAgeYears": 28.2,
+    "topSlots": [
+     "1. kitchenrefresh.net [adjacent-not-this-service]",
+     "2. yelp.com [directory]",
+     "3. beyondkitchens.com [local-specialist*]",
+     "4. kitchensolvers.com [local-specialist*]",
+     "5. facebook.com [directory]"
+    ],
+    "rationale": [
+     "3 of the top 5 organic slots are directories/marketplaces/social — displaceable by a purpose-built local page",
+     "competitor domains average 28.2y — long authority head start"
+    ],
+    "priorDimensionA": 61,
+    "deltaVsDimensionA": -13
+   },
+   "localPackEvidence": {
+    "mapPackSize": 4,
+    "avgReviews": 36,
+    "listingsWithoutWebsite": null,
+    "interpretation": "moderate pack strength — market evidence only",
+    "note": "MARKET EVIDENCE ONLY — never added to the organic score; an organic-only asset cannot enter the pack"
    }
   },
   {
@@ -439,6 +565,37 @@
     "scoreModel": "ai-v1.0.0",
     "weights": "w-balanced-v1.1",
     "buckets": "buckets-1.1.0"
+   },
+   "organicRankability": {
+    "version": "organic-v1",
+    "score": 20,
+    "verdict": "ORGANIC-BRUTAL",
+    "displaceableTop5": 1,
+    "hardLocalTop3": 2,
+    "geoTargetedCompetitorsTop5": 3,
+    "contentBarWords": 1346,
+    "competitorDomainAgeYears": 17.5,
+    "topSlots": [
+     "1. kbfdesigngallery.com [local-specialist*]",
+     "2. detailscg.com [local-specialist*]",
+     "3. yelp.com [directory]",
+     "4. sandwkitchens.com [local-specialist*]",
+     "5. i4kitchenbath.com [local-specialist*]"
+    ],
+    "rationale": [
+     "1 of the top 5 organic slots are directories/marketplaces/social — displaceable by a purpose-built local page",
+     "3 top-5 competitors explicitly target \"Orlando\" in title or domain",
+     "competitors rank with inner pages, not dedicated local pages"
+    ],
+    "priorDimensionA": 54,
+    "deltaVsDimensionA": -34
+   },
+   "localPackEvidence": {
+    "mapPackSize": 3,
+    "avgReviews": 98,
+    "listingsWithoutWebsite": null,
+    "interpretation": "moderate pack strength — market evidence only",
+    "note": "MARKET EVIDENCE ONLY — never added to the organic score; an organic-only asset cannot enter the pack"
    }
   },
   {
@@ -518,6 +675,37 @@
     "scoreModel": "ai-v1.0.0",
     "weights": "w-balanced-v1.1",
     "buckets": "buckets-1.1.0"
+   },
+   "organicRankability": {
+    "version": "organic-v1",
+    "score": 50,
+    "verdict": "ORGANIC-CONTESTED",
+    "displaceableTop5": 2,
+    "hardLocalTop3": 1,
+    "geoTargetedCompetitorsTop5": 2,
+    "contentBarWords": 732,
+    "competitorDomainAgeYears": 12.1,
+    "topSlots": [
+     "1. yelp.com [directory]",
+     "2. reddit.com [directory]",
+     "3. twobrothersbuild.com [local-specialist*]",
+     "4. bathplanet.com [local-specialist*]",
+     "5. chcremodeling.com [local-specialist*]"
+    ],
+    "rationale": [
+     "2 of the top 5 organic slots are directories/marketplaces/social — displaceable by a purpose-built local page",
+     "thin competitor content (~732 words) — cheap to out-publish",
+     "competitors rank with inner pages, not dedicated local pages"
+    ],
+    "priorDimensionA": 75,
+    "deltaVsDimensionA": -25
+   },
+   "localPackEvidence": {
+    "mapPackSize": 3,
+    "avgReviews": 84,
+    "listingsWithoutWebsite": null,
+    "interpretation": "moderate pack strength — market evidence only",
+    "note": "MARKET EVIDENCE ONLY — never added to the organic score; an organic-only asset cannot enter the pack"
    }
   },
   {
@@ -597,6 +785,37 @@
     "scoreModel": "ai-v1.0.0",
     "weights": "w-balanced-v1.1",
     "buckets": "buckets-1.1.0"
+   },
+   "organicRankability": {
+    "version": "organic-v1",
+    "score": 40,
+    "verdict": "ORGANIC-BRUTAL",
+    "displaceableTop5": 3,
+    "hardLocalTop3": 1,
+    "geoTargetedCompetitorsTop5": 2,
+    "contentBarWords": 1949,
+    "competitorDomainAgeYears": 21.9,
+    "topSlots": [
+     "1. reddit.com [directory]",
+     "2. napervillewindowsanddoors.com [local-specialist*]",
+     "3. yelp.com [directory]",
+     "4. homedepot.com [directory]",
+     "5. nextdoorandwindow.com [local-specialist*]"
+    ],
+    "rationale": [
+     "3 of the top 5 organic slots are directories/marketplaces/social — displaceable by a purpose-built local page",
+     "content bar ~1949 words",
+     "competitor domains average 21.9y — long authority head start"
+    ],
+    "priorDimensionA": 59,
+    "deltaVsDimensionA": -19
+   },
+   "localPackEvidence": {
+    "mapPackSize": 3,
+    "avgReviews": 174,
+    "listingsWithoutWebsite": null,
+    "interpretation": "moderate pack strength — market evidence only",
+    "note": "MARKET EVIDENCE ONLY — never added to the organic score; an organic-only asset cannot enter the pack"
    }
   },
   {
@@ -676,6 +895,39 @@
     "scoreModel": "ai-v1.0.0",
     "weights": "w-balanced-v1.1",
     "buckets": "buckets-1.1.0"
+   },
+   "organicRankability": {
+    "version": "organic-v1",
+    "score": 28,
+    "verdict": "ORGANIC-BRUTAL",
+    "displaceableTop5": 2,
+    "hardLocalTop3": 1,
+    "geoTargetedCompetitorsTop5": 3,
+    "contentBarWords": 1764,
+    "competitorDomainAgeYears": 30.9,
+    "topSlots": [
+     "1. reddit.com [directory]",
+     "2. ramjack.com [local-specialist*]",
+     "3. yelp.com [directory]",
+     "4. basementbros.net [local-specialist*]",
+     "5. permaseal.net [local-specialist*]"
+    ],
+    "rationale": [
+     "2 of the top 5 organic slots are directories/marketplaces/social — displaceable by a purpose-built local page",
+     "3 top-5 competitors explicitly target \"Naperville\" in title or domain",
+     "content bar ~1764 words",
+     "competitor domains average 30.9y — long authority head start",
+     "competitors rank with inner pages, not dedicated local pages"
+    ],
+    "priorDimensionA": 77,
+    "deltaVsDimensionA": -49
+   },
+   "localPackEvidence": {
+    "mapPackSize": 3,
+    "avgReviews": 31,
+    "listingsWithoutWebsite": null,
+    "interpretation": "moderate pack strength — market evidence only",
+    "note": "MARKET EVIDENCE ONLY — never added to the organic score; an organic-only asset cannot enter the pack"
    }
   },
   {
@@ -755,6 +1007,37 @@
     "scoreModel": "ai-v1.0.0",
     "weights": "w-balanced-v1.1",
     "buckets": "buckets-1.1.0"
+   },
+   "organicRankability": {
+    "version": "organic-v1",
+    "score": 37,
+    "verdict": "ORGANIC-BRUTAL",
+    "displaceableTop5": 2,
+    "hardLocalTop3": 2,
+    "geoTargetedCompetitorsTop5": 3,
+    "contentBarWords": 1460,
+    "competitorDomainAgeYears": 15,
+    "topSlots": [
+     "1. web.amarillo-chamber.org [local-specialist*]",
+     "2. facebook.com [directory]",
+     "3. caffeyconstruction.com [local-specialist*]",
+     "4. ecowatch.com [national-content]",
+     "5. pella.com [national-brand*]"
+    ],
+    "rationale": [
+     "2 of the top 5 organic slots are directories/marketplaces/social — displaceable by a purpose-built local page",
+     "3 top-5 competitors explicitly target \"Amarillo\" in title or domain",
+     "competitors rank with inner pages, not dedicated local pages"
+    ],
+    "priorDimensionA": 62,
+    "deltaVsDimensionA": -25
+   },
+   "localPackEvidence": {
+    "mapPackSize": 3,
+    "avgReviews": 55,
+    "listingsWithoutWebsite": null,
+    "interpretation": "moderate pack strength — market evidence only",
+    "note": "MARKET EVIDENCE ONLY — never added to the organic score; an organic-only asset cannot enter the pack"
    }
   },
   {
@@ -834,6 +1117,38 @@
     "scoreModel": "ai-v1.0.0",
     "weights": "w-balanced-v1.1",
     "buckets": "buckets-1.1.0"
+   },
+   "organicRankability": {
+    "version": "organic-v1",
+    "score": 14,
+    "verdict": "ORGANIC-BRUTAL",
+    "displaceableTop5": 1,
+    "hardLocalTop3": 2,
+    "geoTargetedCompetitorsTop5": 4,
+    "contentBarWords": 1575,
+    "competitorDomainAgeYears": 15.4,
+    "topSlots": [
+     "1. restoremaster.biz [local-specialist*]",
+     "2. 1800waterdamage.com [local-specialist*]",
+     "3. yelp.com [directory]",
+     "4. vizcomcontracting.com [local-specialist*]",
+     "5. servpro.com [franchise*]"
+    ],
+    "rationale": [
+     "1 of the top 5 organic slots are directories/marketplaces/social — displaceable by a purpose-built local page",
+     "4 top-5 competitors explicitly target \"Chandler\" in title or domain",
+     "content bar ~1575 words",
+     "competitors rank with inner pages, not dedicated local pages"
+    ],
+    "priorDimensionA": 64,
+    "deltaVsDimensionA": -50
+   },
+   "localPackEvidence": {
+    "mapPackSize": 3,
+    "avgReviews": 87,
+    "listingsWithoutWebsite": null,
+    "interpretation": "moderate pack strength — market evidence only",
+    "note": "MARKET EVIDENCE ONLY — never added to the organic score; an organic-only asset cannot enter the pack"
    }
   },
   {
@@ -913,6 +1228,38 @@
     "scoreModel": "ai-v1.0.0",
     "weights": "w-balanced-v1.1",
     "buckets": "buckets-1.1.0"
+   },
+   "organicRankability": {
+    "version": "organic-v1",
+    "score": 16,
+    "verdict": "ORGANIC-BRUTAL",
+    "displaceableTop5": 1,
+    "hardLocalTop3": 2,
+    "geoTargetedCompetitorsTop5": 4,
+    "contentBarWords": 1962,
+    "competitorDomainAgeYears": 17.8,
+    "topSlots": [
+     "1. robinsonrestore.com [local-specialist*]",
+     "2. servpro.com [franchise*]",
+     "3. yelp.com [directory]",
+     "4. puredry.com [local-specialist*]",
+     "5. allyplumbing.com [local-specialist*]"
+    ],
+    "rationale": [
+     "1 of the top 5 organic slots are directories/marketplaces/social — displaceable by a purpose-built local page",
+     "4 top-5 competitors explicitly target \"Bellevue\" in title or domain",
+     "content bar ~1962 words",
+     "competitors rank with inner pages, not dedicated local pages"
+    ],
+    "priorDimensionA": 66,
+    "deltaVsDimensionA": -50
+   },
+   "localPackEvidence": {
+    "mapPackSize": 3,
+    "avgReviews": 46,
+    "listingsWithoutWebsite": null,
+    "interpretation": "moderate pack strength — market evidence only",
+    "note": "MARKET EVIDENCE ONLY — never added to the organic score; an organic-only asset cannot enter the pack"
    }
   },
   {
@@ -992,6 +1339,37 @@
     "scoreModel": "ai-v1.0.0",
     "weights": "w-balanced-v1.1",
     "buckets": "buckets-1.1.0"
+   },
+   "organicRankability": {
+    "version": "organic-v1",
+    "score": 20,
+    "verdict": "ORGANIC-BRUTAL",
+    "displaceableTop5": 1,
+    "hardLocalTop3": 2,
+    "geoTargetedCompetitorsTop5": 4,
+    "contentBarWords": 944,
+    "competitorDomainAgeYears": 18.1,
+    "topSlots": [
+     "1. stevegentryconstruction.com [local-specialist*]",
+     "2. priorityconstructionservices.com [local-specialist*]",
+     "3. reddit.com [directory]",
+     "4. eriehome.com [local-specialist*]",
+     "5. collins-mrc.com [local-specialist*]"
+    ],
+    "rationale": [
+     "1 of the top 5 organic slots are directories/marketplaces/social — displaceable by a purpose-built local page",
+     "4 top-5 competitors explicitly target \"Rochester\" in title or domain",
+     "competitors rank with inner pages, not dedicated local pages"
+    ],
+    "priorDimensionA": 76,
+    "deltaVsDimensionA": -56
+   },
+   "localPackEvidence": {
+    "mapPackSize": 3,
+    "avgReviews": 43,
+    "listingsWithoutWebsite": null,
+    "interpretation": "moderate pack strength — market evidence only",
+    "note": "MARKET EVIDENCE ONLY — never added to the organic score; an organic-only asset cannot enter the pack"
    }
   },
   {
@@ -1071,6 +1449,37 @@
     "scoreModel": "ai-v1.0.0",
     "weights": "w-balanced-v1.1",
     "buckets": "buckets-1.1.0"
+   },
+   "organicRankability": {
+    "version": "organic-v1",
+    "score": 33,
+    "verdict": "ORGANIC-BRUTAL",
+    "displaceableTop5": 2,
+    "hardLocalTop3": 2,
+    "geoTargetedCompetitorsTop5": 3,
+    "contentBarWords": 1220,
+    "competitorDomainAgeYears": 15.4,
+    "topSlots": [
+     "1. orlandostuccorepair.com [local-specialist*]",
+     "2. empireworks.com [local-specialist*]",
+     "3. reddit.com [directory]",
+     "4. angi.com [directory]",
+     "5. castlegroupusa.com [local-specialist*]"
+    ],
+    "rationale": [
+     "2 of the top 5 organic slots are directories/marketplaces/social — displaceable by a purpose-built local page",
+     "3 top-5 competitors explicitly target \"Orlando\" in title or domain",
+     "competitors rank with inner pages, not dedicated local pages"
+    ],
+    "priorDimensionA": 62,
+    "deltaVsDimensionA": -29
+   },
+   "localPackEvidence": {
+    "mapPackSize": 3,
+    "avgReviews": 54,
+    "listingsWithoutWebsite": null,
+    "interpretation": "moderate pack strength — market evidence only",
+    "note": "MARKET EVIDENCE ONLY — never added to the organic score; an organic-only asset cannot enter the pack"
    }
   },
   {
@@ -1147,6 +1556,36 @@
      "status": "active-buildout",
      "note": "2,030 acres; 10 new phases + 600 homesites releasing; famous 5-acre Crystal Lagoon"
     }
+   },
+   "organicRankability": {
+    "version": "organic-v1",
+    "score": 38,
+    "verdict": "ORGANIC-BRUTAL",
+    "displaceableTop5": 1,
+    "hardLocalTop3": 2,
+    "geoTargetedCompetitorsTop5": 0,
+    "contentBarWords": 1174,
+    "competitorDomainAgeYears": 18.2,
+    "topSlots": [
+     "1. prestigepp.com [local-specialist*]",
+     "2. venturecustompools.com [local-specialist*]",
+     "3. windsongranchliving.com [adjacent-not-this-service]",
+     "4. dfwcustompool.com [local-specialist*]",
+     "5. selahpools.com [local-specialist*]"
+    ],
+    "rationale": [
+     "1 of the top 5 organic slots are directories/marketplaces/social — displaceable by a purpose-built local page",
+     "competitors rank with inner pages, not dedicated local pages"
+    ],
+    "priorDimensionA": null,
+    "deltaVsDimensionA": null
+   },
+   "localPackEvidence": {
+    "mapPackSize": 3,
+    "avgReviews": 11,
+    "listingsWithoutWebsite": null,
+    "interpretation": "weak pack incumbents — relevant to a future GBP play and to renter quality, NOT to organic difficulty",
+    "note": "MARKET EVIDENCE ONLY — never added to the organic score; an organic-only asset cannot enter the pack"
    }
   },
   {
@@ -1223,6 +1662,38 @@
      "status": "active-buildout",
      "note": "Prosper ISD; large lots, semi-custom"
     }
+   },
+   "organicRankability": {
+    "version": "organic-v1",
+    "score": 67,
+    "verdict": "ORGANIC-VIABLE",
+    "displaceableTop5": 3,
+    "hardLocalTop3": 1,
+    "geoTargetedCompetitorsTop5": 0,
+    "contentBarWords": 532,
+    "competitorDomainAgeYears": 25.9,
+    "topSlots": [
+     "1. prestigepp.com [local-specialist*]",
+     "2. highlandhomes.com [adjacent-not-this-service]",
+     "3. facebook.com [directory]",
+     "4. tollbrothers.com [adjacent-not-this-service]",
+     "5. dfwcustompool.com [local-specialist*]"
+    ],
+    "rationale": [
+     "3 of the top 5 organic slots are directories/marketplaces/social — displaceable by a purpose-built local page",
+     "thin competitor content (~532 words) — cheap to out-publish",
+     "competitor domains average 25.9y — long authority head start",
+     "competitors rank with inner pages, not dedicated local pages"
+    ],
+    "priorDimensionA": null,
+    "deltaVsDimensionA": null
+   },
+   "localPackEvidence": {
+    "mapPackSize": 3,
+    "avgReviews": 159,
+    "listingsWithoutWebsite": null,
+    "interpretation": "moderate pack strength — market evidence only",
+    "note": "MARKET EVIDENCE ONLY — never added to the organic score; an organic-only asset cannot enter the pack"
    }
   },
   {
@@ -1299,6 +1770,37 @@
      "status": "active-buildout",
      "note": "one of Celina's largest; heavy amenity base"
     }
+   },
+   "organicRankability": {
+    "version": "organic-v1",
+    "score": 46,
+    "verdict": "ORGANIC-CONTESTED",
+    "displaceableTop5": 3,
+    "hardLocalTop3": 2,
+    "geoTargetedCompetitorsTop5": 1,
+    "contentBarWords": 1890,
+    "competitorDomainAgeYears": 14.4,
+    "topSlots": [
+     "1. prestigepp.com [local-specialist*]",
+     "2. lightfarmstx.com [adjacent-not-this-service]",
+     "3. dfwcustompool.com [local-specialist*]",
+     "4. facebook.com [directory]",
+     "5. lightfarmstx.com [adjacent-not-this-service]"
+    ],
+    "rationale": [
+     "3 of the top 5 organic slots are directories/marketplaces/social — displaceable by a purpose-built local page",
+     "content bar ~1890 words",
+     "competitors rank with inner pages, not dedicated local pages"
+    ],
+    "priorDimensionA": null,
+    "deltaVsDimensionA": null
+   },
+   "localPackEvidence": {
+    "mapPackSize": 3,
+    "avgReviews": 295,
+    "listingsWithoutWebsite": null,
+    "interpretation": "moderate pack strength — market evidence only",
+    "note": "MARKET EVIDENCE ONLY — never added to the organic score; an organic-only asset cannot enter the pack"
    }
   },
   {
@@ -1375,6 +1877,37 @@
      "status": "active-buildout",
      "note": "largest amenity center in North Texas"
     }
+   },
+   "organicRankability": {
+    "version": "organic-v1",
+    "score": 41,
+    "verdict": "ORGANIC-BRUTAL",
+    "displaceableTop5": 2,
+    "hardLocalTop3": 2,
+    "geoTargetedCompetitorsTop5": 1,
+    "contentBarWords": 1783,
+    "competitorDomainAgeYears": 11.8,
+    "topSlots": [
+     "1. mustanglakes.com [adjacent-not-this-service]",
+     "2. prestigepp.com [local-specialist*]",
+     "3. dfwcustompool.com [local-specialist*]",
+     "4. facebook.com [directory]",
+     "5. robertsonpools.com [local-specialist*]"
+    ],
+    "rationale": [
+     "2 of the top 5 organic slots are directories/marketplaces/social — displaceable by a purpose-built local page",
+     "content bar ~1783 words",
+     "competitors rank with inner pages, not dedicated local pages"
+    ],
+    "priorDimensionA": null,
+    "deltaVsDimensionA": null
+   },
+   "localPackEvidence": {
+    "mapPackSize": 3,
+    "avgReviews": 209,
+    "listingsWithoutWebsite": null,
+    "interpretation": "moderate pack strength — market evidence only",
+    "note": "MARKET EVIDENCE ONLY — never added to the organic score; an organic-only asset cannot enter the pack"
    }
   },
   {
@@ -1451,6 +1984,35 @@
      "status": "active-buildout",
      "note": "one of McKinney's largest active MPCs"
     }
+   },
+   "organicRankability": {
+    "version": "organic-v1",
+    "score": 82,
+    "verdict": "ORGANIC-VIABLE",
+    "displaceableTop5": 5,
+    "hardLocalTop3": 0,
+    "geoTargetedCompetitorsTop5": 0,
+    "contentBarWords": 1435,
+    "competitorDomainAgeYears": 13.8,
+    "topSlots": [
+     "1. paintedtreetx.com [adjacent-not-this-service]",
+     "2. coventryhomes.com [adjacent-not-this-service]",
+     "3. paintedtreetx.com [adjacent-not-this-service]",
+     "4. bloomfieldhomes.com [adjacent-not-this-service]",
+     "5. paintedtreetx.com [adjacent-not-this-service]"
+    ],
+    "rationale": [
+     "5 of the top 5 organic slots are directories/marketplaces/social — displaceable by a purpose-built local page"
+    ],
+    "priorDimensionA": null,
+    "deltaVsDimensionA": null
+   },
+   "localPackEvidence": {
+    "mapPackSize": 3,
+    "avgReviews": 59,
+    "listingsWithoutWebsite": null,
+    "interpretation": "moderate pack strength — market evidence only",
+    "note": "MARKET EVIDENCE ONLY — never added to the organic score; an organic-only asset cannot enter the pack"
    }
   },
   {
@@ -1527,6 +2089,35 @@
      "status": "active-buildout",
      "note": "NW McKinney, Trinity River corridor"
     }
+   },
+   "organicRankability": {
+    "version": "organic-v1",
+    "score": 67,
+    "verdict": "ORGANIC-VIABLE",
+    "displaceableTop5": 4,
+    "hardLocalTop3": 1,
+    "geoTargetedCompetitorsTop5": 0,
+    "contentBarWords": 953,
+    "competitorDomainAgeYears": 19.1,
+    "topSlots": [
+     "1. robertsonpools.com [local-specialist*]",
+     "2. trinityfalls.com [adjacent-not-this-service]",
+     "3. facebook.com [directory]",
+     "4. trinityfalls.com [adjacent-not-this-service]",
+     "5. linkedin.com [social]"
+    ],
+    "rationale": [
+     "4 of the top 5 organic slots are directories/marketplaces/social — displaceable by a purpose-built local page"
+    ],
+    "priorDimensionA": null,
+    "deltaVsDimensionA": null
+   },
+   "localPackEvidence": {
+    "mapPackSize": 3,
+    "avgReviews": 47,
+    "listingsWithoutWebsite": null,
+    "interpretation": "moderate pack strength — market evidence only",
+    "note": "MARKET EVIDENCE ONLY — never added to the organic score; an organic-only asset cannot enter the pack"
    }
   },
   {
@@ -1603,6 +2194,35 @@
      "status": "active-buildout",
      "note": "Denton Co, semi-custom"
     }
+   },
+   "organicRankability": {
+    "version": "organic-v1",
+    "score": 73,
+    "verdict": "ORGANIC-VIABLE",
+    "displaceableTop5": 4,
+    "hardLocalTop3": 1,
+    "geoTargetedCompetitorsTop5": 0,
+    "contentBarWords": 1407,
+    "competitorDomainAgeYears": 14.2,
+    "topSlots": [
+     "1. sandbrockranch.com [adjacent-not-this-service]",
+     "2. haukcustompools.com [local-specialist*]",
+     "3. sandbrockranch.com [adjacent-not-this-service]",
+     "4. instagram.com [directory]",
+     "5. yelp.com [directory]"
+    ],
+    "rationale": [
+     "4 of the top 5 organic slots are directories/marketplaces/social — displaceable by a purpose-built local page"
+    ],
+    "priorDimensionA": null,
+    "deltaVsDimensionA": null
+   },
+   "localPackEvidence": {
+    "mapPackSize": 3,
+    "avgReviews": 19,
+    "listingsWithoutWebsite": null,
+    "interpretation": "weak pack incumbents — relevant to a future GBP play and to renter quality, NOT to organic difficulty",
+    "note": "MARKET EVIDENCE ONLY — never added to the organic score; an organic-only asset cannot enter the pack"
    }
   },
   {
@@ -1679,6 +2299,38 @@
      "status": "active-buildout",
      "note": "Argyle ISD, affluent"
     }
+   },
+   "organicRankability": {
+    "version": "organic-v1",
+    "score": 39,
+    "verdict": "ORGANIC-BRUTAL",
+    "displaceableTop5": 2,
+    "hardLocalTop3": 2,
+    "geoTargetedCompetitorsTop5": 0,
+    "contentBarWords": 2415,
+    "competitorDomainAgeYears": 20.3,
+    "topSlots": [
+     "1. puryearpools.com [local-specialist*]",
+     "2. canyonfallstx.com [adjacent-not-this-service]",
+     "3. thecompletebackyard.com [local-specialist*]",
+     "4. claffeypools.com [local-specialist*]",
+     "5. texasmove.com [adjacent-not-this-service]"
+    ],
+    "rationale": [
+     "2 of the top 5 organic slots are directories/marketplaces/social — displaceable by a purpose-built local page",
+     "content bar ~2415 words",
+     "competitor domains average 20.3y — long authority head start",
+     "competitors rank with inner pages, not dedicated local pages"
+    ],
+    "priorDimensionA": null,
+    "deltaVsDimensionA": null
+   },
+   "localPackEvidence": {
+    "mapPackSize": 3,
+    "avgReviews": 24,
+    "listingsWithoutWebsite": null,
+    "interpretation": "weak pack incumbents — relevant to a future GBP play and to renter quality, NOT to organic difficulty",
+    "note": "MARKET EVIDENCE ONLY — never added to the organic score; an organic-only asset cannot enter the pack"
    }
   },
   {
@@ -1734,6 +2386,39 @@
    "evidenceRefs": {
     "rawSerp": "out/wave-1-experiment/raw/serp-pool_builder_Prosper_TX.json",
     "demand": "dataforseo:google_ads/search_volume"
+   },
+   "organicRankability": {
+    "version": "organic-v1",
+    "score": 36,
+    "verdict": "ORGANIC-BRUTAL",
+    "displaceableTop5": 2,
+    "hardLocalTop3": 3,
+    "geoTargetedCompetitorsTop5": 3,
+    "contentBarWords": 655,
+    "competitorDomainAgeYears": 16.5,
+    "topSlots": [
+     "1. riverbendsandler.com [local-specialist*]",
+     "2. canyonoakpools.com [local-specialist*]",
+     "3. prestigepp.com [local-specialist*]",
+     "4. facebook.com [directory]",
+     "5. houzz.com [directory]"
+    ],
+    "rationale": [
+     "2 of the top 5 organic slots are directories/marketplaces/social — displaceable by a purpose-built local page",
+     "top 3 organic is entirely real local businesses — no soft entry point",
+     "3 top-5 competitors explicitly target \"Prosper\" in title or domain",
+     "thin competitor content (~655 words) — cheap to out-publish",
+     "competitors rank with inner pages, not dedicated local pages"
+    ],
+    "priorDimensionA": null,
+    "deltaVsDimensionA": null
+   },
+   "localPackEvidence": {
+    "mapPackSize": 3,
+    "avgReviews": 295,
+    "listingsWithoutWebsite": null,
+    "interpretation": "moderate pack strength — market evidence only",
+    "note": "MARKET EVIDENCE ONLY — never added to the organic score; an organic-only asset cannot enter the pack"
    }
   },
   {
@@ -1789,6 +2474,38 @@
    "evidenceRefs": {
     "rawSerp": "out/wave-1-experiment/raw/serp-pool_builder_Frisco_TX.json",
     "demand": "dataforseo:google_ads/search_volume"
+   },
+   "organicRankability": {
+    "version": "organic-v1",
+    "score": 23,
+    "verdict": "ORGANIC-BRUTAL",
+    "displaceableTop5": 1,
+    "hardLocalTop3": 2,
+    "geoTargetedCompetitorsTop5": 3,
+    "contentBarWords": 660,
+    "competitorDomainAgeYears": 22.6,
+    "topSlots": [
+     "1. leisurelivingpools.com [local-specialist*]",
+     "2. prestigepp.com [local-specialist*]",
+     "3. reddit.com [directory]",
+     "4. riverbendsandler.com [local-specialist*]",
+     "5. artesiancustompools.com [local-specialist*]"
+    ],
+    "rationale": [
+     "1 of the top 5 organic slots are directories/marketplaces/social — displaceable by a purpose-built local page",
+     "3 top-5 competitors explicitly target \"Frisco\" in title or domain",
+     "thin competitor content (~660 words) — cheap to out-publish",
+     "competitor domains average 22.6y — long authority head start"
+    ],
+    "priorDimensionA": null,
+    "deltaVsDimensionA": null
+   },
+   "localPackEvidence": {
+    "mapPackSize": 3,
+    "avgReviews": 50,
+    "listingsWithoutWebsite": null,
+    "interpretation": "moderate pack strength — market evidence only",
+    "note": "MARKET EVIDENCE ONLY — never added to the organic score; an organic-only asset cannot enter the pack"
    }
   },
   {
@@ -1863,6 +2580,38 @@
     "experiment": "experiment-2",
     "rawSerp": "out/experiment-2/raw/serp-house_cleaning_Orlando_FL.json",
     "scoreModel": "ai-v1.0.0"
+   },
+   "organicRankability": {
+    "version": "organic-v1",
+    "score": 30,
+    "verdict": "ORGANIC-BRUTAL",
+    "displaceableTop5": 1,
+    "hardLocalTop3": 2,
+    "geoTargetedCompetitorsTop5": 4,
+    "contentBarWords": 273,
+    "competitorDomainAgeYears": 19.5,
+    "topSlots": [
+     "1. twomaidscleaning.com [local-specialist*]",
+     "2. reddit.com [directory]",
+     "3. groupon.com [local-specialist*]",
+     "4. maidpro.com [local-specialist*]",
+     "5. merrymaids.com [local-specialist*]"
+    ],
+    "rationale": [
+     "1 of the top 5 organic slots are directories/marketplaces/social — displaceable by a purpose-built local page",
+     "4 top-5 competitors explicitly target \"Orlando\" in title or domain",
+     "thin competitor content (~273 words) — cheap to out-publish",
+     "competitors rank with inner pages, not dedicated local pages"
+    ],
+    "priorDimensionA": 74,
+    "deltaVsDimensionA": -44
+   },
+   "localPackEvidence": {
+    "mapPackSize": 3,
+    "avgReviews": 174,
+    "listingsWithoutWebsite": null,
+    "interpretation": "moderate pack strength — market evidence only",
+    "note": "MARKET EVIDENCE ONLY — never added to the organic score; an organic-only asset cannot enter the pack"
    }
   },
   {
@@ -1937,6 +2686,38 @@
     "experiment": "experiment-2",
     "rawSerp": "out/experiment-2/raw/serp-appliance_repair_Aurora_IL.json",
     "scoreModel": "ai-v1.0.0"
+   },
+   "organicRankability": {
+    "version": "organic-v1",
+    "score": 41,
+    "verdict": "ORGANIC-BRUTAL",
+    "displaceableTop5": 2,
+    "hardLocalTop3": 2,
+    "geoTargetedCompetitorsTop5": 3,
+    "contentBarWords": 549,
+    "competitorDomainAgeYears": 12.9,
+    "topSlots": [
+     "1. leonardiappliance.com [local-specialist*]",
+     "2. yelp.com [directory]",
+     "3. repair.geappliances.com [local-specialist*]",
+     "4. thumbtack.com [directory]",
+     "5. appliance-aaa.com [local-specialist*]"
+    ],
+    "rationale": [
+     "2 of the top 5 organic slots are directories/marketplaces/social — displaceable by a purpose-built local page",
+     "3 top-5 competitors explicitly target \"Aurora\" in title or domain",
+     "thin competitor content (~549 words) — cheap to out-publish",
+     "competitors rank with inner pages, not dedicated local pages"
+    ],
+    "priorDimensionA": 67,
+    "deltaVsDimensionA": -26
+   },
+   "localPackEvidence": {
+    "mapPackSize": 3,
+    "avgReviews": 73,
+    "listingsWithoutWebsite": null,
+    "interpretation": "moderate pack strength — market evidence only",
+    "note": "MARKET EVIDENCE ONLY — never added to the organic score; an organic-only asset cannot enter the pack"
    }
   },
   {
@@ -2011,6 +2792,38 @@
     "experiment": "experiment-2",
     "rawSerp": "out/experiment-2/raw/serp-mold_remediation_Knoxville_TN.json",
     "scoreModel": "ai-v1.0.0"
+   },
+   "organicRankability": {
+    "version": "organic-v1",
+    "score": 33,
+    "verdict": "ORGANIC-BRUTAL",
+    "displaceableTop5": 2,
+    "hardLocalTop3": 2,
+    "geoTargetedCompetitorsTop5": 1,
+    "contentBarWords": 1582,
+    "competitorDomainAgeYears": 23.9,
+    "topSlots": [
+     "1. servpro.com [franchise*]",
+     "2. reddit.com [directory]",
+     "3. volunteermold.com [local-specialist*]",
+     "4. yelp.com [directory]",
+     "5. southeastrestoration.com [local-specialist*]"
+    ],
+    "rationale": [
+     "2 of the top 5 organic slots are directories/marketplaces/social — displaceable by a purpose-built local page",
+     "content bar ~1582 words",
+     "competitor domains average 23.9y — long authority head start",
+     "competitors rank with inner pages, not dedicated local pages"
+    ],
+    "priorDimensionA": 43,
+    "deltaVsDimensionA": -10
+   },
+   "localPackEvidence": {
+    "mapPackSize": 3,
+    "avgReviews": 174,
+    "listingsWithoutWebsite": null,
+    "interpretation": "moderate pack strength — market evidence only",
+    "note": "MARKET EVIDENCE ONLY — never added to the organic score; an organic-only asset cannot enter the pack"
    }
   },
   {
@@ -2085,6 +2898,37 @@
     "experiment": "experiment-3",
     "rawSerp": "out/experiment-3/raw/serp-kitchen_remodel_Rockville_MD.json",
     "scoreModel": "ai-v1.0.0"
+   },
+   "organicRankability": {
+    "version": "organic-v1",
+    "score": 22,
+    "verdict": "ORGANIC-BRUTAL",
+    "displaceableTop5": 1,
+    "hardLocalTop3": 2,
+    "geoTargetedCompetitorsTop5": 2,
+    "contentBarWords": 1291,
+    "competitorDomainAgeYears": 21.9,
+    "topSlots": [
+     "1. yelp.com [directory]",
+     "2. remodelwithmerrick.com [local-specialist*]",
+     "3. kitchenbathdepot.com [local-specialist*]",
+     "4. gbckitchenandbath.com [local-specialist*]",
+     "5. usacabinetstore.com [local-specialist*]"
+    ],
+    "rationale": [
+     "1 of the top 5 organic slots are directories/marketplaces/social — displaceable by a purpose-built local page",
+     "competitor domains average 21.9y — long authority head start",
+     "competitors rank with inner pages, not dedicated local pages"
+    ],
+    "priorDimensionA": 45,
+    "deltaVsDimensionA": -23
+   },
+   "localPackEvidence": {
+    "mapPackSize": 3,
+    "avgReviews": 174,
+    "listingsWithoutWebsite": null,
+    "interpretation": "moderate pack strength — market evidence only",
+    "note": "MARKET EVIDENCE ONLY — never added to the organic score; an organic-only asset cannot enter the pack"
    }
   },
   {
@@ -2159,7 +3003,61 @@
     "experiment": "experiment-3",
     "rawSerp": "out/experiment-3/raw/serp-bathroom_remodel_Bellevue_NE.json",
     "scoreModel": "ai-v1.0.0"
+   },
+   "organicRankability": {
+    "version": "organic-v1",
+    "score": 58,
+    "verdict": "ORGANIC-CONTESTED",
+    "displaceableTop5": 2,
+    "hardLocalTop3": 1,
+    "geoTargetedCompetitorsTop5": 3,
+    "contentBarWords": 208,
+    "competitorDomainAgeYears": 3.9,
+    "topSlots": [
+     "1. thumbtack.com [directory]",
+     "2. bpbathrooms.com [local-specialist*]",
+     "3. yelp.com [directory]",
+     "4. bunzandsonzconstruction.com [local-specialist*]",
+     "5. newlookomaha.com [local-specialist*]"
+    ],
+    "rationale": [
+     "2 of the top 5 organic slots are directories/marketplaces/social — displaceable by a purpose-built local page",
+     "3 top-5 competitors explicitly target \"Bellevue\" in title or domain",
+     "thin competitor content (~208 words) — cheap to out-publish",
+     "young competitor domains — little authority moat",
+     "competitors rank with inner pages, not dedicated local pages"
+    ],
+    "priorDimensionA": 92,
+    "deltaVsDimensionA": -34
+   },
+   "localPackEvidence": {
+    "mapPackSize": 3,
+    "avgReviews": 60,
+    "listingsWithoutWebsite": null,
+    "interpretation": "moderate pack strength — market evidence only",
+    "note": "MARKET EVIDENCE ONLY — never added to the organic score; an organic-only asset cannot enter the pack"
    }
   }
- ]
+ ],
+ "organicAudit": {
+  "version": "organic-v1",
+  "performedAt": "2026-08-12",
+  "finding": "Dimension A and organic-only rankability correlate at r=0.30 across 168 researched candidates. Mean A 52.0 vs mean organic 32.5 — A is systematically optimistic by roughly the map-pack credit it awards (up to +20).",
+  "verdicts": {
+   "ORGANIC_VIABLE": 4,
+   "ORGANIC_CONTESTED": 4,
+   "ORGANIC_BRUTAL": 20
+  },
+  "cohortMeans": {
+   "A_core": 29,
+   "B_communities": 57,
+   "B_cityControls": 30,
+   "C_contrarian": 37
+  },
+  "communityGradient": {
+   "virginCommunities": 68,
+   "incumbentCommunities": 51,
+   "cityControls": 34
+  }
+ }
 }

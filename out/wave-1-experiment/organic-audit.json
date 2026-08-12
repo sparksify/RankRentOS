@@ -1,0 +1,1161 @@
+[
+ {
+  "cohort": "A-CORE",
+  "service": "Bathroom Remodeling",
+  "geography": "Bellevue",
+  "state": "WA",
+  "priorA": 58,
+  "organicScore": 12,
+  "organicVerdict": "ORGANIC-BRUTAL",
+  "delta": -46,
+  "displaceableTop5": 1,
+  "displaceableTop10": 3,
+  "hardLocalTop3": 2,
+  "hardLocalTop5": 4,
+  "geoTargetedCompetitorsTop5": 4,
+  "contentBarWords": 3192,
+  "competitorDomainAgeYears": 10.2,
+  "serviceTerms": [
+   "bathroom",
+   "remodel"
+  ],
+  "topSlots": [
+   "1. eastsidekb.com [local-specialist*]",
+   "2. oasisbathsolutions.com [local-specialist*]",
+   "3. thumbtack.com [directory]",
+   "4. kitchenmore.com [local-specialist*]",
+   "5. rwandersonhomes.com [local-specialist*]"
+  ],
+  "localPackEvidence": {
+   "mapPackSize": 3,
+   "avgReviews": 44,
+   "listingsWithoutWebsite": null,
+   "interpretation": "moderate pack strength — market evidence only"
+  },
+  "organicRationale": [
+   "1 of the top 5 organic slots are directories/marketplaces/social — displaceable by a purpose-built local page",
+   "4 top-5 competitors explicitly target \"Bellevue\" in title or domain",
+   "content bar ~3192 words — expensive to beat",
+   "competitors rank with inner pages, not dedicated local pages"
+  ],
+  "missing": [],
+  "version": "organic-v1"
+ },
+ {
+  "cohort": "A-CORE",
+  "service": "Bathroom Remodeling",
+  "geography": "Kirkland",
+  "state": "WA",
+  "priorA": 67,
+  "organicScore": 16,
+  "organicVerdict": "ORGANIC-BRUTAL",
+  "delta": -51,
+  "displaceableTop5": 1,
+  "displaceableTop10": 2,
+  "hardLocalTop3": 2,
+  "hardLocalTop5": 4,
+  "geoTargetedCompetitorsTop5": 3,
+  "contentBarWords": 1556,
+  "competitorDomainAgeYears": 24,
+  "serviceTerms": [
+   "bathroom",
+   "remodel"
+  ],
+  "topSlots": [
+   "1. eastsidekb.com [local-specialist*]",
+   "2. rebath.com [national-brand*]",
+   "3. thumbtack.com [directory]",
+   "4. designersmarble.com [local-specialist*]",
+   "5. elevatedhomeremodel.com [local-specialist*]"
+  ],
+  "localPackEvidence": {
+   "mapPackSize": 3,
+   "avgReviews": 54,
+   "listingsWithoutWebsite": null,
+   "interpretation": "moderate pack strength — market evidence only"
+  },
+  "organicRationale": [
+   "1 of the top 5 organic slots are directories/marketplaces/social — displaceable by a purpose-built local page",
+   "3 top-5 competitors explicitly target \"Kirkland\" in title or domain",
+   "content bar ~1556 words",
+   "competitor domains average 24y — long authority head start",
+   "competitors rank with inner pages, not dedicated local pages"
+  ],
+  "missing": [],
+  "version": "organic-v1"
+ },
+ {
+  "cohort": "A-CORE",
+  "service": "Kitchen Remodeling",
+  "geography": "Bellevue",
+  "state": "NE",
+  "priorA": 60,
+  "organicScore": 39,
+  "organicVerdict": "ORGANIC-BRUTAL",
+  "delta": -21,
+  "displaceableTop5": 2,
+  "displaceableTop10": 4,
+  "hardLocalTop3": 2,
+  "hardLocalTop5": 3,
+  "geoTargetedCompetitorsTop5": 3,
+  "contentBarWords": 1345,
+  "competitorDomainAgeYears": 9.2,
+  "serviceTerms": [
+   "kitchen",
+   "remodel"
+  ],
+  "topSlots": [
+   "1. homeadvisor.com [directory]",
+   "2. bunzandsonzconstruction.com [local-specialist*]",
+   "3. kitchenmore.com [local-specialist*]",
+   "4. yelp.com [directory]",
+   "5. eastsidekb.com [local-specialist*]"
+  ],
+  "localPackEvidence": {
+   "mapPackSize": 3,
+   "avgReviews": 89,
+   "listingsWithoutWebsite": null,
+   "interpretation": "moderate pack strength — market evidence only"
+  },
+  "organicRationale": [
+   "2 of the top 5 organic slots are directories/marketplaces/social — displaceable by a purpose-built local page",
+   "3 top-5 competitors explicitly target \"Bellevue\" in title or domain",
+   "competitors rank with inner pages, not dedicated local pages"
+  ],
+  "missing": [],
+  "version": "organic-v1"
+ },
+ {
+  "cohort": "A-CORE",
+  "service": "Kitchen Remodeling",
+  "geography": "Rochester",
+  "state": "MN",
+  "priorA": 61,
+  "organicScore": 48,
+  "organicVerdict": "ORGANIC-CONTESTED",
+  "delta": -13,
+  "displaceableTop5": 3,
+  "displaceableTop10": 4,
+  "hardLocalTop3": 1,
+  "hardLocalTop5": 2,
+  "geoTargetedCompetitorsTop5": 1,
+  "contentBarWords": 1174,
+  "competitorDomainAgeYears": 28.2,
+  "serviceTerms": [
+   "kitchen",
+   "remodel"
+  ],
+  "topSlots": [
+   "1. kitchenrefresh.net [adjacent-not-this-service]",
+   "2. yelp.com [directory]",
+   "3. beyondkitchens.com [local-specialist*]",
+   "4. kitchensolvers.com [local-specialist*]",
+   "5. facebook.com [directory]"
+  ],
+  "localPackEvidence": {
+   "mapPackSize": 4,
+   "avgReviews": 36,
+   "listingsWithoutWebsite": null,
+   "interpretation": "moderate pack strength — market evidence only"
+  },
+  "organicRationale": [
+   "3 of the top 5 organic slots are directories/marketplaces/social — displaceable by a purpose-built local page",
+   "competitor domains average 28.2y — long authority head start"
+  ],
+  "missing": [],
+  "version": "organic-v1"
+ },
+ {
+  "cohort": "A-CORE",
+  "service": "Kitchen Remodeling",
+  "geography": "Orlando",
+  "state": "FL",
+  "priorA": 54,
+  "organicScore": 20,
+  "organicVerdict": "ORGANIC-BRUTAL",
+  "delta": -34,
+  "displaceableTop5": 1,
+  "displaceableTop10": 1,
+  "hardLocalTop3": 2,
+  "hardLocalTop5": 4,
+  "geoTargetedCompetitorsTop5": 3,
+  "contentBarWords": 1346,
+  "competitorDomainAgeYears": 17.5,
+  "serviceTerms": [
+   "kitchen",
+   "remodel"
+  ],
+  "topSlots": [
+   "1. kbfdesigngallery.com [local-specialist*]",
+   "2. detailscg.com [local-specialist*]",
+   "3. yelp.com [directory]",
+   "4. sandwkitchens.com [local-specialist*]",
+   "5. i4kitchenbath.com [local-specialist*]"
+  ],
+  "localPackEvidence": {
+   "mapPackSize": 3,
+   "avgReviews": 98,
+   "listingsWithoutWebsite": null,
+   "interpretation": "moderate pack strength — market evidence only"
+  },
+  "organicRationale": [
+   "1 of the top 5 organic slots are directories/marketplaces/social — displaceable by a purpose-built local page",
+   "3 top-5 competitors explicitly target \"Orlando\" in title or domain",
+   "competitors rank with inner pages, not dedicated local pages"
+  ],
+  "missing": [],
+  "version": "organic-v1"
+ },
+ {
+  "cohort": "A-CORE",
+  "service": "Bathroom Remodeling",
+  "geography": "Temecula",
+  "state": "CA",
+  "priorA": 75,
+  "organicScore": 50,
+  "organicVerdict": "ORGANIC-CONTESTED",
+  "delta": -25,
+  "displaceableTop5": 2,
+  "displaceableTop10": 3,
+  "hardLocalTop3": 1,
+  "hardLocalTop5": 3,
+  "geoTargetedCompetitorsTop5": 2,
+  "contentBarWords": 732,
+  "competitorDomainAgeYears": 12.1,
+  "serviceTerms": [
+   "bathroom",
+   "remodel"
+  ],
+  "topSlots": [
+   "1. yelp.com [directory]",
+   "2. reddit.com [directory]",
+   "3. twobrothersbuild.com [local-specialist*]",
+   "4. bathplanet.com [local-specialist*]",
+   "5. chcremodeling.com [local-specialist*]"
+  ],
+  "localPackEvidence": {
+   "mapPackSize": 3,
+   "avgReviews": 84,
+   "listingsWithoutWebsite": null,
+   "interpretation": "moderate pack strength — market evidence only"
+  },
+  "organicRationale": [
+   "2 of the top 5 organic slots are directories/marketplaces/social — displaceable by a purpose-built local page",
+   "thin competitor content (~732 words) — cheap to out-publish",
+   "competitors rank with inner pages, not dedicated local pages"
+  ],
+  "missing": [],
+  "version": "organic-v1"
+ },
+ {
+  "cohort": "A-CORE",
+  "service": "Window Replacement",
+  "geography": "Naperville",
+  "state": "IL",
+  "priorA": 59,
+  "organicScore": 40,
+  "organicVerdict": "ORGANIC-BRUTAL",
+  "delta": -19,
+  "displaceableTop5": 3,
+  "displaceableTop10": 5,
+  "hardLocalTop3": 1,
+  "hardLocalTop5": 2,
+  "geoTargetedCompetitorsTop5": 2,
+  "contentBarWords": 1949,
+  "competitorDomainAgeYears": 21.9,
+  "serviceTerms": [
+   "window",
+   "replacement"
+  ],
+  "topSlots": [
+   "1. reddit.com [directory]",
+   "2. napervillewindowsanddoors.com [local-specialist*]",
+   "3. yelp.com [directory]",
+   "4. homedepot.com [directory]",
+   "5. nextdoorandwindow.com [local-specialist*]"
+  ],
+  "localPackEvidence": {
+   "mapPackSize": 3,
+   "avgReviews": 174,
+   "listingsWithoutWebsite": null,
+   "interpretation": "moderate pack strength — market evidence only"
+  },
+  "organicRationale": [
+   "3 of the top 5 organic slots are directories/marketplaces/social — displaceable by a purpose-built local page",
+   "content bar ~1949 words",
+   "competitor domains average 21.9y — long authority head start"
+  ],
+  "missing": [],
+  "version": "organic-v1"
+ },
+ {
+  "cohort": "A-CORE",
+  "service": "Basement Waterproofing",
+  "geography": "Naperville",
+  "state": "IL",
+  "priorA": 77,
+  "organicScore": 28,
+  "organicVerdict": "ORGANIC-BRUTAL",
+  "delta": -49,
+  "displaceableTop5": 2,
+  "displaceableTop10": 3,
+  "hardLocalTop3": 1,
+  "hardLocalTop5": 3,
+  "geoTargetedCompetitorsTop5": 3,
+  "contentBarWords": 1764,
+  "competitorDomainAgeYears": 30.9,
+  "serviceTerms": [
+   "basement",
+   "waterproof"
+  ],
+  "topSlots": [
+   "1. reddit.com [directory]",
+   "2. ramjack.com [local-specialist*]",
+   "3. yelp.com [directory]",
+   "4. basementbros.net [local-specialist*]",
+   "5. permaseal.net [local-specialist*]"
+  ],
+  "localPackEvidence": {
+   "mapPackSize": 3,
+   "avgReviews": 31,
+   "listingsWithoutWebsite": null,
+   "interpretation": "moderate pack strength — market evidence only"
+  },
+  "organicRationale": [
+   "2 of the top 5 organic slots are directories/marketplaces/social — displaceable by a purpose-built local page",
+   "3 top-5 competitors explicitly target \"Naperville\" in title or domain",
+   "content bar ~1764 words",
+   "competitor domains average 30.9y — long authority head start",
+   "competitors rank with inner pages, not dedicated local pages"
+  ],
+  "missing": [],
+  "version": "organic-v1"
+ },
+ {
+  "cohort": "A-CORE",
+  "service": "Window Replacement",
+  "geography": "Amarillo",
+  "state": "TX",
+  "priorA": 62,
+  "organicScore": 37,
+  "organicVerdict": "ORGANIC-BRUTAL",
+  "delta": -25,
+  "displaceableTop5": 2,
+  "displaceableTop10": 4,
+  "hardLocalTop3": 2,
+  "hardLocalTop5": 3,
+  "geoTargetedCompetitorsTop5": 3,
+  "contentBarWords": 1460,
+  "competitorDomainAgeYears": 15,
+  "serviceTerms": [
+   "window",
+   "replacement"
+  ],
+  "topSlots": [
+   "1. web.amarillo-chamber.org [local-specialist*]",
+   "2. facebook.com [directory]",
+   "3. caffeyconstruction.com [local-specialist*]",
+   "4. ecowatch.com [national-content]",
+   "5. pella.com [national-brand*]"
+  ],
+  "localPackEvidence": {
+   "mapPackSize": 3,
+   "avgReviews": 55,
+   "listingsWithoutWebsite": null,
+   "interpretation": "moderate pack strength — market evidence only"
+  },
+  "organicRationale": [
+   "2 of the top 5 organic slots are directories/marketplaces/social — displaceable by a purpose-built local page",
+   "3 top-5 competitors explicitly target \"Amarillo\" in title or domain",
+   "competitors rank with inner pages, not dedicated local pages"
+  ],
+  "missing": [],
+  "version": "organic-v1"
+ },
+ {
+  "cohort": "A-CORE",
+  "service": "Water Damage Restoration",
+  "geography": "Chandler",
+  "state": "AZ",
+  "priorA": 64,
+  "organicScore": 14,
+  "organicVerdict": "ORGANIC-BRUTAL",
+  "delta": -50,
+  "displaceableTop5": 1,
+  "displaceableTop10": 2,
+  "hardLocalTop3": 2,
+  "hardLocalTop5": 4,
+  "geoTargetedCompetitorsTop5": 4,
+  "contentBarWords": 1575,
+  "competitorDomainAgeYears": 15.4,
+  "serviceTerms": [
+   "wat",
+   "damage",
+   "restoration"
+  ],
+  "topSlots": [
+   "1. restoremaster.biz [local-specialist*]",
+   "2. 1800waterdamage.com [local-specialist*]",
+   "3. yelp.com [directory]",
+   "4. vizcomcontracting.com [local-specialist*]",
+   "5. servpro.com [franchise*]"
+  ],
+  "localPackEvidence": {
+   "mapPackSize": 3,
+   "avgReviews": 87,
+   "listingsWithoutWebsite": null,
+   "interpretation": "moderate pack strength — market evidence only"
+  },
+  "organicRationale": [
+   "1 of the top 5 organic slots are directories/marketplaces/social — displaceable by a purpose-built local page",
+   "4 top-5 competitors explicitly target \"Chandler\" in title or domain",
+   "content bar ~1575 words",
+   "competitors rank with inner pages, not dedicated local pages"
+  ],
+  "missing": [],
+  "version": "organic-v1"
+ },
+ {
+  "cohort": "A-CORE",
+  "service": "Water Damage Restoration",
+  "geography": "Bellevue",
+  "state": "WA",
+  "priorA": 66,
+  "organicScore": 16,
+  "organicVerdict": "ORGANIC-BRUTAL",
+  "delta": -50,
+  "displaceableTop5": 1,
+  "displaceableTop10": 2,
+  "hardLocalTop3": 2,
+  "hardLocalTop5": 4,
+  "geoTargetedCompetitorsTop5": 4,
+  "contentBarWords": 1962,
+  "competitorDomainAgeYears": 17.8,
+  "serviceTerms": [
+   "wat",
+   "damage",
+   "restoration"
+  ],
+  "topSlots": [
+   "1. robinsonrestore.com [local-specialist*]",
+   "2. servpro.com [franchise*]",
+   "3. yelp.com [directory]",
+   "4. puredry.com [local-specialist*]",
+   "5. allyplumbing.com [local-specialist*]"
+  ],
+  "localPackEvidence": {
+   "mapPackSize": 3,
+   "avgReviews": 46,
+   "listingsWithoutWebsite": null,
+   "interpretation": "moderate pack strength — market evidence only"
+  },
+  "organicRationale": [
+   "1 of the top 5 organic slots are directories/marketplaces/social — displaceable by a purpose-built local page",
+   "4 top-5 competitors explicitly target \"Bellevue\" in title or domain",
+   "content bar ~1962 words",
+   "competitors rank with inner pages, not dedicated local pages"
+  ],
+  "missing": [],
+  "version": "organic-v1"
+ },
+ {
+  "cohort": "A-CORE",
+  "service": "Metal Roofing",
+  "geography": "Rochester",
+  "state": "MN",
+  "priorA": 76,
+  "organicScore": 20,
+  "organicVerdict": "ORGANIC-BRUTAL",
+  "delta": -56,
+  "displaceableTop5": 1,
+  "displaceableTop10": 3,
+  "hardLocalTop3": 2,
+  "hardLocalTop5": 4,
+  "geoTargetedCompetitorsTop5": 4,
+  "contentBarWords": 944,
+  "competitorDomainAgeYears": 18.1,
+  "serviceTerms": [
+   "metal",
+   "roof"
+  ],
+  "topSlots": [
+   "1. stevegentryconstruction.com [local-specialist*]",
+   "2. priorityconstructionservices.com [local-specialist*]",
+   "3. reddit.com [directory]",
+   "4. eriehome.com [local-specialist*]",
+   "5. collins-mrc.com [local-specialist*]"
+  ],
+  "localPackEvidence": {
+   "mapPackSize": 3,
+   "avgReviews": 43,
+   "listingsWithoutWebsite": null,
+   "interpretation": "moderate pack strength — market evidence only"
+  },
+  "organicRationale": [
+   "1 of the top 5 organic slots are directories/marketplaces/social — displaceable by a purpose-built local page",
+   "4 top-5 competitors explicitly target \"Rochester\" in title or domain",
+   "competitors rank with inner pages, not dedicated local pages"
+  ],
+  "missing": [],
+  "version": "organic-v1"
+ },
+ {
+  "cohort": "A-CORE",
+  "service": "Stucco Repair",
+  "geography": "Orlando",
+  "state": "FL",
+  "priorA": 62,
+  "organicScore": 33,
+  "organicVerdict": "ORGANIC-BRUTAL",
+  "delta": -29,
+  "displaceableTop5": 2,
+  "displaceableTop10": 3,
+  "hardLocalTop3": 2,
+  "hardLocalTop5": 3,
+  "geoTargetedCompetitorsTop5": 3,
+  "contentBarWords": 1220,
+  "competitorDomainAgeYears": 15.4,
+  "serviceTerms": [
+   "stucco",
+   "repair"
+  ],
+  "topSlots": [
+   "1. orlandostuccorepair.com [local-specialist*]",
+   "2. empireworks.com [local-specialist*]",
+   "3. reddit.com [directory]",
+   "4. angi.com [directory]",
+   "5. castlegroupusa.com [local-specialist*]"
+  ],
+  "localPackEvidence": {
+   "mapPackSize": 3,
+   "avgReviews": 54,
+   "listingsWithoutWebsite": null,
+   "interpretation": "moderate pack strength — market evidence only"
+  },
+  "organicRationale": [
+   "2 of the top 5 organic slots are directories/marketplaces/social — displaceable by a purpose-built local page",
+   "3 top-5 competitors explicitly target \"Orlando\" in title or domain",
+   "competitors rank with inner pages, not dedicated local pages"
+  ],
+  "missing": [],
+  "version": "organic-v1"
+ },
+ {
+  "cohort": "B-NT-POOL-CLUSTER",
+  "service": "Pool Builder",
+  "geography": "Windsong Ranch",
+  "state": "TX",
+  "priorA": null,
+  "organicScore": 38,
+  "organicVerdict": "ORGANIC-BRUTAL",
+  "delta": null,
+  "displaceableTop5": 1,
+  "displaceableTop10": 4,
+  "hardLocalTop3": 2,
+  "hardLocalTop5": 4,
+  "geoTargetedCompetitorsTop5": 0,
+  "contentBarWords": 1174,
+  "competitorDomainAgeYears": 18.2,
+  "serviceTerms": [
+   "pool",
+   "build"
+  ],
+  "topSlots": [
+   "1. prestigepp.com [local-specialist*]",
+   "2. venturecustompools.com [local-specialist*]",
+   "3. windsongranchliving.com [adjacent-not-this-service]",
+   "4. dfwcustompool.com [local-specialist*]",
+   "5. selahpools.com [local-specialist*]"
+  ],
+  "localPackEvidence": {
+   "mapPackSize": 3,
+   "avgReviews": 11,
+   "listingsWithoutWebsite": null,
+   "interpretation": "weak pack incumbents — relevant to a future GBP play and to renter quality, NOT to organic difficulty"
+  },
+  "organicRationale": [
+   "1 of the top 5 organic slots are directories/marketplaces/social — displaceable by a purpose-built local page",
+   "competitors rank with inner pages, not dedicated local pages"
+  ],
+  "missing": [],
+  "version": "organic-v1"
+ },
+ {
+  "cohort": "B-NT-POOL-CLUSTER",
+  "service": "Pool Builder",
+  "geography": "Star Trail",
+  "state": "TX",
+  "priorA": null,
+  "organicScore": 67,
+  "organicVerdict": "ORGANIC-VIABLE",
+  "delta": null,
+  "displaceableTop5": 3,
+  "displaceableTop10": 5,
+  "hardLocalTop3": 1,
+  "hardLocalTop5": 2,
+  "geoTargetedCompetitorsTop5": 0,
+  "contentBarWords": 532,
+  "competitorDomainAgeYears": 25.9,
+  "serviceTerms": [
+   "pool",
+   "build"
+  ],
+  "topSlots": [
+   "1. prestigepp.com [local-specialist*]",
+   "2. highlandhomes.com [adjacent-not-this-service]",
+   "3. facebook.com [directory]",
+   "4. tollbrothers.com [adjacent-not-this-service]",
+   "5. dfwcustompool.com [local-specialist*]"
+  ],
+  "localPackEvidence": {
+   "mapPackSize": 3,
+   "avgReviews": 159,
+   "listingsWithoutWebsite": null,
+   "interpretation": "moderate pack strength — market evidence only"
+  },
+  "organicRationale": [
+   "3 of the top 5 organic slots are directories/marketplaces/social — displaceable by a purpose-built local page",
+   "thin competitor content (~532 words) — cheap to out-publish",
+   "competitor domains average 25.9y — long authority head start",
+   "competitors rank with inner pages, not dedicated local pages"
+  ],
+  "missing": [],
+  "version": "organic-v1"
+ },
+ {
+  "cohort": "B-NT-POOL-CLUSTER",
+  "service": "Pool Builder",
+  "geography": "Light Farms",
+  "state": "TX",
+  "priorA": null,
+  "organicScore": 46,
+  "organicVerdict": "ORGANIC-CONTESTED",
+  "delta": null,
+  "displaceableTop5": 3,
+  "displaceableTop10": 4,
+  "hardLocalTop3": 2,
+  "hardLocalTop5": 2,
+  "geoTargetedCompetitorsTop5": 1,
+  "contentBarWords": 1890,
+  "competitorDomainAgeYears": 14.4,
+  "serviceTerms": [
+   "pool",
+   "build"
+  ],
+  "topSlots": [
+   "1. prestigepp.com [local-specialist*]",
+   "2. lightfarmstx.com [adjacent-not-this-service]",
+   "3. dfwcustompool.com [local-specialist*]",
+   "4. facebook.com [directory]",
+   "5. lightfarmstx.com [adjacent-not-this-service]"
+  ],
+  "localPackEvidence": {
+   "mapPackSize": 3,
+   "avgReviews": 295,
+   "listingsWithoutWebsite": null,
+   "interpretation": "moderate pack strength — market evidence only"
+  },
+  "organicRationale": [
+   "3 of the top 5 organic slots are directories/marketplaces/social — displaceable by a purpose-built local page",
+   "content bar ~1890 words",
+   "competitors rank with inner pages, not dedicated local pages"
+  ],
+  "missing": [],
+  "version": "organic-v1"
+ },
+ {
+  "cohort": "B-NT-POOL-CLUSTER",
+  "service": "Pool Builder",
+  "geography": "Mustang Lakes",
+  "state": "TX",
+  "priorA": null,
+  "organicScore": 41,
+  "organicVerdict": "ORGANIC-BRUTAL",
+  "delta": null,
+  "displaceableTop5": 2,
+  "displaceableTop10": 4,
+  "hardLocalTop3": 2,
+  "hardLocalTop5": 3,
+  "geoTargetedCompetitorsTop5": 1,
+  "contentBarWords": 1783,
+  "competitorDomainAgeYears": 11.8,
+  "serviceTerms": [
+   "pool",
+   "build"
+  ],
+  "topSlots": [
+   "1. mustanglakes.com [adjacent-not-this-service]",
+   "2. prestigepp.com [local-specialist*]",
+   "3. dfwcustompool.com [local-specialist*]",
+   "4. facebook.com [directory]",
+   "5. robertsonpools.com [local-specialist*]"
+  ],
+  "localPackEvidence": {
+   "mapPackSize": 3,
+   "avgReviews": 209,
+   "listingsWithoutWebsite": null,
+   "interpretation": "moderate pack strength — market evidence only"
+  },
+  "organicRationale": [
+   "2 of the top 5 organic slots are directories/marketplaces/social — displaceable by a purpose-built local page",
+   "content bar ~1783 words",
+   "competitors rank with inner pages, not dedicated local pages"
+  ],
+  "missing": [],
+  "version": "organic-v1"
+ },
+ {
+  "cohort": "B-NT-POOL-CLUSTER",
+  "service": "Pool Builder",
+  "geography": "Painted Tree",
+  "state": "TX",
+  "priorA": null,
+  "organicScore": 82,
+  "organicVerdict": "ORGANIC-VIABLE",
+  "delta": null,
+  "displaceableTop5": 5,
+  "displaceableTop10": 9,
+  "hardLocalTop3": 0,
+  "hardLocalTop5": 0,
+  "geoTargetedCompetitorsTop5": 0,
+  "contentBarWords": 1435,
+  "competitorDomainAgeYears": 13.8,
+  "serviceTerms": [
+   "pool",
+   "build"
+  ],
+  "topSlots": [
+   "1. paintedtreetx.com [adjacent-not-this-service]",
+   "2. coventryhomes.com [adjacent-not-this-service]",
+   "3. paintedtreetx.com [adjacent-not-this-service]",
+   "4. bloomfieldhomes.com [adjacent-not-this-service]",
+   "5. paintedtreetx.com [adjacent-not-this-service]"
+  ],
+  "localPackEvidence": {
+   "mapPackSize": 3,
+   "avgReviews": 59,
+   "listingsWithoutWebsite": null,
+   "interpretation": "moderate pack strength — market evidence only"
+  },
+  "organicRationale": [
+   "5 of the top 5 organic slots are directories/marketplaces/social — displaceable by a purpose-built local page"
+  ],
+  "missing": [],
+  "version": "organic-v1"
+ },
+ {
+  "cohort": "B-NT-POOL-CLUSTER",
+  "service": "Pool Builder",
+  "geography": "Trinity Falls",
+  "state": "TX",
+  "priorA": null,
+  "organicScore": 67,
+  "organicVerdict": "ORGANIC-VIABLE",
+  "delta": null,
+  "displaceableTop5": 4,
+  "displaceableTop10": 5,
+  "hardLocalTop3": 1,
+  "hardLocalTop5": 1,
+  "geoTargetedCompetitorsTop5": 0,
+  "contentBarWords": 953,
+  "competitorDomainAgeYears": 19.1,
+  "serviceTerms": [
+   "pool",
+   "build"
+  ],
+  "topSlots": [
+   "1. robertsonpools.com [local-specialist*]",
+   "2. trinityfalls.com [adjacent-not-this-service]",
+   "3. facebook.com [directory]",
+   "4. trinityfalls.com [adjacent-not-this-service]",
+   "5. linkedin.com [social]"
+  ],
+  "localPackEvidence": {
+   "mapPackSize": 3,
+   "avgReviews": 47,
+   "listingsWithoutWebsite": null,
+   "interpretation": "moderate pack strength — market evidence only"
+  },
+  "organicRationale": [
+   "4 of the top 5 organic slots are directories/marketplaces/social — displaceable by a purpose-built local page"
+  ],
+  "missing": [],
+  "version": "organic-v1"
+ },
+ {
+  "cohort": "B-NT-POOL-CLUSTER",
+  "service": "Pool Builder",
+  "geography": "Sandbrock Ranch",
+  "state": "TX",
+  "priorA": null,
+  "organicScore": 73,
+  "organicVerdict": "ORGANIC-VIABLE",
+  "delta": null,
+  "displaceableTop5": 4,
+  "displaceableTop10": 8,
+  "hardLocalTop3": 1,
+  "hardLocalTop5": 1,
+  "geoTargetedCompetitorsTop5": 0,
+  "contentBarWords": 1407,
+  "competitorDomainAgeYears": 14.2,
+  "serviceTerms": [
+   "pool",
+   "build"
+  ],
+  "topSlots": [
+   "1. sandbrockranch.com [adjacent-not-this-service]",
+   "2. haukcustompools.com [local-specialist*]",
+   "3. sandbrockranch.com [adjacent-not-this-service]",
+   "4. instagram.com [directory]",
+   "5. yelp.com [directory]"
+  ],
+  "localPackEvidence": {
+   "mapPackSize": 3,
+   "avgReviews": 19,
+   "listingsWithoutWebsite": null,
+   "interpretation": "weak pack incumbents — relevant to a future GBP play and to renter quality, NOT to organic difficulty"
+  },
+  "organicRationale": [
+   "4 of the top 5 organic slots are directories/marketplaces/social — displaceable by a purpose-built local page"
+  ],
+  "missing": [],
+  "version": "organic-v1"
+ },
+ {
+  "cohort": "B-NT-POOL-CLUSTER",
+  "service": "Pool Builder",
+  "geography": "Canyon Falls",
+  "state": "TX",
+  "priorA": null,
+  "organicScore": 39,
+  "organicVerdict": "ORGANIC-BRUTAL",
+  "delta": null,
+  "displaceableTop5": 2,
+  "displaceableTop10": 5,
+  "hardLocalTop3": 2,
+  "hardLocalTop5": 3,
+  "geoTargetedCompetitorsTop5": 0,
+  "contentBarWords": 2415,
+  "competitorDomainAgeYears": 20.3,
+  "serviceTerms": [
+   "pool",
+   "build"
+  ],
+  "topSlots": [
+   "1. puryearpools.com [local-specialist*]",
+   "2. canyonfallstx.com [adjacent-not-this-service]",
+   "3. thecompletebackyard.com [local-specialist*]",
+   "4. claffeypools.com [local-specialist*]",
+   "5. texasmove.com [adjacent-not-this-service]"
+  ],
+  "localPackEvidence": {
+   "mapPackSize": 3,
+   "avgReviews": 24,
+   "listingsWithoutWebsite": null,
+   "interpretation": "weak pack incumbents — relevant to a future GBP play and to renter quality, NOT to organic difficulty"
+  },
+  "organicRationale": [
+   "2 of the top 5 organic slots are directories/marketplaces/social — displaceable by a purpose-built local page",
+   "content bar ~2415 words",
+   "competitor domains average 20.3y — long authority head start",
+   "competitors rank with inner pages, not dedicated local pages"
+  ],
+  "missing": [],
+  "version": "organic-v1"
+ },
+ {
+  "cohort": "B-NT-POOL-CLUSTER",
+  "service": "Pool Builder",
+  "geography": "Prosper",
+  "state": "TX",
+  "priorA": null,
+  "organicScore": 36,
+  "organicVerdict": "ORGANIC-BRUTAL",
+  "delta": null,
+  "displaceableTop5": 2,
+  "displaceableTop10": 3,
+  "hardLocalTop3": 3,
+  "hardLocalTop5": 3,
+  "geoTargetedCompetitorsTop5": 3,
+  "contentBarWords": 655,
+  "competitorDomainAgeYears": 16.5,
+  "serviceTerms": [
+   "pool",
+   "build"
+  ],
+  "topSlots": [
+   "1. riverbendsandler.com [local-specialist*]",
+   "2. canyonoakpools.com [local-specialist*]",
+   "3. prestigepp.com [local-specialist*]",
+   "4. facebook.com [directory]",
+   "5. houzz.com [directory]"
+  ],
+  "localPackEvidence": {
+   "mapPackSize": 3,
+   "avgReviews": 295,
+   "listingsWithoutWebsite": null,
+   "interpretation": "moderate pack strength — market evidence only"
+  },
+  "organicRationale": [
+   "2 of the top 5 organic slots are directories/marketplaces/social — displaceable by a purpose-built local page",
+   "top 3 organic is entirely real local businesses — no soft entry point",
+   "3 top-5 competitors explicitly target \"Prosper\" in title or domain",
+   "thin competitor content (~655 words) — cheap to out-publish",
+   "competitors rank with inner pages, not dedicated local pages"
+  ],
+  "missing": [],
+  "version": "organic-v1"
+ },
+ {
+  "cohort": "B-NT-POOL-CLUSTER",
+  "service": "Pool Builder",
+  "geography": "Frisco",
+  "state": "TX",
+  "priorA": null,
+  "organicScore": 23,
+  "organicVerdict": "ORGANIC-BRUTAL",
+  "delta": null,
+  "displaceableTop5": 1,
+  "displaceableTop10": 3,
+  "hardLocalTop3": 2,
+  "hardLocalTop5": 4,
+  "geoTargetedCompetitorsTop5": 3,
+  "contentBarWords": 660,
+  "competitorDomainAgeYears": 22.6,
+  "serviceTerms": [
+   "pool",
+   "build"
+  ],
+  "topSlots": [
+   "1. leisurelivingpools.com [local-specialist*]",
+   "2. prestigepp.com [local-specialist*]",
+   "3. reddit.com [directory]",
+   "4. riverbendsandler.com [local-specialist*]",
+   "5. artesiancustompools.com [local-specialist*]"
+  ],
+  "localPackEvidence": {
+   "mapPackSize": 3,
+   "avgReviews": 50,
+   "listingsWithoutWebsite": null,
+   "interpretation": "moderate pack strength — market evidence only"
+  },
+  "organicRationale": [
+   "1 of the top 5 organic slots are directories/marketplaces/social — displaceable by a purpose-built local page",
+   "3 top-5 competitors explicitly target \"Frisco\" in title or domain",
+   "thin competitor content (~660 words) — cheap to out-publish",
+   "competitor domains average 22.6y — long authority head start"
+  ],
+  "missing": [],
+  "version": "organic-v1"
+ },
+ {
+  "cohort": "C-CONTRARIAN",
+  "service": "House Cleaning",
+  "geography": "Orlando",
+  "state": "FL",
+  "priorA": 74,
+  "organicScore": 30,
+  "organicVerdict": "ORGANIC-BRUTAL",
+  "delta": -44,
+  "displaceableTop5": 1,
+  "displaceableTop10": 4,
+  "hardLocalTop3": 2,
+  "hardLocalTop5": 4,
+  "geoTargetedCompetitorsTop5": 4,
+  "contentBarWords": 273,
+  "competitorDomainAgeYears": 19.5,
+  "serviceTerms": [
+   "house",
+   "clean"
+  ],
+  "topSlots": [
+   "1. twomaidscleaning.com [local-specialist*]",
+   "2. reddit.com [directory]",
+   "3. groupon.com [local-specialist*]",
+   "4. maidpro.com [local-specialist*]",
+   "5. merrymaids.com [local-specialist*]"
+  ],
+  "localPackEvidence": {
+   "mapPackSize": 3,
+   "avgReviews": 174,
+   "listingsWithoutWebsite": null,
+   "interpretation": "moderate pack strength — market evidence only"
+  },
+  "organicRationale": [
+   "1 of the top 5 organic slots are directories/marketplaces/social — displaceable by a purpose-built local page",
+   "4 top-5 competitors explicitly target \"Orlando\" in title or domain",
+   "thin competitor content (~273 words) — cheap to out-publish",
+   "competitors rank with inner pages, not dedicated local pages"
+  ],
+  "missing": [],
+  "version": "organic-v1"
+ },
+ {
+  "cohort": "C-CONTRARIAN",
+  "service": "Appliance Repair",
+  "geography": "Aurora",
+  "state": "IL",
+  "priorA": 67,
+  "organicScore": 41,
+  "organicVerdict": "ORGANIC-BRUTAL",
+  "delta": -26,
+  "displaceableTop5": 2,
+  "displaceableTop10": 3,
+  "hardLocalTop3": 2,
+  "hardLocalTop5": 3,
+  "geoTargetedCompetitorsTop5": 3,
+  "contentBarWords": 549,
+  "competitorDomainAgeYears": 12.9,
+  "serviceTerms": [
+   "appliance",
+   "repair"
+  ],
+  "topSlots": [
+   "1. leonardiappliance.com [local-specialist*]",
+   "2. yelp.com [directory]",
+   "3. repair.geappliances.com [local-specialist*]",
+   "4. thumbtack.com [directory]",
+   "5. appliance-aaa.com [local-specialist*]"
+  ],
+  "localPackEvidence": {
+   "mapPackSize": 3,
+   "avgReviews": 73,
+   "listingsWithoutWebsite": null,
+   "interpretation": "moderate pack strength — market evidence only"
+  },
+  "organicRationale": [
+   "2 of the top 5 organic slots are directories/marketplaces/social — displaceable by a purpose-built local page",
+   "3 top-5 competitors explicitly target \"Aurora\" in title or domain",
+   "thin competitor content (~549 words) — cheap to out-publish",
+   "competitors rank with inner pages, not dedicated local pages"
+  ],
+  "missing": [],
+  "version": "organic-v1"
+ },
+ {
+  "cohort": "C-CONTRARIAN",
+  "service": "Mold Remediation",
+  "geography": "Knoxville",
+  "state": "TN",
+  "priorA": 43,
+  "organicScore": 33,
+  "organicVerdict": "ORGANIC-BRUTAL",
+  "delta": -10,
+  "displaceableTop5": 2,
+  "displaceableTop10": 2,
+  "hardLocalTop3": 2,
+  "hardLocalTop5": 3,
+  "geoTargetedCompetitorsTop5": 1,
+  "contentBarWords": 1582,
+  "competitorDomainAgeYears": 23.9,
+  "serviceTerms": [
+   "mold",
+   "remediation"
+  ],
+  "topSlots": [
+   "1. servpro.com [franchise*]",
+   "2. reddit.com [directory]",
+   "3. volunteermold.com [local-specialist*]",
+   "4. yelp.com [directory]",
+   "5. southeastrestoration.com [local-specialist*]"
+  ],
+  "localPackEvidence": {
+   "mapPackSize": 3,
+   "avgReviews": 174,
+   "listingsWithoutWebsite": null,
+   "interpretation": "moderate pack strength — market evidence only"
+  },
+  "organicRationale": [
+   "2 of the top 5 organic slots are directories/marketplaces/social — displaceable by a purpose-built local page",
+   "content bar ~1582 words",
+   "competitor domains average 23.9y — long authority head start",
+   "competitors rank with inner pages, not dedicated local pages"
+  ],
+  "missing": [],
+  "version": "organic-v1"
+ },
+ {
+  "cohort": "C-CONTRARIAN",
+  "service": "Kitchen Remodeling",
+  "geography": "Rockville",
+  "state": "MD",
+  "priorA": 45,
+  "organicScore": 22,
+  "organicVerdict": "ORGANIC-BRUTAL",
+  "delta": -23,
+  "displaceableTop5": 1,
+  "displaceableTop10": 2,
+  "hardLocalTop3": 2,
+  "hardLocalTop5": 4,
+  "geoTargetedCompetitorsTop5": 2,
+  "contentBarWords": 1291,
+  "competitorDomainAgeYears": 21.9,
+  "serviceTerms": [
+   "kitchen",
+   "remodel"
+  ],
+  "topSlots": [
+   "1. yelp.com [directory]",
+   "2. remodelwithmerrick.com [local-specialist*]",
+   "3. kitchenbathdepot.com [local-specialist*]",
+   "4. gbckitchenandbath.com [local-specialist*]",
+   "5. usacabinetstore.com [local-specialist*]"
+  ],
+  "localPackEvidence": {
+   "mapPackSize": 3,
+   "avgReviews": 174,
+   "listingsWithoutWebsite": null,
+   "interpretation": "moderate pack strength — market evidence only"
+  },
+  "organicRationale": [
+   "1 of the top 5 organic slots are directories/marketplaces/social — displaceable by a purpose-built local page",
+   "competitor domains average 21.9y — long authority head start",
+   "competitors rank with inner pages, not dedicated local pages"
+  ],
+  "missing": [],
+  "version": "organic-v1"
+ },
+ {
+  "cohort": "C-CONTRARIAN",
+  "service": "Bathroom Remodeling",
+  "geography": "Bellevue",
+  "state": "NE",
+  "priorA": 92,
+  "organicScore": 58,
+  "organicVerdict": "ORGANIC-CONTESTED",
+  "delta": -34,
+  "displaceableTop5": 2,
+  "displaceableTop10": 4,
+  "hardLocalTop3": 1,
+  "hardLocalTop5": 3,
+  "geoTargetedCompetitorsTop5": 3,
+  "contentBarWords": 208,
+  "competitorDomainAgeYears": 3.9,
+  "serviceTerms": [
+   "bathroom",
+   "remodel"
+  ],
+  "topSlots": [
+   "1. thumbtack.com [directory]",
+   "2. bpbathrooms.com [local-specialist*]",
+   "3. yelp.com [directory]",
+   "4. bunzandsonzconstruction.com [local-specialist*]",
+   "5. newlookomaha.com [local-specialist*]"
+  ],
+  "localPackEvidence": {
+   "mapPackSize": 3,
+   "avgReviews": 60,
+   "listingsWithoutWebsite": null,
+   "interpretation": "moderate pack strength — market evidence only"
+  },
+  "organicRationale": [
+   "2 of the top 5 organic slots are directories/marketplaces/social — displaceable by a purpose-built local page",
+   "3 top-5 competitors explicitly target \"Bellevue\" in title or domain",
+   "thin competitor content (~208 words) — cheap to out-publish",
+   "young competitor domains — little authority moat",
+   "competitors rank with inner pages, not dedicated local pages"
+  ],
+  "missing": [],
+  "version": "organic-v1"
+ }
+]
