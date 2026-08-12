@@ -10,7 +10,7 @@
 // NEVER added to the organic score.
 import { DIRECTORY_DOMAINS, FRANCHISE_DOMAINS, LEAD_MARKETPLACES, INTENT_MISMATCH_DOMAINS } from "./lists";
 
-export const ORGANIC_VERSION = "organic-v1";
+export const ORGANIC_VERSION = "organic-v1.2";  // sanity audit 2: national retailers/franchises + community-developer domains
 
 const SOCIAL = ["facebook.com", "instagram.com", "youtube.com", "pinterest.com", "tiktok.com", "nextdoor.com", "linkedin.com", "x.com", "twitter.com"];
 const FORUM = ["reddit.com", "quora.com", "city-data.com"];
@@ -23,8 +23,13 @@ const NATIONAL_BRAND = [
   "rebath.com", "pella.com", "andersenwindows.com", "renewalbyandersen.com", "champion.com",
   "homedepot.com", "lowes.com", "menards.com", "leaffilter.com", "servpro.com", "roto-rooter.com",
   "anytimefitness.com", "mrhandyman.com", "molly-maid.com", "mollymaid.com", "chemdry.com",
+  // found by the Wave-1 top-5 sanity inspection: national retailers and multi-state
+  // franchises that were being scored as independent LOCAL operators
+  "ikea.com", "westshorehome.com", "eriehome.com", "ramjack.com", "usacabinetstore.com",
+  "bathfitter.com", "luxurybath.com", "jacuzzi.com", "kohler.com", "closetsbydesign.com",
 ];
 const NATIONAL_CONTENT = [
+  "groupon.com",   // deals marketplace, not a local operator
   "ecowatch.com", "thisoldhouse.com", "bobvila.com", "forbes.com", "architecturaldigest.com",
   "consumeraffairs.com", "homeadvisor.com", "thespruce.com", "familyhandyman.com", "cnet.com",
   "usnews.com", "goodhousekeeping.com", "marthastewart.com", "hgtv.com",
@@ -51,7 +56,7 @@ export interface OrganicSlot {
 const hostMatch = (host: string, list: readonly string[]) =>
   list.some((d) => host === d || host.endsWith(`.${d}`));
 
-export function classifySlot(link: string, title: string, geo: string, position: number, serviceTerms: string[] = []): OrganicSlot | null {
+export function classifySlot(link: string, title: string, geo: string, position: number, serviceTerms: string[] = [], geoType: "city" | "community" = "city"): OrganicSlot | null {
   let host: string;
   try { host = new URL(link).hostname.replace(/^www\./, "").toLowerCase(); } catch { return null; }
   const t2 = (title ?? "").toLowerCase();
@@ -74,8 +79,24 @@ export function classifySlot(link: string, title: string, geo: string, position:
   // A result whose title never names the service is not a competing service page:
   // community sites, home builders, chambers of commerce. It occupies the slot by
   // topical adjacency and a dedicated service page displaces it readily.
-  const namesService = serviceTerms.length === 0 || serviceTerms.some((t) => t && t.length > 2 && t2.includes(t));
+  // Evidence-based classification. An UNKNOWN domain is not assumed to be a strong
+  // local competitor: it must show evidence of being one — the service named in the
+  // title OR in the domain itself (haukcustompools.com, kitchenrefresh.net). Absent
+  // both, it holds the slot by adjacency (community site, builder, chamber).
+  const nameEvidence = serviceTerms.filter((t) => t && t.length > 2);
+  const serviceInTitle = nameEvidence.some((t) => t2.includes(t));
+  const serviceInDomain = nameEvidence.some((t) => host.includes(t));
+  const geoInDomainHere = host.replace(/[^a-z0-9]/g, "").includes(geoToken);
+  const namesService = nameEvidence.length === 0 || serviceInTitle || serviceInDomain;
   if (slotClass === "local-specialist" && !namesService) slotClass = "adjacent-not-this-service";
+  // COMMUNITY geographies only: a domain named after a distinctive community but not
+  // the service is the community/developer/HOA site (unionparkbyhillwood.com,
+  // mosaiclivingtx.com). Its amenity page may mention the service, but it is not a
+  // provider. This must NOT apply to cities — city names are routinely embedded in
+  // legitimate business domains ("bluewaterplano.com" is plausibly a real pool firm).
+  if (geoType === "community" && slotClass === "local-specialist" && geoInDomainHere && !serviceInDomain) {
+    slotClass = "adjacent-not-this-service";
+  }
 
   // A directory/social/forum/reference/news/mismatch slot is soft: a purpose-built
   // local page routinely outranks them. A franchise or a real local specialist is not.
@@ -96,6 +117,7 @@ export interface OrganicInput {
   organic: { link: string; title?: string; position?: number }[];
   geo: string;                              // city or community name
   serviceTerms?: string[];                  // head terms of the service, e.g. ["pool"]
+  geoType?: "city" | "community";           // enables the community-site rule
   competitorAvgWords?: number | null;       // content bar we must clear (UNKNOWN stays null)
   competitorAvgDomainAgeYears?: number | null;
 }
@@ -105,6 +127,7 @@ export interface OrganicResult {
   score: number | null;
   verdict: "ORGANIC-VIABLE" | "ORGANIC-CONTESTED" | "ORGANIC-BRUTAL" | null;
   slots: OrganicSlot[];
+  distinctHostsTop5: number;
   displaceableTop5: number;
   displaceableTop10: number;
   hardLocalTop3: number;
@@ -119,19 +142,26 @@ const clamp = (n: number) => Math.max(0, Math.min(100, Math.round(n)));
 /** Deterministic organic-only rankability. Map-pack evidence is deliberately absent. */
 export function organicRankability(input: OrganicInput): OrganicResult {
   const slots = input.organic
-    .map((o, i) => classifySlot(o.link, o.title ?? "", input.geo, o.position ?? i + 1, input.serviceTerms ?? []))
+    .map((o, i) => classifySlot(o.link, o.title ?? "", input.geo, o.position ?? i + 1, input.serviceTerms ?? [], input.geoType ?? "city"))
     .filter((s): s is OrganicSlot => s !== null)
     .slice(0, 10);
 
   if (slots.length === 0) {
     return { version: ORGANIC_VERSION, score: null, verdict: null, slots: [], displaceableTop5: 0, displaceableTop10: 0,
-      hardLocalTop3: 0, hardLocalTop5: 0, geoTargetedCompetitorsTop5: 0, missing: ["organic results"], rationale: ["no organic evidence — cannot assess"] };
+      distinctHostsTop5: 0, hardLocalTop3: 0, hardLocalTop5: 0, geoTargetedCompetitorsTop5: 0, missing: ["organic results"], rationale: ["no organic evidence — cannot assess"] };
   }
 
-  const top5 = slots.filter((s) => s.position <= 5);
-  const top3 = slots.filter((s) => s.position <= 3);
+  // One host = one competitor. Google frequently returns multiple results from the
+  // same domain; counting each as a separate displaceable slot inflates the score
+  // (Painted Tree scored 82 on three slots that were all paintedtreetx.com).
+  const dedupe = (xs: OrganicSlot[]) => {
+    const seen = new Set<string>();
+    return xs.filter((x) => (seen.has(x.host) ? false : (seen.add(x.host), true)));
+  };
+  const top5 = dedupe(slots.filter((s) => s.position <= 5));
+  const top3 = dedupe(slots.filter((s) => s.position <= 3));
   const displaceableTop5 = top5.filter((s) => s.displaceable).length;
-  const displaceableTop10 = slots.filter((s) => s.displaceable).length;
+  const displaceableTop10 = dedupe(slots).filter((s) => s.displaceable).length;
   const hardLocalTop3 = top3.filter((s) => !s.displaceable).length;
   const hardLocalTop5 = top5.filter((s) => !s.displaceable).length;
   // national brands/franchises rank on authority rather than local relevance; a
@@ -178,7 +208,7 @@ export function organicRankability(input: OrganicInput): OrganicResult {
 
   const score = clamp(s);
   const verdict = score >= 65 ? "ORGANIC-VIABLE" : score >= 45 ? "ORGANIC-CONTESTED" : "ORGANIC-BRUTAL";
-  return { version: ORGANIC_VERSION, score, verdict, slots, displaceableTop5, displaceableTop10, hardLocalTop3, hardLocalTop5, geoTargetedCompetitorsTop5: geoTargeted, missing, rationale: r };
+  return { version: ORGANIC_VERSION, score, verdict, slots, distinctHostsTop5: top5.length, displaceableTop5, displaceableTop10, hardLocalTop3, hardLocalTop5, geoTargetedCompetitorsTop5: geoTargeted, missing, rationale: r };
 }
 
 /** Local-pack facts kept as MARKET EVIDENCE only. Never added to the organic score. */

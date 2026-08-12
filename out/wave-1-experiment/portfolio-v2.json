@@ -1,0 +1,3817 @@
+{
+ "generatedAt": "2026-08-06T07:06:40.000Z",
+ "version": "wave1-v3-matched-architecture",
+ "design": "Four questions: (1) find rentable assets, (2) validate organic-v1.1 vs Dimension A, (3) test zero-volume community demand, (4) test STANDALONE hyperlocal vs REGIONAL HUB architecture on matched pairs.",
+ "models": {
+  "dimensionA": "ai-v1.0.0",
+  "organic": "organic-v1.1",
+  "weights": "w-balanced-v1.1",
+  "buckets": "buckets-1.1.0",
+  "note": "Both rankability models are carried separately on every asset. Neither is overwritten and neither is assumed correct; Wave 1 is the arbiter."
+ },
+ "selectionStandards": {
+  "groupA": "measured demand >= 100/mo AND F >= 50 AND organic-v1.1 >= 55 AND geography verified; max 3/service, 2/city",
+  "groupB": "community assets are NOT gated on measured volume (that is the hypothesis); admitted on community scale, buildout, affluence, organic-v1.1 and domain availability; matched into pairs then split across architectures",
+  "groupC": "selected for information value, explicitly labelled EXPERIMENTAL and never counted as investment-grade"
+ },
+ "totals": {
+  "rankablePages": 27,
+  "websites": 22,
+  "domainsRequired": 22,
+  "groupA": 6,
+  "groupB1_standalone": 6,
+  "groupB2_hub": 6,
+  "groupB3_controls": 3,
+  "groupC": 6
+ },
+ "hubDomain": "poolbuildersnorthtexas.com",
+ "matchedPairs": [
+  {
+   "id": "NTX-P1",
+   "s": "Sutton Fields",
+   "h": "Legacy Gardens",
+   "basis": "both VIRGIN, active-buildout, organic 82 vs 79 (Δ3) — the two strongest virgin communities"
+  },
+  {
+   "id": "NTX-P2",
+   "s": "Sandbrock Ranch",
+   "h": "Star Trail",
+   "basis": "both VIRGIN, active-buildout, organic 66 vs 67 (Δ1) and 1,400 vs 1,300 homes — the tightest match in the experiment"
+  },
+  {
+   "id": "NTX-P3",
+   "s": "Painted Tree",
+   "h": "Stonebridge Ranch",
+   "basis": "both VIRGIN, both in McKinney (parent city and its SERP held constant), both large (3,400 vs 7,000 homes), organic 73 vs 63"
+  },
+  {
+   "id": "NTX-P4",
+   "s": "Mosaic",
+   "h": "Union Park",
+   "basis": "both INCUMBENT-TARGETED, active-buildout, organic 67 vs 73 (Δ6), 3,000 vs 2,000 homes"
+  },
+  {
+   "id": "NTX-P5",
+   "s": "Newman Village",
+   "h": "Harvest",
+   "basis": "both INCUMBENT-TARGETED, organic 65 vs 64 (Δ1) — the tightest incumbent match"
+  },
+  {
+   "id": "NTX-P6",
+   "s": "Cambridge Crossing",
+   "h": "Trinity Falls",
+   "basis": "both INCUMBENT-TARGETED, active-buildout, organic 57 vs 60 (Δ3)"
+  }
+ ],
+ "economics": {
+  "domainCost": 267.96,
+  "upfrontCapital": 618.96,
+  "monthlyCarrying": 35.5,
+  "sixMonthExperimentCost": 831.96,
+  "twelveMonthRiskCapital": 1378.92,
+  "costBasis": {
+   "known": {
+    "domainFirstYear": 12.18,
+    "domainRenewal": 15.18
+   },
+   "estimated": {
+    "hosting": 1,
+    "content": 8,
+    "deploy": 5,
+    "monitoring": 0.5
+   },
+   "unknown": [
+    "deployment engine per-asset cost (engine not built)",
+    "renter acquisition cost/time",
+    "link/citation acquisition",
+    "content revision cycles",
+    "pool content is photo-heavy and likely exceeds the generic content estimate"
+   ]
+  }
+ },
+ "preRegistration": {
+  "predictorsUnderTest": [
+   "dimensionA",
+   "organicV1_1",
+   "measuredVolume",
+   "cpc",
+   "renterDepthE",
+   "leadEconomicsD",
+   "assetValueF",
+   "contentBarWords",
+   "competitorDomainAgeYears",
+   "geographyType",
+   "incumbentTargeting",
+   "architectureTreatment"
+  ],
+  "chain": "rankability -> traffic -> leads -> rentability, each stage measured separately so failure can be localised",
+  "joinKey": "experimentId joins pre-launch evidence -> deployment -> ranking -> traffic -> leads -> rentability"
+ },
+ "measurementFields": [
+  "publishDate",
+  "indexDate",
+  "firstImpressionDate",
+  "firstRankingDate",
+  "targetQueryRankingHistory",
+  "timeToTop20",
+  "timeToTop10",
+  "timeToTop5",
+  "impressions",
+  "clicks",
+  "organicSessions",
+  "calls",
+  "forms",
+  "leadsTotal",
+  "qualifiedLeads",
+  "leadValueEstimated",
+  "leadValueRealized",
+  "renterOutreach",
+  "renterResponses",
+  "renterInterest",
+  "rentalAgreementAchieved",
+  "monthlyRentRealized"
+ ],
+ "assets": [
+  {
+   "experimentId": "W1-A-001",
+   "cohort": "A-EXPLOITATION",
+   "treatment": "standalone-city-site",
+   "assetType": "standalone-site",
+   "service": "Bathroom Remodeling",
+   "serviceSlug": "bathroom-remodel",
+   "geography": "Conroe",
+   "state": "TX",
+   "geographyType": "city",
+   "urlArchitecture": "bathroomremodelingofconroe.com (root targets the city+service query)",
+   "measuredVolume": 260,
+   "volumeState": "measured",
+   "demandProven": true,
+   "cpc": 22.19,
+   "ticketAssumed": 18000,
+   "marginAssumed": 0.32,
+   "leadValueAssumedUsd": 576,
+   "dimensionA": 91,
+   "dimensionAVersion": "A-1.0.0",
+   "organicV1": 67,
+   "organicVerdict": "ORGANIC-VIABLE",
+   "organicVersion": "organic-v1.2",
+   "organicTop5": [
+    "1. en.wikipedia.org [reference]",
+    "2. ikea.com [national-brand]",
+    "3. lowes.com [directory]",
+    "4. homedepot.com [directory]",
+    "5. houzz.com [directory]"
+   ],
+   "organicStructure": {
+    "distinctHostsTop5": 5,
+    "displaceableTop5": 4,
+    "hardLocalTop3": 1,
+    "geoTargetedCompetitorsTop5": 0
+   },
+   "modelDisagreement": 24,
+   "incumbentTargeting": "0 of 5 distinct top-5 hosts explicitly target Conroe",
+   "renterDepthE": 9,
+   "leadEconomicsD": 78,
+   "assetValueF": 51,
+   "asymmetryH": 48,
+   "compositeAI": 58,
+   "aiBucket": null,
+   "evidenceConfidence": 80,
+   "evidenceCompleteness": 100,
+   "renterContext": {
+    "relevantOperators": 10,
+    "viableRenters": 0,
+    "websiteAdoptionPct": 0
+   },
+   "localPackEvidence": {
+    "mapPackSize": 3,
+    "avgReviews": 23,
+    "note": "market evidence only — excluded from organic scoring"
+   },
+   "contentBarWords": 1329,
+   "competitorDomainAgeYears": 26.3,
+   "contentDirective": "SERP-derived, not a fixed word count: this is a commercial service query, so the deployment engine should build a commercial service/location experience benchmarked against the observed content bar, not a long informational article.",
+   "geographyVerified": true,
+   "geographyVerdict": "verified",
+   "reasonIncluded": "Meets the full pre-stated standard: 260/mo measured demand, F=51 (rentable, ~$576/lead), organic-v1.1 67, geography verified.",
+   "hypothesis": "An asset with real economics AND a beatable organic SERP should rank and rent. A=91 vs organic=67; where they disagree this asset also contributes model-validation evidence.",
+   "successCondition": "top-10 organic for the primary query within 6 months AND >=1 inbound lead within 9 months.",
+   "failureCondition": "no top-20 within 6 months, OR top-10 with zero leads after 3 further months (which falsifies demand, not rankability).",
+   "wasInPrior28": false,
+   "evidenceRefs": {
+    "experiment": "experiment-3",
+    "rawSerp": "out/experiment-3/raw/serp-bathroom_remodel_Conroe_TX.json",
+    "scoreModel": "ai-v1.0.0",
+    "weights": "w-balanced-v1.1",
+    "buckets": "buckets-1.1.0"
+   },
+   "measurementPlan": [
+    "publishDate",
+    "indexDate",
+    "firstImpressionDate",
+    "firstRankingDate",
+    "targetQueryRankingHistory",
+    "timeToTop20",
+    "timeToTop10",
+    "timeToTop5",
+    "impressions",
+    "clicks",
+    "organicSessions",
+    "calls",
+    "forms",
+    "leadsTotal",
+    "qualifiedLeads",
+    "leadValueEstimated",
+    "leadValueRealized",
+    "renterOutreach",
+    "renterResponses",
+    "renterInterest",
+    "rentalAgreementAchieved",
+    "monthlyRentRealized"
+   ],
+   "preRegistration": {
+    "predictorsUnderTest": [
+     "dimensionA",
+     "organicV1_1",
+     "measuredVolume",
+     "cpc",
+     "renterDepthE",
+     "leadEconomicsD",
+     "assetValueF",
+     "contentBarWords",
+     "competitorDomainAgeYears",
+     "geographyType",
+     "incumbentTargeting",
+     "architectureTreatment"
+    ],
+    "chain": "rankability -> traffic -> leads -> rentability, each stage measured separately so failure can be localised",
+    "joinKey": "experimentId joins pre-launch evidence -> deployment -> ranking -> traffic -> leads -> rentability"
+   },
+   "domainCandidates": [
+    {
+     "domain": "bathroomremodelingconroe.com",
+     "available": false,
+     "approxFirstYearUsd": 12.18
+    },
+    {
+     "domain": "bathroomremodelingconroetx.com",
+     "available": false,
+     "approxFirstYearUsd": 12.18
+    },
+    {
+     "domain": "conroebathroomremodeling.com",
+     "available": false,
+     "approxFirstYearUsd": 12.18
+    },
+    {
+     "domain": "bathroomremodelingofconroe.com",
+     "available": true,
+     "approxFirstYearUsd": 12.18
+    },
+    {
+     "domain": "conroebathroomremodelingpros.com",
+     "available": true,
+     "approxFirstYearUsd": 12.18
+    }
+   ],
+   "preferredDomain": "bathroomremodelingofconroe.com",
+   "domainAvailable": true
+  },
+  {
+   "experimentId": "W1-A-002",
+   "cohort": "A-EXPLOITATION",
+   "treatment": "standalone-city-site",
+   "assetType": "standalone-site",
+   "service": "Bathroom Remodeling",
+   "serviceSlug": "bathroom-remodel",
+   "geography": "Arvada",
+   "state": "CO",
+   "geographyType": "city",
+   "urlArchitecture": "bathroomremodelingofarvada.com (root targets the city+service query)",
+   "measuredVolume": 390,
+   "volumeState": "measured",
+   "demandProven": true,
+   "cpc": 5.01,
+   "ticketAssumed": 18000,
+   "marginAssumed": 0.32,
+   "leadValueAssumedUsd": 576,
+   "dimensionA": 83,
+   "dimensionAVersion": "A-1.0.0",
+   "organicV1": 62,
+   "organicVerdict": "ORGANIC-CONTESTED",
+   "organicVersion": "organic-v1.2",
+   "organicTop5": [
+    "1. westshorehome.com [national-brand]",
+    "2. reddit.com [directory]",
+    "3. jmwoodworks.com [adjacent-not-this-service]",
+    "4. houzz.com [directory]",
+    "5. arvadahomepro.com [local-specialist]"
+   ],
+   "organicStructure": {
+    "distinctHostsTop5": 5,
+    "displaceableTop5": 3,
+    "hardLocalTop3": 1,
+    "geoTargetedCompetitorsTop5": 2
+   },
+   "modelDisagreement": 21,
+   "incumbentTargeting": "2 of 5 distinct top-5 hosts explicitly target Arvada",
+   "renterDepthE": 62,
+   "leadEconomicsD": 78,
+   "assetValueF": 66,
+   "asymmetryH": 90,
+   "compositeAI": 70,
+   "aiBucket": "UNICORN",
+   "evidenceConfidence": 80,
+   "evidenceCompleteness": 100,
+   "renterContext": {
+    "relevantOperators": 11,
+    "viableRenters": 3,
+    "websiteAdoptionPct": 27
+   },
+   "localPackEvidence": {
+    "mapPackSize": 3,
+    "avgReviews": 19,
+    "note": "market evidence only — excluded from organic scoring"
+   },
+   "contentBarWords": 757,
+   "competitorDomainAgeYears": 13.9,
+   "contentDirective": "SERP-derived, not a fixed word count: this is a commercial service query, so the deployment engine should build a commercial service/location experience benchmarked against the observed content bar, not a long informational article.",
+   "geographyVerified": true,
+   "geographyVerdict": "verified",
+   "reasonIncluded": "Meets the full pre-stated standard: 390/mo measured demand, F=66 (rentable, ~$576/lead), organic-v1.1 62, geography verified.",
+   "hypothesis": "An asset with real economics AND a beatable organic SERP should rank and rent. A=83 vs organic=62; where they disagree this asset also contributes model-validation evidence.",
+   "successCondition": "top-10 organic for the primary query within 6 months AND >=1 inbound lead within 9 months.",
+   "failureCondition": "no top-20 within 6 months, OR top-10 with zero leads after 3 further months (which falsifies demand, not rankability).",
+   "wasInPrior28": false,
+   "evidenceRefs": {
+    "experiment": "experiment-3",
+    "rawSerp": "out/experiment-3/raw/serp-bathroom_remodel_Arvada_CO.json",
+    "scoreModel": "ai-v1.0.0",
+    "weights": "w-balanced-v1.1",
+    "buckets": "buckets-1.1.0"
+   },
+   "measurementPlan": [
+    "publishDate",
+    "indexDate",
+    "firstImpressionDate",
+    "firstRankingDate",
+    "targetQueryRankingHistory",
+    "timeToTop20",
+    "timeToTop10",
+    "timeToTop5",
+    "impressions",
+    "clicks",
+    "organicSessions",
+    "calls",
+    "forms",
+    "leadsTotal",
+    "qualifiedLeads",
+    "leadValueEstimated",
+    "leadValueRealized",
+    "renterOutreach",
+    "renterResponses",
+    "renterInterest",
+    "rentalAgreementAchieved",
+    "monthlyRentRealized"
+   ],
+   "preRegistration": {
+    "predictorsUnderTest": [
+     "dimensionA",
+     "organicV1_1",
+     "measuredVolume",
+     "cpc",
+     "renterDepthE",
+     "leadEconomicsD",
+     "assetValueF",
+     "contentBarWords",
+     "competitorDomainAgeYears",
+     "geographyType",
+     "incumbentTargeting",
+     "architectureTreatment"
+    ],
+    "chain": "rankability -> traffic -> leads -> rentability, each stage measured separately so failure can be localised",
+    "joinKey": "experimentId joins pre-launch evidence -> deployment -> ranking -> traffic -> leads -> rentability"
+   },
+   "domainCandidates": [
+    {
+     "domain": "bathroomremodelingarvada.com",
+     "available": false,
+     "approxFirstYearUsd": 12.18
+    },
+    {
+     "domain": "bathroomremodelingarvadaco.com",
+     "available": false,
+     "approxFirstYearUsd": 12.18
+    },
+    {
+     "domain": "arvadabathroomremodeling.com",
+     "available": false,
+     "approxFirstYearUsd": 12.18
+    },
+    {
+     "domain": "bathroomremodelingofarvada.com",
+     "available": true,
+     "approxFirstYearUsd": 12.18
+    },
+    {
+     "domain": "arvadabathroomremodelingpros.com",
+     "available": true,
+     "approxFirstYearUsd": 12.18
+    }
+   ],
+   "preferredDomain": "bathroomremodelingofarvada.com",
+   "domainAvailable": true
+  },
+  {
+   "experimentId": "W1-A-003",
+   "cohort": "A-EXPLOITATION",
+   "treatment": "standalone-city-site",
+   "assetType": "standalone-site",
+   "service": "Window Replacement",
+   "serviceSlug": "window-replacement",
+   "geography": "Midland",
+   "state": "TX",
+   "geographyType": "city",
+   "urlArchitecture": "windowreplacementmidland.com (root targets the city+service query)",
+   "measuredVolume": 110,
+   "volumeState": "measured",
+   "demandProven": true,
+   "cpc": 10.07,
+   "ticketAssumed": 12000,
+   "marginAssumed": 0.35,
+   "leadValueAssumedUsd": 420,
+   "dimensionA": 40,
+   "dimensionAVersion": "A-1.0.0",
+   "organicV1": 62,
+   "organicVerdict": "ORGANIC-CONTESTED",
+   "organicVersion": "organic-v1.2",
+   "organicTop5": [
+    "1. mid-westdoorandwindow.com [local-specialist]",
+    "2. ecowatch.com [national-content]",
+    "3. amigosglass.com [adjacent-not-this-service]",
+    "4. windowsourcewesttexas.com [local-specialist]",
+    "5. yelp.com [directory]"
+   ],
+   "organicStructure": {
+    "distinctHostsTop5": 5,
+    "displaceableTop5": 3,
+    "hardLocalTop3": 1,
+    "geoTargetedCompetitorsTop5": 0
+   },
+   "modelDisagreement": -22,
+   "incumbentTargeting": "0 of 5 distinct top-5 hosts explicitly target Midland",
+   "renterDepthE": 33,
+   "leadEconomicsD": 78,
+   "assetValueF": 50,
+   "asymmetryH": 47,
+   "compositeAI": 48,
+   "aiBucket": null,
+   "evidenceConfidence": 80,
+   "evidenceCompleteness": 100,
+   "renterContext": {
+    "relevantOperators": 9,
+    "viableRenters": 1,
+    "websiteAdoptionPct": 11
+   },
+   "localPackEvidence": {
+    "mapPackSize": 3,
+    "avgReviews": 90,
+    "note": "market evidence only — excluded from organic scoring"
+   },
+   "contentBarWords": null,
+   "competitorDomainAgeYears": null,
+   "contentDirective": "SERP-derived, not a fixed word count: this is a commercial service query, so the deployment engine should build a commercial service/location experience benchmarked against the observed content bar, not a long informational article.",
+   "geographyVerified": true,
+   "geographyVerdict": "verified",
+   "reasonIncluded": "Meets the full pre-stated standard: 110/mo measured demand, F=50 (rentable, ~$420/lead), organic-v1.1 62, geography verified.",
+   "hypothesis": "An asset with real economics AND a beatable organic SERP should rank and rent. A=40 vs organic=62; where they disagree this asset also contributes model-validation evidence.",
+   "successCondition": "top-10 organic for the primary query within 6 months AND >=1 inbound lead within 9 months.",
+   "failureCondition": "no top-20 within 6 months, OR top-10 with zero leads after 3 further months (which falsifies demand, not rankability).",
+   "wasInPrior28": false,
+   "evidenceRefs": {
+    "experiment": "experiment-3",
+    "rawSerp": "out/experiment-3/raw/serp-window_replacement_Midland_TX.json",
+    "scoreModel": "ai-v1.0.0",
+    "weights": "w-balanced-v1.1",
+    "buckets": "buckets-1.1.0"
+   },
+   "measurementPlan": [
+    "publishDate",
+    "indexDate",
+    "firstImpressionDate",
+    "firstRankingDate",
+    "targetQueryRankingHistory",
+    "timeToTop20",
+    "timeToTop10",
+    "timeToTop5",
+    "impressions",
+    "clicks",
+    "organicSessions",
+    "calls",
+    "forms",
+    "leadsTotal",
+    "qualifiedLeads",
+    "leadValueEstimated",
+    "leadValueRealized",
+    "renterOutreach",
+    "renterResponses",
+    "renterInterest",
+    "rentalAgreementAchieved",
+    "monthlyRentRealized"
+   ],
+   "preRegistration": {
+    "predictorsUnderTest": [
+     "dimensionA",
+     "organicV1_1",
+     "measuredVolume",
+     "cpc",
+     "renterDepthE",
+     "leadEconomicsD",
+     "assetValueF",
+     "contentBarWords",
+     "competitorDomainAgeYears",
+     "geographyType",
+     "incumbentTargeting",
+     "architectureTreatment"
+    ],
+    "chain": "rankability -> traffic -> leads -> rentability, each stage measured separately so failure can be localised",
+    "joinKey": "experimentId joins pre-launch evidence -> deployment -> ranking -> traffic -> leads -> rentability"
+   },
+   "domainCandidates": [
+    {
+     "domain": "windowreplacementmidland.com",
+     "available": true,
+     "approxFirstYearUsd": 12.18
+    },
+    {
+     "domain": "windowreplacementmidlandtx.com",
+     "available": true,
+     "approxFirstYearUsd": 12.18
+    },
+    {
+     "domain": "midlandwindowreplacement.com",
+     "available": false,
+     "approxFirstYearUsd": 12.18
+    },
+    {
+     "domain": "windowreplacementofmidland.com",
+     "available": true,
+     "approxFirstYearUsd": 12.18
+    },
+    {
+     "domain": "midlandwindowreplacementpros.com",
+     "available": true,
+     "approxFirstYearUsd": 12.18
+    }
+   ],
+   "preferredDomain": "windowreplacementmidland.com",
+   "domainAvailable": true
+  },
+  {
+   "experimentId": "W1-A-004",
+   "cohort": "A-EXPLOITATION",
+   "treatment": "standalone-city-site",
+   "assetType": "standalone-site",
+   "service": "Window Replacement",
+   "serviceSlug": "window-replacement",
+   "geography": "Temecula",
+   "state": "CA",
+   "geographyType": "city",
+   "urlArchitecture": "windowreplacementtemecula.com (root targets the city+service query)",
+   "measuredVolume": 140,
+   "volumeState": "measured",
+   "demandProven": true,
+   "cpc": 23.25,
+   "ticketAssumed": 12000,
+   "marginAssumed": 0.35,
+   "leadValueAssumedUsd": 420,
+   "dimensionA": 49,
+   "dimensionAVersion": "A-1.0.0",
+   "organicV1": 58,
+   "organicVerdict": "ORGANIC-CONTESTED",
+   "organicVersion": "organic-v1.2",
+   "organicTop5": [
+    "1. yelp.com [directory]",
+    "2. temeculawindowrepair.com [local-specialist]",
+    "3. reddit.com [directory]",
+    "4. temeculaglass.com [adjacent-not-this-service]",
+    "5. lowestpriceautoglass.net [local-specialist]"
+   ],
+   "organicStructure": {
+    "distinctHostsTop5": 5,
+    "displaceableTop5": 3,
+    "hardLocalTop3": 1,
+    "geoTargetedCompetitorsTop5": 2
+   },
+   "modelDisagreement": -9,
+   "incumbentTargeting": "2 of 5 distinct top-5 hosts explicitly target Temecula",
+   "renterDepthE": 95,
+   "leadEconomicsD": 78,
+   "assetValueF": 50,
+   "asymmetryH": 52,
+   "compositeAI": 61,
+   "aiBucket": null,
+   "evidenceConfidence": 80,
+   "evidenceCompleteness": 100,
+   "renterContext": {
+    "relevantOperators": 10,
+    "viableRenters": 3,
+    "websiteAdoptionPct": 30
+   },
+   "localPackEvidence": {
+    "mapPackSize": 3,
+    "avgReviews": 1152,
+    "note": "market evidence only — excluded from organic scoring"
+   },
+   "contentBarWords": 672,
+   "competitorDomainAgeYears": 16.1,
+   "contentDirective": "SERP-derived, not a fixed word count: this is a commercial service query, so the deployment engine should build a commercial service/location experience benchmarked against the observed content bar, not a long informational article.",
+   "geographyVerified": true,
+   "geographyVerdict": "verified",
+   "reasonIncluded": "Meets the full pre-stated standard: 140/mo measured demand, F=50 (rentable, ~$420/lead), organic-v1.1 58, geography verified.",
+   "hypothesis": "An asset with real economics AND a beatable organic SERP should rank and rent. A=49 vs organic=58; where they disagree this asset also contributes model-validation evidence.",
+   "successCondition": "top-10 organic for the primary query within 6 months AND >=1 inbound lead within 9 months.",
+   "failureCondition": "no top-20 within 6 months, OR top-10 with zero leads after 3 further months (which falsifies demand, not rankability).",
+   "wasInPrior28": false,
+   "evidenceRefs": {
+    "experiment": "experiment-3",
+    "rawSerp": "out/experiment-3/raw/serp-window_replacement_Temecula_CA.json",
+    "scoreModel": "ai-v1.0.0",
+    "weights": "w-balanced-v1.1",
+    "buckets": "buckets-1.1.0"
+   },
+   "measurementPlan": [
+    "publishDate",
+    "indexDate",
+    "firstImpressionDate",
+    "firstRankingDate",
+    "targetQueryRankingHistory",
+    "timeToTop20",
+    "timeToTop10",
+    "timeToTop5",
+    "impressions",
+    "clicks",
+    "organicSessions",
+    "calls",
+    "forms",
+    "leadsTotal",
+    "qualifiedLeads",
+    "leadValueEstimated",
+    "leadValueRealized",
+    "renterOutreach",
+    "renterResponses",
+    "renterInterest",
+    "rentalAgreementAchieved",
+    "monthlyRentRealized"
+   ],
+   "preRegistration": {
+    "predictorsUnderTest": [
+     "dimensionA",
+     "organicV1_1",
+     "measuredVolume",
+     "cpc",
+     "renterDepthE",
+     "leadEconomicsD",
+     "assetValueF",
+     "contentBarWords",
+     "competitorDomainAgeYears",
+     "geographyType",
+     "incumbentTargeting",
+     "architectureTreatment"
+    ],
+    "chain": "rankability -> traffic -> leads -> rentability, each stage measured separately so failure can be localised",
+    "joinKey": "experimentId joins pre-launch evidence -> deployment -> ranking -> traffic -> leads -> rentability"
+   },
+   "domainCandidates": [
+    {
+     "domain": "windowreplacementtemecula.com",
+     "available": true,
+     "approxFirstYearUsd": 12.18
+    },
+    {
+     "domain": "windowreplacementtemeculaca.com",
+     "available": true,
+     "approxFirstYearUsd": 12.18
+    },
+    {
+     "domain": "temeculawindowreplacement.com",
+     "available": true,
+     "approxFirstYearUsd": 12.18
+    },
+    {
+     "domain": "windowreplacementoftemecula.com",
+     "available": true,
+     "approxFirstYearUsd": 12.18
+    },
+    {
+     "domain": "temeculawindowreplacementpros.com",
+     "available": true,
+     "approxFirstYearUsd": 12.18
+    }
+   ],
+   "preferredDomain": "windowreplacementtemecula.com",
+   "domainAvailable": true
+  },
+  {
+   "experimentId": "W1-A-005",
+   "cohort": "A-EXPLOITATION",
+   "treatment": "standalone-city-site",
+   "assetType": "standalone-site",
+   "service": "Window Replacement",
+   "serviceSlug": "window-replacement",
+   "geography": "Vancouver",
+   "state": "WA",
+   "geographyType": "city",
+   "urlArchitecture": "windowreplacementvancouverwa.com (root targets the city+service query)",
+   "measuredVolume": 110,
+   "volumeState": "measured",
+   "demandProven": true,
+   "cpc": 16.77,
+   "ticketAssumed": 12000,
+   "marginAssumed": 0.35,
+   "leadValueAssumedUsd": 420,
+   "dimensionA": 57,
+   "dimensionAVersion": "A-1.0.0",
+   "organicV1": 57,
+   "organicVerdict": "ORGANIC-CONTESTED",
+   "organicVersion": "organic-v1.2",
+   "organicTop5": [
+    "1. homedepot.com [directory]",
+    "2. mrhandyman.com [franchise]",
+    "3. reddit.com [directory]",
+    "4. speedyglass.com [adjacent-not-this-service]",
+    "5. vancouverglass.com [adjacent-not-this-service]"
+   ],
+   "organicStructure": {
+    "distinctHostsTop5": 5,
+    "displaceableTop5": 4,
+    "hardLocalTop3": 1,
+    "geoTargetedCompetitorsTop5": 1
+   },
+   "modelDisagreement": 0,
+   "incumbentTargeting": "1 of 5 distinct top-5 hosts explicitly target Vancouver",
+   "renterDepthE": 56,
+   "leadEconomicsD": 78,
+   "assetValueF": 50,
+   "asymmetryH": 61,
+   "compositeAI": 57,
+   "aiBucket": null,
+   "evidenceConfidence": 80,
+   "evidenceCompleteness": 100,
+   "renterContext": {
+    "relevantOperators": 11,
+    "viableRenters": 3,
+    "websiteAdoptionPct": 27
+   },
+   "localPackEvidence": {
+    "mapPackSize": 3,
+    "avgReviews": 25,
+    "note": "market evidence only — excluded from organic scoring"
+   },
+   "contentBarWords": 2669,
+   "competitorDomainAgeYears": 28.5,
+   "contentDirective": "SERP-derived, not a fixed word count: this is a commercial service query, so the deployment engine should build a commercial service/location experience benchmarked against the observed content bar, not a long informational article.",
+   "geographyVerified": true,
+   "geographyVerdict": "verified",
+   "reasonIncluded": "Meets the full pre-stated standard: 110/mo measured demand, F=50 (rentable, ~$420/lead), organic-v1.1 57, geography verified.",
+   "hypothesis": "An asset with real economics AND a beatable organic SERP should rank and rent. A=57 vs organic=57; where they disagree this asset also contributes model-validation evidence.",
+   "successCondition": "top-10 organic for the primary query within 6 months AND >=1 inbound lead within 9 months.",
+   "failureCondition": "no top-20 within 6 months, OR top-10 with zero leads after 3 further months (which falsifies demand, not rankability).",
+   "wasInPrior28": false,
+   "evidenceRefs": {
+    "experiment": "experiment-3",
+    "rawSerp": "out/experiment-3/raw/serp-window_replacement_Vancouver_WA.json",
+    "scoreModel": "ai-v1.0.0",
+    "weights": "w-balanced-v1.1",
+    "buckets": "buckets-1.1.0"
+   },
+   "measurementPlan": [
+    "publishDate",
+    "indexDate",
+    "firstImpressionDate",
+    "firstRankingDate",
+    "targetQueryRankingHistory",
+    "timeToTop20",
+    "timeToTop10",
+    "timeToTop5",
+    "impressions",
+    "clicks",
+    "organicSessions",
+    "calls",
+    "forms",
+    "leadsTotal",
+    "qualifiedLeads",
+    "leadValueEstimated",
+    "leadValueRealized",
+    "renterOutreach",
+    "renterResponses",
+    "renterInterest",
+    "rentalAgreementAchieved",
+    "monthlyRentRealized"
+   ],
+   "preRegistration": {
+    "predictorsUnderTest": [
+     "dimensionA",
+     "organicV1_1",
+     "measuredVolume",
+     "cpc",
+     "renterDepthE",
+     "leadEconomicsD",
+     "assetValueF",
+     "contentBarWords",
+     "competitorDomainAgeYears",
+     "geographyType",
+     "incumbentTargeting",
+     "architectureTreatment"
+    ],
+    "chain": "rankability -> traffic -> leads -> rentability, each stage measured separately so failure can be localised",
+    "joinKey": "experimentId joins pre-launch evidence -> deployment -> ranking -> traffic -> leads -> rentability"
+   },
+   "domainCandidates": [
+    {
+     "domain": "windowreplacementvancouver.com",
+     "available": false,
+     "approxFirstYearUsd": 12.18
+    },
+    {
+     "domain": "windowreplacementvancouverwa.com",
+     "available": true,
+     "approxFirstYearUsd": 12.18
+    },
+    {
+     "domain": "vancouverwindowreplacement.com",
+     "available": false,
+     "approxFirstYearUsd": 12.18
+    },
+    {
+     "domain": "windowreplacementofvancouver.com",
+     "available": true,
+     "approxFirstYearUsd": 12.18
+    },
+    {
+     "domain": "vancouverwindowreplacementpros.com",
+     "available": true,
+     "approxFirstYearUsd": 12.18
+    }
+   ],
+   "preferredDomain": "windowreplacementvancouverwa.com",
+   "domainAvailable": true
+  },
+  {
+   "experimentId": "W1-A-006",
+   "cohort": "A-EXPLOITATION",
+   "treatment": "standalone-city-site",
+   "assetType": "standalone-site",
+   "service": "Kitchen Remodeling",
+   "serviceSlug": "kitchen-remodel",
+   "geography": "Frisco",
+   "state": "TX",
+   "geographyType": "city",
+   "urlArchitecture": "kitchenremodelingfriscotx.com (root targets the city+service query)",
+   "measuredVolume": 170,
+   "volumeState": "measured",
+   "demandProven": true,
+   "cpc": 17.13,
+   "ticketAssumed": 35000,
+   "marginAssumed": 0.3,
+   "leadValueAssumedUsd": 1050,
+   "dimensionA": 50,
+   "dimensionAVersion": "A-1.0.0",
+   "organicV1": 56,
+   "organicVerdict": "ORGANIC-CONTESTED",
+   "organicVersion": "organic-v1.2",
+   "organicTop5": [
+    "1. elitehomeremodeling.com [local-specialist]",
+    "2. manningrandc.com [adjacent-not-this-service]",
+    "3. yelp.com [directory]",
+    "4. facebook.com [directory]",
+    "5. friscokitchenrenovation.com [local-specialist]"
+   ],
+   "organicStructure": {
+    "distinctHostsTop5": 5,
+    "displaceableTop5": 3,
+    "hardLocalTop3": 1,
+    "geoTargetedCompetitorsTop5": 1
+   },
+   "modelDisagreement": -6,
+   "incumbentTargeting": "1 of 5 distinct top-5 hosts explicitly target Frisco",
+   "renterDepthE": 73,
+   "leadEconomicsD": 90,
+   "assetValueF": 66,
+   "asymmetryH": 58,
+   "compositeAI": 61,
+   "aiBucket": "HIGH-VALUE",
+   "evidenceConfidence": 80,
+   "evidenceCompleteness": 100,
+   "renterContext": {
+    "relevantOperators": 10,
+    "viableRenters": 3,
+    "websiteAdoptionPct": 30
+   },
+   "localPackEvidence": {
+    "mapPackSize": 3,
+    "avgReviews": 111,
+    "note": "market evidence only — excluded from organic scoring"
+   },
+   "contentBarWords": 1248,
+   "competitorDomainAgeYears": 13.3,
+   "contentDirective": "SERP-derived, not a fixed word count: this is a commercial service query, so the deployment engine should build a commercial service/location experience benchmarked against the observed content bar, not a long informational article.",
+   "geographyVerified": true,
+   "geographyVerdict": "verified",
+   "reasonIncluded": "Meets the full pre-stated standard: 170/mo measured demand, F=66 (rentable, ~$1050/lead), organic-v1.1 56, geography verified.",
+   "hypothesis": "An asset with real economics AND a beatable organic SERP should rank and rent. A=50 vs organic=56; where they disagree this asset also contributes model-validation evidence.",
+   "successCondition": "top-10 organic for the primary query within 6 months AND >=1 inbound lead within 9 months.",
+   "failureCondition": "no top-20 within 6 months, OR top-10 with zero leads after 3 further months (which falsifies demand, not rankability).",
+   "wasInPrior28": false,
+   "evidenceRefs": {
+    "experiment": "experiment-3",
+    "rawSerp": "out/experiment-3/raw/serp-kitchen_remodel_Frisco_TX.json",
+    "scoreModel": "ai-v1.0.0",
+    "weights": "w-balanced-v1.1",
+    "buckets": "buckets-1.1.0"
+   },
+   "measurementPlan": [
+    "publishDate",
+    "indexDate",
+    "firstImpressionDate",
+    "firstRankingDate",
+    "targetQueryRankingHistory",
+    "timeToTop20",
+    "timeToTop10",
+    "timeToTop5",
+    "impressions",
+    "clicks",
+    "organicSessions",
+    "calls",
+    "forms",
+    "leadsTotal",
+    "qualifiedLeads",
+    "leadValueEstimated",
+    "leadValueRealized",
+    "renterOutreach",
+    "renterResponses",
+    "renterInterest",
+    "rentalAgreementAchieved",
+    "monthlyRentRealized"
+   ],
+   "preRegistration": {
+    "predictorsUnderTest": [
+     "dimensionA",
+     "organicV1_1",
+     "measuredVolume",
+     "cpc",
+     "renterDepthE",
+     "leadEconomicsD",
+     "assetValueF",
+     "contentBarWords",
+     "competitorDomainAgeYears",
+     "geographyType",
+     "incumbentTargeting",
+     "architectureTreatment"
+    ],
+    "chain": "rankability -> traffic -> leads -> rentability, each stage measured separately so failure can be localised",
+    "joinKey": "experimentId joins pre-launch evidence -> deployment -> ranking -> traffic -> leads -> rentability"
+   },
+   "domainCandidates": [
+    {
+     "domain": "kitchenremodelingfrisco.com",
+     "available": false,
+     "approxFirstYearUsd": 12.18
+    },
+    {
+     "domain": "kitchenremodelingfriscotx.com",
+     "available": true,
+     "approxFirstYearUsd": 12.18
+    },
+    {
+     "domain": "friscokitchenremodeling.com",
+     "available": false,
+     "approxFirstYearUsd": 12.18
+    },
+    {
+     "domain": "kitchenremodelingoffrisco.com",
+     "available": true,
+     "approxFirstYearUsd": 12.18
+    },
+    {
+     "domain": "friscokitchenremodelingpros.com",
+     "available": true,
+     "approxFirstYearUsd": 12.18
+    }
+   ],
+   "preferredDomain": "kitchenremodelingfriscotx.com",
+   "domainAvailable": true
+  },
+  {
+   "experimentId": "W1-B1-001",
+   "matchedPairId": "NTX-P1",
+   "matchedWith": "Legacy Gardens",
+   "matchBasis": "both VIRGIN, active-buildout, organic 82 vs 79 (Δ3) — the two strongest virgin communities",
+   "cohort": "B1-NTX-STANDALONE",
+   "treatment": "TREATMENT-S-standalone-hyperlocal-domain",
+   "assetType": "standalone-site",
+   "service": "Pool Builder",
+   "serviceSlug": "pool-builder",
+   "geography": "Sutton Fields",
+   "state": "TX",
+   "geographyType": "master-planned-community",
+   "parentCity": "Celina",
+   "communityHomes": 1500,
+   "communityStatus": "active-buildout",
+   "urlArchitecture": "poolbuildersuttonfields.com (root targets the community query)",
+   "hubDomain": null,
+   "measuredVolume": 0,
+   "volumeState": "provider-reports-zero — THE HYPOTHESIS UNDER TEST, not a validated demand figure",
+   "demandProven": false,
+   "demandLabel": "DEMAND-UNPROVEN EXPERIMENTAL ASSET",
+   "cpc": null,
+   "ticketAssumed": 85000,
+   "marginAssumed": 0.25,
+   "leadValueAssumedUsd": 2125,
+   "dimensionA": null,
+   "dimensionANote": "A deliberately not applied: it is calibrated on city SERPs and its map-pack term is meaningless here — Google returns the parent city's pack for community queries.",
+   "organicV1": 82,
+   "organicVerdict": "ORGANIC-VIABLE",
+   "organicVersion": "organic-v1.2",
+   "organicTop5": [
+    "1. bloomfieldhomes.com [adjacent-not-this-service]",
+    "2. centurionamerican.com [adjacent-not-this-service]",
+    "3. facebook.com [directory]",
+    "4. prestigepp.com [local-specialist]",
+    "5. firsttexashomes.com [adjacent-not-this-service]"
+   ],
+   "organicStructure": {
+    "distinctHostsTop5": 5,
+    "displaceableTop5": 4,
+    "hardLocalTop3": 0,
+    "geoTargetedCompetitorsTop5": 0
+   },
+   "incumbentTargeting": "VIRGIN — no competitor holds a community-specific pool page",
+   "renterDepthE": null,
+   "renterContext": {
+    "viableRentersInCommunityPack": 3,
+    "note": "24 distinct pool builders serve the 22-community cluster; Lonestar Pool & Spa Design appears in 12 of 22 packs. One renter could take several assets (upside) and that is buyer concentration (risk)."
+   },
+   "localPackEvidence": {
+    "note": "map pack inherited from the parent city; Google renders no distinct community pack, so this asset must win ORGANIC"
+   },
+   "contentBarWords": null,
+   "competitorDomainAgeYears": null,
+   "contentDirective": "Identical specification across BOTH treatments: same visual quality, conversion architecture, topical coverage, schema, publishing window, indexing workflow and tracking. Only the architecture differs.",
+   "domainCandidates": [
+    {
+     "domain": "poolbuildersuttonfields.com",
+     "available": true
+    },
+    {
+     "domain": "suttonfieldspoolbuilder.com",
+     "available": true
+    },
+    {
+     "domain": "suttonfieldspools.com",
+     "available": true
+    },
+    {
+     "domain": "poolsofsuttonfields.com",
+     "available": true
+    }
+   ],
+   "preferredDomain": "poolbuildersuttonfields.com",
+   "domainAvailable": true,
+   "evidenceConfidence": "community class — organic-v1.1 only; no measured demand by construction",
+   "geographyVerified": true,
+   "geographyVerdict": "community within verified metro (SERP localized to parent city)",
+   "reasonIncluded": "Matched-pair NTX-P1 (both VIRGIN, active-buildout, organic 82 vs 79 (Δ3) — the two strongest virgin communities). Assigned to STANDALONE so the architecture, not the community, is the variable.",
+   "hypothesis": "Keyword tools report zero volume for \"pool builder Sutton Fields\", yet homeowners in a 1500-home affluent community may search by community name. A dedicated hyperlocal domain should maximise exact-match relevance. Paired against Legacy Gardens on the hub to isolate architecture.",
+   "successCondition": ">=100 impressions/month on community-modified queries within 6 months, OR >=1 qualified lead. Architecture comparison is judged on WITHIN-PAIR difference in time-to-first-impression, time-to-top-20 and impressions at 6 months.",
+   "failureCondition": "indexed but <20 impressions/month after 6 months across ALL community-modified queries while city controls perform in line with measured volume — falsifies hyper-local under-measurement. Architecture verdict is void if fewer than 4 of 6 pairs produce interpretable data.",
+   "wasInPrior28": false,
+   "evidenceRefs": {
+    "rawSerp": "out/wave-1-experiment/raw/serp-pool_builder_Sutton_Fields_TX.json",
+    "serviceSelection": "out/wave-1-experiment/nt-service-ranking.json",
+    "communityMeta": {
+     "name": "Sutton Fields",
+     "city": "Celina",
+     "state": "TX",
+     "homes": 1500,
+     "status": "active-buildout",
+     "note": "volume builder base, mid-affluent"
+    }
+   },
+   "measurementPlan": [
+    "publishDate",
+    "indexDate",
+    "firstImpressionDate",
+    "firstRankingDate",
+    "targetQueryRankingHistory",
+    "timeToTop20",
+    "timeToTop10",
+    "timeToTop5",
+    "impressions",
+    "clicks",
+    "organicSessions",
+    "calls",
+    "forms",
+    "leadsTotal",
+    "qualifiedLeads",
+    "leadValueEstimated",
+    "leadValueRealized",
+    "renterOutreach",
+    "renterResponses",
+    "renterInterest",
+    "rentalAgreementAchieved",
+    "monthlyRentRealized"
+   ],
+   "preRegistration": {
+    "predictorsUnderTest": [
+     "dimensionA",
+     "organicV1_1",
+     "measuredVolume",
+     "cpc",
+     "renterDepthE",
+     "leadEconomicsD",
+     "assetValueF",
+     "contentBarWords",
+     "competitorDomainAgeYears",
+     "geographyType",
+     "incumbentTargeting",
+     "architectureTreatment"
+    ],
+    "chain": "rankability -> traffic -> leads -> rentability, each stage measured separately so failure can be localised",
+    "joinKey": "experimentId joins pre-launch evidence -> deployment -> ranking -> traffic -> leads -> rentability"
+   }
+  },
+  {
+   "experimentId": "W1-B2-002",
+   "matchedPairId": "NTX-P1",
+   "matchedWith": "Sutton Fields",
+   "matchBasis": "both VIRGIN, active-buildout, organic 82 vs 79 (Δ3) — the two strongest virgin communities",
+   "cohort": "B2-NTX-REGIONAL-HUB",
+   "treatment": "TREATMENT-H-page-on-regional-hub",
+   "assetType": "hub-page",
+   "service": "Pool Builder",
+   "serviceSlug": "pool-builder",
+   "geography": "Legacy Gardens",
+   "state": "TX",
+   "geographyType": "master-planned-community",
+   "parentCity": "Prosper",
+   "communityHomes": 400,
+   "communityStatus": "active-buildout",
+   "urlArchitecture": "poolbuildersnorthtexas.com/legacy-gardens/",
+   "hubDomain": "poolbuildersnorthtexas.com",
+   "measuredVolume": 0,
+   "volumeState": "provider-reports-zero — THE HYPOTHESIS UNDER TEST, not a validated demand figure",
+   "demandProven": false,
+   "demandLabel": "DEMAND-UNPROVEN EXPERIMENTAL ASSET",
+   "cpc": null,
+   "ticketAssumed": 85000,
+   "marginAssumed": 0.25,
+   "leadValueAssumedUsd": 2125,
+   "dimensionA": null,
+   "dimensionANote": "A deliberately not applied: it is calibrated on city SERPs and its map-pack term is meaningless here — Google returns the parent city's pack for community queries.",
+   "organicV1": 79,
+   "organicVerdict": "ORGANIC-VIABLE",
+   "organicVersion": "organic-v1.2",
+   "organicTop5": [
+    "1. rislandhomes.com [adjacent-not-this-service]",
+    "2. foleypools.com [local-specialist]",
+    "3. homes.com [adjacent-not-this-service]",
+    "4. rislandus.com [adjacent-not-this-service]",
+    "5. youtube.com [social]"
+   ],
+   "organicStructure": {
+    "distinctHostsTop5": 5,
+    "displaceableTop5": 4,
+    "hardLocalTop3": 1,
+    "geoTargetedCompetitorsTop5": 0
+   },
+   "incumbentTargeting": "VIRGIN — no competitor holds a community-specific pool page",
+   "renterDepthE": null,
+   "renterContext": {
+    "viableRentersInCommunityPack": 0,
+    "note": "24 distinct pool builders serve the 22-community cluster; Lonestar Pool & Spa Design appears in 12 of 22 packs. One renter could take several assets (upside) and that is buyer concentration (risk)."
+   },
+   "localPackEvidence": {
+    "note": "map pack inherited from the parent city; Google renders no distinct community pack, so this asset must win ORGANIC"
+   },
+   "contentBarWords": null,
+   "competitorDomainAgeYears": null,
+   "contentDirective": "Identical specification across BOTH treatments: same visual quality, conversion architecture, topical coverage, schema, publishing window, indexing workflow and tracking. Only the architecture differs.",
+   "domainCandidates": [
+    {
+     "domain": "poolbuildersnorthtexas.com",
+     "available": true,
+     "note": "one shared hub domain for all six H assets"
+    }
+   ],
+   "preferredDomain": "poolbuildersnorthtexas.com",
+   "domainAvailable": true,
+   "evidenceConfidence": "community class — organic-v1.1 only; no measured demand by construction",
+   "geographyVerified": true,
+   "geographyVerdict": "community within verified metro (SERP localized to parent city)",
+   "reasonIncluded": "Matched-pair NTX-P1 (both VIRGIN, active-buildout, organic 82 vs 79 (Δ3) — the two strongest virgin communities). Assigned to REGIONAL HUB so the architecture, not the community, is the variable.",
+   "hypothesis": "Same demand hypothesis as its pair Sutton Fields, but delivered as a page on a regional authority domain. Tests whether shared site-level authority and internal linking outrank a dedicated hyperlocal domain — or whether exact-match hyperlocal focus wins.",
+   "successCondition": ">=100 impressions/month on community-modified queries within 6 months, OR >=1 qualified lead. Architecture comparison is judged on WITHIN-PAIR difference in time-to-first-impression, time-to-top-20 and impressions at 6 months.",
+   "failureCondition": "indexed but <20 impressions/month after 6 months across ALL community-modified queries while city controls perform in line with measured volume — falsifies hyper-local under-measurement. Architecture verdict is void if fewer than 4 of 6 pairs produce interpretable data.",
+   "wasInPrior28": false,
+   "evidenceRefs": {
+    "rawSerp": "out/wave-1-experiment/raw/serp-pool_builder_Legacy_Gardens_TX.json",
+    "serviceSelection": "out/wave-1-experiment/nt-service-ranking.json",
+    "communityMeta": {
+     "name": "Legacy Gardens",
+     "city": "Prosper",
+     "state": "TX",
+     "homes": 400,
+     "status": "active-buildout",
+     "note": "luxury custom, large lots"
+    }
+   },
+   "measurementPlan": [
+    "publishDate",
+    "indexDate",
+    "firstImpressionDate",
+    "firstRankingDate",
+    "targetQueryRankingHistory",
+    "timeToTop20",
+    "timeToTop10",
+    "timeToTop5",
+    "impressions",
+    "clicks",
+    "organicSessions",
+    "calls",
+    "forms",
+    "leadsTotal",
+    "qualifiedLeads",
+    "leadValueEstimated",
+    "leadValueRealized",
+    "renterOutreach",
+    "renterResponses",
+    "renterInterest",
+    "rentalAgreementAchieved",
+    "monthlyRentRealized"
+   ],
+   "preRegistration": {
+    "predictorsUnderTest": [
+     "dimensionA",
+     "organicV1_1",
+     "measuredVolume",
+     "cpc",
+     "renterDepthE",
+     "leadEconomicsD",
+     "assetValueF",
+     "contentBarWords",
+     "competitorDomainAgeYears",
+     "geographyType",
+     "incumbentTargeting",
+     "architectureTreatment"
+    ],
+    "chain": "rankability -> traffic -> leads -> rentability, each stage measured separately so failure can be localised",
+    "joinKey": "experimentId joins pre-launch evidence -> deployment -> ranking -> traffic -> leads -> rentability"
+   }
+  },
+  {
+   "experimentId": "W1-B1-003",
+   "matchedPairId": "NTX-P2",
+   "matchedWith": "Star Trail",
+   "matchBasis": "both VIRGIN, active-buildout, organic 66 vs 67 (Δ1) and 1,400 vs 1,300 homes — the tightest match in the experiment",
+   "cohort": "B1-NTX-STANDALONE",
+   "treatment": "TREATMENT-S-standalone-hyperlocal-domain",
+   "assetType": "standalone-site",
+   "service": "Pool Builder",
+   "serviceSlug": "pool-builder",
+   "geography": "Sandbrock Ranch",
+   "state": "TX",
+   "geographyType": "master-planned-community",
+   "parentCity": "Aubrey",
+   "communityHomes": 1400,
+   "communityStatus": "active-buildout",
+   "urlArchitecture": "poolbuildersandbrockranch.com (root targets the community query)",
+   "hubDomain": null,
+   "measuredVolume": 0,
+   "volumeState": "provider-reports-zero — THE HYPOTHESIS UNDER TEST, not a validated demand figure",
+   "demandProven": false,
+   "demandLabel": "DEMAND-UNPROVEN EXPERIMENTAL ASSET",
+   "cpc": null,
+   "ticketAssumed": 85000,
+   "marginAssumed": 0.25,
+   "leadValueAssumedUsd": 2125,
+   "dimensionA": null,
+   "dimensionANote": "A deliberately not applied: it is calibrated on city SERPs and its map-pack term is meaningless here — Google returns the parent city's pack for community queries.",
+   "organicV1": 66,
+   "organicVerdict": "ORGANIC-VIABLE",
+   "organicVersion": "organic-v1.2",
+   "organicTop5": [
+    "1. sandbrockranch.com [adjacent-not-this-service]",
+    "2. haukcustompools.com [local-specialist]",
+    "3. sandbrockranch.com [adjacent-not-this-service]",
+    "4. instagram.com [directory]",
+    "5. yelp.com [directory]"
+   ],
+   "organicStructure": {
+    "distinctHostsTop5": 4,
+    "displaceableTop5": 3,
+    "hardLocalTop3": 1,
+    "geoTargetedCompetitorsTop5": 0
+   },
+   "incumbentTargeting": "VIRGIN — no competitor holds a community-specific pool page",
+   "renterDepthE": null,
+   "renterContext": {
+    "viableRentersInCommunityPack": 2,
+    "note": "24 distinct pool builders serve the 22-community cluster; Lonestar Pool & Spa Design appears in 12 of 22 packs. One renter could take several assets (upside) and that is buyer concentration (risk)."
+   },
+   "localPackEvidence": {
+    "note": "map pack inherited from the parent city; Google renders no distinct community pack, so this asset must win ORGANIC"
+   },
+   "contentBarWords": 1407,
+   "competitorDomainAgeYears": 14.2,
+   "contentDirective": "Identical specification across BOTH treatments: same visual quality, conversion architecture, topical coverage, schema, publishing window, indexing workflow and tracking. Only the architecture differs.",
+   "domainCandidates": [
+    {
+     "domain": "poolbuildersandbrockranch.com",
+     "available": true
+    },
+    {
+     "domain": "sandbrockranchpoolbuilder.com",
+     "available": true
+    },
+    {
+     "domain": "sandbrockranchpools.com",
+     "available": true
+    },
+    {
+     "domain": "poolsofsandbrockranch.com",
+     "available": true
+    }
+   ],
+   "preferredDomain": "poolbuildersandbrockranch.com",
+   "domainAvailable": true,
+   "evidenceConfidence": "community class — organic-v1.1 only; no measured demand by construction",
+   "geographyVerified": true,
+   "geographyVerdict": "community within verified metro (SERP localized to parent city)",
+   "reasonIncluded": "Matched-pair NTX-P2 (both VIRGIN, active-buildout, organic 66 vs 67 (Δ1) and 1,400 vs 1,300 homes — the tightest match in the experiment). Assigned to STANDALONE so the architecture, not the community, is the variable.",
+   "hypothesis": "Keyword tools report zero volume for \"pool builder Sandbrock Ranch\", yet homeowners in a 1400-home affluent community may search by community name. A dedicated hyperlocal domain should maximise exact-match relevance. Paired against Star Trail on the hub to isolate architecture.",
+   "successCondition": ">=100 impressions/month on community-modified queries within 6 months, OR >=1 qualified lead. Architecture comparison is judged on WITHIN-PAIR difference in time-to-first-impression, time-to-top-20 and impressions at 6 months.",
+   "failureCondition": "indexed but <20 impressions/month after 6 months across ALL community-modified queries while city controls perform in line with measured volume — falsifies hyper-local under-measurement. Architecture verdict is void if fewer than 4 of 6 pairs produce interpretable data.",
+   "wasInPrior28": true,
+   "evidenceRefs": {
+    "rawSerp": "out/wave-1-experiment/raw/serp-pool_builder_Sandbrock_Ranch_TX.json",
+    "serviceSelection": "out/wave-1-experiment/nt-service-ranking.json",
+    "communityMeta": {
+     "name": "Sandbrock Ranch",
+     "city": "Aubrey",
+     "state": "TX",
+     "homes": 1400,
+     "status": "active-buildout",
+     "note": "Denton Co, semi-custom"
+    }
+   },
+   "measurementPlan": [
+    "publishDate",
+    "indexDate",
+    "firstImpressionDate",
+    "firstRankingDate",
+    "targetQueryRankingHistory",
+    "timeToTop20",
+    "timeToTop10",
+    "timeToTop5",
+    "impressions",
+    "clicks",
+    "organicSessions",
+    "calls",
+    "forms",
+    "leadsTotal",
+    "qualifiedLeads",
+    "leadValueEstimated",
+    "leadValueRealized",
+    "renterOutreach",
+    "renterResponses",
+    "renterInterest",
+    "rentalAgreementAchieved",
+    "monthlyRentRealized"
+   ],
+   "preRegistration": {
+    "predictorsUnderTest": [
+     "dimensionA",
+     "organicV1_1",
+     "measuredVolume",
+     "cpc",
+     "renterDepthE",
+     "leadEconomicsD",
+     "assetValueF",
+     "contentBarWords",
+     "competitorDomainAgeYears",
+     "geographyType",
+     "incumbentTargeting",
+     "architectureTreatment"
+    ],
+    "chain": "rankability -> traffic -> leads -> rentability, each stage measured separately so failure can be localised",
+    "joinKey": "experimentId joins pre-launch evidence -> deployment -> ranking -> traffic -> leads -> rentability"
+   }
+  },
+  {
+   "experimentId": "W1-B2-004",
+   "matchedPairId": "NTX-P2",
+   "matchedWith": "Sandbrock Ranch",
+   "matchBasis": "both VIRGIN, active-buildout, organic 66 vs 67 (Δ1) and 1,400 vs 1,300 homes — the tightest match in the experiment",
+   "cohort": "B2-NTX-REGIONAL-HUB",
+   "treatment": "TREATMENT-H-page-on-regional-hub",
+   "assetType": "hub-page",
+   "service": "Pool Builder",
+   "serviceSlug": "pool-builder",
+   "geography": "Star Trail",
+   "state": "TX",
+   "geographyType": "master-planned-community",
+   "parentCity": "Prosper",
+   "communityHomes": 1300,
+   "communityStatus": "active-buildout",
+   "urlArchitecture": "poolbuildersnorthtexas.com/star-trail/",
+   "hubDomain": "poolbuildersnorthtexas.com",
+   "measuredVolume": 0,
+   "volumeState": "provider-reports-zero — THE HYPOTHESIS UNDER TEST, not a validated demand figure",
+   "demandProven": false,
+   "demandLabel": "DEMAND-UNPROVEN EXPERIMENTAL ASSET",
+   "cpc": null,
+   "ticketAssumed": 85000,
+   "marginAssumed": 0.25,
+   "leadValueAssumedUsd": 2125,
+   "dimensionA": null,
+   "dimensionANote": "A deliberately not applied: it is calibrated on city SERPs and its map-pack term is meaningless here — Google returns the parent city's pack for community queries.",
+   "organicV1": 67,
+   "organicVerdict": "ORGANIC-VIABLE",
+   "organicVersion": "organic-v1.2",
+   "organicTop5": [
+    "1. prestigepp.com [local-specialist]",
+    "2. highlandhomes.com [adjacent-not-this-service]",
+    "3. facebook.com [directory]",
+    "4. tollbrothers.com [adjacent-not-this-service]",
+    "5. dfwcustompool.com [local-specialist]"
+   ],
+   "organicStructure": {
+    "distinctHostsTop5": 5,
+    "displaceableTop5": 3,
+    "hardLocalTop3": 1,
+    "geoTargetedCompetitorsTop5": 0
+   },
+   "incumbentTargeting": "VIRGIN — no competitor holds a community-specific pool page",
+   "renterDepthE": null,
+   "renterContext": {
+    "viableRentersInCommunityPack": 2,
+    "note": "24 distinct pool builders serve the 22-community cluster; Lonestar Pool & Spa Design appears in 12 of 22 packs. One renter could take several assets (upside) and that is buyer concentration (risk)."
+   },
+   "localPackEvidence": {
+    "note": "map pack inherited from the parent city; Google renders no distinct community pack, so this asset must win ORGANIC"
+   },
+   "contentBarWords": 532,
+   "competitorDomainAgeYears": 25.9,
+   "contentDirective": "Identical specification across BOTH treatments: same visual quality, conversion architecture, topical coverage, schema, publishing window, indexing workflow and tracking. Only the architecture differs.",
+   "domainCandidates": [
+    {
+     "domain": "poolbuildersnorthtexas.com",
+     "available": true,
+     "note": "one shared hub domain for all six H assets"
+    }
+   ],
+   "preferredDomain": "poolbuildersnorthtexas.com",
+   "domainAvailable": true,
+   "evidenceConfidence": "community class — organic-v1.1 only; no measured demand by construction",
+   "geographyVerified": true,
+   "geographyVerdict": "community within verified metro (SERP localized to parent city)",
+   "reasonIncluded": "Matched-pair NTX-P2 (both VIRGIN, active-buildout, organic 66 vs 67 (Δ1) and 1,400 vs 1,300 homes — the tightest match in the experiment). Assigned to REGIONAL HUB so the architecture, not the community, is the variable.",
+   "hypothesis": "Same demand hypothesis as its pair Sandbrock Ranch, but delivered as a page on a regional authority domain. Tests whether shared site-level authority and internal linking outrank a dedicated hyperlocal domain — or whether exact-match hyperlocal focus wins.",
+   "successCondition": ">=100 impressions/month on community-modified queries within 6 months, OR >=1 qualified lead. Architecture comparison is judged on WITHIN-PAIR difference in time-to-first-impression, time-to-top-20 and impressions at 6 months.",
+   "failureCondition": "indexed but <20 impressions/month after 6 months across ALL community-modified queries while city controls perform in line with measured volume — falsifies hyper-local under-measurement. Architecture verdict is void if fewer than 4 of 6 pairs produce interpretable data.",
+   "wasInPrior28": true,
+   "evidenceRefs": {
+    "rawSerp": "out/wave-1-experiment/raw/serp-pool_builder_Star_Trail_TX.json",
+    "serviceSelection": "out/wave-1-experiment/nt-service-ranking.json",
+    "communityMeta": {
+     "name": "Star Trail",
+     "city": "Prosper",
+     "state": "TX",
+     "homes": 1300,
+     "status": "active-buildout",
+     "note": "Prosper ISD; large lots, semi-custom"
+    }
+   },
+   "measurementPlan": [
+    "publishDate",
+    "indexDate",
+    "firstImpressionDate",
+    "firstRankingDate",
+    "targetQueryRankingHistory",
+    "timeToTop20",
+    "timeToTop10",
+    "timeToTop5",
+    "impressions",
+    "clicks",
+    "organicSessions",
+    "calls",
+    "forms",
+    "leadsTotal",
+    "qualifiedLeads",
+    "leadValueEstimated",
+    "leadValueRealized",
+    "renterOutreach",
+    "renterResponses",
+    "renterInterest",
+    "rentalAgreementAchieved",
+    "monthlyRentRealized"
+   ],
+   "preRegistration": {
+    "predictorsUnderTest": [
+     "dimensionA",
+     "organicV1_1",
+     "measuredVolume",
+     "cpc",
+     "renterDepthE",
+     "leadEconomicsD",
+     "assetValueF",
+     "contentBarWords",
+     "competitorDomainAgeYears",
+     "geographyType",
+     "incumbentTargeting",
+     "architectureTreatment"
+    ],
+    "chain": "rankability -> traffic -> leads -> rentability, each stage measured separately so failure can be localised",
+    "joinKey": "experimentId joins pre-launch evidence -> deployment -> ranking -> traffic -> leads -> rentability"
+   }
+  },
+  {
+   "experimentId": "W1-B1-005",
+   "matchedPairId": "NTX-P3",
+   "matchedWith": "Stonebridge Ranch",
+   "matchBasis": "both VIRGIN, both in McKinney (parent city and its SERP held constant), both large (3,400 vs 7,000 homes), organic 73 vs 63",
+   "cohort": "B1-NTX-STANDALONE",
+   "treatment": "TREATMENT-S-standalone-hyperlocal-domain",
+   "assetType": "standalone-site",
+   "service": "Pool Builder",
+   "serviceSlug": "pool-builder",
+   "geography": "Painted Tree",
+   "state": "TX",
+   "geographyType": "master-planned-community",
+   "parentCity": "McKinney",
+   "communityHomes": 3400,
+   "communityStatus": "active-buildout",
+   "urlArchitecture": "poolbuilderpaintedtree.com (root targets the community query)",
+   "hubDomain": null,
+   "measuredVolume": 0,
+   "volumeState": "provider-reports-zero — THE HYPOTHESIS UNDER TEST, not a validated demand figure",
+   "demandProven": false,
+   "demandLabel": "DEMAND-UNPROVEN EXPERIMENTAL ASSET",
+   "cpc": null,
+   "ticketAssumed": 85000,
+   "marginAssumed": 0.25,
+   "leadValueAssumedUsd": 2125,
+   "dimensionA": null,
+   "dimensionANote": "A deliberately not applied: it is calibrated on city SERPs and its map-pack term is meaningless here — Google returns the parent city's pack for community queries.",
+   "organicV1": 73,
+   "organicVerdict": "ORGANIC-VIABLE",
+   "organicVersion": "organic-v1.2",
+   "organicTop5": [
+    "1. paintedtreetx.com [adjacent-not-this-service]",
+    "2. coventryhomes.com [adjacent-not-this-service]",
+    "3. paintedtreetx.com [adjacent-not-this-service]",
+    "4. bloomfieldhomes.com [adjacent-not-this-service]",
+    "5. paintedtreetx.com [adjacent-not-this-service]"
+   ],
+   "organicStructure": {
+    "distinctHostsTop5": 3,
+    "displaceableTop5": 3,
+    "hardLocalTop3": 0,
+    "geoTargetedCompetitorsTop5": 0
+   },
+   "incumbentTargeting": "VIRGIN — no competitor holds a community-specific pool page",
+   "renterDepthE": null,
+   "renterContext": {
+    "viableRentersInCommunityPack": 3,
+    "note": "24 distinct pool builders serve the 22-community cluster; Lonestar Pool & Spa Design appears in 12 of 22 packs. One renter could take several assets (upside) and that is buyer concentration (risk)."
+   },
+   "localPackEvidence": {
+    "note": "map pack inherited from the parent city; Google renders no distinct community pack, so this asset must win ORGANIC"
+   },
+   "contentBarWords": 1435,
+   "competitorDomainAgeYears": 13.8,
+   "contentDirective": "Identical specification across BOTH treatments: same visual quality, conversion architecture, topical coverage, schema, publishing window, indexing workflow and tracking. Only the architecture differs.",
+   "domainCandidates": [
+    {
+     "domain": "poolbuilderpaintedtree.com",
+     "available": true
+    },
+    {
+     "domain": "paintedtreepoolbuilder.com",
+     "available": true
+    },
+    {
+     "domain": "paintedtreepools.com",
+     "available": true
+    },
+    {
+     "domain": "poolsofpaintedtree.com",
+     "available": true
+    }
+   ],
+   "preferredDomain": "poolbuilderpaintedtree.com",
+   "domainAvailable": true,
+   "evidenceConfidence": "community class — organic-v1.1 only; no measured demand by construction",
+   "geographyVerified": true,
+   "geographyVerdict": "community within verified metro (SERP localized to parent city)",
+   "reasonIncluded": "Matched-pair NTX-P3 (both VIRGIN, both in McKinney (parent city and its SERP held constant), both large (3,400 vs 7,000 homes), organic 73 vs 63). Assigned to STANDALONE so the architecture, not the community, is the variable.",
+   "hypothesis": "Keyword tools report zero volume for \"pool builder Painted Tree\", yet homeowners in a 3400-home affluent community may search by community name. A dedicated hyperlocal domain should maximise exact-match relevance. Paired against Stonebridge Ranch on the hub to isolate architecture.",
+   "successCondition": ">=100 impressions/month on community-modified queries within 6 months, OR >=1 qualified lead. Architecture comparison is judged on WITHIN-PAIR difference in time-to-first-impression, time-to-top-20 and impressions at 6 months.",
+   "failureCondition": "indexed but <20 impressions/month after 6 months across ALL community-modified queries while city controls perform in line with measured volume — falsifies hyper-local under-measurement. Architecture verdict is void if fewer than 4 of 6 pairs produce interpretable data.",
+   "wasInPrior28": true,
+   "evidenceRefs": {
+    "rawSerp": "out/wave-1-experiment/raw/serp-pool_builder_Painted_Tree_TX.json",
+    "serviceSelection": "out/wave-1-experiment/nt-service-ranking.json",
+    "communityMeta": {
+     "name": "Painted Tree",
+     "city": "McKinney",
+     "state": "TX",
+     "homes": 3400,
+     "status": "active-buildout",
+     "note": "one of McKinney's largest active MPCs"
+    }
+   },
+   "measurementPlan": [
+    "publishDate",
+    "indexDate",
+    "firstImpressionDate",
+    "firstRankingDate",
+    "targetQueryRankingHistory",
+    "timeToTop20",
+    "timeToTop10",
+    "timeToTop5",
+    "impressions",
+    "clicks",
+    "organicSessions",
+    "calls",
+    "forms",
+    "leadsTotal",
+    "qualifiedLeads",
+    "leadValueEstimated",
+    "leadValueRealized",
+    "renterOutreach",
+    "renterResponses",
+    "renterInterest",
+    "rentalAgreementAchieved",
+    "monthlyRentRealized"
+   ],
+   "preRegistration": {
+    "predictorsUnderTest": [
+     "dimensionA",
+     "organicV1_1",
+     "measuredVolume",
+     "cpc",
+     "renterDepthE",
+     "leadEconomicsD",
+     "assetValueF",
+     "contentBarWords",
+     "competitorDomainAgeYears",
+     "geographyType",
+     "incumbentTargeting",
+     "architectureTreatment"
+    ],
+    "chain": "rankability -> traffic -> leads -> rentability, each stage measured separately so failure can be localised",
+    "joinKey": "experimentId joins pre-launch evidence -> deployment -> ranking -> traffic -> leads -> rentability"
+   }
+  },
+  {
+   "experimentId": "W1-B2-006",
+   "matchedPairId": "NTX-P3",
+   "matchedWith": "Painted Tree",
+   "matchBasis": "both VIRGIN, both in McKinney (parent city and its SERP held constant), both large (3,400 vs 7,000 homes), organic 73 vs 63",
+   "cohort": "B2-NTX-REGIONAL-HUB",
+   "treatment": "TREATMENT-H-page-on-regional-hub",
+   "assetType": "hub-page",
+   "service": "Pool Builder",
+   "serviceSlug": "pool-builder",
+   "geography": "Stonebridge Ranch",
+   "state": "TX",
+   "geographyType": "master-planned-community",
+   "parentCity": "McKinney",
+   "communityHomes": 7000,
+   "communityStatus": "mature",
+   "urlArchitecture": "poolbuildersnorthtexas.com/stonebridge-ranch/",
+   "hubDomain": "poolbuildersnorthtexas.com",
+   "measuredVolume": 0,
+   "volumeState": "provider-reports-zero — THE HYPOTHESIS UNDER TEST, not a validated demand figure",
+   "demandProven": false,
+   "demandLabel": "DEMAND-UNPROVEN EXPERIMENTAL ASSET",
+   "cpc": null,
+   "ticketAssumed": 85000,
+   "marginAssumed": 0.25,
+   "leadValueAssumedUsd": 2125,
+   "dimensionA": null,
+   "dimensionANote": "A deliberately not applied: it is calibrated on city SERPs and its map-pack term is meaningless here — Google returns the parent city's pack for community queries.",
+   "organicV1": 63,
+   "organicVerdict": "ORGANIC-CONTESTED",
+   "organicVersion": "organic-v1.2",
+   "organicTop5": [
+    "1. stonebridgeranch.com [adjacent-not-this-service]",
+    "2. robertsonpools.com [local-specialist]",
+    "3. facebook.com [directory]",
+    "4. goldmedalpools.com [local-specialist]",
+    "5. linkedin.com [social]"
+   ],
+   "organicStructure": {
+    "distinctHostsTop5": 5,
+    "displaceableTop5": 3,
+    "hardLocalTop3": 1,
+    "geoTargetedCompetitorsTop5": 0
+   },
+   "incumbentTargeting": "VIRGIN — no competitor holds a community-specific pool page",
+   "renterDepthE": null,
+   "renterContext": {
+    "viableRentersInCommunityPack": 3,
+    "note": "24 distinct pool builders serve the 22-community cluster; Lonestar Pool & Spa Design appears in 12 of 22 packs. One renter could take several assets (upside) and that is buyer concentration (risk)."
+   },
+   "localPackEvidence": {
+    "note": "map pack inherited from the parent city; Google renders no distinct community pack, so this asset must win ORGANIC"
+   },
+   "contentBarWords": null,
+   "competitorDomainAgeYears": null,
+   "contentDirective": "Identical specification across BOTH treatments: same visual quality, conversion architecture, topical coverage, schema, publishing window, indexing workflow and tracking. Only the architecture differs.",
+   "domainCandidates": [
+    {
+     "domain": "poolbuildersnorthtexas.com",
+     "available": true,
+     "note": "one shared hub domain for all six H assets"
+    }
+   ],
+   "preferredDomain": "poolbuildersnorthtexas.com",
+   "domainAvailable": true,
+   "evidenceConfidence": "community class — organic-v1.1 only; no measured demand by construction",
+   "geographyVerified": true,
+   "geographyVerdict": "community within verified metro (SERP localized to parent city)",
+   "reasonIncluded": "Matched-pair NTX-P3 (both VIRGIN, both in McKinney (parent city and its SERP held constant), both large (3,400 vs 7,000 homes), organic 73 vs 63). Assigned to REGIONAL HUB so the architecture, not the community, is the variable.",
+   "hypothesis": "Same demand hypothesis as its pair Painted Tree, but delivered as a page on a regional authority domain. Tests whether shared site-level authority and internal linking outrank a dedicated hyperlocal domain — or whether exact-match hyperlocal focus wins.",
+   "successCondition": ">=100 impressions/month on community-modified queries within 6 months, OR >=1 qualified lead. Architecture comparison is judged on WITHIN-PAIR difference in time-to-first-impression, time-to-top-20 and impressions at 6 months.",
+   "failureCondition": "indexed but <20 impressions/month after 6 months across ALL community-modified queries while city controls perform in line with measured volume — falsifies hyper-local under-measurement. Architecture verdict is void if fewer than 4 of 6 pairs produce interpretable data.",
+   "wasInPrior28": false,
+   "evidenceRefs": {
+    "rawSerp": "out/wave-1-experiment/raw/serp-pool_builder_Stonebridge_Ranch_TX.json",
+    "serviceSelection": "out/wave-1-experiment/nt-service-ranking.json",
+    "communityMeta": {
+     "name": "Stonebridge Ranch",
+     "city": "McKinney",
+     "state": "TX",
+     "homes": 7000,
+     "status": "mature",
+     "note": "very large but mature — most homes already improved"
+    }
+   },
+   "measurementPlan": [
+    "publishDate",
+    "indexDate",
+    "firstImpressionDate",
+    "firstRankingDate",
+    "targetQueryRankingHistory",
+    "timeToTop20",
+    "timeToTop10",
+    "timeToTop5",
+    "impressions",
+    "clicks",
+    "organicSessions",
+    "calls",
+    "forms",
+    "leadsTotal",
+    "qualifiedLeads",
+    "leadValueEstimated",
+    "leadValueRealized",
+    "renterOutreach",
+    "renterResponses",
+    "renterInterest",
+    "rentalAgreementAchieved",
+    "monthlyRentRealized"
+   ],
+   "preRegistration": {
+    "predictorsUnderTest": [
+     "dimensionA",
+     "organicV1_1",
+     "measuredVolume",
+     "cpc",
+     "renterDepthE",
+     "leadEconomicsD",
+     "assetValueF",
+     "contentBarWords",
+     "competitorDomainAgeYears",
+     "geographyType",
+     "incumbentTargeting",
+     "architectureTreatment"
+    ],
+    "chain": "rankability -> traffic -> leads -> rentability, each stage measured separately so failure can be localised",
+    "joinKey": "experimentId joins pre-launch evidence -> deployment -> ranking -> traffic -> leads -> rentability"
+   }
+  },
+  {
+   "experimentId": "W1-B1-007",
+   "matchedPairId": "NTX-P4",
+   "matchedWith": "Union Park",
+   "matchBasis": "both INCUMBENT-TARGETED, active-buildout, organic 67 vs 73 (Δ6), 3,000 vs 2,000 homes",
+   "cohort": "B1-NTX-STANDALONE",
+   "treatment": "TREATMENT-S-standalone-hyperlocal-domain",
+   "assetType": "standalone-site",
+   "service": "Pool Builder",
+   "serviceSlug": "pool-builder",
+   "geography": "Mosaic",
+   "state": "TX",
+   "geographyType": "master-planned-community",
+   "parentCity": "Celina",
+   "communityHomes": 3000,
+   "communityStatus": "active-buildout",
+   "urlArchitecture": "poolbuildermosaic.com (root targets the community query)",
+   "hubDomain": null,
+   "measuredVolume": 0,
+   "volumeState": "provider-reports-zero — THE HYPOTHESIS UNDER TEST, not a validated demand figure",
+   "demandProven": false,
+   "demandLabel": "DEMAND-UNPROVEN EXPERIMENTAL ASSET",
+   "cpc": null,
+   "ticketAssumed": 85000,
+   "marginAssumed": 0.25,
+   "leadValueAssumedUsd": 2125,
+   "dimensionA": null,
+   "dimensionANote": "A deliberately not applied: it is calibrated on city SERPs and its map-pack term is meaningless here — Google returns the parent city's pack for community queries.",
+   "organicV1": 67,
+   "organicVerdict": "ORGANIC-VIABLE",
+   "organicVersion": "organic-v1.2",
+   "organicTop5": [
+    "1. facebook.com [directory]",
+    "2. canyonoakpools.com [local-specialist]",
+    "3. mosaiclivingtx.com [adjacent-not-this-service]",
+    "4. robertsonpools.com [local-specialist]",
+    "5. yelp.com [directory]"
+   ],
+   "organicStructure": {
+    "distinctHostsTop5": 5,
+    "displaceableTop5": 3,
+    "hardLocalTop3": 1,
+    "geoTargetedCompetitorsTop5": 0
+   },
+   "incumbentTargeting": "INCUMBENT — a competitor already runs a community-specific pool page",
+   "renterDepthE": null,
+   "renterContext": {
+    "viableRentersInCommunityPack": 3,
+    "note": "24 distinct pool builders serve the 22-community cluster; Lonestar Pool & Spa Design appears in 12 of 22 packs. One renter could take several assets (upside) and that is buyer concentration (risk)."
+   },
+   "localPackEvidence": {
+    "note": "map pack inherited from the parent city; Google renders no distinct community pack, so this asset must win ORGANIC"
+   },
+   "contentBarWords": null,
+   "competitorDomainAgeYears": null,
+   "contentDirective": "Identical specification across BOTH treatments: same visual quality, conversion architecture, topical coverage, schema, publishing window, indexing workflow and tracking. Only the architecture differs.",
+   "domainCandidates": [
+    {
+     "domain": "poolbuildermosaic.com",
+     "available": true
+    },
+    {
+     "domain": "mosaicpoolbuilder.com",
+     "available": true
+    },
+    {
+     "domain": "mosaicpools.com",
+     "available": false
+    },
+    {
+     "domain": "poolsofmosaic.com",
+     "available": true
+    }
+   ],
+   "preferredDomain": "poolbuildermosaic.com",
+   "domainAvailable": true,
+   "evidenceConfidence": "community class — organic-v1.1 only; no measured demand by construction",
+   "geographyVerified": true,
+   "geographyVerdict": "community within verified metro (SERP localized to parent city)",
+   "reasonIncluded": "Matched-pair NTX-P4 (both INCUMBENT-TARGETED, active-buildout, organic 67 vs 73 (Δ6), 3,000 vs 2,000 homes). Assigned to STANDALONE so the architecture, not the community, is the variable.",
+   "hypothesis": "Keyword tools report zero volume for \"pool builder Mosaic\", yet homeowners in a 3000-home affluent community may search by community name. A dedicated hyperlocal domain should maximise exact-match relevance. Paired against Union Park on the hub to isolate architecture.",
+   "successCondition": ">=100 impressions/month on community-modified queries within 6 months, OR >=1 qualified lead. Architecture comparison is judged on WITHIN-PAIR difference in time-to-first-impression, time-to-top-20 and impressions at 6 months.",
+   "failureCondition": "indexed but <20 impressions/month after 6 months across ALL community-modified queries while city controls perform in line with measured volume — falsifies hyper-local under-measurement. Architecture verdict is void if fewer than 4 of 6 pairs produce interpretable data.",
+   "wasInPrior28": false,
+   "evidenceRefs": {
+    "rawSerp": "out/wave-1-experiment/raw/serp-pool_builder_Mosaic_TX.json",
+    "serviceSelection": "out/wave-1-experiment/nt-service-ranking.json",
+    "communityMeta": {
+     "name": "Mosaic",
+     "city": "Celina",
+     "state": "TX",
+     "homes": 3000,
+     "status": "active-buildout",
+     "note": "fast-growing; trails, lakes, The River amenity complex"
+    }
+   },
+   "measurementPlan": [
+    "publishDate",
+    "indexDate",
+    "firstImpressionDate",
+    "firstRankingDate",
+    "targetQueryRankingHistory",
+    "timeToTop20",
+    "timeToTop10",
+    "timeToTop5",
+    "impressions",
+    "clicks",
+    "organicSessions",
+    "calls",
+    "forms",
+    "leadsTotal",
+    "qualifiedLeads",
+    "leadValueEstimated",
+    "leadValueRealized",
+    "renterOutreach",
+    "renterResponses",
+    "renterInterest",
+    "rentalAgreementAchieved",
+    "monthlyRentRealized"
+   ],
+   "preRegistration": {
+    "predictorsUnderTest": [
+     "dimensionA",
+     "organicV1_1",
+     "measuredVolume",
+     "cpc",
+     "renterDepthE",
+     "leadEconomicsD",
+     "assetValueF",
+     "contentBarWords",
+     "competitorDomainAgeYears",
+     "geographyType",
+     "incumbentTargeting",
+     "architectureTreatment"
+    ],
+    "chain": "rankability -> traffic -> leads -> rentability, each stage measured separately so failure can be localised",
+    "joinKey": "experimentId joins pre-launch evidence -> deployment -> ranking -> traffic -> leads -> rentability"
+   }
+  },
+  {
+   "experimentId": "W1-B2-008",
+   "matchedPairId": "NTX-P4",
+   "matchedWith": "Mosaic",
+   "matchBasis": "both INCUMBENT-TARGETED, active-buildout, organic 67 vs 73 (Δ6), 3,000 vs 2,000 homes",
+   "cohort": "B2-NTX-REGIONAL-HUB",
+   "treatment": "TREATMENT-H-page-on-regional-hub",
+   "assetType": "hub-page",
+   "service": "Pool Builder",
+   "serviceSlug": "pool-builder",
+   "geography": "Union Park",
+   "state": "TX",
+   "geographyType": "master-planned-community",
+   "parentCity": "Aubrey",
+   "communityHomes": 2000,
+   "communityStatus": "active-buildout",
+   "urlArchitecture": "poolbuildersnorthtexas.com/union-park/",
+   "hubDomain": "poolbuildersnorthtexas.com",
+   "measuredVolume": 0,
+   "volumeState": "provider-reports-zero — THE HYPOTHESIS UNDER TEST, not a validated demand figure",
+   "demandProven": false,
+   "demandLabel": "DEMAND-UNPROVEN EXPERIMENTAL ASSET",
+   "cpc": null,
+   "ticketAssumed": 85000,
+   "marginAssumed": 0.25,
+   "leadValueAssumedUsd": 2125,
+   "dimensionA": null,
+   "dimensionANote": "A deliberately not applied: it is calibrated on city SERPs and its map-pack term is meaningless here — Google returns the parent city's pack for community queries.",
+   "organicV1": 73,
+   "organicVerdict": "ORGANIC-VIABLE",
+   "organicVersion": "organic-v1.2",
+   "organicTop5": [
+    "1. tripointehomes.com [adjacent-not-this-service]",
+    "2. bloomfieldhomes.com [adjacent-not-this-service]",
+    "3. haukcustompools.com [local-specialist]",
+    "4. facebook.com [directory]",
+    "5. unionparkbyhillwood.com [adjacent-not-this-service]"
+   ],
+   "organicStructure": {
+    "distinctHostsTop5": 5,
+    "displaceableTop5": 4,
+    "hardLocalTop3": 1,
+    "geoTargetedCompetitorsTop5": 0
+   },
+   "incumbentTargeting": "INCUMBENT — a competitor already runs a community-specific pool page",
+   "renterDepthE": null,
+   "renterContext": {
+    "viableRentersInCommunityPack": 3,
+    "note": "24 distinct pool builders serve the 22-community cluster; Lonestar Pool & Spa Design appears in 12 of 22 packs. One renter could take several assets (upside) and that is buyer concentration (risk)."
+   },
+   "localPackEvidence": {
+    "note": "map pack inherited from the parent city; Google renders no distinct community pack, so this asset must win ORGANIC"
+   },
+   "contentBarWords": null,
+   "competitorDomainAgeYears": null,
+   "contentDirective": "Identical specification across BOTH treatments: same visual quality, conversion architecture, topical coverage, schema, publishing window, indexing workflow and tracking. Only the architecture differs.",
+   "domainCandidates": [
+    {
+     "domain": "poolbuildersnorthtexas.com",
+     "available": true,
+     "note": "one shared hub domain for all six H assets"
+    }
+   ],
+   "preferredDomain": "poolbuildersnorthtexas.com",
+   "domainAvailable": true,
+   "evidenceConfidence": "community class — organic-v1.1 only; no measured demand by construction",
+   "geographyVerified": true,
+   "geographyVerdict": "community within verified metro (SERP localized to parent city)",
+   "reasonIncluded": "Matched-pair NTX-P4 (both INCUMBENT-TARGETED, active-buildout, organic 67 vs 73 (Δ6), 3,000 vs 2,000 homes). Assigned to REGIONAL HUB so the architecture, not the community, is the variable.",
+   "hypothesis": "Same demand hypothesis as its pair Mosaic, but delivered as a page on a regional authority domain. Tests whether shared site-level authority and internal linking outrank a dedicated hyperlocal domain — or whether exact-match hyperlocal focus wins.",
+   "successCondition": ">=100 impressions/month on community-modified queries within 6 months, OR >=1 qualified lead. Architecture comparison is judged on WITHIN-PAIR difference in time-to-first-impression, time-to-top-20 and impressions at 6 months.",
+   "failureCondition": "indexed but <20 impressions/month after 6 months across ALL community-modified queries while city controls perform in line with measured volume — falsifies hyper-local under-measurement. Architecture verdict is void if fewer than 4 of 6 pairs produce interpretable data.",
+   "wasInPrior28": false,
+   "evidenceRefs": {
+    "rawSerp": "out/wave-1-experiment/raw/serp-pool_builder_Union_Park_TX.json",
+    "serviceSelection": "out/wave-1-experiment/nt-service-ranking.json",
+    "communityMeta": {
+     "name": "Union Park",
+     "city": "Aubrey",
+     "state": "TX",
+     "homes": 2000,
+     "status": "active-buildout",
+     "note": "Denton Co, strong new-build activity"
+    }
+   },
+   "measurementPlan": [
+    "publishDate",
+    "indexDate",
+    "firstImpressionDate",
+    "firstRankingDate",
+    "targetQueryRankingHistory",
+    "timeToTop20",
+    "timeToTop10",
+    "timeToTop5",
+    "impressions",
+    "clicks",
+    "organicSessions",
+    "calls",
+    "forms",
+    "leadsTotal",
+    "qualifiedLeads",
+    "leadValueEstimated",
+    "leadValueRealized",
+    "renterOutreach",
+    "renterResponses",
+    "renterInterest",
+    "rentalAgreementAchieved",
+    "monthlyRentRealized"
+   ],
+   "preRegistration": {
+    "predictorsUnderTest": [
+     "dimensionA",
+     "organicV1_1",
+     "measuredVolume",
+     "cpc",
+     "renterDepthE",
+     "leadEconomicsD",
+     "assetValueF",
+     "contentBarWords",
+     "competitorDomainAgeYears",
+     "geographyType",
+     "incumbentTargeting",
+     "architectureTreatment"
+    ],
+    "chain": "rankability -> traffic -> leads -> rentability, each stage measured separately so failure can be localised",
+    "joinKey": "experimentId joins pre-launch evidence -> deployment -> ranking -> traffic -> leads -> rentability"
+   }
+  },
+  {
+   "experimentId": "W1-B1-009",
+   "matchedPairId": "NTX-P5",
+   "matchedWith": "Harvest",
+   "matchBasis": "both INCUMBENT-TARGETED, organic 65 vs 64 (Δ1) — the tightest incumbent match",
+   "cohort": "B1-NTX-STANDALONE",
+   "treatment": "TREATMENT-S-standalone-hyperlocal-domain",
+   "assetType": "standalone-site",
+   "service": "Pool Builder",
+   "serviceSlug": "pool-builder",
+   "geography": "Newman Village",
+   "state": "TX",
+   "geographyType": "master-planned-community",
+   "parentCity": "Frisco",
+   "communityHomes": 800,
+   "communityStatus": "mature",
+   "urlArchitecture": "poolbuildernewmanvillage.com (root targets the community query)",
+   "hubDomain": null,
+   "measuredVolume": 0,
+   "volumeState": "provider-reports-zero — THE HYPOTHESIS UNDER TEST, not a validated demand figure",
+   "demandProven": false,
+   "demandLabel": "DEMAND-UNPROVEN EXPERIMENTAL ASSET",
+   "cpc": null,
+   "ticketAssumed": 85000,
+   "marginAssumed": 0.25,
+   "leadValueAssumedUsd": 2125,
+   "dimensionA": null,
+   "dimensionANote": "A deliberately not applied: it is calibrated on city SERPs and its map-pack term is meaningless here — Google returns the parent city's pack for community queries.",
+   "organicV1": 65,
+   "organicVerdict": "ORGANIC-VIABLE",
+   "organicVersion": "organic-v1.2",
+   "organicTop5": [
+    "1. cheneygroup.com [adjacent-not-this-service]",
+    "2. selahpools.com [local-specialist]",
+    "3. youtube.com [social]",
+    "4. robertsonpools.com [local-specialist]",
+    "5. candysdirt.com [adjacent-not-this-service]"
+   ],
+   "organicStructure": {
+    "distinctHostsTop5": 5,
+    "displaceableTop5": 3,
+    "hardLocalTop3": 1,
+    "geoTargetedCompetitorsTop5": 0
+   },
+   "incumbentTargeting": "INCUMBENT — a competitor already runs a community-specific pool page",
+   "renterDepthE": null,
+   "renterContext": {
+    "viableRentersInCommunityPack": 2,
+    "note": "24 distinct pool builders serve the 22-community cluster; Lonestar Pool & Spa Design appears in 12 of 22 packs. One renter could take several assets (upside) and that is buyer concentration (risk)."
+   },
+   "localPackEvidence": {
+    "note": "map pack inherited from the parent city; Google renders no distinct community pack, so this asset must win ORGANIC"
+   },
+   "contentBarWords": null,
+   "competitorDomainAgeYears": null,
+   "contentDirective": "Identical specification across BOTH treatments: same visual quality, conversion architecture, topical coverage, schema, publishing window, indexing workflow and tracking. Only the architecture differs.",
+   "domainCandidates": [
+    {
+     "domain": "poolbuildernewmanvillage.com",
+     "available": true
+    },
+    {
+     "domain": "newmanvillagepoolbuilder.com",
+     "available": true
+    },
+    {
+     "domain": "newmanvillagepools.com",
+     "available": true
+    },
+    {
+     "domain": "poolsofnewmanvillage.com",
+     "available": true
+    }
+   ],
+   "preferredDomain": "poolbuildernewmanvillage.com",
+   "domainAvailable": true,
+   "evidenceConfidence": "community class — organic-v1.1 only; no measured demand by construction",
+   "geographyVerified": true,
+   "geographyVerdict": "community within verified metro (SERP localized to parent city)",
+   "reasonIncluded": "Matched-pair NTX-P5 (both INCUMBENT-TARGETED, organic 65 vs 64 (Δ1) — the tightest incumbent match). Assigned to STANDALONE so the architecture, not the community, is the variable.",
+   "hypothesis": "Keyword tools report zero volume for \"pool builder Newman Village\", yet homeowners in a 800-home affluent community may search by community name. A dedicated hyperlocal domain should maximise exact-match relevance. Paired against Harvest on the hub to isolate architecture.",
+   "successCondition": ">=100 impressions/month on community-modified queries within 6 months, OR >=1 qualified lead. Architecture comparison is judged on WITHIN-PAIR difference in time-to-first-impression, time-to-top-20 and impressions at 6 months.",
+   "failureCondition": "indexed but <20 impressions/month after 6 months across ALL community-modified queries while city controls perform in line with measured volume — falsifies hyper-local under-measurement. Architecture verdict is void if fewer than 4 of 6 pairs produce interpretable data.",
+   "wasInPrior28": false,
+   "evidenceRefs": {
+    "rawSerp": "out/wave-1-experiment/raw/serp-pool_builder_Newman_Village_TX.json",
+    "serviceSelection": "out/wave-1-experiment/nt-service-ranking.json",
+    "communityMeta": {
+     "name": "Newman Village",
+     "city": "Frisco",
+     "state": "TX",
+     "homes": 800,
+     "status": "mature",
+     "note": "luxury, Mediterranean-style custom"
+    }
+   },
+   "measurementPlan": [
+    "publishDate",
+    "indexDate",
+    "firstImpressionDate",
+    "firstRankingDate",
+    "targetQueryRankingHistory",
+    "timeToTop20",
+    "timeToTop10",
+    "timeToTop5",
+    "impressions",
+    "clicks",
+    "organicSessions",
+    "calls",
+    "forms",
+    "leadsTotal",
+    "qualifiedLeads",
+    "leadValueEstimated",
+    "leadValueRealized",
+    "renterOutreach",
+    "renterResponses",
+    "renterInterest",
+    "rentalAgreementAchieved",
+    "monthlyRentRealized"
+   ],
+   "preRegistration": {
+    "predictorsUnderTest": [
+     "dimensionA",
+     "organicV1_1",
+     "measuredVolume",
+     "cpc",
+     "renterDepthE",
+     "leadEconomicsD",
+     "assetValueF",
+     "contentBarWords",
+     "competitorDomainAgeYears",
+     "geographyType",
+     "incumbentTargeting",
+     "architectureTreatment"
+    ],
+    "chain": "rankability -> traffic -> leads -> rentability, each stage measured separately so failure can be localised",
+    "joinKey": "experimentId joins pre-launch evidence -> deployment -> ranking -> traffic -> leads -> rentability"
+   }
+  },
+  {
+   "experimentId": "W1-B2-010",
+   "matchedPairId": "NTX-P5",
+   "matchedWith": "Newman Village",
+   "matchBasis": "both INCUMBENT-TARGETED, organic 65 vs 64 (Δ1) — the tightest incumbent match",
+   "cohort": "B2-NTX-REGIONAL-HUB",
+   "treatment": "TREATMENT-H-page-on-regional-hub",
+   "assetType": "hub-page",
+   "service": "Pool Builder",
+   "serviceSlug": "pool-builder",
+   "geography": "Harvest",
+   "state": "TX",
+   "geographyType": "master-planned-community",
+   "parentCity": "Argyle",
+   "communityHomes": 1800,
+   "communityStatus": "active-buildout",
+   "urlArchitecture": "poolbuildersnorthtexas.com/harvest/",
+   "hubDomain": "poolbuildersnorthtexas.com",
+   "measuredVolume": 0,
+   "volumeState": "provider-reports-zero — THE HYPOTHESIS UNDER TEST, not a validated demand figure",
+   "demandProven": false,
+   "demandLabel": "DEMAND-UNPROVEN EXPERIMENTAL ASSET",
+   "cpc": null,
+   "ticketAssumed": 85000,
+   "marginAssumed": 0.25,
+   "leadValueAssumedUsd": 2125,
+   "dimensionA": null,
+   "dimensionANote": "A deliberately not applied: it is calibrated on city SERPs and its map-pack term is meaningless here — Google returns the parent city's pack for community queries.",
+   "organicV1": 64,
+   "organicVerdict": "ORGANIC-CONTESTED",
+   "organicVersion": "organic-v1.2",
+   "organicTop5": [
+    "1. puryearpools.com [local-specialist]",
+    "2. thecompletebackyard.com [local-specialist]",
+    "3. facebook.com [directory]",
+    "4. harvestbyhillwood.com [adjacent-not-this-service]",
+    "5. hillwoodcommunities.com [adjacent-not-this-service]"
+   ],
+   "organicStructure": {
+    "distinctHostsTop5": 5,
+    "displaceableTop5": 3,
+    "hardLocalTop3": 2,
+    "geoTargetedCompetitorsTop5": 0
+   },
+   "incumbentTargeting": "INCUMBENT — a competitor already runs a community-specific pool page",
+   "renterDepthE": null,
+   "renterContext": {
+    "viableRentersInCommunityPack": 2,
+    "note": "24 distinct pool builders serve the 22-community cluster; Lonestar Pool & Spa Design appears in 12 of 22 packs. One renter could take several assets (upside) and that is buyer concentration (risk)."
+   },
+   "localPackEvidence": {
+    "note": "map pack inherited from the parent city; Google renders no distinct community pack, so this asset must win ORGANIC"
+   },
+   "contentBarWords": null,
+   "competitorDomainAgeYears": null,
+   "contentDirective": "Identical specification across BOTH treatments: same visual quality, conversion architecture, topical coverage, schema, publishing window, indexing workflow and tracking. Only the architecture differs.",
+   "domainCandidates": [
+    {
+     "domain": "poolbuildersnorthtexas.com",
+     "available": true,
+     "note": "one shared hub domain for all six H assets"
+    }
+   ],
+   "preferredDomain": "poolbuildersnorthtexas.com",
+   "domainAvailable": true,
+   "evidenceConfidence": "community class — organic-v1.1 only; no measured demand by construction",
+   "geographyVerified": true,
+   "geographyVerdict": "community within verified metro (SERP localized to parent city)",
+   "reasonIncluded": "Matched-pair NTX-P5 (both INCUMBENT-TARGETED, organic 65 vs 64 (Δ1) — the tightest incumbent match). Assigned to REGIONAL HUB so the architecture, not the community, is the variable.",
+   "hypothesis": "Same demand hypothesis as its pair Newman Village, but delivered as a page on a regional authority domain. Tests whether shared site-level authority and internal linking outrank a dedicated hyperlocal domain — or whether exact-match hyperlocal focus wins.",
+   "successCondition": ">=100 impressions/month on community-modified queries within 6 months, OR >=1 qualified lead. Architecture comparison is judged on WITHIN-PAIR difference in time-to-first-impression, time-to-top-20 and impressions at 6 months.",
+   "failureCondition": "indexed but <20 impressions/month after 6 months across ALL community-modified queries while city controls perform in line with measured volume — falsifies hyper-local under-measurement. Architecture verdict is void if fewer than 4 of 6 pairs produce interpretable data.",
+   "wasInPrior28": false,
+   "evidenceRefs": {
+    "rawSerp": "out/wave-1-experiment/raw/serp-pool_builder_Harvest_TX.json",
+    "serviceSelection": "out/wave-1-experiment/nt-service-ranking.json",
+    "communityMeta": {
+     "name": "Harvest",
+     "city": "Argyle",
+     "state": "TX",
+     "homes": 1800,
+     "status": "active-buildout",
+     "note": "farm-themed MPC, affluent Argyle/Northlake"
+    }
+   },
+   "measurementPlan": [
+    "publishDate",
+    "indexDate",
+    "firstImpressionDate",
+    "firstRankingDate",
+    "targetQueryRankingHistory",
+    "timeToTop20",
+    "timeToTop10",
+    "timeToTop5",
+    "impressions",
+    "clicks",
+    "organicSessions",
+    "calls",
+    "forms",
+    "leadsTotal",
+    "qualifiedLeads",
+    "leadValueEstimated",
+    "leadValueRealized",
+    "renterOutreach",
+    "renterResponses",
+    "renterInterest",
+    "rentalAgreementAchieved",
+    "monthlyRentRealized"
+   ],
+   "preRegistration": {
+    "predictorsUnderTest": [
+     "dimensionA",
+     "organicV1_1",
+     "measuredVolume",
+     "cpc",
+     "renterDepthE",
+     "leadEconomicsD",
+     "assetValueF",
+     "contentBarWords",
+     "competitorDomainAgeYears",
+     "geographyType",
+     "incumbentTargeting",
+     "architectureTreatment"
+    ],
+    "chain": "rankability -> traffic -> leads -> rentability, each stage measured separately so failure can be localised",
+    "joinKey": "experimentId joins pre-launch evidence -> deployment -> ranking -> traffic -> leads -> rentability"
+   }
+  },
+  {
+   "experimentId": "W1-B1-011",
+   "matchedPairId": "NTX-P6",
+   "matchedWith": "Trinity Falls",
+   "matchBasis": "both INCUMBENT-TARGETED, active-buildout, organic 57 vs 60 (Δ3)",
+   "cohort": "B1-NTX-STANDALONE",
+   "treatment": "TREATMENT-S-standalone-hyperlocal-domain",
+   "assetType": "standalone-site",
+   "service": "Pool Builder",
+   "serviceSlug": "pool-builder",
+   "geography": "Cambridge Crossing",
+   "state": "TX",
+   "geographyType": "master-planned-community",
+   "parentCity": "Celina",
+   "communityHomes": 1400,
+   "communityStatus": "active-buildout",
+   "urlArchitecture": "poolbuildercambridgecrossing.com (root targets the community query)",
+   "hubDomain": null,
+   "measuredVolume": 0,
+   "volumeState": "provider-reports-zero — THE HYPOTHESIS UNDER TEST, not a validated demand figure",
+   "demandProven": false,
+   "demandLabel": "DEMAND-UNPROVEN EXPERIMENTAL ASSET",
+   "cpc": null,
+   "ticketAssumed": 85000,
+   "marginAssumed": 0.25,
+   "leadValueAssumedUsd": 2125,
+   "dimensionA": null,
+   "dimensionANote": "A deliberately not applied: it is calibrated on city SERPs and its map-pack term is meaningless here — Google returns the parent city's pack for community queries.",
+   "organicV1": 57,
+   "organicVerdict": "ORGANIC-CONTESTED",
+   "organicVersion": "organic-v1.2",
+   "organicTop5": [
+    "1. cambridgecrossingcelina.com [adjacent-not-this-service]",
+    "2. dfwcustompool.com [local-specialist]",
+    "3. robertsonpools.com [local-specialist]",
+    "4. coventryhomes.com [adjacent-not-this-service]",
+    "5. cambridgecrossingcelina.com [adjacent-not-this-service]"
+   ],
+   "organicStructure": {
+    "distinctHostsTop5": 4,
+    "displaceableTop5": 2,
+    "hardLocalTop3": 2,
+    "geoTargetedCompetitorsTop5": 0
+   },
+   "incumbentTargeting": "INCUMBENT — a competitor already runs a community-specific pool page",
+   "renterDepthE": null,
+   "renterContext": {
+    "viableRentersInCommunityPack": 3,
+    "note": "24 distinct pool builders serve the 22-community cluster; Lonestar Pool & Spa Design appears in 12 of 22 packs. One renter could take several assets (upside) and that is buyer concentration (risk)."
+   },
+   "localPackEvidence": {
+    "note": "map pack inherited from the parent city; Google renders no distinct community pack, so this asset must win ORGANIC"
+   },
+   "contentBarWords": null,
+   "competitorDomainAgeYears": null,
+   "contentDirective": "Identical specification across BOTH treatments: same visual quality, conversion architecture, topical coverage, schema, publishing window, indexing workflow and tracking. Only the architecture differs.",
+   "domainCandidates": [
+    {
+     "domain": "poolbuildercambridgecrossing.com",
+     "available": true
+    },
+    {
+     "domain": "cambridgecrossingpoolbuilder.com",
+     "available": true
+    },
+    {
+     "domain": "cambridgecrossingpools.com",
+     "available": true
+    },
+    {
+     "domain": "poolsofcambridgecrossing.com",
+     "available": true
+    }
+   ],
+   "preferredDomain": "poolbuildercambridgecrossing.com",
+   "domainAvailable": true,
+   "evidenceConfidence": "community class — organic-v1.1 only; no measured demand by construction",
+   "geographyVerified": true,
+   "geographyVerdict": "community within verified metro (SERP localized to parent city)",
+   "reasonIncluded": "Matched-pair NTX-P6 (both INCUMBENT-TARGETED, active-buildout, organic 57 vs 60 (Δ3)). Assigned to STANDALONE so the architecture, not the community, is the variable.",
+   "hypothesis": "Keyword tools report zero volume for \"pool builder Cambridge Crossing\", yet homeowners in a 1400-home affluent community may search by community name. A dedicated hyperlocal domain should maximise exact-match relevance. Paired against Trinity Falls on the hub to isolate architecture.",
+   "successCondition": ">=100 impressions/month on community-modified queries within 6 months, OR >=1 qualified lead. Architecture comparison is judged on WITHIN-PAIR difference in time-to-first-impression, time-to-top-20 and impressions at 6 months.",
+   "failureCondition": "indexed but <20 impressions/month after 6 months across ALL community-modified queries while city controls perform in line with measured volume — falsifies hyper-local under-measurement. Architecture verdict is void if fewer than 4 of 6 pairs produce interpretable data.",
+   "wasInPrior28": false,
+   "evidenceRefs": {
+    "rawSerp": "out/wave-1-experiment/raw/serp-pool_builder_Cambridge_Crossing_TX.json",
+    "serviceSelection": "out/wave-1-experiment/nt-service-ranking.json",
+    "communityMeta": {
+     "name": "Cambridge Crossing",
+     "city": "Celina",
+     "state": "TX",
+     "homes": 1400,
+     "status": "active-buildout",
+     "note": "Celina/Prosper ISD corridor"
+    }
+   },
+   "measurementPlan": [
+    "publishDate",
+    "indexDate",
+    "firstImpressionDate",
+    "firstRankingDate",
+    "targetQueryRankingHistory",
+    "timeToTop20",
+    "timeToTop10",
+    "timeToTop5",
+    "impressions",
+    "clicks",
+    "organicSessions",
+    "calls",
+    "forms",
+    "leadsTotal",
+    "qualifiedLeads",
+    "leadValueEstimated",
+    "leadValueRealized",
+    "renterOutreach",
+    "renterResponses",
+    "renterInterest",
+    "rentalAgreementAchieved",
+    "monthlyRentRealized"
+   ],
+   "preRegistration": {
+    "predictorsUnderTest": [
+     "dimensionA",
+     "organicV1_1",
+     "measuredVolume",
+     "cpc",
+     "renterDepthE",
+     "leadEconomicsD",
+     "assetValueF",
+     "contentBarWords",
+     "competitorDomainAgeYears",
+     "geographyType",
+     "incumbentTargeting",
+     "architectureTreatment"
+    ],
+    "chain": "rankability -> traffic -> leads -> rentability, each stage measured separately so failure can be localised",
+    "joinKey": "experimentId joins pre-launch evidence -> deployment -> ranking -> traffic -> leads -> rentability"
+   }
+  },
+  {
+   "experimentId": "W1-B2-012",
+   "matchedPairId": "NTX-P6",
+   "matchedWith": "Cambridge Crossing",
+   "matchBasis": "both INCUMBENT-TARGETED, active-buildout, organic 57 vs 60 (Δ3)",
+   "cohort": "B2-NTX-REGIONAL-HUB",
+   "treatment": "TREATMENT-H-page-on-regional-hub",
+   "assetType": "hub-page",
+   "service": "Pool Builder",
+   "serviceSlug": "pool-builder",
+   "geography": "Trinity Falls",
+   "state": "TX",
+   "geographyType": "master-planned-community",
+   "parentCity": "McKinney",
+   "communityHomes": 3000,
+   "communityStatus": "active-buildout",
+   "urlArchitecture": "poolbuildersnorthtexas.com/trinity-falls/",
+   "hubDomain": "poolbuildersnorthtexas.com",
+   "measuredVolume": 0,
+   "volumeState": "provider-reports-zero — THE HYPOTHESIS UNDER TEST, not a validated demand figure",
+   "demandProven": false,
+   "demandLabel": "DEMAND-UNPROVEN EXPERIMENTAL ASSET",
+   "cpc": null,
+   "ticketAssumed": 85000,
+   "marginAssumed": 0.25,
+   "leadValueAssumedUsd": 2125,
+   "dimensionA": null,
+   "dimensionANote": "A deliberately not applied: it is calibrated on city SERPs and its map-pack term is meaningless here — Google returns the parent city's pack for community queries.",
+   "organicV1": 60,
+   "organicVerdict": "ORGANIC-CONTESTED",
+   "organicVersion": "organic-v1.2",
+   "organicTop5": [
+    "1. robertsonpools.com [local-specialist]",
+    "2. trinityfalls.com [adjacent-not-this-service]",
+    "3. facebook.com [directory]",
+    "4. trinityfalls.com [adjacent-not-this-service]",
+    "5. linkedin.com [social]"
+   ],
+   "organicStructure": {
+    "distinctHostsTop5": 4,
+    "displaceableTop5": 3,
+    "hardLocalTop3": 1,
+    "geoTargetedCompetitorsTop5": 0
+   },
+   "incumbentTargeting": "INCUMBENT — a competitor already runs a community-specific pool page",
+   "renterDepthE": null,
+   "renterContext": {
+    "viableRentersInCommunityPack": 3,
+    "note": "24 distinct pool builders serve the 22-community cluster; Lonestar Pool & Spa Design appears in 12 of 22 packs. One renter could take several assets (upside) and that is buyer concentration (risk)."
+   },
+   "localPackEvidence": {
+    "note": "map pack inherited from the parent city; Google renders no distinct community pack, so this asset must win ORGANIC"
+   },
+   "contentBarWords": 953,
+   "competitorDomainAgeYears": 19.1,
+   "contentDirective": "Identical specification across BOTH treatments: same visual quality, conversion architecture, topical coverage, schema, publishing window, indexing workflow and tracking. Only the architecture differs.",
+   "domainCandidates": [
+    {
+     "domain": "poolbuildersnorthtexas.com",
+     "available": true,
+     "note": "one shared hub domain for all six H assets"
+    }
+   ],
+   "preferredDomain": "poolbuildersnorthtexas.com",
+   "domainAvailable": true,
+   "evidenceConfidence": "community class — organic-v1.1 only; no measured demand by construction",
+   "geographyVerified": true,
+   "geographyVerdict": "community within verified metro (SERP localized to parent city)",
+   "reasonIncluded": "Matched-pair NTX-P6 (both INCUMBENT-TARGETED, active-buildout, organic 57 vs 60 (Δ3)). Assigned to REGIONAL HUB so the architecture, not the community, is the variable.",
+   "hypothesis": "Same demand hypothesis as its pair Cambridge Crossing, but delivered as a page on a regional authority domain. Tests whether shared site-level authority and internal linking outrank a dedicated hyperlocal domain — or whether exact-match hyperlocal focus wins.",
+   "successCondition": ">=100 impressions/month on community-modified queries within 6 months, OR >=1 qualified lead. Architecture comparison is judged on WITHIN-PAIR difference in time-to-first-impression, time-to-top-20 and impressions at 6 months.",
+   "failureCondition": "indexed but <20 impressions/month after 6 months across ALL community-modified queries while city controls perform in line with measured volume — falsifies hyper-local under-measurement. Architecture verdict is void if fewer than 4 of 6 pairs produce interpretable data.",
+   "wasInPrior28": true,
+   "evidenceRefs": {
+    "rawSerp": "out/wave-1-experiment/raw/serp-pool_builder_Trinity_Falls_TX.json",
+    "serviceSelection": "out/wave-1-experiment/nt-service-ranking.json",
+    "communityMeta": {
+     "name": "Trinity Falls",
+     "city": "McKinney",
+     "state": "TX",
+     "homes": 3000,
+     "status": "active-buildout",
+     "note": "NW McKinney, Trinity River corridor"
+    }
+   },
+   "measurementPlan": [
+    "publishDate",
+    "indexDate",
+    "firstImpressionDate",
+    "firstRankingDate",
+    "targetQueryRankingHistory",
+    "timeToTop20",
+    "timeToTop10",
+    "timeToTop5",
+    "impressions",
+    "clicks",
+    "organicSessions",
+    "calls",
+    "forms",
+    "leadsTotal",
+    "qualifiedLeads",
+    "leadValueEstimated",
+    "leadValueRealized",
+    "renterOutreach",
+    "renterResponses",
+    "renterInterest",
+    "rentalAgreementAchieved",
+    "monthlyRentRealized"
+   ],
+   "preRegistration": {
+    "predictorsUnderTest": [
+     "dimensionA",
+     "organicV1_1",
+     "measuredVolume",
+     "cpc",
+     "renterDepthE",
+     "leadEconomicsD",
+     "assetValueF",
+     "contentBarWords",
+     "competitorDomainAgeYears",
+     "geographyType",
+     "incumbentTargeting",
+     "architectureTreatment"
+    ],
+    "chain": "rankability -> traffic -> leads -> rentability, each stage measured separately so failure can be localised",
+    "joinKey": "experimentId joins pre-launch evidence -> deployment -> ranking -> traffic -> leads -> rentability"
+   }
+  },
+  {
+   "experimentId": "W1-B3-001",
+   "cohort": "B3-CITY-CONTROL",
+   "treatment": "control-standalone-city-site",
+   "assetType": "standalone-site",
+   "matchedPairId": null,
+   "service": "Pool Builder",
+   "serviceSlug": "pool-builder",
+   "geography": "Frisco",
+   "state": "TX",
+   "geographyType": "city-control",
+   "urlArchitecture": "poolbuilderfriscotx.com (root targets the city query)",
+   "measuredVolume": 320,
+   "volumeState": "measured",
+   "demandProven": true,
+   "cpc": null,
+   "ticketAssumed": 85000,
+   "marginAssumed": 0.25,
+   "leadValueAssumedUsd": 2125,
+   "dimensionA": null,
+   "organicV1": 23,
+   "organicVerdict": "ORGANIC-BRUTAL",
+   "organicVersion": "organic-v1.2",
+   "organicTop5": [
+    "1. leisurelivingpools.com [local-specialist]",
+    "2. prestigepp.com [local-specialist]",
+    "3. reddit.com [directory]",
+    "4. riverbendsandler.com [local-specialist]",
+    "5. artesiancustompools.com [local-specialist]"
+   ],
+   "organicStructure": {
+    "distinctHostsTop5": 5,
+    "displaceableTop5": 1,
+    "hardLocalTop3": 2,
+    "geoTargetedCompetitorsTop5": 3
+   },
+   "incumbentTargeting": "3 of 5 distinct top-5 hosts explicitly target Frisco",
+   "renterContext": {
+    "relevantOperators": 10,
+    "viableRenters": 3
+   },
+   "localPackEvidence": {
+    "mapPackSize": 3,
+    "avgReviews": 50,
+    "note": "market evidence only"
+   },
+   "contentBarWords": null,
+   "competitorDomainAgeYears": null,
+   "contentDirective": "same specification as the community assets so the control is comparable",
+   "domainCandidates": [
+    {
+     "domain": "poolbuilderfriscotx.com",
+     "available": true
+    },
+    {
+     "domain": "friscopoolbuilders.com",
+     "available": false
+    }
+   ],
+   "preferredDomain": "poolbuilderfriscotx.com",
+   "domainAvailable": true,
+   "evidenceConfidence": "control",
+   "geographyVerified": true,
+   "geographyVerdict": "verified",
+   "reasonIncluded": "City control at 320/mo measured demand, anchoring the gradient Frisco 320 > McKinney 210 > Prosper 10 > community 0.",
+   "hypothesis": "If impressions track measured volume across the gradient, keyword tools are accurate and the community bet fails. If Prosper and the community assets over-perform their measured volume, the tools systematically under-measure hyper-local demand.",
+   "successCondition": "n/a — control; judged only as a calibration reference for the community assets.",
+   "failureCondition": "n/a — control.",
+   "wasInPrior28": true,
+   "evidenceRefs": {
+    "rawSerp": "out/wave-1-experiment/raw/serp-pool_builder_Frisco_TX.json"
+   },
+   "measurementPlan": [
+    "publishDate",
+    "indexDate",
+    "firstImpressionDate",
+    "firstRankingDate",
+    "targetQueryRankingHistory",
+    "timeToTop20",
+    "timeToTop10",
+    "timeToTop5",
+    "impressions",
+    "clicks",
+    "organicSessions",
+    "calls",
+    "forms",
+    "leadsTotal",
+    "qualifiedLeads",
+    "leadValueEstimated",
+    "leadValueRealized",
+    "renterOutreach",
+    "renterResponses",
+    "renterInterest",
+    "rentalAgreementAchieved",
+    "monthlyRentRealized"
+   ],
+   "preRegistration": {
+    "predictorsUnderTest": [
+     "dimensionA",
+     "organicV1_1",
+     "measuredVolume",
+     "cpc",
+     "renterDepthE",
+     "leadEconomicsD",
+     "assetValueF",
+     "contentBarWords",
+     "competitorDomainAgeYears",
+     "geographyType",
+     "incumbentTargeting",
+     "architectureTreatment"
+    ],
+    "chain": "rankability -> traffic -> leads -> rentability, each stage measured separately so failure can be localised",
+    "joinKey": "experimentId joins pre-launch evidence -> deployment -> ranking -> traffic -> leads -> rentability"
+   }
+  },
+  {
+   "experimentId": "W1-B3-002",
+   "cohort": "B3-CITY-CONTROL",
+   "treatment": "control-standalone-city-site",
+   "assetType": "standalone-site",
+   "matchedPairId": null,
+   "service": "Pool Builder",
+   "serviceSlug": "pool-builder",
+   "geography": "McKinney",
+   "state": "TX",
+   "geographyType": "city-control",
+   "urlArchitecture": "poolbuildermckinneytx.com (root targets the city query)",
+   "measuredVolume": 210,
+   "volumeState": "measured",
+   "demandProven": true,
+   "cpc": null,
+   "ticketAssumed": 85000,
+   "marginAssumed": 0.25,
+   "leadValueAssumedUsd": 2125,
+   "dimensionA": null,
+   "organicV1": 39,
+   "organicVerdict": "ORGANIC-BRUTAL",
+   "organicVersion": "organic-v1.2",
+   "organicTop5": [
+    "1. bluescience.com [local-specialist]",
+    "2. yelp.com [directory]",
+    "3. ntxpoolboss.com [local-specialist]",
+    "4. riverbendsandler.com [local-specialist]",
+    "5. facebook.com [directory]"
+   ],
+   "organicStructure": {
+    "distinctHostsTop5": 5,
+    "displaceableTop5": 2,
+    "hardLocalTop3": 2,
+    "geoTargetedCompetitorsTop5": 2
+   },
+   "incumbentTargeting": "2 of 5 distinct top-5 hosts explicitly target McKinney",
+   "renterContext": {
+    "relevantOperators": 10,
+    "viableRenters": 3
+   },
+   "localPackEvidence": {
+    "mapPackSize": 3,
+    "avgReviews": 96,
+    "note": "market evidence only"
+   },
+   "contentBarWords": null,
+   "competitorDomainAgeYears": null,
+   "contentDirective": "same specification as the community assets so the control is comparable",
+   "domainCandidates": [
+    {
+     "domain": "poolbuildermckinneytx.com",
+     "available": true
+    },
+    {
+     "domain": "mckinneypoolbuilders.com",
+     "available": false
+    }
+   ],
+   "preferredDomain": "poolbuildermckinneytx.com",
+   "domainAvailable": true,
+   "evidenceConfidence": "control",
+   "geographyVerified": true,
+   "geographyVerdict": "verified",
+   "reasonIncluded": "City control at 210/mo measured demand, anchoring the gradient Frisco 320 > McKinney 210 > Prosper 10 > community 0.",
+   "hypothesis": "If impressions track measured volume across the gradient, keyword tools are accurate and the community bet fails. If Prosper and the community assets over-perform their measured volume, the tools systematically under-measure hyper-local demand.",
+   "successCondition": "n/a — control; judged only as a calibration reference for the community assets.",
+   "failureCondition": "n/a — control.",
+   "wasInPrior28": false,
+   "evidenceRefs": {
+    "rawSerp": "out/wave-1-experiment/raw/serp-pool_builder_McKinney_TX.json"
+   },
+   "measurementPlan": [
+    "publishDate",
+    "indexDate",
+    "firstImpressionDate",
+    "firstRankingDate",
+    "targetQueryRankingHistory",
+    "timeToTop20",
+    "timeToTop10",
+    "timeToTop5",
+    "impressions",
+    "clicks",
+    "organicSessions",
+    "calls",
+    "forms",
+    "leadsTotal",
+    "qualifiedLeads",
+    "leadValueEstimated",
+    "leadValueRealized",
+    "renterOutreach",
+    "renterResponses",
+    "renterInterest",
+    "rentalAgreementAchieved",
+    "monthlyRentRealized"
+   ],
+   "preRegistration": {
+    "predictorsUnderTest": [
+     "dimensionA",
+     "organicV1_1",
+     "measuredVolume",
+     "cpc",
+     "renterDepthE",
+     "leadEconomicsD",
+     "assetValueF",
+     "contentBarWords",
+     "competitorDomainAgeYears",
+     "geographyType",
+     "incumbentTargeting",
+     "architectureTreatment"
+    ],
+    "chain": "rankability -> traffic -> leads -> rentability, each stage measured separately so failure can be localised",
+    "joinKey": "experimentId joins pre-launch evidence -> deployment -> ranking -> traffic -> leads -> rentability"
+   }
+  },
+  {
+   "experimentId": "W1-B3-003",
+   "cohort": "B3-CITY-CONTROL",
+   "treatment": "control-standalone-city-site",
+   "assetType": "standalone-site",
+   "matchedPairId": null,
+   "service": "Pool Builder",
+   "serviceSlug": "pool-builder",
+   "geography": "Prosper",
+   "state": "TX",
+   "geographyType": "city-control",
+   "urlArchitecture": "poolbuilderprospertx.com (root targets the city query)",
+   "measuredVolume": 10,
+   "volumeState": "measured",
+   "demandProven": true,
+   "cpc": null,
+   "ticketAssumed": 85000,
+   "marginAssumed": 0.25,
+   "leadValueAssumedUsd": 2125,
+   "dimensionA": null,
+   "organicV1": 36,
+   "organicVerdict": "ORGANIC-BRUTAL",
+   "organicVersion": "organic-v1.2",
+   "organicTop5": [
+    "1. riverbendsandler.com [local-specialist]",
+    "2. canyonoakpools.com [local-specialist]",
+    "3. prestigepp.com [local-specialist]",
+    "4. facebook.com [directory]",
+    "5. houzz.com [directory]"
+   ],
+   "organicStructure": {
+    "distinctHostsTop5": 5,
+    "displaceableTop5": 2,
+    "hardLocalTop3": 3,
+    "geoTargetedCompetitorsTop5": 3
+   },
+   "incumbentTargeting": "3 of 5 distinct top-5 hosts explicitly target Prosper",
+   "renterContext": {
+    "relevantOperators": 11,
+    "viableRenters": 3
+   },
+   "localPackEvidence": {
+    "mapPackSize": 3,
+    "avgReviews": 295,
+    "note": "market evidence only"
+   },
+   "contentBarWords": null,
+   "competitorDomainAgeYears": null,
+   "contentDirective": "same specification as the community assets so the control is comparable",
+   "domainCandidates": [
+    {
+     "domain": "poolbuilderprospertx.com",
+     "available": true
+    },
+    {
+     "domain": "prosperpoolbuilders.com",
+     "available": false
+    }
+   ],
+   "preferredDomain": "poolbuilderprospertx.com",
+   "domainAvailable": true,
+   "evidenceConfidence": "control",
+   "geographyVerified": true,
+   "geographyVerdict": "verified",
+   "reasonIncluded": "City control at 10/mo measured demand, anchoring the gradient Frisco 320 > McKinney 210 > Prosper 10 > community 0.",
+   "hypothesis": "If impressions track measured volume across the gradient, keyword tools are accurate and the community bet fails. If Prosper and the community assets over-perform their measured volume, the tools systematically under-measure hyper-local demand.",
+   "successCondition": "n/a — control; judged only as a calibration reference for the community assets.",
+   "failureCondition": "n/a — control.",
+   "wasInPrior28": true,
+   "evidenceRefs": {
+    "rawSerp": "out/wave-1-experiment/raw/serp-pool_builder_Prosper_TX.json"
+   },
+   "measurementPlan": [
+    "publishDate",
+    "indexDate",
+    "firstImpressionDate",
+    "firstRankingDate",
+    "targetQueryRankingHistory",
+    "timeToTop20",
+    "timeToTop10",
+    "timeToTop5",
+    "impressions",
+    "clicks",
+    "organicSessions",
+    "calls",
+    "forms",
+    "leadsTotal",
+    "qualifiedLeads",
+    "leadValueEstimated",
+    "leadValueRealized",
+    "renterOutreach",
+    "renterResponses",
+    "renterInterest",
+    "rentalAgreementAchieved",
+    "monthlyRentRealized"
+   ],
+   "preRegistration": {
+    "predictorsUnderTest": [
+     "dimensionA",
+     "organicV1_1",
+     "measuredVolume",
+     "cpc",
+     "renterDepthE",
+     "leadEconomicsD",
+     "assetValueF",
+     "contentBarWords",
+     "competitorDomainAgeYears",
+     "geographyType",
+     "incumbentTargeting",
+     "architectureTreatment"
+    ],
+    "chain": "rankability -> traffic -> leads -> rentability, each stage measured separately so failure can be localised",
+    "joinKey": "experimentId joins pre-launch evidence -> deployment -> ranking -> traffic -> leads -> rentability"
+   }
+  },
+  {
+   "experimentId": "W1-C-001",
+   "cohort": "C-MODEL-VALIDATION",
+   "treatment": "standalone-city-site",
+   "assetType": "standalone-site",
+   "classification": "EXPERIMENTAL — not investment-grade",
+   "contrarianType": "MODEL DISAGREEMENT (largest, ~58 pts)",
+   "service": "Metal Roofing",
+   "serviceSlug": "metal-roofing",
+   "geography": "Rochester",
+   "state": "MN",
+   "geographyType": "city",
+   "urlArchitecture": "metalroofingrochester.com (root targets the city+service query)",
+   "measuredVolume": 110,
+   "volumeState": "measured-upper-bound-shared-city-name",
+   "demandProven": true,
+   "cpc": 24.87,
+   "ticketAssumed": 25000,
+   "marginAssumed": 0.35,
+   "leadValueAssumedUsd": 875,
+   "dimensionA": 76,
+   "dimensionAVersion": "A-1.0.0",
+   "organicV1": 20,
+   "organicVerdict": "ORGANIC-BRUTAL",
+   "organicVersion": "organic-v1.2",
+   "organicTop5": [
+    "1. stevegentryconstruction.com [local-specialist]",
+    "2. priorityconstructionservices.com [local-specialist]",
+    "3. reddit.com [directory]",
+    "4. eriehome.com [national-brand]",
+    "5. collins-mrc.com [local-specialist]"
+   ],
+   "organicStructure": {
+    "distinctHostsTop5": 5,
+    "displaceableTop5": 1,
+    "hardLocalTop3": 2,
+    "geoTargetedCompetitorsTop5": 4
+   },
+   "modelDisagreement": 56,
+   "incumbentTargeting": "4 of 5 distinct top-5 hosts explicitly target Rochester",
+   "renterDepthE": 42,
+   "leadEconomicsD": 90,
+   "assetValueF": 50,
+   "asymmetryH": 79,
+   "compositeAI": 61,
+   "aiBucket": "LOW-HANGING",
+   "evidenceConfidence": 80,
+   "evidenceCompleteness": 100,
+   "renterContext": {
+    "relevantOperators": 10,
+    "viableRenters": 2
+   },
+   "localPackEvidence": {
+    "mapPackSize": 3,
+    "avgReviews": 43,
+    "note": "market evidence only"
+   },
+   "contentBarWords": 944,
+   "competitorDomainAgeYears": 18.1,
+   "contentDirective": "SERP-derived commercial service page; identical build standard to Group A so the comparison is not confounded by build quality.",
+   "geographyVerified": true,
+   "geographyVerdict": "serp-local-volume-upper-bound",
+   "reasonIncluded": "Selected to test a specific way the models may be WRONG. MODEL DISAGREEMENT (largest, ~58 pts). NOT presented as an investment-grade asset.",
+   "hypothesis": "Dimension A says 76 (credited for a weak map pack); organic-v1.1 says 18 — the organic top-5 is real roofers explicitly targeting Rochester. The single cleanest test of which rankability model predicts reality.",
+   "successCondition": "Reaches top-10 within 6 months => organic-v1.1 wrongly discounts map-pack evidence and Dimension A should stand.",
+   "failureCondition": "Never reaches top-20 => A's map-pack credit is confirmed spurious and A must be rebuilt around organic structure as A-2.0.0.",
+   "wasInPrior28": true,
+   "evidenceRefs": {
+    "experiment": "experiment-3",
+    "rawSerp": "out/experiment-3/raw/serp-metal_roofing_Rochester_MN.json",
+    "scoreModel": "ai-v1.0.0"
+   },
+   "measurementPlan": [
+    "publishDate",
+    "indexDate",
+    "firstImpressionDate",
+    "firstRankingDate",
+    "targetQueryRankingHistory",
+    "timeToTop20",
+    "timeToTop10",
+    "timeToTop5",
+    "impressions",
+    "clicks",
+    "organicSessions",
+    "calls",
+    "forms",
+    "leadsTotal",
+    "qualifiedLeads",
+    "leadValueEstimated",
+    "leadValueRealized",
+    "renterOutreach",
+    "renterResponses",
+    "renterInterest",
+    "rentalAgreementAchieved",
+    "monthlyRentRealized"
+   ],
+   "preRegistration": {
+    "predictorsUnderTest": [
+     "dimensionA",
+     "organicV1_1",
+     "measuredVolume",
+     "cpc",
+     "renterDepthE",
+     "leadEconomicsD",
+     "assetValueF",
+     "contentBarWords",
+     "competitorDomainAgeYears",
+     "geographyType",
+     "incumbentTargeting",
+     "architectureTreatment"
+    ],
+    "chain": "rankability -> traffic -> leads -> rentability, each stage measured separately so failure can be localised",
+    "joinKey": "experimentId joins pre-launch evidence -> deployment -> ranking -> traffic -> leads -> rentability"
+   },
+   "domainCandidates": [
+    {
+     "domain": "metalroofingrochester.com",
+     "available": true,
+     "approxFirstYearUsd": 12.18
+    },
+    {
+     "domain": "metalroofingrochestermn.com",
+     "available": true,
+     "approxFirstYearUsd": 12.18
+    },
+    {
+     "domain": "rochestermetalroofing.com",
+     "available": false,
+     "approxFirstYearUsd": 12.18
+    },
+    {
+     "domain": "metalroofingofrochester.com",
+     "available": true,
+     "approxFirstYearUsd": 12.18
+    },
+    {
+     "domain": "rochestermetalroofingpros.com",
+     "available": true,
+     "approxFirstYearUsd": 12.18
+    }
+   ],
+   "preferredDomain": "metalroofingrochester.com",
+   "domainAvailable": true
+  },
+  {
+   "experimentId": "W1-C-002",
+   "cohort": "C-MODEL-VALIDATION",
+   "treatment": "standalone-city-site",
+   "assetType": "standalone-site",
+   "classification": "EXPERIMENTAL — not investment-grade",
+   "contrarianType": "MODEL DISAGREEMENT (second, ~49 pts)",
+   "service": "Basement Waterproofing",
+   "serviceSlug": "basement-waterproofing",
+   "geography": "Naperville",
+   "state": "IL",
+   "geographyType": "city",
+   "urlArchitecture": "basementwaterproofingofnaperville.com (root targets the city+service query)",
+   "measuredVolume": 210,
+   "volumeState": "measured",
+   "demandProven": true,
+   "cpc": 24.12,
+   "ticketAssumed": 8000,
+   "marginAssumed": 0.45,
+   "leadValueAssumedUsd": 360,
+   "dimensionA": 77,
+   "dimensionAVersion": "A-1.0.0",
+   "organicV1": 32,
+   "organicVerdict": "ORGANIC-BRUTAL",
+   "organicVersion": "organic-v1.2",
+   "organicTop5": [
+    "1. reddit.com [directory]",
+    "2. ramjack.com [national-brand]",
+    "3. yelp.com [directory]",
+    "4. basementbros.net [local-specialist]",
+    "5. permaseal.net [local-specialist]"
+   ],
+   "organicStructure": {
+    "distinctHostsTop5": 5,
+    "displaceableTop5": 2,
+    "hardLocalTop3": 1,
+    "geoTargetedCompetitorsTop5": 3
+   },
+   "modelDisagreement": 45,
+   "incumbentTargeting": "3 of 5 distinct top-5 hosts explicitly target Naperville",
+   "renterDepthE": 65,
+   "leadEconomicsD": 78,
+   "assetValueF": 50,
+   "asymmetryH": 69,
+   "compositeAI": 66,
+   "aiBucket": "LOW-HANGING",
+   "evidenceConfidence": 80,
+   "evidenceCompleteness": 100,
+   "renterContext": {
+    "relevantOperators": 9,
+    "viableRenters": 3
+   },
+   "localPackEvidence": {
+    "mapPackSize": 3,
+    "avgReviews": 31,
+    "note": "market evidence only"
+   },
+   "contentBarWords": 1764,
+   "competitorDomainAgeYears": 30.9,
+   "contentDirective": "SERP-derived commercial service page; identical build standard to Group A so the comparison is not confounded by build quality.",
+   "geographyVerified": true,
+   "geographyVerdict": "verified",
+   "reasonIncluded": "Selected to test a specific way the models may be WRONG. MODEL DISAGREEMENT (second, ~49 pts). NOT presented as an investment-grade asset.",
+   "hypothesis": "A=77 vs organic-v1.1 28. An independent replicate of the Rochester test with a different service and market — two replicates make the conclusion robust rather than anecdotal.",
+   "successCondition": "Ranks top-10 => A's map-pack term carries real signal.",
+   "failureCondition": "Fails to reach top-20 => confirms Rochester; the pair together justify replacing A.",
+   "wasInPrior28": true,
+   "evidenceRefs": {
+    "experiment": "experiment-3",
+    "rawSerp": "out/experiment-3/raw/serp-basement_waterproofing_Naperville_IL.json",
+    "scoreModel": "ai-v1.0.0"
+   },
+   "measurementPlan": [
+    "publishDate",
+    "indexDate",
+    "firstImpressionDate",
+    "firstRankingDate",
+    "targetQueryRankingHistory",
+    "timeToTop20",
+    "timeToTop10",
+    "timeToTop5",
+    "impressions",
+    "clicks",
+    "organicSessions",
+    "calls",
+    "forms",
+    "leadsTotal",
+    "qualifiedLeads",
+    "leadValueEstimated",
+    "leadValueRealized",
+    "renterOutreach",
+    "renterResponses",
+    "renterInterest",
+    "rentalAgreementAchieved",
+    "monthlyRentRealized"
+   ],
+   "preRegistration": {
+    "predictorsUnderTest": [
+     "dimensionA",
+     "organicV1_1",
+     "measuredVolume",
+     "cpc",
+     "renterDepthE",
+     "leadEconomicsD",
+     "assetValueF",
+     "contentBarWords",
+     "competitorDomainAgeYears",
+     "geographyType",
+     "incumbentTargeting",
+     "architectureTreatment"
+    ],
+    "chain": "rankability -> traffic -> leads -> rentability, each stage measured separately so failure can be localised",
+    "joinKey": "experimentId joins pre-launch evidence -> deployment -> ranking -> traffic -> leads -> rentability"
+   },
+   "domainCandidates": [
+    {
+     "domain": "basementwaterproofingnaperville.com",
+     "available": false,
+     "approxFirstYearUsd": 12.18
+    },
+    {
+     "domain": "basementwaterproofingnapervilleil.com",
+     "available": false,
+     "approxFirstYearUsd": 12.18
+    },
+    {
+     "domain": "napervillebasementwaterproofing.com",
+     "available": false,
+     "approxFirstYearUsd": 12.18
+    },
+    {
+     "domain": "basementwaterproofingofnaperville.com",
+     "available": true,
+     "approxFirstYearUsd": 12.18
+    },
+    {
+     "domain": "napervillebasementwaterproofingpros.com",
+     "available": true,
+     "approxFirstYearUsd": 12.18
+    }
+   ],
+   "preferredDomain": "basementwaterproofingofnaperville.com",
+   "domainAvailable": true
+  },
+  {
+   "experimentId": "W1-C-003",
+   "cohort": "C-MODEL-VALIDATION",
+   "treatment": "standalone-city-site",
+   "assetType": "standalone-site",
+   "classification": "EXPERIMENTAL — not investment-grade",
+   "contrarianType": "A HIGH / ORGANIC MODERATE + SHARED-NAME DEMAND",
+   "service": "Bathroom Remodeling",
+   "serviceSlug": "bathroom-remodel",
+   "geography": "Bellevue",
+   "state": "NE",
+   "geographyType": "city",
+   "urlArchitecture": "bathroomremodelingbellevuene.com (root targets the city+service query)",
+   "measuredVolume": 2400,
+   "volumeState": "measured-upper-bound-shared-city-name",
+   "demandProven": true,
+   "cpc": 12.08,
+   "ticketAssumed": 18000,
+   "marginAssumed": 0.32,
+   "leadValueAssumedUsd": 576,
+   "dimensionA": 92,
+   "dimensionAVersion": "A-1.0.0",
+   "organicV1": 58,
+   "organicVerdict": "ORGANIC-CONTESTED",
+   "organicVersion": "organic-v1.2",
+   "organicTop5": [
+    "1. thumbtack.com [directory]",
+    "2. bpbathrooms.com [local-specialist]",
+    "3. yelp.com [directory]",
+    "4. bunzandsonzconstruction.com [local-specialist]",
+    "5. newlookomaha.com [local-specialist]"
+   ],
+   "organicStructure": {
+    "distinctHostsTop5": 5,
+    "displaceableTop5": 2,
+    "hardLocalTop3": 1,
+    "geoTargetedCompetitorsTop5": 3
+   },
+   "modelDisagreement": 34,
+   "incumbentTargeting": "3 of 5 distinct top-5 hosts explicitly target Bellevue",
+   "renterDepthE": 65,
+   "leadEconomicsD": 78,
+   "assetValueF": 92,
+   "asymmetryH": 100,
+   "compositeAI": 85,
+   "aiBucket": "UNICORN",
+   "evidenceConfidence": 80,
+   "evidenceCompleteness": 100,
+   "renterContext": {
+    "relevantOperators": 10,
+    "viableRenters": 3
+   },
+   "localPackEvidence": {
+    "mapPackSize": 3,
+    "avgReviews": 60,
+    "note": "market evidence only"
+   },
+   "contentBarWords": 208,
+   "competitorDomainAgeYears": 3.9,
+   "contentDirective": "SERP-derived commercial service page; identical build standard to Group A so the comparison is not confounded by build quality.",
+   "geographyVerified": true,
+   "geographyVerdict": "serp-local-volume-upper-bound",
+   "reasonIncluded": "Selected to test a specific way the models may be WRONG. A HIGH / ORGANIC MODERATE + SHARED-NAME DEMAND. NOT presented as an investment-grade asset.",
+   "hypothesis": "Highest composite in the dataset (85, A=92) but organic-v1.1 only 58, and its 2,400/mo is shared with Bellevue WA. SERP verified local to NE. Tests both the model gap and whether shared-name volume is capturable.",
+   "successCondition": "Meaningful local impressions => shared-name markets are investable and should stop being discounted.",
+   "failureCondition": "Negligible impressions => shared-name volume must be excluded from scoring entirely.",
+   "wasInPrior28": true,
+   "evidenceRefs": {
+    "experiment": "experiment-3",
+    "rawSerp": "out/experiment-3/raw/serp-bathroom_remodel_Bellevue_NE.json",
+    "scoreModel": "ai-v1.0.0"
+   },
+   "measurementPlan": [
+    "publishDate",
+    "indexDate",
+    "firstImpressionDate",
+    "firstRankingDate",
+    "targetQueryRankingHistory",
+    "timeToTop20",
+    "timeToTop10",
+    "timeToTop5",
+    "impressions",
+    "clicks",
+    "organicSessions",
+    "calls",
+    "forms",
+    "leadsTotal",
+    "qualifiedLeads",
+    "leadValueEstimated",
+    "leadValueRealized",
+    "renterOutreach",
+    "renterResponses",
+    "renterInterest",
+    "rentalAgreementAchieved",
+    "monthlyRentRealized"
+   ],
+   "preRegistration": {
+    "predictorsUnderTest": [
+     "dimensionA",
+     "organicV1_1",
+     "measuredVolume",
+     "cpc",
+     "renterDepthE",
+     "leadEconomicsD",
+     "assetValueF",
+     "contentBarWords",
+     "competitorDomainAgeYears",
+     "geographyType",
+     "incumbentTargeting",
+     "architectureTreatment"
+    ],
+    "chain": "rankability -> traffic -> leads -> rentability, each stage measured separately so failure can be localised",
+    "joinKey": "experimentId joins pre-launch evidence -> deployment -> ranking -> traffic -> leads -> rentability"
+   },
+   "domainCandidates": [
+    {
+     "domain": "bathroomremodelingbellevue.com",
+     "available": false,
+     "approxFirstYearUsd": 12.18
+    },
+    {
+     "domain": "bathroomremodelingbellevuene.com",
+     "available": true,
+     "approxFirstYearUsd": 12.18
+    },
+    {
+     "domain": "bellevuebathroomremodeling.com",
+     "available": true,
+     "approxFirstYearUsd": 12.18
+    },
+    {
+     "domain": "bathroomremodelingofbellevue.com",
+     "available": true,
+     "approxFirstYearUsd": 12.18
+    },
+    {
+     "domain": "bellevuebathroomremodelingpros.com",
+     "available": true,
+     "approxFirstYearUsd": 12.18
+    }
+   ],
+   "preferredDomain": "bathroomremodelingbellevuene.com",
+   "domainAvailable": true
+  },
+  {
+   "experimentId": "W1-C-004",
+   "cohort": "C-MODEL-VALIDATION",
+   "treatment": "standalone-city-site",
+   "assetType": "standalone-site",
+   "classification": "EXPERIMENTAL — not investment-grade",
+   "contrarianType": "WEAK ECONOMICS / HIGH DEMAND",
+   "service": "House Cleaning",
+   "serviceSlug": "house-cleaning",
+   "geography": "Orlando",
+   "state": "FL",
+   "geographyType": "city",
+   "urlArchitecture": "housecleaningoforlando.com (root targets the city+service query)",
+   "measuredVolume": 2900,
+   "volumeState": "measured",
+   "demandProven": true,
+   "cpc": 10.48,
+   "ticketAssumed": 200,
+   "marginAssumed": 0.5,
+   "leadValueAssumedUsd": 10,
+   "dimensionA": 74,
+   "dimensionAVersion": "A-1.0.0",
+   "organicV1": 50,
+   "organicVerdict": "ORGANIC-CONTESTED",
+   "organicVersion": "organic-v1.2",
+   "organicTop5": [
+    "1. twomaidscleaning.com [local-specialist]",
+    "2. reddit.com [directory]",
+    "3. groupon.com [national-content]",
+    "4. maidpro.com [local-specialist]",
+    "5. merrymaids.com [local-specialist]"
+   ],
+   "organicStructure": {
+    "distinctHostsTop5": 5,
+    "displaceableTop5": 2,
+    "hardLocalTop3": 1,
+    "geoTargetedCompetitorsTop5": 3
+   },
+   "modelDisagreement": 24,
+   "incumbentTargeting": "3 of 5 distinct top-5 hosts explicitly target Orlando",
+   "renterDepthE": 86,
+   "leadEconomicsD": 18,
+   "assetValueF": 34,
+   "asymmetryH": 58,
+   "compositeAI": 69,
+   "aiBucket": "LOW-HANGING",
+   "evidenceConfidence": 80,
+   "evidenceCompleteness": 100,
+   "renterContext": {
+    "relevantOperators": 11,
+    "viableRenters": 3
+   },
+   "localPackEvidence": {
+    "mapPackSize": 3,
+    "avgReviews": 174,
+    "note": "market evidence only"
+   },
+   "contentBarWords": 273,
+   "competitorDomainAgeYears": 19.5,
+   "contentDirective": "SERP-derived commercial service page; identical build standard to Group A so the comparison is not confounded by build quality.",
+   "geographyVerified": true,
+   "geographyVerdict": "verified",
+   "reasonIncluded": "Selected to test a specific way the models may be WRONG. WEAK ECONOMICS / HIGH DEMAND. NOT presented as an investment-grade asset.",
+   "hypothesis": "2,900/mo, A=74, organic 30, but F=34 (~$10 gross profit per lead). Tests the buckets-1.1.0 rentability floor: can volume compensate for thin per-lead value?",
+   "successCondition": "Achieves >=$300/mo rent => the rentability floor is too strict and is discarding viable assets.",
+   "failureCondition": "Ranks but cannot be rented => the floor is validated and should perhaps rise.",
+   "wasInPrior28": true,
+   "evidenceRefs": {
+    "experiment": "experiment-2",
+    "rawSerp": "out/experiment-2/raw/serp-house_cleaning_Orlando_FL.json",
+    "scoreModel": "ai-v1.0.0"
+   },
+   "measurementPlan": [
+    "publishDate",
+    "indexDate",
+    "firstImpressionDate",
+    "firstRankingDate",
+    "targetQueryRankingHistory",
+    "timeToTop20",
+    "timeToTop10",
+    "timeToTop5",
+    "impressions",
+    "clicks",
+    "organicSessions",
+    "calls",
+    "forms",
+    "leadsTotal",
+    "qualifiedLeads",
+    "leadValueEstimated",
+    "leadValueRealized",
+    "renterOutreach",
+    "renterResponses",
+    "renterInterest",
+    "rentalAgreementAchieved",
+    "monthlyRentRealized"
+   ],
+   "preRegistration": {
+    "predictorsUnderTest": [
+     "dimensionA",
+     "organicV1_1",
+     "measuredVolume",
+     "cpc",
+     "renterDepthE",
+     "leadEconomicsD",
+     "assetValueF",
+     "contentBarWords",
+     "competitorDomainAgeYears",
+     "geographyType",
+     "incumbentTargeting",
+     "architectureTreatment"
+    ],
+    "chain": "rankability -> traffic -> leads -> rentability, each stage measured separately so failure can be localised",
+    "joinKey": "experimentId joins pre-launch evidence -> deployment -> ranking -> traffic -> leads -> rentability"
+   },
+   "domainCandidates": [
+    {
+     "domain": "housecleaningorlando.com",
+     "available": false,
+     "approxFirstYearUsd": 12.18
+    },
+    {
+     "domain": "housecleaningorlandofl.com",
+     "available": false,
+     "approxFirstYearUsd": 12.18
+    },
+    {
+     "domain": "orlandohousecleaning.com",
+     "available": false,
+     "approxFirstYearUsd": 12.18
+    },
+    {
+     "domain": "housecleaningoforlando.com",
+     "available": true,
+     "approxFirstYearUsd": 12.18
+    },
+    {
+     "domain": "orlandohousecleaningpros.com",
+     "available": true,
+     "approxFirstYearUsd": 12.18
+    }
+   ],
+   "preferredDomain": "housecleaningoforlando.com",
+   "domainAvailable": true
+  },
+  {
+   "experimentId": "W1-C-005",
+   "cohort": "C-MODEL-VALIDATION",
+   "treatment": "standalone-city-site",
+   "assetType": "standalone-site",
+   "classification": "EXPERIMENTAL — not investment-grade",
+   "contrarianType": "STRONG RENTER DEPTH / HARD SERP",
+   "service": "Kitchen Remodeling",
+   "serviceSlug": "kitchen-remodel",
+   "geography": "Rockville",
+   "state": "MD",
+   "geographyType": "city",
+   "urlArchitecture": "kitchenremodelingrockvillemd.com (root targets the city+service query)",
+   "measuredVolume": 210,
+   "volumeState": "measured-upper-bound-shared-city-name",
+   "demandProven": true,
+   "cpc": 11.7,
+   "ticketAssumed": 35000,
+   "marginAssumed": 0.3,
+   "leadValueAssumedUsd": 1050,
+   "dimensionA": 45,
+   "dimensionAVersion": "A-1.0.0",
+   "organicV1": 24,
+   "organicVerdict": "ORGANIC-BRUTAL",
+   "organicVersion": "organic-v1.2",
+   "organicTop5": [
+    "1. yelp.com [directory]",
+    "2. remodelwithmerrick.com [local-specialist]",
+    "3. kitchenbathdepot.com [local-specialist]",
+    "4. gbckitchenandbath.com [local-specialist]",
+    "5. usacabinetstore.com [national-brand]"
+   ],
+   "organicStructure": {
+    "distinctHostsTop5": 5,
+    "displaceableTop5": 1,
+    "hardLocalTop3": 2,
+    "geoTargetedCompetitorsTop5": 2
+   },
+   "modelDisagreement": 21,
+   "incumbentTargeting": "2 of 5 distinct top-5 hosts explicitly target Rockville",
+   "renterDepthE": 100,
+   "leadEconomicsD": 90,
+   "assetValueF": 66,
+   "asymmetryH": 56,
+   "compositeAI": 67,
+   "aiBucket": "HIGH-VALUE",
+   "evidenceConfidence": 80,
+   "evidenceCompleteness": 100,
+   "renterContext": {
+    "relevantOperators": 10,
+    "viableRenters": 3
+   },
+   "localPackEvidence": {
+    "mapPackSize": 3,
+    "avgReviews": 174,
+    "note": "market evidence only"
+   },
+   "contentBarWords": 1291,
+   "competitorDomainAgeYears": 21.9,
+   "contentDirective": "SERP-derived commercial service page; identical build standard to Group A so the comparison is not confounded by build quality.",
+   "geographyVerified": true,
+   "geographyVerdict": "serp-local-volume-upper-bound",
+   "reasonIncluded": "Selected to test a specific way the models may be WRONG. STRONG RENTER DEPTH / HARD SERP. NOT presented as an investment-grade asset.",
+   "hypothesis": "E=100 — the strongest renter market found — against A=45 and organic 22. Tests whether renter depth can carry an asset through a hostile SERP.",
+   "successCondition": "Ranks and rents => renter depth deserves more weight relative to rankability.",
+   "failureCondition": "Never ranks => E is worthless without rankability and should become a tie-breaker only.",
+   "wasInPrior28": true,
+   "evidenceRefs": {
+    "experiment": "experiment-3",
+    "rawSerp": "out/experiment-3/raw/serp-kitchen_remodel_Rockville_MD.json",
+    "scoreModel": "ai-v1.0.0"
+   },
+   "measurementPlan": [
+    "publishDate",
+    "indexDate",
+    "firstImpressionDate",
+    "firstRankingDate",
+    "targetQueryRankingHistory",
+    "timeToTop20",
+    "timeToTop10",
+    "timeToTop5",
+    "impressions",
+    "clicks",
+    "organicSessions",
+    "calls",
+    "forms",
+    "leadsTotal",
+    "qualifiedLeads",
+    "leadValueEstimated",
+    "leadValueRealized",
+    "renterOutreach",
+    "renterResponses",
+    "renterInterest",
+    "rentalAgreementAchieved",
+    "monthlyRentRealized"
+   ],
+   "preRegistration": {
+    "predictorsUnderTest": [
+     "dimensionA",
+     "organicV1_1",
+     "measuredVolume",
+     "cpc",
+     "renterDepthE",
+     "leadEconomicsD",
+     "assetValueF",
+     "contentBarWords",
+     "competitorDomainAgeYears",
+     "geographyType",
+     "incumbentTargeting",
+     "architectureTreatment"
+    ],
+    "chain": "rankability -> traffic -> leads -> rentability, each stage measured separately so failure can be localised",
+    "joinKey": "experimentId joins pre-launch evidence -> deployment -> ranking -> traffic -> leads -> rentability"
+   },
+   "domainCandidates": [
+    {
+     "domain": "kitchenremodelingrockville.com",
+     "available": false,
+     "approxFirstYearUsd": 12.18
+    },
+    {
+     "domain": "kitchenremodelingrockvillemd.com",
+     "available": true,
+     "approxFirstYearUsd": 12.18
+    },
+    {
+     "domain": "rockvillekitchenremodeling.com",
+     "available": false,
+     "approxFirstYearUsd": 12.18
+    },
+    {
+     "domain": "kitchenremodelingofrockville.com",
+     "available": true,
+     "approxFirstYearUsd": 12.18
+    },
+    {
+     "domain": "rockvillekitchenremodelingpros.com",
+     "available": true,
+     "approxFirstYearUsd": 12.18
+    }
+   ],
+   "preferredDomain": "kitchenremodelingrockvillemd.com",
+   "domainAvailable": true
+  },
+  {
+   "experimentId": "W1-C-006",
+   "cohort": "C-MODEL-VALIDATION",
+   "treatment": "standalone-city-site",
+   "assetType": "standalone-site",
+   "classification": "EXPERIMENTAL — not investment-grade",
+   "contrarianType": "V0 vs V2 THESIS / WEAK ECONOMICS",
+   "service": "Appliance Repair",
+   "serviceSlug": "appliance-repair",
+   "geography": "Aurora",
+   "state": "IL",
+   "geographyType": "city",
+   "urlArchitecture": "appliancerepairofaurora.com (root targets the city+service query)",
+   "measuredVolume": 1300,
+   "volumeState": "measured-upper-bound-shared-city-name",
+   "demandProven": true,
+   "cpc": 11.17,
+   "ticketAssumed": 325,
+   "marginAssumed": 0.7,
+   "leadValueAssumedUsd": 23,
+   "dimensionA": 67,
+   "dimensionAVersion": "A-1.0.0",
+   "organicV1": 39,
+   "organicVerdict": "ORGANIC-BRUTAL",
+   "organicVersion": "organic-v1.2",
+   "organicTop5": [
+    "1. leonardiappliance.com [local-specialist]",
+    "2. yelp.com [directory]",
+    "3. repair.geappliances.com [local-specialist]",
+    "4. thumbtack.com [directory]",
+    "5. appliance-aaa.com [local-specialist]"
+   ],
+   "organicStructure": {
+    "distinctHostsTop5": 5,
+    "displaceableTop5": 2,
+    "hardLocalTop3": 2,
+    "geoTargetedCompetitorsTop5": 3
+   },
+   "modelDisagreement": 28,
+   "incumbentTargeting": "3 of 5 distinct top-5 hosts explicitly target Aurora",
+   "renterDepthE": 53,
+   "leadEconomicsD": 32,
+   "assetValueF": 34,
+   "asymmetryH": 51,
+   "compositeAI": 61,
+   "aiBucket": "LOW-HANGING",
+   "evidenceConfidence": 80,
+   "evidenceCompleteness": 100,
+   "renterContext": {
+    "relevantOperators": 9,
+    "viableRenters": 2
+   },
+   "localPackEvidence": {
+    "mapPackSize": 3,
+    "avgReviews": 73,
+    "note": "market evidence only"
+   },
+   "contentBarWords": 549,
+   "competitorDomainAgeYears": 12.9,
+   "contentDirective": "SERP-derived commercial service page; identical build standard to Group A so the comparison is not confounded by build quality.",
+   "geographyVerified": true,
+   "geographyVerdict": "serp-local-volume-upper-bound",
+   "reasonIncluded": "Selected to test a specific way the models may be WRONG. V0 vs V2 THESIS / WEAK ECONOMICS. NOT presented as an investment-grade asset.",
+   "hypothesis": "V0 favoured commodity high-volume services; V2 bucketed only 1 of 16. 1,300/mo, A=67, organic 39, F=34.",
+   "successCondition": "Ranks and rents easily => V2's pessimism about commodity services is wrong and the family should be re-opened.",
+   "failureCondition": "Fails => the fragmented-local family stays suppressed and we stop spending research on it.",
+   "wasInPrior28": true,
+   "evidenceRefs": {
+    "experiment": "experiment-2",
+    "rawSerp": "out/experiment-2/raw/serp-appliance_repair_Aurora_IL.json",
+    "scoreModel": "ai-v1.0.0"
+   },
+   "measurementPlan": [
+    "publishDate",
+    "indexDate",
+    "firstImpressionDate",
+    "firstRankingDate",
+    "targetQueryRankingHistory",
+    "timeToTop20",
+    "timeToTop10",
+    "timeToTop5",
+    "impressions",
+    "clicks",
+    "organicSessions",
+    "calls",
+    "forms",
+    "leadsTotal",
+    "qualifiedLeads",
+    "leadValueEstimated",
+    "leadValueRealized",
+    "renterOutreach",
+    "renterResponses",
+    "renterInterest",
+    "rentalAgreementAchieved",
+    "monthlyRentRealized"
+   ],
+   "preRegistration": {
+    "predictorsUnderTest": [
+     "dimensionA",
+     "organicV1_1",
+     "measuredVolume",
+     "cpc",
+     "renterDepthE",
+     "leadEconomicsD",
+     "assetValueF",
+     "contentBarWords",
+     "competitorDomainAgeYears",
+     "geographyType",
+     "incumbentTargeting",
+     "architectureTreatment"
+    ],
+    "chain": "rankability -> traffic -> leads -> rentability, each stage measured separately so failure can be localised",
+    "joinKey": "experimentId joins pre-launch evidence -> deployment -> ranking -> traffic -> leads -> rentability"
+   },
+   "domainCandidates": [
+    {
+     "domain": "appliancerepairaurora.com",
+     "available": false,
+     "approxFirstYearUsd": 12.18
+    },
+    {
+     "domain": "appliancerepairaurorail.com",
+     "available": false,
+     "approxFirstYearUsd": 12.18
+    },
+    {
+     "domain": "auroraappliancerepair.com",
+     "available": false,
+     "approxFirstYearUsd": 12.18
+    },
+    {
+     "domain": "appliancerepairofaurora.com",
+     "available": true,
+     "approxFirstYearUsd": 12.18
+    },
+    {
+     "domain": "auroraappliancerepairpros.com",
+     "available": false,
+     "approxFirstYearUsd": 12.18
+    }
+   ],
+   "preferredDomain": "appliancerepairofaurora.com",
+   "domainAvailable": true
+  }
+ ]
+}

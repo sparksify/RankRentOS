@@ -39,7 +39,7 @@
    "competitors rank with inner pages, not dedicated local pages"
   ],
   "missing": [],
-  "version": "organic-v1"
+  "version": "organic-v1.1"
  },
  {
   "cohort": "A-CORE",
@@ -82,7 +82,7 @@
    "competitors rank with inner pages, not dedicated local pages"
   ],
   "missing": [],
-  "version": "organic-v1"
+  "version": "organic-v1.1"
  },
  {
   "cohort": "A-CORE",
@@ -123,7 +123,7 @@
    "competitors rank with inner pages, not dedicated local pages"
   ],
   "missing": [],
-  "version": "organic-v1"
+  "version": "organic-v1.1"
  },
  {
   "cohort": "A-CORE",
@@ -131,14 +131,14 @@
   "geography": "Rochester",
   "state": "MN",
   "priorA": 61,
-  "organicScore": 48,
-  "organicVerdict": "ORGANIC-CONTESTED",
-  "delta": -13,
-  "displaceableTop5": 3,
-  "displaceableTop10": 4,
-  "hardLocalTop3": 1,
-  "hardLocalTop5": 2,
-  "geoTargetedCompetitorsTop5": 1,
+  "organicScore": 33,
+  "organicVerdict": "ORGANIC-BRUTAL",
+  "delta": -28,
+  "displaceableTop5": 2,
+  "displaceableTop10": 3,
+  "hardLocalTop3": 2,
+  "hardLocalTop5": 3,
+  "geoTargetedCompetitorsTop5": 2,
   "contentBarWords": 1174,
   "competitorDomainAgeYears": 28.2,
   "serviceTerms": [
@@ -146,7 +146,7 @@
    "remodel"
   ],
   "topSlots": [
-   "1. kitchenrefresh.net [adjacent-not-this-service]",
+   "1. kitchenrefresh.net [local-specialist*]",
    "2. yelp.com [directory]",
    "3. beyondkitchens.com [local-specialist*]",
    "4. kitchensolvers.com [local-specialist*]",
@@ -159,11 +159,12 @@
    "interpretation": "moderate pack strength — market evidence only"
   },
   "organicRationale": [
-   "3 of the top 5 organic slots are directories/marketplaces/social — displaceable by a purpose-built local page",
-   "competitor domains average 28.2y — long authority head start"
+   "2 of the top 5 organic slots are directories/marketplaces/social — displaceable by a purpose-built local page",
+   "competitor domains average 28.2y — long authority head start",
+   "competitors rank with inner pages, not dedicated local pages"
   ],
   "missing": [],
-  "version": "organic-v1"
+  "version": "organic-v1.1"
  },
  {
   "cohort": "A-CORE",
@@ -204,7 +205,7 @@
    "competitors rank with inner pages, not dedicated local pages"
   ],
   "missing": [],
-  "version": "organic-v1"
+  "version": "organic-v1.1"
  },
  {
   "cohort": "A-CORE",
@@ -245,7 +246,7 @@
    "competitors rank with inner pages, not dedicated local pages"
   ],
   "missing": [],
-  "version": "organic-v1"
+  "version": "organic-v1.1"
  },
  {
   "cohort": "A-CORE",
@@ -253,11 +254,11 @@
   "geography": "Naperville",
   "state": "IL",
   "priorA": 59,
-  "organicScore": 40,
+  "organicScore": 38,
   "organicVerdict": "ORGANIC-BRUTAL",
-  "delta": -19,
+  "delta": -21,
   "displaceableTop5": 3,
-  "displaceableTop10": 5,
+  "displaceableTop10": 4,
   "hardLocalTop3": 1,
   "hardLocalTop5": 2,
   "geoTargetedCompetitorsTop5": 2,
@@ -286,7 +287,7 @@
    "competitor domains average 21.9y — long authority head start"
   ],
   "missing": [],
-  "version": "organic-v1"
+  "version": "organic-v1.1"
  },
  {
   "cohort": "A-CORE",
@@ -329,7 +330,7 @@
    "competitors rank with inner pages, not dedicated local pages"
   ],
   "missing": [],
-  "version": "organic-v1"
+  "version": "organic-v1.1"
  },
  {
   "cohort": "A-CORE",
@@ -370,7 +371,7 @@
    "competitors rank with inner pages, not dedicated local pages"
   ],
   "missing": [],
-  "version": "organic-v1"
+  "version": "organic-v1.1"
  },
  {
   "cohort": "A-CORE",
@@ -413,7 +414,7 @@
    "competitors rank with inner pages, not dedicated local pages"
   ],
   "missing": [],
-  "version": "organic-v1"
+  "version": "organic-v1.1"
  },
  {
   "cohort": "A-CORE",
@@ -456,7 +457,7 @@
    "competitors rank with inner pages, not dedicated local pages"
   ],
   "missing": [],
-  "version": "organic-v1"
+  "version": "organic-v1.1"
  },
  {
   "cohort": "A-CORE",
@@ -464,11 +465,11 @@
   "geography": "Rochester",
   "state": "MN",
   "priorA": 76,
-  "organicScore": 20,
+  "organicScore": 18,
   "organicVerdict": "ORGANIC-BRUTAL",
-  "delta": -56,
+  "delta": -58,
   "displaceableTop5": 1,
-  "displaceableTop10": 3,
+  "displaceableTop10": 2,
   "hardLocalTop3": 2,
   "hardLocalTop5": 4,
   "geoTargetedCompetitorsTop5": 4,
@@ -497,7 +498,7 @@
    "competitors rank with inner pages, not dedicated local pages"
   ],
   "missing": [],
-  "version": "organic-v1"
+  "version": "organic-v1.1"
  },
  {
   "cohort": "A-CORE",
@@ -538,7 +539,7 @@
    "competitors rank with inner pages, not dedicated local pages"
   ],
   "missing": [],
-  "version": "organic-v1"
+  "version": "organic-v1.1"
  },
  {
   "cohort": "B-NT-POOL-CLUSTER",
@@ -578,7 +579,7 @@
    "competitors rank with inner pages, not dedicated local pages"
   ],
   "missing": [],
-  "version": "organic-v1"
+  "version": "organic-v1.1"
  },
  {
   "cohort": "B-NT-POOL-CLUSTER",
@@ -620,7 +621,7 @@
    "competitors rank with inner pages, not dedicated local pages"
   ],
   "missing": [],
-  "version": "organic-v1"
+  "version": "organic-v1.1"
  },
  {
   "cohort": "B-NT-POOL-CLUSTER",
@@ -628,11 +629,11 @@
   "geography": "Light Farms",
   "state": "TX",
   "priorA": null,
-  "organicScore": 46,
-  "organicVerdict": "ORGANIC-CONTESTED",
+  "organicScore": 39,
+  "organicVerdict": "ORGANIC-BRUTAL",
   "delta": null,
-  "displaceableTop5": 3,
-  "displaceableTop10": 4,
+  "displaceableTop5": 2,
+  "displaceableTop10": 3,
   "hardLocalTop3": 2,
   "hardLocalTop5": 2,
   "geoTargetedCompetitorsTop5": 1,
@@ -656,12 +657,12 @@
    "interpretation": "moderate pack strength — market evidence only"
   },
   "organicRationale": [
-   "3 of the top 5 organic slots are directories/marketplaces/social — displaceable by a purpose-built local page",
+   "2 of the top 5 organic slots are directories/marketplaces/social — displaceable by a purpose-built local page",
    "content bar ~1890 words",
    "competitors rank with inner pages, not dedicated local pages"
   ],
   "missing": [],
-  "version": "organic-v1"
+  "version": "organic-v1.1"
  },
  {
   "cohort": "B-NT-POOL-CLUSTER",
@@ -669,11 +670,11 @@
   "geography": "Mustang Lakes",
   "state": "TX",
   "priorA": null,
-  "organicScore": 41,
+  "organicScore": 39,
   "organicVerdict": "ORGANIC-BRUTAL",
   "delta": null,
   "displaceableTop5": 2,
-  "displaceableTop10": 4,
+  "displaceableTop10": 3,
   "hardLocalTop3": 2,
   "hardLocalTop5": 3,
   "geoTargetedCompetitorsTop5": 1,
@@ -702,7 +703,7 @@
    "competitors rank with inner pages, not dedicated local pages"
   ],
   "missing": [],
-  "version": "organic-v1"
+  "version": "organic-v1.1"
  },
  {
   "cohort": "B-NT-POOL-CLUSTER",
@@ -710,11 +711,11 @@
   "geography": "Painted Tree",
   "state": "TX",
   "priorA": null,
-  "organicScore": 82,
+  "organicScore": 73,
   "organicVerdict": "ORGANIC-VIABLE",
   "delta": null,
-  "displaceableTop5": 5,
-  "displaceableTop10": 9,
+  "displaceableTop5": 3,
+  "displaceableTop10": 6,
   "hardLocalTop3": 0,
   "hardLocalTop5": 0,
   "geoTargetedCompetitorsTop5": 0,
@@ -738,10 +739,10 @@
    "interpretation": "moderate pack strength — market evidence only"
   },
   "organicRationale": [
-   "5 of the top 5 organic slots are directories/marketplaces/social — displaceable by a purpose-built local page"
+   "3 of the top 5 organic slots are directories/marketplaces/social — displaceable by a purpose-built local page"
   ],
   "missing": [],
-  "version": "organic-v1"
+  "version": "organic-v1.1"
  },
  {
   "cohort": "B-NT-POOL-CLUSTER",
@@ -749,11 +750,11 @@
   "geography": "Trinity Falls",
   "state": "TX",
   "priorA": null,
-  "organicScore": 67,
-  "organicVerdict": "ORGANIC-VIABLE",
+  "organicScore": 60,
+  "organicVerdict": "ORGANIC-CONTESTED",
   "delta": null,
-  "displaceableTop5": 4,
-  "displaceableTop10": 5,
+  "displaceableTop5": 3,
+  "displaceableTop10": 4,
   "hardLocalTop3": 1,
   "hardLocalTop5": 1,
   "geoTargetedCompetitorsTop5": 0,
@@ -777,10 +778,10 @@
    "interpretation": "moderate pack strength — market evidence only"
   },
   "organicRationale": [
-   "4 of the top 5 organic slots are directories/marketplaces/social — displaceable by a purpose-built local page"
+   "3 of the top 5 organic slots are directories/marketplaces/social — displaceable by a purpose-built local page"
   ],
   "missing": [],
-  "version": "organic-v1"
+  "version": "organic-v1.1"
  },
  {
   "cohort": "B-NT-POOL-CLUSTER",
@@ -788,11 +789,11 @@
   "geography": "Sandbrock Ranch",
   "state": "TX",
   "priorA": null,
-  "organicScore": 73,
+  "organicScore": 66,
   "organicVerdict": "ORGANIC-VIABLE",
   "delta": null,
-  "displaceableTop5": 4,
-  "displaceableTop10": 8,
+  "displaceableTop5": 3,
+  "displaceableTop10": 7,
   "hardLocalTop3": 1,
   "hardLocalTop5": 1,
   "geoTargetedCompetitorsTop5": 0,
@@ -816,10 +817,10 @@
    "interpretation": "weak pack incumbents — relevant to a future GBP play and to renter quality, NOT to organic difficulty"
   },
   "organicRationale": [
-   "4 of the top 5 organic slots are directories/marketplaces/social — displaceable by a purpose-built local page"
+   "3 of the top 5 organic slots are directories/marketplaces/social — displaceable by a purpose-built local page"
   ],
   "missing": [],
-  "version": "organic-v1"
+  "version": "organic-v1.1"
  },
  {
   "cohort": "B-NT-POOL-CLUSTER",
@@ -827,11 +828,11 @@
   "geography": "Canyon Falls",
   "state": "TX",
   "priorA": null,
-  "organicScore": 39,
+  "organicScore": 37,
   "organicVerdict": "ORGANIC-BRUTAL",
   "delta": null,
   "displaceableTop5": 2,
-  "displaceableTop10": 5,
+  "displaceableTop10": 4,
   "hardLocalTop3": 2,
   "hardLocalTop5": 3,
   "geoTargetedCompetitorsTop5": 0,
@@ -861,7 +862,7 @@
    "competitors rank with inner pages, not dedicated local pages"
   ],
   "missing": [],
-  "version": "organic-v1"
+  "version": "organic-v1.1"
  },
  {
   "cohort": "B-NT-POOL-CLUSTER",
@@ -904,7 +905,7 @@
    "competitors rank with inner pages, not dedicated local pages"
   ],
   "missing": [],
-  "version": "organic-v1"
+  "version": "organic-v1.1"
  },
  {
   "cohort": "B-NT-POOL-CLUSTER",
@@ -946,7 +947,7 @@
    "competitor domains average 22.6y — long authority head start"
   ],
   "missing": [],
-  "version": "organic-v1"
+  "version": "organic-v1.1"
  },
  {
   "cohort": "C-CONTRARIAN",
@@ -988,7 +989,7 @@
    "competitors rank with inner pages, not dedicated local pages"
   ],
   "missing": [],
-  "version": "organic-v1"
+  "version": "organic-v1.1"
  },
  {
   "cohort": "C-CONTRARIAN",
@@ -996,11 +997,11 @@
   "geography": "Aurora",
   "state": "IL",
   "priorA": 67,
-  "organicScore": 41,
+  "organicScore": 39,
   "organicVerdict": "ORGANIC-BRUTAL",
-  "delta": -26,
+  "delta": -28,
   "displaceableTop5": 2,
-  "displaceableTop10": 3,
+  "displaceableTop10": 2,
   "hardLocalTop3": 2,
   "hardLocalTop5": 3,
   "geoTargetedCompetitorsTop5": 3,
@@ -1030,7 +1031,7 @@
    "competitors rank with inner pages, not dedicated local pages"
   ],
   "missing": [],
-  "version": "organic-v1"
+  "version": "organic-v1.1"
  },
  {
   "cohort": "C-CONTRARIAN",
@@ -1072,7 +1073,7 @@
    "competitors rank with inner pages, not dedicated local pages"
   ],
   "missing": [],
-  "version": "organic-v1"
+  "version": "organic-v1.1"
  },
  {
   "cohort": "C-CONTRARIAN",
@@ -1113,7 +1114,7 @@
    "competitors rank with inner pages, not dedicated local pages"
   ],
   "missing": [],
-  "version": "organic-v1"
+  "version": "organic-v1.1"
  },
  {
   "cohort": "C-CONTRARIAN",
@@ -1156,6 +1157,6 @@
    "competitors rank with inner pages, not dedicated local pages"
   ],
   "missing": [],
-  "version": "organic-v1"
+  "version": "organic-v1.1"
  }
 ]

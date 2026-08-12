@@ -97,3 +97,57 @@ describe("classification defects found in the Wave-1 audit (regressions)", () =>
     expect(classifySlot("https://ecowatch.com/x", "t", "Amarillo", 4, ["window"])!.displaceable).toBe(true);
   });
 });
+
+describe("sanity audit fixes (organic-v1.1)", () => {
+  test("multiple results from ONE host count as one competitor, not several", () => {
+    // Painted Tree scored 82 because 3 of its 5 slots were all paintedtreetx.com
+    const inflated = organicRankability({
+      geo: "Painted Tree", serviceTerms: ["pool"],
+      organic: [
+        { link: "https://paintedtreetx.com/a", title: "Painted Tree" },
+        { link: "https://coventryhomes.com/", title: "New Homes" },
+        { link: "https://paintedtreetx.com/b", title: "Painted Tree Living" },
+        { link: "https://bloomfieldhomes.com/", title: "New Homes" },
+        { link: "https://paintedtreetx.com/c", title: "Painted Tree Amenities" },
+      ],
+      competitorAvgWords: 1435, competitorAvgDomainAgeYears: 13.8,
+    });
+    expect(inflated.distinctHostsTop5).toBe(3);        // not 5
+    expect(inflated.displaceableTop5).toBeLessThanOrEqual(3);
+  });
+  test("an unknown domain naming the service in its DOMAIN is a real competitor", () => {
+    const s = classifySlot("https://haukcustompools.com/", "Hauk Custom", "Sandbrock Ranch", 2, ["pool"]);
+    expect(s!.slotClass).toBe("local-specialist");
+    expect(s!.displaceable).toBe(false);
+    const k = classifySlot("https://kitchenrefresh.net/", "Refresh Your Space", "Rochester", 3, ["kitchen", "remodel"]);
+    expect(k!.displaceable).toBe(false);
+  });
+  test("an unknown domain with no service evidence is still NOT assumed a strong competitor", () => {
+    const s = classifySlot("https://sandbrockranch.com/", "Sandbrock Ranch Community", "Sandbrock Ranch", 1, ["pool"]);
+    expect(s!.slotClass).toBe("adjacent-not-this-service");
+  });
+});
+
+describe("sanity audit 2 (organic-v1.2)", () => {
+  test("national retailers and multi-state franchises are not local operators", () => {
+    expect(classifySlot("https://www.ikea.com/us/en/rooms/bathroom/", "Bathroom Remodel Ideas", "Conroe", 1, ["bath", "remodel"])!.slotClass).toBe("national-brand");
+    expect(classifySlot("https://www.groupon.com/deals/house-cleaning", "House Cleaning Deals", "Orlando", 2, ["clean"])!.displaceable).toBe(true);
+    expect(classifySlot("https://ramjack.com/naperville", "Ram Jack Basement Waterproofing", "Naperville", 3, ["basement", "waterproof"])!.slotClass).toBe("national-brand");
+  });
+  test("a community/developer domain is not a service competitor even if its page mentions the service", () => {
+    const s = classifySlot("https://www.unionparkbyhillwood.com/amenities", "Union Park | Pools & Parks", "Union Park", 1, ["pool"], "community");
+    expect(s!.slotClass).toBe("adjacent-not-this-service");
+    expect(s!.displaceable).toBe(true);
+  });
+  test("a genuine local operator with the city in its domain is still a hard competitor", () => {
+    // contains the service token in the domain, so the community-site rule must not fire
+    const s = classifySlot("https://friscopoolbuilders.com/", "Frisco Pool Builders", "Frisco", 1, ["pool"], "community");
+    expect(s!.slotClass).toBe("local-specialist");
+    expect(s!.displaceable).toBe(false);
+  });
+  test("the community-site rule must NOT fire for city geographies", () => {
+    // "bluewaterplano.com" is plausibly a real Plano pool company, not a community site
+    const s = classifySlot("https://bluewaterplano.com/", "Plano Pools", "Plano", 4, ["pool"], "city");
+    expect(s!.slotClass).toBe("local-specialist");
+  });
+});
