@@ -50,6 +50,20 @@ export const METRICS: readonly RegistryEntry[] = [
   { id: "v0.prior.survivor", kind: "string", unit: "none", allowedEvidenceTypes: ["DERIVED"], staleAfterDays: null, description: "V0 national screen judged this market demand-qualified (true)" },
 
   // --- Domain research summaries (Phase 2 collector; detail table arrives with the domain-research phase) ---
+  // SERP-derived facts (deterministic extraction from a SERP snapshot; DERIVED,
+  // must reference the source snapshot + signals methodology version)
+  { id: "serp.directory.count", kind: "number", unit: "results", allowedEvidenceTypes: OBS_DER, staleAfterDays: 60, description: "Directory/aggregator results in top 3 organic" },
+  { id: "serp.franchise.count", kind: "number", unit: "results", allowedEvidenceTypes: OBS_DER, staleAfterDays: 60, description: "Brand-search franchise domains in top 3 organic" },
+  { id: "serp.out_of_town.count", kind: "number", unit: "results", allowedEvidenceTypes: OBS_DER, staleAfterDays: 60, description: "Out-of-town service-area pages in top 3 organic" },
+  { id: "serp.inner_page.count", kind: "number", unit: "results", allowedEvidenceTypes: OBS_DER, staleAfterDays: 60, description: "Inner-page (non-homepage) results in top 5 organic" },
+  { id: "serp.intent_mismatch.count", kind: "number", unit: "results", allowedEvidenceTypes: OBS_DER, staleAfterDays: 60, description: "Retail/info pages ranking for service intent in top 5" },
+  { id: "serp.title_targeting.count", kind: "number", unit: "results", allowedEvidenceTypes: OBS_DER, staleAfterDays: 60, description: "Top-3 titles missing the target city" },
+  { id: "serp.ads.count", kind: "number", unit: "ads", allowedEvidenceTypes: OBS_DER, staleAfterDays: 60, description: "Paid ads on the SERP" },
+  { id: "serp.map_pack.count", kind: "number", unit: "listings", allowedEvidenceTypes: OBS_DER, staleAfterDays: 60, description: "Map pack listings shown (0 = absent)" },
+  { id: "serp.map_pack.avg_reviews", kind: "number", unit: "reviews", allowedEvidenceTypes: OBS_DER, staleAfterDays: 60, description: "Average review count across map pack listings" },
+  { id: "serp.map_pack.no_website.count", kind: "number", unit: "listings", allowedEvidenceTypes: OBS_DER, staleAfterDays: 60, description: "Map pack listings without a website" },
+  { id: "serp.competitor.content_depth", kind: "number", unit: "words", allowedEvidenceTypes: OBS_DER, staleAfterDays: 90, description: "Average word count of top organic competitor pages" },
+  { id: "serp.competitor.domain_age", kind: "number", unit: "years", allowedEvidenceTypes: OBS_DER, staleAfterDays: 180, description: "Average RDAP registration age of top-3 competitor .com domains" },
   { id: "domain.available.count", kind: "number", unit: "domains", allowedEvidenceTypes: OBS, staleAfterDays: 14, description: "Number of candidate .com domains currently available for this opportunity" },
   { id: "domain.exactMatch.available", kind: "string", unit: "none", allowedEvidenceTypes: OBS_DER, staleAfterDays: 14, description: "Whether a city-first exact-match .com is available (true/false)" },
   { id: "domain.pick", kind: "string", unit: "none", allowedEvidenceTypes: OBS_DER, staleAfterDays: 14, description: "Best available domain candidate per deterministic ranking" },
