@@ -1,0 +1,249 @@
+{
+ "specVersion": "asset-spec-1.0.0",
+ "generatedAt": "2026-08-06T07:06:40.000Z",
+ "assetId": "house-cleaning|Irvine|CA",
+ "opportunityId": "house-cleaning|Irvine|CA",
+ "experiment": "experiment-2",
+ "identity": {
+  "service": "House Cleaning",
+  "serviceSlug": "house-cleaning",
+  "category": "control-negative",
+  "city": "Irvine",
+  "state": "CA",
+  "population": 236716,
+  "medianIncome": 106047,
+  "stratum": "large|affluent",
+  "opportunityType": "general"
+ },
+ "domain": {
+  "recommended": "housecleaningserviceirvine.com",
+  "status": "available-at-research-time",
+  "note": "availability decays; re-check before purchase. NOT purchased by RankRentOS."
+ },
+ "keywordStrategy": {
+  "primaryKeyword": "house cleaning service Irvine",
+  "exactLocalVolume": 1000,
+  "volumeState": "measured",
+  "cpc": 9.46,
+  "demandAmbiguous": false,
+  "demandAttributionRisk": true,
+  "ambiguityNote": "city name \"Irvine\" is shared with other US cities, so 1000/mo is an UPPER BOUND on locally attributable demand. SERP/operator evidence IS correctly local (SerpAPI was queried with location \"Irvine, CA\"); only the volume figure is at risk.",
+  "geoScopedUniverse": {
+   "collected": true,
+   "version": "universe-geo-1.0.0",
+   "attributableKeywords": 2,
+   "attributableVolume": 1010,
+   "complete": true,
+   "unmeasuredMembers": 0,
+   "nationalVolumeExcluded": 50090,
+   "supportingKeywords": [
+    {
+     "keyword": "house cleaning service irvine",
+     "volume": 1000,
+     "cpc": 9.46
+    },
+    {
+     "keyword": "move out cleaning services irvine",
+     "volume": 10,
+     "cpc": 26.59
+    }
+   ]
+  }
+ },
+ "serpContext": {
+  "mapPackSize": 3,
+  "mapPackAvgReviews": 222,
+  "mapListingsWithoutWebsite": 0,
+  "directoriesInTop3": 2,
+  "innerPagesInTop5": 2,
+  "franchisesInTop3": 0,
+  "outOfTownInTop3": 0,
+  "titlesMissingCity": 1,
+  "adCount": 0,
+  "contentDepthBarWords": 827,
+  "competitorAvgDomainAgeYears": 20.8,
+  "depthEvidence": {
+   "pagesCrawled": 2,
+   "domainsAged": 3,
+   "competitorsConsidered": 3
+  }
+ },
+ "renterContext": {
+  "relevantOperators": 10,
+  "viableRenters": 3,
+  "strongerOperators": 2,
+  "medianReviews": 64,
+  "websiteAdoptionPct": 30,
+  "advertisers": 0,
+  "concentration": "concentrated"
+ },
+ "economicsContext": {
+  "ticketAvg": 200,
+  "margin": 0.5,
+  "evidenceType": "HUMAN_ASSUMED",
+  "warning": "ticket and margin are HUMAN_ASSUMED and drive D and F. Live outcomes must replace them."
+ },
+ "scores": {
+  "modelVersion": "ai-v1.0.0",
+  "weightSet": "w-balanced-v1.1",
+  "bucketsVersion": "buckets-1.1.0",
+  "composite": 63,
+  "confidence": 80,
+  "evidenceCompleteness": 100,
+  "A": {
+   "score": 66,
+   "version": "A-1.0.0",
+   "confidence": 0.875,
+   "evidenceTypes": [
+    "DERIVED"
+   ],
+   "missing": []
+  },
+  "B": {
+   "score": 92,
+   "version": "B-1.0.0",
+   "confidence": 0.6,
+   "evidenceTypes": [
+    "OBSERVED",
+    "DERIVED"
+   ],
+   "missing": [
+    "kw.universe.volume (geo-scoped)"
+   ]
+  },
+  "C": {
+   "score": 72,
+   "version": "C-1.0.0",
+   "confidence": 0.85,
+   "evidenceTypes": [
+    "OBSERVED",
+    "DERIVED"
+   ],
+   "missing": []
+  },
+  "D": {
+   "score": 18,
+   "version": "D-1.1.0",
+   "confidence": 0.4,
+   "evidenceTypes": [
+    "HUMAN_ASSUMED",
+    "OBSERVED"
+   ],
+   "missing": [
+    "econ.cpl.live",
+    "econ.close.rate.live",
+    "econ.leadrate.live"
+   ]
+  },
+  "E": {
+   "score": 73,
+   "version": "E-1.0.0",
+   "confidence": 1,
+   "evidenceTypes": [
+    "DERIVED"
+   ],
+   "missing": []
+  },
+  "F": {
+   "score": 34,
+   "version": "F-1.1.0",
+   "confidence": 0.53,
+   "evidenceTypes": [
+    "OBSERVED",
+    "HUMAN_ASSUMED"
+   ],
+   "missing": []
+  },
+  "G": {
+   "score": 51,
+   "version": "G-1.0.0",
+   "confidence": 0.35,
+   "evidenceTypes": [
+    "DERIVED"
+   ],
+   "missing": [
+    "asset.indexed.days",
+    "asset.firstimpression.days",
+    "asset.firstrank.days"
+   ]
+  },
+  "H": {
+   "score": 56,
+   "version": "H-1.0.0",
+   "confidence": 0.7375,
+   "evidenceTypes": [
+    "DERIVED"
+   ],
+   "missing": []
+  },
+  "I": {
+   "score": 80,
+   "version": "I-1.0.0",
+   "confidence": 1,
+   "evidenceTypes": [
+    "DERIVED"
+   ],
+   "missing": []
+  },
+  "sensitivity": {
+   "byWeightSet": {
+    "w-balanced-v1.1": 63,
+    "w-rankability": 63,
+    "w-economics": 57,
+    "w-asymmetry": 60,
+    "w-renter": 62
+   },
+   "bestRank": 4,
+   "worstRank": 35,
+   "rankSpread": 31
+  },
+  "assumptionDependentDimensions": [
+   "D",
+   "F"
+  ],
+  "prospectiveDimensions": [
+   "G"
+  ]
+ },
+ "selection": {
+  "bucket": "LOW-HANGING",
+  "tier": "WAVE-1",
+  "role": "INVESTMENT",
+  "whySelected": "LOW-HANGING, composite 63, unambiguous demand, viable renter present",
+  "hypothesisUnderTest": "A=66 predicts this SERP is winnable; F=34 predicts the lead flow is worth renting. Tests whether composite 63 converts to real rankings and revenue."
+ },
+ "expectationsBaseline": {
+  "predictedRankability": 66,
+  "predictedTimeToSignalDays": 109,
+  "predictedMonthlyRenterGrossProfit": 300,
+  "note": "predictions are the falsifiable claims this deployment tests"
+ },
+ "measurementRequirements": [
+  "deployedAt",
+  "indexedAt",
+  "firstImpressionAt",
+  "firstClickAt",
+  "firstLeadAt",
+  "firstRevenueAt",
+  "dailyImpressions",
+  "dailyClicks",
+  "rankingsByKeyword",
+  "leadsTotal",
+  "leadsByChannel(call|form)",
+  "qualifiedLeads",
+  "renterOutreachCount",
+  "renterResponses",
+  "renterAcquiredAt",
+  "monthlyRent",
+  "revenue",
+  "operatingCost"
+ ],
+ "provenance": {
+  "experiment": "experiment-2",
+  "rawSerp": "out/experiment-2/raw/serp-house_cleaning_Irvine_CA.json",
+  "demandSource": "dataforseo:google_ads/search_volume",
+  "serpSource": "serpapi",
+  "depthSource": "crawl+rdap:depth-v1",
+  "asOf": 1786000000000
+ }
+}

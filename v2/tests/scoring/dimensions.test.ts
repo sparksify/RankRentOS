@@ -68,7 +68,7 @@ describe("D/F assumption handling", () => {
     const hiTicketNoDemand: Ev = { vol: 0, ticketAvg: 40000, margin: 0.4, opRelevant: 8, opViable: 1 };
     const d = leadEconomics(hiTicketNoDemand), b = demand(hiTicketNoDemand), e = renterDepth(hiTicketNoDemand);
     const f = assetValue(hiTicketNoDemand, d, b, e);
-    expect(d.score!).toBeGreaterThan(70);   // per-job economics look great
+    expect(d.score!).toBeGreaterThan(70);   // per-lead economics look great
     expect(f.score!).toBeLessThan(25);      // but there is no lead flow to own
   });
 });
@@ -135,5 +135,35 @@ describe("sensitivity", () => {
       expect(s.composite).toBeGreaterThan(0);
       expect(s.weightSetId).toBe(w.id);
     }
+  });
+});
+
+describe("buckets enforce rentability, not just rankability (buckets-1.1.0)", () => {
+  // Regression: Exp-2 control services (lawn mowing, house cleaning) cleared
+  // LOW-HANGING on volume + weak SERP while the renter's gross profit from our
+  // leads was below the $300/mo minimum rent. An unrentable asset is not deployable.
+  const cheapHighVolume: Ev = {
+    ...weakSerp, vol: 1600, ticketAvg: 60, margin: 0.5,   // ~$3 gross profit per lead
+    dirs: 3, inner: 5, mapReviews: 15, contentWords: 250, domainAge: 2,
+  };
+  test("high-volume low-ticket service is not bucketed as deployable", () => {
+    const s = scoreOpportunity("lawn", cheapHighVolume);
+    const b = bucketOf(s, cheapHighVolume);
+    expect(s.dims.A.score!).toBeGreaterThanOrEqual(60); // SERP genuinely is beatable
+    expect(s.dims.F.score!).toBeLessThan(34);           // but the flow is not rentable
+    expect(b.bucket).toBeNull();
+    expect(b.why).toMatch(/not rentable/);
+  });
+  test("the floor rejects only unrentable economics, not the SERP itself", () => {
+    // Identical SERP, real ticket value: still bucketed (here the rare weak-SERP +
+    // strong-value combination is exactly what UNICORN exists to catch).
+    const ev: Ev = { ...cheapHighVolume, ticketAvg: 5000, margin: 0.5 };
+    const b = bucketOf(scoreOpportunity("ok", ev), ev);
+    expect(b.bucket).not.toBeNull();
+    expect(b.why).not.toMatch(/not rentable/);
+  });
+  test("unknown demand is reported as unknown, never as sub-floor", () => {
+    const ev: Ev = { ...weakSerp, vol: null };
+    expect(bucketOf(scoreOpportunity("u", ev), ev).why).toMatch(/UNKNOWN/);
   });
 });

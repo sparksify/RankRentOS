@@ -1,0 +1,244 @@
+{
+ "specVersion": "asset-spec-1.0.0",
+ "generatedAt": "2026-08-06T07:06:40.000Z",
+ "assetId": "water-damage|Chandler|AZ",
+ "opportunityId": "water-damage|Chandler|AZ",
+ "experiment": "experiment-2",
+ "identity": {
+  "service": "Water Damage Restoration",
+  "serviceSlug": "water-damage",
+  "category": "emergency",
+  "city": "Chandler",
+  "state": "AZ",
+  "population": 249146,
+  "medianIncome": 83668,
+  "stratum": "large|upper-mid",
+  "opportunityType": "general"
+ },
+ "domain": {
+  "recommended": "waterdamagerestorationchandler.com",
+  "status": "taken",
+  "note": "availability decays; re-check before purchase. NOT purchased by RankRentOS."
+ },
+ "keywordStrategy": {
+  "primaryKeyword": "water damage restoration Chandler",
+  "exactLocalVolume": 210,
+  "volumeState": "measured",
+  "cpc": 10.27,
+  "demandAmbiguous": false,
+  "demandAttributionRisk": true,
+  "ambiguityNote": "city name \"Chandler\" is shared with other US cities, so 210/mo is an UPPER BOUND on locally attributable demand. SERP/operator evidence IS correctly local (SerpAPI was queried with location \"Chandler, AZ\"); only the volume figure is at risk.",
+  "geoScopedUniverse": {
+   "collected": true,
+   "version": "universe-geo-1.0.0",
+   "attributableKeywords": 1,
+   "attributableVolume": 210,
+   "complete": true,
+   "unmeasuredMembers": 0,
+   "nationalVolumeExcluded": 9190,
+   "supportingKeywords": [
+    {
+     "keyword": "water damage restoration chandler",
+     "volume": 210,
+     "cpc": 10.27
+    }
+   ]
+  }
+ },
+ "serpContext": {
+  "mapPackSize": 3,
+  "mapPackAvgReviews": 87,
+  "mapListingsWithoutWebsite": 0,
+  "directoriesInTop3": 1,
+  "innerPagesInTop5": 4,
+  "franchisesInTop3": 0,
+  "outOfTownInTop3": 0,
+  "titlesMissingCity": 0,
+  "adCount": 0,
+  "contentDepthBarWords": 1575,
+  "competitorAvgDomainAgeYears": 15.4,
+  "depthEvidence": {
+   "pagesCrawled": 1,
+   "domainsAged": 2,
+   "competitorsConsidered": 3
+  }
+ },
+ "renterContext": {
+  "relevantOperators": 11,
+  "viableRenters": 3,
+  "strongerOperators": 2,
+  "medianReviews": 82,
+  "websiteAdoptionPct": 27,
+  "advertisers": 0,
+  "concentration": "concentrated"
+ },
+ "economicsContext": {
+  "ticketAvg": 4500,
+  "margin": 0.45,
+  "evidenceType": "HUMAN_ASSUMED",
+  "warning": "ticket and margin are HUMAN_ASSUMED and drive D and F. Live outcomes must replace them."
+ },
+ "scores": {
+  "modelVersion": "ai-v1.0.0",
+  "weightSet": "w-balanced-v1.1",
+  "bucketsVersion": "buckets-1.1.0",
+  "composite": 62,
+  "confidence": 80,
+  "evidenceCompleteness": 100,
+  "A": {
+   "score": 64,
+   "version": "A-1.0.0",
+   "confidence": 0.75,
+   "evidenceTypes": [
+    "DERIVED"
+   ],
+   "missing": []
+  },
+  "B": {
+   "score": 62,
+   "version": "B-1.0.0",
+   "confidence": 0.6,
+   "evidenceTypes": [
+    "OBSERVED",
+    "DERIVED"
+   ],
+   "missing": [
+    "kw.universe.volume (geo-scoped)"
+   ]
+  },
+  "C": {
+   "score": 82,
+   "version": "C-1.0.0",
+   "confidence": 0.85,
+   "evidenceTypes": [
+    "OBSERVED",
+    "DERIVED"
+   ],
+   "missing": []
+  },
+  "D": {
+   "score": 64,
+   "version": "D-1.1.0",
+   "confidence": 0.4,
+   "evidenceTypes": [
+    "HUMAN_ASSUMED",
+    "OBSERVED"
+   ],
+   "missing": [
+    "econ.cpl.live",
+    "econ.close.rate.live",
+    "econ.leadrate.live"
+   ]
+  },
+  "E": {
+   "score": 64,
+   "version": "E-1.0.0",
+   "confidence": 1,
+   "evidenceTypes": [
+    "DERIVED"
+   ],
+   "missing": []
+  },
+  "F": {
+   "score": 50,
+   "version": "F-1.1.0",
+   "confidence": 0.53,
+   "evidenceTypes": [
+    "OBSERVED",
+    "HUMAN_ASSUMED"
+   ],
+   "missing": []
+  },
+  "G": {
+   "score": 45,
+   "version": "G-1.0.0",
+   "confidence": 0.35,
+   "evidenceTypes": [
+    "DERIVED"
+   ],
+   "missing": [
+    "asset.indexed.days",
+    "asset.firstimpression.days",
+    "asset.firstrank.days"
+   ]
+  },
+  "H": {
+   "score": 61,
+   "version": "H-1.0.0",
+   "confidence": 0.675,
+   "evidenceTypes": [
+    "DERIVED"
+   ],
+   "missing": []
+  },
+  "I": {
+   "score": 80,
+   "version": "I-1.0.0",
+   "confidence": 1,
+   "evidenceTypes": [
+    "DERIVED"
+   ],
+   "missing": []
+  },
+  "sensitivity": {
+   "byWeightSet": {
+    "w-balanced-v1.1": 62,
+    "w-rankability": 61,
+    "w-economics": 63,
+    "w-asymmetry": 61,
+    "w-renter": 62
+   },
+   "bestRank": 9,
+   "worstRank": 25,
+   "rankSpread": 16
+  },
+  "assumptionDependentDimensions": [
+   "D",
+   "F"
+  ],
+  "prospectiveDimensions": [
+   "G"
+  ]
+ },
+ "selection": {
+  "bucket": "LOW-HANGING",
+  "tier": "WAVE-1",
+  "role": "EXPERIMENT",
+  "whySelected": "LOW-HANGING, composite 62, unambiguous demand, viable renter present",
+  "hypothesisUnderTest": "Exp-2 found small markets more rankable (meanA 57 vs 47). This large market (pop 249146) tests whether metro size genuinely predicts ranking difficulty."
+ },
+ "expectationsBaseline": {
+  "predictedRankability": 64,
+  "predictedTimeToSignalDays": 117,
+  "predictedMonthlyRenterGrossProfit": 1276,
+  "note": "predictions are the falsifiable claims this deployment tests"
+ },
+ "measurementRequirements": [
+  "deployedAt",
+  "indexedAt",
+  "firstImpressionAt",
+  "firstClickAt",
+  "firstLeadAt",
+  "firstRevenueAt",
+  "dailyImpressions",
+  "dailyClicks",
+  "rankingsByKeyword",
+  "leadsTotal",
+  "leadsByChannel(call|form)",
+  "qualifiedLeads",
+  "renterOutreachCount",
+  "renterResponses",
+  "renterAcquiredAt",
+  "monthlyRent",
+  "revenue",
+  "operatingCost"
+ ],
+ "provenance": {
+  "experiment": "experiment-2",
+  "rawSerp": "out/experiment-2/raw/serp-water_damage_Chandler_AZ.json",
+  "demandSource": "dataforseo:google_ads/search_volume",
+  "serpSource": "serpapi",
+  "depthSource": "crawl+rdap:depth-v1",
+  "asOf": 1786000000000
+ }
+}

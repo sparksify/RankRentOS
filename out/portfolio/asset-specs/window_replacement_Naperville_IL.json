@@ -1,0 +1,264 @@
+{
+ "specVersion": "asset-spec-1.0.0",
+ "generatedAt": "2026-08-06T07:06:40.000Z",
+ "assetId": "window-replacement|Naperville|IL",
+ "opportunityId": "window-replacement|Naperville|IL",
+ "experiment": "experiment-3",
+ "identity": {
+  "service": "Window Replacement",
+  "serviceSlug": "window-replacement",
+  "category": "high-ticket-home",
+  "city": "Naperville",
+  "state": "IL",
+  "population": 144864,
+  "medianIncome": 97076,
+  "stratum": "mid|upper-mid",
+  "opportunityType": "general"
+ },
+ "domain": {
+  "recommended": "windowreplacementnaperville.com",
+  "status": "taken",
+  "note": "availability decays; re-check before purchase. NOT purchased by RankRentOS."
+ },
+ "keywordStrategy": {
+  "primaryKeyword": "window replacement Naperville",
+  "exactLocalVolume": 480,
+  "volumeState": "measured",
+  "cpc": 12.71,
+  "demandAmbiguous": false,
+  "demandAttributionRisk": true,
+  "ambiguityNote": "city name \"Naperville\" is shared with other US cities, so 480/mo is an UPPER BOUND on locally attributable demand. SERP/operator evidence IS correctly local (SerpAPI was queried with location \"Naperville, IL\"); only the volume figure is at risk.",
+  "geoScopedUniverse": {
+   "collected": true,
+   "version": "universe-geo-1.0.0",
+   "attributableKeywords": 5,
+   "attributableVolume": 960,
+   "complete": true,
+   "unmeasuredMembers": 0,
+   "nationalVolumeExcluded": 1300,
+   "supportingKeywords": [
+    {
+     "keyword": "window replacement naperville",
+     "volume": 480,
+     "cpc": 12.71
+    },
+    {
+     "keyword": "naperville windows and doors",
+     "volume": 320,
+     "cpc": 5.37
+    },
+    {
+     "keyword": "next door and window naperville",
+     "volume": 110,
+     "cpc": 12.47
+    },
+    {
+     "keyword": "pella windows naperville",
+     "volume": 40,
+     "cpc": 98.95
+    },
+    {
+     "keyword": "marvin windows naperville",
+     "volume": 10,
+     "cpc": 11.77
+    }
+   ]
+  }
+ },
+ "serpContext": {
+  "mapPackSize": 3,
+  "mapPackAvgReviews": 174,
+  "mapListingsWithoutWebsite": 0,
+  "directoriesInTop3": 2,
+  "innerPagesInTop5": 1,
+  "franchisesInTop3": 0,
+  "outOfTownInTop3": 0,
+  "titlesMissingCity": 1,
+  "adCount": 0,
+  "contentDepthBarWords": 1949,
+  "competitorAvgDomainAgeYears": 21.9,
+  "depthEvidence": {
+   "pagesCrawled": 3,
+   "domainsAged": 3,
+   "competitorsConsidered": 3
+  }
+ },
+ "renterContext": {
+  "relevantOperators": 8,
+  "viableRenters": 3,
+  "strongerOperators": 2,
+  "medianReviews": 66,
+  "websiteAdoptionPct": 38,
+  "advertisers": 0,
+  "concentration": "concentrated"
+ },
+ "economicsContext": {
+  "ticketAvg": 12000,
+  "margin": 0.35,
+  "evidenceType": "HUMAN_ASSUMED",
+  "warning": "ticket and margin are HUMAN_ASSUMED and drive D and F. Live outcomes must replace them."
+ },
+ "scores": {
+  "modelVersion": "ai-v1.0.0",
+  "weightSet": "w-balanced-v1.1",
+  "bucketsVersion": "buckets-1.1.0",
+  "composite": 69,
+  "confidence": 80,
+  "evidenceCompleteness": 100,
+  "A": {
+   "score": 59,
+   "version": "A-1.0.0",
+   "confidence": 1,
+   "evidenceTypes": [
+    "DERIVED"
+   ],
+   "missing": []
+  },
+  "B": {
+   "score": 78,
+   "version": "B-1.0.0",
+   "confidence": 0.6,
+   "evidenceTypes": [
+    "OBSERVED",
+    "DERIVED"
+   ],
+   "missing": [
+    "kw.universe.volume (geo-scoped)"
+   ]
+  },
+  "C": {
+   "score": 82,
+   "version": "C-1.0.0",
+   "confidence": 0.85,
+   "evidenceTypes": [
+    "OBSERVED",
+    "DERIVED"
+   ],
+   "missing": []
+  },
+  "D": {
+   "score": 78,
+   "version": "D-1.1.0",
+   "confidence": 0.4,
+   "evidenceTypes": [
+    "HUMAN_ASSUMED",
+    "OBSERVED"
+   ],
+   "missing": [
+    "econ.cpl.live",
+    "econ.close.rate.live",
+    "econ.leadrate.live"
+   ]
+  },
+  "E": {
+   "score": 73,
+   "version": "E-1.0.0",
+   "confidence": 1,
+   "evidenceTypes": [
+    "DERIVED"
+   ],
+   "missing": []
+  },
+  "F": {
+   "score": 66,
+   "version": "F-1.1.0",
+   "confidence": 0.53,
+   "evidenceTypes": [
+    "OBSERVED",
+    "HUMAN_ASSUMED"
+   ],
+   "missing": []
+  },
+  "G": {
+   "score": 41,
+   "version": "G-1.0.0",
+   "confidence": 0.35,
+   "evidenceTypes": [
+    "DERIVED"
+   ],
+   "missing": [
+    "asset.indexed.days",
+    "asset.firstimpression.days",
+    "asset.firstrank.days"
+   ]
+  },
+  "H": {
+   "score": 68,
+   "version": "H-1.0.0",
+   "confidence": 0.8,
+   "evidenceTypes": [
+    "DERIVED"
+   ],
+   "missing": []
+  },
+  "I": {
+   "score": 80,
+   "version": "I-1.0.0",
+   "confidence": 1,
+   "evidenceTypes": [
+    "DERIVED"
+   ],
+   "missing": []
+  },
+  "sensitivity": {
+   "byWeightSet": {
+    "w-balanced-v1.1": 69,
+    "w-rankability": 65,
+    "w-economics": 72,
+    "w-asymmetry": 69,
+    "w-renter": 70
+   },
+   "bestRank": 8,
+   "worstRank": 13,
+   "rankSpread": 5
+  },
+  "assumptionDependentDimensions": [
+   "D",
+   "F"
+  ],
+  "prospectiveDimensions": [
+   "G"
+  ]
+ },
+ "selection": {
+  "bucket": "UNICORN",
+  "tier": "WAVE-1",
+  "role": "INVESTMENT",
+  "whySelected": "UNICORN, composite 69, unambiguous demand, viable renter present",
+  "hypothesisUnderTest": "A=59 predicts this SERP is winnable; F=66 predicts the lead flow is worth renting. Tests whether composite 69 converts to real rankings and revenue."
+ },
+ "expectationsBaseline": {
+  "predictedRankability": 59,
+  "predictedTimeToSignalDays": 123,
+  "predictedMonthlyRenterGrossProfit": 6048,
+  "note": "predictions are the falsifiable claims this deployment tests"
+ },
+ "measurementRequirements": [
+  "deployedAt",
+  "indexedAt",
+  "firstImpressionAt",
+  "firstClickAt",
+  "firstLeadAt",
+  "firstRevenueAt",
+  "dailyImpressions",
+  "dailyClicks",
+  "rankingsByKeyword",
+  "leadsTotal",
+  "leadsByChannel(call|form)",
+  "qualifiedLeads",
+  "renterOutreachCount",
+  "renterResponses",
+  "renterAcquiredAt",
+  "monthlyRent",
+  "revenue",
+  "operatingCost"
+ ],
+ "provenance": {
+  "experiment": "experiment-3",
+  "rawSerp": "out/experiment-3/raw/serp-window_replacement_Naperville_IL.json",
+  "demandSource": "dataforseo:google_ads/search_volume",
+  "serpSource": "serpapi",
+  "depthSource": "crawl+rdap:depth-v1",
+  "asOf": 1786000000000
+ }
+}

@@ -1,0 +1,238 @@
+{
+ "specVersion": "asset-spec-1.0.0",
+ "generatedAt": "2026-08-06T07:06:40.000Z",
+ "assetId": "metal-roofing|Rochester|MN",
+ "opportunityId": "metal-roofing|Rochester|MN",
+ "experiment": "experiment-3",
+ "identity": {
+  "service": "Metal Roofing",
+  "serviceSlug": "metal-roofing",
+  "category": "high-ticket-home",
+  "city": "Rochester",
+  "state": "MN",
+  "population": 110742,
+  "medianIncome": 88032,
+  "stratum": "mid|upper-mid",
+  "opportunityType": "general"
+ },
+ "domain": {
+  "recommended": "metalroofingrochester.com",
+  "status": "available-at-research-time",
+  "note": "availability decays; re-check before purchase. NOT purchased by RankRentOS."
+ },
+ "keywordStrategy": {
+  "primaryKeyword": "metal roofing Rochester",
+  "exactLocalVolume": 110,
+  "volumeState": "measured",
+  "cpc": 24.87,
+  "demandAmbiguous": false,
+  "demandAttributionRisk": true,
+  "ambiguityNote": "city name \"Rochester\" is shared with other US cities, so 110/mo is an UPPER BOUND on locally attributable demand. SERP/operator evidence IS correctly local (SerpAPI was queried with location \"Rochester, MN\"); only the volume figure is at risk.",
+  "geoScopedUniverse": {
+   "collected": true,
+   "version": "universe-geo-1.0.0",
+   "attributableKeywords": 0,
+   "attributableVolume": 0,
+   "complete": false,
+   "unmeasuredMembers": 0,
+   "nationalVolumeExcluded": 0,
+   "supportingKeywords": []
+  }
+ },
+ "serpContext": {
+  "mapPackSize": 3,
+  "mapPackAvgReviews": 43,
+  "mapListingsWithoutWebsite": 1,
+  "directoriesInTop3": 1,
+  "innerPagesInTop5": 4,
+  "franchisesInTop3": 0,
+  "outOfTownInTop3": 0,
+  "titlesMissingCity": 0,
+  "adCount": 0,
+  "contentDepthBarWords": 944,
+  "competitorAvgDomainAgeYears": 18.1,
+  "depthEvidence": {
+   "pagesCrawled": 3,
+   "domainsAged": 3,
+   "competitorsConsidered": 3
+  }
+ },
+ "renterContext": {
+  "relevantOperators": 10,
+  "viableRenters": 2,
+  "strongerOperators": 1,
+  "medianReviews": 9,
+  "websiteAdoptionPct": 20,
+  "advertisers": 0,
+  "concentration": "concentrated"
+ },
+ "economicsContext": {
+  "ticketAvg": 25000,
+  "margin": 0.35,
+  "evidenceType": "HUMAN_ASSUMED",
+  "warning": "ticket and margin are HUMAN_ASSUMED and drive D and F. Live outcomes must replace them."
+ },
+ "scores": {
+  "modelVersion": "ai-v1.0.0",
+  "weightSet": "w-balanced-v1.1",
+  "bucketsVersion": "buckets-1.1.0",
+  "composite": 61,
+  "confidence": 80,
+  "evidenceCompleteness": 100,
+  "A": {
+   "score": 76,
+   "version": "A-1.0.0",
+   "confidence": 0.875,
+   "evidenceTypes": [
+    "DERIVED"
+   ],
+   "missing": []
+  },
+  "B": {
+   "score": 48,
+   "version": "B-1.0.0",
+   "confidence": 0.6,
+   "evidenceTypes": [
+    "OBSERVED",
+    "DERIVED"
+   ],
+   "missing": [
+    "kw.universe.volume (geo-scoped)"
+   ]
+  },
+  "C": {
+   "score": 82,
+   "version": "C-1.0.0",
+   "confidence": 0.85,
+   "evidenceTypes": [
+    "OBSERVED",
+    "DERIVED"
+   ],
+   "missing": []
+  },
+  "D": {
+   "score": 90,
+   "version": "D-1.1.0",
+   "confidence": 0.4,
+   "evidenceTypes": [
+    "HUMAN_ASSUMED",
+    "OBSERVED"
+   ],
+   "missing": [
+    "econ.cpl.live",
+    "econ.close.rate.live",
+    "econ.leadrate.live"
+   ]
+  },
+  "E": {
+   "score": 42,
+   "version": "E-1.0.0",
+   "confidence": 1,
+   "evidenceTypes": [
+    "DERIVED"
+   ],
+   "missing": []
+  },
+  "F": {
+   "score": 50,
+   "version": "F-1.1.0",
+   "confidence": 0.53,
+   "evidenceTypes": [
+    "OBSERVED",
+    "HUMAN_ASSUMED"
+   ],
+   "missing": []
+  },
+  "G": {
+   "score": 58,
+   "version": "G-1.0.0",
+   "confidence": 0.35,
+   "evidenceTypes": [
+    "DERIVED"
+   ],
+   "missing": [
+    "asset.indexed.days",
+    "asset.firstimpression.days",
+    "asset.firstrank.days"
+   ]
+  },
+  "H": {
+   "score": 79,
+   "version": "H-1.0.0",
+   "confidence": 0.7375,
+   "evidenceTypes": [
+    "DERIVED"
+   ],
+   "missing": []
+  },
+  "I": {
+   "score": 80,
+   "version": "I-1.0.0",
+   "confidence": 1,
+   "evidenceTypes": [
+    "DERIVED"
+   ],
+   "missing": []
+  },
+  "sensitivity": {
+   "byWeightSet": {
+    "w-balanced-v1.1": 61,
+    "w-rankability": 65,
+    "w-economics": 63,
+    "w-asymmetry": 66,
+    "w-renter": 60
+   },
+   "bestRank": 16,
+   "worstRank": 34,
+   "rankSpread": 18
+  },
+  "assumptionDependentDimensions": [
+   "D",
+   "F"
+  ],
+  "prospectiveDimensions": [
+   "G"
+  ]
+ },
+ "selection": {
+  "bucket": "LOW-HANGING",
+  "tier": "WAVE-1",
+  "role": "EXPERIMENT",
+  "whySelected": "LOW-HANGING, composite 61, unambiguous demand, viable renter present",
+  "hypothesisUnderTest": "Does exact-match domain availability matter? metalroofingrochester.com is registrable; paired against non-EMD assets to isolate the EMD effect on ranking speed."
+ },
+ "expectationsBaseline": {
+  "predictedRankability": 76,
+  "predictedTimeToSignalDays": 99,
+  "predictedMonthlyRenterGrossProfit": 2888,
+  "note": "predictions are the falsifiable claims this deployment tests"
+ },
+ "measurementRequirements": [
+  "deployedAt",
+  "indexedAt",
+  "firstImpressionAt",
+  "firstClickAt",
+  "firstLeadAt",
+  "firstRevenueAt",
+  "dailyImpressions",
+  "dailyClicks",
+  "rankingsByKeyword",
+  "leadsTotal",
+  "leadsByChannel(call|form)",
+  "qualifiedLeads",
+  "renterOutreachCount",
+  "renterResponses",
+  "renterAcquiredAt",
+  "monthlyRent",
+  "revenue",
+  "operatingCost"
+ ],
+ "provenance": {
+  "experiment": "experiment-3",
+  "rawSerp": "out/experiment-3/raw/serp-metal_roofing_Rochester_MN.json",
+  "demandSource": "dataforseo:google_ads/search_volume",
+  "serpSource": "serpapi",
+  "depthSource": "crawl+rdap:depth-v1",
+  "asOf": 1786000000000
+ }
+}

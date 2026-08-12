@@ -1,0 +1,249 @@
+{
+ "specVersion": "asset-spec-1.0.0",
+ "generatedAt": "2026-08-06T07:06:40.000Z",
+ "assetId": "mold-remediation|Plano|TX",
+ "opportunityId": "mold-remediation|Plano|TX",
+ "experiment": "experiment-2",
+ "identity": {
+  "service": "Mold Remediation",
+  "serviceSlug": "mold-remediation",
+  "category": "fragmented-local",
+  "city": "Plano",
+  "state": "TX",
+  "population": 274409,
+  "medianIncome": 113943,
+  "stratum": "large|affluent",
+  "opportunityType": "general"
+ },
+ "domain": {
+  "recommended": "moldremediationplano.com",
+  "status": "available-at-research-time",
+  "note": "availability decays; re-check before purchase. NOT purchased by RankRentOS."
+ },
+ "keywordStrategy": {
+  "primaryKeyword": "mold remediation Plano",
+  "exactLocalVolume": 110,
+  "volumeState": "measured",
+  "cpc": 12.55,
+  "demandAmbiguous": false,
+  "demandAttributionRisk": true,
+  "ambiguityNote": "city name \"Plano\" is shared with other US cities, so 110/mo is an UPPER BOUND on locally attributable demand. SERP/operator evidence IS correctly local (SerpAPI was queried with location \"Plano, TX\"); only the volume figure is at risk.",
+  "geoScopedUniverse": {
+   "collected": true,
+   "version": "universe-geo-1.0.0",
+   "attributableKeywords": 2,
+   "attributableVolume": 150,
+   "complete": true,
+   "unmeasuredMembers": 0,
+   "nationalVolumeExcluded": 250,
+   "supportingKeywords": [
+    {
+     "keyword": "mold remediation plano",
+     "volume": 110,
+     "cpc": 12.55
+    },
+    {
+     "keyword": "mold inspection plano",
+     "volume": 40,
+     "cpc": 13.14
+    }
+   ]
+  }
+ },
+ "serpContext": {
+  "mapPackSize": 3,
+  "mapPackAvgReviews": 52,
+  "mapListingsWithoutWebsite": 0,
+  "directoriesInTop3": 2,
+  "innerPagesInTop5": 3,
+  "franchisesInTop3": 1,
+  "outOfTownInTop3": 1,
+  "titlesMissingCity": 1,
+  "adCount": 0,
+  "contentDepthBarWords": 1729,
+  "competitorAvgDomainAgeYears": 24.2,
+  "depthEvidence": {
+   "pagesCrawled": 3,
+   "domainsAged": 3,
+   "competitorsConsidered": 3
+  }
+ },
+ "renterContext": {
+  "relevantOperators": 10,
+  "viableRenters": 2,
+  "strongerOperators": 1,
+  "medianReviews": 39,
+  "websiteAdoptionPct": 30,
+  "advertisers": 0,
+  "concentration": "concentrated"
+ },
+ "economicsContext": {
+  "ticketAvg": 6000,
+  "margin": 0.5,
+  "evidenceType": "HUMAN_ASSUMED",
+  "warning": "ticket and margin are HUMAN_ASSUMED and drive D and F. Live outcomes must replace them."
+ },
+ "scores": {
+  "modelVersion": "ai-v1.0.0",
+  "weightSet": "w-balanced-v1.1",
+  "bucketsVersion": "buckets-1.1.0",
+  "composite": 58,
+  "confidence": 80,
+  "evidenceCompleteness": 100,
+  "A": {
+   "score": 69,
+   "version": "A-1.0.0",
+   "confidence": 1,
+   "evidenceTypes": [
+    "DERIVED"
+   ],
+   "missing": []
+  },
+  "B": {
+   "score": 48,
+   "version": "B-1.0.0",
+   "confidence": 0.6,
+   "evidenceTypes": [
+    "OBSERVED",
+    "DERIVED"
+   ],
+   "missing": [
+    "kw.universe.volume (geo-scoped)"
+   ]
+  },
+  "C": {
+   "score": 82,
+   "version": "C-1.0.0",
+   "confidence": 0.85,
+   "evidenceTypes": [
+    "OBSERVED",
+    "DERIVED"
+   ],
+   "missing": []
+  },
+  "D": {
+   "score": 78,
+   "version": "D-1.1.0",
+   "confidence": 0.4,
+   "evidenceTypes": [
+    "HUMAN_ASSUMED",
+    "OBSERVED"
+   ],
+   "missing": [
+    "econ.cpl.live",
+    "econ.close.rate.live",
+    "econ.leadrate.live"
+   ]
+  },
+  "E": {
+   "score": 53,
+   "version": "E-1.0.0",
+   "confidence": 1,
+   "evidenceTypes": [
+    "DERIVED"
+   ],
+   "missing": []
+  },
+  "F": {
+   "score": 34,
+   "version": "F-1.1.0",
+   "confidence": 0.53,
+   "evidenceTypes": [
+    "OBSERVED",
+    "HUMAN_ASSUMED"
+   ],
+   "missing": []
+  },
+  "G": {
+   "score": 53,
+   "version": "G-1.0.0",
+   "confidence": 0.35,
+   "evidenceTypes": [
+    "DERIVED"
+   ],
+   "missing": [
+    "asset.indexed.days",
+    "asset.firstimpression.days",
+    "asset.firstrank.days"
+   ]
+  },
+  "H": {
+   "score": 71,
+   "version": "H-1.0.0",
+   "confidence": 0.8,
+   "evidenceTypes": [
+    "DERIVED"
+   ],
+   "missing": []
+  },
+  "I": {
+   "score": 80,
+   "version": "I-1.0.0",
+   "confidence": 1,
+   "evidenceTypes": [
+    "DERIVED"
+   ],
+   "missing": []
+  },
+  "sensitivity": {
+   "byWeightSet": {
+    "w-balanced-v1.1": 58,
+    "w-rankability": 60,
+    "w-economics": 60,
+    "w-asymmetry": 61,
+    "w-renter": 58
+   },
+   "bestRank": 10,
+   "worstRank": 56,
+   "rankSpread": 46
+  },
+  "assumptionDependentDimensions": [
+   "D",
+   "F"
+  ],
+  "prospectiveDimensions": [
+   "G"
+  ]
+ },
+ "selection": {
+  "bucket": "LOW-HANGING",
+  "tier": "WAVE-1",
+  "role": "EXPERIMENT",
+  "whySelected": "bucketed LOW-HANGING but composite 58 is below the Tier-1 threshold of 60",
+  "hypothesisUnderTest": "Does exact-match domain availability matter? moldremediationplano.com is registrable; paired against non-EMD assets to isolate the EMD effect on ranking speed."
+ },
+ "expectationsBaseline": {
+  "predictedRankability": 69,
+  "predictedTimeToSignalDays": 106,
+  "predictedMonthlyRenterGrossProfit": 990,
+  "note": "predictions are the falsifiable claims this deployment tests"
+ },
+ "measurementRequirements": [
+  "deployedAt",
+  "indexedAt",
+  "firstImpressionAt",
+  "firstClickAt",
+  "firstLeadAt",
+  "firstRevenueAt",
+  "dailyImpressions",
+  "dailyClicks",
+  "rankingsByKeyword",
+  "leadsTotal",
+  "leadsByChannel(call|form)",
+  "qualifiedLeads",
+  "renterOutreachCount",
+  "renterResponses",
+  "renterAcquiredAt",
+  "monthlyRent",
+  "revenue",
+  "operatingCost"
+ ],
+ "provenance": {
+  "experiment": "experiment-2",
+  "rawSerp": "out/experiment-2/raw/serp-mold_remediation_Plano_TX.json",
+  "demandSource": "dataforseo:google_ads/search_volume",
+  "serpSource": "serpapi",
+  "depthSource": "crawl+rdap:depth-v1",
+  "asOf": 1786000000000
+ }
+}

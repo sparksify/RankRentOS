@@ -17,9 +17,9 @@ export interface WeightSet {
  *  BECAUSE it is assumption-dependent in v1 (the historical Rentability-First v2
  *  model put 25 there on live-economics reasoning we cannot yet support). */
 export const WEIGHTS_DEFAULT: WeightSet = {
-  id: "w-balanced-v1", label: "Balanced v1 (default)",
-  rationale: "value+renters+demand lead; A is the entry gate; D down-weighted while assumption-dependent",
-  A: 0.18, B: 0.18, C: 0.10, D: 0.08, E: 0.16, F: 0.16, G: 0.06, H: 0.08,
+  id: "w-balanced-v1.1", label: "Balanced v1.1 (default)",
+  rationale: "D/F audit: F consumes D's per-lead value, so D's independent weight is reduced (0.08->0.05) and moved to OBSERVED dimensions B/E. Directionally conservative: lowers high-ticket/no-volume candidates, does not create winners.",
+  A: 0.18, B: 0.19, C: 0.10, D: 0.05, E: 0.17, F: 0.16, G: 0.06, H: 0.09,
 };
 export const WEIGHT_SETS: WeightSet[] = [
   WEIGHTS_DEFAULT,
@@ -77,18 +77,33 @@ export function scoreOpportunity(id: string, e: Ev, w: WeightSet = WEIGHTS_DEFAU
 }
 
 // ---------- Portfolio bucketing (quality gates beat quotas) ----------
+/** Bump when a gate changes. 1.1.0 = LOW-HANGING gained an economic (rentability) floor. */
+export const BUCKETS_VERSION = "buckets-1.1.0";
 export type Bucket = "LOW-HANGING" | "HIGH-VALUE" | "UNICORN" | null;
 export function bucketOf(s: ScoreResult, e: Ev): { bucket: Bucket; why: string } {
   const d = s.dims;
   const val = (k: keyof typeof d) => d[k].score ?? 0;
   const hasBuyer = (e.opViable ?? 0) >= 1;
-  const realDemand = (e.vol ?? 0) >= 100;
-  if (!realDemand || !hasBuyer) return { bucket: null, why: !realDemand ? "below 100/mo measured demand floor" : "no viable renter identified" };
+  // Unknown demand is not sub-floor demand: both stay unbucketed, but they are
+  // different decisions — unknown is re-researchable, sub-floor is rejected.
+  const demandKnown = typeof e.vol === "number";
+  const realDemand = demandKnown && e.vol! >= 100;
+  if (!demandKnown) return { bucket: null, why: "demand UNKNOWN — not measured, requires research (not a rejection)" };
+  if (!realDemand) return { bucket: null, why: "below 100/mo measured demand floor" };
+  if (!hasBuyer) return { bucket: null, why: "no viable renter identified" };
   if (val("H") >= 60 && val("A") >= 55 && val("F") >= 55)
     return { bucket: "UNICORN", why: "unusual asymmetry: weak SERP with strong realizable value and a credible buyer" };
   if (val("F") >= 60 && val("E") >= 50 && val("A") >= 40)
     return { bucket: "HIGH-VALUE", why: "strong economics and renter depth with beatable competition" };
-  if (val("A") >= 60 && val("B") >= 45 && val("E") >= 40)
-    return { bucket: "LOW-HANGING", why: "weak competition with sufficient demand and an available renter" };
+  // Economic floor (buckets-1.1.0). A rank-and-rent asset must be RENTABLE: if the
+  // lead flow we could route is worth less to the renter than the $300/mo minimum
+  // rent the system already encodes, no rational renter pays for it. F >= 34 is the
+  // band boundary for >= $300/mo realizable renter gross profit. Without this floor,
+  // high-volume/low-ticket services (lawn mowing at ~$3/lead) qualified as deployable.
+  if (val("A") >= 60 && val("B") >= 45 && val("E") >= 40) {
+    if (val("F") < 34)
+      return { bucket: null, why: "beatable SERP but realizable renter gross profit is below the $300/mo minimum rent — not rentable" };
+    return { bucket: "LOW-HANGING", why: "weak competition with sufficient demand, an available renter, and rentable economics" };
+  }
   return { bucket: null, why: "does not clear any bucket's quality gate" };
 }

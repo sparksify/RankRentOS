@@ -55,3 +55,76 @@ versioned when implemented):
 
 Nothing further is implemented until both systems agree to activate this
 contract.
+
+---
+
+# PART 2 — OUTCOME FEEDBACK CONTRACT (v1, definition only)
+
+Added 2026-08-12 alongside the first Wave-1 Asset Specifications
+(`asset-spec-1.0.0`, emitted to `out/portfolio/asset-specs/`). The Deployment
+Engine is still NOT built. This section defines only what it must eventually
+return, so that live results can replace the assumptions currently carrying
+Dimensions D, F and G.
+
+## Why this exists
+
+Three dimensions are not currently measured:
+
+| Dim | Today | Replaced by |
+|---|---|---|
+| D — Lead economics | HUMAN_ASSUMED ticket x margin x 10% close | `leadValueActual`, `closeRateActual`, `cplActual` |
+| F — Asset value | derived from D x benchmark funnel rates (25% CTR, 12% contact) | `leadsTotal`, `revenue`, `monthlyRent` |
+| G — Time-to-signal | PROSPECTIVE proxy from A; never observed | `indexedAt`, `firstImpressionAt`, `firstLeadAt` |
+
+Until these arrive, every economic number in an Asset Specification is a
+falsifiable prediction, not a measurement.
+
+## Transport
+
+Outcomes enter RankRentOS as ORDINARY OBSERVATIONS through the existing
+append-only layer. No new write path, no schema change, no mutation of prior
+evidence. Each payload carries `assetId` (matching `AssetSpecification.assetId`),
+`observedAt`, and a `source` of `deployment-engine:<version>`.
+
+Rules that bind the feedback path, identical to all other evidence:
+1. Append-only. A corrected value supersedes via `superseded_by`; nothing is edited.
+2. UNKNOWN is never zero. "No leads yet" (`leadsTotal: 0`) and "not measured"
+   (`leadsTotal: null`) are different facts and must not be conflated.
+3. Every metric must exist in the metric registry before it can be written.
+4. `evidenceType: "OBSERVED"` — these are the first true observations of outcome.
+
+## Event timestamps (one-time, nullable until they occur)
+
+`deployedAt`, `indexedAt`, `firstImpressionAt`, `firstClickAt`, `firstLeadAt`,
+`firstRevenueAt`, `renterAcquiredAt`
+
+Null means "has not happened yet OR not measured" — the engine MUST distinguish
+these with an accompanying `measurementStartedAt`.
+
+## Time series (daily grain, per asset)
+
+`impressions`, `clicks`, `averagePosition`, `rankingsByKeyword[{keyword, position}]`,
+`leadsTotal`, `leadsByChannel{call, form}`, `qualifiedLeads`, `revenue`, `operatingCost`
+
+## Renter funnel (the E and F validators)
+
+`renterOutreachCount`, `renterResponses`, `renterOffers`, `renterAcquired`,
+`monthlyRent`, `rentModel` (`flat` | `commission` | `hybrid`), `churnedAt`
+
+## Economic actuals (the D validators)
+
+`cplActual`, `leadValueActual`, `closeRateActual`, `ticketActual`
+
+These are the four numbers that convert D from HUMAN_ASSUMED to OBSERVED. They
+are the single highest-value output of Wave 1.
+
+## What RankRentOS does with them
+
+1. Writes them as observations against the asset's market subject.
+2. Compares each against `AssetSpecification.expectationsBaseline` — the frozen
+   prediction — producing a per-dimension prediction error.
+3. Accumulates errors across the portfolio to answer: does A predict ranking
+   speed, does B predict impressions, does E predict monetization, does F predict
+   realized economics? Those answers drive the next model version.
+
+Nothing in Part 2 is implemented. It is a contract, not code.

@@ -1,0 +1,259 @@
+{
+ "specVersion": "asset-spec-1.0.0",
+ "generatedAt": "2026-08-06T07:06:40.000Z",
+ "assetId": "kitchen-remodel|Madison|WI",
+ "opportunityId": "kitchen-remodel|Madison|WI",
+ "experiment": "experiment-2",
+ "identity": {
+  "service": "Kitchen Remodeling",
+  "serviceSlug": "kitchen-remodel",
+  "category": "high-ticket-home",
+  "city": "Madison",
+  "state": "WI",
+  "population": 243344,
+  "medianIncome": 85189,
+  "stratum": "large|upper-mid",
+  "opportunityType": "general"
+ },
+ "domain": {
+  "recommended": "kitchenremodelingmadison.com",
+  "status": "taken",
+  "note": "availability decays; re-check before purchase. NOT purchased by RankRentOS."
+ },
+ "keywordStrategy": {
+  "primaryKeyword": "kitchen remodeling Madison",
+  "exactLocalVolume": 260,
+  "volumeState": "measured",
+  "cpc": 24.42,
+  "demandAmbiguous": false,
+  "demandAttributionRisk": true,
+  "ambiguityNote": "city name \"Madison\" is shared with other US cities, so 260/mo is an UPPER BOUND on locally attributable demand. SERP/operator evidence IS correctly local (SerpAPI was queried with location \"Madison, WI\"); only the volume figure is at risk.",
+  "geoScopedUniverse": {
+   "collected": true,
+   "version": "universe-geo-1.0.0",
+   "attributableKeywords": 4,
+   "attributableVolume": 760,
+   "complete": true,
+   "unmeasuredMembers": 0,
+   "nationalVolumeExcluded": 50,
+   "supportingKeywords": [
+    {
+     "keyword": "bathroom remodeling madison",
+     "volume": 390,
+     "cpc": 45.45
+    },
+    {
+     "keyword": "kitchen remodeling madison",
+     "volume": 260,
+     "cpc": 24.42
+    },
+    {
+     "keyword": "kitchen cabinets madison wi",
+     "volume": 90,
+     "cpc": 10.77
+    },
+    {
+     "keyword": "kitchen design madison wi",
+     "volume": 20,
+     "cpc": 4.88
+    }
+   ]
+  }
+ },
+ "serpContext": {
+  "mapPackSize": 3,
+  "mapPackAvgReviews": 39,
+  "mapListingsWithoutWebsite": 0,
+  "directoriesInTop3": 0,
+  "innerPagesInTop5": 2,
+  "franchisesInTop3": 0,
+  "outOfTownInTop3": 0,
+  "titlesMissingCity": 0,
+  "adCount": 0,
+  "contentDepthBarWords": 496,
+  "competitorAvgDomainAgeYears": 16.5,
+  "depthEvidence": {
+   "pagesCrawled": 3,
+   "domainsAged": 3,
+   "competitorsConsidered": 3
+  }
+ },
+ "renterContext": {
+  "relevantOperators": 11,
+  "viableRenters": 3,
+  "strongerOperators": 1,
+  "medianReviews": 46,
+  "websiteAdoptionPct": 27,
+  "advertisers": 0,
+  "concentration": "moderate"
+ },
+ "economicsContext": {
+  "ticketAvg": 35000,
+  "margin": 0.3,
+  "evidenceType": "HUMAN_ASSUMED",
+  "warning": "ticket and margin are HUMAN_ASSUMED and drive D and F. Live outcomes must replace them."
+ },
+ "scores": {
+  "modelVersion": "ai-v1.0.0",
+  "weightSet": "w-balanced-v1.1",
+  "bucketsVersion": "buckets-1.1.0",
+  "composite": 68,
+  "confidence": 80,
+  "evidenceCompleteness": 100,
+  "A": {
+   "score": 55,
+   "version": "A-1.0.0",
+   "confidence": 0.75,
+   "evidenceTypes": [
+    "DERIVED"
+   ],
+   "missing": []
+  },
+  "B": {
+   "score": 62,
+   "version": "B-1.0.0",
+   "confidence": 0.6,
+   "evidenceTypes": [
+    "OBSERVED",
+    "DERIVED"
+   ],
+   "missing": [
+    "kw.universe.volume (geo-scoped)"
+   ]
+  },
+  "C": {
+   "score": 82,
+   "version": "C-1.0.0",
+   "confidence": 0.85,
+   "evidenceTypes": [
+    "OBSERVED",
+    "DERIVED"
+   ],
+   "missing": []
+  },
+  "D": {
+   "score": 90,
+   "version": "D-1.1.0",
+   "confidence": 0.4,
+   "evidenceTypes": [
+    "HUMAN_ASSUMED",
+    "OBSERVED"
+   ],
+   "missing": [
+    "econ.cpl.live",
+    "econ.close.rate.live",
+    "econ.leadrate.live"
+   ]
+  },
+  "E": {
+   "score": 64,
+   "version": "E-1.0.0",
+   "confidence": 1,
+   "evidenceTypes": [
+    "DERIVED"
+   ],
+   "missing": []
+  },
+  "F": {
+   "score": 80,
+   "version": "F-1.1.0",
+   "confidence": 0.53,
+   "evidenceTypes": [
+    "OBSERVED",
+    "HUMAN_ASSUMED"
+   ],
+   "missing": []
+  },
+  "G": {
+   "score": 49,
+   "version": "G-1.0.0",
+   "confidence": 0.35,
+   "evidenceTypes": [
+    "DERIVED"
+   ],
+   "missing": [
+    "asset.indexed.days",
+    "asset.firstimpression.days",
+    "asset.firstrank.days"
+   ]
+  },
+  "H": {
+   "score": 73,
+   "version": "H-1.0.0",
+   "confidence": 0.675,
+   "evidenceTypes": [
+    "DERIVED"
+   ],
+   "missing": []
+  },
+  "I": {
+   "score": 80,
+   "version": "I-1.0.0",
+   "confidence": 1,
+   "evidenceTypes": [
+    "DERIVED"
+   ],
+   "missing": []
+  },
+  "sensitivity": {
+   "byWeightSet": {
+    "w-balanced-v1.1": 68,
+    "w-rankability": 64,
+    "w-economics": 72,
+    "w-asymmetry": 69,
+    "w-renter": 69
+   },
+   "bestRank": 2,
+   "worstRank": 5,
+   "rankSpread": 3
+  },
+  "assumptionDependentDimensions": [
+   "D",
+   "F"
+  ],
+  "prospectiveDimensions": [
+   "G"
+  ]
+ },
+ "selection": {
+  "bucket": "UNICORN",
+  "tier": "WAVE-1",
+  "role": "INVESTMENT",
+  "whySelected": "UNICORN, composite 68, unambiguous demand, viable renter present",
+  "hypothesisUnderTest": "A=55 predicts this SERP is winnable; F=80 predicts the lead flow is worth renting. Tests whether composite 68 converts to real rankings and revenue."
+ },
+ "expectationsBaseline": {
+  "predictedRankability": 55,
+  "predictedTimeToSignalDays": 111,
+  "predictedMonthlyRenterGrossProfit": 8190,
+  "note": "predictions are the falsifiable claims this deployment tests"
+ },
+ "measurementRequirements": [
+  "deployedAt",
+  "indexedAt",
+  "firstImpressionAt",
+  "firstClickAt",
+  "firstLeadAt",
+  "firstRevenueAt",
+  "dailyImpressions",
+  "dailyClicks",
+  "rankingsByKeyword",
+  "leadsTotal",
+  "leadsByChannel(call|form)",
+  "qualifiedLeads",
+  "renterOutreachCount",
+  "renterResponses",
+  "renterAcquiredAt",
+  "monthlyRent",
+  "revenue",
+  "operatingCost"
+ ],
+ "provenance": {
+  "experiment": "experiment-2",
+  "rawSerp": "out/experiment-2/raw/serp-kitchen_remodel_Madison_WI.json",
+  "demandSource": "dataforseo:google_ads/search_volume",
+  "serpSource": "serpapi",
+  "depthSource": "crawl+rdap:depth-v1",
+  "asOf": 1786000000000
+ }
+}

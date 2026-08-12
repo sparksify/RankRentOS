@@ -1,0 +1,244 @@
+{
+ "specVersion": "asset-spec-1.0.0",
+ "generatedAt": "2026-08-06T07:06:40.000Z",
+ "assetId": "bathroom-remodel|Arvada|CO",
+ "opportunityId": "bathroom-remodel|Arvada|CO",
+ "experiment": "experiment-3",
+ "identity": {
+  "service": "Bathroom Remodeling",
+  "serviceSlug": "bathroom-remodel",
+  "category": "high-ticket-home",
+  "city": "Arvada",
+  "state": "CO",
+  "population": 111707,
+  "medianIncome": 102413,
+  "stratum": "mid|affluent",
+  "opportunityType": "general"
+ },
+ "domain": {
+  "recommended": "bathroomremodelingarvada.com",
+  "status": "taken",
+  "note": "availability decays; re-check before purchase. NOT purchased by RankRentOS."
+ },
+ "keywordStrategy": {
+  "primaryKeyword": "bathroom remodeling Arvada",
+  "exactLocalVolume": 390,
+  "volumeState": "measured",
+  "cpc": 5.01,
+  "demandAmbiguous": false,
+  "demandAttributionRisk": false,
+  "ambiguityNote": null,
+  "geoScopedUniverse": {
+   "collected": true,
+   "version": "universe-geo-1.0.0",
+   "attributableKeywords": 1,
+   "attributableVolume": 390,
+   "complete": true,
+   "unmeasuredMembers": 0,
+   "nationalVolumeExcluded": 120,
+   "supportingKeywords": [
+    {
+     "keyword": "bathroom remodeling arvada",
+     "volume": 390,
+     "cpc": 5.01
+    }
+   ]
+  }
+ },
+ "serpContext": {
+  "mapPackSize": 3,
+  "mapPackAvgReviews": 19,
+  "mapListingsWithoutWebsite": 0,
+  "directoriesInTop3": 1,
+  "innerPagesInTop5": 2,
+  "franchisesInTop3": 0,
+  "outOfTownInTop3": 1,
+  "titlesMissingCity": 0,
+  "adCount": 0,
+  "contentDepthBarWords": 757,
+  "competitorAvgDomainAgeYears": 13.9,
+  "depthEvidence": {
+   "pagesCrawled": 3,
+   "domainsAged": 3,
+   "competitorsConsidered": 3
+  }
+ },
+ "renterContext": {
+  "relevantOperators": 11,
+  "viableRenters": 3,
+  "strongerOperators": 0,
+  "medianReviews": 19,
+  "websiteAdoptionPct": 27,
+  "advertisers": 0,
+  "concentration": "fragmented"
+ },
+ "economicsContext": {
+  "ticketAvg": 18000,
+  "margin": 0.32,
+  "evidenceType": "HUMAN_ASSUMED",
+  "warning": "ticket and margin are HUMAN_ASSUMED and drive D and F. Live outcomes must replace them."
+ },
+ "scores": {
+  "modelVersion": "ai-v1.0.0",
+  "weightSet": "w-balanced-v1.1",
+  "bucketsVersion": "buckets-1.1.0",
+  "composite": 70,
+  "confidence": 80,
+  "evidenceCompleteness": 100,
+  "A": {
+   "score": 83,
+   "version": "A-1.0.0",
+   "confidence": 0.875,
+   "evidenceTypes": [
+    "DERIVED"
+   ],
+   "missing": []
+  },
+  "B": {
+   "score": 62,
+   "version": "B-1.0.0",
+   "confidence": 0.6,
+   "evidenceTypes": [
+    "OBSERVED",
+    "DERIVED"
+   ],
+   "missing": [
+    "kw.universe.volume (geo-scoped)"
+   ]
+  },
+  "C": {
+   "score": 72,
+   "version": "C-1.0.0",
+   "confidence": 0.85,
+   "evidenceTypes": [
+    "OBSERVED",
+    "DERIVED"
+   ],
+   "missing": []
+  },
+  "D": {
+   "score": 78,
+   "version": "D-1.1.0",
+   "confidence": 0.4,
+   "evidenceTypes": [
+    "HUMAN_ASSUMED",
+    "OBSERVED"
+   ],
+   "missing": [
+    "econ.cpl.live",
+    "econ.close.rate.live",
+    "econ.leadrate.live"
+   ]
+  },
+  "E": {
+   "score": 62,
+   "version": "E-1.0.0",
+   "confidence": 1,
+   "evidenceTypes": [
+    "DERIVED"
+   ],
+   "missing": []
+  },
+  "F": {
+   "score": 66,
+   "version": "F-1.1.0",
+   "confidence": 0.53,
+   "evidenceTypes": [
+    "OBSERVED",
+    "HUMAN_ASSUMED"
+   ],
+   "missing": []
+  },
+  "G": {
+   "score": 58,
+   "version": "G-1.0.0",
+   "confidence": 0.35,
+   "evidenceTypes": [
+    "DERIVED"
+   ],
+   "missing": [
+    "asset.indexed.days",
+    "asset.firstimpression.days",
+    "asset.firstrank.days"
+   ]
+  },
+  "H": {
+   "score": 90,
+   "version": "H-1.0.0",
+   "confidence": 0.7375,
+   "evidenceTypes": [
+    "DERIVED"
+   ],
+   "missing": []
+  },
+  "I": {
+   "score": 80,
+   "version": "I-1.0.0",
+   "confidence": 1,
+   "evidenceTypes": [
+    "DERIVED"
+   ],
+   "missing": []
+  },
+  "sensitivity": {
+   "byWeightSet": {
+    "w-balanced-v1.1": 70,
+    "w-rankability": 72,
+    "w-economics": 70,
+    "w-asymmetry": 75,
+    "w-renter": 69
+   },
+   "bestRank": 3,
+   "worstRank": 12,
+   "rankSpread": 9
+  },
+  "assumptionDependentDimensions": [
+   "D",
+   "F"
+  ],
+  "prospectiveDimensions": [
+   "G"
+  ]
+ },
+ "selection": {
+  "bucket": "UNICORN",
+  "tier": "WAVE-1",
+  "role": "INVESTMENT",
+  "whySelected": "UNICORN, composite 70, unambiguous demand, viable renter present",
+  "hypothesisUnderTest": "A=83 predicts this SERP is winnable; F=66 predicts the lead flow is worth renting. Tests whether composite 70 converts to real rankings and revenue."
+ },
+ "expectationsBaseline": {
+  "predictedRankability": 83,
+  "predictedTimeToSignalDays": 99,
+  "predictedMonthlyRenterGrossProfit": 6739,
+  "note": "predictions are the falsifiable claims this deployment tests"
+ },
+ "measurementRequirements": [
+  "deployedAt",
+  "indexedAt",
+  "firstImpressionAt",
+  "firstClickAt",
+  "firstLeadAt",
+  "firstRevenueAt",
+  "dailyImpressions",
+  "dailyClicks",
+  "rankingsByKeyword",
+  "leadsTotal",
+  "leadsByChannel(call|form)",
+  "qualifiedLeads",
+  "renterOutreachCount",
+  "renterResponses",
+  "renterAcquiredAt",
+  "monthlyRent",
+  "revenue",
+  "operatingCost"
+ ],
+ "provenance": {
+  "experiment": "experiment-3",
+  "rawSerp": "out/experiment-3/raw/serp-bathroom_remodel_Arvada_CO.json",
+  "demandSource": "dataforseo:google_ads/search_volume",
+  "serpSource": "serpapi",
+  "depthSource": "crawl+rdap:depth-v1",
+  "asOf": 1786000000000
+ }
+}

@@ -61,6 +61,8 @@ export const METRICS: readonly RegistryEntry[] = [
   { id: "serp.ads.count", kind: "number", unit: "ads", allowedEvidenceTypes: OBS_DER, staleAfterDays: 60, description: "Paid ads on the SERP" },
   { id: "serp.mappack.count", kind: "number", unit: "listings", allowedEvidenceTypes: OBS_DER, staleAfterDays: 60, description: "Map pack listings shown (0 = absent)" },
   { id: "serp.mappack.avgreviews", kind: "number", unit: "reviews", allowedEvidenceTypes: OBS_DER, staleAfterDays: 60, description: "Average review count across map pack listings" },
+  { id: "serp.competitor.avgwords", kind: "number", unit: "words", allowedEvidenceTypes: OBS_DER, staleAfterDays: 90, description: "Mean word count of top non-directory organic competitor pages (content depth we must beat)" },
+  { id: "serp.competitor.domainageyears", kind: "number", unit: "years", allowedEvidenceTypes: OBS_DER, staleAfterDays: 180, description: "Mean registration age of top non-directory organic competitor domains" },
   { id: "serp.mappack.nowebsite.count", kind: "number", unit: "listings", allowedEvidenceTypes: OBS_DER, staleAfterDays: 60, description: "Map pack listings without a website" },
   { id: "serp.competitor.contentdepth", kind: "number", unit: "words", allowedEvidenceTypes: OBS_DER, staleAfterDays: 90, description: "Average word count of top organic competitor pages" },
   { id: "serp.competitor.domainage", kind: "number", unit: "years", allowedEvidenceTypes: OBS_DER, staleAfterDays: 180, description: "Average RDAP registration age of top-3 competitor .com domains" },

@@ -1,0 +1,492 @@
+{
+ "generatedAt": "2026-08-06T07:06:40.000Z",
+ "modelVersion": "ai-v1.0.0",
+ "bucketsVersion": "buckets-1.1.0",
+ "totals": {
+  "evaluated": 168,
+  "tier1": 32,
+  "tier2": 12,
+  "tier3": 124,
+  "wave1": 19
+ },
+ "buckets": {
+  "HIGH-VALUE": 11,
+  "LOW-HANGING": 19,
+  "UNICORN": 14,
+  "unbucketed": 124
+ },
+ "economics": {
+  "assets": 19,
+  "upfrontCapital": 478.42,
+  "monthlyCarrying": 28.5,
+  "sixMonthRiskCapital": 649.42,
+  "twelveMonthRiskCapital": 1108.84,
+  "perAssetUpfront": 25.18,
+  "costBasis": {
+   "known": {
+    "domainFirstYear": 12.18,
+    "domainRenewal": 15.18
+   },
+   "estimated": {
+    "hostingPerMonth": 1,
+    "contentGeneration": 8,
+    "deploymentLabor": 5,
+    "monitoringPerMonth": 0.5
+   },
+   "unknown": [
+    "deployment engine per-asset cost (engine not built)",
+    "renter acquisition cost/time",
+    "link acquisition if required to rank",
+    "content revision cycles"
+   ]
+  }
+ },
+ "tier1": [
+  {
+   "id": "bathroom-remodel|Kirkland|WA",
+   "bucket": "UNICORN",
+   "composite": 75,
+   "vol": 590,
+   "why": "UNICORN, composite 75, unambiguous demand, viable renter present"
+  },
+  {
+   "id": "kitchen-remodel|Rochester|MN",
+   "bucket": "UNICORN",
+   "composite": 73,
+   "vol": 390,
+   "why": "UNICORN, composite 73, unambiguous demand, viable renter present"
+  },
+  {
+   "id": "kitchen-remodel|Orlando|FL",
+   "bucket": "HIGH-VALUE",
+   "composite": 72,
+   "vol": 590,
+   "why": "HIGH-VALUE, composite 72, unambiguous demand, viable renter present"
+  },
+  {
+   "id": "bathroom-remodel|Temecula|CA",
+   "bucket": "UNICORN",
+   "composite": 72,
+   "vol": 320,
+   "why": "UNICORN, composite 72, unambiguous demand, viable renter present"
+  },
+  {
+   "id": "bathroom-remodel|Arvada|CO",
+   "bucket": "UNICORN",
+   "composite": 70,
+   "vol": 390,
+   "why": "UNICORN, composite 70, unambiguous demand, viable renter present"
+  },
+  {
+   "id": "house-cleaning|Orlando|FL",
+   "bucket": "LOW-HANGING",
+   "composite": 69,
+   "vol": 2900,
+   "why": "LOW-HANGING, composite 69, unambiguous demand, viable renter present"
+  },
+  {
+   "id": "window-replacement|Naperville|IL",
+   "bucket": "UNICORN",
+   "composite": 69,
+   "vol": 480,
+   "why": "UNICORN, composite 69, unambiguous demand, viable renter present"
+  },
+  {
+   "id": "kitchen-remodel|Madison|WI",
+   "bucket": "UNICORN",
+   "composite": 68,
+   "vol": 260,
+   "why": "UNICORN, composite 68, unambiguous demand, viable renter present"
+  },
+  {
+   "id": "kitchen-remodel|Temecula|CA",
+   "bucket": "UNICORN",
+   "composite": 68,
+   "vol": 260,
+   "why": "UNICORN, composite 68, unambiguous demand, viable renter present"
+  },
+  {
+   "id": "mold-remediation|Knoxville|TN",
+   "bucket": "HIGH-VALUE",
+   "composite": 67,
+   "vol": 590,
+   "why": "HIGH-VALUE, composite 67, unambiguous demand, viable renter present"
+  },
+  {
+   "id": "kitchen-remodel|Plano|TX",
+   "bucket": "HIGH-VALUE",
+   "composite": 67,
+   "vol": 390,
+   "why": "HIGH-VALUE, composite 67, unambiguous demand, viable renter present"
+  },
+  {
+   "id": "kitchen-remodel|Rockville|MD",
+   "bucket": "HIGH-VALUE",
+   "composite": 67,
+   "vol": 210,
+   "why": "HIGH-VALUE, composite 67, unambiguous demand, viable renter present"
+  },
+  {
+   "id": "bathroom-remodel|Roseville|CA",
+   "bucket": "LOW-HANGING",
+   "composite": 67,
+   "vol": 170,
+   "why": "LOW-HANGING, composite 67, unambiguous demand, viable renter present"
+  },
+  {
+   "id": "kitchen-remodel|Boulder|CO",
+   "bucket": "UNICORN",
+   "composite": 67,
+   "vol": 140,
+   "why": "UNICORN, composite 67, unambiguous demand, viable renter present"
+  },
+  {
+   "id": "basement-waterproofing|Naperville|IL",
+   "bucket": "LOW-HANGING",
+   "composite": 66,
+   "vol": 210,
+   "why": "LOW-HANGING, composite 66, unambiguous demand, viable renter present"
+  },
+  {
+   "id": "kitchen-remodel|McKinney|TX",
+   "bucket": "UNICORN",
+   "composite": 66,
+   "vol": 140,
+   "why": "UNICORN, composite 66, unambiguous demand, viable renter present"
+  },
+  {
+   "id": "kitchen-remodel|Redmond|WA",
+   "bucket": "UNICORN",
+   "composite": 65,
+   "vol": 140,
+   "why": "UNICORN, composite 65, unambiguous demand, viable renter present"
+  },
+  {
+   "id": "window-replacement|Livermore|CA",
+   "bucket": "LOW-HANGING",
+   "composite": 64,
+   "vol": 210,
+   "why": "LOW-HANGING, composite 64, unambiguous demand, viable renter present"
+  },
+  {
+   "id": "bathroom-remodel|Ogden|UT",
+   "bucket": "LOW-HANGING",
+   "composite": 64,
+   "vol": 110,
+   "why": "LOW-HANGING, composite 64, unambiguous demand, viable renter present"
+  },
+  {
+   "id": "house-cleaning|Irvine|CA",
+   "bucket": "LOW-HANGING",
+   "composite": 63,
+   "vol": 1000,
+   "why": "LOW-HANGING, composite 63, unambiguous demand, viable renter present"
+  },
+  {
+   "id": "window-replacement|Amarillo|TX",
+   "bucket": "LOW-HANGING",
+   "composite": 63,
+   "vol": 210,
+   "why": "LOW-HANGING, composite 63, unambiguous demand, viable renter present"
+  },
+  {
+   "id": "kitchen-remodel|Chandler|AZ",
+   "bucket": "HIGH-VALUE",
+   "composite": 63,
+   "vol": 170,
+   "why": "HIGH-VALUE, composite 63, unambiguous demand, viable renter present"
+  },
+  {
+   "id": "junk-removal|Aurora|IL",
+   "bucket": "LOW-HANGING",
+   "composite": 62,
+   "vol": 480,
+   "why": "LOW-HANGING, composite 62, unambiguous demand, viable renter present"
+  },
+  {
+   "id": "water-damage|Chandler|AZ",
+   "bucket": "LOW-HANGING",
+   "composite": 62,
+   "vol": 210,
+   "why": "LOW-HANGING, composite 62, unambiguous demand, viable renter present"
+  },
+  {
+   "id": "kitchen-remodel|Alpharetta|GA",
+   "bucket": "UNICORN",
+   "composite": 62,
+   "vol": 170,
+   "why": "UNICORN, composite 62, unambiguous demand, viable renter present"
+  },
+  {
+   "id": "bathroom-remodel|Boulder|CO",
+   "bucket": "LOW-HANGING",
+   "composite": 62,
+   "vol": 140,
+   "why": "LOW-HANGING, composite 62, unambiguous demand, viable renter present"
+  },
+  {
+   "id": "kitchen-remodel|Carmel|IN",
+   "bucket": "HIGH-VALUE",
+   "composite": 62,
+   "vol": 110,
+   "why": "HIGH-VALUE, composite 62, unambiguous demand, viable renter present"
+  },
+  {
+   "id": "appliance-repair|Aurora|IL",
+   "bucket": "LOW-HANGING",
+   "composite": 61,
+   "vol": 1300,
+   "why": "LOW-HANGING, composite 61, unambiguous demand, viable renter present"
+  },
+  {
+   "id": "kitchen-remodel|Frisco|TX",
+   "bucket": "HIGH-VALUE",
+   "composite": 61,
+   "vol": 170,
+   "why": "HIGH-VALUE, composite 61, unambiguous demand, viable renter present"
+  },
+  {
+   "id": "metal-roofing|Rochester|MN",
+   "bucket": "LOW-HANGING",
+   "composite": 61,
+   "vol": 110,
+   "why": "LOW-HANGING, composite 61, unambiguous demand, viable renter present"
+  },
+  {
+   "id": "kitchen-remodel|Arvada|CO",
+   "bucket": "HIGH-VALUE",
+   "composite": 61,
+   "vol": 110,
+   "why": "HIGH-VALUE, composite 61, unambiguous demand, viable renter present"
+  },
+  {
+   "id": "stucco-repair|Orlando|FL",
+   "bucket": "LOW-HANGING",
+   "composite": 60,
+   "vol": 210,
+   "why": "LOW-HANGING, composite 60, unambiguous demand, viable renter present"
+  }
+ ],
+ "tier2": [
+  {
+   "id": "bathroom-remodel|Bellevue|NE",
+   "bucket": "UNICORN",
+   "composite": 85,
+   "vol": 2400,
+   "why": "bucketed UNICORN but demand attribution is ambiguous — city name \"Bellevue\" is shared with other US cities, so 2400/mo is an UPPER BOUND on locally attributable demand. SERP/operator evidence IS correctly local (SerpAPI was queried with location \"Bellevue, NE\"); only the volume figure is at risk."
+  },
+  {
+   "id": "bathroom-remodel|Bellevue|WA",
+   "bucket": "UNICORN",
+   "composite": 75,
+   "vol": 2400,
+   "why": "bucketed UNICORN but demand attribution is ambiguous — city name \"Bellevue\" is shared with other US cities, so 2400/mo is an UPPER BOUND on locally attributable demand. SERP/operator evidence IS correctly local (SerpAPI was queried with location \"Bellevue, WA\"); only the volume figure is at risk."
+  },
+  {
+   "id": "kitchen-remodel|Bellevue|NE",
+   "bucket": "UNICORN",
+   "composite": 74,
+   "vol": 880,
+   "why": "bucketed UNICORN but demand attribution is ambiguous — city name \"Bellevue\" is shared with other US cities, so 880/mo is an UPPER BOUND on locally attributable demand. SERP/operator evidence IS correctly local (SerpAPI was queried with location \"Bellevue, NE\"); only the volume figure is at risk."
+  },
+  {
+   "id": "kitchen-remodel|Bellevue|WA",
+   "bucket": "HIGH-VALUE",
+   "composite": 65,
+   "vol": 880,
+   "why": "bucketed HIGH-VALUE but demand attribution is ambiguous — city name \"Bellevue\" is shared with other US cities, so 880/mo is an UPPER BOUND on locally attributable demand. SERP/operator evidence IS correctly local (SerpAPI was queried with location \"Bellevue, WA\"); only the volume figure is at risk."
+  },
+  {
+   "id": "water-damage|Bellevue|WA",
+   "bucket": "LOW-HANGING",
+   "composite": 61,
+   "vol": 210,
+   "why": "bucketed LOW-HANGING but demand attribution is ambiguous — city name \"Bellevue\" is shared with other US cities, so 210/mo is an UPPER BOUND on locally attributable demand. SERP/operator evidence IS correctly local (SerpAPI was queried with location \"Bellevue, WA\"); only the volume figure is at risk."
+  },
+  {
+   "id": "roof-repair|Irvine|CA",
+   "bucket": "LOW-HANGING",
+   "composite": 59,
+   "vol": 210,
+   "why": "bucketed LOW-HANGING but composite 59 is below the Tier-1 threshold of 60"
+  },
+  {
+   "id": "kitchen-remodel|Conroe|TX",
+   "bucket": "HIGH-VALUE",
+   "composite": 59,
+   "vol": 170,
+   "why": "bucketed HIGH-VALUE but composite 59 is below the Tier-1 threshold of 60"
+  },
+  {
+   "id": "bathroom-remodel|Denton|TX",
+   "bucket": "LOW-HANGING",
+   "composite": 59,
+   "vol": 140,
+   "why": "bucketed LOW-HANGING but composite 59 is below the Tier-1 threshold of 60"
+  },
+  {
+   "id": "mold-remediation|Plano|TX",
+   "bucket": "LOW-HANGING",
+   "composite": 58,
+   "vol": 110,
+   "why": "bucketed LOW-HANGING but composite 58 is below the Tier-1 threshold of 60"
+  },
+  {
+   "id": "kitchen-remodel|Marietta|GA",
+   "bucket": "HIGH-VALUE",
+   "composite": 58,
+   "vol": 170,
+   "why": "bucketed HIGH-VALUE but composite 58 is below the Tier-1 threshold of 60"
+  },
+  {
+   "id": "radon-mitigation|Madison|WI",
+   "bucket": "LOW-HANGING",
+   "composite": 57,
+   "vol": 110,
+   "why": "bucketed LOW-HANGING but composite 57 is below the Tier-1 threshold of 60"
+  },
+  {
+   "id": "dumpster-rental|Brockton|MA",
+   "bucket": "LOW-HANGING",
+   "composite": 56,
+   "vol": 480,
+   "why": "bucketed LOW-HANGING but composite 56 is below the Tier-1 threshold of 60"
+  }
+ ],
+ "tier3Count": 124,
+ "wave1": [
+  {
+   "id": "bathroom-remodel|Kirkland|WA",
+   "role": "INVESTMENT",
+   "bucket": "UNICORN",
+   "composite": 75,
+   "hypothesis": "A=67 predicts this SERP is winnable; F=80 predicts the lead flow is worth renting. Tests whether composite 75 converts to real rankings and revenue."
+  },
+  {
+   "id": "kitchen-remodel|Rochester|MN",
+   "role": "INVESTMENT",
+   "bucket": "UNICORN",
+   "composite": 73,
+   "hypothesis": "A=61 predicts this SERP is winnable; F=80 predicts the lead flow is worth renting. Tests whether composite 73 converts to real rankings and revenue."
+  },
+  {
+   "id": "kitchen-remodel|Orlando|FL",
+   "role": "INVESTMENT",
+   "bucket": "HIGH-VALUE",
+   "composite": 72,
+   "hypothesis": "A=54 predicts this SERP is winnable; F=80 predicts the lead flow is worth renting. Tests whether composite 72 converts to real rankings and revenue."
+  },
+  {
+   "id": "bathroom-remodel|Temecula|CA",
+   "role": "INVESTMENT",
+   "bucket": "UNICORN",
+   "composite": 72,
+   "hypothesis": "A=75 predicts this SERP is winnable; F=66 predicts the lead flow is worth renting. Tests whether composite 72 converts to real rankings and revenue."
+  },
+  {
+   "id": "bathroom-remodel|Arvada|CO",
+   "role": "INVESTMENT",
+   "bucket": "UNICORN",
+   "composite": 70,
+   "hypothesis": "A=83 predicts this SERP is winnable; F=66 predicts the lead flow is worth renting. Tests whether composite 70 converts to real rankings and revenue."
+  },
+  {
+   "id": "house-cleaning|Orlando|FL",
+   "role": "INVESTMENT",
+   "bucket": "LOW-HANGING",
+   "composite": 69,
+   "hypothesis": "A=74 predicts this SERP is winnable; F=34 predicts the lead flow is worth renting. Tests whether composite 69 converts to real rankings and revenue."
+  },
+  {
+   "id": "window-replacement|Naperville|IL",
+   "role": "INVESTMENT",
+   "bucket": "UNICORN",
+   "composite": 69,
+   "hypothesis": "A=59 predicts this SERP is winnable; F=66 predicts the lead flow is worth renting. Tests whether composite 69 converts to real rankings and revenue."
+  },
+  {
+   "id": "kitchen-remodel|Madison|WI",
+   "role": "INVESTMENT",
+   "bucket": "UNICORN",
+   "composite": 68,
+   "hypothesis": "A=55 predicts this SERP is winnable; F=80 predicts the lead flow is worth renting. Tests whether composite 68 converts to real rankings and revenue."
+  },
+  {
+   "id": "mold-remediation|Knoxville|TN",
+   "role": "INVESTMENT",
+   "bucket": "HIGH-VALUE",
+   "composite": 67,
+   "hypothesis": "A=43 predicts this SERP is winnable; F=66 predicts the lead flow is worth renting. Tests whether composite 67 converts to real rankings and revenue."
+  },
+  {
+   "id": "basement-waterproofing|Naperville|IL",
+   "role": "INVESTMENT",
+   "bucket": "LOW-HANGING",
+   "composite": 66,
+   "hypothesis": "A=77 predicts this SERP is winnable; F=50 predicts the lead flow is worth renting. Tests whether composite 66 converts to real rankings and revenue."
+  },
+  {
+   "id": "window-replacement|Livermore|CA",
+   "role": "INVESTMENT",
+   "bucket": "LOW-HANGING",
+   "composite": 64,
+   "hypothesis": "A=73 predicts this SERP is winnable; F=50 predicts the lead flow is worth renting. Tests whether composite 64 converts to real rankings and revenue."
+  },
+  {
+   "id": "house-cleaning|Irvine|CA",
+   "role": "INVESTMENT",
+   "bucket": "LOW-HANGING",
+   "composite": 63,
+   "hypothesis": "A=66 predicts this SERP is winnable; F=34 predicts the lead flow is worth renting. Tests whether composite 63 converts to real rankings and revenue."
+  },
+  {
+   "id": "window-replacement|Amarillo|TX",
+   "role": "INVESTMENT",
+   "bucket": "LOW-HANGING",
+   "composite": 63,
+   "hypothesis": "A=62 predicts this SERP is winnable; F=50 predicts the lead flow is worth renting. Tests whether composite 63 converts to real rankings and revenue."
+  },
+  {
+   "id": "junk-removal|Aurora|IL",
+   "role": "INVESTMENT",
+   "bucket": "LOW-HANGING",
+   "composite": 62,
+   "hypothesis": "A=63 predicts this SERP is winnable; F=34 predicts the lead flow is worth renting. Tests whether composite 62 converts to real rankings and revenue."
+  },
+  {
+   "id": "water-damage|Chandler|AZ",
+   "role": "EXPERIMENT",
+   "bucket": "LOW-HANGING",
+   "composite": 62,
+   "hypothesis": "Exp-2 found small markets more rankable (meanA 57 vs 47). This large market (pop 249146) tests whether metro size genuinely predicts ranking difficulty."
+  },
+  {
+   "id": "appliance-repair|Aurora|IL",
+   "role": "EXPERIMENT",
+   "bucket": "LOW-HANGING",
+   "composite": 61,
+   "hypothesis": "Do our HUMAN_ASSUMED ticket/close-rate values hold? 1300/mo of demand with F=34. Measures real CPL and lead value where the model predicts thin economics."
+  },
+  {
+   "id": "metal-roofing|Rochester|MN",
+   "role": "EXPERIMENT",
+   "bucket": "LOW-HANGING",
+   "composite": 61,
+   "hypothesis": "Does exact-match domain availability matter? metalroofingrochester.com is registrable; paired against non-EMD assets to isolate the EMD effect on ranking speed."
+  },
+  {
+   "id": "roof-repair|Irvine|CA",
+   "role": "EXPERIMENT",
+   "bucket": "LOW-HANGING",
+   "composite": 59,
+   "hypothesis": "Exp-2 found small markets more rankable (meanA 57 vs 47). This large market (pop 236716) tests whether metro size genuinely predicts ranking difficulty."
+  },
+  {
+   "id": "mold-remediation|Plano|TX",
+   "role": "EXPERIMENT",
+   "bucket": "LOW-HANGING",
+   "composite": 58,
+   "hypothesis": "Does exact-match domain availability matter? moldremediationplano.com is registrable; paired against non-EMD assets to isolate the EMD effect on ranking speed."
+  }
+ ]
+}

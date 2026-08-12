@@ -1,0 +1,244 @@
+{
+ "specVersion": "asset-spec-1.0.0",
+ "generatedAt": "2026-08-06T07:06:40.000Z",
+ "assetId": "window-replacement|Livermore|CA",
+ "opportunityId": "window-replacement|Livermore|CA",
+ "experiment": "experiment-3",
+ "identity": {
+  "service": "Window Replacement",
+  "serviceSlug": "window-replacement",
+  "category": "high-ticket-home",
+  "city": "Livermore",
+  "state": "CA",
+  "population": 85156,
+  "medianIncome": 121190,
+  "stratum": "small|affluent",
+  "opportunityType": "general"
+ },
+ "domain": {
+  "recommended": "windowreplacementlivermore.com",
+  "status": "available-at-research-time",
+  "note": "availability decays; re-check before purchase. NOT purchased by RankRentOS."
+ },
+ "keywordStrategy": {
+  "primaryKeyword": "window replacement Livermore",
+  "exactLocalVolume": 210,
+  "volumeState": "measured",
+  "cpc": 14.59,
+  "demandAmbiguous": false,
+  "demandAttributionRisk": false,
+  "ambiguityNote": null,
+  "geoScopedUniverse": {
+   "collected": true,
+   "version": "universe-geo-1.0.0",
+   "attributableKeywords": 1,
+   "attributableVolume": 210,
+   "complete": true,
+   "unmeasuredMembers": 0,
+   "nationalVolumeExcluded": 460,
+   "supportingKeywords": [
+    {
+     "keyword": "window replacement livermore",
+     "volume": 210,
+     "cpc": 14.59
+    }
+   ]
+  }
+ },
+ "serpContext": {
+  "mapPackSize": 3,
+  "mapPackAvgReviews": 29,
+  "mapListingsWithoutWebsite": 1,
+  "directoriesInTop3": 1,
+  "innerPagesInTop5": 3,
+  "franchisesInTop3": 0,
+  "outOfTownInTop3": 0,
+  "titlesMissingCity": 0,
+  "adCount": 2,
+  "contentDepthBarWords": 682,
+  "competitorAvgDomainAgeYears": 15,
+  "depthEvidence": {
+   "pagesCrawled": 2,
+   "domainsAged": 3,
+   "competitorsConsidered": 3
+  }
+ },
+ "renterContext": {
+  "relevantOperators": 11,
+  "viableRenters": 2,
+  "strongerOperators": 0,
+  "medianReviews": 35,
+  "websiteAdoptionPct": 18,
+  "advertisers": 2,
+  "concentration": "moderate"
+ },
+ "economicsContext": {
+  "ticketAvg": 12000,
+  "margin": 0.35,
+  "evidenceType": "HUMAN_ASSUMED",
+  "warning": "ticket and margin are HUMAN_ASSUMED and drive D and F. Live outcomes must replace them."
+ },
+ "scores": {
+  "modelVersion": "ai-v1.0.0",
+  "weightSet": "w-balanced-v1.1",
+  "bucketsVersion": "buckets-1.1.0",
+  "composite": 64,
+  "confidence": 80,
+  "evidenceCompleteness": 100,
+  "A": {
+   "score": 73,
+   "version": "A-1.0.0",
+   "confidence": 0.875,
+   "evidenceTypes": [
+    "DERIVED"
+   ],
+   "missing": []
+  },
+  "B": {
+   "score": 62,
+   "version": "B-1.0.0",
+   "confidence": 0.6,
+   "evidenceTypes": [
+    "OBSERVED",
+    "DERIVED"
+   ],
+   "missing": [
+    "kw.universe.volume (geo-scoped)"
+   ]
+  },
+  "C": {
+   "score": 95,
+   "version": "C-1.0.0",
+   "confidence": 1,
+   "evidenceTypes": [
+    "OBSERVED",
+    "DERIVED"
+   ],
+   "missing": []
+  },
+  "D": {
+   "score": 78,
+   "version": "D-1.1.0",
+   "confidence": 0.4,
+   "evidenceTypes": [
+    "HUMAN_ASSUMED",
+    "OBSERVED"
+   ],
+   "missing": [
+    "econ.cpl.live",
+    "econ.close.rate.live",
+    "econ.leadrate.live"
+   ]
+  },
+  "E": {
+   "score": 48,
+   "version": "E-1.0.0",
+   "confidence": 1,
+   "evidenceTypes": [
+    "DERIVED"
+   ],
+   "missing": []
+  },
+  "F": {
+   "score": 50,
+   "version": "F-1.1.0",
+   "confidence": 0.53,
+   "evidenceTypes": [
+    "OBSERVED",
+    "HUMAN_ASSUMED"
+   ],
+   "missing": []
+  },
+  "G": {
+   "score": 56,
+   "version": "G-1.0.0",
+   "confidence": 0.35,
+   "evidenceTypes": [
+    "DERIVED"
+   ],
+   "missing": [
+    "asset.indexed.days",
+    "asset.firstimpression.days",
+    "asset.firstrank.days"
+   ]
+  },
+  "H": {
+   "score": 72,
+   "version": "H-1.0.0",
+   "confidence": 0.7375,
+   "evidenceTypes": [
+    "DERIVED"
+   ],
+   "missing": []
+  },
+  "I": {
+   "score": 80,
+   "version": "I-1.0.0",
+   "confidence": 1,
+   "evidenceTypes": [
+    "DERIVED"
+   ],
+   "missing": []
+  },
+  "sensitivity": {
+   "byWeightSet": {
+    "w-balanced-v1.1": 64,
+    "w-rankability": 66,
+    "w-economics": 65,
+    "w-asymmetry": 66,
+    "w-renter": 62
+   },
+   "bestRank": 11,
+   "worstRank": 27,
+   "rankSpread": 16
+  },
+  "assumptionDependentDimensions": [
+   "D",
+   "F"
+  ],
+  "prospectiveDimensions": [
+   "G"
+  ]
+ },
+ "selection": {
+  "bucket": "LOW-HANGING",
+  "tier": "WAVE-1",
+  "role": "INVESTMENT",
+  "whySelected": "LOW-HANGING, composite 64, unambiguous demand, viable renter present",
+  "hypothesisUnderTest": "A=73 predicts this SERP is winnable; F=50 predicts the lead flow is worth renting. Tests whether composite 64 converts to real rankings and revenue."
+ },
+ "expectationsBaseline": {
+  "predictedRankability": 73,
+  "predictedTimeToSignalDays": 102,
+  "predictedMonthlyRenterGrossProfit": 2646,
+  "note": "predictions are the falsifiable claims this deployment tests"
+ },
+ "measurementRequirements": [
+  "deployedAt",
+  "indexedAt",
+  "firstImpressionAt",
+  "firstClickAt",
+  "firstLeadAt",
+  "firstRevenueAt",
+  "dailyImpressions",
+  "dailyClicks",
+  "rankingsByKeyword",
+  "leadsTotal",
+  "leadsByChannel(call|form)",
+  "qualifiedLeads",
+  "renterOutreachCount",
+  "renterResponses",
+  "renterAcquiredAt",
+  "monthlyRent",
+  "revenue",
+  "operatingCost"
+ ],
+ "provenance": {
+  "experiment": "experiment-3",
+  "rawSerp": "out/experiment-3/raw/serp-window_replacement_Livermore_CA.json",
+  "demandSource": "dataforseo:google_ads/search_volume",
+  "serpSource": "serpapi",
+  "depthSource": "crawl+rdap:depth-v1",
+  "asOf": 1786000000000
+ }
+}

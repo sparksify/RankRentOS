@@ -1,0 +1,244 @@
+{
+ "specVersion": "asset-spec-1.0.0",
+ "generatedAt": "2026-08-06T07:06:40.000Z",
+ "assetId": "junk-removal|Aurora|IL",
+ "opportunityId": "junk-removal|Aurora|IL",
+ "experiment": "experiment-2",
+ "identity": {
+  "service": "Junk Removal",
+  "serviceSlug": "junk-removal",
+  "category": "fragmented-local",
+  "city": "Aurora",
+  "state": "IL",
+  "population": 199963,
+  "medianIncome": 93475,
+  "stratum": "mid|upper-mid",
+  "opportunityType": "general"
+ },
+ "domain": {
+  "recommended": "junkremovalaurora.com",
+  "status": "taken",
+  "note": "availability decays; re-check before purchase. NOT purchased by RankRentOS."
+ },
+ "keywordStrategy": {
+  "primaryKeyword": "junk removal Aurora",
+  "exactLocalVolume": 480,
+  "volumeState": "measured",
+  "cpc": 24.64,
+  "demandAmbiguous": false,
+  "demandAttributionRisk": true,
+  "ambiguityNote": "city name \"Aurora\" is shared with other US cities, so 480/mo is an UPPER BOUND on locally attributable demand. SERP/operator evidence IS correctly local (SerpAPI was queried with location \"Aurora, IL\"); only the volume figure is at risk.",
+  "geoScopedUniverse": {
+   "collected": true,
+   "version": "universe-geo-1.0.0",
+   "attributableKeywords": 1,
+   "attributableVolume": 480,
+   "complete": true,
+   "unmeasuredMembers": 0,
+   "nationalVolumeExcluded": 1900,
+   "supportingKeywords": [
+    {
+     "keyword": "junk removal aurora",
+     "volume": 480,
+     "cpc": 24.64
+    }
+   ]
+  }
+ },
+ "serpContext": {
+  "mapPackSize": 3,
+  "mapPackAvgReviews": 42,
+  "mapListingsWithoutWebsite": 0,
+  "directoriesInTop3": 1,
+  "innerPagesInTop5": 3,
+  "franchisesInTop3": 0,
+  "outOfTownInTop3": 1,
+  "titlesMissingCity": 0,
+  "adCount": 0,
+  "contentDepthBarWords": 1361,
+  "competitorAvgDomainAgeYears": 23.2,
+  "depthEvidence": {
+   "pagesCrawled": 3,
+   "domainsAged": 1,
+   "competitorsConsidered": 3
+  }
+ },
+ "renterContext": {
+  "relevantOperators": 10,
+  "viableRenters": 3,
+  "strongerOperators": 2,
+  "medianReviews": 50,
+  "websiteAdoptionPct": 30,
+  "advertisers": 0,
+  "concentration": "moderate"
+ },
+ "economicsContext": {
+  "ticketAvg": 450,
+  "margin": 0.55,
+  "evidenceType": "HUMAN_ASSUMED",
+  "warning": "ticket and margin are HUMAN_ASSUMED and drive D and F. Live outcomes must replace them."
+ },
+ "scores": {
+  "modelVersion": "ai-v1.0.0",
+  "weightSet": "w-balanced-v1.1",
+  "bucketsVersion": "buckets-1.1.0",
+  "composite": 62,
+  "confidence": 80,
+  "evidenceCompleteness": 100,
+  "A": {
+   "score": 63,
+   "version": "A-1.0.0",
+   "confidence": 0.875,
+   "evidenceTypes": [
+    "DERIVED"
+   ],
+   "missing": []
+  },
+  "B": {
+   "score": 78,
+   "version": "B-1.0.0",
+   "confidence": 0.6,
+   "evidenceTypes": [
+    "OBSERVED",
+    "DERIVED"
+   ],
+   "missing": [
+    "kw.universe.volume (geo-scoped)"
+   ]
+  },
+  "C": {
+   "score": 82,
+   "version": "C-1.0.0",
+   "confidence": 0.85,
+   "evidenceTypes": [
+    "OBSERVED",
+    "DERIVED"
+   ],
+   "missing": []
+  },
+  "D": {
+   "score": 32,
+   "version": "D-1.1.0",
+   "confidence": 0.4,
+   "evidenceTypes": [
+    "HUMAN_ASSUMED",
+    "OBSERVED"
+   ],
+   "missing": [
+    "econ.cpl.live",
+    "econ.close.rate.live",
+    "econ.leadrate.live"
+   ]
+  },
+  "E": {
+   "score": 81,
+   "version": "E-1.0.0",
+   "confidence": 1,
+   "evidenceTypes": [
+    "DERIVED"
+   ],
+   "missing": []
+  },
+  "F": {
+   "score": 34,
+   "version": "F-1.1.0",
+   "confidence": 0.53,
+   "evidenceTypes": [
+    "OBSERVED",
+    "HUMAN_ASSUMED"
+   ],
+   "missing": []
+  },
+  "G": {
+   "score": 44,
+   "version": "G-1.0.0",
+   "confidence": 0.35,
+   "evidenceTypes": [
+    "DERIVED"
+   ],
+   "missing": [
+    "asset.indexed.days",
+    "asset.firstimpression.days",
+    "asset.firstrank.days"
+   ]
+  },
+  "H": {
+   "score": 50,
+   "version": "H-1.0.0",
+   "confidence": 0.7375,
+   "evidenceTypes": [
+    "DERIVED"
+   ],
+   "missing": []
+  },
+  "I": {
+   "score": 80,
+   "version": "I-1.0.0",
+   "confidence": 1,
+   "evidenceTypes": [
+    "DERIVED"
+   ],
+   "missing": []
+  },
+  "sensitivity": {
+   "byWeightSet": {
+    "w-balanced-v1.1": 62,
+    "w-rankability": 61,
+    "w-economics": 60,
+    "w-asymmetry": 58,
+    "w-renter": 63
+   },
+   "bestRank": 8,
+   "worstRank": 20,
+   "rankSpread": 12
+  },
+  "assumptionDependentDimensions": [
+   "D",
+   "F"
+  ],
+  "prospectiveDimensions": [
+   "G"
+  ]
+ },
+ "selection": {
+  "bucket": "LOW-HANGING",
+  "tier": "WAVE-1",
+  "role": "INVESTMENT",
+  "whySelected": "LOW-HANGING, composite 62, unambiguous demand, viable renter present",
+  "hypothesisUnderTest": "A=63 predicts this SERP is winnable; F=34 predicts the lead flow is worth renting. Tests whether composite 62 converts to real rankings and revenue."
+ },
+ "expectationsBaseline": {
+  "predictedRankability": 63,
+  "predictedTimeToSignalDays": 118,
+  "predictedMonthlyRenterGrossProfit": 356,
+  "note": "predictions are the falsifiable claims this deployment tests"
+ },
+ "measurementRequirements": [
+  "deployedAt",
+  "indexedAt",
+  "firstImpressionAt",
+  "firstClickAt",
+  "firstLeadAt",
+  "firstRevenueAt",
+  "dailyImpressions",
+  "dailyClicks",
+  "rankingsByKeyword",
+  "leadsTotal",
+  "leadsByChannel(call|form)",
+  "qualifiedLeads",
+  "renterOutreachCount",
+  "renterResponses",
+  "renterAcquiredAt",
+  "monthlyRent",
+  "revenue",
+  "operatingCost"
+ ],
+ "provenance": {
+  "experiment": "experiment-2",
+  "rawSerp": "out/experiment-2/raw/serp-junk_removal_Aurora_IL.json",
+  "demandSource": "dataforseo:google_ads/search_volume",
+  "serpSource": "serpapi",
+  "depthSource": "crawl+rdap:depth-v1",
+  "asOf": 1786000000000
+ }
+}

@@ -52,7 +52,7 @@ describe("serpapi parsing", () => {
 });
 
 describe("dataforseo parsing", () => {
-  test("maps results and records explicit zeros for omitted keywords", () => {
+  test("maps results and carries omitted keywords as UNKNOWN, not zero", () => {
     const raw = {
       tasks: [
         {
@@ -65,8 +65,8 @@ describe("dataforseo parsing", () => {
     };
     const out = parseVolumeResponse(raw, ["epoxy flooring prosper", "epoxy flooring anna"]);
     expect(out).toEqual([
-      { keyword: "epoxy flooring prosper", vol: 320, cpc: 6.5, competition: 0.4 },
-      { keyword: "epoxy flooring anna", vol: 0, cpc: null, competition: null },
+      { keyword: "epoxy flooring prosper", vol: 320, cpc: 6.5, competition: 0.4, state: "measured" },
+      { keyword: "epoxy flooring anna", vol: null, cpc: null, competition: null, state: "unknown-omitted" },
     ]);
   });
 

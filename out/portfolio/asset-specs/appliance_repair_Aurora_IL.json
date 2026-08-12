@@ -1,0 +1,254 @@
+{
+ "specVersion": "asset-spec-1.0.0",
+ "generatedAt": "2026-08-06T07:06:40.000Z",
+ "assetId": "appliance-repair|Aurora|IL",
+ "opportunityId": "appliance-repair|Aurora|IL",
+ "experiment": "experiment-2",
+ "identity": {
+  "service": "Appliance Repair",
+  "serviceSlug": "appliance-repair",
+  "category": "fragmented-local",
+  "city": "Aurora",
+  "state": "IL",
+  "population": 199963,
+  "medianIncome": 93475,
+  "stratum": "mid|upper-mid",
+  "opportunityType": "general"
+ },
+ "domain": {
+  "recommended": "appliancerepairaurora.com",
+  "status": "taken",
+  "note": "availability decays; re-check before purchase. NOT purchased by RankRentOS."
+ },
+ "keywordStrategy": {
+  "primaryKeyword": "appliance repair Aurora",
+  "exactLocalVolume": 1300,
+  "volumeState": "measured",
+  "cpc": 11.17,
+  "demandAmbiguous": false,
+  "demandAttributionRisk": true,
+  "ambiguityNote": "city name \"Aurora\" is shared with other US cities, so 1300/mo is an UPPER BOUND on locally attributable demand. SERP/operator evidence IS correctly local (SerpAPI was queried with location \"Aurora, IL\"); only the volume figure is at risk.",
+  "geoScopedUniverse": {
+   "collected": true,
+   "version": "universe-geo-1.0.0",
+   "attributableKeywords": 3,
+   "attributableVolume": 1690,
+   "complete": true,
+   "unmeasuredMembers": 0,
+   "nationalVolumeExcluded": 201000,
+   "supportingKeywords": [
+    {
+     "keyword": "appliance repair aurora",
+     "volume": 1300,
+     "cpc": 11.17
+    },
+    {
+     "keyword": "dishwasher repair aurora co",
+     "volume": 320,
+     "cpc": 14.4
+    },
+    {
+     "keyword": "aurora appliance repair reviews",
+     "volume": 70,
+     "cpc": 11.76
+    }
+   ]
+  }
+ },
+ "serpContext": {
+  "mapPackSize": 3,
+  "mapPackAvgReviews": 73,
+  "mapListingsWithoutWebsite": 0,
+  "directoriesInTop3": 1,
+  "innerPagesInTop5": 2,
+  "franchisesInTop3": 0,
+  "outOfTownInTop3": 1,
+  "titlesMissingCity": 0,
+  "adCount": 0,
+  "contentDepthBarWords": 549,
+  "competitorAvgDomainAgeYears": 12.9,
+  "depthEvidence": {
+   "pagesCrawled": 3,
+   "domainsAged": 2,
+   "competitorsConsidered": 3
+  }
+ },
+ "renterContext": {
+  "relevantOperators": 9,
+  "viableRenters": 2,
+  "strongerOperators": 1,
+  "medianReviews": 49,
+  "websiteAdoptionPct": 33,
+  "advertisers": 0,
+  "concentration": "concentrated"
+ },
+ "economicsContext": {
+  "ticketAvg": 325,
+  "margin": 0.7,
+  "evidenceType": "HUMAN_ASSUMED",
+  "warning": "ticket and margin are HUMAN_ASSUMED and drive D and F. Live outcomes must replace them."
+ },
+ "scores": {
+  "modelVersion": "ai-v1.0.0",
+  "weightSet": "w-balanced-v1.1",
+  "bucketsVersion": "buckets-1.1.0",
+  "composite": 61,
+  "confidence": 80,
+  "evidenceCompleteness": 100,
+  "A": {
+   "score": 67,
+   "version": "A-1.0.0",
+   "confidence": 0.875,
+   "evidenceTypes": [
+    "DERIVED"
+   ],
+   "missing": []
+  },
+  "B": {
+   "score": 92,
+   "version": "B-1.0.0",
+   "confidence": 0.6,
+   "evidenceTypes": [
+    "OBSERVED",
+    "DERIVED"
+   ],
+   "missing": [
+    "kw.universe.volume (geo-scoped)"
+   ]
+  },
+  "C": {
+   "score": 82,
+   "version": "C-1.0.0",
+   "confidence": 0.85,
+   "evidenceTypes": [
+    "OBSERVED",
+    "DERIVED"
+   ],
+   "missing": []
+  },
+  "D": {
+   "score": 32,
+   "version": "D-1.1.0",
+   "confidence": 0.4,
+   "evidenceTypes": [
+    "HUMAN_ASSUMED",
+    "OBSERVED"
+   ],
+   "missing": [
+    "econ.cpl.live",
+    "econ.close.rate.live",
+    "econ.leadrate.live"
+   ]
+  },
+  "E": {
+   "score": 53,
+   "version": "E-1.0.0",
+   "confidence": 1,
+   "evidenceTypes": [
+    "DERIVED"
+   ],
+   "missing": []
+  },
+  "F": {
+   "score": 34,
+   "version": "F-1.1.0",
+   "confidence": 0.53,
+   "evidenceTypes": [
+    "OBSERVED",
+    "HUMAN_ASSUMED"
+   ],
+   "missing": []
+  },
+  "G": {
+   "score": 47,
+   "version": "G-1.0.0",
+   "confidence": 0.35,
+   "evidenceTypes": [
+    "DERIVED"
+   ],
+   "missing": [
+    "asset.indexed.days",
+    "asset.firstimpression.days",
+    "asset.firstrank.days"
+   ]
+  },
+  "H": {
+   "score": 51,
+   "version": "H-1.0.0",
+   "confidence": 0.7375,
+   "evidenceTypes": [
+    "DERIVED"
+   ],
+   "missing": []
+  },
+  "I": {
+   "score": 80,
+   "version": "I-1.0.0",
+   "confidence": 1,
+   "evidenceTypes": [
+    "DERIVED"
+   ],
+   "missing": []
+  },
+  "sensitivity": {
+   "byWeightSet": {
+    "w-balanced-v1.1": 61,
+    "w-rankability": 62,
+    "w-economics": 57,
+    "w-asymmetry": 57,
+    "w-renter": 58
+   },
+   "bestRank": 5,
+   "worstRank": 43,
+   "rankSpread": 38
+  },
+  "assumptionDependentDimensions": [
+   "D",
+   "F"
+  ],
+  "prospectiveDimensions": [
+   "G"
+  ]
+ },
+ "selection": {
+  "bucket": "LOW-HANGING",
+  "tier": "WAVE-1",
+  "role": "EXPERIMENT",
+  "whySelected": "LOW-HANGING, composite 61, unambiguous demand, viable renter present",
+  "hypothesisUnderTest": "Do our HUMAN_ASSUMED ticket/close-rate values hold? 1300/mo of demand with F=34. Measures real CPL and lead value where the model predicts thin economics."
+ },
+ "expectationsBaseline": {
+  "predictedRankability": 67,
+  "predictedTimeToSignalDays": 114,
+  "predictedMonthlyRenterGrossProfit": 887,
+  "note": "predictions are the falsifiable claims this deployment tests"
+ },
+ "measurementRequirements": [
+  "deployedAt",
+  "indexedAt",
+  "firstImpressionAt",
+  "firstClickAt",
+  "firstLeadAt",
+  "firstRevenueAt",
+  "dailyImpressions",
+  "dailyClicks",
+  "rankingsByKeyword",
+  "leadsTotal",
+  "leadsByChannel(call|form)",
+  "qualifiedLeads",
+  "renterOutreachCount",
+  "renterResponses",
+  "renterAcquiredAt",
+  "monthlyRent",
+  "revenue",
+  "operatingCost"
+ ],
+ "provenance": {
+  "experiment": "experiment-2",
+  "rawSerp": "out/experiment-2/raw/serp-appliance_repair_Aurora_IL.json",
+  "demandSource": "dataforseo:google_ads/search_volume",
+  "serpSource": "serpapi",
+  "depthSource": "crawl+rdap:depth-v1",
+  "asOf": 1786000000000
+ }
+}

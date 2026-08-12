@@ -30,6 +30,8 @@ export interface Ev {                       // evidence bundle for one opportuni
   domainAvailable?: boolean | null;
   freshnessDays?: number | null;
 }
+export const BENCH_CLOSE = 0.10;   // benchmark close rate (HUMAN_ASSUMED, single source of truth)
+export const BENCH_CTR = 0.25, BENCH_CONTACT = 0.12;
 const clamp = (n: number) => Math.max(0, Math.min(100, Math.round(n)));
 const has = (v: unknown): v is number => typeof v === "number" && !Number.isNaN(v);
 
@@ -124,7 +126,7 @@ export function commercialIntent(e: Ev): DimResult {
 }
 
 // ---------- D. LEAD ECONOMICS (assumption-dependent by design in v1) ----------
-export const V_D = "D-1.0.0";
+export const V_D = "D-1.1.0"; // per-lead value (was per-job); see D/F dependency audit
 export function leadEconomics(e: Ev): DimResult {
   const c: string[] = [], m: string[] = ["econ.cpl.live", "econ.close.rate.live", "econ.leadrate.live"], r: string[] = [];
   const et: EvidenceType[] = [];
@@ -132,9 +134,13 @@ export function leadEconomics(e: Ev): DimResult {
     return { score: null, confidence: 0, contributingMetrics: c, missingMetrics: [...m, "econ.ticket.avg", "econ.margin.gross"], evidenceTypes: et, rationale: ["no service economics available"], version: V_D, assumptionDependent: true };
   }
   c.push("econ.ticket.avg", "econ.margin.gross"); et.push("HUMAN_ASSUMED");
-  const gp = e.ticketAvg! * e.margin!;   // gross profit per closed job
-  let s = gp >= 8000 ? 90 : gp >= 3000 ? 78 : gp >= 1200 ? 64 : gp >= 500 ? 48 : gp >= 200 ? 32 : 18;
-  r.push(`~$${Math.round(gp)} gross profit per closed job (HUMAN_ASSUMED ticket $${e.ticketAvg} × margin ${e.margin})`);
+  // D = value of ONE LEAD (job gross profit x benchmark close rate). Per-lead is the
+  // unit live CPL/close-rate evidence will replace directly. F consumes this value
+  // rather than re-deriving ticket x margin (dependency audit: no double-derivation).
+  const gpJob = e.ticketAvg! * e.margin!;
+  const leadValue = gpJob * BENCH_CLOSE;
+  let s = leadValue >= 800 ? 90 : leadValue >= 300 ? 78 : leadValue >= 120 ? 64 : leadValue >= 50 ? 48 : leadValue >= 20 ? 32 : 18;
+  r.push(`~$${Math.round(leadValue)} value per lead ($${Math.round(gpJob)} job gross profit x ${BENCH_CLOSE} benchmark close rate; HUMAN_ASSUMED)`);
   let conf = 0.25;                        // assumption-dependent -> low confidence by construction
   if (has(e.cpc)) { c.push("kw.cpc"); et.push("OBSERVED"); conf += 0.15; r.push(`CPC $${e.cpc} provides an observed market anchor for lead cost`); }
   r.push("NO live CPL / close-rate evidence — replace when assets produce data");
@@ -165,17 +171,19 @@ export function renterDepth(e: Ev): DimResult {
 }
 
 // ---------- F. ASSET VALUE (value of owning the lead flow; not a copy of D/E) ----------
-export const V_F = "F-1.0.0";
+export const V_F = "F-1.1.0"; // consumes D per-lead value; no independent re-derivation
 export function assetValue(e: Ev, d: DimResult, b: DimResult, en: DimResult): DimResult {
   const c: string[] = [], m: string[] = [], r: string[] = [];
   if (b.score === null || d.score === null) {
     return { score: null, confidence: 0, contributingMetrics: c, missingMetrics: ["demand or economics"], evidenceTypes: [], rationale: ["cannot value an asset without demand and economics"], version: V_F, assumptionDependent: true };
   }
   // realizable monthly gross profit the asset could route: demand x economics x renter capacity
-  const leads = (e.vol ?? 0) * 0.25 * 0.12;              // benchmark funnel (HUMAN_ASSUMED)
-  const gp = (e.ticketAvg ?? 0) * (e.margin ?? 0) * 0.10; // per lead at 10% close
-  const monthlyGp = leads * gp;
-  c.push("kw.volume.exact", "econ.ticket.avg", "econ.margin.gross");
+  // F = SCALE of realizable flow = measured leads/mo x D's per-lead value.
+  // ticket x margin enters ONLY through D (audited: single derivation path).
+  const leads = (e.vol ?? 0) * BENCH_CTR * BENCH_CONTACT;
+  const leadValue = (e.ticketAvg ?? 0) * (e.margin ?? 0) * BENCH_CLOSE; // == D's basis
+  const monthlyGp = leads * leadValue;
+  c.push("kw.volume.exact", "D.leadEconomics");
   let s = monthlyGp >= 20000 ? 92 : monthlyGp >= 8000 ? 80 : monthlyGp >= 3000 ? 66 : monthlyGp >= 1000 ? 50 : monthlyGp >= 300 ? 34 : monthlyGp > 0 ? 20 : 8;
   r.push(`~$${Math.round(monthlyGp)}/mo renter gross profit at benchmark funnel rates (HUMAN_ASSUMED)`);
   if (en.score !== null) { c.push("op.count.viable"); if ((e.opViable ?? 0) === 0) { s -= 15; r.push("no viable renter → realizable value discounted"); } }

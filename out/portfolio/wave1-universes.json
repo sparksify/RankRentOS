@@ -1,0 +1,425 @@
+[
+ {
+  "id": "bathroom-remodel|Kirkland|WA",
+  "providerReturned": 5,
+  "attributable": 1,
+  "attributableVolume": 590,
+  "leakageExcluded": 2510,
+  "complete": true,
+  "unknown": 0,
+  "top": [
+   {
+    "keyword": "bathroom remodeling kirkland",
+    "volume": 590,
+    "cpc": 11.61
+   }
+  ]
+ },
+ {
+  "id": "kitchen-remodel|Rochester|MN",
+  "providerReturned": 4,
+  "attributable": 3,
+  "attributableVolume": 440,
+  "leakageExcluded": 10,
+  "complete": true,
+  "unknown": 0,
+  "top": [
+   {
+    "keyword": "kitchen remodeling rochester",
+    "volume": 390,
+    "cpc": 9.64
+   },
+   {
+    "keyword": "rochester kitchen and bath henrietta",
+    "volume": 40,
+    "cpc": 6.76
+   },
+   {
+    "keyword": "rochester kitchen and bath reviews",
+    "volume": 10,
+    "cpc": 3.82
+   }
+  ]
+ },
+ {
+  "id": "kitchen-remodel|Orlando|FL",
+  "providerReturned": 5,
+  "attributable": 3,
+  "attributableVolume": 640,
+  "leakageExcluded": 880,
+  "complete": true,
+  "unknown": 0,
+  "top": [
+   {
+    "keyword": "kitchen remodeling orlando",
+    "volume": 590,
+    "cpc": 20.04
+   },
+   {
+    "keyword": "kitchen showrooms orlando",
+    "volume": 30,
+    "cpc": 12.91
+   },
+   {
+    "keyword": "kitchen design orlando",
+    "volume": 20,
+    "cpc": 92.54
+   }
+  ]
+ },
+ {
+  "id": "bathroom-remodel|Temecula|CA",
+  "providerReturned": 3,
+  "attributable": 1,
+  "attributableVolume": 320,
+  "leakageExcluded": 1710,
+  "complete": true,
+  "unknown": 0,
+  "top": [
+   {
+    "keyword": "bathroom remodeling temecula",
+    "volume": 320,
+    "cpc": 14.54
+   }
+  ]
+ },
+ {
+  "id": "bathroom-remodel|Arvada|CO",
+  "providerReturned": 5,
+  "attributable": 1,
+  "attributableVolume": 390,
+  "leakageExcluded": 120,
+  "complete": true,
+  "unknown": 0,
+  "top": [
+   {
+    "keyword": "bathroom remodeling arvada",
+    "volume": 390,
+    "cpc": 5.01
+   }
+  ]
+ },
+ {
+  "id": "house-cleaning|Orlando|FL",
+  "providerReturned": 6,
+  "attributable": 6,
+  "attributableVolume": 3420,
+  "leakageExcluded": 0,
+  "complete": false,
+  "unknown": 1,
+  "top": [
+   {
+    "keyword": "house cleaning service orlando",
+    "volume": 2900,
+    "cpc": 10.48
+   },
+   {
+    "keyword": "deep cleaning services orlando",
+    "volume": 210,
+    "cpc": 13.91
+   },
+   {
+    "keyword": "move out cleaning services orlando",
+    "volume": 170,
+    "cpc": 13.02
+   },
+   {
+    "keyword": "cleaning services orlando prices",
+    "volume": 70,
+    "cpc": 11.43
+   },
+   {
+    "keyword": "apartment cleaning services orlando",
+    "volume": 70,
+    "cpc": 19.09
+   }
+  ]
+ },
+ {
+  "id": "window-replacement|Naperville|IL",
+  "providerReturned": 6,
+  "attributable": 5,
+  "attributableVolume": 960,
+  "leakageExcluded": 1300,
+  "complete": true,
+  "unknown": 0,
+  "top": [
+   {
+    "keyword": "window replacement naperville",
+    "volume": 480,
+    "cpc": 12.71
+   },
+   {
+    "keyword": "naperville windows and doors",
+    "volume": 320,
+    "cpc": 5.37
+   },
+   {
+    "keyword": "next door and window naperville",
+    "volume": 110,
+    "cpc": 12.47
+   },
+   {
+    "keyword": "pella windows naperville",
+    "volume": 40,
+    "cpc": 98.95
+   },
+   {
+    "keyword": "marvin windows naperville",
+    "volume": 10,
+    "cpc": 11.77
+   }
+  ]
+ },
+ {
+  "id": "kitchen-remodel|Madison|WI",
+  "providerReturned": 6,
+  "attributable": 4,
+  "attributableVolume": 760,
+  "leakageExcluded": 50,
+  "complete": true,
+  "unknown": 0,
+  "top": [
+   {
+    "keyword": "bathroom remodeling madison",
+    "volume": 390,
+    "cpc": 45.45
+   },
+   {
+    "keyword": "kitchen remodeling madison",
+    "volume": 260,
+    "cpc": 24.42
+   },
+   {
+    "keyword": "kitchen cabinets madison wi",
+    "volume": 90,
+    "cpc": 10.77
+   },
+   {
+    "keyword": "kitchen design madison wi",
+    "volume": 20,
+    "cpc": 4.88
+   }
+  ]
+ },
+ {
+  "id": "mold-remediation|Knoxville|TN",
+  "providerReturned": 4,
+  "attributable": 3,
+  "attributableVolume": 1210,
+  "leakageExcluded": 9900,
+  "complete": true,
+  "unknown": 0,
+  "top": [
+   {
+    "keyword": "mold remediation knoxville",
+    "volume": 590,
+    "cpc": 20.36
+   },
+   {
+    "keyword": "mold inspection knoxville tn",
+    "volume": 590,
+    "cpc": 20.36
+   },
+   {
+    "keyword": "mold doctors knoxville",
+    "volume": 30,
+    "cpc": 31.14
+   }
+  ]
+ },
+ {
+  "id": "basement-waterproofing|Naperville|IL",
+  "providerReturned": 4,
+  "attributable": 1,
+  "attributableVolume": 210,
+  "leakageExcluded": 90,
+  "complete": true,
+  "unknown": 0,
+  "top": [
+   {
+    "keyword": "basement waterproofing naperville",
+    "volume": 210,
+    "cpc": 24.12
+   }
+  ]
+ },
+ {
+  "id": "window-replacement|Livermore|CA",
+  "providerReturned": 7,
+  "attributable": 1,
+  "attributableVolume": 210,
+  "leakageExcluded": 460,
+  "complete": true,
+  "unknown": 0,
+  "top": [
+   {
+    "keyword": "window replacement livermore",
+    "volume": 210,
+    "cpc": 14.59
+   }
+  ]
+ },
+ {
+  "id": "house-cleaning|Irvine|CA",
+  "providerReturned": 5,
+  "attributable": 2,
+  "attributableVolume": 1010,
+  "leakageExcluded": 50090,
+  "complete": true,
+  "unknown": 0,
+  "top": [
+   {
+    "keyword": "house cleaning service irvine",
+    "volume": 1000,
+    "cpc": 9.46
+   },
+   {
+    "keyword": "move out cleaning services irvine",
+    "volume": 10,
+    "cpc": 26.59
+   }
+  ]
+ },
+ {
+  "id": "window-replacement|Amarillo|TX",
+  "providerReturned": 6,
+  "attributable": 3,
+  "attributableVolume": 300,
+  "leakageExcluded": 10,
+  "complete": true,
+  "unknown": 0,
+  "top": [
+   {
+    "keyword": "window replacement amarillo",
+    "volume": 210,
+    "cpc": 12.41
+   },
+   {
+    "keyword": "car window replacement amarillo",
+    "volume": 70,
+    "cpc": 9.81
+   },
+   {
+    "keyword": "andersen windows amarillo",
+    "volume": 20,
+    "cpc": 40.61
+   }
+  ]
+ },
+ {
+  "id": "junk-removal|Aurora|IL",
+  "providerReturned": 2,
+  "attributable": 1,
+  "attributableVolume": 480,
+  "leakageExcluded": 1900,
+  "complete": true,
+  "unknown": 0,
+  "top": [
+   {
+    "keyword": "junk removal aurora",
+    "volume": 480,
+    "cpc": 24.64
+   }
+  ]
+ },
+ {
+  "id": "water-damage|Chandler|AZ",
+  "providerReturned": 6,
+  "attributable": 1,
+  "attributableVolume": 210,
+  "leakageExcluded": 9190,
+  "complete": true,
+  "unknown": 0,
+  "top": [
+   {
+    "keyword": "water damage restoration chandler",
+    "volume": 210,
+    "cpc": 10.27
+   }
+  ]
+ },
+ {
+  "id": "appliance-repair|Aurora|IL",
+  "providerReturned": 4,
+  "attributable": 3,
+  "attributableVolume": 1690,
+  "leakageExcluded": 201000,
+  "complete": true,
+  "unknown": 0,
+  "top": [
+   {
+    "keyword": "appliance repair aurora",
+    "volume": 1300,
+    "cpc": 11.17
+   },
+   {
+    "keyword": "dishwasher repair aurora co",
+    "volume": 320,
+    "cpc": 14.4
+   },
+   {
+    "keyword": "aurora appliance repair reviews",
+    "volume": 70,
+    "cpc": 11.76
+   }
+  ]
+ },
+ {
+  "id": "metal-roofing|Rochester|MN",
+  "providerReturned": 0,
+  "attributable": 0,
+  "attributableVolume": 0,
+  "leakageExcluded": 0,
+  "complete": false,
+  "unknown": 0,
+  "top": []
+ },
+ {
+  "id": "roof-repair|Irvine|CA",
+  "providerReturned": 4,
+  "attributable": 3,
+  "attributableVolume": 230,
+  "leakageExcluded": 260,
+  "complete": true,
+  "unknown": 0,
+  "top": [
+   {
+    "keyword": "roof repair irvine",
+    "volume": 210,
+    "cpc": null
+   },
+   {
+    "keyword": "rescue roofer irvine",
+    "volume": 10,
+    "cpc": null
+   },
+   {
+    "keyword": "dk commercial roofing of irvine",
+    "volume": 10,
+    "cpc": null
+   }
+  ]
+ },
+ {
+  "id": "mold-remediation|Plano|TX",
+  "providerReturned": 4,
+  "attributable": 2,
+  "attributableVolume": 150,
+  "leakageExcluded": 250,
+  "complete": true,
+  "unknown": 0,
+  "top": [
+   {
+    "keyword": "mold remediation plano",
+    "volume": 110,
+    "cpc": 12.55
+   },
+   {
+    "keyword": "mold inspection plano",
+    "volume": 40,
+    "cpc": 13.14
+   }
+  ]
+ }
+]

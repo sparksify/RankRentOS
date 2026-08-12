@@ -1,0 +1,244 @@
+{
+ "specVersion": "asset-spec-1.0.0",
+ "generatedAt": "2026-08-06T07:06:40.000Z",
+ "assetId": "bathroom-remodel|Kirkland|WA",
+ "opportunityId": "bathroom-remodel|Kirkland|WA",
+ "experiment": "experiment-3",
+ "identity": {
+  "service": "Bathroom Remodeling",
+  "serviceSlug": "bathroom-remodel",
+  "category": "high-ticket-home",
+  "city": "Kirkland",
+  "state": "WA",
+  "population": 84430,
+  "medianIncome": 116044,
+  "stratum": "small|affluent",
+  "opportunityType": "general"
+ },
+ "domain": {
+  "recommended": "bathroomremodelingkirkland.com",
+  "status": "taken",
+  "note": "availability decays; re-check before purchase. NOT purchased by RankRentOS."
+ },
+ "keywordStrategy": {
+  "primaryKeyword": "bathroom remodeling Kirkland",
+  "exactLocalVolume": 590,
+  "volumeState": "measured",
+  "cpc": 11.61,
+  "demandAmbiguous": false,
+  "demandAttributionRisk": true,
+  "ambiguityNote": "city name \"Kirkland\" is shared with other US cities, so 590/mo is an UPPER BOUND on locally attributable demand. SERP/operator evidence IS correctly local (SerpAPI was queried with location \"Kirkland, WA\"); only the volume figure is at risk.",
+  "geoScopedUniverse": {
+   "collected": true,
+   "version": "universe-geo-1.0.0",
+   "attributableKeywords": 1,
+   "attributableVolume": 590,
+   "complete": true,
+   "unmeasuredMembers": 0,
+   "nationalVolumeExcluded": 2510,
+   "supportingKeywords": [
+    {
+     "keyword": "bathroom remodeling kirkland",
+     "volume": 590,
+     "cpc": 11.61
+    }
+   ]
+  }
+ },
+ "serpContext": {
+  "mapPackSize": 3,
+  "mapPackAvgReviews": 54,
+  "mapListingsWithoutWebsite": 0,
+  "directoriesInTop3": 1,
+  "innerPagesInTop5": 3,
+  "franchisesInTop3": 0,
+  "outOfTownInTop3": 1,
+  "titlesMissingCity": 1,
+  "adCount": 0,
+  "contentDepthBarWords": 1556,
+  "competitorAvgDomainAgeYears": 24,
+  "depthEvidence": {
+   "pagesCrawled": 2,
+   "domainsAged": 3,
+   "competitorsConsidered": 3
+  }
+ },
+ "renterContext": {
+  "relevantOperators": 9,
+  "viableRenters": 3,
+  "strongerOperators": 1,
+  "medianReviews": 49,
+  "websiteAdoptionPct": 33,
+  "advertisers": 0,
+  "concentration": "moderate"
+ },
+ "economicsContext": {
+  "ticketAvg": 18000,
+  "margin": 0.32,
+  "evidenceType": "HUMAN_ASSUMED",
+  "warning": "ticket and margin are HUMAN_ASSUMED and drive D and F. Live outcomes must replace them."
+ },
+ "scores": {
+  "modelVersion": "ai-v1.0.0",
+  "weightSet": "w-balanced-v1.1",
+  "bucketsVersion": "buckets-1.1.0",
+  "composite": 75,
+  "confidence": 80,
+  "evidenceCompleteness": 100,
+  "A": {
+   "score": 67,
+   "version": "A-1.0.0",
+   "confidence": 1,
+   "evidenceTypes": [
+    "DERIVED"
+   ],
+   "missing": []
+  },
+  "B": {
+   "score": 78,
+   "version": "B-1.0.0",
+   "confidence": 0.6,
+   "evidenceTypes": [
+    "OBSERVED",
+    "DERIVED"
+   ],
+   "missing": [
+    "kw.universe.volume (geo-scoped)"
+   ]
+  },
+  "C": {
+   "score": 82,
+   "version": "C-1.0.0",
+   "confidence": 0.85,
+   "evidenceTypes": [
+    "OBSERVED",
+    "DERIVED"
+   ],
+   "missing": []
+  },
+  "D": {
+   "score": 78,
+   "version": "D-1.1.0",
+   "confidence": 0.4,
+   "evidenceTypes": [
+    "HUMAN_ASSUMED",
+    "OBSERVED"
+   ],
+   "missing": [
+    "econ.cpl.live",
+    "econ.close.rate.live",
+    "econ.leadrate.live"
+   ]
+  },
+  "E": {
+   "score": 73,
+   "version": "E-1.0.0",
+   "confidence": 1,
+   "evidenceTypes": [
+    "DERIVED"
+   ],
+   "missing": []
+  },
+  "F": {
+   "score": 80,
+   "version": "F-1.1.0",
+   "confidence": 0.53,
+   "evidenceTypes": [
+    "OBSERVED",
+    "HUMAN_ASSUMED"
+   ],
+   "missing": []
+  },
+  "G": {
+   "score": 47,
+   "version": "G-1.0.0",
+   "confidence": 0.35,
+   "evidenceTypes": [
+    "DERIVED"
+   ],
+   "missing": [
+    "asset.indexed.days",
+    "asset.firstimpression.days",
+    "asset.firstrank.days"
+   ]
+  },
+  "H": {
+   "score": 91,
+   "version": "H-1.0.0",
+   "confidence": 0.8,
+   "evidenceTypes": [
+    "DERIVED"
+   ],
+   "missing": []
+  },
+  "I": {
+   "score": 80,
+   "version": "I-1.0.0",
+   "confidence": 1,
+   "evidenceTypes": [
+    "DERIVED"
+   ],
+   "missing": []
+  },
+  "sensitivity": {
+   "byWeightSet": {
+    "w-balanced-v1.1": 75,
+    "w-rankability": 72,
+    "w-economics": 77,
+    "w-asymmetry": 79,
+    "w-renter": 75
+   },
+   "bestRank": 2,
+   "worstRank": 5,
+   "rankSpread": 3
+  },
+  "assumptionDependentDimensions": [
+   "D",
+   "F"
+  ],
+  "prospectiveDimensions": [
+   "G"
+  ]
+ },
+ "selection": {
+  "bucket": "UNICORN",
+  "tier": "WAVE-1",
+  "role": "INVESTMENT",
+  "whySelected": "UNICORN, composite 75, unambiguous demand, viable renter present",
+  "hypothesisUnderTest": "A=67 predicts this SERP is winnable; F=80 predicts the lead flow is worth renting. Tests whether composite 75 converts to real rankings and revenue."
+ },
+ "expectationsBaseline": {
+  "predictedRankability": 67,
+  "predictedTimeToSignalDays": 114,
+  "predictedMonthlyRenterGrossProfit": 10195,
+  "note": "predictions are the falsifiable claims this deployment tests"
+ },
+ "measurementRequirements": [
+  "deployedAt",
+  "indexedAt",
+  "firstImpressionAt",
+  "firstClickAt",
+  "firstLeadAt",
+  "firstRevenueAt",
+  "dailyImpressions",
+  "dailyClicks",
+  "rankingsByKeyword",
+  "leadsTotal",
+  "leadsByChannel(call|form)",
+  "qualifiedLeads",
+  "renterOutreachCount",
+  "renterResponses",
+  "renterAcquiredAt",
+  "monthlyRent",
+  "revenue",
+  "operatingCost"
+ ],
+ "provenance": {
+  "experiment": "experiment-3",
+  "rawSerp": "out/experiment-3/raw/serp-bathroom_remodel_Kirkland_WA.json",
+  "demandSource": "dataforseo:google_ads/search_volume",
+  "serpSource": "serpapi",
+  "depthSource": "crawl+rdap:depth-v1",
+  "asOf": 1786000000000
+ }
+}

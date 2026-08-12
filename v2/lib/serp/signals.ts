@@ -130,11 +130,15 @@ export function extractSignals(
 
   const places = serp.localPack;
   const mapPackSize = places.length;
+  // Average over listings whose review count is actually known. A listing with no
+  // review data is UNKNOWN, not a zero-review business; counting it as 0 understates
+  // incumbent strength and makes hard markets look beatable.
+  const knownReviews = places
+    .map((p) => p.reviews)
+    .filter((n): n is number => typeof n === "number");
   const avgMapReviews =
-    mapPackSize > 0
-      ? Math.round(
-          places.reduce((s, p) => s + (p.reviews ?? 0), 0) / mapPackSize,
-        )
+    knownReviews.length > 0
+      ? Math.round(knownReviews.reduce((s, n) => s + n, 0) / knownReviews.length)
       : null;
   const mapListingsWithoutWebsite = places.filter((p) => !p.website).length;
 

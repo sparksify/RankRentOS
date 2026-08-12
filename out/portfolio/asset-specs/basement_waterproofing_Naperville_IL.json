@@ -1,0 +1,244 @@
+{
+ "specVersion": "asset-spec-1.0.0",
+ "generatedAt": "2026-08-06T07:06:40.000Z",
+ "assetId": "basement-waterproofing|Naperville|IL",
+ "opportunityId": "basement-waterproofing|Naperville|IL",
+ "experiment": "experiment-3",
+ "identity": {
+  "service": "Basement Waterproofing",
+  "serviceSlug": "basement-waterproofing",
+  "category": "high-ticket-home",
+  "city": "Naperville",
+  "state": "IL",
+  "population": 144864,
+  "medianIncome": 97076,
+  "stratum": "mid|upper-mid",
+  "opportunityType": "general"
+ },
+ "domain": {
+  "recommended": "basementwaterproofingnaperville.com",
+  "status": "taken",
+  "note": "availability decays; re-check before purchase. NOT purchased by RankRentOS."
+ },
+ "keywordStrategy": {
+  "primaryKeyword": "basement waterproofing Naperville",
+  "exactLocalVolume": 210,
+  "volumeState": "measured",
+  "cpc": 24.12,
+  "demandAmbiguous": false,
+  "demandAttributionRisk": true,
+  "ambiguityNote": "city name \"Naperville\" is shared with other US cities, so 210/mo is an UPPER BOUND on locally attributable demand. SERP/operator evidence IS correctly local (SerpAPI was queried with location \"Naperville, IL\"); only the volume figure is at risk.",
+  "geoScopedUniverse": {
+   "collected": true,
+   "version": "universe-geo-1.0.0",
+   "attributableKeywords": 1,
+   "attributableVolume": 210,
+   "complete": true,
+   "unmeasuredMembers": 0,
+   "nationalVolumeExcluded": 90,
+   "supportingKeywords": [
+    {
+     "keyword": "basement waterproofing naperville",
+     "volume": 210,
+     "cpc": 24.12
+    }
+   ]
+  }
+ },
+ "serpContext": {
+  "mapPackSize": 3,
+  "mapPackAvgReviews": 31,
+  "mapListingsWithoutWebsite": 0,
+  "directoriesInTop3": 2,
+  "innerPagesInTop5": 2,
+  "franchisesInTop3": 0,
+  "outOfTownInTop3": 1,
+  "titlesMissingCity": 0,
+  "adCount": 0,
+  "contentDepthBarWords": 1764,
+  "competitorAvgDomainAgeYears": 30.9,
+  "depthEvidence": {
+   "pagesCrawled": 2,
+   "domainsAged": 1,
+   "competitorsConsidered": 3
+  }
+ },
+ "renterContext": {
+  "relevantOperators": 9,
+  "viableRenters": 3,
+  "strongerOperators": 0,
+  "medianReviews": 33,
+  "websiteAdoptionPct": 33,
+  "advertisers": 0,
+  "concentration": "moderate"
+ },
+ "economicsContext": {
+  "ticketAvg": 8000,
+  "margin": 0.45,
+  "evidenceType": "HUMAN_ASSUMED",
+  "warning": "ticket and margin are HUMAN_ASSUMED and drive D and F. Live outcomes must replace them."
+ },
+ "scores": {
+  "modelVersion": "ai-v1.0.0",
+  "weightSet": "w-balanced-v1.1",
+  "bucketsVersion": "buckets-1.1.0",
+  "composite": 66,
+  "confidence": 80,
+  "evidenceCompleteness": 100,
+  "A": {
+   "score": 77,
+   "version": "A-1.0.0",
+   "confidence": 0.875,
+   "evidenceTypes": [
+    "DERIVED"
+   ],
+   "missing": []
+  },
+  "B": {
+   "score": 62,
+   "version": "B-1.0.0",
+   "confidence": 0.6,
+   "evidenceTypes": [
+    "OBSERVED",
+    "DERIVED"
+   ],
+   "missing": [
+    "kw.universe.volume (geo-scoped)"
+   ]
+  },
+  "C": {
+   "score": 82,
+   "version": "C-1.0.0",
+   "confidence": 0.85,
+   "evidenceTypes": [
+    "OBSERVED",
+    "DERIVED"
+   ],
+   "missing": []
+  },
+  "D": {
+   "score": 78,
+   "version": "D-1.1.0",
+   "confidence": 0.4,
+   "evidenceTypes": [
+    "HUMAN_ASSUMED",
+    "OBSERVED"
+   ],
+   "missing": [
+    "econ.cpl.live",
+    "econ.close.rate.live",
+    "econ.leadrate.live"
+   ]
+  },
+  "E": {
+   "score": 65,
+   "version": "E-1.0.0",
+   "confidence": 1,
+   "evidenceTypes": [
+    "DERIVED"
+   ],
+   "missing": []
+  },
+  "F": {
+   "score": 50,
+   "version": "F-1.1.0",
+   "confidence": 0.53,
+   "evidenceTypes": [
+    "OBSERVED",
+    "HUMAN_ASSUMED"
+   ],
+   "missing": []
+  },
+  "G": {
+   "score": 54,
+   "version": "G-1.0.0",
+   "confidence": 0.35,
+   "evidenceTypes": [
+    "DERIVED"
+   ],
+   "missing": [
+    "asset.indexed.days",
+    "asset.firstimpression.days",
+    "asset.firstrank.days"
+   ]
+  },
+  "H": {
+   "score": 69,
+   "version": "H-1.0.0",
+   "confidence": 0.7375,
+   "evidenceTypes": [
+    "DERIVED"
+   ],
+   "missing": []
+  },
+  "I": {
+   "score": 80,
+   "version": "I-1.0.0",
+   "confidence": 1,
+   "evidenceTypes": [
+    "DERIVED"
+   ],
+   "missing": []
+  },
+  "sensitivity": {
+   "byWeightSet": {
+    "w-balanced-v1.1": 66,
+    "w-rankability": 68,
+    "w-economics": 68,
+    "w-asymmetry": 67,
+    "w-renter": 67
+   },
+   "bestRank": 8,
+   "worstRank": 19,
+   "rankSpread": 11
+  },
+  "assumptionDependentDimensions": [
+   "D",
+   "F"
+  ],
+  "prospectiveDimensions": [
+   "G"
+  ]
+ },
+ "selection": {
+  "bucket": "LOW-HANGING",
+  "tier": "WAVE-1",
+  "role": "INVESTMENT",
+  "whySelected": "LOW-HANGING, composite 66, unambiguous demand, viable renter present",
+  "hypothesisUnderTest": "A=77 predicts this SERP is winnable; F=50 predicts the lead flow is worth renting. Tests whether composite 66 converts to real rankings and revenue."
+ },
+ "expectationsBaseline": {
+  "predictedRankability": 77,
+  "predictedTimeToSignalDays": 104,
+  "predictedMonthlyRenterGrossProfit": 2268,
+  "note": "predictions are the falsifiable claims this deployment tests"
+ },
+ "measurementRequirements": [
+  "deployedAt",
+  "indexedAt",
+  "firstImpressionAt",
+  "firstClickAt",
+  "firstLeadAt",
+  "firstRevenueAt",
+  "dailyImpressions",
+  "dailyClicks",
+  "rankingsByKeyword",
+  "leadsTotal",
+  "leadsByChannel(call|form)",
+  "qualifiedLeads",
+  "renterOutreachCount",
+  "renterResponses",
+  "renterAcquiredAt",
+  "monthlyRent",
+  "revenue",
+  "operatingCost"
+ ],
+ "provenance": {
+  "experiment": "experiment-3",
+  "rawSerp": "out/experiment-3/raw/serp-basement_waterproofing_Naperville_IL.json",
+  "demandSource": "dataforseo:google_ads/search_volume",
+  "serpSource": "serpapi",
+  "depthSource": "crawl+rdap:depth-v1",
+  "asOf": 1786000000000
+ }
+}
