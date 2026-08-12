@@ -1,0 +1,1568 @@
+[
+ {
+  "id": "pool-builder|Windsong Ranch|TX",
+  "kind": "community",
+  "name": "Windsong Ranch",
+  "city": "Prosper",
+  "query": "pool builder Windsong Ranch Prosper TX",
+  "signals": {
+   "directoriesInTop3": 0,
+   "innerPagesInTop5": 4,
+   "intentMismatchInTop5": 0,
+   "outOfTownInTop3": 2,
+   "franchisesInTop3": 0,
+   "buyerProof": false,
+   "top3TitlesMissingCity": 2,
+   "mapPack": "present",
+   "mapPackSize": 3,
+   "avgMapReviews": 11,
+   "mapListingsWithoutWebsite": 1,
+   "adCount": 0,
+   "advertisers": [],
+   "competitorAvgWords": null,
+   "competitorAvgDomainAgeYears": null
+  },
+  "operators": {
+   "version": "operators-v1",
+   "relevantOperatorCount": 11,
+   "viableOperatorCount": 2,
+   "strongerOperatorCount": 0,
+   "multiSourceCount": 0,
+   "advertiserCount": 0,
+   "medianReviews": 12,
+   "reviewDistribution": {
+    "p0": 2,
+    "p50": 12,
+    "p100": 20
+   },
+   "medianRating": 5,
+   "websiteAdoptionPct": 18,
+   "concentration": "moderate",
+   "evidenceNote": "signals only; no revenue/employee/budget inference (operators-v1)"
+  },
+  "organicMentioningCommunity": 9,
+  "domains": {
+   "poolbuilderwindsongranch.com": true,
+   "windsongranchpoolbuilder.com": true,
+   "windsongranchpools.com": true,
+   "poolsofwindsongranch.com": true
+  },
+  "preferredDomain": "poolbuilderwindsongranch.com",
+  "meta": {
+   "name": "Windsong Ranch",
+   "city": "Prosper",
+   "state": "TX",
+   "homes": 3300,
+   "status": "active-buildout",
+   "note": "2,030 acres; 10 new phases + 600 homesites releasing; famous 5-acre Crystal Lagoon"
+  }
+ },
+ {
+  "id": "pool-builder|Star Trail|TX",
+  "kind": "community",
+  "name": "Star Trail",
+  "city": "Prosper",
+  "query": "pool builder Star Trail Prosper TX",
+  "signals": {
+   "directoriesInTop3": 1,
+   "innerPagesInTop5": 4,
+   "intentMismatchInTop5": 0,
+   "outOfTownInTop3": 1,
+   "franchisesInTop3": 0,
+   "buyerProof": false,
+   "top3TitlesMissingCity": 1,
+   "mapPack": "present",
+   "mapPackSize": 3,
+   "avgMapReviews": 159,
+   "mapListingsWithoutWebsite": 1,
+   "adCount": 0,
+   "advertisers": [],
+   "competitorAvgWords": null,
+   "competitorAvgDomainAgeYears": null
+  },
+  "operators": {
+   "version": "operators-v1",
+   "relevantOperatorCount": 11,
+   "viableOperatorCount": 2,
+   "strongerOperatorCount": 1,
+   "multiSourceCount": 0,
+   "advertiserCount": 0,
+   "medianReviews": 20,
+   "reviewDistribution": {
+    "p0": 2,
+    "p50": 20,
+    "p100": 454
+   },
+   "medianRating": 5,
+   "websiteAdoptionPct": 18,
+   "concentration": "concentrated",
+   "evidenceNote": "signals only; no revenue/employee/budget inference (operators-v1)"
+  },
+  "organicMentioningCommunity": 6,
+  "domains": {
+   "poolbuilderstartrail.com": true,
+   "startrailpoolbuilder.com": true,
+   "startrailpools.com": true,
+   "poolsofstartrail.com": true
+  },
+  "preferredDomain": "poolbuilderstartrail.com",
+  "meta": {
+   "name": "Star Trail",
+   "city": "Prosper",
+   "state": "TX",
+   "homes": 1300,
+   "status": "active-buildout",
+   "note": "Prosper ISD; large lots, semi-custom"
+  }
+ },
+ {
+  "id": "pool-builder|Legacy Gardens|TX",
+  "kind": "community",
+  "name": "Legacy Gardens",
+  "city": "Prosper",
+  "query": "pool builder Legacy Gardens Prosper TX",
+  "signals": {
+   "directoriesInTop3": 0,
+   "innerPagesInTop5": 5,
+   "intentMismatchInTop5": 0,
+   "outOfTownInTop3": 2,
+   "franchisesInTop3": 0,
+   "buyerProof": false,
+   "top3TitlesMissingCity": 2,
+   "mapPack": "absent",
+   "mapPackSize": 0,
+   "avgMapReviews": null,
+   "mapListingsWithoutWebsite": 0,
+   "adCount": 0,
+   "advertisers": [],
+   "competitorAvgWords": null,
+   "competitorAvgDomainAgeYears": null
+  },
+  "operators": {
+   "version": "operators-v1",
+   "relevantOperatorCount": 8,
+   "viableOperatorCount": 0,
+   "strongerOperatorCount": 0,
+   "multiSourceCount": 0,
+   "advertiserCount": 0,
+   "medianReviews": null,
+   "reviewDistribution": null,
+   "medianRating": null,
+   "websiteAdoptionPct": 0,
+   "concentration": "insufficient-evidence",
+   "evidenceNote": "signals only; no revenue/employee/budget inference (operators-v1)"
+  },
+  "organicMentioningCommunity": 8,
+  "domains": {
+   "poolbuilderlegacygardens.com": true,
+   "legacygardenspoolbuilder.com": true,
+   "legacygardenspools.com": true,
+   "poolsoflegacygardens.com": true
+  },
+  "preferredDomain": "poolbuilderlegacygardens.com",
+  "meta": {
+   "name": "Legacy Gardens",
+   "city": "Prosper",
+   "state": "TX",
+   "homes": 400,
+   "status": "active-buildout",
+   "note": "luxury custom, large lots"
+  }
+ },
+ {
+  "id": "pool-builder|Whitley Place|TX",
+  "kind": "community",
+  "name": "Whitley Place",
+  "city": "Prosper",
+  "query": "pool builder Whitley Place Prosper TX",
+  "signals": {
+   "directoriesInTop3": 0,
+   "innerPagesInTop5": 5,
+   "intentMismatchInTop5": 0,
+   "outOfTownInTop3": 2,
+   "franchisesInTop3": 0,
+   "buyerProof": false,
+   "top3TitlesMissingCity": 2,
+   "mapPack": "present",
+   "mapPackSize": 3,
+   "avgMapReviews": 159,
+   "mapListingsWithoutWebsite": 1,
+   "adCount": 0,
+   "advertisers": [],
+   "competitorAvgWords": null,
+   "competitorAvgDomainAgeYears": null
+  },
+  "operators": {
+   "version": "operators-v1",
+   "relevantOperatorCount": 11,
+   "viableOperatorCount": 2,
+   "strongerOperatorCount": 1,
+   "multiSourceCount": 0,
+   "advertiserCount": 0,
+   "medianReviews": 20,
+   "reviewDistribution": {
+    "p0": 2,
+    "p50": 20,
+    "p100": 454
+   },
+   "medianRating": 5,
+   "websiteAdoptionPct": 18,
+   "concentration": "concentrated",
+   "evidenceNote": "signals only; no revenue/employee/budget inference (operators-v1)"
+  },
+  "organicMentioningCommunity": 4,
+  "domains": {
+   "poolbuilderwhitleyplace.com": true,
+   "whitleyplacepoolbuilder.com": true,
+   "whitleyplacepools.com": true,
+   "poolsofwhitleyplace.com": true
+  },
+  "preferredDomain": "poolbuilderwhitleyplace.com",
+  "meta": {
+   "name": "Whitley Place",
+   "city": "Prosper",
+   "state": "TX",
+   "homes": 600,
+   "status": "mature",
+   "note": "established, larger lots"
+  }
+ },
+ {
+  "id": "pool-builder|Light Farms|TX",
+  "kind": "community",
+  "name": "Light Farms",
+  "city": "Celina",
+  "query": "pool builder Light Farms Celina TX",
+  "signals": {
+   "directoriesInTop3": 0,
+   "innerPagesInTop5": 3,
+   "intentMismatchInTop5": 0,
+   "outOfTownInTop3": 1,
+   "franchisesInTop3": 0,
+   "buyerProof": false,
+   "top3TitlesMissingCity": 1,
+   "mapPack": "present",
+   "mapPackSize": 3,
+   "avgMapReviews": 295,
+   "mapListingsWithoutWebsite": 0,
+   "adCount": 0,
+   "advertisers": [],
+   "competitorAvgWords": null,
+   "competitorAvgDomainAgeYears": null
+  },
+  "operators": {
+   "version": "operators-v1",
+   "relevantOperatorCount": 9,
+   "viableOperatorCount": 3,
+   "strongerOperatorCount": 2,
+   "multiSourceCount": 0,
+   "advertiserCount": 0,
+   "medianReviews": 305,
+   "reviewDistribution": {
+    "p0": 20,
+    "p50": 305,
+    "p100": 559
+   },
+   "medianRating": 4.9,
+   "websiteAdoptionPct": 33,
+   "concentration": "concentrated",
+   "evidenceNote": "signals only; no revenue/employee/budget inference (operators-v1)"
+  },
+  "organicMentioningCommunity": 6,
+  "domains": {
+   "poolbuilderlightfarms.com": true,
+   "lightfarmspoolbuilder.com": true,
+   "lightfarmspools.com": true,
+   "poolsoflightfarms.com": true
+  },
+  "preferredDomain": "poolbuilderlightfarms.com",
+  "meta": {
+   "name": "Light Farms",
+   "city": "Celina",
+   "state": "TX",
+   "homes": 3000,
+   "status": "active-buildout",
+   "note": "one of Celina's largest; heavy amenity base"
+  }
+ },
+ {
+  "id": "pool-builder|Mustang Lakes|TX",
+  "kind": "community",
+  "name": "Mustang Lakes",
+  "city": "Celina",
+  "query": "pool builder Mustang Lakes Celina TX",
+  "signals": {
+   "directoriesInTop3": 0,
+   "innerPagesInTop5": 3,
+   "intentMismatchInTop5": 0,
+   "outOfTownInTop3": 1,
+   "franchisesInTop3": 0,
+   "buyerProof": false,
+   "top3TitlesMissingCity": 1,
+   "mapPack": "present",
+   "mapPackSize": 3,
+   "avgMapReviews": 209,
+   "mapListingsWithoutWebsite": 0,
+   "adCount": 0,
+   "advertisers": [],
+   "competitorAvgWords": null,
+   "competitorAvgDomainAgeYears": null
+  },
+  "operators": {
+   "version": "operators-v1",
+   "relevantOperatorCount": 10,
+   "viableOperatorCount": 3,
+   "strongerOperatorCount": 1,
+   "multiSourceCount": 0,
+   "advertiserCount": 0,
+   "medianReviews": 49,
+   "reviewDistribution": {
+    "p0": 20,
+    "p50": 49,
+    "p100": 559
+   },
+   "medianRating": 4.8,
+   "websiteAdoptionPct": 30,
+   "concentration": "concentrated",
+   "evidenceNote": "signals only; no revenue/employee/budget inference (operators-v1)"
+  },
+  "organicMentioningCommunity": 5,
+  "domains": {
+   "poolbuildermustanglakes.com": true,
+   "mustanglakespoolbuilder.com": true,
+   "mustanglakespools.com": true,
+   "poolsofmustanglakes.com": true
+  },
+  "preferredDomain": "poolbuildermustanglakes.com",
+  "meta": {
+   "name": "Mustang Lakes",
+   "city": "Celina",
+   "state": "TX",
+   "homes": 1200,
+   "status": "active-buildout",
+   "note": "largest amenity center in North Texas"
+  }
+ },
+ {
+  "id": "pool-builder|Mosaic|TX",
+  "kind": "community",
+  "name": "Mosaic",
+  "city": "Celina",
+  "query": "pool builder Mosaic Celina TX",
+  "signals": {
+   "directoriesInTop3": 1,
+   "innerPagesInTop5": 3,
+   "intentMismatchInTop5": 0,
+   "outOfTownInTop3": 1,
+   "franchisesInTop3": 0,
+   "buyerProof": false,
+   "top3TitlesMissingCity": 1,
+   "mapPack": "present",
+   "mapPackSize": 3,
+   "avgMapReviews": 112,
+   "mapListingsWithoutWebsite": 0,
+   "adCount": 0,
+   "advertisers": [],
+   "competitorAvgWords": null,
+   "competitorAvgDomainAgeYears": null
+  },
+  "operators": {
+   "version": "operators-v1",
+   "relevantOperatorCount": 11,
+   "viableOperatorCount": 3,
+   "strongerOperatorCount": 1,
+   "multiSourceCount": 0,
+   "advertiserCount": 0,
+   "medianReviews": 20,
+   "reviewDistribution": {
+    "p0": 12,
+    "p50": 20,
+    "p100": 305
+   },
+   "medianRating": 5,
+   "websiteAdoptionPct": 27,
+   "concentration": "concentrated",
+   "evidenceNote": "signals only; no revenue/employee/budget inference (operators-v1)"
+  },
+  "organicMentioningCommunity": 4,
+  "domains": {
+   "poolbuildermosaic.com": true,
+   "mosaicpoolbuilder.com": true,
+   "mosaicpools.com": false,
+   "poolsofmosaic.com": true
+  },
+  "preferredDomain": "poolbuildermosaic.com",
+  "meta": {
+   "name": "Mosaic",
+   "city": "Celina",
+   "state": "TX",
+   "homes": 3000,
+   "status": "active-buildout",
+   "note": "fast-growing; trails, lakes, The River amenity complex"
+  }
+ },
+ {
+  "id": "pool-builder|Cambridge Crossing|TX",
+  "kind": "community",
+  "name": "Cambridge Crossing",
+  "city": "Celina",
+  "query": "pool builder Cambridge Crossing Celina TX",
+  "signals": {
+   "directoriesInTop3": 0,
+   "innerPagesInTop5": 4,
+   "intentMismatchInTop5": 0,
+   "outOfTownInTop3": 2,
+   "franchisesInTop3": 0,
+   "buyerProof": false,
+   "top3TitlesMissingCity": 2,
+   "mapPack": "present",
+   "mapPackSize": 3,
+   "avgMapReviews": 209,
+   "mapListingsWithoutWebsite": 0,
+   "adCount": 0,
+   "advertisers": [],
+   "competitorAvgWords": null,
+   "competitorAvgDomainAgeYears": null
+  },
+  "operators": {
+   "version": "operators-v1",
+   "relevantOperatorCount": 10,
+   "viableOperatorCount": 3,
+   "strongerOperatorCount": 1,
+   "multiSourceCount": 0,
+   "advertiserCount": 0,
+   "medianReviews": 49,
+   "reviewDistribution": {
+    "p0": 20,
+    "p50": 49,
+    "p100": 559
+   },
+   "medianRating": 4.8,
+   "websiteAdoptionPct": 30,
+   "concentration": "concentrated",
+   "evidenceNote": "signals only; no revenue/employee/budget inference (operators-v1)"
+  },
+  "organicMentioningCommunity": 6,
+  "domains": {
+   "poolbuildercambridgecrossing.com": true,
+   "cambridgecrossingpoolbuilder.com": true,
+   "cambridgecrossingpools.com": true,
+   "poolsofcambridgecrossing.com": true
+  },
+  "preferredDomain": "poolbuildercambridgecrossing.com",
+  "meta": {
+   "name": "Cambridge Crossing",
+   "city": "Celina",
+   "state": "TX",
+   "homes": 1400,
+   "status": "active-buildout",
+   "note": "Celina/Prosper ISD corridor"
+  }
+ },
+ {
+  "id": "pool-builder|Sutton Fields|TX",
+  "kind": "community",
+  "name": "Sutton Fields",
+  "city": "Celina",
+  "query": "pool builder Sutton Fields Celina TX",
+  "signals": {
+   "directoriesInTop3": 1,
+   "innerPagesInTop5": 4,
+   "intentMismatchInTop5": 0,
+   "outOfTownInTop3": 0,
+   "franchisesInTop3": 0,
+   "buyerProof": false,
+   "top3TitlesMissingCity": 1,
+   "mapPack": "present",
+   "mapPackSize": 3,
+   "avgMapReviews": 209,
+   "mapListingsWithoutWebsite": 0,
+   "adCount": 0,
+   "advertisers": [],
+   "competitorAvgWords": null,
+   "competitorAvgDomainAgeYears": null
+  },
+  "operators": {
+   "version": "operators-v1",
+   "relevantOperatorCount": 11,
+   "viableOperatorCount": 3,
+   "strongerOperatorCount": 1,
+   "multiSourceCount": 0,
+   "advertiserCount": 0,
+   "medianReviews": 49,
+   "reviewDistribution": {
+    "p0": 20,
+    "p50": 49,
+    "p100": 559
+   },
+   "medianRating": 4.8,
+   "websiteAdoptionPct": 27,
+   "concentration": "concentrated",
+   "evidenceNote": "signals only; no revenue/employee/budget inference (operators-v1)"
+  },
+  "organicMentioningCommunity": 8,
+  "domains": {
+   "poolbuildersuttonfields.com": true,
+   "suttonfieldspoolbuilder.com": true,
+   "suttonfieldspools.com": true,
+   "poolsofsuttonfields.com": true
+  },
+  "preferredDomain": "poolbuildersuttonfields.com",
+  "meta": {
+   "name": "Sutton Fields",
+   "city": "Celina",
+   "state": "TX",
+   "homes": 1500,
+   "status": "active-buildout",
+   "note": "volume builder base, mid-affluent"
+  }
+ },
+ {
+  "id": "pool-builder|Ramble|TX",
+  "kind": "community",
+  "name": "Ramble",
+  "city": "Celina",
+  "query": "pool builder Ramble Celina TX",
+  "signals": {
+   "directoriesInTop3": 0,
+   "innerPagesInTop5": 4,
+   "intentMismatchInTop5": 0,
+   "outOfTownInTop3": 0,
+   "franchisesInTop3": 0,
+   "buyerProof": false,
+   "top3TitlesMissingCity": 0,
+   "mapPack": "present",
+   "mapPackSize": 3,
+   "avgMapReviews": 209,
+   "mapListingsWithoutWebsite": 0,
+   "adCount": 0,
+   "advertisers": [],
+   "competitorAvgWords": null,
+   "competitorAvgDomainAgeYears": null
+  },
+  "operators": {
+   "version": "operators-v1",
+   "relevantOperatorCount": 11,
+   "viableOperatorCount": 3,
+   "strongerOperatorCount": 1,
+   "multiSourceCount": 0,
+   "advertiserCount": 0,
+   "medianReviews": 49,
+   "reviewDistribution": {
+    "p0": 20,
+    "p50": 49,
+    "p100": 559
+   },
+   "medianRating": 4.8,
+   "websiteAdoptionPct": 27,
+   "concentration": "concentrated",
+   "evidenceNote": "signals only; no revenue/employee/budget inference (operators-v1)"
+  },
+  "organicMentioningCommunity": 9,
+  "domains": {
+   "poolbuilderramble.com": true,
+   "ramblepoolbuilder.com": true,
+   "ramblepools.com": true,
+   "poolsoframble.com": true
+  },
+  "preferredDomain": "poolbuilderramble.com",
+  "meta": {
+   "name": "Ramble",
+   "city": "Celina",
+   "state": "TX",
+   "homes": 2000,
+   "status": "pre-occupancy",
+   "note": "first phase opening 2026 — few/no homeowners yet"
+  }
+ },
+ {
+  "id": "pool-builder|Serenade|TX",
+  "kind": "community",
+  "name": "Serenade",
+  "city": "Celina",
+  "query": "pool builder Serenade Celina TX",
+  "signals": {
+   "directoriesInTop3": 0,
+   "innerPagesInTop5": 3,
+   "intentMismatchInTop5": 0,
+   "outOfTownInTop3": 1,
+   "franchisesInTop3": 0,
+   "buyerProof": false,
+   "top3TitlesMissingCity": 1,
+   "mapPack": "present",
+   "mapPackSize": 3,
+   "avgMapReviews": 209,
+   "mapListingsWithoutWebsite": 0,
+   "adCount": 0,
+   "advertisers": [],
+   "competitorAvgWords": null,
+   "competitorAvgDomainAgeYears": null
+  },
+  "operators": {
+   "version": "operators-v1",
+   "relevantOperatorCount": 11,
+   "viableOperatorCount": 3,
+   "strongerOperatorCount": 1,
+   "multiSourceCount": 0,
+   "advertiserCount": 0,
+   "medianReviews": 49,
+   "reviewDistribution": {
+    "p0": 20,
+    "p50": 49,
+    "p100": 559
+   },
+   "medianRating": 4.8,
+   "websiteAdoptionPct": 27,
+   "concentration": "concentrated",
+   "evidenceNote": "signals only; no revenue/employee/budget inference (operators-v1)"
+  },
+  "organicMentioningCommunity": 5,
+  "domains": {
+   "poolbuilderserenade.com": true,
+   "serenadepoolbuilder.com": true,
+   "serenadepools.com": true,
+   "poolsofserenade.com": true
+  },
+  "preferredDomain": "poolbuilderserenade.com",
+  "meta": {
+   "name": "Serenade",
+   "city": "Celina",
+   "state": "TX",
+   "homes": 1200,
+   "status": "pre-occupancy",
+   "note": "$650M, groundbroke March 2026 — no homeowners yet"
+  }
+ },
+ {
+  "id": "pool-builder|Fields|TX",
+  "kind": "community",
+  "name": "Fields",
+  "city": "Frisco",
+  "query": "pool builder Fields Frisco TX",
+  "signals": {
+   "directoriesInTop3": 0,
+   "innerPagesInTop5": 5,
+   "intentMismatchInTop5": 0,
+   "outOfTownInTop3": 0,
+   "franchisesInTop3": 0,
+   "buyerProof": false,
+   "top3TitlesMissingCity": 0,
+   "mapPack": "present",
+   "mapPackSize": 3,
+   "avgMapReviews": 50,
+   "mapListingsWithoutWebsite": 0,
+   "adCount": 0,
+   "advertisers": [],
+   "competitorAvgWords": null,
+   "competitorAvgDomainAgeYears": null
+  },
+  "operators": {
+   "version": "operators-v1",
+   "relevantOperatorCount": 11,
+   "viableOperatorCount": 3,
+   "strongerOperatorCount": 2,
+   "multiSourceCount": 0,
+   "advertiserCount": 0,
+   "medianReviews": 53,
+   "reviewDistribution": {
+    "p0": 16,
+    "p50": 53,
+    "p100": 82
+   },
+   "medianRating": 4.9,
+   "websiteAdoptionPct": 27,
+   "concentration": "moderate",
+   "evidenceNote": "signals only; no revenue/employee/budget inference (operators-v1)"
+  },
+  "organicMentioningCommunity": 3,
+  "domains": {
+   "poolbuilderfields.com": true,
+   "fieldspoolbuilder.com": true,
+   "fieldspools.com": true,
+   "poolsoffields.com": true
+  },
+  "preferredDomain": "poolbuilderfields.com",
+  "meta": {
+   "name": "Fields",
+   "city": "Frisco",
+   "state": "TX",
+   "homes": 10000,
+   "status": "early-buildout",
+   "note": "very large; PGA HQ corridor"
+  }
+ },
+ {
+  "id": "pool-builder|Phillips Creek Ranch|TX",
+  "kind": "community",
+  "name": "Phillips Creek Ranch",
+  "city": "Frisco",
+  "query": "pool builder Phillips Creek Ranch Frisco TX",
+  "signals": {
+   "directoriesInTop3": 0,
+   "innerPagesInTop5": 4,
+   "intentMismatchInTop5": 0,
+   "outOfTownInTop3": 1,
+   "franchisesInTop3": 0,
+   "buyerProof": false,
+   "top3TitlesMissingCity": 1,
+   "mapPack": "present",
+   "mapPackSize": 3,
+   "avgMapReviews": 31,
+   "mapListingsWithoutWebsite": 0,
+   "adCount": 0,
+   "advertisers": [],
+   "competitorAvgWords": null,
+   "competitorAvgDomainAgeYears": null
+  },
+  "operators": {
+   "version": "operators-v1",
+   "relevantOperatorCount": 10,
+   "viableOperatorCount": 2,
+   "strongerOperatorCount": 1,
+   "multiSourceCount": 1,
+   "advertiserCount": 0,
+   "medianReviews": 53,
+   "reviewDistribution": {
+    "p0": 8,
+    "p50": 53,
+    "p100": 53
+   },
+   "medianRating": 5,
+   "websiteAdoptionPct": 30,
+   "concentration": "concentrated",
+   "evidenceNote": "signals only; no revenue/employee/budget inference (operators-v1)"
+  },
+  "organicMentioningCommunity": 9,
+  "domains": {
+   "poolbuilderphillipscreekranch.com": true,
+   "phillipscreekranchpoolbuilder.com": true,
+   "phillipscreekranchpools.com": true,
+   "poolsofphillipscreekranch.com": true
+  },
+  "preferredDomain": "poolbuilderphillipscreekranch.com",
+  "meta": {
+   "name": "Phillips Creek Ranch",
+   "city": "Frisco",
+   "state": "TX",
+   "homes": 1800,
+   "status": "mature",
+   "note": "affluent, established"
+  }
+ },
+ {
+  "id": "pool-builder|Newman Village|TX",
+  "kind": "community",
+  "name": "Newman Village",
+  "city": "Frisco",
+  "query": "pool builder Newman Village Frisco TX",
+  "signals": {
+   "directoriesInTop3": 0,
+   "innerPagesInTop5": 5,
+   "intentMismatchInTop5": 0,
+   "outOfTownInTop3": 2,
+   "franchisesInTop3": 0,
+   "buyerProof": false,
+   "top3TitlesMissingCity": 2,
+   "mapPack": "present",
+   "mapPackSize": 3,
+   "avgMapReviews": 35,
+   "mapListingsWithoutWebsite": 0,
+   "adCount": 0,
+   "advertisers": [],
+   "competitorAvgWords": null,
+   "competitorAvgDomainAgeYears": null
+  },
+  "operators": {
+   "version": "operators-v1",
+   "relevantOperatorCount": 10,
+   "viableOperatorCount": 2,
+   "strongerOperatorCount": 1,
+   "multiSourceCount": 1,
+   "advertiserCount": 0,
+   "medianReviews": 53,
+   "reviewDistribution": {
+    "p0": 16,
+    "p50": 53,
+    "p100": 53
+   },
+   "medianRating": 4.9,
+   "websiteAdoptionPct": 30,
+   "concentration": "concentrated",
+   "evidenceNote": "signals only; no revenue/employee/budget inference (operators-v1)"
+  },
+  "organicMentioningCommunity": 7,
+  "domains": {
+   "poolbuildernewmanvillage.com": true,
+   "newmanvillagepoolbuilder.com": true,
+   "newmanvillagepools.com": true,
+   "poolsofnewmanvillage.com": true
+  },
+  "preferredDomain": "poolbuildernewmanvillage.com",
+  "meta": {
+   "name": "Newman Village",
+   "city": "Frisco",
+   "state": "TX",
+   "homes": 800,
+   "status": "mature",
+   "note": "luxury, Mediterranean-style custom"
+  }
+ },
+ {
+  "id": "pool-builder|Painted Tree|TX",
+  "kind": "community",
+  "name": "Painted Tree",
+  "city": "McKinney",
+  "query": "pool builder Painted Tree McKinney TX",
+  "signals": {
+   "directoriesInTop3": 0,
+   "innerPagesInTop5": 4,
+   "intentMismatchInTop5": 0,
+   "outOfTownInTop3": 1,
+   "franchisesInTop3": 0,
+   "buyerProof": false,
+   "top3TitlesMissingCity": 1,
+   "mapPack": "present",
+   "mapPackSize": 3,
+   "avgMapReviews": 59,
+   "mapListingsWithoutWebsite": 0,
+   "adCount": 0,
+   "advertisers": [],
+   "competitorAvgWords": null,
+   "competitorAvgDomainAgeYears": null
+  },
+  "operators": {
+   "version": "operators-v1",
+   "relevantOperatorCount": 9,
+   "viableOperatorCount": 3,
+   "strongerOperatorCount": 2,
+   "multiSourceCount": 0,
+   "advertiserCount": 0,
+   "medianReviews": 57,
+   "reviewDistribution": {
+    "p0": 17,
+    "p50": 57,
+    "p100": 102
+   },
+   "medianRating": 5,
+   "websiteAdoptionPct": 33,
+   "concentration": "moderate",
+   "evidenceNote": "signals only; no revenue/employee/budget inference (operators-v1)"
+  },
+  "organicMentioningCommunity": 9,
+  "domains": {
+   "poolbuilderpaintedtree.com": true,
+   "paintedtreepoolbuilder.com": true,
+   "paintedtreepools.com": true,
+   "poolsofpaintedtree.com": true
+  },
+  "preferredDomain": "poolbuilderpaintedtree.com",
+  "meta": {
+   "name": "Painted Tree",
+   "city": "McKinney",
+   "state": "TX",
+   "homes": 3400,
+   "status": "active-buildout",
+   "note": "one of McKinney's largest active MPCs"
+  }
+ },
+ {
+  "id": "pool-builder|Trinity Falls|TX",
+  "kind": "community",
+  "name": "Trinity Falls",
+  "city": "McKinney",
+  "query": "pool builder Trinity Falls McKinney TX",
+  "signals": {
+   "directoriesInTop3": 1,
+   "innerPagesInTop5": 4,
+   "intentMismatchInTop5": 0,
+   "outOfTownInTop3": 1,
+   "franchisesInTop3": 0,
+   "buyerProof": false,
+   "top3TitlesMissingCity": 1,
+   "mapPack": "present",
+   "mapPackSize": 3,
+   "avgMapReviews": 47,
+   "mapListingsWithoutWebsite": 0,
+   "adCount": 0,
+   "advertisers": [],
+   "competitorAvgWords": null,
+   "competitorAvgDomainAgeYears": null
+  },
+  "operators": {
+   "version": "operators-v1",
+   "relevantOperatorCount": 10,
+   "viableOperatorCount": 3,
+   "strongerOperatorCount": 1,
+   "multiSourceCount": 0,
+   "advertiserCount": 0,
+   "medianReviews": 22,
+   "reviewDistribution": {
+    "p0": 17,
+    "p50": 22,
+    "p100": 102
+   },
+   "medianRating": 5,
+   "websiteAdoptionPct": 30,
+   "concentration": "concentrated",
+   "evidenceNote": "signals only; no revenue/employee/budget inference (operators-v1)"
+  },
+  "organicMentioningCommunity": 6,
+  "domains": {
+   "poolbuildertrinityfalls.com": true,
+   "trinityfallspoolbuilder.com": true,
+   "trinityfallspools.com": true,
+   "poolsoftrinityfalls.com": true
+  },
+  "preferredDomain": "poolbuildertrinityfalls.com",
+  "meta": {
+   "name": "Trinity Falls",
+   "city": "McKinney",
+   "state": "TX",
+   "homes": 3000,
+   "status": "active-buildout",
+   "note": "NW McKinney, Trinity River corridor"
+  }
+ },
+ {
+  "id": "pool-builder|Stonebridge Ranch|TX",
+  "kind": "community",
+  "name": "Stonebridge Ranch",
+  "city": "McKinney",
+  "query": "pool builder Stonebridge Ranch McKinney TX",
+  "signals": {
+   "directoriesInTop3": 1,
+   "innerPagesInTop5": 4,
+   "intentMismatchInTop5": 0,
+   "outOfTownInTop3": 2,
+   "franchisesInTop3": 0,
+   "buyerProof": false,
+   "top3TitlesMissingCity": 3,
+   "mapPack": "present",
+   "mapPackSize": 3,
+   "avgMapReviews": 96,
+   "mapListingsWithoutWebsite": 0,
+   "adCount": 0,
+   "advertisers": [],
+   "competitorAvgWords": null,
+   "competitorAvgDomainAgeYears": null
+  },
+  "operators": {
+   "version": "operators-v1",
+   "relevantOperatorCount": 11,
+   "viableOperatorCount": 3,
+   "strongerOperatorCount": 2,
+   "multiSourceCount": 0,
+   "advertiserCount": 0,
+   "medianReviews": 102,
+   "reviewDistribution": {
+    "p0": 17,
+    "p50": 102,
+    "p100": 168
+   },
+   "medianRating": 4.8,
+   "websiteAdoptionPct": 27,
+   "concentration": "moderate",
+   "evidenceNote": "signals only; no revenue/employee/budget inference (operators-v1)"
+  },
+  "organicMentioningCommunity": 6,
+  "domains": {
+   "poolbuilderstonebridgeranch.com": true,
+   "stonebridgeranchpoolbuilder.com": true,
+   "stonebridgeranchpools.com": true,
+   "poolsofstonebridgeranch.com": true
+  },
+  "preferredDomain": "poolbuilderstonebridgeranch.com",
+  "meta": {
+   "name": "Stonebridge Ranch",
+   "city": "McKinney",
+   "state": "TX",
+   "homes": 7000,
+   "status": "mature",
+   "note": "very large but mature — most homes already improved"
+  }
+ },
+ {
+  "id": "pool-builder|Union Park|TX",
+  "kind": "community",
+  "name": "Union Park",
+  "city": "Aubrey",
+  "query": "pool builder Union Park Aubrey TX",
+  "signals": {
+   "directoriesInTop3": 0,
+   "innerPagesInTop5": 4,
+   "intentMismatchInTop5": 0,
+   "outOfTownInTop3": 1,
+   "franchisesInTop3": 0,
+   "buyerProof": true,
+   "top3TitlesMissingCity": 1,
+   "mapPack": "present",
+   "mapPackSize": 3,
+   "avgMapReviews": 216,
+   "mapListingsWithoutWebsite": 0,
+   "adCount": 0,
+   "advertisers": [],
+   "competitorAvgWords": null,
+   "competitorAvgDomainAgeYears": null
+  },
+  "operators": {
+   "version": "operators-v1",
+   "relevantOperatorCount": 10,
+   "viableOperatorCount": 3,
+   "strongerOperatorCount": 2,
+   "multiSourceCount": 1,
+   "advertiserCount": 0,
+   "medianReviews": 82,
+   "reviewDistribution": {
+    "p0": 7,
+    "p50": 82,
+    "p100": 559
+   },
+   "medianRating": 4.9,
+   "websiteAdoptionPct": 30,
+   "concentration": "concentrated",
+   "evidenceNote": "signals only; no revenue/employee/budget inference (operators-v1)"
+  },
+  "organicMentioningCommunity": 7,
+  "domains": {
+   "poolbuilderunionpark.com": true,
+   "unionparkpoolbuilder.com": true,
+   "unionparkpools.com": true,
+   "poolsofunionpark.com": true
+  },
+  "preferredDomain": "poolbuilderunionpark.com",
+  "meta": {
+   "name": "Union Park",
+   "city": "Aubrey",
+   "state": "TX",
+   "homes": 2000,
+   "status": "active-buildout",
+   "note": "Denton Co, strong new-build activity"
+  }
+ },
+ {
+  "id": "pool-builder|Sandbrock Ranch|TX",
+  "kind": "community",
+  "name": "Sandbrock Ranch",
+  "city": "Aubrey",
+  "query": "pool builder Sandbrock Ranch Aubrey TX",
+  "signals": {
+   "directoriesInTop3": 0,
+   "innerPagesInTop5": 2,
+   "intentMismatchInTop5": 0,
+   "outOfTownInTop3": 1,
+   "franchisesInTop3": 0,
+   "buyerProof": true,
+   "top3TitlesMissingCity": 1,
+   "mapPack": "present",
+   "mapPackSize": 3,
+   "avgMapReviews": 19,
+   "mapListingsWithoutWebsite": 1,
+   "adCount": 0,
+   "advertisers": [],
+   "competitorAvgWords": null,
+   "competitorAvgDomainAgeYears": null
+  },
+  "operators": {
+   "version": "operators-v1",
+   "relevantOperatorCount": 10,
+   "viableOperatorCount": 2,
+   "strongerOperatorCount": 0,
+   "multiSourceCount": 0,
+   "advertiserCount": 0,
+   "medianReviews": 20,
+   "reviewDistribution": {
+    "p0": 7,
+    "p50": 20,
+    "p100": 30
+   },
+   "medianRating": 5,
+   "websiteAdoptionPct": 20,
+   "concentration": "moderate",
+   "evidenceNote": "signals only; no revenue/employee/budget inference (operators-v1)"
+  },
+  "organicMentioningCommunity": 8,
+  "domains": {
+   "poolbuildersandbrockranch.com": true,
+   "sandbrockranchpoolbuilder.com": true,
+   "sandbrockranchpools.com": true,
+   "poolsofsandbrockranch.com": true
+  },
+  "preferredDomain": "poolbuildersandbrockranch.com",
+  "meta": {
+   "name": "Sandbrock Ranch",
+   "city": "Aubrey",
+   "state": "TX",
+   "homes": 1400,
+   "status": "active-buildout",
+   "note": "Denton Co, semi-custom"
+  }
+ },
+ {
+  "id": "pool-builder|Harvest|TX",
+  "kind": "community",
+  "name": "Harvest",
+  "city": "Argyle",
+  "query": "pool builder Harvest Argyle TX",
+  "signals": {
+   "directoriesInTop3": 1,
+   "innerPagesInTop5": 4,
+   "intentMismatchInTop5": 0,
+   "outOfTownInTop3": 2,
+   "franchisesInTop3": 0,
+   "buyerProof": false,
+   "top3TitlesMissingCity": 2,
+   "mapPack": "present",
+   "mapPackSize": 3,
+   "avgMapReviews": 49,
+   "mapListingsWithoutWebsite": 1,
+   "adCount": 0,
+   "advertisers": [],
+   "competitorAvgWords": null,
+   "competitorAvgDomainAgeYears": null
+  },
+  "operators": {
+   "version": "operators-v1",
+   "relevantOperatorCount": 9,
+   "viableOperatorCount": 2,
+   "strongerOperatorCount": 1,
+   "multiSourceCount": 1,
+   "advertiserCount": 0,
+   "medianReviews": 30,
+   "reviewDistribution": {
+    "p0": 11,
+    "p50": 30,
+    "p100": 107
+   },
+   "medianRating": 4.9,
+   "websiteAdoptionPct": 22,
+   "concentration": "concentrated",
+   "evidenceNote": "signals only; no revenue/employee/budget inference (operators-v1)"
+  },
+  "organicMentioningCommunity": 7,
+  "domains": {
+   "poolbuilderharvest.com": true,
+   "harvestpoolbuilder.com": true,
+   "harvestpools.com": false,
+   "poolsofharvest.com": true
+  },
+  "preferredDomain": "poolbuilderharvest.com",
+  "meta": {
+   "name": "Harvest",
+   "city": "Argyle",
+   "state": "TX",
+   "homes": 1800,
+   "status": "active-buildout",
+   "note": "farm-themed MPC, affluent Argyle/Northlake"
+  }
+ },
+ {
+  "id": "pool-builder|Canyon Falls|TX",
+  "kind": "community",
+  "name": "Canyon Falls",
+  "city": "Argyle",
+  "query": "pool builder Canyon Falls Argyle TX",
+  "signals": {
+   "directoriesInTop3": 0,
+   "innerPagesInTop5": 5,
+   "intentMismatchInTop5": 0,
+   "outOfTownInTop3": 2,
+   "franchisesInTop3": 0,
+   "buyerProof": true,
+   "top3TitlesMissingCity": 2,
+   "mapPack": "present",
+   "mapPackSize": 3,
+   "avgMapReviews": 24,
+   "mapListingsWithoutWebsite": 0,
+   "adCount": 0,
+   "advertisers": [],
+   "competitorAvgWords": null,
+   "competitorAvgDomainAgeYears": null
+  },
+  "operators": {
+   "version": "operators-v1",
+   "relevantOperatorCount": 11,
+   "viableOperatorCount": 2,
+   "strongerOperatorCount": 0,
+   "multiSourceCount": 0,
+   "advertiserCount": 0,
+   "medianReviews": 40,
+   "reviewDistribution": {
+    "p0": 8,
+    "p50": 40,
+    "p100": 40
+   },
+   "medianRating": 5,
+   "websiteAdoptionPct": 27,
+   "concentration": "concentrated",
+   "evidenceNote": "signals only; no revenue/employee/budget inference (operators-v1)"
+  },
+  "organicMentioningCommunity": 7,
+  "domains": {
+   "poolbuildercanyonfalls.com": true,
+   "canyonfallspoolbuilder.com": true,
+   "canyonfallspools.com": true,
+   "poolsofcanyonfalls.com": true
+  },
+  "preferredDomain": "poolbuildercanyonfalls.com",
+  "meta": {
+   "name": "Canyon Falls",
+   "city": "Argyle",
+   "state": "TX",
+   "homes": 1300,
+   "status": "active-buildout",
+   "note": "Argyle ISD, affluent"
+  }
+ },
+ {
+  "id": "pool-builder|The Preserve|TX",
+  "kind": "community",
+  "name": "The Preserve",
+  "city": "Prosper",
+  "query": "pool builder The Preserve Prosper TX",
+  "signals": {
+   "directoriesInTop3": 0,
+   "innerPagesInTop5": 4,
+   "intentMismatchInTop5": 0,
+   "outOfTownInTop3": 3,
+   "franchisesInTop3": 0,
+   "buyerProof": false,
+   "top3TitlesMissingCity": 3,
+   "mapPack": "present",
+   "mapPackSize": 3,
+   "avgMapReviews": 159,
+   "mapListingsWithoutWebsite": 1,
+   "adCount": 0,
+   "advertisers": [],
+   "competitorAvgWords": null,
+   "competitorAvgDomainAgeYears": null
+  },
+  "operators": {
+   "version": "operators-v1",
+   "relevantOperatorCount": 11,
+   "viableOperatorCount": 2,
+   "strongerOperatorCount": 1,
+   "multiSourceCount": 0,
+   "advertiserCount": 0,
+   "medianReviews": 20,
+   "reviewDistribution": {
+    "p0": 2,
+    "p50": 20,
+    "p100": 454
+   },
+   "medianRating": 5,
+   "websiteAdoptionPct": 18,
+   "concentration": "concentrated",
+   "evidenceNote": "signals only; no revenue/employee/budget inference (operators-v1)"
+  },
+  "organicMentioningCommunity": 0,
+  "domains": {
+   "poolbuilderthepreserve.com": true,
+   "thepreservepoolbuilder.com": true,
+   "thepreservepools.com": true,
+   "poolsofthepreserve.com": true
+  },
+  "preferredDomain": "poolbuilderthepreserve.com",
+  "meta": {
+   "name": "The Preserve",
+   "city": "Prosper",
+   "state": "TX",
+   "homes": 500,
+   "status": "active-buildout",
+   "note": "previously researched community"
+  }
+ },
+ {
+  "id": "pool-builder|Prosper|TX",
+  "kind": "city-control",
+  "name": "Prosper",
+  "city": "Prosper",
+  "query": "pool builder Prosper TX",
+  "signals": {
+   "directoriesInTop3": 0,
+   "innerPagesInTop5": 3,
+   "intentMismatchInTop5": 0,
+   "outOfTownInTop3": 2,
+   "franchisesInTop3": 0,
+   "buyerProof": false,
+   "top3TitlesMissingCity": 0,
+   "mapPack": "present",
+   "mapPackSize": 3,
+   "avgMapReviews": 295,
+   "mapListingsWithoutWebsite": 0,
+   "adCount": 0,
+   "advertisers": [],
+   "competitorAvgWords": null,
+   "competitorAvgDomainAgeYears": null
+  },
+  "operators": {
+   "version": "operators-v1",
+   "relevantOperatorCount": 11,
+   "viableOperatorCount": 3,
+   "strongerOperatorCount": 2,
+   "multiSourceCount": 0,
+   "advertiserCount": 0,
+   "medianReviews": 305,
+   "reviewDistribution": {
+    "p0": 20,
+    "p50": 305,
+    "p100": 559
+   },
+   "medianRating": 4.9,
+   "websiteAdoptionPct": 27,
+   "concentration": "concentrated",
+   "evidenceNote": "signals only; no revenue/employee/budget inference (operators-v1)"
+  },
+  "organicMentioningCommunity": null,
+  "domains": {
+   "poolbuilderprospertx.com": true,
+   "prosperpoolbuilders.com": false
+  },
+  "preferredDomain": "poolbuilderprospertx.com",
+  "meta": null
+ },
+ {
+  "id": "pool-builder|Celina|TX",
+  "kind": "city-control",
+  "name": "Celina",
+  "city": "Celina",
+  "query": "pool builder Celina TX",
+  "signals": {
+   "directoriesInTop3": 1,
+   "innerPagesInTop5": 2,
+   "intentMismatchInTop5": 0,
+   "outOfTownInTop3": 1,
+   "franchisesInTop3": 0,
+   "buyerProof": false,
+   "top3TitlesMissingCity": 1,
+   "mapPack": "present",
+   "mapPackSize": 3,
+   "avgMapReviews": 209,
+   "mapListingsWithoutWebsite": 0,
+   "adCount": 0,
+   "advertisers": [],
+   "competitorAvgWords": null,
+   "competitorAvgDomainAgeYears": null
+  },
+  "operators": {
+   "version": "operators-v1",
+   "relevantOperatorCount": 9,
+   "viableOperatorCount": 3,
+   "strongerOperatorCount": 1,
+   "multiSourceCount": 2,
+   "advertiserCount": 0,
+   "medianReviews": 49,
+   "reviewDistribution": {
+    "p0": 20,
+    "p50": 49,
+    "p100": 559
+   },
+   "medianRating": 4.8,
+   "websiteAdoptionPct": 33,
+   "concentration": "concentrated",
+   "evidenceNote": "signals only; no revenue/employee/budget inference (operators-v1)"
+  },
+  "organicMentioningCommunity": null,
+  "domains": {
+   "poolbuildercelinatx.com": true,
+   "celinapoolbuilders.com": false
+  },
+  "preferredDomain": "poolbuildercelinatx.com",
+  "meta": null
+ },
+ {
+  "id": "pool-builder|Frisco|TX",
+  "kind": "city-control",
+  "name": "Frisco",
+  "city": "Frisco",
+  "query": "pool builder Frisco TX",
+  "signals": {
+   "directoriesInTop3": 1,
+   "innerPagesInTop5": 1,
+   "intentMismatchInTop5": 0,
+   "outOfTownInTop3": 0,
+   "franchisesInTop3": 0,
+   "buyerProof": false,
+   "top3TitlesMissingCity": 1,
+   "mapPack": "present",
+   "mapPackSize": 3,
+   "avgMapReviews": 50,
+   "mapListingsWithoutWebsite": 0,
+   "adCount": 0,
+   "advertisers": [],
+   "competitorAvgWords": null,
+   "competitorAvgDomainAgeYears": null
+  },
+  "operators": {
+   "version": "operators-v1",
+   "relevantOperatorCount": 10,
+   "viableOperatorCount": 3,
+   "strongerOperatorCount": 2,
+   "multiSourceCount": 1,
+   "advertiserCount": 0,
+   "medianReviews": 53,
+   "reviewDistribution": {
+    "p0": 16,
+    "p50": 53,
+    "p100": 82
+   },
+   "medianRating": 4.9,
+   "websiteAdoptionPct": 30,
+   "concentration": "moderate",
+   "evidenceNote": "signals only; no revenue/employee/budget inference (operators-v1)"
+  },
+  "organicMentioningCommunity": null,
+  "domains": {
+   "poolbuilderfriscotx.com": true,
+   "friscopoolbuilders.com": false
+  },
+  "preferredDomain": "poolbuilderfriscotx.com",
+  "meta": null
+ },
+ {
+  "id": "pool-builder|McKinney|TX",
+  "kind": "city-control",
+  "name": "McKinney",
+  "city": "McKinney",
+  "query": "pool builder McKinney TX",
+  "signals": {
+   "directoriesInTop3": 1,
+   "innerPagesInTop5": 2,
+   "intentMismatchInTop5": 0,
+   "outOfTownInTop3": 0,
+   "franchisesInTop3": 0,
+   "buyerProof": false,
+   "top3TitlesMissingCity": 1,
+   "mapPack": "present",
+   "mapPackSize": 3,
+   "avgMapReviews": 96,
+   "mapListingsWithoutWebsite": 0,
+   "adCount": 0,
+   "advertisers": [],
+   "competitorAvgWords": null,
+   "competitorAvgDomainAgeYears": null
+  },
+  "operators": {
+   "version": "operators-v1",
+   "relevantOperatorCount": 10,
+   "viableOperatorCount": 3,
+   "strongerOperatorCount": 2,
+   "multiSourceCount": 1,
+   "advertiserCount": 0,
+   "medianReviews": 102,
+   "reviewDistribution": {
+    "p0": 17,
+    "p50": 102,
+    "p100": 168
+   },
+   "medianRating": 4.8,
+   "websiteAdoptionPct": 30,
+   "concentration": "moderate",
+   "evidenceNote": "signals only; no revenue/employee/budget inference (operators-v1)"
+  },
+  "organicMentioningCommunity": null,
+  "domains": {
+   "poolbuildermckinneytx.com": true,
+   "mckinneypoolbuilders.com": false
+  },
+  "preferredDomain": "poolbuildermckinneytx.com",
+  "meta": null
+ },
+ {
+  "id": "pool-builder|Aubrey|TX",
+  "kind": "city-control",
+  "name": "Aubrey",
+  "city": "Aubrey",
+  "query": "pool builder Aubrey TX",
+  "signals": {
+   "directoriesInTop3": 1,
+   "innerPagesInTop5": 4,
+   "intentMismatchInTop5": 0,
+   "outOfTownInTop3": 0,
+   "franchisesInTop3": 0,
+   "buyerProof": true,
+   "top3TitlesMissingCity": 0,
+   "mapPack": "present",
+   "mapPackSize": 3,
+   "avgMapReviews": 203,
+   "mapListingsWithoutWebsite": 1,
+   "adCount": 0,
+   "advertisers": [],
+   "competitorAvgWords": null,
+   "competitorAvgDomainAgeYears": null
+  },
+  "operators": {
+   "version": "operators-v1",
+   "relevantOperatorCount": 9,
+   "viableOperatorCount": 2,
+   "strongerOperatorCount": 1,
+   "multiSourceCount": 2,
+   "advertiserCount": 0,
+   "medianReviews": 30,
+   "reviewDistribution": {
+    "p0": 20,
+    "p50": 30,
+    "p100": 559
+   },
+   "medianRating": 5,
+   "websiteAdoptionPct": 22,
+   "concentration": "concentrated",
+   "evidenceNote": "signals only; no revenue/employee/budget inference (operators-v1)"
+  },
+  "organicMentioningCommunity": null,
+  "domains": {
+   "poolbuilderaubreytx.com": true,
+   "aubreypoolbuilders.com": true
+  },
+  "preferredDomain": "poolbuilderaubreytx.com",
+  "meta": null
+ },
+ {
+  "id": "pool-builder|Argyle|TX",
+  "kind": "city-control",
+  "name": "Argyle",
+  "city": "Argyle",
+  "query": "pool builder Argyle TX",
+  "signals": {
+   "directoriesInTop3": 1,
+   "innerPagesInTop5": 4,
+   "intentMismatchInTop5": 0,
+   "outOfTownInTop3": 0,
+   "franchisesInTop3": 0,
+   "buyerProof": true,
+   "top3TitlesMissingCity": 0,
+   "mapPack": "present",
+   "mapPackSize": 3,
+   "avgMapReviews": 311,
+   "mapListingsWithoutWebsite": 0,
+   "adCount": 0,
+   "advertisers": [],
+   "competitorAvgWords": null,
+   "competitorAvgDomainAgeYears": null
+  },
+  "operators": {
+   "version": "operators-v1",
+   "relevantOperatorCount": 10,
+   "viableOperatorCount": 3,
+   "strongerOperatorCount": 1,
+   "multiSourceCount": 1,
+   "advertiserCount": 0,
+   "medianReviews": 40,
+   "reviewDistribution": {
+    "p0": 28,
+    "p50": 40,
+    "p100": 865
+   },
+   "medianRating": 4.9,
+   "websiteAdoptionPct": 30,
+   "concentration": "concentrated",
+   "evidenceNote": "signals only; no revenue/employee/budget inference (operators-v1)"
+  },
+  "organicMentioningCommunity": null,
+  "domains": {
+   "poolbuilderargyletx.com": true,
+   "argylepoolbuilders.com": true
+  },
+  "preferredDomain": "poolbuilderargyletx.com",
+  "meta": null
+ }
+]

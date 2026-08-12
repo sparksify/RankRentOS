@@ -1,0 +1,2165 @@
+{
+ "generatedAt": "2026-08-06T07:06:40.000Z",
+ "design": "three-cohort live experiment: exploitation (A) + controlled hypothesis test (B) + exploration (C)",
+ "modelVersion": "ai-v1.0.0",
+ "weights": "w-balanced-v1.1",
+ "buckets": "buckets-1.1.0",
+ "totals": {
+  "assets": 28,
+  "cohortA": 13,
+  "cohortB": 10,
+  "cohortC": 5
+ },
+ "economics": {
+  "assets": 28,
+  "upfrontCapital": 705.04,
+  "monthlyCarrying": 42,
+  "sixMonthRiskCapital": 957.04,
+  "twelveMonthRiskCapital": 1634.08,
+  "domainCostEstimate": 341.04,
+  "costBasis": {
+   "known": {
+    "domainFirstYear": 12.18,
+    "domainRenewal": 15.18
+   },
+   "estimated": {
+    "hosting": 1,
+    "content": 8,
+    "deploy": 5,
+    "monitoring": 0.5
+   },
+   "unknown": [
+    "deployment engine per-asset cost (engine not built)",
+    "renter acquisition cost/time",
+    "link/citation acquisition if needed to rank",
+    "content revision cycles",
+    "pool-cluster content is photo-heavy and may cost more than the generic estimate"
+   ]
+  }
+ },
+ "selectedClusterService": {
+  "service": "Pool Builder",
+  "clusterFitness": 85,
+  "leadValue": 2125,
+  "metroVolume": 1030,
+  "cpcMedian": 5.23,
+  "rationale": "highest cluster fitness by a wide margin (85 vs 52 runner-up): $2,125 assumed lead value, the highest measured NT metro demand of any high-ticket service (1,030/mo), a $5.23 median CPC that is low relative to lead value, maximal new-home relevance and strong visual-content suitability."
+ },
+ "assets": [
+  {
+   "cohort": "A-CORE",
+   "service": "Bathroom Remodeling",
+   "serviceSlug": "bathroom-remodel",
+   "geography": "Bellevue",
+   "state": "WA",
+   "geographyType": "city",
+   "parentCity": null,
+   "domainCandidates": [
+    {
+     "domain": "bathroomremodelingbellevue.com",
+     "available": false,
+     "approxFirstYearUsd": 12.18
+    },
+    {
+     "domain": "bathroomremodelingbellevuewa.com",
+     "available": true,
+     "approxFirstYearUsd": 12.18
+    },
+    {
+     "domain": "bellevuebathroomremodeling.com",
+     "available": true,
+     "approxFirstYearUsd": 12.18
+    },
+    {
+     "domain": "bathroomremodelingofbellevue.com",
+     "available": true,
+     "approxFirstYearUsd": 12.18
+    },
+    {
+     "domain": "bellevuebathroomremodelingpros.com",
+     "available": true,
+     "approxFirstYearUsd": 12.18
+    }
+   ],
+   "preferredDomain": "bathroomremodelingbellevuewa.com",
+   "domainAvailable": true,
+   "aiScore": 75,
+   "aiBucket": "UNICORN",
+   "evidenceConfidence": 80,
+   "measuredVolume": 2400,
+   "volumeState": "measured-upper-bound-shared-city-name",
+   "cpc": 12.08,
+   "rankabilityScore": 58,
+   "renterDepthScore": 64,
+   "leadEconomicsScore": 78,
+   "assetValueScore": 92,
+   "asymmetryScore": 80,
+   "hypothesis": "A=58 predicts this SERP is winnable and F=92 predicts the lead flow is worth renting. If the A-I model is right, this asset ranks top-10 within ~6 months and attracts a renter.",
+   "reasonSelected": "UNICORN, composite 75, F=92 (rentable economics), E=64 (viable renters), geography serp-local-volume-upper-bound.",
+   "falsificationCondition": "no top-20 position for the primary keyword within 6 months, OR ranks but produces zero leads in 3 further months.",
+   "scalingCondition": "top-10 within 6 months AND >=1 lead/month => expand this service across the remaining small affluent markets.",
+   "geographyVerified": true,
+   "geographyVerdict": "serp-local-volume-upper-bound",
+   "demandIsUpperBound": true,
+   "ticketAssumed": 18000,
+   "marginAssumed": 0.32,
+   "serpContext": {
+    "mapPackSize": 3,
+    "mapPackAvgReviews": 44,
+    "directoriesInTop3": 1,
+    "contentDepthBarWords": 3192,
+    "competitorAvgDomainAgeYears": 10.2
+   },
+   "renterContext": {
+    "relevantOperators": 11,
+    "viableRenters": 3,
+    "websiteAdoptionPct": 27
+   },
+   "measurementPlan": "standard-city-asset",
+   "evidenceRefs": {
+    "experiment": "experiment-3",
+    "rawSerp": "out/experiment-3/raw/serp-bathroom_remodel_Bellevue_WA.json",
+    "demand": "dataforseo:google_ads/search_volume",
+    "scoreModel": "ai-v1.0.0",
+    "weights": "w-balanced-v1.1",
+    "buckets": "buckets-1.1.0"
+   }
+  },
+  {
+   "cohort": "A-CORE",
+   "service": "Bathroom Remodeling",
+   "serviceSlug": "bathroom-remodel",
+   "geography": "Kirkland",
+   "state": "WA",
+   "geographyType": "city",
+   "parentCity": null,
+   "domainCandidates": [
+    {
+     "domain": "bathroomremodelingkirkland.com",
+     "available": false,
+     "approxFirstYearUsd": 12.18
+    },
+    {
+     "domain": "bathroomremodelingkirklandwa.com",
+     "available": false,
+     "approxFirstYearUsd": 12.18
+    },
+    {
+     "domain": "kirklandbathroomremodeling.com",
+     "available": false,
+     "approxFirstYearUsd": 12.18
+    },
+    {
+     "domain": "bathroomremodelingofkirkland.com",
+     "available": true,
+     "approxFirstYearUsd": 12.18
+    },
+    {
+     "domain": "kirklandbathroomremodelingpros.com",
+     "available": true,
+     "approxFirstYearUsd": 12.18
+    }
+   ],
+   "preferredDomain": "bathroomremodelingofkirkland.com",
+   "domainAvailable": true,
+   "aiScore": 75,
+   "aiBucket": "UNICORN",
+   "evidenceConfidence": 80,
+   "measuredVolume": 590,
+   "volumeState": "measured-upper-bound-shared-city-name",
+   "cpc": 11.61,
+   "rankabilityScore": 67,
+   "renterDepthScore": 73,
+   "leadEconomicsScore": 78,
+   "assetValueScore": 80,
+   "asymmetryScore": 91,
+   "hypothesis": "A=67 predicts this SERP is winnable and F=80 predicts the lead flow is worth renting. If the A-I model is right, this asset ranks top-10 within ~6 months and attracts a renter.",
+   "reasonSelected": "UNICORN, composite 75, F=80 (rentable economics), E=73 (viable renters), geography serp-local-volume-upper-bound.",
+   "falsificationCondition": "no top-20 position for the primary keyword within 6 months, OR ranks but produces zero leads in 3 further months.",
+   "scalingCondition": "top-10 within 6 months AND >=1 lead/month => expand this service across the remaining small affluent markets.",
+   "geographyVerified": true,
+   "geographyVerdict": "serp-local-volume-upper-bound",
+   "demandIsUpperBound": true,
+   "ticketAssumed": 18000,
+   "marginAssumed": 0.32,
+   "serpContext": {
+    "mapPackSize": 3,
+    "mapPackAvgReviews": 54,
+    "directoriesInTop3": 1,
+    "contentDepthBarWords": 1556,
+    "competitorAvgDomainAgeYears": 24
+   },
+   "renterContext": {
+    "relevantOperators": 9,
+    "viableRenters": 3,
+    "websiteAdoptionPct": 33
+   },
+   "measurementPlan": "standard-city-asset",
+   "evidenceRefs": {
+    "experiment": "experiment-3",
+    "rawSerp": "out/experiment-3/raw/serp-bathroom_remodel_Kirkland_WA.json",
+    "demand": "dataforseo:google_ads/search_volume",
+    "scoreModel": "ai-v1.0.0",
+    "weights": "w-balanced-v1.1",
+    "buckets": "buckets-1.1.0"
+   }
+  },
+  {
+   "cohort": "A-CORE",
+   "service": "Kitchen Remodeling",
+   "serviceSlug": "kitchen-remodel",
+   "geography": "Bellevue",
+   "state": "NE",
+   "geographyType": "city",
+   "parentCity": null,
+   "domainCandidates": [
+    {
+     "domain": "kitchenremodelingbellevue.com",
+     "available": false,
+     "approxFirstYearUsd": 12.18
+    },
+    {
+     "domain": "kitchenremodelingbellevuene.com",
+     "available": true,
+     "approxFirstYearUsd": 12.18
+    },
+    {
+     "domain": "bellevuekitchenremodeling.com",
+     "available": false,
+     "approxFirstYearUsd": 12.18
+    },
+    {
+     "domain": "kitchenremodelingofbellevue.com",
+     "available": true,
+     "approxFirstYearUsd": 12.18
+    },
+    {
+     "domain": "bellevuekitchenremodelingpros.com",
+     "available": true,
+     "approxFirstYearUsd": 12.18
+    }
+   ],
+   "preferredDomain": "kitchenremodelingbellevuene.com",
+   "domainAvailable": true,
+   "aiScore": 74,
+   "aiBucket": "UNICORN",
+   "evidenceConfidence": 80,
+   "measuredVolume": 880,
+   "volumeState": "measured-upper-bound-shared-city-name",
+   "cpc": 5.69,
+   "rankabilityScore": 60,
+   "renterDepthScore": 72,
+   "leadEconomicsScore": 90,
+   "assetValueScore": 92,
+   "asymmetryScore": 81,
+   "hypothesis": "A=60 predicts this SERP is winnable and F=92 predicts the lead flow is worth renting. If the A-I model is right, this asset ranks top-10 within ~6 months and attracts a renter.",
+   "reasonSelected": "UNICORN, composite 74, F=92 (rentable economics), E=72 (viable renters), geography serp-local-volume-upper-bound.",
+   "falsificationCondition": "no top-20 position for the primary keyword within 6 months, OR ranks but produces zero leads in 3 further months.",
+   "scalingCondition": "top-10 within 6 months AND >=1 lead/month => expand this service across the remaining small affluent markets.",
+   "geographyVerified": true,
+   "geographyVerdict": "serp-local-volume-upper-bound",
+   "demandIsUpperBound": true,
+   "ticketAssumed": 35000,
+   "marginAssumed": 0.3,
+   "serpContext": {
+    "mapPackSize": 3,
+    "mapPackAvgReviews": 89,
+    "directoriesInTop3": 1,
+    "contentDepthBarWords": 1345,
+    "competitorAvgDomainAgeYears": 9.2
+   },
+   "renterContext": {
+    "relevantOperators": 11,
+    "viableRenters": 3,
+    "websiteAdoptionPct": 27
+   },
+   "measurementPlan": "standard-city-asset",
+   "evidenceRefs": {
+    "experiment": "experiment-3",
+    "rawSerp": "out/experiment-3/raw/serp-kitchen_remodel_Bellevue_NE.json",
+    "demand": "dataforseo:google_ads/search_volume",
+    "scoreModel": "ai-v1.0.0",
+    "weights": "w-balanced-v1.1",
+    "buckets": "buckets-1.1.0"
+   }
+  },
+  {
+   "cohort": "A-CORE",
+   "service": "Kitchen Remodeling",
+   "serviceSlug": "kitchen-remodel",
+   "geography": "Rochester",
+   "state": "MN",
+   "geographyType": "city",
+   "parentCity": null,
+   "domainCandidates": [
+    {
+     "domain": "kitchenremodelingrochester.com",
+     "available": false,
+     "approxFirstYearUsd": 12.18
+    },
+    {
+     "domain": "kitchenremodelingrochestermn.com",
+     "available": true,
+     "approxFirstYearUsd": 12.18
+    },
+    {
+     "domain": "rochesterkitchenremodeling.com",
+     "available": false,
+     "approxFirstYearUsd": 12.18
+    },
+    {
+     "domain": "kitchenremodelingofrochester.com",
+     "available": true,
+     "approxFirstYearUsd": 12.18
+    },
+    {
+     "domain": "rochesterkitchenremodelingpros.com",
+     "available": true,
+     "approxFirstYearUsd": 12.18
+    }
+   ],
+   "preferredDomain": "kitchenremodelingrochestermn.com",
+   "domainAvailable": true,
+   "aiScore": 73,
+   "aiBucket": "UNICORN",
+   "evidenceConfidence": 80,
+   "measuredVolume": 390,
+   "volumeState": "measured-upper-bound-shared-city-name",
+   "cpc": 9.64,
+   "rankabilityScore": 61,
+   "renterDepthScore": 91,
+   "leadEconomicsScore": 90,
+   "assetValueScore": 80,
+   "asymmetryScore": 76,
+   "hypothesis": "A=61 predicts this SERP is winnable and F=80 predicts the lead flow is worth renting. If the A-I model is right, this asset ranks top-10 within ~6 months and attracts a renter.",
+   "reasonSelected": "UNICORN, composite 73, F=80 (rentable economics), E=91 (viable renters), geography serp-local-volume-upper-bound.",
+   "falsificationCondition": "no top-20 position for the primary keyword within 6 months, OR ranks but produces zero leads in 3 further months.",
+   "scalingCondition": "top-10 within 6 months AND >=1 lead/month => expand this service across the remaining small affluent markets.",
+   "geographyVerified": true,
+   "geographyVerdict": "serp-local-volume-upper-bound",
+   "demandIsUpperBound": true,
+   "ticketAssumed": 35000,
+   "marginAssumed": 0.3,
+   "serpContext": {
+    "mapPackSize": 4,
+    "mapPackAvgReviews": 36,
+    "directoriesInTop3": 1,
+    "contentDepthBarWords": 1174,
+    "competitorAvgDomainAgeYears": 28.2
+   },
+   "renterContext": {
+    "relevantOperators": 12,
+    "viableRenters": 4,
+    "websiteAdoptionPct": 33
+   },
+   "measurementPlan": "standard-city-asset",
+   "evidenceRefs": {
+    "experiment": "experiment-3",
+    "rawSerp": "out/experiment-3/raw/serp-kitchen_remodel_Rochester_MN.json",
+    "demand": "dataforseo:google_ads/search_volume",
+    "scoreModel": "ai-v1.0.0",
+    "weights": "w-balanced-v1.1",
+    "buckets": "buckets-1.1.0"
+   }
+  },
+  {
+   "cohort": "A-CORE",
+   "service": "Kitchen Remodeling",
+   "serviceSlug": "kitchen-remodel",
+   "geography": "Orlando",
+   "state": "FL",
+   "geographyType": "city",
+   "parentCity": null,
+   "domainCandidates": [
+    {
+     "domain": "kitchenremodelingorlando.com",
+     "available": false,
+     "approxFirstYearUsd": 12.18
+    },
+    {
+     "domain": "kitchenremodelingorlandofl.com",
+     "available": true,
+     "approxFirstYearUsd": 12.18
+    },
+    {
+     "domain": "orlandokitchenremodeling.com",
+     "available": false,
+     "approxFirstYearUsd": 12.18
+    },
+    {
+     "domain": "kitchenremodelingoforlando.com",
+     "available": true,
+     "approxFirstYearUsd": 12.18
+    },
+    {
+     "domain": "orlandokitchenremodelingpros.com",
+     "available": true,
+     "approxFirstYearUsd": 12.18
+    }
+   ],
+   "preferredDomain": "kitchenremodelingorlandofl.com",
+   "domainAvailable": true,
+   "aiScore": 72,
+   "aiBucket": "HIGH-VALUE",
+   "evidenceConfidence": 80,
+   "measuredVolume": 590,
+   "volumeState": "measured",
+   "cpc": 20.04,
+   "rankabilityScore": 54,
+   "renterDepthScore": 79,
+   "leadEconomicsScore": 90,
+   "assetValueScore": 80,
+   "asymmetryScore": 67,
+   "hypothesis": "A=54 predicts this SERP is winnable and F=80 predicts the lead flow is worth renting. If the A-I model is right, this asset ranks top-10 within ~6 months and attracts a renter.",
+   "reasonSelected": "HIGH-VALUE, composite 72, F=80 (rentable economics), E=79 (viable renters), geography verified.",
+   "falsificationCondition": "no top-20 position for the primary keyword within 6 months, OR ranks but produces zero leads in 3 further months.",
+   "scalingCondition": "top-10 within 6 months AND >=1 lead/month => expand this service across the remaining small affluent markets.",
+   "geographyVerified": true,
+   "geographyVerdict": "verified",
+   "demandIsUpperBound": false,
+   "ticketAssumed": 35000,
+   "marginAssumed": 0.3,
+   "serpContext": {
+    "mapPackSize": 3,
+    "mapPackAvgReviews": 98,
+    "directoriesInTop3": 1,
+    "contentDepthBarWords": 1346,
+    "competitorAvgDomainAgeYears": 17.5
+   },
+   "renterContext": {
+    "relevantOperators": 10,
+    "viableRenters": 3,
+    "websiteAdoptionPct": 30
+   },
+   "measurementPlan": "standard-city-asset",
+   "evidenceRefs": {
+    "experiment": "experiment-2",
+    "rawSerp": "out/experiment-2/raw/serp-kitchen_remodel_Orlando_FL.json",
+    "demand": "dataforseo:google_ads/search_volume",
+    "scoreModel": "ai-v1.0.0",
+    "weights": "w-balanced-v1.1",
+    "buckets": "buckets-1.1.0"
+   }
+  },
+  {
+   "cohort": "A-CORE",
+   "service": "Bathroom Remodeling",
+   "serviceSlug": "bathroom-remodel",
+   "geography": "Temecula",
+   "state": "CA",
+   "geographyType": "city",
+   "parentCity": null,
+   "domainCandidates": [
+    {
+     "domain": "bathroomremodelingtemecula.com",
+     "available": true,
+     "approxFirstYearUsd": 12.18
+    },
+    {
+     "domain": "bathroomremodelingtemeculaca.com",
+     "available": true,
+     "approxFirstYearUsd": 12.18
+    },
+    {
+     "domain": "temeculabathroomremodeling.com",
+     "available": true,
+     "approxFirstYearUsd": 12.18
+    },
+    {
+     "domain": "bathroomremodelingoftemecula.com",
+     "available": true,
+     "approxFirstYearUsd": 12.18
+    },
+    {
+     "domain": "temeculabathroomremodelingpros.com",
+     "available": true,
+     "approxFirstYearUsd": 12.18
+    }
+   ],
+   "preferredDomain": "bathroomremodelingtemecula.com",
+   "domainAvailable": true,
+   "aiScore": 72,
+   "aiBucket": "UNICORN",
+   "evidenceConfidence": 80,
+   "measuredVolume": 320,
+   "volumeState": "measured",
+   "cpc": 14.54,
+   "rankabilityScore": 75,
+   "renterDepthScore": 73,
+   "leadEconomicsScore": 78,
+   "assetValueScore": 66,
+   "asymmetryScore": 92,
+   "hypothesis": "A=75 predicts this SERP is winnable and F=66 predicts the lead flow is worth renting. If the A-I model is right, this asset ranks top-10 within ~6 months and attracts a renter.",
+   "reasonSelected": "UNICORN, composite 72, F=66 (rentable economics), E=73 (viable renters), geography verified.",
+   "falsificationCondition": "no top-20 position for the primary keyword within 6 months, OR ranks but produces zero leads in 3 further months.",
+   "scalingCondition": "top-10 within 6 months AND >=1 lead/month => expand this service across the remaining small affluent markets.",
+   "geographyVerified": true,
+   "geographyVerdict": "verified",
+   "demandIsUpperBound": false,
+   "ticketAssumed": 18000,
+   "marginAssumed": 0.32,
+   "serpContext": {
+    "mapPackSize": 3,
+    "mapPackAvgReviews": 84,
+    "directoriesInTop3": 2,
+    "contentDepthBarWords": 732,
+    "competitorAvgDomainAgeYears": 12.1
+   },
+   "renterContext": {
+    "relevantOperators": 10,
+    "viableRenters": 3,
+    "websiteAdoptionPct": 30
+   },
+   "measurementPlan": "standard-city-asset",
+   "evidenceRefs": {
+    "experiment": "experiment-3",
+    "rawSerp": "out/experiment-3/raw/serp-bathroom_remodel_Temecula_CA.json",
+    "demand": "dataforseo:google_ads/search_volume",
+    "scoreModel": "ai-v1.0.0",
+    "weights": "w-balanced-v1.1",
+    "buckets": "buckets-1.1.0"
+   }
+  },
+  {
+   "cohort": "A-CORE",
+   "service": "Window Replacement",
+   "serviceSlug": "window-replacement",
+   "geography": "Naperville",
+   "state": "IL",
+   "geographyType": "city",
+   "parentCity": null,
+   "domainCandidates": [
+    {
+     "domain": "windowreplacementnaperville.com",
+     "available": false,
+     "approxFirstYearUsd": 12.18
+    },
+    {
+     "domain": "windowreplacementnapervilleil.com",
+     "available": false,
+     "approxFirstYearUsd": 12.18
+    },
+    {
+     "domain": "napervillewindowreplacement.com",
+     "available": false,
+     "approxFirstYearUsd": 12.18
+    },
+    {
+     "domain": "windowreplacementofnaperville.com",
+     "available": true,
+     "approxFirstYearUsd": 12.18
+    },
+    {
+     "domain": "napervillewindowreplacementpros.com",
+     "available": true,
+     "approxFirstYearUsd": 12.18
+    }
+   ],
+   "preferredDomain": "windowreplacementofnaperville.com",
+   "domainAvailable": true,
+   "aiScore": 69,
+   "aiBucket": "UNICORN",
+   "evidenceConfidence": 80,
+   "measuredVolume": 480,
+   "volumeState": "measured",
+   "cpc": 12.71,
+   "rankabilityScore": 59,
+   "renterDepthScore": 73,
+   "leadEconomicsScore": 78,
+   "assetValueScore": 66,
+   "asymmetryScore": 68,
+   "hypothesis": "A=59 predicts this SERP is winnable and F=66 predicts the lead flow is worth renting. If the A-I model is right, this asset ranks top-10 within ~6 months and attracts a renter.",
+   "reasonSelected": "UNICORN, composite 69, F=66 (rentable economics), E=73 (viable renters), geography verified.",
+   "falsificationCondition": "no top-20 position for the primary keyword within 6 months, OR ranks but produces zero leads in 3 further months.",
+   "scalingCondition": "top-10 within 6 months AND >=1 lead/month => expand this service across the remaining small affluent markets.",
+   "geographyVerified": true,
+   "geographyVerdict": "verified",
+   "demandIsUpperBound": false,
+   "ticketAssumed": 12000,
+   "marginAssumed": 0.35,
+   "serpContext": {
+    "mapPackSize": 3,
+    "mapPackAvgReviews": 174,
+    "directoriesInTop3": 2,
+    "contentDepthBarWords": 1949,
+    "competitorAvgDomainAgeYears": 21.9
+   },
+   "renterContext": {
+    "relevantOperators": 8,
+    "viableRenters": 3,
+    "websiteAdoptionPct": 38
+   },
+   "measurementPlan": "standard-city-asset",
+   "evidenceRefs": {
+    "experiment": "experiment-3",
+    "rawSerp": "out/experiment-3/raw/serp-window_replacement_Naperville_IL.json",
+    "demand": "dataforseo:google_ads/search_volume",
+    "scoreModel": "ai-v1.0.0",
+    "weights": "w-balanced-v1.1",
+    "buckets": "buckets-1.1.0"
+   }
+  },
+  {
+   "cohort": "A-CORE",
+   "service": "Basement Waterproofing",
+   "serviceSlug": "basement-waterproofing",
+   "geography": "Naperville",
+   "state": "IL",
+   "geographyType": "city",
+   "parentCity": null,
+   "domainCandidates": [
+    {
+     "domain": "basementwaterproofingnaperville.com",
+     "available": false,
+     "approxFirstYearUsd": 12.18
+    },
+    {
+     "domain": "basementwaterproofingnapervilleil.com",
+     "available": false,
+     "approxFirstYearUsd": 12.18
+    },
+    {
+     "domain": "napervillebasementwaterproofing.com",
+     "available": false,
+     "approxFirstYearUsd": 12.18
+    },
+    {
+     "domain": "basementwaterproofingofnaperville.com",
+     "available": true,
+     "approxFirstYearUsd": 12.18
+    },
+    {
+     "domain": "napervillebasementwaterproofingpros.com",
+     "available": true,
+     "approxFirstYearUsd": 12.18
+    }
+   ],
+   "preferredDomain": "basementwaterproofingofnaperville.com",
+   "domainAvailable": true,
+   "aiScore": 66,
+   "aiBucket": "LOW-HANGING",
+   "evidenceConfidence": 80,
+   "measuredVolume": 210,
+   "volumeState": "measured",
+   "cpc": 24.12,
+   "rankabilityScore": 77,
+   "renterDepthScore": 65,
+   "leadEconomicsScore": 78,
+   "assetValueScore": 50,
+   "asymmetryScore": 69,
+   "hypothesis": "A=77 predicts this SERP is winnable and F=50 predicts the lead flow is worth renting. If the A-I model is right, this asset ranks top-10 within ~6 months and attracts a renter.",
+   "reasonSelected": "LOW-HANGING, composite 66, F=50 (rentable economics), E=65 (viable renters), geography verified.",
+   "falsificationCondition": "no top-20 position for the primary keyword within 6 months, OR ranks but produces zero leads in 3 further months.",
+   "scalingCondition": "top-10 within 6 months AND >=1 lead/month => expand this service across the remaining small affluent markets.",
+   "geographyVerified": true,
+   "geographyVerdict": "verified",
+   "demandIsUpperBound": false,
+   "ticketAssumed": 8000,
+   "marginAssumed": 0.45,
+   "serpContext": {
+    "mapPackSize": 3,
+    "mapPackAvgReviews": 31,
+    "directoriesInTop3": 2,
+    "contentDepthBarWords": 1764,
+    "competitorAvgDomainAgeYears": 30.9
+   },
+   "renterContext": {
+    "relevantOperators": 9,
+    "viableRenters": 3,
+    "websiteAdoptionPct": 33
+   },
+   "measurementPlan": "standard-city-asset",
+   "evidenceRefs": {
+    "experiment": "experiment-3",
+    "rawSerp": "out/experiment-3/raw/serp-basement_waterproofing_Naperville_IL.json",
+    "demand": "dataforseo:google_ads/search_volume",
+    "scoreModel": "ai-v1.0.0",
+    "weights": "w-balanced-v1.1",
+    "buckets": "buckets-1.1.0"
+   }
+  },
+  {
+   "cohort": "A-CORE",
+   "service": "Window Replacement",
+   "serviceSlug": "window-replacement",
+   "geography": "Amarillo",
+   "state": "TX",
+   "geographyType": "city",
+   "parentCity": null,
+   "domainCandidates": [
+    {
+     "domain": "windowreplacementamarillo.com",
+     "available": true,
+     "approxFirstYearUsd": 12.18
+    },
+    {
+     "domain": "windowreplacementamarillotx.com",
+     "available": true,
+     "approxFirstYearUsd": 12.18
+    },
+    {
+     "domain": "amarillowindowreplacement.com",
+     "available": false,
+     "approxFirstYearUsd": 12.18
+    },
+    {
+     "domain": "windowreplacementofamarillo.com",
+     "available": true,
+     "approxFirstYearUsd": 12.18
+    },
+    {
+     "domain": "amarillowindowreplacementpros.com",
+     "available": true,
+     "approxFirstYearUsd": 12.18
+    }
+   ],
+   "preferredDomain": "windowreplacementamarillo.com",
+   "domainAvailable": true,
+   "aiScore": 63,
+   "aiBucket": "LOW-HANGING",
+   "evidenceConfidence": 80,
+   "measuredVolume": 210,
+   "volumeState": "measured",
+   "cpc": 12.41,
+   "rankabilityScore": 62,
+   "renterDepthScore": 65,
+   "leadEconomicsScore": 78,
+   "assetValueScore": 50,
+   "asymmetryScore": 68,
+   "hypothesis": "A=62 predicts this SERP is winnable and F=50 predicts the lead flow is worth renting. If the A-I model is right, this asset ranks top-10 within ~6 months and attracts a renter.",
+   "reasonSelected": "LOW-HANGING, composite 63, F=50 (rentable economics), E=65 (viable renters), geography verified.",
+   "falsificationCondition": "no top-20 position for the primary keyword within 6 months, OR ranks but produces zero leads in 3 further months.",
+   "scalingCondition": "top-10 within 6 months AND >=1 lead/month => expand this service across the remaining small affluent markets.",
+   "geographyVerified": true,
+   "geographyVerdict": "verified",
+   "demandIsUpperBound": false,
+   "ticketAssumed": 12000,
+   "marginAssumed": 0.35,
+   "serpContext": {
+    "mapPackSize": 3,
+    "mapPackAvgReviews": 55,
+    "directoriesInTop3": 1,
+    "contentDepthBarWords": 1460,
+    "competitorAvgDomainAgeYears": 15
+   },
+   "renterContext": {
+    "relevantOperators": 9,
+    "viableRenters": 3,
+    "websiteAdoptionPct": 33
+   },
+   "measurementPlan": "standard-city-asset",
+   "evidenceRefs": {
+    "experiment": "experiment-2",
+    "rawSerp": "out/experiment-2/raw/serp-window_replacement_Amarillo_TX.json",
+    "demand": "dataforseo:google_ads/search_volume",
+    "scoreModel": "ai-v1.0.0",
+    "weights": "w-balanced-v1.1",
+    "buckets": "buckets-1.1.0"
+   }
+  },
+  {
+   "cohort": "A-CORE",
+   "service": "Water Damage Restoration",
+   "serviceSlug": "water-damage",
+   "geography": "Chandler",
+   "state": "AZ",
+   "geographyType": "city",
+   "parentCity": null,
+   "domainCandidates": [
+    {
+     "domain": "waterdamagerestorationchandler.com",
+     "available": false,
+     "approxFirstYearUsd": 12.18
+    },
+    {
+     "domain": "waterdamagerestorationchandleraz.com",
+     "available": false,
+     "approxFirstYearUsd": 12.18
+    },
+    {
+     "domain": "chandlerwaterdamagerestoration.com",
+     "available": false,
+     "approxFirstYearUsd": 12.18
+    },
+    {
+     "domain": "waterdamagerestorationofchandler.com",
+     "available": true,
+     "approxFirstYearUsd": 12.18
+    },
+    {
+     "domain": "chandlerwaterdamagerestorationpros.com",
+     "available": true,
+     "approxFirstYearUsd": 12.18
+    }
+   ],
+   "preferredDomain": "waterdamagerestorationofchandler.com",
+   "domainAvailable": true,
+   "aiScore": 62,
+   "aiBucket": "LOW-HANGING",
+   "evidenceConfidence": 80,
+   "measuredVolume": 210,
+   "volumeState": "measured-upper-bound-shared-city-name",
+   "cpc": 10.27,
+   "rankabilityScore": 64,
+   "renterDepthScore": 64,
+   "leadEconomicsScore": 64,
+   "assetValueScore": 50,
+   "asymmetryScore": 61,
+   "hypothesis": "A=64 predicts this SERP is winnable and F=50 predicts the lead flow is worth renting. If the A-I model is right, this asset ranks top-10 within ~6 months and attracts a renter.",
+   "reasonSelected": "LOW-HANGING, composite 62, F=50 (rentable economics), E=64 (viable renters), geography serp-local-volume-upper-bound.",
+   "falsificationCondition": "no top-20 position for the primary keyword within 6 months, OR ranks but produces zero leads in 3 further months.",
+   "scalingCondition": "top-10 within 6 months AND >=1 lead/month => expand this service across the remaining small affluent markets.",
+   "geographyVerified": true,
+   "geographyVerdict": "serp-local-volume-upper-bound",
+   "demandIsUpperBound": true,
+   "ticketAssumed": 4500,
+   "marginAssumed": 0.45,
+   "serpContext": {
+    "mapPackSize": 3,
+    "mapPackAvgReviews": 87,
+    "directoriesInTop3": 1,
+    "contentDepthBarWords": 1575,
+    "competitorAvgDomainAgeYears": 15.4
+   },
+   "renterContext": {
+    "relevantOperators": 11,
+    "viableRenters": 3,
+    "websiteAdoptionPct": 27
+   },
+   "measurementPlan": "standard-city-asset",
+   "evidenceRefs": {
+    "experiment": "experiment-2",
+    "rawSerp": "out/experiment-2/raw/serp-water_damage_Chandler_AZ.json",
+    "demand": "dataforseo:google_ads/search_volume",
+    "scoreModel": "ai-v1.0.0",
+    "weights": "w-balanced-v1.1",
+    "buckets": "buckets-1.1.0"
+   }
+  },
+  {
+   "cohort": "A-CORE",
+   "service": "Water Damage Restoration",
+   "serviceSlug": "water-damage",
+   "geography": "Bellevue",
+   "state": "WA",
+   "geographyType": "city",
+   "parentCity": null,
+   "domainCandidates": [
+    {
+     "domain": "waterdamagerestorationbellevue.com",
+     "available": false,
+     "approxFirstYearUsd": 12.18
+    },
+    {
+     "domain": "waterdamagerestorationbellevuewa.com",
+     "available": false,
+     "approxFirstYearUsd": 12.18
+    },
+    {
+     "domain": "bellevuewaterdamagerestoration.com",
+     "available": false,
+     "approxFirstYearUsd": 12.18
+    },
+    {
+     "domain": "waterdamagerestorationofbellevue.com",
+     "available": true,
+     "approxFirstYearUsd": 12.18
+    },
+    {
+     "domain": "bellevuewaterdamagerestorationpros.com",
+     "available": false,
+     "approxFirstYearUsd": 12.18
+    }
+   ],
+   "preferredDomain": "waterdamagerestorationofbellevue.com",
+   "domainAvailable": true,
+   "aiScore": 61,
+   "aiBucket": "LOW-HANGING",
+   "evidenceConfidence": 80,
+   "measuredVolume": 210,
+   "volumeState": "measured-upper-bound-shared-city-name",
+   "cpc": 17.72,
+   "rankabilityScore": 66,
+   "renterDepthScore": 56,
+   "leadEconomicsScore": 64,
+   "assetValueScore": 50,
+   "asymmetryScore": 62,
+   "hypothesis": "A=66 predicts this SERP is winnable and F=50 predicts the lead flow is worth renting. If the A-I model is right, this asset ranks top-10 within ~6 months and attracts a renter.",
+   "reasonSelected": "LOW-HANGING, composite 61, F=50 (rentable economics), E=56 (viable renters), geography serp-local-volume-upper-bound.",
+   "falsificationCondition": "no top-20 position for the primary keyword within 6 months, OR ranks but produces zero leads in 3 further months.",
+   "scalingCondition": "top-10 within 6 months AND >=1 lead/month => expand this service across the remaining small affluent markets.",
+   "geographyVerified": true,
+   "geographyVerdict": "serp-local-volume-upper-bound",
+   "demandIsUpperBound": true,
+   "ticketAssumed": 4500,
+   "marginAssumed": 0.45,
+   "serpContext": {
+    "mapPackSize": 3,
+    "mapPackAvgReviews": 46,
+    "directoriesInTop3": 1,
+    "contentDepthBarWords": 1962,
+    "competitorAvgDomainAgeYears": 17.8
+   },
+   "renterContext": {
+    "relevantOperators": 11,
+    "viableRenters": 3,
+    "websiteAdoptionPct": 27
+   },
+   "measurementPlan": "standard-city-asset",
+   "evidenceRefs": {
+    "experiment": "experiment-3",
+    "rawSerp": "out/experiment-3/raw/serp-water_damage_Bellevue_WA.json",
+    "demand": "dataforseo:google_ads/search_volume",
+    "scoreModel": "ai-v1.0.0",
+    "weights": "w-balanced-v1.1",
+    "buckets": "buckets-1.1.0"
+   }
+  },
+  {
+   "cohort": "A-CORE",
+   "service": "Metal Roofing",
+   "serviceSlug": "metal-roofing",
+   "geography": "Rochester",
+   "state": "MN",
+   "geographyType": "city",
+   "parentCity": null,
+   "domainCandidates": [
+    {
+     "domain": "metalroofingrochester.com",
+     "available": true,
+     "approxFirstYearUsd": 12.18
+    },
+    {
+     "domain": "metalroofingrochestermn.com",
+     "available": true,
+     "approxFirstYearUsd": 12.18
+    },
+    {
+     "domain": "rochestermetalroofing.com",
+     "available": false,
+     "approxFirstYearUsd": 12.18
+    },
+    {
+     "domain": "metalroofingofrochester.com",
+     "available": true,
+     "approxFirstYearUsd": 12.18
+    },
+    {
+     "domain": "rochestermetalroofingpros.com",
+     "available": true,
+     "approxFirstYearUsd": 12.18
+    }
+   ],
+   "preferredDomain": "metalroofingrochester.com",
+   "domainAvailable": true,
+   "aiScore": 61,
+   "aiBucket": "LOW-HANGING",
+   "evidenceConfidence": 80,
+   "measuredVolume": 110,
+   "volumeState": "measured-upper-bound-shared-city-name",
+   "cpc": 24.87,
+   "rankabilityScore": 76,
+   "renterDepthScore": 42,
+   "leadEconomicsScore": 90,
+   "assetValueScore": 50,
+   "asymmetryScore": 79,
+   "hypothesis": "A=76 predicts this SERP is winnable and F=50 predicts the lead flow is worth renting. If the A-I model is right, this asset ranks top-10 within ~6 months and attracts a renter.",
+   "reasonSelected": "LOW-HANGING, composite 61, F=50 (rentable economics), E=42 (viable renters), geography serp-local-volume-upper-bound.",
+   "falsificationCondition": "no top-20 position for the primary keyword within 6 months, OR ranks but produces zero leads in 3 further months.",
+   "scalingCondition": "top-10 within 6 months AND >=1 lead/month => expand this service across the remaining small affluent markets.",
+   "geographyVerified": true,
+   "geographyVerdict": "serp-local-volume-upper-bound",
+   "demandIsUpperBound": true,
+   "ticketAssumed": 25000,
+   "marginAssumed": 0.35,
+   "serpContext": {
+    "mapPackSize": 3,
+    "mapPackAvgReviews": 43,
+    "directoriesInTop3": 1,
+    "contentDepthBarWords": 944,
+    "competitorAvgDomainAgeYears": 18.1
+   },
+   "renterContext": {
+    "relevantOperators": 10,
+    "viableRenters": 2,
+    "websiteAdoptionPct": 20
+   },
+   "measurementPlan": "standard-city-asset",
+   "evidenceRefs": {
+    "experiment": "experiment-3",
+    "rawSerp": "out/experiment-3/raw/serp-metal_roofing_Rochester_MN.json",
+    "demand": "dataforseo:google_ads/search_volume",
+    "scoreModel": "ai-v1.0.0",
+    "weights": "w-balanced-v1.1",
+    "buckets": "buckets-1.1.0"
+   }
+  },
+  {
+   "cohort": "A-CORE",
+   "service": "Stucco Repair",
+   "serviceSlug": "stucco-repair",
+   "geography": "Orlando",
+   "state": "FL",
+   "geographyType": "city",
+   "parentCity": null,
+   "domainCandidates": [
+    {
+     "domain": "stuccorepairorlando.com",
+     "available": false,
+     "approxFirstYearUsd": 12.18
+    },
+    {
+     "domain": "stuccorepairorlandofl.com",
+     "available": true,
+     "approxFirstYearUsd": 12.18
+    },
+    {
+     "domain": "orlandostuccorepair.com",
+     "available": false,
+     "approxFirstYearUsd": 12.18
+    },
+    {
+     "domain": "stuccorepairoforlando.com",
+     "available": false,
+     "approxFirstYearUsd": 12.18
+    },
+    {
+     "domain": "orlandostuccorepairpros.com",
+     "available": false,
+     "approxFirstYearUsd": 12.18
+    }
+   ],
+   "preferredDomain": "stuccorepairorlandofl.com",
+   "domainAvailable": true,
+   "aiScore": 60,
+   "aiBucket": "LOW-HANGING",
+   "evidenceConfidence": 80,
+   "measuredVolume": 210,
+   "volumeState": "measured",
+   "cpc": 7.34,
+   "rankabilityScore": 62,
+   "renterDepthScore": 61,
+   "leadEconomicsScore": 64,
+   "assetValueScore": 50,
+   "asymmetryScore": 60,
+   "hypothesis": "A=62 predicts this SERP is winnable and F=50 predicts the lead flow is worth renting. If the A-I model is right, this asset ranks top-10 within ~6 months and attracts a renter.",
+   "reasonSelected": "LOW-HANGING, composite 60, F=50 (rentable economics), E=61 (viable renters), geography verified.",
+   "falsificationCondition": "no top-20 position for the primary keyword within 6 months, OR ranks but produces zero leads in 3 further months.",
+   "scalingCondition": "top-10 within 6 months AND >=1 lead/month => expand this service across the remaining small affluent markets.",
+   "geographyVerified": true,
+   "geographyVerdict": "verified",
+   "demandIsUpperBound": false,
+   "ticketAssumed": 4000,
+   "marginAssumed": 0.45,
+   "serpContext": {
+    "mapPackSize": 3,
+    "mapPackAvgReviews": 54,
+    "directoriesInTop3": 1,
+    "contentDepthBarWords": 1220,
+    "competitorAvgDomainAgeYears": 15.4
+   },
+   "renterContext": {
+    "relevantOperators": 10,
+    "viableRenters": 2,
+    "websiteAdoptionPct": 30
+   },
+   "measurementPlan": "standard-city-asset",
+   "evidenceRefs": {
+    "experiment": "experiment-2",
+    "rawSerp": "out/experiment-2/raw/serp-stucco_repair_Orlando_FL.json",
+    "demand": "dataforseo:google_ads/search_volume",
+    "scoreModel": "ai-v1.0.0",
+    "weights": "w-balanced-v1.1",
+    "buckets": "buckets-1.1.0"
+   }
+  },
+  {
+   "cohort": "B-NT-POOL-CLUSTER",
+   "service": "Pool Builder",
+   "serviceSlug": "pool-builder",
+   "geography": "Windsong Ranch",
+   "state": "TX",
+   "geographyType": "master-planned-community",
+   "parentCity": "Prosper",
+   "domainCandidates": [
+    {
+     "domain": "poolbuilderwindsongranch.com",
+     "available": true
+    },
+    {
+     "domain": "windsongranchpoolbuilder.com",
+     "available": true
+    },
+    {
+     "domain": "windsongranchpools.com",
+     "available": true
+    },
+    {
+     "domain": "poolsofwindsongranch.com",
+     "available": true
+    }
+   ],
+   "preferredDomain": "poolbuilderwindsongranch.com",
+   "domainAvailable": true,
+   "aiScore": null,
+   "aiBucket": "EXPERIMENTAL-CLASS",
+   "evidenceConfidence": "community class — A-I not applied (see design doc §3)",
+   "measuredVolume": 0,
+   "volumeState": "provider-reports-zero — THIS IS THE HYPOTHESIS UNDER TEST",
+   "cpc": null,
+   "rankabilityScore": null,
+   "renterDepthScore": null,
+   "leadEconomicsScore": null,
+   "assetValueScore": null,
+   "asymmetryScore": null,
+   "hypothesis": "Keyword tools report zero volume for \"pool builder Windsong Ranch\", but real homeowners in a 3300-home affluent community search using their community name. If true, this site earns impressions and leads that no keyword tool predicted. largest local MPC (3,300 homes, 2,030 acres, Crystal Lagoon); a competitor already runs a community-specific pool page, which is independent evidence an operator believes this demand is real",
+   "reasonSelected": "Community-cluster member. largest local MPC (3,300 homes, 2,030 acres, Crystal Lagoon); a competitor already runs a community-specific pool page, which is independent evidence an operator believes this demand is real. EMD poolbuilderwindsongranch.com. Incumbent community-specific pool page: YES (demand validated by a competitor's investment).",
+   "falsificationCondition": "fewer than 20 impressions/month after 6 months indexed, across ALL community-modified queries, with no leads — i.e. the community modifier generates no real search behaviour.",
+   "scalingCondition": ">=1 qualified lead OR >=100 impressions/month within 6 months => build out the remaining ~14 researched NT communities and replicate in a second metro.",
+   "geographyVerified": true,
+   "geographyVerdict": "community-within-verified-metro (SERP localized to parent city)",
+   "demandIsUpperBound": false,
+   "ticketAssumed": 85000,
+   "marginAssumed": 0.25,
+   "serpContext": {
+    "mapPackSize": 3,
+    "mapPackAvgReviews": 11,
+    "directoriesInTop3": 0,
+    "organicResultsMentioningCommunity": 9,
+    "incumbentCommunityPage": true,
+    "note": "map pack is inherited from the parent city — Google does not render a distinct community pack, so this asset must win ORGANIC, not the pack"
+   },
+   "renterContext": {
+    "relevantOperators": 11,
+    "viableRenters": 2,
+    "medianReviews": 12,
+    "note": "24 distinct pool builders serve the cluster; Lonestar Pool & Spa Design appears in 12 of 22 community packs — one renter could take multiple community sites (upside) but that is buyer concentration (risk)"
+   },
+   "measurementPlan": "community-asset — see design doc §22 (community-name queries, service+community queries, unpredicted long-tail, whether Google treats the community as a geography)",
+   "evidenceRefs": {
+    "rawSerp": "out/wave-1-experiment/raw/serp-pool_builder_Windsong_Ranch_TX.json",
+    "serviceSelection": "out/wave-1-experiment/nt-service-ranking.json",
+    "communityMeta": {
+     "name": "Windsong Ranch",
+     "city": "Prosper",
+     "state": "TX",
+     "homes": 3300,
+     "status": "active-buildout",
+     "note": "2,030 acres; 10 new phases + 600 homesites releasing; famous 5-acre Crystal Lagoon"
+    }
+   }
+  },
+  {
+   "cohort": "B-NT-POOL-CLUSTER",
+   "service": "Pool Builder",
+   "serviceSlug": "pool-builder",
+   "geography": "Star Trail",
+   "state": "TX",
+   "geographyType": "master-planned-community",
+   "parentCity": "Prosper",
+   "domainCandidates": [
+    {
+     "domain": "poolbuilderstartrail.com",
+     "available": true
+    },
+    {
+     "domain": "startrailpoolbuilder.com",
+     "available": true
+    },
+    {
+     "domain": "startrailpools.com",
+     "available": true
+    },
+    {
+     "domain": "poolsofstartrail.com",
+     "available": true
+    }
+   ],
+   "preferredDomain": "poolbuilderstartrail.com",
+   "domainAvailable": true,
+   "aiScore": null,
+   "aiBucket": "EXPERIMENTAL-CLASS",
+   "evidenceConfidence": "community class — A-I not applied (see design doc §3)",
+   "measuredVolume": 0,
+   "volumeState": "provider-reports-zero — THIS IS THE HYPOTHESIS UNDER TEST",
+   "cpc": null,
+   "rankabilityScore": null,
+   "renterDepthScore": null,
+   "leadEconomicsScore": null,
+   "assetValueScore": null,
+   "asymmetryScore": null,
+   "hypothesis": "Keyword tools report zero volume for \"pool builder Star Trail\", but real homeowners in a 1300-home affluent community search using their community name. If true, this site earns impressions and leads that no keyword tool predicted. 1,300 homes, Prosper ISD, active buildout; NO competitor community page — virgin organic slot",
+   "reasonSelected": "Community-cluster member. 1,300 homes, Prosper ISD, active buildout; NO competitor community page — virgin organic slot. EMD poolbuilderstartrail.com. Incumbent community-specific pool page: NO (virgin organic slot).",
+   "falsificationCondition": "fewer than 20 impressions/month after 6 months indexed, across ALL community-modified queries, with no leads — i.e. the community modifier generates no real search behaviour.",
+   "scalingCondition": ">=1 qualified lead OR >=100 impressions/month within 6 months => build out the remaining ~14 researched NT communities and replicate in a second metro.",
+   "geographyVerified": true,
+   "geographyVerdict": "community-within-verified-metro (SERP localized to parent city)",
+   "demandIsUpperBound": false,
+   "ticketAssumed": 85000,
+   "marginAssumed": 0.25,
+   "serpContext": {
+    "mapPackSize": 3,
+    "mapPackAvgReviews": 159,
+    "directoriesInTop3": 1,
+    "organicResultsMentioningCommunity": 6,
+    "incumbentCommunityPage": false,
+    "note": "map pack is inherited from the parent city — Google does not render a distinct community pack, so this asset must win ORGANIC, not the pack"
+   },
+   "renterContext": {
+    "relevantOperators": 11,
+    "viableRenters": 2,
+    "medianReviews": 20,
+    "note": "24 distinct pool builders serve the cluster; Lonestar Pool & Spa Design appears in 12 of 22 community packs — one renter could take multiple community sites (upside) but that is buyer concentration (risk)"
+   },
+   "measurementPlan": "community-asset — see design doc §22 (community-name queries, service+community queries, unpredicted long-tail, whether Google treats the community as a geography)",
+   "evidenceRefs": {
+    "rawSerp": "out/wave-1-experiment/raw/serp-pool_builder_Star_Trail_TX.json",
+    "serviceSelection": "out/wave-1-experiment/nt-service-ranking.json",
+    "communityMeta": {
+     "name": "Star Trail",
+     "city": "Prosper",
+     "state": "TX",
+     "homes": 1300,
+     "status": "active-buildout",
+     "note": "Prosper ISD; large lots, semi-custom"
+    }
+   }
+  },
+  {
+   "cohort": "B-NT-POOL-CLUSTER",
+   "service": "Pool Builder",
+   "serviceSlug": "pool-builder",
+   "geography": "Light Farms",
+   "state": "TX",
+   "geographyType": "master-planned-community",
+   "parentCity": "Celina",
+   "domainCandidates": [
+    {
+     "domain": "poolbuilderlightfarms.com",
+     "available": true
+    },
+    {
+     "domain": "lightfarmspoolbuilder.com",
+     "available": true
+    },
+    {
+     "domain": "lightfarmspools.com",
+     "available": true
+    },
+    {
+     "domain": "poolsoflightfarms.com",
+     "available": true
+    }
+   ],
+   "preferredDomain": "poolbuilderlightfarms.com",
+   "domainAvailable": true,
+   "aiScore": null,
+   "aiBucket": "EXPERIMENTAL-CLASS",
+   "evidenceConfidence": "community class — A-I not applied (see design doc §3)",
+   "measuredVolume": 0,
+   "volumeState": "provider-reports-zero — THIS IS THE HYPOTHESIS UNDER TEST",
+   "cpc": null,
+   "rankabilityScore": null,
+   "renterDepthScore": null,
+   "leadEconomicsScore": null,
+   "assetValueScore": null,
+   "asymmetryScore": null,
+   "hypothesis": "Keyword tools report zero volume for \"pool builder Light Farms\", but real homeowners in a 3000-home affluent community search using their community name. If true, this site earns impressions and leads that no keyword tool predicted. ~3,000 homes, one of Celina's largest; incumbent community page present (prestigepp.com)",
+   "reasonSelected": "Community-cluster member. ~3,000 homes, one of Celina's largest; incumbent community page present (prestigepp.com). EMD poolbuilderlightfarms.com. Incumbent community-specific pool page: YES (demand validated by a competitor's investment).",
+   "falsificationCondition": "fewer than 20 impressions/month after 6 months indexed, across ALL community-modified queries, with no leads — i.e. the community modifier generates no real search behaviour.",
+   "scalingCondition": ">=1 qualified lead OR >=100 impressions/month within 6 months => build out the remaining ~14 researched NT communities and replicate in a second metro.",
+   "geographyVerified": true,
+   "geographyVerdict": "community-within-verified-metro (SERP localized to parent city)",
+   "demandIsUpperBound": false,
+   "ticketAssumed": 85000,
+   "marginAssumed": 0.25,
+   "serpContext": {
+    "mapPackSize": 3,
+    "mapPackAvgReviews": 295,
+    "directoriesInTop3": 0,
+    "organicResultsMentioningCommunity": 6,
+    "incumbentCommunityPage": true,
+    "note": "map pack is inherited from the parent city — Google does not render a distinct community pack, so this asset must win ORGANIC, not the pack"
+   },
+   "renterContext": {
+    "relevantOperators": 9,
+    "viableRenters": 3,
+    "medianReviews": 305,
+    "note": "24 distinct pool builders serve the cluster; Lonestar Pool & Spa Design appears in 12 of 22 community packs — one renter could take multiple community sites (upside) but that is buyer concentration (risk)"
+   },
+   "measurementPlan": "community-asset — see design doc §22 (community-name queries, service+community queries, unpredicted long-tail, whether Google treats the community as a geography)",
+   "evidenceRefs": {
+    "rawSerp": "out/wave-1-experiment/raw/serp-pool_builder_Light_Farms_TX.json",
+    "serviceSelection": "out/wave-1-experiment/nt-service-ranking.json",
+    "communityMeta": {
+     "name": "Light Farms",
+     "city": "Celina",
+     "state": "TX",
+     "homes": 3000,
+     "status": "active-buildout",
+     "note": "one of Celina's largest; heavy amenity base"
+    }
+   }
+  },
+  {
+   "cohort": "B-NT-POOL-CLUSTER",
+   "service": "Pool Builder",
+   "serviceSlug": "pool-builder",
+   "geography": "Mustang Lakes",
+   "state": "TX",
+   "geographyType": "master-planned-community",
+   "parentCity": "Celina",
+   "domainCandidates": [
+    {
+     "domain": "poolbuildermustanglakes.com",
+     "available": true
+    },
+    {
+     "domain": "mustanglakespoolbuilder.com",
+     "available": true
+    },
+    {
+     "domain": "mustanglakespools.com",
+     "available": true
+    },
+    {
+     "domain": "poolsofmustanglakes.com",
+     "available": true
+    }
+   ],
+   "preferredDomain": "poolbuildermustanglakes.com",
+   "domainAvailable": true,
+   "aiScore": null,
+   "aiBucket": "EXPERIMENTAL-CLASS",
+   "evidenceConfidence": "community class — A-I not applied (see design doc §3)",
+   "measuredVolume": 0,
+   "volumeState": "provider-reports-zero — THIS IS THE HYPOTHESIS UNDER TEST",
+   "cpc": null,
+   "rankabilityScore": null,
+   "renterDepthScore": null,
+   "leadEconomicsScore": null,
+   "assetValueScore": null,
+   "asymmetryScore": null,
+   "hypothesis": "Keyword tools report zero volume for \"pool builder Mustang Lakes\", but real homeowners in a 1200-home affluent community search using their community name. If true, this site earns impressions and leads that no keyword tool predicted. 1,200 homes, largest amenity centre in North Texas; incumbent community page present",
+   "reasonSelected": "Community-cluster member. 1,200 homes, largest amenity centre in North Texas; incumbent community page present. EMD poolbuildermustanglakes.com. Incumbent community-specific pool page: YES (demand validated by a competitor's investment).",
+   "falsificationCondition": "fewer than 20 impressions/month after 6 months indexed, across ALL community-modified queries, with no leads — i.e. the community modifier generates no real search behaviour.",
+   "scalingCondition": ">=1 qualified lead OR >=100 impressions/month within 6 months => build out the remaining ~14 researched NT communities and replicate in a second metro.",
+   "geographyVerified": true,
+   "geographyVerdict": "community-within-verified-metro (SERP localized to parent city)",
+   "demandIsUpperBound": false,
+   "ticketAssumed": 85000,
+   "marginAssumed": 0.25,
+   "serpContext": {
+    "mapPackSize": 3,
+    "mapPackAvgReviews": 209,
+    "directoriesInTop3": 0,
+    "organicResultsMentioningCommunity": 5,
+    "incumbentCommunityPage": true,
+    "note": "map pack is inherited from the parent city — Google does not render a distinct community pack, so this asset must win ORGANIC, not the pack"
+   },
+   "renterContext": {
+    "relevantOperators": 10,
+    "viableRenters": 3,
+    "medianReviews": 49,
+    "note": "24 distinct pool builders serve the cluster; Lonestar Pool & Spa Design appears in 12 of 22 community packs — one renter could take multiple community sites (upside) but that is buyer concentration (risk)"
+   },
+   "measurementPlan": "community-asset — see design doc §22 (community-name queries, service+community queries, unpredicted long-tail, whether Google treats the community as a geography)",
+   "evidenceRefs": {
+    "rawSerp": "out/wave-1-experiment/raw/serp-pool_builder_Mustang_Lakes_TX.json",
+    "serviceSelection": "out/wave-1-experiment/nt-service-ranking.json",
+    "communityMeta": {
+     "name": "Mustang Lakes",
+     "city": "Celina",
+     "state": "TX",
+     "homes": 1200,
+     "status": "active-buildout",
+     "note": "largest amenity center in North Texas"
+    }
+   }
+  },
+  {
+   "cohort": "B-NT-POOL-CLUSTER",
+   "service": "Pool Builder",
+   "serviceSlug": "pool-builder",
+   "geography": "Painted Tree",
+   "state": "TX",
+   "geographyType": "master-planned-community",
+   "parentCity": "McKinney",
+   "domainCandidates": [
+    {
+     "domain": "poolbuilderpaintedtree.com",
+     "available": true
+    },
+    {
+     "domain": "paintedtreepoolbuilder.com",
+     "available": true
+    },
+    {
+     "domain": "paintedtreepools.com",
+     "available": true
+    },
+    {
+     "domain": "poolsofpaintedtree.com",
+     "available": true
+    }
+   ],
+   "preferredDomain": "poolbuilderpaintedtree.com",
+   "domainAvailable": true,
+   "aiScore": null,
+   "aiBucket": "EXPERIMENTAL-CLASS",
+   "evidenceConfidence": "community class — A-I not applied (see design doc §3)",
+   "measuredVolume": 0,
+   "volumeState": "provider-reports-zero — THIS IS THE HYPOTHESIS UNDER TEST",
+   "cpc": null,
+   "rankabilityScore": null,
+   "renterDepthScore": null,
+   "leadEconomicsScore": null,
+   "assetValueScore": null,
+   "asymmetryScore": null,
+   "hypothesis": "Keyword tools report zero volume for \"pool builder Painted Tree\", but real homeowners in a 3400-home affluent community search using their community name. If true, this site earns impressions and leads that no keyword tool predicted. 3,400 homes, one of McKinney's largest active MPCs; NO competitor community page",
+   "reasonSelected": "Community-cluster member. 3,400 homes, one of McKinney's largest active MPCs; NO competitor community page. EMD poolbuilderpaintedtree.com. Incumbent community-specific pool page: NO (virgin organic slot).",
+   "falsificationCondition": "fewer than 20 impressions/month after 6 months indexed, across ALL community-modified queries, with no leads — i.e. the community modifier generates no real search behaviour.",
+   "scalingCondition": ">=1 qualified lead OR >=100 impressions/month within 6 months => build out the remaining ~14 researched NT communities and replicate in a second metro.",
+   "geographyVerified": true,
+   "geographyVerdict": "community-within-verified-metro (SERP localized to parent city)",
+   "demandIsUpperBound": false,
+   "ticketAssumed": 85000,
+   "marginAssumed": 0.25,
+   "serpContext": {
+    "mapPackSize": 3,
+    "mapPackAvgReviews": 59,
+    "directoriesInTop3": 0,
+    "organicResultsMentioningCommunity": 9,
+    "incumbentCommunityPage": false,
+    "note": "map pack is inherited from the parent city — Google does not render a distinct community pack, so this asset must win ORGANIC, not the pack"
+   },
+   "renterContext": {
+    "relevantOperators": 9,
+    "viableRenters": 3,
+    "medianReviews": 57,
+    "note": "24 distinct pool builders serve the cluster; Lonestar Pool & Spa Design appears in 12 of 22 community packs — one renter could take multiple community sites (upside) but that is buyer concentration (risk)"
+   },
+   "measurementPlan": "community-asset — see design doc §22 (community-name queries, service+community queries, unpredicted long-tail, whether Google treats the community as a geography)",
+   "evidenceRefs": {
+    "rawSerp": "out/wave-1-experiment/raw/serp-pool_builder_Painted_Tree_TX.json",
+    "serviceSelection": "out/wave-1-experiment/nt-service-ranking.json",
+    "communityMeta": {
+     "name": "Painted Tree",
+     "city": "McKinney",
+     "state": "TX",
+     "homes": 3400,
+     "status": "active-buildout",
+     "note": "one of McKinney's largest active MPCs"
+    }
+   }
+  },
+  {
+   "cohort": "B-NT-POOL-CLUSTER",
+   "service": "Pool Builder",
+   "serviceSlug": "pool-builder",
+   "geography": "Trinity Falls",
+   "state": "TX",
+   "geographyType": "master-planned-community",
+   "parentCity": "McKinney",
+   "domainCandidates": [
+    {
+     "domain": "poolbuildertrinityfalls.com",
+     "available": true
+    },
+    {
+     "domain": "trinityfallspoolbuilder.com",
+     "available": true
+    },
+    {
+     "domain": "trinityfallspools.com",
+     "available": true
+    },
+    {
+     "domain": "poolsoftrinityfalls.com",
+     "available": true
+    }
+   ],
+   "preferredDomain": "poolbuildertrinityfalls.com",
+   "domainAvailable": true,
+   "aiScore": null,
+   "aiBucket": "EXPERIMENTAL-CLASS",
+   "evidenceConfidence": "community class — A-I not applied (see design doc §3)",
+   "measuredVolume": 0,
+   "volumeState": "provider-reports-zero — THIS IS THE HYPOTHESIS UNDER TEST",
+   "cpc": null,
+   "rankabilityScore": null,
+   "renterDepthScore": null,
+   "leadEconomicsScore": null,
+   "assetValueScore": null,
+   "asymmetryScore": null,
+   "hypothesis": "Keyword tools report zero volume for \"pool builder Trinity Falls\", but real homeowners in a 3000-home affluent community search using their community name. If true, this site earns impressions and leads that no keyword tool predicted. ~3,000 homes NW McKinney; only a Facebook result mentions it — effectively virgin",
+   "reasonSelected": "Community-cluster member. ~3,000 homes NW McKinney; only a Facebook result mentions it — effectively virgin. EMD poolbuildertrinityfalls.com. Incumbent community-specific pool page: NO (virgin organic slot).",
+   "falsificationCondition": "fewer than 20 impressions/month after 6 months indexed, across ALL community-modified queries, with no leads — i.e. the community modifier generates no real search behaviour.",
+   "scalingCondition": ">=1 qualified lead OR >=100 impressions/month within 6 months => build out the remaining ~14 researched NT communities and replicate in a second metro.",
+   "geographyVerified": true,
+   "geographyVerdict": "community-within-verified-metro (SERP localized to parent city)",
+   "demandIsUpperBound": false,
+   "ticketAssumed": 85000,
+   "marginAssumed": 0.25,
+   "serpContext": {
+    "mapPackSize": 3,
+    "mapPackAvgReviews": 47,
+    "directoriesInTop3": 1,
+    "organicResultsMentioningCommunity": 6,
+    "incumbentCommunityPage": false,
+    "note": "map pack is inherited from the parent city — Google does not render a distinct community pack, so this asset must win ORGANIC, not the pack"
+   },
+   "renterContext": {
+    "relevantOperators": 10,
+    "viableRenters": 3,
+    "medianReviews": 22,
+    "note": "24 distinct pool builders serve the cluster; Lonestar Pool & Spa Design appears in 12 of 22 community packs — one renter could take multiple community sites (upside) but that is buyer concentration (risk)"
+   },
+   "measurementPlan": "community-asset — see design doc §22 (community-name queries, service+community queries, unpredicted long-tail, whether Google treats the community as a geography)",
+   "evidenceRefs": {
+    "rawSerp": "out/wave-1-experiment/raw/serp-pool_builder_Trinity_Falls_TX.json",
+    "serviceSelection": "out/wave-1-experiment/nt-service-ranking.json",
+    "communityMeta": {
+     "name": "Trinity Falls",
+     "city": "McKinney",
+     "state": "TX",
+     "homes": 3000,
+     "status": "active-buildout",
+     "note": "NW McKinney, Trinity River corridor"
+    }
+   }
+  },
+  {
+   "cohort": "B-NT-POOL-CLUSTER",
+   "service": "Pool Builder",
+   "serviceSlug": "pool-builder",
+   "geography": "Sandbrock Ranch",
+   "state": "TX",
+   "geographyType": "master-planned-community",
+   "parentCity": "Aubrey",
+   "domainCandidates": [
+    {
+     "domain": "poolbuildersandbrockranch.com",
+     "available": true
+    },
+    {
+     "domain": "sandbrockranchpoolbuilder.com",
+     "available": true
+    },
+    {
+     "domain": "sandbrockranchpools.com",
+     "available": true
+    },
+    {
+     "domain": "poolsofsandbrockranch.com",
+     "available": true
+    }
+   ],
+   "preferredDomain": "poolbuildersandbrockranch.com",
+   "domainAvailable": true,
+   "aiScore": null,
+   "aiBucket": "EXPERIMENTAL-CLASS",
+   "evidenceConfidence": "community class — A-I not applied (see design doc §3)",
+   "measuredVolume": 0,
+   "volumeState": "provider-reports-zero — THIS IS THE HYPOTHESIS UNDER TEST",
+   "cpc": null,
+   "rankabilityScore": null,
+   "renterDepthScore": null,
+   "leadEconomicsScore": null,
+   "assetValueScore": null,
+   "asymmetryScore": null,
+   "hypothesis": "Keyword tools report zero volume for \"pool builder Sandbrock Ranch\", but real homeowners in a 1400-home affluent community search using their community name. If true, this site earns impressions and leads that no keyword tool predicted. 1,400 homes Denton Co; weakest map pack in the cluster (19 avg reviews); NO competitor community page",
+   "reasonSelected": "Community-cluster member. 1,400 homes Denton Co; weakest map pack in the cluster (19 avg reviews); NO competitor community page. EMD poolbuildersandbrockranch.com. Incumbent community-specific pool page: NO (virgin organic slot).",
+   "falsificationCondition": "fewer than 20 impressions/month after 6 months indexed, across ALL community-modified queries, with no leads — i.e. the community modifier generates no real search behaviour.",
+   "scalingCondition": ">=1 qualified lead OR >=100 impressions/month within 6 months => build out the remaining ~14 researched NT communities and replicate in a second metro.",
+   "geographyVerified": true,
+   "geographyVerdict": "community-within-verified-metro (SERP localized to parent city)",
+   "demandIsUpperBound": false,
+   "ticketAssumed": 85000,
+   "marginAssumed": 0.25,
+   "serpContext": {
+    "mapPackSize": 3,
+    "mapPackAvgReviews": 19,
+    "directoriesInTop3": 0,
+    "organicResultsMentioningCommunity": 8,
+    "incumbentCommunityPage": false,
+    "note": "map pack is inherited from the parent city — Google does not render a distinct community pack, so this asset must win ORGANIC, not the pack"
+   },
+   "renterContext": {
+    "relevantOperators": 10,
+    "viableRenters": 2,
+    "medianReviews": 20,
+    "note": "24 distinct pool builders serve the cluster; Lonestar Pool & Spa Design appears in 12 of 22 community packs — one renter could take multiple community sites (upside) but that is buyer concentration (risk)"
+   },
+   "measurementPlan": "community-asset — see design doc §22 (community-name queries, service+community queries, unpredicted long-tail, whether Google treats the community as a geography)",
+   "evidenceRefs": {
+    "rawSerp": "out/wave-1-experiment/raw/serp-pool_builder_Sandbrock_Ranch_TX.json",
+    "serviceSelection": "out/wave-1-experiment/nt-service-ranking.json",
+    "communityMeta": {
+     "name": "Sandbrock Ranch",
+     "city": "Aubrey",
+     "state": "TX",
+     "homes": 1400,
+     "status": "active-buildout",
+     "note": "Denton Co, semi-custom"
+    }
+   }
+  },
+  {
+   "cohort": "B-NT-POOL-CLUSTER",
+   "service": "Pool Builder",
+   "serviceSlug": "pool-builder",
+   "geography": "Canyon Falls",
+   "state": "TX",
+   "geographyType": "master-planned-community",
+   "parentCity": "Argyle",
+   "domainCandidates": [
+    {
+     "domain": "poolbuildercanyonfalls.com",
+     "available": true
+    },
+    {
+     "domain": "canyonfallspoolbuilder.com",
+     "available": true
+    },
+    {
+     "domain": "canyonfallspools.com",
+     "available": true
+    },
+    {
+     "domain": "poolsofcanyonfalls.com",
+     "available": true
+    }
+   ],
+   "preferredDomain": "poolbuildercanyonfalls.com",
+   "domainAvailable": true,
+   "aiScore": null,
+   "aiBucket": "EXPERIMENTAL-CLASS",
+   "evidenceConfidence": "community class — A-I not applied (see design doc §3)",
+   "measuredVolume": 0,
+   "volumeState": "provider-reports-zero — THIS IS THE HYPOTHESIS UNDER TEST",
+   "cpc": null,
+   "rankabilityScore": null,
+   "renterDepthScore": null,
+   "leadEconomicsScore": null,
+   "assetValueScore": null,
+   "asymmetryScore": null,
+   "hypothesis": "Keyword tools report zero volume for \"pool builder Canyon Falls\", but real homeowners in a 1300-home affluent community search using their community name. If true, this site earns impressions and leads that no keyword tool predicted. 1,300 homes affluent Argyle ISD; weak pack (24 avg reviews); NO competitor community page",
+   "reasonSelected": "Community-cluster member. 1,300 homes affluent Argyle ISD; weak pack (24 avg reviews); NO competitor community page. EMD poolbuildercanyonfalls.com. Incumbent community-specific pool page: NO (virgin organic slot).",
+   "falsificationCondition": "fewer than 20 impressions/month after 6 months indexed, across ALL community-modified queries, with no leads — i.e. the community modifier generates no real search behaviour.",
+   "scalingCondition": ">=1 qualified lead OR >=100 impressions/month within 6 months => build out the remaining ~14 researched NT communities and replicate in a second metro.",
+   "geographyVerified": true,
+   "geographyVerdict": "community-within-verified-metro (SERP localized to parent city)",
+   "demandIsUpperBound": false,
+   "ticketAssumed": 85000,
+   "marginAssumed": 0.25,
+   "serpContext": {
+    "mapPackSize": 3,
+    "mapPackAvgReviews": 24,
+    "directoriesInTop3": 0,
+    "organicResultsMentioningCommunity": 7,
+    "incumbentCommunityPage": false,
+    "note": "map pack is inherited from the parent city — Google does not render a distinct community pack, so this asset must win ORGANIC, not the pack"
+   },
+   "renterContext": {
+    "relevantOperators": 11,
+    "viableRenters": 2,
+    "medianReviews": 40,
+    "note": "24 distinct pool builders serve the cluster; Lonestar Pool & Spa Design appears in 12 of 22 community packs — one renter could take multiple community sites (upside) but that is buyer concentration (risk)"
+   },
+   "measurementPlan": "community-asset — see design doc §22 (community-name queries, service+community queries, unpredicted long-tail, whether Google treats the community as a geography)",
+   "evidenceRefs": {
+    "rawSerp": "out/wave-1-experiment/raw/serp-pool_builder_Canyon_Falls_TX.json",
+    "serviceSelection": "out/wave-1-experiment/nt-service-ranking.json",
+    "communityMeta": {
+     "name": "Canyon Falls",
+     "city": "Argyle",
+     "state": "TX",
+     "homes": 1300,
+     "status": "active-buildout",
+     "note": "Argyle ISD, affluent"
+    }
+   }
+  },
+  {
+   "cohort": "B-NT-POOL-CLUSTER",
+   "service": "Pool Builder",
+   "serviceSlug": "pool-builder",
+   "geography": "Prosper",
+   "state": "TX",
+   "geographyType": "city-control",
+   "parentCity": null,
+   "domainCandidates": [
+    {
+     "domain": "poolbuilderprospertx.com",
+     "available": true
+    },
+    {
+     "domain": "prosperpoolbuilders.com",
+     "available": false
+    }
+   ],
+   "preferredDomain": "poolbuilderprospertx.com",
+   "domainAvailable": true,
+   "aiScore": null,
+   "aiBucket": "CONTROL",
+   "evidenceConfidence": "control asset",
+   "measuredVolume": 10,
+   "volumeState": "measured",
+   "cpc": null,
+   "rankabilityScore": null,
+   "renterDepthScore": null,
+   "leadEconomicsScore": null,
+   "assetValueScore": null,
+   "asymmetryScore": null,
+   "hypothesis": "Control. LOW-measured-demand city control — same service, same metro, city geography. Tools report only 10/mo for a 35k-person affluent city building pools constantly; this tests city-level under-measurement. If impressions track measured volume, keyword tools are accurate and the community bet fails. If Prosper and the community sites over-perform their measured volume, tools systematically under-measure hyper-local demand.",
+   "reasonSelected": "Experimental control for the community cluster. LOW-measured-demand city control — same service, same metro, city geography. Tools report only 10/mo for a 35k-person affluent city building pools constantly; this tests city-level under-measurement.",
+   "falsificationCondition": "n/a — this is a control; it calibrates the cluster result rather than being judged on its own.",
+   "scalingCondition": "n/a — control.",
+   "geographyVerified": true,
+   "geographyVerdict": "verified (SERP localized, city name unambiguous in TX metro context)",
+   "demandIsUpperBound": false,
+   "ticketAssumed": 85000,
+   "marginAssumed": 0.25,
+   "serpContext": {
+    "mapPackSize": 3,
+    "mapPackAvgReviews": 295,
+    "directoriesInTop3": 0
+   },
+   "renterContext": {
+    "relevantOperators": 11,
+    "viableRenters": 3
+   },
+   "measurementPlan": "city-control — identical instrumentation to community assets for direct comparison",
+   "evidenceRefs": {
+    "rawSerp": "out/wave-1-experiment/raw/serp-pool_builder_Prosper_TX.json",
+    "demand": "dataforseo:google_ads/search_volume"
+   }
+  },
+  {
+   "cohort": "B-NT-POOL-CLUSTER",
+   "service": "Pool Builder",
+   "serviceSlug": "pool-builder",
+   "geography": "Frisco",
+   "state": "TX",
+   "geographyType": "city-control",
+   "parentCity": null,
+   "domainCandidates": [
+    {
+     "domain": "poolbuilderfriscotx.com",
+     "available": true
+    },
+    {
+     "domain": "friscopoolbuilders.com",
+     "available": false
+    }
+   ],
+   "preferredDomain": "poolbuilderfriscotx.com",
+   "domainAvailable": true,
+   "aiScore": null,
+   "aiBucket": "CONTROL",
+   "evidenceConfidence": "control asset",
+   "measuredVolume": 320,
+   "volumeState": "measured",
+   "cpc": null,
+   "rankabilityScore": null,
+   "renterDepthScore": null,
+   "leadEconomicsScore": null,
+   "assetValueScore": null,
+   "asymmetryScore": null,
+   "hypothesis": "Control. HIGH-measured-demand city control — the market where tools DO report demand. Anchors the gradient Frisco 320 > McKinney 210 > Prosper 10 > community 0. If impressions track measured volume, keyword tools are accurate and the community bet fails. If Prosper and the community sites over-perform their measured volume, tools systematically under-measure hyper-local demand.",
+   "reasonSelected": "Experimental control for the community cluster. HIGH-measured-demand city control — the market where tools DO report demand. Anchors the gradient Frisco 320 > McKinney 210 > Prosper 10 > community 0.",
+   "falsificationCondition": "n/a — this is a control; it calibrates the cluster result rather than being judged on its own.",
+   "scalingCondition": "n/a — control.",
+   "geographyVerified": true,
+   "geographyVerdict": "verified (SERP localized, city name unambiguous in TX metro context)",
+   "demandIsUpperBound": false,
+   "ticketAssumed": 85000,
+   "marginAssumed": 0.25,
+   "serpContext": {
+    "mapPackSize": 3,
+    "mapPackAvgReviews": 50,
+    "directoriesInTop3": 1
+   },
+   "renterContext": {
+    "relevantOperators": 10,
+    "viableRenters": 3
+   },
+   "measurementPlan": "city-control — identical instrumentation to community assets for direct comparison",
+   "evidenceRefs": {
+    "rawSerp": "out/wave-1-experiment/raw/serp-pool_builder_Frisco_TX.json",
+    "demand": "dataforseo:google_ads/search_volume"
+   }
+  },
+  {
+   "cohort": "C-CONTRARIAN",
+   "service": "House Cleaning",
+   "serviceSlug": "house-cleaning",
+   "geography": "Orlando",
+   "state": "FL",
+   "geographyType": "city",
+   "parentCity": null,
+   "domainCandidates": [
+    {
+     "domain": "housecleaningserviceorlando.com",
+     "available": true,
+     "approxFirstYearUsd": 12.18
+    },
+    {
+     "domain": "housecleaningserviceorlandofl.com",
+     "available": true,
+     "approxFirstYearUsd": 12.18
+    },
+    {
+     "domain": "orlandohousecleaningservice.com",
+     "available": true,
+     "approxFirstYearUsd": 12.18
+    },
+    {
+     "domain": "housecleaningserviceoforlando.com",
+     "available": true,
+     "approxFirstYearUsd": 12.18
+    },
+    {
+     "domain": "orlandohousecleaningservicepros.com",
+     "available": true,
+     "approxFirstYearUsd": 12.18
+    }
+   ],
+   "preferredDomain": "housecleaningserviceorlando.com",
+   "domainAvailable": true,
+   "aiScore": 69,
+   "aiBucket": "LOW-HANGING",
+   "evidenceConfidence": 80,
+   "measuredVolume": 2900,
+   "volumeState": "measured",
+   "cpc": 10.48,
+   "rankabilityScore": 74,
+   "renterDepthScore": 86,
+   "leadEconomicsScore": 18,
+   "assetValueScore": 34,
+   "asymmetryScore": 58,
+   "hypothesis": "HIGH DEMAND x THIN ECONOMICS. 2,900/mo and A=74, but F=34 — the model says the leads are too cheap to rent. Tests the new rentability floor itself: can volume compensate for ~$10 per-lead gross profit?",
+   "reasonSelected": "Selected to test a specific way the A-I model may be WRONG, not because it scores well. Exploration, not exploitation.",
+   "falsificationCondition": "If it produces many leads that a cleaning company happily pays $300+/mo for, the buckets-1.1.0 economic floor is too strict and is discarding good assets.",
+   "scalingCondition": ">=$300/mo rent achieved => lower the rentability floor and re-admit high-volume/low-ticket services.",
+   "geographyVerified": true,
+   "geographyVerdict": "verified",
+   "demandIsUpperBound": false,
+   "ticketAssumed": 200,
+   "marginAssumed": 0.5,
+   "serpContext": {
+    "mapPackSize": 3,
+    "mapPackAvgReviews": 174,
+    "contentDepthBarWords": 273,
+    "competitorAvgDomainAgeYears": 19.5
+   },
+   "renterContext": {
+    "relevantOperators": 11,
+    "viableRenters": 3
+   },
+   "measurementPlan": "standard-city-asset + explicit tracking of the dimension under test",
+   "evidenceRefs": {
+    "experiment": "experiment-2",
+    "rawSerp": "out/experiment-2/raw/serp-house_cleaning_Orlando_FL.json",
+    "scoreModel": "ai-v1.0.0"
+   }
+  },
+  {
+   "cohort": "C-CONTRARIAN",
+   "service": "Appliance Repair",
+   "serviceSlug": "appliance-repair",
+   "geography": "Aurora",
+   "state": "IL",
+   "geographyType": "city",
+   "parentCity": null,
+   "domainCandidates": [
+    {
+     "domain": "appliancerepairaurora.com",
+     "available": false,
+     "approxFirstYearUsd": 12.18
+    },
+    {
+     "domain": "appliancerepairaurorail.com",
+     "available": false,
+     "approxFirstYearUsd": 12.18
+    },
+    {
+     "domain": "auroraappliancerepair.com",
+     "available": false,
+     "approxFirstYearUsd": 12.18
+    },
+    {
+     "domain": "appliancerepairofaurora.com",
+     "available": true,
+     "approxFirstYearUsd": 12.18
+    },
+    {
+     "domain": "auroraappliancerepairpros.com",
+     "available": false,
+     "approxFirstYearUsd": 12.18
+    }
+   ],
+   "preferredDomain": "appliancerepairofaurora.com",
+   "domainAvailable": true,
+   "aiScore": 61,
+   "aiBucket": "LOW-HANGING",
+   "evidenceConfidence": 80,
+   "measuredVolume": 1300,
+   "volumeState": "measured-upper-bound-shared-city-name",
+   "cpc": 11.17,
+   "rankabilityScore": 67,
+   "renterDepthScore": 53,
+   "leadEconomicsScore": 32,
+   "assetValueScore": 34,
+   "asymmetryScore": 51,
+   "hypothesis": "V0 SAYS YES, V2 SAYS BARELY. Appliance repair was a V0 favourite; V2 gives it F=34 and nearly always rejects it (1 of 16 bucketed). 1,300/mo with A=67. Tests whether the V0 thesis or the V2 thesis is right about commodity high-volume services.",
+   "reasonSelected": "Selected to test a specific way the A-I model may be WRONG, not because it scores well. Exploration, not exploitation.",
+   "falsificationCondition": "If it ranks and rents easily, V2's economic pessimism about commodity services is wrong and D/F need re-calibration.",
+   "scalingCondition": "rented within 6 months => re-open the fragmented-local service family that V2 currently suppresses.",
+   "geographyVerified": true,
+   "geographyVerdict": "serp-local-volume-upper-bound",
+   "demandIsUpperBound": true,
+   "ticketAssumed": 325,
+   "marginAssumed": 0.7,
+   "serpContext": {
+    "mapPackSize": 3,
+    "mapPackAvgReviews": 73,
+    "contentDepthBarWords": 549,
+    "competitorAvgDomainAgeYears": 12.9
+   },
+   "renterContext": {
+    "relevantOperators": 9,
+    "viableRenters": 2
+   },
+   "measurementPlan": "standard-city-asset + explicit tracking of the dimension under test",
+   "evidenceRefs": {
+    "experiment": "experiment-2",
+    "rawSerp": "out/experiment-2/raw/serp-appliance_repair_Aurora_IL.json",
+    "scoreModel": "ai-v1.0.0"
+   }
+  },
+  {
+   "cohort": "C-CONTRARIAN",
+   "service": "Mold Remediation",
+   "serviceSlug": "mold-remediation",
+   "geography": "Knoxville",
+   "state": "TN",
+   "geographyType": "city",
+   "parentCity": null,
+   "domainCandidates": [
+    {
+     "domain": "moldremediationknoxville.com",
+     "available": false,
+     "approxFirstYearUsd": 12.18
+    },
+    {
+     "domain": "moldremediationknoxvilletn.com",
+     "available": false,
+     "approxFirstYearUsd": 12.18
+    },
+    {
+     "domain": "knoxvillemoldremediation.com",
+     "available": false,
+     "approxFirstYearUsd": 12.18
+    },
+    {
+     "domain": "moldremediationofknoxville.com",
+     "available": true,
+     "approxFirstYearUsd": 12.18
+    },
+    {
+     "domain": "knoxvillemoldremediationpros.com",
+     "available": false,
+     "approxFirstYearUsd": 12.18
+    }
+   ],
+   "preferredDomain": "moldremediationofknoxville.com",
+   "domainAvailable": true,
+   "aiScore": 67,
+   "aiBucket": "HIGH-VALUE",
+   "evidenceConfidence": 80,
+   "measuredVolume": 590,
+   "volumeState": "measured-upper-bound-shared-city-name",
+   "cpc": 20.36,
+   "rankabilityScore": 43,
+   "renterDepthScore": 87,
+   "leadEconomicsScore": 78,
+   "assetValueScore": 66,
+   "asymmetryScore": 54,
+   "hypothesis": "WORST RANKABILITY WE WOULD STILL FUND. A=43 with HIGH-VALUE economics (F=66). Directly tests whether A predicts ranking speed, which is the single most load-bearing assumption in the model.",
+   "reasonSelected": "Selected to test a specific way the A-I model may be WRONG, not because it scores well. Exploration, not exploitation.",
+   "falsificationCondition": "If it ranks as fast as the A=75+ assets, A is over-weighted and rankability is not the binding constraint we believe it is.",
+   "scalingCondition": "top-10 within 6 months => reduce A's weight and admit far more high-economics/hard-SERP markets.",
+   "geographyVerified": true,
+   "geographyVerdict": "serp-local-volume-upper-bound",
+   "demandIsUpperBound": true,
+   "ticketAssumed": 6000,
+   "marginAssumed": 0.5,
+   "serpContext": {
+    "mapPackSize": 3,
+    "mapPackAvgReviews": 174,
+    "contentDepthBarWords": 1582,
+    "competitorAvgDomainAgeYears": 23.9
+   },
+   "renterContext": {
+    "relevantOperators": 9,
+    "viableRenters": 3
+   },
+   "measurementPlan": "standard-city-asset + explicit tracking of the dimension under test",
+   "evidenceRefs": {
+    "experiment": "experiment-2",
+    "rawSerp": "out/experiment-2/raw/serp-mold_remediation_Knoxville_TN.json",
+    "scoreModel": "ai-v1.0.0"
+   }
+  },
+  {
+   "cohort": "C-CONTRARIAN",
+   "service": "Kitchen Remodeling",
+   "serviceSlug": "kitchen-remodel",
+   "geography": "Rockville",
+   "state": "MD",
+   "geographyType": "city",
+   "parentCity": null,
+   "domainCandidates": [
+    {
+     "domain": "kitchenremodelingrockville.com",
+     "available": false,
+     "approxFirstYearUsd": 12.18
+    },
+    {
+     "domain": "kitchenremodelingrockvillemd.com",
+     "available": true,
+     "approxFirstYearUsd": 12.18
+    },
+    {
+     "domain": "rockvillekitchenremodeling.com",
+     "available": false,
+     "approxFirstYearUsd": 12.18
+    },
+    {
+     "domain": "kitchenremodelingofrockville.com",
+     "available": true,
+     "approxFirstYearUsd": 12.18
+    },
+    {
+     "domain": "rockvillekitchenremodelingpros.com",
+     "available": true,
+     "approxFirstYearUsd": 12.18
+    }
+   ],
+   "preferredDomain": "kitchenremodelingrockvillemd.com",
+   "domainAvailable": true,
+   "aiScore": 67,
+   "aiBucket": "HIGH-VALUE",
+   "evidenceConfidence": 80,
+   "measuredVolume": 210,
+   "volumeState": "measured-upper-bound-shared-city-name",
+   "cpc": 11.7,
+   "rankabilityScore": 45,
+   "renterDepthScore": 100,
+   "leadEconomicsScore": 90,
+   "assetValueScore": 66,
+   "asymmetryScore": 56,
+   "hypothesis": "MAX RENTER DEPTH x POOR RANKABILITY. E=100 (the strongest renter market found) but A=42. Tests whether renter depth can carry an asset through a hard SERP.",
+   "reasonSelected": "Selected to test a specific way the A-I model may be WRONG, not because it scores well. Exploration, not exploitation.",
+   "falsificationCondition": "If it never ranks, E is worthless without A, and renter depth should be demoted to a tie-breaker rather than a 0.17-weight dimension.",
+   "scalingCondition": "ranks and rents => renter depth deserves more weight relative to rankability.",
+   "geographyVerified": true,
+   "geographyVerdict": "serp-local-volume-upper-bound",
+   "demandIsUpperBound": true,
+   "ticketAssumed": 35000,
+   "marginAssumed": 0.3,
+   "serpContext": {
+    "mapPackSize": 3,
+    "mapPackAvgReviews": 174,
+    "contentDepthBarWords": 1291,
+    "competitorAvgDomainAgeYears": 21.9
+   },
+   "renterContext": {
+    "relevantOperators": 10,
+    "viableRenters": 3
+   },
+   "measurementPlan": "standard-city-asset + explicit tracking of the dimension under test",
+   "evidenceRefs": {
+    "experiment": "experiment-3",
+    "rawSerp": "out/experiment-3/raw/serp-kitchen_remodel_Rockville_MD.json",
+    "scoreModel": "ai-v1.0.0"
+   }
+  },
+  {
+   "cohort": "C-CONTRARIAN",
+   "service": "Bathroom Remodeling",
+   "serviceSlug": "bathroom-remodel",
+   "geography": "Bellevue",
+   "state": "NE",
+   "geographyType": "city",
+   "parentCity": null,
+   "domainCandidates": [
+    {
+     "domain": "bathroomremodelingbellevue.com",
+     "available": false,
+     "approxFirstYearUsd": 12.18
+    },
+    {
+     "domain": "bathroomremodelingbellevuene.com",
+     "available": true,
+     "approxFirstYearUsd": 12.18
+    },
+    {
+     "domain": "bellevuebathroomremodeling.com",
+     "available": true,
+     "approxFirstYearUsd": 12.18
+    },
+    {
+     "domain": "bathroomremodelingofbellevue.com",
+     "available": true,
+     "approxFirstYearUsd": 12.18
+    },
+    {
+     "domain": "bellevuebathroomremodelingpros.com",
+     "available": true,
+     "approxFirstYearUsd": 12.18
+    }
+   ],
+   "preferredDomain": "bathroomremodelingbellevuene.com",
+   "domainAvailable": true,
+   "aiScore": 85,
+   "aiBucket": "UNICORN",
+   "evidenceConfidence": 80,
+   "measuredVolume": 2400,
+   "volumeState": "measured-upper-bound-shared-city-name",
+   "cpc": 12.08,
+   "rankabilityScore": 92,
+   "renterDepthScore": 65,
+   "leadEconomicsScore": 78,
+   "assetValueScore": 92,
+   "asymmetryScore": 100,
+   "hypothesis": "HIGHEST COMPOSITE IN THE DATASET (85) BUT AMBIGUOUS DEMAND. 'bathroom remodeling bellevue' is shared with Bellevue WA; the 2,400/mo is an upper bound across both. SERP is verified local to NE. Tests whether a shared-name market can be captured at all, and how much of shared volume is really local.",
+   "reasonSelected": "Selected to test a specific way the A-I model may be WRONG, not because it scores well. Exploration, not exploitation.",
+   "falsificationCondition": "If impressions are negligible while Bellevue WA's equivalent query is busy, shared-name markets must be excluded from scoring entirely.",
+   "scalingCondition": "meaningful local impressions => shared-name markets are investable and we can stop discarding them.",
+   "geographyVerified": true,
+   "geographyVerdict": "serp-local-volume-upper-bound",
+   "demandIsUpperBound": true,
+   "ticketAssumed": 18000,
+   "marginAssumed": 0.32,
+   "serpContext": {
+    "mapPackSize": 3,
+    "mapPackAvgReviews": 60,
+    "contentDepthBarWords": 208,
+    "competitorAvgDomainAgeYears": 3.9
+   },
+   "renterContext": {
+    "relevantOperators": 10,
+    "viableRenters": 3
+   },
+   "measurementPlan": "standard-city-asset + explicit tracking of the dimension under test",
+   "evidenceRefs": {
+    "experiment": "experiment-3",
+    "rawSerp": "out/experiment-3/raw/serp-bathroom_remodel_Bellevue_NE.json",
+    "scoreModel": "ai-v1.0.0"
+   }
+  }
+ ]
+}
