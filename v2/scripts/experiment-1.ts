@@ -136,10 +136,10 @@ if (!(run4.existing && run4.run.status === "completed")) {
       const base = { subjectType: "market", subjectId: c.id, source: `serpapi:${SIGNALS_VERSION}:${evFile}`, evidenceType: "DERIVED" as const, confidence: 0.85, observedAt: Date.now(), runId: run4.run.id };
       const m: [string, number | null][] = [
         ["serp.directory.count", g.directoriesInTop3], ["serp.franchise.count", g.franchisesInTop3],
-        ["serp.out_of_town.count", g.outOfTownInTop3], ["serp.inner_page.count", g.innerPagesInTop5],
-        ["serp.intent_mismatch.count", g.intentMismatchInTop5], ["serp.title_targeting.count", g.top3TitlesMissingCity],
-        ["serp.ads.count", g.adCount], ["serp.map_pack.count", g.mapPackSize],
-        ["serp.map_pack.avg_reviews", g.avgMapReviews], ["serp.map_pack.no_website.count", g.mapListingsWithoutWebsite],
+        ["serp.outoftown.count", g.outOfTownInTop3], ["serp.innerpage.count", g.innerPagesInTop5],
+        ["serp.intentmismatch.count", g.intentMismatchInTop5], ["serp.titletargeting.count", g.top3TitlesMissingCity],
+        ["serp.ads.count", g.adCount], ["serp.mappack.count", g.mapPackSize],
+        ["serp.mappack.avgreviews", g.avgMapReviews], ["serp.mappack.nowebsite.count", g.mapListingsWithoutWebsite],
       ];
       await store.insertBatch(m.filter(([, v]) => typeof v === "number").map(([metric, value]) => ({ ...base, metric, value: value as number })));
       c.signals = g;

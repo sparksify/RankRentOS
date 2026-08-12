@@ -7,7 +7,22 @@ import type { TrimmedSerp } from "../serp/signals";
 
 const BASE = "https://serpapi.com/search.json";
 
+/**
+ * Guard at the provider boundary: SerpAPI rejects two-letter state abbreviations
+ * ("Meridian, ID, United States" -> "Unsupported location"). Callers must pass a
+ * location produced by serpLocation(city, state). This makes the Experiment-1
+ * failure class unreproducible rather than patched per-script.
+ */
+export function assertNormalizedLocation(location: string): void {
+  if (/,\s*[A-Z]{2}\s*(,|$)/.test(location)) {
+    throw new Error(
+      `unnormalized location "${location}": use serpLocation(city, state) — SerpAPI rejects state abbreviations`,
+    );
+  }
+}
+
 export function serpUrl(query: string, location: string, apiKey: string): string {
+  assertNormalizedLocation(location);
   const params = new URLSearchParams({
     engine: "google",
     q: query,
