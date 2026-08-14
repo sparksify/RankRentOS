@@ -15,6 +15,7 @@ export default function Rejected() {
   return (
     <div className="shell">
       <Nav on="/cockpit/rejected" />
+      <div className="pagehead"><h2>Reserves &amp; Rejected</h2><p>The ideas the machine killed — and exactly why. That transparency is the feature.</p></div>
       <p className="note" style={{ marginBottom: 14, maxWidth: "82ch" }}>
         What the machine did <i>not</i> pick, and why. These are researched candidates that sat close enough to the cutoff that
         validation could reasonably have changed the decision. Rejections are either <b>hard-rule</b> (a gate blocked it) or
@@ -38,7 +39,7 @@ export default function Rejected() {
         <div className="risk"><b>Windsong Ranch, Light Farms, Mustang Lakes, Canyon Falls.</b> Comparative: organically brutal because a competitor already holds a community-specific pool page.</div>
       </div>
 
-      <table className="grid">
+      <div className="tablewrap"><table className="grid">
         <thead><tr>
           <th className="numc">Rank</th><th>Opportunity</th><th>Gate</th><th>Intent</th>
           <th className="numc">Organic</th><th className="numc">A</th><th className="numc">F</th><th className="numc">E</th>
@@ -68,7 +69,7 @@ export default function Rejected() {
               </tr>);
           })}
         </tbody>
-      </table>
+      </table></div>
     </div>
   );
 }

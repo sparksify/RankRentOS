@@ -25,6 +25,7 @@ export default function Portfolio() {
   return (
     <div className="shell">
       <Nav on="/cockpit/portfolio" />
+      <div className="pagehead"><h2>Final Portfolio</h2></div>
       <p className="note" style={{ marginBottom: 14, maxWidth: "80ch" }}>
         The {rows.length} recommended Wave-1 assets, ranked after pre-purchase validation. Rank blends organic rankability,
         realizable value, commercial intent and expansion surface, then penalises anything the gate flagged. Sort any column

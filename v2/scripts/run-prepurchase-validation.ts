@@ -73,13 +73,15 @@ function areasFor(geography: string, state: string, headService: string) {
 
 // ---------- assemble the validation set: finalists + reserves ----------
 type Row = { key: string; source: "FINALIST" | "RESERVE"; asset: any };
-const rows: Row[] = frozen.assets.map((a: any) => ({ key: `${a.service}|${a.geography}`, source: "FINALIST" as const, asset: a }));
+// State-qualified key: "service|city" collides for shared city names (Bellevue NE vs
+// WA appeared as one key and shadowed each other) — the exact defect this system audits.
+const rows: Row[] = frozen.assets.map((a: any) => ({ key: `${a.service}|${a.geography}|${a.state}`, source: "FINALIST" as const, asset: a }));
 const inWave = new Set(rows.map((r) => r.key));
 
 // Reserves: researched candidates close enough that validation could flip the call —
 // bucketed, or within 10 points of the Group-A organic bar with rentable economics.
 for (const r of scored) {
-  const key = `${r.svcLabel}|${r.city}`;
+  const key = `${r.svcLabel}|${r.city}|${r.state}`;
   if (inWave.has(key)) continue;
   const f = new URL(`out/${r.exp}/raw/serp-${r.id.replace(/[^a-z0-9]/gi, "_")}.json`, ROOT);
   if (!existsSync(f)) continue;
@@ -112,7 +114,7 @@ for (const r of scored) {
 const dimsBySubject = new Map<string, any>();
 for (const r of scored) {
   const d = r.score.dims;
-  dimsBySubject.set(`${r.svcLabel}|${r.city}`, {
+  dimsBySubject.set(`${r.svcLabel}|${r.city}|${r.state}`, {
     A: d.A, B: d.B, C: d.C, D: d.D, E: d.E, F: d.F, G: d.G, H: d.H, I: d.I,
     composite: r.score.composite, weightSet: r.score.weightSetId,
     unscored: r.score.unscoredDimensions, assumptionDependent: r.score.assumptionDependentDimensions,

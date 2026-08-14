@@ -50,7 +50,7 @@ export default function Table({ rows }) {
         <span className="count">{view.length} of {rows.length}</span>
       </div>
 
-      <table className="grid">
+      <div className="tablewrap"><table className="grid">
         <thead><tr>{COLS.map(([k, l]) => (
           <th key={k} onClick={() => click(k)} style={{ cursor: "pointer" }}>
             {l}{sort === k ? (dir === 1 ? " ↑" : " ↓") : ""}
@@ -60,8 +60,8 @@ export default function Table({ rows }) {
             <tr key={r.id}>
               <td className="rank">{r.newRank}</td>
               <td><Link href={`/cockpit/opportunity/${r.id}`}><b>{r.service}</b></Link></td>
-              <td>{r.geography}, {r.state}<div className="dim" style={{ fontSize: 11 }}>{r.geographyType}</div></td>
-              <td className="dim" style={{ fontSize: 11.5 }}>{r.cohort.replace(/^[A-Z0-9]+-/, "")}</td>
+              <td>{r.geography}, {r.state}<div className="dim" style={{ fontSize: 11 }}>{({"master-planned-community":"community","city-control":"control"})[r.geographyType] || r.geographyType}</div></td>
+              <td className="dim" style={{ fontSize: 11.5 }}>{r.cohort.replace(/^[A-Z0-9]+-/, "").replace("NTX-", "")}</td>
               <td><Badge status={r.gate} /></td>
               <td style={{ fontSize: 11.5 }} className={r.intent === "LOCAL_COMMERCIAL" ? "" : "dim"}>{r.intent.replace(/_/g, " ").toLowerCase()}</td>
               <td className="numc">{r.organicV1 ?? "—"}</td>
@@ -75,7 +75,7 @@ export default function Table({ rows }) {
               <td className="numc dim">{r.confidence ?? "—"}</td>
             </tr>))}
         </tbody>
-      </table>
+      </table></div>
       <p className="note" style={{ marginTop: 10 }}>
         <b>0*</b> = keyword tools report zero volume. For community assets that is the hypothesis under test, not a measurement of no demand.
         Click any row for the full investment memo.

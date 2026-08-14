@@ -10,9 +10,9 @@
  "note": "The frozen Wave-1 run is NOT modified. This is a separate, versioned validation pass whose output feeds the Decision Cockpit and the human purchase decision.",
  "counts": {
   "finalists": 26,
-  "reserves": 37,
+  "reserves": 38,
   "pass": 17,
-  "passWithWarning": 45,
+  "passWithWarning": 46,
   "needsReview": 0,
   "fail": 1
  },
@@ -392,7 +392,7 @@
  },
  "comparison": [
   {
-   "key": "Bathroom Remodeling|Arvada",
+   "key": "Bathroom Remodeling|Arvada|CO",
    "experimentId": "W1-A-001",
    "service": "Bathroom Remodeling",
    "geography": "Arvada",
@@ -414,7 +414,7 @@
    ]
   },
   {
-   "key": "Window Replacement|Midland",
+   "key": "Window Replacement|Midland|TX",
    "experimentId": "W1-A-002",
    "service": "Window Replacement",
    "geography": "Midland",
@@ -436,7 +436,7 @@
    ]
   },
   {
-   "key": "Window Replacement|Temecula",
+   "key": "Window Replacement|Temecula|CA",
    "experimentId": "W1-A-003",
    "service": "Window Replacement",
    "geography": "Temecula",
@@ -458,7 +458,7 @@
    ]
   },
   {
-   "key": "Window Replacement|Vancouver",
+   "key": "Window Replacement|Vancouver|WA",
    "experimentId": "W1-A-004",
    "service": "Window Replacement",
    "geography": "Vancouver",
@@ -480,7 +480,7 @@
    ]
   },
   {
-   "key": "Kitchen Remodeling|Frisco",
+   "key": "Kitchen Remodeling|Frisco|TX",
    "experimentId": "W1-A-005",
    "service": "Kitchen Remodeling",
    "geography": "Frisco",
@@ -502,7 +502,7 @@
    ]
   },
   {
-   "key": "Pool Builder|Sutton Fields",
+   "key": "Pool Builder|Sutton Fields|TX",
    "experimentId": "W1-B1-001",
    "service": "Pool Builder",
    "geography": "Sutton Fields",
@@ -524,7 +524,7 @@
    ]
   },
   {
-   "key": "Pool Builder|Legacy Gardens",
+   "key": "Pool Builder|Legacy Gardens|TX",
    "experimentId": "W1-B2-002",
    "service": "Pool Builder",
    "geography": "Legacy Gardens",
@@ -546,7 +546,7 @@
    ]
   },
   {
-   "key": "Pool Builder|Sandbrock Ranch",
+   "key": "Pool Builder|Sandbrock Ranch|TX",
    "experimentId": "W1-B1-003",
    "service": "Pool Builder",
    "geography": "Sandbrock Ranch",
@@ -568,7 +568,7 @@
    ]
   },
   {
-   "key": "Pool Builder|Star Trail",
+   "key": "Pool Builder|Star Trail|TX",
    "experimentId": "W1-B2-004",
    "service": "Pool Builder",
    "geography": "Star Trail",
@@ -590,7 +590,7 @@
    ]
   },
   {
-   "key": "Pool Builder|Painted Tree",
+   "key": "Pool Builder|Painted Tree|TX",
    "experimentId": "W1-B1-005",
    "service": "Pool Builder",
    "geography": "Painted Tree",
@@ -612,7 +612,7 @@
    ]
   },
   {
-   "key": "Pool Builder|Stonebridge Ranch",
+   "key": "Pool Builder|Stonebridge Ranch|TX",
    "experimentId": "W1-B2-006",
    "service": "Pool Builder",
    "geography": "Stonebridge Ranch",
@@ -634,7 +634,7 @@
    ]
   },
   {
-   "key": "Pool Builder|Mosaic",
+   "key": "Pool Builder|Mosaic|TX",
    "experimentId": "W1-B1-007",
    "service": "Pool Builder",
    "geography": "Mosaic",
@@ -656,7 +656,7 @@
    ]
   },
   {
-   "key": "Pool Builder|Union Park",
+   "key": "Pool Builder|Union Park|TX",
    "experimentId": "W1-B2-008",
    "service": "Pool Builder",
    "geography": "Union Park",
@@ -678,7 +678,7 @@
    ]
   },
   {
-   "key": "Pool Builder|Newman Village",
+   "key": "Pool Builder|Newman Village|TX",
    "experimentId": "W1-B1-009",
    "service": "Pool Builder",
    "geography": "Newman Village",
@@ -700,7 +700,7 @@
    ]
   },
   {
-   "key": "Pool Builder|Harvest",
+   "key": "Pool Builder|Harvest|TX",
    "experimentId": "W1-B2-010",
    "service": "Pool Builder",
    "geography": "Harvest",
@@ -722,7 +722,7 @@
    ]
   },
   {
-   "key": "Pool Builder|Cambridge Crossing",
+   "key": "Pool Builder|Cambridge Crossing|TX",
    "experimentId": "W1-B1-011",
    "service": "Pool Builder",
    "geography": "Cambridge Crossing",
@@ -744,7 +744,7 @@
    ]
   },
   {
-   "key": "Pool Builder|Trinity Falls",
+   "key": "Pool Builder|Trinity Falls|TX",
    "experimentId": "W1-B2-012",
    "service": "Pool Builder",
    "geography": "Trinity Falls",
@@ -766,15 +766,15 @@
    ]
   },
   {
-   "key": "Pool Builder|Frisco",
+   "key": "Pool Builder|Frisco|TX",
    "experimentId": "W1-B3-001",
    "service": "Pool Builder",
    "geography": "Frisco",
    "state": "TX",
    "cohort": "B3-CITY-CONTROL",
    "source": "FINALIST",
-   "oldRank": 62,
-   "newRank": 61,
+   "oldRank": 63,
+   "newRank": 62,
    "delta": 1,
    "preScore": 23,
    "postScore": 42,
@@ -789,16 +789,16 @@
    ]
   },
   {
-   "key": "Pool Builder|McKinney",
+   "key": "Pool Builder|McKinney|TX",
    "experimentId": "W1-B3-002",
    "service": "Pool Builder",
    "geography": "McKinney",
    "state": "TX",
    "cohort": "B3-CITY-CONTROL",
    "source": "FINALIST",
-   "oldRank": 54,
+   "oldRank": 55,
    "newRank": 51,
-   "delta": 3,
+   "delta": 4,
    "preScore": 39,
    "postScore": 57,
    "gate": "PASS_WITH_WARNING",
@@ -812,15 +812,15 @@
    ]
   },
   {
-   "key": "Pool Builder|Prosper",
+   "key": "Pool Builder|Prosper|TX",
    "experimentId": "W1-B3-003",
    "service": "Pool Builder",
    "geography": "Prosper",
    "state": "TX",
    "cohort": "B3-CITY-CONTROL",
    "source": "FINALIST",
-   "oldRank": 56,
-   "newRank": 59,
+   "oldRank": 57,
+   "newRank": 60,
    "delta": -3,
    "preScore": 36,
    "postScore": 46,
@@ -835,15 +835,15 @@
    ]
   },
   {
-   "key": "Metal Roofing|Rochester",
+   "key": "Metal Roofing|Rochester|MN",
    "experimentId": "W1-C-001",
    "service": "Metal Roofing",
    "geography": "Rochester",
    "state": "MN",
    "cohort": "C-MODEL-VALIDATION",
    "source": "FINALIST",
-   "oldRank": 58,
-   "newRank": 54,
+   "oldRank": 59,
+   "newRank": 55,
    "delta": 4,
    "preScore": 35,
    "postScore": 54,
@@ -857,7 +857,7 @@
    ]
   },
   {
-   "key": "Basement Waterproofing|Naperville",
+   "key": "Basement Waterproofing|Naperville|IL",
    "experimentId": "W1-C-002",
    "service": "Basement Waterproofing",
    "geography": "Naperville",
@@ -879,7 +879,7 @@
    ]
   },
   {
-   "key": "Bathroom Remodeling|Bellevue",
+   "key": "Bathroom Remodeling|Bellevue|NE",
    "experimentId": "W1-C-003",
    "service": "Bathroom Remodeling",
    "geography": "Bellevue",
@@ -901,7 +901,7 @@
    ]
   },
   {
-   "key": "House Cleaning|Orlando",
+   "key": "House Cleaning|Orlando|FL",
    "experimentId": "W1-C-004",
    "service": "House Cleaning",
    "geography": "Orlando",
@@ -923,7 +923,7 @@
    ]
   },
   {
-   "key": "Kitchen Remodeling|Rockville",
+   "key": "Kitchen Remodeling|Rockville|MD",
    "experimentId": "W1-C-005",
    "service": "Kitchen Remodeling",
    "geography": "Rockville",
@@ -945,7 +945,7 @@
    ]
   },
   {
-   "key": "Appliance Repair|Aurora",
+   "key": "Appliance Repair|Aurora|IL",
    "experimentId": "W1-C-006",
    "service": "Appliance Repair",
    "geography": "Aurora",
@@ -967,7 +967,7 @@
    ]
   },
   {
-   "key": "Kitchen Remodeling|Orlando",
+   "key": "Kitchen Remodeling|Orlando|FL",
    "experimentId": "RES-kitchen-remodel-Orlando-FL",
    "service": "Kitchen Remodeling",
    "geography": "Orlando",
@@ -989,7 +989,7 @@
    ]
   },
   {
-   "key": "Kitchen Remodeling|Madison",
+   "key": "Kitchen Remodeling|Madison|WI",
    "experimentId": "RES-kitchen-remodel-Madison-WI",
    "service": "Kitchen Remodeling",
    "geography": "Madison",
@@ -1011,7 +1011,7 @@
    ]
   },
   {
-   "key": "Mold Remediation|Knoxville",
+   "key": "Mold Remediation|Knoxville|TN",
    "experimentId": "RES-mold-remediation-Knoxville-TN",
    "service": "Mold Remediation",
    "geography": "Knoxville",
@@ -1033,7 +1033,7 @@
    ]
   },
   {
-   "key": "Kitchen Remodeling|Plano",
+   "key": "Kitchen Remodeling|Plano|TX",
    "experimentId": "RES-kitchen-remodel-Plano-TX",
    "service": "Kitchen Remodeling",
    "geography": "Plano",
@@ -1055,7 +1055,7 @@
    ]
   },
   {
-   "key": "House Cleaning|Irvine",
+   "key": "House Cleaning|Irvine|CA",
    "experimentId": "RES-house-cleaning-Irvine-CA",
    "service": "House Cleaning",
    "geography": "Irvine",
@@ -1077,7 +1077,7 @@
    ]
   },
   {
-   "key": "Window Replacement|Amarillo",
+   "key": "Window Replacement|Amarillo|TX",
    "experimentId": "RES-window-replacement-Amarillo-TX",
    "service": "Window Replacement",
    "geography": "Amarillo",
@@ -1099,7 +1099,7 @@
    ]
   },
   {
-   "key": "Kitchen Remodeling|Chandler",
+   "key": "Kitchen Remodeling|Chandler|AZ",
    "experimentId": "RES-kitchen-remodel-Chandler-AZ",
    "service": "Kitchen Remodeling",
    "geography": "Chandler",
@@ -1121,7 +1121,7 @@
    ]
   },
   {
-   "key": "Junk Removal|Aurora",
+   "key": "Junk Removal|Aurora|IL",
    "experimentId": "RES-junk-removal-Aurora-IL",
    "service": "Junk Removal",
    "geography": "Aurora",
@@ -1143,15 +1143,15 @@
    ]
   },
   {
-   "key": "Water Damage Restoration|Chandler",
+   "key": "Water Damage Restoration|Chandler|AZ",
    "experimentId": "RES-water-damage-Chandler-AZ",
    "service": "Water Damage Restoration",
    "geography": "Chandler",
    "state": "AZ",
    "cohort": "RESERVE",
    "source": "RESERVE",
-   "oldRank": 61,
-   "newRank": 57,
+   "oldRank": 62,
+   "newRank": 58,
    "delta": 4,
    "preScore": 29,
    "postScore": 48,
@@ -1165,7 +1165,7 @@
    ]
   },
   {
-   "key": "Stucco Repair|Orlando",
+   "key": "Stucco Repair|Orlando|FL",
    "experimentId": "RES-stucco-repair-Orlando-FL",
    "service": "Stucco Repair",
    "geography": "Orlando",
@@ -1187,7 +1187,7 @@
    ]
   },
   {
-   "key": "Roof Repair|Irvine",
+   "key": "Roof Repair|Irvine|CA",
    "experimentId": "RES-roof-repair-Irvine-CA",
    "service": "Roof Repair",
    "geography": "Irvine",
@@ -1209,7 +1209,7 @@
    ]
   },
   {
-   "key": "Mold Remediation|Plano",
+   "key": "Mold Remediation|Plano|TX",
    "experimentId": "RES-mold-remediation-Plano-TX",
    "service": "Mold Remediation",
    "geography": "Plano",
@@ -1231,7 +1231,7 @@
    ]
   },
   {
-   "key": "Radon Mitigation|Madison",
+   "key": "Radon Mitigation|Madison|WI",
    "experimentId": "RES-radon-mitigation-Madison-WI",
    "service": "Radon Mitigation",
    "geography": "Madison",
@@ -1253,15 +1253,15 @@
    ]
   },
   {
-   "key": "Dumpster Rental|Brockton",
+   "key": "Dumpster Rental|Brockton|MA",
    "experimentId": "RES-dumpster-rental-Brockton-MA",
    "service": "Dumpster Rental",
    "geography": "Brockton",
    "state": "MA",
    "cohort": "RESERVE",
    "source": "RESERVE",
-   "oldRank": 63,
-   "newRank": 62,
+   "oldRank": 64,
+   "newRank": 63,
    "delta": 1,
    "preScore": 10,
    "postScore": 25,
@@ -1275,7 +1275,29 @@
    ]
   },
   {
-   "key": "Bathroom Remodeling|Kirkland",
+   "key": "Bathroom Remodeling|Bellevue|WA",
+   "experimentId": "RES-bathroom-remodel-Bellevue-WA",
+   "service": "Bathroom Remodeling",
+   "geography": "Bellevue",
+   "state": "WA",
+   "cohort": "RESERVE",
+   "source": "RESERVE",
+   "oldRank": 54,
+   "newRank": 53,
+   "delta": 1,
+   "preScore": 40,
+   "postScore": 57,
+   "gate": "PASS_WITH_WARNING",
+   "intentClass": "LOCAL_COMMERCIAL",
+   "intentScore": 100,
+   "expansionScore": 84,
+   "primaryReason": "Rose on commercial intent: 5 local operators rank organically, stronger hiring intent than most of the field.",
+   "allReasons": [
+    "Rose on commercial intent: 5 local operators rank organically, stronger hiring intent than most of the field."
+   ]
+  },
+  {
+   "key": "Bathroom Remodeling|Kirkland|WA",
    "experimentId": "RES-bathroom-remodel-Kirkland-WA",
    "service": "Bathroom Remodeling",
    "geography": "Kirkland",
@@ -1283,8 +1305,8 @@
    "cohort": "RESERVE",
    "source": "RESERVE",
    "oldRank": 53,
-   "newRank": 56,
-   "delta": -3,
+   "newRank": 57,
+   "delta": -4,
    "preScore": 40,
    "postScore": 53,
    "gate": "PASS_WITH_WARNING",
@@ -1297,29 +1319,29 @@
    ]
   },
   {
-   "key": "Kitchen Remodeling|Bellevue",
+   "key": "Kitchen Remodeling|Bellevue|NE",
    "experimentId": "RES-kitchen-remodel-Bellevue-NE",
    "service": "Kitchen Remodeling",
    "geography": "Bellevue",
    "state": "NE",
    "cohort": "RESERVE",
    "source": "RESERVE",
-   "oldRank": 55,
-   "newRank": 55,
-   "delta": 0,
+   "oldRank": 22,
+   "newRank": 23,
+   "delta": -1,
    "preScore": 67,
    "postScore": 82,
    "gate": "PASS_WITH_WARNING",
    "intentClass": "LOCAL_COMMERCIAL",
    "intentScore": 100,
    "expansionScore": 72,
-   "primaryReason": "Position unchanged — validation confirmed the prior read.",
+   "primaryReason": "Fell on a validation warning: Organic SERP is hostile (organic-v1.2 39) — ranking will be slow and uncertain.",
    "allReasons": [
-    "Position unchanged — validation confirmed the prior read."
+    "Fell on a validation warning: Organic SERP is hostile (organic-v1.2 39) — ranking will be slow and uncertain."
    ]
   },
   {
-   "key": "Kitchen Remodeling|Rochester",
+   "key": "Kitchen Remodeling|Rochester|MN",
    "experimentId": "RES-kitchen-remodel-Rochester-MN",
    "service": "Kitchen Remodeling",
    "geography": "Rochester",
@@ -1341,7 +1363,7 @@
    ]
   },
   {
-   "key": "Bathroom Remodeling|Temecula",
+   "key": "Bathroom Remodeling|Temecula|CA",
    "experimentId": "RES-bathroom-remodel-Temecula-CA",
    "service": "Bathroom Remodeling",
    "geography": "Temecula",
@@ -1363,7 +1385,7 @@
    ]
   },
   {
-   "key": "Window Replacement|Naperville",
+   "key": "Window Replacement|Naperville|IL",
    "experimentId": "RES-window-replacement-Naperville-IL",
    "service": "Window Replacement",
    "geography": "Naperville",
@@ -1385,7 +1407,7 @@
    ]
   },
   {
-   "key": "Kitchen Remodeling|Temecula",
+   "key": "Kitchen Remodeling|Temecula|CA",
    "experimentId": "RES-kitchen-remodel-Temecula-CA",
    "service": "Kitchen Remodeling",
    "geography": "Temecula",
@@ -1408,7 +1430,7 @@
    ]
   },
   {
-   "key": "Bathroom Remodeling|Roseville",
+   "key": "Bathroom Remodeling|Roseville|CA",
    "experimentId": "RES-bathroom-remodel-Roseville-CA",
    "service": "Bathroom Remodeling",
    "geography": "Roseville",
@@ -1431,7 +1453,7 @@
    ]
   },
   {
-   "key": "Kitchen Remodeling|Boulder",
+   "key": "Kitchen Remodeling|Boulder|CO",
    "experimentId": "RES-kitchen-remodel-Boulder-CO",
    "service": "Kitchen Remodeling",
    "geography": "Boulder",
@@ -1453,15 +1475,15 @@
    ]
   },
   {
-   "key": "Kitchen Remodeling|McKinney",
+   "key": "Kitchen Remodeling|McKinney|TX",
    "experimentId": "RES-kitchen-remodel-McKinney-TX",
    "service": "Kitchen Remodeling",
    "geography": "McKinney",
    "state": "TX",
    "cohort": "RESERVE",
    "source": "RESERVE",
-   "oldRank": 57,
-   "newRank": 53,
+   "oldRank": 58,
+   "newRank": 54,
    "delta": 4,
    "preScore": 36,
    "postScore": 55,
@@ -1475,15 +1497,15 @@
    ]
   },
   {
-   "key": "Kitchen Remodeling|Bellevue",
+   "key": "Kitchen Remodeling|Bellevue|WA",
    "experimentId": "RES-kitchen-remodel-Bellevue-WA",
    "service": "Kitchen Remodeling",
    "geography": "Bellevue",
    "state": "WA",
    "cohort": "RESERVE",
    "source": "RESERVE",
-   "oldRank": 55,
-   "newRank": 55,
+   "oldRank": 56,
+   "newRank": 56,
    "delta": 0,
    "preScore": 37,
    "postScore": 54,
@@ -1497,7 +1519,7 @@
    ]
   },
   {
-   "key": "Kitchen Remodeling|Redmond",
+   "key": "Kitchen Remodeling|Redmond|WA",
    "experimentId": "RES-kitchen-remodel-Redmond-WA",
    "service": "Kitchen Remodeling",
    "geography": "Redmond",
@@ -1519,7 +1541,7 @@
    ]
   },
   {
-   "key": "Window Replacement|Livermore",
+   "key": "Window Replacement|Livermore|CA",
    "experimentId": "RES-window-replacement-Livermore-CA",
    "service": "Window Replacement",
    "geography": "Livermore",
@@ -1542,7 +1564,7 @@
    ]
   },
   {
-   "key": "Bathroom Remodeling|Ogden",
+   "key": "Bathroom Remodeling|Ogden|UT",
    "experimentId": "RES-bathroom-remodel-Ogden-UT",
    "service": "Bathroom Remodeling",
    "geography": "Ogden",
@@ -1564,7 +1586,7 @@
    ]
   },
   {
-   "key": "Kitchen Remodeling|Alpharetta",
+   "key": "Kitchen Remodeling|Alpharetta|GA",
    "experimentId": "RES-kitchen-remodel-Alpharetta-GA",
    "service": "Kitchen Remodeling",
    "geography": "Alpharetta",
@@ -1586,7 +1608,7 @@
    ]
   },
   {
-   "key": "Bathroom Remodeling|Boulder",
+   "key": "Bathroom Remodeling|Boulder|CO",
    "experimentId": "RES-bathroom-remodel-Boulder-CO",
    "service": "Bathroom Remodeling",
    "geography": "Boulder",
@@ -1608,7 +1630,7 @@
    ]
   },
   {
-   "key": "Kitchen Remodeling|Carmel",
+   "key": "Kitchen Remodeling|Carmel|IN",
    "experimentId": "RES-kitchen-remodel-Carmel-IN",
    "service": "Kitchen Remodeling",
    "geography": "Carmel",
@@ -1630,15 +1652,15 @@
    ]
   },
   {
-   "key": "Water Damage Restoration|Bellevue",
+   "key": "Water Damage Restoration|Bellevue|WA",
    "experimentId": "RES-water-damage-Bellevue-WA",
    "service": "Water Damage Restoration",
    "geography": "Bellevue",
    "state": "WA",
    "cohort": "RESERVE",
    "source": "RESERVE",
-   "oldRank": 59,
-   "newRank": 58,
+   "oldRank": 60,
+   "newRank": 59,
    "delta": 1,
    "preScore": 31,
    "postScore": 47,
@@ -1652,15 +1674,15 @@
    ]
   },
   {
-   "key": "Kitchen Remodeling|Arvada",
+   "key": "Kitchen Remodeling|Arvada|CO",
    "experimentId": "RES-kitchen-remodel-Arvada-CO",
    "service": "Kitchen Remodeling",
    "geography": "Arvada",
    "state": "CO",
    "cohort": "RESERVE",
    "source": "RESERVE",
-   "oldRank": 60,
-   "newRank": 60,
+   "oldRank": 61,
+   "newRank": 61,
    "delta": 0,
    "preScore": 30,
    "postScore": 42,
@@ -1674,7 +1696,7 @@
    ]
   },
   {
-   "key": "Kitchen Remodeling|Conroe",
+   "key": "Kitchen Remodeling|Conroe|TX",
    "experimentId": "RES-kitchen-remodel-Conroe-TX",
    "service": "Kitchen Remodeling",
    "geography": "Conroe",
@@ -1696,7 +1718,7 @@
    ]
   },
   {
-   "key": "Bathroom Remodeling|Denton",
+   "key": "Bathroom Remodeling|Denton|TX",
    "experimentId": "RES-bathroom-remodel-Denton-TX",
    "service": "Bathroom Remodeling",
    "geography": "Denton",
@@ -1718,7 +1740,7 @@
    ]
   },
   {
-   "key": "Bathroom Remodeling|Conroe",
+   "key": "Bathroom Remodeling|Conroe|TX",
    "experimentId": "RES-bathroom-remodel-Conroe-TX",
    "service": "Bathroom Remodeling",
    "geography": "Conroe",
@@ -1726,8 +1748,8 @@
    "cohort": "RESERVE",
    "source": "RESERVE",
    "oldRank": 6,
-   "newRank": 63,
-   "delta": -57,
+   "newRank": 64,
+   "delta": -58,
    "preScore": 82,
    "postScore": -903,
    "gate": "FAIL",
@@ -1741,7 +1763,7 @@
    ]
   },
   {
-   "key": "Kitchen Remodeling|Marietta",
+   "key": "Kitchen Remodeling|Marietta|GA",
    "experimentId": "RES-kitchen-remodel-Marietta-GA",
    "service": "Kitchen Remodeling",
    "geography": "Marietta",
@@ -1763,7 +1785,7 @@
    ]
   },
   {
-   "key": "Window Replacement|Dublin",
+   "key": "Window Replacement|Dublin|CA",
    "experimentId": "RES-window-replacement-Dublin-CA",
    "service": "Window Replacement",
    "geography": "Dublin",
@@ -1787,7 +1809,7 @@
  ],
  "assets": [
   {
-   "key": "Bathroom Remodeling|Arvada",
+   "key": "Bathroom Remodeling|Arvada|CO",
    "source": "FINALIST",
    "experimentId": "W1-A-001",
    "cohort": "A-EXPLOITATION",
@@ -2448,7 +2470,7 @@
    }
   },
   {
-   "key": "Window Replacement|Midland",
+   "key": "Window Replacement|Midland|TX",
    "source": "FINALIST",
    "experimentId": "W1-A-002",
    "cohort": "A-EXPLOITATION",
@@ -3126,7 +3148,7 @@
    }
   },
   {
-   "key": "Window Replacement|Temecula",
+   "key": "Window Replacement|Temecula|CA",
    "source": "FINALIST",
    "experimentId": "W1-A-003",
    "cohort": "A-EXPLOITATION",
@@ -3966,7 +3988,7 @@
    }
   },
   {
-   "key": "Window Replacement|Vancouver",
+   "key": "Window Replacement|Vancouver|WA",
    "source": "FINALIST",
    "experimentId": "W1-A-004",
    "cohort": "A-EXPLOITATION",
@@ -4646,7 +4668,7 @@
    }
   },
   {
-   "key": "Kitchen Remodeling|Frisco",
+   "key": "Kitchen Remodeling|Frisco|TX",
    "source": "FINALIST",
    "experimentId": "W1-A-005",
    "cohort": "A-EXPLOITATION",
@@ -5371,7 +5393,7 @@
    }
   },
   {
-   "key": "Pool Builder|Sutton Fields",
+   "key": "Pool Builder|Sutton Fields|TX",
    "source": "FINALIST",
    "experimentId": "W1-B1-001",
    "matchedPairId": "NTX-P1",
@@ -5855,7 +5877,7 @@
    }
   },
   {
-   "key": "Pool Builder|Legacy Gardens",
+   "key": "Pool Builder|Legacy Gardens|TX",
    "source": "FINALIST",
    "experimentId": "W1-B2-002",
    "matchedPairId": "NTX-P1",
@@ -6296,7 +6318,7 @@
    }
   },
   {
-   "key": "Pool Builder|Sandbrock Ranch",
+   "key": "Pool Builder|Sandbrock Ranch|TX",
    "source": "FINALIST",
    "experimentId": "W1-B1-003",
    "matchedPairId": "NTX-P2",
@@ -6699,7 +6721,7 @@
    }
   },
   {
-   "key": "Pool Builder|Star Trail",
+   "key": "Pool Builder|Star Trail|TX",
    "source": "FINALIST",
    "experimentId": "W1-B2-004",
    "matchedPairId": "NTX-P2",
@@ -7139,7 +7161,7 @@
    }
   },
   {
-   "key": "Pool Builder|Painted Tree",
+   "key": "Pool Builder|Painted Tree|TX",
    "source": "FINALIST",
    "experimentId": "W1-B1-005",
    "matchedPairId": "NTX-P3",
@@ -7661,7 +7683,7 @@
    }
   },
   {
-   "key": "Pool Builder|Stonebridge Ranch",
+   "key": "Pool Builder|Stonebridge Ranch|TX",
    "source": "FINALIST",
    "experimentId": "W1-B2-006",
    "matchedPairId": "NTX-P3",
@@ -8173,7 +8195,7 @@
    }
   },
   {
-   "key": "Pool Builder|Mosaic",
+   "key": "Pool Builder|Mosaic|TX",
    "source": "FINALIST",
    "experimentId": "W1-B1-007",
    "matchedPairId": "NTX-P4",
@@ -8656,7 +8678,7 @@
    }
   },
   {
-   "key": "Pool Builder|Union Park",
+   "key": "Pool Builder|Union Park|TX",
    "source": "FINALIST",
    "experimentId": "W1-B2-008",
    "matchedPairId": "NTX-P4",
@@ -9050,7 +9072,7 @@
    }
   },
   {
-   "key": "Pool Builder|Newman Village",
+   "key": "Pool Builder|Newman Village|TX",
    "source": "FINALIST",
    "experimentId": "W1-B1-009",
    "matchedPairId": "NTX-P5",
@@ -9569,7 +9591,7 @@
    }
   },
   {
-   "key": "Pool Builder|Harvest",
+   "key": "Pool Builder|Harvest|TX",
    "source": "FINALIST",
    "experimentId": "W1-B2-010",
    "matchedPairId": "NTX-P5",
@@ -9963,7 +9985,7 @@
    }
   },
   {
-   "key": "Pool Builder|Cambridge Crossing",
+   "key": "Pool Builder|Cambridge Crossing|TX",
    "source": "FINALIST",
    "experimentId": "W1-B1-011",
    "matchedPairId": "NTX-P6",
@@ -10446,7 +10468,7 @@
    }
   },
   {
-   "key": "Pool Builder|Trinity Falls",
+   "key": "Pool Builder|Trinity Falls|TX",
    "source": "FINALIST",
    "experimentId": "W1-B2-012",
    "matchedPairId": "NTX-P6",
@@ -10958,7 +10980,7 @@
    }
   },
   {
-   "key": "Pool Builder|Frisco",
+   "key": "Pool Builder|Frisco|TX",
    "source": "FINALIST",
    "experimentId": "W1-B3-001",
    "cohort": "B3-CITY-CONTROL",
@@ -11457,7 +11479,7 @@
    }
   },
   {
-   "key": "Pool Builder|McKinney",
+   "key": "Pool Builder|McKinney|TX",
    "source": "FINALIST",
    "experimentId": "W1-B3-002",
    "cohort": "B3-CITY-CONTROL",
@@ -11960,7 +11982,7 @@
    }
   },
   {
-   "key": "Pool Builder|Prosper",
+   "key": "Pool Builder|Prosper|TX",
    "source": "FINALIST",
    "experimentId": "W1-B3-003",
    "cohort": "B3-CITY-CONTROL",
@@ -12374,7 +12396,7 @@
    }
   },
   {
-   "key": "Metal Roofing|Rochester",
+   "key": "Metal Roofing|Rochester|MN",
    "source": "FINALIST",
    "experimentId": "W1-C-001",
    "cohort": "C-MODEL-VALIDATION",
@@ -12991,7 +13013,7 @@
    }
   },
   {
-   "key": "Basement Waterproofing|Naperville",
+   "key": "Basement Waterproofing|Naperville|IL",
    "source": "FINALIST",
    "experimentId": "W1-C-002",
    "cohort": "C-MODEL-VALIDATION",
@@ -13565,7 +13587,7 @@
    }
   },
   {
-   "key": "Bathroom Remodeling|Bellevue",
+   "key": "Bathroom Remodeling|Bellevue|NE",
    "source": "FINALIST",
    "experimentId": "W1-C-003",
    "cohort": "C-MODEL-VALIDATION",
@@ -13779,14 +13801,14 @@
    "renterEvidenceNote": null,
    "dimensions": {
     "A": {
-     "score": 58,
+     "score": 92,
      "version": "A-1.0.0",
      "confidence": 0.875,
      "rationale": [
-      "1 directory result(s) in top 3 — Google lacks a strong local answer",
-      "out-of-town service-area pages rank — no local specialist",
-      "map pack averages 44 reviews — contestable",
-      "competitors average 3192 words — deep content"
+      "2 directory result(s) in top 3 — Google lacks a strong local answer",
+      "top titles omit the target city",
+      "competitor pages average only 208 words",
+      "incumbent domains young (3.9y)"
      ],
      "evidenceTypes": [
       "DERIVED"
@@ -13843,13 +13865,15 @@
      ]
     },
     "E": {
-     "score": 64,
+     "score": 65,
      "version": "E-1.0.0",
      "confidence": 1,
      "rationale": [
-      "11 businesses observed serving this market",
+      "10 businesses observed serving this market",
       "3 viable renter(s) (website + ≥5 reviews)",
-      "1 stronger operator(s) (≥50 reviews, ≥4.0★)"
+      "1 stronger operator(s) (≥50 reviews, ≥4.0★)",
+      "1 operator(s) confirmed by multiple evidence sources",
+      "concentrated market — one dominant operator reduces renter competition"
      ],
      "evidenceTypes": [
       "DERIVED"
@@ -13870,11 +13894,12 @@
      "missing": []
     },
     "G": {
-     "score": 41,
+     "score": 74,
      "version": "G-1.0.0",
      "confidence": 0.35,
      "rationale": [
-      "PROSPECTIVE proxy — no V2 asset performance history exists yet"
+      "PROSPECTIVE proxy — no V2 asset performance history exists yet",
+      "thin competitor content shortens the expected content gap"
      ],
      "prospective": true,
      "missing": [
@@ -13884,11 +13909,12 @@
      ]
     },
     "H": {
-     "score": 80,
+     "score": 100,
      "version": "H-1.0.0",
      "confidence": 0.7375,
      "rationale": [
-      "upside 92 vs entry resistance 42",
+      "upside 92 vs entry resistance 8",
+      "RARE: weak SERP alongside strong realizable value",
       "multiple viable renters in a beatable market"
      ],
      "missing": []
@@ -13907,9 +13933,13 @@
      ],
      "missing": []
     },
-    "composite": 75,
+    "composite": 85,
     "weightSet": "w-balanced-v1.1",
     "topDrivers": [
+     {
+      "dim": "A",
+      "contribution": 17
+     },
      {
       "dim": "B",
       "contribution": 17
@@ -13917,10 +13947,6 @@
      {
       "dim": "F",
       "contribution": 15
-     },
-     {
-      "dim": "E",
-      "contribution": 11
      }
     ],
     "biggestGap": "B: kw.universe.volume (geo-scoped)",
@@ -14128,7 +14154,7 @@
    }
   },
   {
-   "key": "House Cleaning|Orlando",
+   "key": "House Cleaning|Orlando|FL",
    "source": "FINALIST",
    "experimentId": "W1-C-004",
    "cohort": "C-MODEL-VALIDATION",
@@ -14756,7 +14782,7 @@
    }
   },
   {
-   "key": "Kitchen Remodeling|Rockville",
+   "key": "Kitchen Remodeling|Rockville|MD",
    "source": "FINALIST",
    "experimentId": "W1-C-005",
    "cohort": "C-MODEL-VALIDATION",
@@ -15384,7 +15410,7 @@
    }
   },
   {
-   "key": "Appliance Repair|Aurora",
+   "key": "Appliance Repair|Aurora|IL",
    "source": "FINALIST",
    "experimentId": "W1-C-006",
    "cohort": "C-MODEL-VALIDATION",
@@ -16010,7 +16036,7 @@
    }
   },
   {
-   "key": "Kitchen Remodeling|Orlando",
+   "key": "Kitchen Remodeling|Orlando|FL",
    "source": "RESERVE",
    "experimentId": "RES-kitchen-remodel-Orlando-FL",
    "cohort": "RESERVE",
@@ -16475,7 +16501,7 @@
    }
   },
   {
-   "key": "Kitchen Remodeling|Madison",
+   "key": "Kitchen Remodeling|Madison|WI",
    "source": "RESERVE",
    "experimentId": "RES-kitchen-remodel-Madison-WI",
    "cohort": "RESERVE",
@@ -16975,7 +17001,7 @@
    }
   },
   {
-   "key": "Mold Remediation|Knoxville",
+   "key": "Mold Remediation|Knoxville|TN",
    "source": "RESERVE",
    "experimentId": "RES-mold-remediation-Knoxville-TN",
    "cohort": "RESERVE",
@@ -17443,7 +17469,7 @@
    }
   },
   {
-   "key": "Kitchen Remodeling|Plano",
+   "key": "Kitchen Remodeling|Plano|TX",
    "source": "RESERVE",
    "experimentId": "RES-kitchen-remodel-Plano-TX",
    "cohort": "RESERVE",
@@ -18019,7 +18045,7 @@
    }
   },
   {
-   "key": "House Cleaning|Irvine",
+   "key": "House Cleaning|Irvine|CA",
    "source": "RESERVE",
    "experimentId": "RES-house-cleaning-Irvine-CA",
    "cohort": "RESERVE",
@@ -18495,7 +18521,7 @@
    }
   },
   {
-   "key": "Window Replacement|Amarillo",
+   "key": "Window Replacement|Amarillo|TX",
    "source": "RESERVE",
    "experimentId": "RES-window-replacement-Amarillo-TX",
    "cohort": "RESERVE",
@@ -19179,7 +19205,7 @@
    }
   },
   {
-   "key": "Kitchen Remodeling|Chandler",
+   "key": "Kitchen Remodeling|Chandler|AZ",
    "source": "RESERVE",
    "experimentId": "RES-kitchen-remodel-Chandler-AZ",
    "cohort": "RESERVE",
@@ -19679,7 +19705,7 @@
    }
   },
   {
-   "key": "Junk Removal|Aurora",
+   "key": "Junk Removal|Aurora|IL",
    "source": "RESERVE",
    "experimentId": "RES-junk-removal-Aurora-IL",
    "cohort": "RESERVE",
@@ -20143,7 +20169,7 @@
    }
   },
   {
-   "key": "Water Damage Restoration|Chandler",
+   "key": "Water Damage Restoration|Chandler|AZ",
    "source": "RESERVE",
    "experimentId": "RES-water-damage-Chandler-AZ",
    "cohort": "RESERVE",
@@ -20641,7 +20667,7 @@
    }
   },
   {
-   "key": "Stucco Repair|Orlando",
+   "key": "Stucco Repair|Orlando|FL",
    "source": "RESERVE",
    "experimentId": "RES-stucco-repair-Orlando-FL",
    "cohort": "RESERVE",
@@ -21111,7 +21137,7 @@
    }
   },
   {
-   "key": "Roof Repair|Irvine",
+   "key": "Roof Repair|Irvine|CA",
    "source": "RESERVE",
    "experimentId": "RES-roof-repair-Irvine-CA",
    "cohort": "RESERVE",
@@ -21576,7 +21602,7 @@
    }
   },
   {
-   "key": "Mold Remediation|Plano",
+   "key": "Mold Remediation|Plano|TX",
    "source": "RESERVE",
    "experimentId": "RES-mold-remediation-Plano-TX",
    "cohort": "RESERVE",
@@ -22081,7 +22107,7 @@
    }
   },
   {
-   "key": "Radon Mitigation|Madison",
+   "key": "Radon Mitigation|Madison|WI",
    "source": "RESERVE",
    "experimentId": "RES-radon-mitigation-Madison-WI",
    "cohort": "RESERVE",
@@ -22547,7 +22573,7 @@
    }
   },
   {
-   "key": "Dumpster Rental|Brockton",
+   "key": "Dumpster Rental|Brockton|MA",
    "source": "RESERVE",
    "experimentId": "RES-dumpster-rental-Brockton-MA",
    "cohort": "RESERVE",
@@ -22958,7 +22984,583 @@
    }
   },
   {
-   "key": "Bathroom Remodeling|Kirkland",
+   "key": "Bathroom Remodeling|Bellevue|WA",
+   "source": "RESERVE",
+   "experimentId": "RES-bathroom-remodel-Bellevue-WA",
+   "cohort": "RESERVE",
+   "service": "Bathroom Remodeling",
+   "serviceSlug": "bathroom-remodel",
+   "geography": "Bellevue",
+   "state": "WA",
+   "geographyType": "city",
+   "measuredVolume": 2400,
+   "cpc": 12.08,
+   "demandProven": true,
+   "dimensionA": 58,
+   "organicV1": 12,
+   "organicVerdict": "ORGANIC-BRUTAL",
+   "renterDepthE": 64,
+   "leadEconomicsD": 78,
+   "assetValueF": 92,
+   "asymmetryH": 80,
+   "compositeAI": 75,
+   "aiBucket": "UNICORN",
+   "evidenceConfidence": 80,
+   "evidenceCompleteness": 100,
+   "ticketAssumed": 18000,
+   "marginAssumed": 0.32,
+   "leadValueAssumedUsd": 576,
+   "renterContext": {
+    "relevantOperators": 11,
+    "viableRenters": 3,
+    "websiteAdoptionPct": 27
+   },
+   "localPackEvidence": {
+    "mapPackSize": 3,
+    "avgReviews": 44
+   },
+   "contentBarWords": 3192,
+   "competitorDomainAgeYears": 10.2,
+   "_serpSignals": {
+    "directoriesInTop3": 1,
+    "innerPagesInTop5": 3,
+    "intentMismatchInTop5": 0,
+    "outOfTownInTop3": 1,
+    "franchisesInTop3": 0,
+    "buyerProof": true,
+    "top3TitlesMissingCity": 0,
+    "mapPack": "present",
+    "mapPackSize": 3,
+    "avgMapReviews": 44,
+    "mapListingsWithoutWebsite": 0,
+    "adCount": 0,
+    "advertisers": [],
+    "competitorAvgWords": 3192,
+    "competitorAvgDomainAgeYears": 10.2
+   },
+   "_exp": "experiment-3",
+   "_id": "bathroom-remodel|Bellevue|WA",
+   "geographyVerdict": "verified",
+   "renterEvidenceNote": null,
+   "dimensions": {
+    "A": {
+     "score": 58,
+     "version": "A-1.0.0",
+     "confidence": 0.875,
+     "rationale": [
+      "1 directory result(s) in top 3 — Google lacks a strong local answer",
+      "out-of-town service-area pages rank — no local specialist",
+      "map pack averages 44 reviews — contestable",
+      "competitors average 3192 words — deep content"
+     ],
+     "evidenceTypes": [
+      "DERIVED"
+     ],
+     "missing": []
+    },
+    "B": {
+     "score": 92,
+     "version": "B-1.0.0",
+     "confidence": 0.6,
+     "rationale": [
+      "2400 measured searches/mo (exact term)",
+      "no valid geo-scoped keyword universe — demand rests on the exact term alone"
+     ],
+     "evidenceTypes": [
+      "OBSERVED",
+      "DERIVED"
+     ],
+     "missing": [
+      "kw.universe.volume (geo-scoped)"
+     ]
+    },
+    "C": {
+     "score": 82,
+     "version": "C-1.0.0",
+     "confidence": 0.85,
+     "rationale": [
+      "advertisers pay $12.08/click — money is being spent to acquire this customer",
+      "no ads on this SERP"
+     ],
+     "evidenceTypes": [
+      "OBSERVED",
+      "DERIVED"
+     ],
+     "missing": []
+    },
+    "D": {
+     "score": 78,
+     "version": "D-1.1.0",
+     "confidence": 0.4,
+     "rationale": [
+      "~$576 value per lead ($5760 job gross profit x 0.1 benchmark close rate; HUMAN_ASSUMED)",
+      "CPC $12.08 provides an observed market anchor for lead cost",
+      "NO live CPL / close-rate evidence — replace when assets produce data"
+     ],
+     "evidenceTypes": [
+      "HUMAN_ASSUMED",
+      "OBSERVED"
+     ],
+     "missing": [
+      "econ.cpl.live",
+      "econ.close.rate.live",
+      "econ.leadrate.live"
+     ]
+    },
+    "E": {
+     "score": 64,
+     "version": "E-1.0.0",
+     "confidence": 1,
+     "rationale": [
+      "11 businesses observed serving this market",
+      "3 viable renter(s) (website + ≥5 reviews)",
+      "1 stronger operator(s) (≥50 reviews, ≥4.0★)"
+     ],
+     "evidenceTypes": [
+      "DERIVED"
+     ],
+     "missing": []
+    },
+    "F": {
+     "score": 92,
+     "version": "F-1.1.0",
+     "confidence": 0.53,
+     "rationale": [
+      "~$41472/mo renter gross profit at benchmark funnel rates (HUMAN_ASSUMED)"
+     ],
+     "evidenceTypes": [
+      "OBSERVED",
+      "HUMAN_ASSUMED"
+     ],
+     "missing": []
+    },
+    "G": {
+     "score": 41,
+     "version": "G-1.0.0",
+     "confidence": 0.35,
+     "rationale": [
+      "PROSPECTIVE proxy — no V2 asset performance history exists yet"
+     ],
+     "prospective": true,
+     "missing": [
+      "asset.indexed.days",
+      "asset.firstimpression.days",
+      "asset.firstrank.days"
+     ]
+    },
+    "H": {
+     "score": 80,
+     "version": "H-1.0.0",
+     "confidence": 0.7375,
+     "rationale": [
+      "upside 92 vs entry resistance 42",
+      "multiple viable renters in a beatable market"
+     ],
+     "missing": []
+    },
+    "I": {
+     "score": 80,
+     "version": "I-1.0.0",
+     "confidence": 1,
+     "rationale": [
+      "8/8 dimensions scoreable (100% completeness)",
+      "4 dimension(s) rest on OBSERVED evidence",
+      "2 dimension(s) depend on HUMAN_ASSUMED economics",
+      "evidence collected within the last week",
+      "4 independent evidence sources",
+      "confidence reflects evidence quality only — a poor opportunity can score high here"
+     ],
+     "missing": []
+    },
+    "composite": 75,
+    "weightSet": "w-balanced-v1.1",
+    "topDrivers": [
+     {
+      "dim": "B",
+      "contribution": 17
+     },
+     {
+      "dim": "F",
+      "contribution": 15
+     },
+     {
+      "dim": "E",
+      "contribution": 11
+     }
+    ],
+    "biggestGap": "B: kw.universe.volume (geo-scoped)",
+    "assumptionDependent": [
+     "D",
+     "F"
+    ],
+    "prospective": [
+     "G"
+    ]
+   },
+   "dimensionsNote": null,
+   "validation": {
+    "version": "prepurchase-v1",
+    "intent": {
+     "intentClass": "LOCAL_COMMERCIAL",
+     "verdict": "PASS",
+     "score": 100,
+     "confidence": 0.95,
+     "explanation": "Clear hiring intent: 5 local service businesses rank organically, alongside 3 directory/marketplace results, with a 3-listing map pack. This is a market where people hire.",
+     "evidence": {
+      "localOperatorsTop10": 5,
+      "directoriesTop10": 3,
+      "marketplacesTop10": 0,
+      "nationalRetailTop10": 0,
+      "informationalTop10": 0,
+      "institutionalTop10": 0,
+      "adCount": 0,
+      "mapPackSize": 3,
+      "cpc": 12.08,
+      "commercialSlots": 8,
+      "nonCommercialSlots": 0,
+      "topSlots": [
+       "1. eastsidekb.com [local-specialist]",
+       "2. oasisbathsolutions.com [local-specialist]",
+       "3. thumbtack.com [directory]",
+       "4. kitchenmore.com [local-specialist]",
+       "5. rwandersonhomes.com [local-specialist]"
+      ]
+     },
+     "version": "prepurchase-v1"
+    },
+    "expansion": {
+     "verdict": "PASS",
+     "score": 84,
+     "confidence": 0.55,
+     "explanation": "4 services with measured demand and 6 defensible areas support roughly 15 legitimate pages covering about 3,880 searches/month.",
+     "evidence": {
+      "primaryServices": [
+       {
+        "service": "Bathroom Remodeling",
+        "volume": 2400
+       },
+       {
+        "service": "Kitchen Remodeling",
+        "volume": 880
+       },
+       {
+        "service": "Window Replacement",
+        "volume": 390
+       },
+       {
+        "service": "Water Damage Restoration",
+        "volume": 210
+       }
+      ],
+      "viableServiceCount": 4,
+      "candidateAreas": [
+       {
+        "area": "Renton",
+        "basis": "same state, 90/mo measured demand for this service"
+       },
+       {
+        "area": "Redmond",
+        "basis": "same state, 210/mo measured demand for this service"
+       },
+       {
+        "area": "Kirkland",
+        "basis": "same state, 590/mo measured demand for this service"
+       },
+       {
+        "area": "Everett",
+        "basis": "same state, 90/mo measured demand for this service"
+       },
+       {
+        "area": "Lakewood",
+        "basis": "same state, 90/mo measured demand for this service"
+       },
+       {
+        "area": "Vancouver",
+        "basis": "same state, 70/mo measured demand for this service"
+       }
+      ],
+      "viableAreaCount": 6,
+      "viableCombinations": 15,
+      "demandCoveredPerMonth": 3880,
+      "thinContentRisk": false,
+      "geographyConfidence": "approximate-adjacency",
+      "notes": [
+       "3 candidate services had no provider demand data and were EXCLUDED rather than assumed viable.",
+       "Nearby areas are inferred from state/county membership, not verified drive-time adjacency. Area count is indicative and needs a gazetteer with coordinates to firm up."
+      ]
+     },
+     "version": "prepurchase-v1"
+    },
+    "architecture": {
+     "tree": {
+      "path": "/",
+      "label": "Bathroom Remodeling — Bellevue",
+      "kind": "home",
+      "children": [
+       {
+        "path": "/services/",
+        "label": "Services",
+        "kind": "service",
+        "children": [
+         {
+          "path": "/services/bathroom-remodeling/",
+          "label": "Bathroom Remodeling",
+          "kind": "service"
+         },
+         {
+          "path": "/services/kitchen-remodeling/",
+          "label": "Kitchen Remodeling",
+          "kind": "service"
+         },
+         {
+          "path": "/services/window-replacement/",
+          "label": "Window Replacement",
+          "kind": "service"
+         },
+         {
+          "path": "/services/water-damage-restoration/",
+          "label": "Water Damage Restoration",
+          "kind": "service"
+         }
+        ]
+       },
+       {
+        "path": "/areas/",
+        "label": "Service Areas",
+        "kind": "area",
+        "children": [
+         {
+          "path": "/areas/renton/",
+          "label": "Renton",
+          "kind": "area",
+          "children": [
+           {
+            "path": "/areas/renton/bathroom-remodeling/",
+            "label": "Bathroom Remodeling in Renton",
+            "kind": "service-area"
+           },
+           {
+            "path": "/areas/renton/kitchen-remodeling/",
+            "label": "Kitchen Remodeling in Renton",
+            "kind": "service-area"
+           },
+           {
+            "path": "/areas/renton/window-replacement/",
+            "label": "Window Replacement in Renton",
+            "kind": "service-area"
+           }
+          ]
+         },
+         {
+          "path": "/areas/redmond/",
+          "label": "Redmond",
+          "kind": "area",
+          "children": [
+           {
+            "path": "/areas/redmond/bathroom-remodeling/",
+            "label": "Bathroom Remodeling in Redmond",
+            "kind": "service-area"
+           },
+           {
+            "path": "/areas/redmond/kitchen-remodeling/",
+            "label": "Kitchen Remodeling in Redmond",
+            "kind": "service-area"
+           },
+           {
+            "path": "/areas/redmond/window-replacement/",
+            "label": "Window Replacement in Redmond",
+            "kind": "service-area"
+           }
+          ]
+         },
+         {
+          "path": "/areas/kirkland/",
+          "label": "Kirkland",
+          "kind": "area",
+          "children": [
+           {
+            "path": "/areas/kirkland/bathroom-remodeling/",
+            "label": "Bathroom Remodeling in Kirkland",
+            "kind": "service-area"
+           },
+           {
+            "path": "/areas/kirkland/kitchen-remodeling/",
+            "label": "Kitchen Remodeling in Kirkland",
+            "kind": "service-area"
+           },
+           {
+            "path": "/areas/kirkland/window-replacement/",
+            "label": "Window Replacement in Kirkland",
+            "kind": "service-area"
+           }
+          ]
+         },
+         {
+          "path": "/areas/everett/",
+          "label": "Everett",
+          "kind": "area",
+          "children": [
+           {
+            "path": "/areas/everett/bathroom-remodeling/",
+            "label": "Bathroom Remodeling in Everett",
+            "kind": "service-area"
+           },
+           {
+            "path": "/areas/everett/kitchen-remodeling/",
+            "label": "Kitchen Remodeling in Everett",
+            "kind": "service-area"
+           },
+           {
+            "path": "/areas/everett/window-replacement/",
+            "label": "Window Replacement in Everett",
+            "kind": "service-area"
+           }
+          ]
+         },
+         {
+          "path": "/areas/lakewood/",
+          "label": "Lakewood",
+          "kind": "area",
+          "children": [
+           {
+            "path": "/areas/lakewood/bathroom-remodeling/",
+            "label": "Bathroom Remodeling in Lakewood",
+            "kind": "service-area"
+           },
+           {
+            "path": "/areas/lakewood/kitchen-remodeling/",
+            "label": "Kitchen Remodeling in Lakewood",
+            "kind": "service-area"
+           },
+           {
+            "path": "/areas/lakewood/window-replacement/",
+            "label": "Window Replacement in Lakewood",
+            "kind": "service-area"
+           }
+          ]
+         },
+         {
+          "path": "/areas/vancouver/",
+          "label": "Vancouver",
+          "kind": "area",
+          "children": [
+           {
+            "path": "/areas/vancouver/bathroom-remodeling/",
+            "label": "Bathroom Remodeling in Vancouver",
+            "kind": "service-area"
+           },
+           {
+            "path": "/areas/vancouver/kitchen-remodeling/",
+            "label": "Kitchen Remodeling in Vancouver",
+            "kind": "service-area"
+           },
+           {
+            "path": "/areas/vancouver/window-replacement/",
+            "label": "Window Replacement in Vancouver",
+            "kind": "service-area"
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     },
+     "estimatedPages": 29,
+     "clusters": [
+      "Bathroom Remodeling core commercial cluster",
+      "Geographic service-area cluster",
+      "Adjacent-service cluster"
+     ],
+     "internalLinking": [
+      "Home links to every service page and the top service areas",
+      "Each service page links to its Service × Area variants",
+      "Area pages cross-link to sibling areas to distribute authority",
+      "Every commercial page links back to a single conversion path"
+     ]
+    },
+    "cannibalization": {
+     "verdict": "PASS_WITH_WARNING",
+     "score": 34,
+     "confidence": 0.6,
+     "explanation": "Planned pages modestly outnumber distinct intents (29 vs ~10). Manageable, but the home page and head service page must be differentiated deliberately.",
+     "evidence": {
+      "conflictGroups": [
+       {
+        "intent": "Bathroom Remodeling Bellevue (primary commercial intent)",
+        "pages": [
+         "/",
+         "/services/bathroom-remodeling/",
+         "/areas/bellevue/"
+        ]
+       }
+      ],
+      "recommendations": [
+       "Point the home page at \"Bathroom Remodeling Bellevue\" and make the head service page a supporting overview, or drop the separate service page entirely.",
+       "Planned page count materially exceeds the number of distinct search intents — build the intents that exist rather than filling a template."
+      ],
+      "pageCount": 29,
+      "distinctIntents": 10
+     },
+     "version": "prepurchase-v1"
+    },
+    "localDepth": {
+     "verdict": "PASS",
+     "score": 72,
+     "confidence": 0.5,
+     "explanation": "Enough verified local signal (6 named surrounding areas, population profile, household income profile) to differentiate pages without inventing facts.",
+     "evidence": {
+      "availableSignals": [
+       "6 named surrounding areas",
+       "population profile",
+       "household income profile",
+       "measured competitor content depth (~3192 words)"
+      ],
+      "missingSignals": [
+       "verified landmarks / climate / local regulation / local pricing evidence (not collected — must not be fabricated at build time)"
+      ],
+      "areaCount": 6,
+      "competitorContentBarWords": 3192
+     },
+     "version": "prepurchase-v1"
+    },
+    "visual": {
+     "verdict": "PASS",
+     "score": 90,
+     "confidence": 0.4,
+     "explanation": "Highly visual service — strong before/after and project imagery are available, which supports a credible, non-generic site.",
+     "evidence": {
+      "suggestedAssets": [
+       "before/after bathrooms",
+       "tile and fixture detail",
+       "renders",
+       "process timeline"
+      ],
+      "basis": "HUMAN_ASSUMED service-level judgement, recorded for deployment planning; does not affect A–I scoring"
+     },
+     "version": "prepurchase-v1"
+    },
+    "gate": {
+     "status": "PASS_WITH_WARNING",
+     "reasons": [
+      "Clear local hiring intent.",
+      "3 viable renters identified."
+     ],
+     "blockers": [],
+     "warnings": [
+      "Organic SERP is hostile (organic-v1.2 12) — ranking will be slow and uncertain."
+     ],
+     "readyForPurchaseDecision": true
+    },
+    "renterEvidence": {
+     "viableRenters": 3,
+     "measured": true,
+     "inheritedFromParentCity": false,
+     "note": null
+    }
+   }
+  },
+  {
+   "key": "Bathroom Remodeling|Kirkland|WA",
    "source": "RESERVE",
    "experimentId": "RES-bathroom-remodel-Kirkland-WA",
    "cohort": "RESERVE",
@@ -23488,7 +24090,7 @@
    }
   },
   {
-   "key": "Kitchen Remodeling|Bellevue",
+   "key": "Kitchen Remodeling|Bellevue|NE",
    "source": "RESERVE",
    "experimentId": "RES-kitchen-remodel-Bellevue-NE",
    "cohort": "RESERVE",
@@ -23548,10 +24150,13 @@
    "renterEvidenceNote": null,
    "dimensions": {
     "A": {
-     "score": 40,
+     "score": 60,
      "version": "A-1.0.0",
-     "confidence": 0.75,
-     "rationale": [],
+     "confidence": 0.875,
+     "rationale": [
+      "1 directory result(s) in top 3 — Google lacks a strong local answer",
+      "out-of-town service-area pages rank — no local specialist"
+     ],
      "evidenceTypes": [
       "DERIVED"
      ],
@@ -23607,14 +24212,13 @@
      ]
     },
     "E": {
-     "score": 56,
+     "score": 72,
      "version": "E-1.0.0",
      "confidence": 1,
      "rationale": [
       "11 businesses observed serving this market",
       "3 viable renter(s) (website + ≥5 reviews)",
-      "1 stronger operator(s) (≥50 reviews, ≥4.0★)",
-      "concentrated market — one dominant operator reduces renter competition"
+      "2 stronger operator(s) (≥50 reviews, ≥4.0★)"
      ],
      "evidenceTypes": [
       "DERIVED"
@@ -23635,7 +24239,7 @@
      "missing": []
     },
     "G": {
-     "score": 28,
+     "score": 42,
      "version": "G-1.0.0",
      "confidence": 0.35,
      "rationale": [
@@ -23649,11 +24253,12 @@
      ]
     },
     "H": {
-     "score": 63,
+     "score": 81,
      "version": "H-1.0.0",
-     "confidence": 0.675,
+     "confidence": 0.7375,
      "rationale": [
-      "upside 92 vs entry resistance 60"
+      "upside 92 vs entry resistance 40",
+      "multiple viable renters in a beatable market"
      ],
      "missing": []
     },
@@ -23671,7 +24276,7 @@
      ],
      "missing": []
     },
-    "composite": 65,
+    "composite": 74,
     "weightSet": "w-balanced-v1.1",
     "topDrivers": [
      {
@@ -23684,7 +24289,7 @@
      },
      {
       "dim": "E",
-      "contribution": 10
+      "contribution": 12
      }
     ],
     "biggestGap": "B: kw.universe.volume (geo-scoped)",
@@ -23893,7 +24498,7 @@
    }
   },
   {
-   "key": "Kitchen Remodeling|Rochester",
+   "key": "Kitchen Remodeling|Rochester|MN",
    "source": "RESERVE",
    "experimentId": "RES-kitchen-remodel-Rochester-MN",
    "cohort": "RESERVE",
@@ -24356,7 +24961,7 @@
    }
   },
   {
-   "key": "Bathroom Remodeling|Temecula",
+   "key": "Bathroom Remodeling|Temecula|CA",
    "source": "RESERVE",
    "experimentId": "RES-bathroom-remodel-Temecula-CA",
    "cohort": "RESERVE",
@@ -25040,7 +25645,7 @@
    }
   },
   {
-   "key": "Window Replacement|Naperville",
+   "key": "Window Replacement|Naperville|IL",
    "source": "RESERVE",
    "experimentId": "RES-window-replacement-Naperville-IL",
    "cohort": "RESERVE",
@@ -25525,7 +26130,7 @@
    }
   },
   {
-   "key": "Kitchen Remodeling|Temecula",
+   "key": "Kitchen Remodeling|Temecula|CA",
    "source": "RESERVE",
    "experimentId": "RES-kitchen-remodel-Temecula-CA",
    "cohort": "RESERVE",
@@ -26208,7 +26813,7 @@
    }
   },
   {
-   "key": "Bathroom Remodeling|Roseville",
+   "key": "Bathroom Remodeling|Roseville|CA",
    "source": "RESERVE",
    "experimentId": "RES-bathroom-remodel-Roseville-CA",
    "cohort": "RESERVE",
@@ -26884,7 +27489,7 @@
    }
   },
   {
-   "key": "Kitchen Remodeling|Boulder",
+   "key": "Kitchen Remodeling|Boulder|CO",
    "source": "RESERVE",
    "experimentId": "RES-kitchen-remodel-Boulder-CO",
    "cohort": "RESERVE",
@@ -27419,7 +28024,7 @@
    }
   },
   {
-   "key": "Kitchen Remodeling|McKinney",
+   "key": "Kitchen Remodeling|McKinney|TX",
    "source": "RESERVE",
    "experimentId": "RES-kitchen-remodel-McKinney-TX",
    "cohort": "RESERVE",
@@ -27995,7 +28600,7 @@
    }
   },
   {
-   "key": "Kitchen Remodeling|Bellevue",
+   "key": "Kitchen Remodeling|Bellevue|WA",
    "source": "RESERVE",
    "experimentId": "RES-kitchen-remodel-Bellevue-WA",
    "cohort": "RESERVE",
@@ -28566,7 +29171,7 @@
    }
   },
   {
-   "key": "Kitchen Remodeling|Redmond",
+   "key": "Kitchen Remodeling|Redmond|WA",
    "source": "RESERVE",
    "experimentId": "RES-kitchen-remodel-Redmond-WA",
    "cohort": "RESERVE",
@@ -29094,7 +29699,7 @@
    }
   },
   {
-   "key": "Window Replacement|Livermore",
+   "key": "Window Replacement|Livermore|CA",
    "source": "RESERVE",
    "experimentId": "RES-window-replacement-Livermore-CA",
    "cohort": "RESERVE",
@@ -29773,7 +30378,7 @@
    }
   },
   {
-   "key": "Bathroom Remodeling|Ogden",
+   "key": "Bathroom Remodeling|Ogden|UT",
    "source": "RESERVE",
    "experimentId": "RES-bathroom-remodel-Ogden-UT",
    "cohort": "RESERVE",
@@ -30179,7 +30784,7 @@
    }
   },
   {
-   "key": "Kitchen Remodeling|Alpharetta",
+   "key": "Kitchen Remodeling|Alpharetta|GA",
    "source": "RESERVE",
    "experimentId": "RES-kitchen-remodel-Alpharetta-GA",
    "cohort": "RESERVE",
@@ -30636,7 +31241,7 @@
    }
   },
   {
-   "key": "Bathroom Remodeling|Boulder",
+   "key": "Bathroom Remodeling|Boulder|CO",
    "source": "RESERVE",
    "experimentId": "RES-bathroom-remodel-Boulder-CO",
    "cohort": "RESERVE",
@@ -31196,7 +31801,7 @@
    }
   },
   {
-   "key": "Kitchen Remodeling|Carmel",
+   "key": "Kitchen Remodeling|Carmel|IN",
    "source": "RESERVE",
    "experimentId": "RES-kitchen-remodel-Carmel-IN",
    "cohort": "RESERVE",
@@ -31593,7 +32198,7 @@
    }
   },
   {
-   "key": "Water Damage Restoration|Bellevue",
+   "key": "Water Damage Restoration|Bellevue|WA",
    "source": "RESERVE",
    "experimentId": "RES-water-damage-Bellevue-WA",
    "cohort": "RESERVE",
@@ -31653,14 +32258,15 @@
    "renterEvidenceNote": null,
    "dimensions": {
     "A": {
-     "score": 52,
+     "score": 66,
      "version": "A-1.0.0",
      "confidence": 1,
      "rationale": [
+      "1 directory result(s) in top 3 — Google lacks a strong local answer",
       "4/5 results are inner pages, not dedicated local sites",
       "out-of-town service-area pages rank — no local specialist",
       "1 brand-search franchise(s) in top 3",
-      "map pack averages 59 reviews — contestable"
+      "map pack averages 46 reviews — contestable"
      ],
      "evidenceTypes": [
       "DERIVED"
@@ -31718,14 +32324,13 @@
      ]
     },
     "E": {
-     "score": 65,
+     "score": 56,
      "version": "E-1.0.0",
      "confidence": 1,
      "rationale": [
-      "9 businesses observed serving this market",
+      "11 businesses observed serving this market",
       "3 viable renter(s) (website + ≥5 reviews)",
       "1 stronger operator(s) (≥50 reviews, ≥4.0★)",
-      "2 operator(s) confirmed by multiple evidence sources",
       "concentrated market — one dominant operator reduces renter competition"
      ],
      "evidenceTypes": [
@@ -31747,7 +32352,7 @@
      "missing": []
     },
     "G": {
-     "score": 36,
+     "score": 46,
      "version": "G-1.0.0",
      "confidence": 0.35,
      "rationale": [
@@ -31761,11 +32366,12 @@
      ]
     },
     "H": {
-     "score": 51,
+     "score": 62,
      "version": "H-1.0.0",
      "confidence": 0.8,
      "rationale": [
-      "upside 50 vs entry resistance 48"
+      "upside 50 vs entry resistance 34",
+      "multiple viable renters in a beatable market"
      ],
      "missing": []
     },
@@ -31783,20 +32389,20 @@
      ],
      "missing": []
     },
-    "composite": 58,
+    "composite": 61,
     "weightSet": "w-balanced-v1.1",
     "topDrivers": [
+     {
+      "dim": "A",
+      "contribution": 12
+     },
      {
       "dim": "B",
       "contribution": 12
      },
      {
       "dim": "E",
-      "contribution": 11
-     },
-     {
-      "dim": "A",
-      "contribution": 9
+      "contribution": 10
      }
     ],
     "biggestGap": "B: kw.universe.volume (geo-scoped)",
@@ -32066,7 +32672,7 @@
    }
   },
   {
-   "key": "Kitchen Remodeling|Arvada",
+   "key": "Kitchen Remodeling|Arvada|CO",
    "source": "RESERVE",
    "experimentId": "RES-kitchen-remodel-Arvada-CO",
    "cohort": "RESERVE",
@@ -32552,7 +33158,7 @@
    }
   },
   {
-   "key": "Kitchen Remodeling|Conroe",
+   "key": "Kitchen Remodeling|Conroe|TX",
    "source": "RESERVE",
    "experimentId": "RES-kitchen-remodel-Conroe-TX",
    "cohort": "RESERVE",
@@ -33067,7 +33673,7 @@
    }
   },
   {
-   "key": "Bathroom Remodeling|Denton",
+   "key": "Bathroom Remodeling|Denton|TX",
    "source": "RESERVE",
    "experimentId": "RES-bathroom-remodel-Denton-TX",
    "cohort": "RESERVE",
@@ -33684,7 +34290,7 @@
    }
   },
   {
-   "key": "Bathroom Remodeling|Conroe",
+   "key": "Bathroom Remodeling|Conroe|TX",
    "source": "RESERVE",
    "experimentId": "RES-bathroom-remodel-Conroe-TX",
    "cohort": "RESERVE",
@@ -34288,7 +34894,7 @@
    }
   },
   {
-   "key": "Kitchen Remodeling|Marietta",
+   "key": "Kitchen Remodeling|Marietta|GA",
    "source": "RESERVE",
    "experimentId": "RES-kitchen-remodel-Marietta-GA",
    "cohort": "RESERVE",
@@ -34768,7 +35374,7 @@
    }
   },
   {
-   "key": "Window Replacement|Dublin",
+   "key": "Window Replacement|Dublin|CA",
    "source": "RESERVE",
    "experimentId": "RES-window-replacement-Dublin-CA",
    "cohort": "RESERVE",

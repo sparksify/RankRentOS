@@ -16,6 +16,7 @@ export default function Comparison() {
   return (
     <div className="shell">
       <Nav on="/cockpit/comparison" />
+      <div className="pagehead"><h2>Before / After</h2><p>What changed because of validation — and exactly why.</p></div>
       <p className="note" style={{ marginBottom: 14, maxWidth: "82ch" }}>
         What we learned from this rerun. Both rankings are computed over the <b>same population</b> (finalists + reserves) using the
         same formula, so a movement reflects validation evidence rather than a change in the size of the pool. The frozen Wave-1 run
@@ -36,7 +37,7 @@ export default function Comparison() {
           {down.map((m) => <div className="risk" key={m.key}><b>▼ {m.service} — {m.geography}</b> dropped {Math.abs(m.delta)} ({m.oldRank} → {m.newRank}). {m.primaryReason}</div>)}
         </div>)}
 
-      <table className="grid">
+      <div className="tablewrap"><table className="grid">
         <thead><tr>
           <th>Opportunity</th><th>Source</th><th className="numc">Old</th><th className="numc">New</th><th className="numc">Δ</th>
           <th className="numc">Pre</th><th className="numc">Post</th><th>Validation</th><th>Primary reason for change</th>
@@ -60,7 +61,7 @@ export default function Comparison() {
               </tr>);
           })}
         </tbody>
-      </table>
+      </table></div>
     </div>
   );
 }
