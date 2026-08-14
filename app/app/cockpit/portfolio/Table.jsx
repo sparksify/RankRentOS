@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { useMemo, useState } from "react";
 import Badge from "../Badge";
 
@@ -11,6 +12,9 @@ const COLS = [
 ];
 
 export default function Table({ rows }) {
+  const router = useRouter();
+  const [sel, setSel] = useState(() => new Set());
+  const toggle = (id) => setSel((p) => { const n = new Set(p); n.has(id) ? n.delete(id) : n.add(id); return n; });
   const [sort, setSort] = useState("newRank");
   const [dir, setDir] = useState(1);
   const [cohort, setCohort] = useState("ALL");
@@ -51,13 +55,15 @@ export default function Table({ rows }) {
       </div>
 
       <div className="tablewrap"><table className="grid">
-        <thead><tr>{COLS.map(([k, l]) => (
+        <thead><tr><th style={{ width: 30 }} aria-label="select" />{COLS.map(([k, l]) => (
           <th key={k} onClick={() => click(k)} style={{ cursor: "pointer" }}>
             {l}{sort === k ? (dir === 1 ? " ↑" : " ↓") : ""}
           </th>))}</tr></thead>
         <tbody>
           {view.map((r) => (
             <tr key={r.id}>
+              <td><input className="selbox" type="checkbox" aria-label={`select ${r.service} ${r.geography}`}
+                checked={sel.has(r.id)} onChange={() => toggle(r.id)} /></td>
               <td className="rank">{r.newRank}</td>
               <td><Link href={`/cockpit/opportunity/${r.id}`}><b>{r.service}</b></Link></td>
               <td>{r.geography}, {r.state}<div className="dim" style={{ fontSize: 11 }}>{({"master-planned-community":"community","city-control":"control"})[r.geographyType] || r.geographyType}</div></td>
@@ -76,6 +82,23 @@ export default function Table({ rows }) {
             </tr>))}
         </tbody>
       </table></div>
+      {sel.size > 0 && (() => {
+        const chosen = rows.filter((r) => sel.has(r.id));
+        const domains = [...new Set(chosen.map((r) => r.domain).filter(Boolean))];
+        const cost = domains.length * 12.18;
+        const send = () => {
+          localStorage.setItem("rros-purchase-queue", JSON.stringify(chosen.map((r) => ({
+            id: r.id, service: r.service, geography: r.geography, state: r.state, domain: r.domain, isHub: r.isHub, decision: r.decision }))));
+          router.push("/cockpit/domains");
+        };
+        return (
+          <div className="selbar" role="region" aria-label="selection">
+            <div><b>{sel.size}</b> asset{sel.size === 1 ? "" : "s"} selected <span className="dim">· {domains.length} domain{domains.length === 1 ? "" : "s"} · est. <b>${cost.toFixed(2)}</b></span></div>
+            <button className="clear" onClick={() => setSel(new Set())}>Clear</button>
+            <button className="cta" onClick={send}>Send to purchase queue →</button>
+          </div>
+        );
+      })()}
       <p className="note" style={{ marginTop: 10 }}>
         <b>0*</b> = keyword tools report zero volume. For community assets that is the hypothesis under test, not a measurement of no demand.
         Click any row for the full investment memo.

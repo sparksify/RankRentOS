@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Nav from "../Nav";
 import { loadRun, loadDecisions, money } from "../../../lib/cockpit";
+import QueueBanner from "./QueueBanner";
 
 export const dynamic = "force-static";
 
@@ -30,6 +31,7 @@ export default function Domains() {
         <h2>Domains</h2>
         <p>The purchase list, verified available at freeze (2026-08-12). Availability decays — re-check at the moment of purchase. RankRentOS does not buy domains; this list awaits your approval.</p>
       </div>
+      <QueueBanner />
       <div className="kpis">
         <div className="kpi"><label>Ready to buy</label><b>{rows.length}</b><span className="cmp dim">all verified available (RDAP 404)</span></div>
         <div className="kpi"><label>Total cost</label><b>{money(run.economics.domainCost)}</b><span className="cmp dim">~$12.18 each, first year</span></div>

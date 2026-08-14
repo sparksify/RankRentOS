@@ -1,12 +1,13 @@
 import Nav from "../Nav";
 import Table from "./Table";
-import { loadRun, idOf } from "../../../lib/cockpit";
+import { loadRun, loadDecisions, idOf } from "../../../lib/cockpit";
 
 export const dynamic = "force-static";
 
 export default function Portfolio() {
   const run = loadRun();
   const byKey = new Map(run.comparison.map((c) => [c.key, c]));
+  const decById = new Map(loadDecisions().assets.map((d) => [d.experimentId, d]));
   const rows = run.assets.filter((a) => a.source === "FINALIST").map((a) => {
     const c = byKey.get(a.key);
     return {
@@ -20,6 +21,9 @@ export default function Portfolio() {
       pages: a.validation.architecture.estimatedPages ?? null,
       leadValue: a.leadValueAssumedUsd ?? null,
       confidence: typeof a.evidenceConfidence === "number" ? a.evidenceConfidence : null,
+      domain: decById.get(a.experimentId)?.isHubPage ? decById.get(a.experimentId)?.hubDomain : (a.preferredDomain ?? null),
+      isHub: decById.get(a.experimentId)?.isHubPage ?? false,
+      decision: decById.get(a.experimentId)?.new?.decision ?? null,
     };
   });
   return (
