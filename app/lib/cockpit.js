@@ -17,3 +17,11 @@ export function findAsset(id) {
 }
 export const money = (n) => (typeof n === "number" ? `$${n.toLocaleString()}` : "—");
 export const num = (n) => (typeof n === "number" ? n.toLocaleString() : "—");
+
+let dcache = null;
+export function loadDecisions() {
+  if (dcache) return dcache;
+  const p = path.join(process.cwd(), "data", "decisions.json");
+  dcache = JSON.parse(readFileSync(p, "utf8"));
+  return dcache;
+}

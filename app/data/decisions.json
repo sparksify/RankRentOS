@@ -1,0 +1,1655 @@
+{
+ "version": "decision-v2.0.0",
+ "generatedAt": "2026-08-12",
+ "models": {
+  "decision": "decision-v2.0.0",
+  "capturability": "capturability-v1.0.0",
+  "rentability": "rentability-v1.0.0",
+  "demandAttribution": "demand-attribution-v1.0.0",
+  "frozenAndUnchanged": {
+   "dimensionA": "ai-v1.0.0",
+   "organic": "organic-v1.2",
+   "weights": "w-balanced-v1.1",
+   "buckets": "buckets-1.1.0",
+   "baseline": "WAVE-1-FROZEN-BASELINE"
+  }
+ },
+ "note": "The frozen Wave-1 baseline is read-only and unmodified. This is a parallel decision layer for comparison against live outcomes.",
+ "counts": {
+  "assets": 26,
+  "websites": 21,
+  "REVENUE_CANDIDATE": 5,
+  "EXPERIMENTAL": 21,
+  "HOLD": 0,
+  "REJECT": 0
+ },
+ "assets": [
+  {
+   "experimentId": "W1-A-001",
+   "cohort": "A-EXPLOITATION",
+   "assetType": "standalone-site",
+   "service": "Bathroom Remodeling",
+   "serviceSlug": "bathroom-remodel",
+   "geography": "Arvada",
+   "state": "CO",
+   "isHubPage": false,
+   "hubDomain": null,
+   "preferredDomain": "bathroomremodelingofarvada.com",
+   "old": {
+    "composite": 70,
+    "A": 83,
+    "O": 62,
+    "bucket": "UNICORN",
+    "measuredVolume": 390,
+    "volumeState": "measured",
+    "F": 66,
+    "E": 62
+   },
+   "new": {
+    "searchOpportunity": 66,
+    "searchOpportunityGate": "PASS",
+    "capturability": 62,
+    "capturabilityGate": "PASS",
+    "monetizationQuality": 71,
+    "monetizationGate": "PASS",
+    "demandState": "MEASURED_LOCAL",
+    "attributableDemand": 390,
+    "demandCeiling": 390,
+    "viableRenters": 3,
+    "gates": {
+     "demand": "PASS",
+     "capturability": "PASS",
+     "renterDepth": "PASS",
+     "economics": "PASS"
+    },
+    "decision": "REVENUE_CANDIDATE",
+    "confidence": 0.64,
+    "recommendedMonetizationModel": "per-lead",
+    "leadValueUsd": 576,
+    "expectedLeadsPerMonth": 11.7
+   },
+   "decisionChanged": true,
+   "reasons": [
+    "All four hard gates pass on attributable evidence."
+   ],
+   "experimentJustification": null,
+   "explanations": {
+    "demand": "390/mo of locally attributable demand with commercial-intent score 72.",
+    "capturability": "Organic capturability 62 clears the 55 bar. Map-pack conditions are excluded: without a Google Business Profile we cannot rank in a pack, so its weakness is not ours to capture.",
+    "monetization": "~11.7 leads/mo × $576 per lead ≈ $6739/mo of renter gross profit. Sales cycle ~45 days, attribution clarity 65%."
+   },
+   "humanAssumed": [
+    "ticketAvg (HUMAN_ASSUMED)",
+    "margin (HUMAN_ASSUMED)",
+    "vertical profile: HUMAN_ASSUMED: considered remodel purchase, moderate cycle, largely aseasonal."
+   ],
+   "verticalProfileBasis": "HUMAN_ASSUMED: considered remodel purchase, moderate cycle, largely aseasonal."
+  },
+  {
+   "experimentId": "W1-A-002",
+   "cohort": "A-EXPLOITATION",
+   "assetType": "standalone-site",
+   "service": "Window Replacement",
+   "serviceSlug": "window-replacement",
+   "geography": "Midland",
+   "state": "TX",
+   "isHubPage": false,
+   "hubDomain": null,
+   "preferredDomain": "windowreplacementmidland.com",
+   "old": {
+    "composite": 48,
+    "A": 40,
+    "O": 62,
+    "bucket": null,
+    "measuredVolume": 110,
+    "volumeState": "measured",
+    "F": 50,
+    "E": 33
+   },
+   "new": {
+    "searchOpportunity": 54,
+    "searchOpportunityGate": "PASS",
+    "capturability": 62,
+    "capturabilityGate": "PASS",
+    "monetizationQuality": 61,
+    "monetizationGate": "PASS",
+    "demandState": "MEASURED_LOCAL",
+    "attributableDemand": 110,
+    "demandCeiling": 110,
+    "viableRenters": 1,
+    "gates": {
+     "demand": "PASS",
+     "capturability": "PASS",
+     "renterDepth": "PASS",
+     "economics": "PASS"
+    },
+    "decision": "REVENUE_CANDIDATE",
+    "confidence": 0.64,
+    "recommendedMonetizationModel": "per-lead",
+    "leadValueUsd": 504,
+    "expectedLeadsPerMonth": 3.3
+   },
+   "decisionChanged": true,
+   "reasons": [
+    "All four hard gates pass on attributable evidence."
+   ],
+   "experimentJustification": null,
+   "explanations": {
+    "demand": "110/mo of locally attributable demand with commercial-intent score 82.",
+    "capturability": "Organic capturability 62 clears the 55 bar. Map-pack conditions are excluded: without a Google Business Profile we cannot rank in a pack, so its weakness is not ours to capture.",
+    "monetization": "~3.3 leads/mo × $504 per lead ≈ $1663/mo of renter gross profit. Sales cycle ~30 days, attribution clarity 70%."
+   },
+   "humanAssumed": [
+    "ticketAvg (HUMAN_ASSUMED)",
+    "margin (HUMAN_ASSUMED)",
+    "vertical profile: HUMAN_ASSUMED: quotable product sale, shorter cycle than full remodels."
+   ],
+   "verticalProfileBasis": "HUMAN_ASSUMED: quotable product sale, shorter cycle than full remodels."
+  },
+  {
+   "experimentId": "W1-A-003",
+   "cohort": "A-EXPLOITATION",
+   "assetType": "standalone-site",
+   "service": "Window Replacement",
+   "serviceSlug": "window-replacement",
+   "geography": "Temecula",
+   "state": "CA",
+   "isHubPage": false,
+   "hubDomain": null,
+   "preferredDomain": "windowreplacementtemecula.com",
+   "old": {
+    "composite": 61,
+    "A": 49,
+    "O": 58,
+    "bucket": null,
+    "measuredVolume": 140,
+    "volumeState": "measured",
+    "F": 50,
+    "E": 95
+   },
+   "new": {
+    "searchOpportunity": 55,
+    "searchOpportunityGate": "PASS",
+    "capturability": 58,
+    "capturabilityGate": "PASS",
+    "monetizationQuality": 61,
+    "monetizationGate": "PASS",
+    "demandState": "MEASURED_LOCAL",
+    "attributableDemand": 140,
+    "demandCeiling": 140,
+    "viableRenters": 3,
+    "gates": {
+     "demand": "PASS",
+     "capturability": "PASS",
+     "renterDepth": "PASS",
+     "economics": "PASS"
+    },
+    "decision": "REVENUE_CANDIDATE",
+    "confidence": 0.64,
+    "recommendedMonetizationModel": "per-lead",
+    "leadValueUsd": 504,
+    "expectedLeadsPerMonth": 4.2
+   },
+   "decisionChanged": true,
+   "reasons": [
+    "All four hard gates pass on attributable evidence."
+   ],
+   "experimentJustification": null,
+   "explanations": {
+    "demand": "140/mo of locally attributable demand with commercial-intent score 82.",
+    "capturability": "Organic capturability 58 clears the 55 bar. Map-pack conditions are excluded: without a Google Business Profile we cannot rank in a pack, so its weakness is not ours to capture.",
+    "monetization": "~4.2 leads/mo × $504 per lead ≈ $2117/mo of renter gross profit. Sales cycle ~30 days, attribution clarity 70%."
+   },
+   "humanAssumed": [
+    "ticketAvg (HUMAN_ASSUMED)",
+    "margin (HUMAN_ASSUMED)",
+    "vertical profile: HUMAN_ASSUMED: quotable product sale, shorter cycle than full remodels."
+   ],
+   "verticalProfileBasis": "HUMAN_ASSUMED: quotable product sale, shorter cycle than full remodels."
+  },
+  {
+   "experimentId": "W1-A-004",
+   "cohort": "A-EXPLOITATION",
+   "assetType": "standalone-site",
+   "service": "Window Replacement",
+   "serviceSlug": "window-replacement",
+   "geography": "Vancouver",
+   "state": "WA",
+   "isHubPage": false,
+   "hubDomain": null,
+   "preferredDomain": "windowreplacementvancouverwa.com",
+   "old": {
+    "composite": 57,
+    "A": 57,
+    "O": 57,
+    "bucket": null,
+    "measuredVolume": 110,
+    "volumeState": "measured",
+    "F": 50,
+    "E": 56
+   },
+   "new": {
+    "searchOpportunity": 56,
+    "searchOpportunityGate": "PASS",
+    "capturability": 57,
+    "capturabilityGate": "PASS",
+    "monetizationQuality": 61,
+    "monetizationGate": "PASS",
+    "demandState": "MEASURED_LOCAL",
+    "attributableDemand": 110,
+    "demandCeiling": 110,
+    "viableRenters": 3,
+    "gates": {
+     "demand": "PASS",
+     "capturability": "PASS",
+     "renterDepth": "PASS",
+     "economics": "PASS"
+    },
+    "decision": "REVENUE_CANDIDATE",
+    "confidence": 0.64,
+    "recommendedMonetizationModel": "per-lead",
+    "leadValueUsd": 504,
+    "expectedLeadsPerMonth": 3.3
+   },
+   "decisionChanged": true,
+   "reasons": [
+    "All four hard gates pass on attributable evidence."
+   ],
+   "experimentJustification": null,
+   "explanations": {
+    "demand": "110/mo of locally attributable demand with commercial-intent score 82.",
+    "capturability": "Organic capturability 57 clears the 55 bar. Map-pack conditions are excluded: without a Google Business Profile we cannot rank in a pack, so its weakness is not ours to capture.",
+    "monetization": "~3.3 leads/mo × $504 per lead ≈ $1663/mo of renter gross profit. Sales cycle ~30 days, attribution clarity 70%."
+   },
+   "humanAssumed": [
+    "ticketAvg (HUMAN_ASSUMED)",
+    "margin (HUMAN_ASSUMED)",
+    "vertical profile: HUMAN_ASSUMED: quotable product sale, shorter cycle than full remodels."
+   ],
+   "verticalProfileBasis": "HUMAN_ASSUMED: quotable product sale, shorter cycle than full remodels."
+  },
+  {
+   "experimentId": "W1-A-005",
+   "cohort": "A-EXPLOITATION",
+   "assetType": "standalone-site",
+   "service": "Kitchen Remodeling",
+   "serviceSlug": "kitchen-remodel",
+   "geography": "Frisco",
+   "state": "TX",
+   "isHubPage": false,
+   "hubDomain": null,
+   "preferredDomain": "kitchenremodelingfriscotx.com",
+   "old": {
+    "composite": 61,
+    "A": 50,
+    "O": 56,
+    "bucket": "HIGH-VALUE",
+    "measuredVolume": 170,
+    "volumeState": "measured",
+    "F": 66,
+    "E": 73
+   },
+   "new": {
+    "searchOpportunity": 55,
+    "searchOpportunityGate": "PASS",
+    "capturability": 56,
+    "capturabilityGate": "PASS",
+    "monetizationQuality": 71,
+    "monetizationGate": "PASS",
+    "demandState": "MEASURED_LOCAL",
+    "attributableDemand": 170,
+    "demandCeiling": 170,
+    "viableRenters": 3,
+    "gates": {
+     "demand": "PASS",
+     "capturability": "PASS",
+     "renterDepth": "PASS",
+     "economics": "PASS"
+    },
+    "decision": "REVENUE_CANDIDATE",
+    "confidence": 0.64,
+    "recommendedMonetizationModel": "per-lead",
+    "leadValueUsd": 840,
+    "expectedLeadsPerMonth": 5.1
+   },
+   "decisionChanged": true,
+   "reasons": [
+    "All four hard gates pass on attributable evidence."
+   ],
+   "experimentJustification": null,
+   "explanations": {
+    "demand": "170/mo of locally attributable demand with commercial-intent score 82.",
+    "capturability": "Organic capturability 56 clears the 55 bar. Map-pack conditions are excluded: without a Google Business Profile we cannot rank in a pack, so its weakness is not ours to capture.",
+    "monetization": "~5.1 leads/mo × $840 per lead ≈ $4284/mo of renter gross profit. Sales cycle ~60 days, attribution clarity 65%."
+   },
+   "humanAssumed": [
+    "ticketAvg (HUMAN_ASSUMED)",
+    "margin (HUMAN_ASSUMED)",
+    "vertical profile: HUMAN_ASSUMED: larger and slower than bathroom; same attribution profile."
+   ],
+   "verticalProfileBasis": "HUMAN_ASSUMED: larger and slower than bathroom; same attribution profile."
+  },
+  {
+   "experimentId": "W1-B1-001",
+   "cohort": "B1-NTX-STANDALONE",
+   "assetType": "standalone-site",
+   "service": "Pool Builder",
+   "serviceSlug": "pool-builder",
+   "geography": "Sutton Fields",
+   "state": "TX",
+   "isHubPage": false,
+   "hubDomain": null,
+   "preferredDomain": "poolbuildersuttonfields.com",
+   "old": {
+    "composite": null,
+    "A": null,
+    "O": 82,
+    "bucket": null,
+    "measuredVolume": 0,
+    "volumeState": "provider-reports-zero — THE HYPOTHESIS UNDER TEST, not a validated demand figure",
+    "F": null,
+    "E": null
+   },
+   "new": {
+    "searchOpportunity": null,
+    "searchOpportunityGate": "UNKNOWN",
+    "capturability": 82,
+    "capturabilityGate": "PASS",
+    "monetizationQuality": null,
+    "monetizationGate": "UNKNOWN",
+    "demandState": "UNKNOWN",
+    "attributableDemand": null,
+    "demandCeiling": null,
+    "viableRenters": 3,
+    "gates": {
+     "demand": "UNKNOWN",
+     "capturability": "PASS",
+     "renterDepth": "PASS",
+     "economics": "UNKNOWN"
+    },
+    "decision": "EXPERIMENTAL",
+    "confidence": 0.3,
+    "recommendedMonetizationModel": "per-lead (long sales cycle makes flat rent hard to justify before the renter sees ROI)",
+    "leadValueUsd": 1700,
+    "expectedLeadsPerMonth": null
+   },
+   "decisionChanged": true,
+   "reasons": [
+    "Deployed to answer pre-registered hypothesis H2+H3 (community demand test + standalone arm of the architecture experiment). This is NOT a weaker buy signal: the asset is justified by the information it produces, not by expected revenue.",
+    "demand gate UNKNOWN — Demand is the hypothesis under test for this asset class (keyword tools report zero for community queries). Search opportunity is deliberately unscored rather than assumed.",
+    "economics gate UNKNOWN — Monetization cannot be projected: demand is not attributable to this market, so expected lead flow is unknown. This is not the same as low value — it is unmeasured."
+   ],
+   "experimentJustification": "Deployed to answer pre-registered hypothesis H2+H3 (community demand test + standalone arm of the architecture experiment). This is NOT a weaker buy signal: the asset is justified by the information it produces, not by expected revenue.",
+   "explanations": {
+    "demand": "Demand is the hypothesis under test for this asset class (keyword tools report zero for community queries). Search opportunity is deliberately unscored rather than assumed.",
+    "capturability": "Organic capturability 82 clears the 55 bar. Map-pack conditions are excluded: without a Google Business Profile we cannot rank in a pack, so its weakness is not ours to capture.",
+    "monetization": "Monetization cannot be projected: demand is not attributable to this market, so expected lead flow is unknown. This is not the same as low value — it is unmeasured."
+   },
+   "humanAssumed": [
+    "ticketAvg (HUMAN_ASSUMED)",
+    "margin (HUMAN_ASSUMED)",
+    "vertical profile: HUMAN_ASSUMED: large considered purchase, long design/permit cycle, strong spring-summer peak; high ticket makes per-lead viable but long cycle makes flat rent hard to justify early."
+   ],
+   "verticalProfileBasis": "HUMAN_ASSUMED: large considered purchase, long design/permit cycle, strong spring-summer peak; high ticket makes per-lead viable but long cycle makes flat rent hard to justify early."
+  },
+  {
+   "experimentId": "W1-B2-002",
+   "cohort": "B2-NTX-REGIONAL-HUB",
+   "assetType": "hub-page",
+   "service": "Pool Builder",
+   "serviceSlug": "pool-builder",
+   "geography": "Legacy Gardens",
+   "state": "TX",
+   "isHubPage": true,
+   "hubDomain": "poolbuildersnorthtexas.com",
+   "preferredDomain": "poolbuildersnorthtexas.com",
+   "old": {
+    "composite": null,
+    "A": null,
+    "O": 79,
+    "bucket": null,
+    "measuredVolume": 0,
+    "volumeState": "provider-reports-zero — THE HYPOTHESIS UNDER TEST, not a validated demand figure",
+    "F": null,
+    "E": null
+   },
+   "new": {
+    "searchOpportunity": null,
+    "searchOpportunityGate": "UNKNOWN",
+    "capturability": 79,
+    "capturabilityGate": "PASS",
+    "monetizationQuality": null,
+    "monetizationGate": "UNKNOWN",
+    "demandState": "UNKNOWN",
+    "attributableDemand": null,
+    "demandCeiling": null,
+    "viableRenters": 3,
+    "gates": {
+     "demand": "UNKNOWN",
+     "capturability": "PASS",
+     "renterDepth": "PASS",
+     "economics": "UNKNOWN"
+    },
+    "decision": "EXPERIMENTAL",
+    "confidence": 0.3,
+    "recommendedMonetizationModel": "per-lead (long sales cycle makes flat rent hard to justify before the renter sees ROI)",
+    "leadValueUsd": 1700,
+    "expectedLeadsPerMonth": null
+   },
+   "decisionChanged": true,
+   "reasons": [
+    "Deployed to answer pre-registered hypothesis H2+H3 (community demand test + hub arm of the architecture experiment). This is NOT a weaker buy signal: the asset is justified by the information it produces, not by expected revenue.",
+    "demand gate UNKNOWN — Demand is the hypothesis under test for this asset class (keyword tools report zero for community queries). Search opportunity is deliberately unscored rather than assumed.",
+    "economics gate UNKNOWN — Monetization cannot be projected: demand is not attributable to this market, so expected lead flow is unknown. This is not the same as low value — it is unmeasured."
+   ],
+   "experimentJustification": "Deployed to answer pre-registered hypothesis H2+H3 (community demand test + hub arm of the architecture experiment). This is NOT a weaker buy signal: the asset is justified by the information it produces, not by expected revenue.",
+   "explanations": {
+    "demand": "Demand is the hypothesis under test for this asset class (keyword tools report zero for community queries). Search opportunity is deliberately unscored rather than assumed.",
+    "capturability": "Organic capturability 79 clears the 55 bar. Map-pack conditions are excluded: without a Google Business Profile we cannot rank in a pack, so its weakness is not ours to capture.",
+    "monetization": "Monetization cannot be projected: demand is not attributable to this market, so expected lead flow is unknown. This is not the same as low value — it is unmeasured."
+   },
+   "humanAssumed": [
+    "ticketAvg (HUMAN_ASSUMED)",
+    "margin (HUMAN_ASSUMED)",
+    "vertical profile: HUMAN_ASSUMED: large considered purchase, long design/permit cycle, strong spring-summer peak; high ticket makes per-lead viable but long cycle makes flat rent hard to justify early."
+   ],
+   "verticalProfileBasis": "HUMAN_ASSUMED: large considered purchase, long design/permit cycle, strong spring-summer peak; high ticket makes per-lead viable but long cycle makes flat rent hard to justify early."
+  },
+  {
+   "experimentId": "W1-B1-003",
+   "cohort": "B1-NTX-STANDALONE",
+   "assetType": "standalone-site",
+   "service": "Pool Builder",
+   "serviceSlug": "pool-builder",
+   "geography": "Sandbrock Ranch",
+   "state": "TX",
+   "isHubPage": false,
+   "hubDomain": null,
+   "preferredDomain": "poolbuildersandbrockranch.com",
+   "old": {
+    "composite": null,
+    "A": null,
+    "O": 66,
+    "bucket": null,
+    "measuredVolume": 0,
+    "volumeState": "provider-reports-zero — THE HYPOTHESIS UNDER TEST, not a validated demand figure",
+    "F": null,
+    "E": null
+   },
+   "new": {
+    "searchOpportunity": null,
+    "searchOpportunityGate": "UNKNOWN",
+    "capturability": 66,
+    "capturabilityGate": "PASS",
+    "monetizationQuality": null,
+    "monetizationGate": "UNKNOWN",
+    "demandState": "UNKNOWN",
+    "attributableDemand": null,
+    "demandCeiling": null,
+    "viableRenters": 2,
+    "gates": {
+     "demand": "UNKNOWN",
+     "capturability": "PASS",
+     "renterDepth": "PASS",
+     "economics": "UNKNOWN"
+    },
+    "decision": "EXPERIMENTAL",
+    "confidence": 0.3,
+    "recommendedMonetizationModel": "per-lead (long sales cycle makes flat rent hard to justify before the renter sees ROI)",
+    "leadValueUsd": 1700,
+    "expectedLeadsPerMonth": null
+   },
+   "decisionChanged": true,
+   "reasons": [
+    "Deployed to answer pre-registered hypothesis H2+H3 (community demand test + standalone arm of the architecture experiment). This is NOT a weaker buy signal: the asset is justified by the information it produces, not by expected revenue.",
+    "demand gate UNKNOWN — Demand is the hypothesis under test for this asset class (keyword tools report zero for community queries). Search opportunity is deliberately unscored rather than assumed.",
+    "economics gate UNKNOWN — Monetization cannot be projected: demand is not attributable to this market, so expected lead flow is unknown. This is not the same as low value — it is unmeasured."
+   ],
+   "experimentJustification": "Deployed to answer pre-registered hypothesis H2+H3 (community demand test + standalone arm of the architecture experiment). This is NOT a weaker buy signal: the asset is justified by the information it produces, not by expected revenue.",
+   "explanations": {
+    "demand": "Demand is the hypothesis under test for this asset class (keyword tools report zero for community queries). Search opportunity is deliberately unscored rather than assumed.",
+    "capturability": "Organic capturability 66 clears the 55 bar. Map-pack conditions are excluded: without a Google Business Profile we cannot rank in a pack, so its weakness is not ours to capture.",
+    "monetization": "Monetization cannot be projected: demand is not attributable to this market, so expected lead flow is unknown. This is not the same as low value — it is unmeasured."
+   },
+   "humanAssumed": [
+    "ticketAvg (HUMAN_ASSUMED)",
+    "margin (HUMAN_ASSUMED)",
+    "vertical profile: HUMAN_ASSUMED: large considered purchase, long design/permit cycle, strong spring-summer peak; high ticket makes per-lead viable but long cycle makes flat rent hard to justify early."
+   ],
+   "verticalProfileBasis": "HUMAN_ASSUMED: large considered purchase, long design/permit cycle, strong spring-summer peak; high ticket makes per-lead viable but long cycle makes flat rent hard to justify early."
+  },
+  {
+   "experimentId": "W1-B2-004",
+   "cohort": "B2-NTX-REGIONAL-HUB",
+   "assetType": "hub-page",
+   "service": "Pool Builder",
+   "serviceSlug": "pool-builder",
+   "geography": "Star Trail",
+   "state": "TX",
+   "isHubPage": true,
+   "hubDomain": "poolbuildersnorthtexas.com",
+   "preferredDomain": "poolbuildersnorthtexas.com",
+   "old": {
+    "composite": null,
+    "A": null,
+    "O": 67,
+    "bucket": null,
+    "measuredVolume": 0,
+    "volumeState": "provider-reports-zero — THE HYPOTHESIS UNDER TEST, not a validated demand figure",
+    "F": null,
+    "E": null
+   },
+   "new": {
+    "searchOpportunity": null,
+    "searchOpportunityGate": "UNKNOWN",
+    "capturability": 67,
+    "capturabilityGate": "PASS",
+    "monetizationQuality": null,
+    "monetizationGate": "UNKNOWN",
+    "demandState": "UNKNOWN",
+    "attributableDemand": null,
+    "demandCeiling": null,
+    "viableRenters": 2,
+    "gates": {
+     "demand": "UNKNOWN",
+     "capturability": "PASS",
+     "renterDepth": "PASS",
+     "economics": "UNKNOWN"
+    },
+    "decision": "EXPERIMENTAL",
+    "confidence": 0.3,
+    "recommendedMonetizationModel": "per-lead (long sales cycle makes flat rent hard to justify before the renter sees ROI)",
+    "leadValueUsd": 1700,
+    "expectedLeadsPerMonth": null
+   },
+   "decisionChanged": true,
+   "reasons": [
+    "Deployed to answer pre-registered hypothesis H2+H3 (community demand test + hub arm of the architecture experiment). This is NOT a weaker buy signal: the asset is justified by the information it produces, not by expected revenue.",
+    "demand gate UNKNOWN — Demand is the hypothesis under test for this asset class (keyword tools report zero for community queries). Search opportunity is deliberately unscored rather than assumed.",
+    "economics gate UNKNOWN — Monetization cannot be projected: demand is not attributable to this market, so expected lead flow is unknown. This is not the same as low value — it is unmeasured."
+   ],
+   "experimentJustification": "Deployed to answer pre-registered hypothesis H2+H3 (community demand test + hub arm of the architecture experiment). This is NOT a weaker buy signal: the asset is justified by the information it produces, not by expected revenue.",
+   "explanations": {
+    "demand": "Demand is the hypothesis under test for this asset class (keyword tools report zero for community queries). Search opportunity is deliberately unscored rather than assumed.",
+    "capturability": "Organic capturability 67 clears the 55 bar. Map-pack conditions are excluded: without a Google Business Profile we cannot rank in a pack, so its weakness is not ours to capture.",
+    "monetization": "Monetization cannot be projected: demand is not attributable to this market, so expected lead flow is unknown. This is not the same as low value — it is unmeasured."
+   },
+   "humanAssumed": [
+    "ticketAvg (HUMAN_ASSUMED)",
+    "margin (HUMAN_ASSUMED)",
+    "vertical profile: HUMAN_ASSUMED: large considered purchase, long design/permit cycle, strong spring-summer peak; high ticket makes per-lead viable but long cycle makes flat rent hard to justify early."
+   ],
+   "verticalProfileBasis": "HUMAN_ASSUMED: large considered purchase, long design/permit cycle, strong spring-summer peak; high ticket makes per-lead viable but long cycle makes flat rent hard to justify early."
+  },
+  {
+   "experimentId": "W1-B1-005",
+   "cohort": "B1-NTX-STANDALONE",
+   "assetType": "standalone-site",
+   "service": "Pool Builder",
+   "serviceSlug": "pool-builder",
+   "geography": "Painted Tree",
+   "state": "TX",
+   "isHubPage": false,
+   "hubDomain": null,
+   "preferredDomain": "poolbuilderpaintedtree.com",
+   "old": {
+    "composite": null,
+    "A": null,
+    "O": 73,
+    "bucket": null,
+    "measuredVolume": 0,
+    "volumeState": "provider-reports-zero — THE HYPOTHESIS UNDER TEST, not a validated demand figure",
+    "F": null,
+    "E": null
+   },
+   "new": {
+    "searchOpportunity": null,
+    "searchOpportunityGate": "UNKNOWN",
+    "capturability": 73,
+    "capturabilityGate": "PASS",
+    "monetizationQuality": null,
+    "monetizationGate": "UNKNOWN",
+    "demandState": "UNKNOWN",
+    "attributableDemand": null,
+    "demandCeiling": null,
+    "viableRenters": 3,
+    "gates": {
+     "demand": "UNKNOWN",
+     "capturability": "PASS",
+     "renterDepth": "PASS",
+     "economics": "UNKNOWN"
+    },
+    "decision": "EXPERIMENTAL",
+    "confidence": 0.3,
+    "recommendedMonetizationModel": "per-lead (long sales cycle makes flat rent hard to justify before the renter sees ROI)",
+    "leadValueUsd": 1700,
+    "expectedLeadsPerMonth": null
+   },
+   "decisionChanged": true,
+   "reasons": [
+    "Deployed to answer pre-registered hypothesis H2+H3 (community demand test + standalone arm of the architecture experiment). This is NOT a weaker buy signal: the asset is justified by the information it produces, not by expected revenue.",
+    "demand gate UNKNOWN — Demand is the hypothesis under test for this asset class (keyword tools report zero for community queries). Search opportunity is deliberately unscored rather than assumed.",
+    "economics gate UNKNOWN — Monetization cannot be projected: demand is not attributable to this market, so expected lead flow is unknown. This is not the same as low value — it is unmeasured."
+   ],
+   "experimentJustification": "Deployed to answer pre-registered hypothesis H2+H3 (community demand test + standalone arm of the architecture experiment). This is NOT a weaker buy signal: the asset is justified by the information it produces, not by expected revenue.",
+   "explanations": {
+    "demand": "Demand is the hypothesis under test for this asset class (keyword tools report zero for community queries). Search opportunity is deliberately unscored rather than assumed.",
+    "capturability": "Organic capturability 73 clears the 55 bar. Map-pack conditions are excluded: without a Google Business Profile we cannot rank in a pack, so its weakness is not ours to capture.",
+    "monetization": "Monetization cannot be projected: demand is not attributable to this market, so expected lead flow is unknown. This is not the same as low value — it is unmeasured."
+   },
+   "humanAssumed": [
+    "ticketAvg (HUMAN_ASSUMED)",
+    "margin (HUMAN_ASSUMED)",
+    "vertical profile: HUMAN_ASSUMED: large considered purchase, long design/permit cycle, strong spring-summer peak; high ticket makes per-lead viable but long cycle makes flat rent hard to justify early."
+   ],
+   "verticalProfileBasis": "HUMAN_ASSUMED: large considered purchase, long design/permit cycle, strong spring-summer peak; high ticket makes per-lead viable but long cycle makes flat rent hard to justify early."
+  },
+  {
+   "experimentId": "W1-B2-006",
+   "cohort": "B2-NTX-REGIONAL-HUB",
+   "assetType": "hub-page",
+   "service": "Pool Builder",
+   "serviceSlug": "pool-builder",
+   "geography": "Stonebridge Ranch",
+   "state": "TX",
+   "isHubPage": true,
+   "hubDomain": "poolbuildersnorthtexas.com",
+   "preferredDomain": "poolbuildersnorthtexas.com",
+   "old": {
+    "composite": null,
+    "A": null,
+    "O": 63,
+    "bucket": null,
+    "measuredVolume": 0,
+    "volumeState": "provider-reports-zero — THE HYPOTHESIS UNDER TEST, not a validated demand figure",
+    "F": null,
+    "E": null
+   },
+   "new": {
+    "searchOpportunity": null,
+    "searchOpportunityGate": "UNKNOWN",
+    "capturability": 63,
+    "capturabilityGate": "PASS",
+    "monetizationQuality": null,
+    "monetizationGate": "UNKNOWN",
+    "demandState": "UNKNOWN",
+    "attributableDemand": null,
+    "demandCeiling": null,
+    "viableRenters": 3,
+    "gates": {
+     "demand": "UNKNOWN",
+     "capturability": "PASS",
+     "renterDepth": "PASS",
+     "economics": "UNKNOWN"
+    },
+    "decision": "EXPERIMENTAL",
+    "confidence": 0.3,
+    "recommendedMonetizationModel": "per-lead (long sales cycle makes flat rent hard to justify before the renter sees ROI)",
+    "leadValueUsd": 1700,
+    "expectedLeadsPerMonth": null
+   },
+   "decisionChanged": true,
+   "reasons": [
+    "Deployed to answer pre-registered hypothesis H2+H3 (community demand test + hub arm of the architecture experiment). This is NOT a weaker buy signal: the asset is justified by the information it produces, not by expected revenue.",
+    "demand gate UNKNOWN — Demand is the hypothesis under test for this asset class (keyword tools report zero for community queries). Search opportunity is deliberately unscored rather than assumed.",
+    "economics gate UNKNOWN — Monetization cannot be projected: demand is not attributable to this market, so expected lead flow is unknown. This is not the same as low value — it is unmeasured."
+   ],
+   "experimentJustification": "Deployed to answer pre-registered hypothesis H2+H3 (community demand test + hub arm of the architecture experiment). This is NOT a weaker buy signal: the asset is justified by the information it produces, not by expected revenue.",
+   "explanations": {
+    "demand": "Demand is the hypothesis under test for this asset class (keyword tools report zero for community queries). Search opportunity is deliberately unscored rather than assumed.",
+    "capturability": "Organic capturability 63 clears the 55 bar. Map-pack conditions are excluded: without a Google Business Profile we cannot rank in a pack, so its weakness is not ours to capture.",
+    "monetization": "Monetization cannot be projected: demand is not attributable to this market, so expected lead flow is unknown. This is not the same as low value — it is unmeasured."
+   },
+   "humanAssumed": [
+    "ticketAvg (HUMAN_ASSUMED)",
+    "margin (HUMAN_ASSUMED)",
+    "vertical profile: HUMAN_ASSUMED: large considered purchase, long design/permit cycle, strong spring-summer peak; high ticket makes per-lead viable but long cycle makes flat rent hard to justify early."
+   ],
+   "verticalProfileBasis": "HUMAN_ASSUMED: large considered purchase, long design/permit cycle, strong spring-summer peak; high ticket makes per-lead viable but long cycle makes flat rent hard to justify early."
+  },
+  {
+   "experimentId": "W1-B1-007",
+   "cohort": "B1-NTX-STANDALONE",
+   "assetType": "standalone-site",
+   "service": "Pool Builder",
+   "serviceSlug": "pool-builder",
+   "geography": "Mosaic",
+   "state": "TX",
+   "isHubPage": false,
+   "hubDomain": null,
+   "preferredDomain": "poolbuildermosaic.com",
+   "old": {
+    "composite": null,
+    "A": null,
+    "O": 67,
+    "bucket": null,
+    "measuredVolume": 0,
+    "volumeState": "provider-reports-zero — THE HYPOTHESIS UNDER TEST, not a validated demand figure",
+    "F": null,
+    "E": null
+   },
+   "new": {
+    "searchOpportunity": null,
+    "searchOpportunityGate": "UNKNOWN",
+    "capturability": 67,
+    "capturabilityGate": "PASS",
+    "monetizationQuality": null,
+    "monetizationGate": "UNKNOWN",
+    "demandState": "UNKNOWN",
+    "attributableDemand": null,
+    "demandCeiling": null,
+    "viableRenters": 3,
+    "gates": {
+     "demand": "UNKNOWN",
+     "capturability": "PASS",
+     "renterDepth": "PASS",
+     "economics": "UNKNOWN"
+    },
+    "decision": "EXPERIMENTAL",
+    "confidence": 0.3,
+    "recommendedMonetizationModel": "per-lead (long sales cycle makes flat rent hard to justify before the renter sees ROI)",
+    "leadValueUsd": 1700,
+    "expectedLeadsPerMonth": null
+   },
+   "decisionChanged": true,
+   "reasons": [
+    "Deployed to answer pre-registered hypothesis H2+H3 (community demand test + standalone arm of the architecture experiment). This is NOT a weaker buy signal: the asset is justified by the information it produces, not by expected revenue.",
+    "demand gate UNKNOWN — Demand is the hypothesis under test for this asset class (keyword tools report zero for community queries). Search opportunity is deliberately unscored rather than assumed.",
+    "economics gate UNKNOWN — Monetization cannot be projected: demand is not attributable to this market, so expected lead flow is unknown. This is not the same as low value — it is unmeasured."
+   ],
+   "experimentJustification": "Deployed to answer pre-registered hypothesis H2+H3 (community demand test + standalone arm of the architecture experiment). This is NOT a weaker buy signal: the asset is justified by the information it produces, not by expected revenue.",
+   "explanations": {
+    "demand": "Demand is the hypothesis under test for this asset class (keyword tools report zero for community queries). Search opportunity is deliberately unscored rather than assumed.",
+    "capturability": "Organic capturability 67 clears the 55 bar. Map-pack conditions are excluded: without a Google Business Profile we cannot rank in a pack, so its weakness is not ours to capture.",
+    "monetization": "Monetization cannot be projected: demand is not attributable to this market, so expected lead flow is unknown. This is not the same as low value — it is unmeasured."
+   },
+   "humanAssumed": [
+    "ticketAvg (HUMAN_ASSUMED)",
+    "margin (HUMAN_ASSUMED)",
+    "vertical profile: HUMAN_ASSUMED: large considered purchase, long design/permit cycle, strong spring-summer peak; high ticket makes per-lead viable but long cycle makes flat rent hard to justify early."
+   ],
+   "verticalProfileBasis": "HUMAN_ASSUMED: large considered purchase, long design/permit cycle, strong spring-summer peak; high ticket makes per-lead viable but long cycle makes flat rent hard to justify early."
+  },
+  {
+   "experimentId": "W1-B2-008",
+   "cohort": "B2-NTX-REGIONAL-HUB",
+   "assetType": "hub-page",
+   "service": "Pool Builder",
+   "serviceSlug": "pool-builder",
+   "geography": "Union Park",
+   "state": "TX",
+   "isHubPage": true,
+   "hubDomain": "poolbuildersnorthtexas.com",
+   "preferredDomain": "poolbuildersnorthtexas.com",
+   "old": {
+    "composite": null,
+    "A": null,
+    "O": 73,
+    "bucket": null,
+    "measuredVolume": 0,
+    "volumeState": "provider-reports-zero — THE HYPOTHESIS UNDER TEST, not a validated demand figure",
+    "F": null,
+    "E": null
+   },
+   "new": {
+    "searchOpportunity": null,
+    "searchOpportunityGate": "UNKNOWN",
+    "capturability": 73,
+    "capturabilityGate": "PASS",
+    "monetizationQuality": null,
+    "monetizationGate": "UNKNOWN",
+    "demandState": "UNKNOWN",
+    "attributableDemand": null,
+    "demandCeiling": null,
+    "viableRenters": 3,
+    "gates": {
+     "demand": "UNKNOWN",
+     "capturability": "PASS",
+     "renterDepth": "PASS",
+     "economics": "UNKNOWN"
+    },
+    "decision": "EXPERIMENTAL",
+    "confidence": 0.3,
+    "recommendedMonetizationModel": "per-lead (long sales cycle makes flat rent hard to justify before the renter sees ROI)",
+    "leadValueUsd": 1700,
+    "expectedLeadsPerMonth": null
+   },
+   "decisionChanged": true,
+   "reasons": [
+    "Deployed to answer pre-registered hypothesis H2+H3 (community demand test + hub arm of the architecture experiment). This is NOT a weaker buy signal: the asset is justified by the information it produces, not by expected revenue.",
+    "demand gate UNKNOWN — Demand is the hypothesis under test for this asset class (keyword tools report zero for community queries). Search opportunity is deliberately unscored rather than assumed.",
+    "economics gate UNKNOWN — Monetization cannot be projected: demand is not attributable to this market, so expected lead flow is unknown. This is not the same as low value — it is unmeasured."
+   ],
+   "experimentJustification": "Deployed to answer pre-registered hypothesis H2+H3 (community demand test + hub arm of the architecture experiment). This is NOT a weaker buy signal: the asset is justified by the information it produces, not by expected revenue.",
+   "explanations": {
+    "demand": "Demand is the hypothesis under test for this asset class (keyword tools report zero for community queries). Search opportunity is deliberately unscored rather than assumed.",
+    "capturability": "Organic capturability 73 clears the 55 bar. Map-pack conditions are excluded: without a Google Business Profile we cannot rank in a pack, so its weakness is not ours to capture.",
+    "monetization": "Monetization cannot be projected: demand is not attributable to this market, so expected lead flow is unknown. This is not the same as low value — it is unmeasured."
+   },
+   "humanAssumed": [
+    "ticketAvg (HUMAN_ASSUMED)",
+    "margin (HUMAN_ASSUMED)",
+    "vertical profile: HUMAN_ASSUMED: large considered purchase, long design/permit cycle, strong spring-summer peak; high ticket makes per-lead viable but long cycle makes flat rent hard to justify early."
+   ],
+   "verticalProfileBasis": "HUMAN_ASSUMED: large considered purchase, long design/permit cycle, strong spring-summer peak; high ticket makes per-lead viable but long cycle makes flat rent hard to justify early."
+  },
+  {
+   "experimentId": "W1-B1-009",
+   "cohort": "B1-NTX-STANDALONE",
+   "assetType": "standalone-site",
+   "service": "Pool Builder",
+   "serviceSlug": "pool-builder",
+   "geography": "Newman Village",
+   "state": "TX",
+   "isHubPage": false,
+   "hubDomain": null,
+   "preferredDomain": "poolbuildernewmanvillage.com",
+   "old": {
+    "composite": null,
+    "A": null,
+    "O": 65,
+    "bucket": null,
+    "measuredVolume": 0,
+    "volumeState": "provider-reports-zero — THE HYPOTHESIS UNDER TEST, not a validated demand figure",
+    "F": null,
+    "E": null
+   },
+   "new": {
+    "searchOpportunity": null,
+    "searchOpportunityGate": "UNKNOWN",
+    "capturability": 65,
+    "capturabilityGate": "PASS",
+    "monetizationQuality": null,
+    "monetizationGate": "UNKNOWN",
+    "demandState": "UNKNOWN",
+    "attributableDemand": null,
+    "demandCeiling": null,
+    "viableRenters": 2,
+    "gates": {
+     "demand": "UNKNOWN",
+     "capturability": "PASS",
+     "renterDepth": "PASS",
+     "economics": "UNKNOWN"
+    },
+    "decision": "EXPERIMENTAL",
+    "confidence": 0.3,
+    "recommendedMonetizationModel": "per-lead (long sales cycle makes flat rent hard to justify before the renter sees ROI)",
+    "leadValueUsd": 1700,
+    "expectedLeadsPerMonth": null
+   },
+   "decisionChanged": true,
+   "reasons": [
+    "Deployed to answer pre-registered hypothesis H2+H3 (community demand test + standalone arm of the architecture experiment). This is NOT a weaker buy signal: the asset is justified by the information it produces, not by expected revenue.",
+    "demand gate UNKNOWN — Demand is the hypothesis under test for this asset class (keyword tools report zero for community queries). Search opportunity is deliberately unscored rather than assumed.",
+    "economics gate UNKNOWN — Monetization cannot be projected: demand is not attributable to this market, so expected lead flow is unknown. This is not the same as low value — it is unmeasured."
+   ],
+   "experimentJustification": "Deployed to answer pre-registered hypothesis H2+H3 (community demand test + standalone arm of the architecture experiment). This is NOT a weaker buy signal: the asset is justified by the information it produces, not by expected revenue.",
+   "explanations": {
+    "demand": "Demand is the hypothesis under test for this asset class (keyword tools report zero for community queries). Search opportunity is deliberately unscored rather than assumed.",
+    "capturability": "Organic capturability 65 clears the 55 bar. Map-pack conditions are excluded: without a Google Business Profile we cannot rank in a pack, so its weakness is not ours to capture.",
+    "monetization": "Monetization cannot be projected: demand is not attributable to this market, so expected lead flow is unknown. This is not the same as low value — it is unmeasured."
+   },
+   "humanAssumed": [
+    "ticketAvg (HUMAN_ASSUMED)",
+    "margin (HUMAN_ASSUMED)",
+    "vertical profile: HUMAN_ASSUMED: large considered purchase, long design/permit cycle, strong spring-summer peak; high ticket makes per-lead viable but long cycle makes flat rent hard to justify early."
+   ],
+   "verticalProfileBasis": "HUMAN_ASSUMED: large considered purchase, long design/permit cycle, strong spring-summer peak; high ticket makes per-lead viable but long cycle makes flat rent hard to justify early."
+  },
+  {
+   "experimentId": "W1-B2-010",
+   "cohort": "B2-NTX-REGIONAL-HUB",
+   "assetType": "hub-page",
+   "service": "Pool Builder",
+   "serviceSlug": "pool-builder",
+   "geography": "Harvest",
+   "state": "TX",
+   "isHubPage": true,
+   "hubDomain": "poolbuildersnorthtexas.com",
+   "preferredDomain": "poolbuildersnorthtexas.com",
+   "old": {
+    "composite": null,
+    "A": null,
+    "O": 64,
+    "bucket": null,
+    "measuredVolume": 0,
+    "volumeState": "provider-reports-zero — THE HYPOTHESIS UNDER TEST, not a validated demand figure",
+    "F": null,
+    "E": null
+   },
+   "new": {
+    "searchOpportunity": null,
+    "searchOpportunityGate": "UNKNOWN",
+    "capturability": 64,
+    "capturabilityGate": "PASS",
+    "monetizationQuality": null,
+    "monetizationGate": "UNKNOWN",
+    "demandState": "UNKNOWN",
+    "attributableDemand": null,
+    "demandCeiling": null,
+    "viableRenters": 2,
+    "gates": {
+     "demand": "UNKNOWN",
+     "capturability": "PASS",
+     "renterDepth": "PASS",
+     "economics": "UNKNOWN"
+    },
+    "decision": "EXPERIMENTAL",
+    "confidence": 0.3,
+    "recommendedMonetizationModel": "per-lead (long sales cycle makes flat rent hard to justify before the renter sees ROI)",
+    "leadValueUsd": 1700,
+    "expectedLeadsPerMonth": null
+   },
+   "decisionChanged": true,
+   "reasons": [
+    "Deployed to answer pre-registered hypothesis H2+H3 (community demand test + hub arm of the architecture experiment). This is NOT a weaker buy signal: the asset is justified by the information it produces, not by expected revenue.",
+    "demand gate UNKNOWN — Demand is the hypothesis under test for this asset class (keyword tools report zero for community queries). Search opportunity is deliberately unscored rather than assumed.",
+    "economics gate UNKNOWN — Monetization cannot be projected: demand is not attributable to this market, so expected lead flow is unknown. This is not the same as low value — it is unmeasured."
+   ],
+   "experimentJustification": "Deployed to answer pre-registered hypothesis H2+H3 (community demand test + hub arm of the architecture experiment). This is NOT a weaker buy signal: the asset is justified by the information it produces, not by expected revenue.",
+   "explanations": {
+    "demand": "Demand is the hypothesis under test for this asset class (keyword tools report zero for community queries). Search opportunity is deliberately unscored rather than assumed.",
+    "capturability": "Organic capturability 64 clears the 55 bar. Map-pack conditions are excluded: without a Google Business Profile we cannot rank in a pack, so its weakness is not ours to capture.",
+    "monetization": "Monetization cannot be projected: demand is not attributable to this market, so expected lead flow is unknown. This is not the same as low value — it is unmeasured."
+   },
+   "humanAssumed": [
+    "ticketAvg (HUMAN_ASSUMED)",
+    "margin (HUMAN_ASSUMED)",
+    "vertical profile: HUMAN_ASSUMED: large considered purchase, long design/permit cycle, strong spring-summer peak; high ticket makes per-lead viable but long cycle makes flat rent hard to justify early."
+   ],
+   "verticalProfileBasis": "HUMAN_ASSUMED: large considered purchase, long design/permit cycle, strong spring-summer peak; high ticket makes per-lead viable but long cycle makes flat rent hard to justify early."
+  },
+  {
+   "experimentId": "W1-B1-011",
+   "cohort": "B1-NTX-STANDALONE",
+   "assetType": "standalone-site",
+   "service": "Pool Builder",
+   "serviceSlug": "pool-builder",
+   "geography": "Cambridge Crossing",
+   "state": "TX",
+   "isHubPage": false,
+   "hubDomain": null,
+   "preferredDomain": "poolbuildercambridgecrossing.com",
+   "old": {
+    "composite": null,
+    "A": null,
+    "O": 57,
+    "bucket": null,
+    "measuredVolume": 0,
+    "volumeState": "provider-reports-zero — THE HYPOTHESIS UNDER TEST, not a validated demand figure",
+    "F": null,
+    "E": null
+   },
+   "new": {
+    "searchOpportunity": null,
+    "searchOpportunityGate": "UNKNOWN",
+    "capturability": 57,
+    "capturabilityGate": "PASS",
+    "monetizationQuality": null,
+    "monetizationGate": "UNKNOWN",
+    "demandState": "UNKNOWN",
+    "attributableDemand": null,
+    "demandCeiling": null,
+    "viableRenters": 3,
+    "gates": {
+     "demand": "UNKNOWN",
+     "capturability": "PASS",
+     "renterDepth": "PASS",
+     "economics": "UNKNOWN"
+    },
+    "decision": "EXPERIMENTAL",
+    "confidence": 0.3,
+    "recommendedMonetizationModel": "per-lead (long sales cycle makes flat rent hard to justify before the renter sees ROI)",
+    "leadValueUsd": 1700,
+    "expectedLeadsPerMonth": null
+   },
+   "decisionChanged": true,
+   "reasons": [
+    "Deployed to answer pre-registered hypothesis H2+H3 (community demand test + standalone arm of the architecture experiment). This is NOT a weaker buy signal: the asset is justified by the information it produces, not by expected revenue.",
+    "demand gate UNKNOWN — Demand is the hypothesis under test for this asset class (keyword tools report zero for community queries). Search opportunity is deliberately unscored rather than assumed.",
+    "economics gate UNKNOWN — Monetization cannot be projected: demand is not attributable to this market, so expected lead flow is unknown. This is not the same as low value — it is unmeasured."
+   ],
+   "experimentJustification": "Deployed to answer pre-registered hypothesis H2+H3 (community demand test + standalone arm of the architecture experiment). This is NOT a weaker buy signal: the asset is justified by the information it produces, not by expected revenue.",
+   "explanations": {
+    "demand": "Demand is the hypothesis under test for this asset class (keyword tools report zero for community queries). Search opportunity is deliberately unscored rather than assumed.",
+    "capturability": "Organic capturability 57 clears the 55 bar. Map-pack conditions are excluded: without a Google Business Profile we cannot rank in a pack, so its weakness is not ours to capture.",
+    "monetization": "Monetization cannot be projected: demand is not attributable to this market, so expected lead flow is unknown. This is not the same as low value — it is unmeasured."
+   },
+   "humanAssumed": [
+    "ticketAvg (HUMAN_ASSUMED)",
+    "margin (HUMAN_ASSUMED)",
+    "vertical profile: HUMAN_ASSUMED: large considered purchase, long design/permit cycle, strong spring-summer peak; high ticket makes per-lead viable but long cycle makes flat rent hard to justify early."
+   ],
+   "verticalProfileBasis": "HUMAN_ASSUMED: large considered purchase, long design/permit cycle, strong spring-summer peak; high ticket makes per-lead viable but long cycle makes flat rent hard to justify early."
+  },
+  {
+   "experimentId": "W1-B2-012",
+   "cohort": "B2-NTX-REGIONAL-HUB",
+   "assetType": "hub-page",
+   "service": "Pool Builder",
+   "serviceSlug": "pool-builder",
+   "geography": "Trinity Falls",
+   "state": "TX",
+   "isHubPage": true,
+   "hubDomain": "poolbuildersnorthtexas.com",
+   "preferredDomain": "poolbuildersnorthtexas.com",
+   "old": {
+    "composite": null,
+    "A": null,
+    "O": 60,
+    "bucket": null,
+    "measuredVolume": 0,
+    "volumeState": "provider-reports-zero — THE HYPOTHESIS UNDER TEST, not a validated demand figure",
+    "F": null,
+    "E": null
+   },
+   "new": {
+    "searchOpportunity": null,
+    "searchOpportunityGate": "UNKNOWN",
+    "capturability": 60,
+    "capturabilityGate": "PASS",
+    "monetizationQuality": null,
+    "monetizationGate": "UNKNOWN",
+    "demandState": "UNKNOWN",
+    "attributableDemand": null,
+    "demandCeiling": null,
+    "viableRenters": 3,
+    "gates": {
+     "demand": "UNKNOWN",
+     "capturability": "PASS",
+     "renterDepth": "PASS",
+     "economics": "UNKNOWN"
+    },
+    "decision": "EXPERIMENTAL",
+    "confidence": 0.3,
+    "recommendedMonetizationModel": "per-lead (long sales cycle makes flat rent hard to justify before the renter sees ROI)",
+    "leadValueUsd": 1700,
+    "expectedLeadsPerMonth": null
+   },
+   "decisionChanged": true,
+   "reasons": [
+    "Deployed to answer pre-registered hypothesis H2+H3 (community demand test + hub arm of the architecture experiment). This is NOT a weaker buy signal: the asset is justified by the information it produces, not by expected revenue.",
+    "demand gate UNKNOWN — Demand is the hypothesis under test for this asset class (keyword tools report zero for community queries). Search opportunity is deliberately unscored rather than assumed.",
+    "economics gate UNKNOWN — Monetization cannot be projected: demand is not attributable to this market, so expected lead flow is unknown. This is not the same as low value — it is unmeasured."
+   ],
+   "experimentJustification": "Deployed to answer pre-registered hypothesis H2+H3 (community demand test + hub arm of the architecture experiment). This is NOT a weaker buy signal: the asset is justified by the information it produces, not by expected revenue.",
+   "explanations": {
+    "demand": "Demand is the hypothesis under test for this asset class (keyword tools report zero for community queries). Search opportunity is deliberately unscored rather than assumed.",
+    "capturability": "Organic capturability 60 clears the 55 bar. Map-pack conditions are excluded: without a Google Business Profile we cannot rank in a pack, so its weakness is not ours to capture.",
+    "monetization": "Monetization cannot be projected: demand is not attributable to this market, so expected lead flow is unknown. This is not the same as low value — it is unmeasured."
+   },
+   "humanAssumed": [
+    "ticketAvg (HUMAN_ASSUMED)",
+    "margin (HUMAN_ASSUMED)",
+    "vertical profile: HUMAN_ASSUMED: large considered purchase, long design/permit cycle, strong spring-summer peak; high ticket makes per-lead viable but long cycle makes flat rent hard to justify early."
+   ],
+   "verticalProfileBasis": "HUMAN_ASSUMED: large considered purchase, long design/permit cycle, strong spring-summer peak; high ticket makes per-lead viable but long cycle makes flat rent hard to justify early."
+  },
+  {
+   "experimentId": "W1-B3-001",
+   "cohort": "B3-CITY-CONTROL",
+   "assetType": "standalone-site",
+   "service": "Pool Builder",
+   "serviceSlug": "pool-builder",
+   "geography": "Frisco",
+   "state": "TX",
+   "isHubPage": false,
+   "hubDomain": null,
+   "preferredDomain": "poolbuilderfriscotx.com",
+   "old": {
+    "composite": null,
+    "A": null,
+    "O": 23,
+    "bucket": null,
+    "measuredVolume": 320,
+    "volumeState": "measured",
+    "F": null,
+    "E": null
+   },
+   "new": {
+    "searchOpportunity": 58,
+    "searchOpportunityGate": "PASS",
+    "capturability": 23,
+    "capturabilityGate": "FAIL",
+    "monetizationQuality": 79,
+    "monetizationGate": "PASS",
+    "demandState": "MEASURED_LOCAL",
+    "attributableDemand": 320,
+    "demandCeiling": 320,
+    "viableRenters": 3,
+    "gates": {
+     "demand": "PASS",
+     "capturability": "FAIL",
+     "renterDepth": "PASS",
+     "economics": "PASS"
+    },
+    "decision": "EXPERIMENTAL",
+    "confidence": 0.64,
+    "recommendedMonetizationModel": "per-lead (long sales cycle makes flat rent hard to justify before the renter sees ROI)",
+    "leadValueUsd": 1700,
+    "expectedLeadsPerMonth": 9.6
+   },
+   "decisionChanged": true,
+   "reasons": [
+    "Deployed to answer pre-registered hypothesis H2 (city control anchoring the demand gradient). This is NOT a weaker buy signal: the asset is justified by the information it produces, not by expected revenue.",
+    "capturability gate FAILED — Organic capturability 23 is below the 45 floor — the organic results are effectively uncapturable for an organic-only site, regardless of how weak the map pack is."
+   ],
+   "experimentJustification": "Deployed to answer pre-registered hypothesis H2 (city control anchoring the demand gradient). This is NOT a weaker buy signal: the asset is justified by the information it produces, not by expected revenue.",
+   "explanations": {
+    "demand": "320/mo of locally attributable demand with commercial-intent score —.",
+    "capturability": "Organic capturability 23 is below the 45 floor — the organic results are effectively uncapturable for an organic-only site, regardless of how weak the map pack is.",
+    "monetization": "~9.6 leads/mo × $1700 per lead ≈ $16320/mo of renter gross profit. Sales cycle ~90 days, attribution clarity 70%."
+   },
+   "humanAssumed": [
+    "ticketAvg (HUMAN_ASSUMED)",
+    "margin (HUMAN_ASSUMED)",
+    "vertical profile: HUMAN_ASSUMED: large considered purchase, long design/permit cycle, strong spring-summer peak; high ticket makes per-lead viable but long cycle makes flat rent hard to justify early."
+   ],
+   "verticalProfileBasis": "HUMAN_ASSUMED: large considered purchase, long design/permit cycle, strong spring-summer peak; high ticket makes per-lead viable but long cycle makes flat rent hard to justify early."
+  },
+  {
+   "experimentId": "W1-B3-002",
+   "cohort": "B3-CITY-CONTROL",
+   "assetType": "standalone-site",
+   "service": "Pool Builder",
+   "serviceSlug": "pool-builder",
+   "geography": "McKinney",
+   "state": "TX",
+   "isHubPage": false,
+   "hubDomain": null,
+   "preferredDomain": "poolbuildermckinneytx.com",
+   "old": {
+    "composite": null,
+    "A": null,
+    "O": 39,
+    "bucket": null,
+    "measuredVolume": 210,
+    "volumeState": "measured",
+    "F": null,
+    "E": null
+   },
+   "new": {
+    "searchOpportunity": 58,
+    "searchOpportunityGate": "PASS",
+    "capturability": 39,
+    "capturabilityGate": "FAIL",
+    "monetizationQuality": 79,
+    "monetizationGate": "PASS",
+    "demandState": "MEASURED_LOCAL",
+    "attributableDemand": 210,
+    "demandCeiling": 210,
+    "viableRenters": 3,
+    "gates": {
+     "demand": "PASS",
+     "capturability": "FAIL",
+     "renterDepth": "PASS",
+     "economics": "PASS"
+    },
+    "decision": "EXPERIMENTAL",
+    "confidence": 0.64,
+    "recommendedMonetizationModel": "per-lead (long sales cycle makes flat rent hard to justify before the renter sees ROI)",
+    "leadValueUsd": 1700,
+    "expectedLeadsPerMonth": 6.3
+   },
+   "decisionChanged": true,
+   "reasons": [
+    "Deployed to answer pre-registered hypothesis H2 (city control anchoring the demand gradient). This is NOT a weaker buy signal: the asset is justified by the information it produces, not by expected revenue.",
+    "capturability gate FAILED — Organic capturability 39 is below the 45 floor — the organic results are effectively uncapturable for an organic-only site, regardless of how weak the map pack is."
+   ],
+   "experimentJustification": "Deployed to answer pre-registered hypothesis H2 (city control anchoring the demand gradient). This is NOT a weaker buy signal: the asset is justified by the information it produces, not by expected revenue.",
+   "explanations": {
+    "demand": "210/mo of locally attributable demand with commercial-intent score —.",
+    "capturability": "Organic capturability 39 is below the 45 floor — the organic results are effectively uncapturable for an organic-only site, regardless of how weak the map pack is.",
+    "monetization": "~6.3 leads/mo × $1700 per lead ≈ $10710/mo of renter gross profit. Sales cycle ~90 days, attribution clarity 70%."
+   },
+   "humanAssumed": [
+    "ticketAvg (HUMAN_ASSUMED)",
+    "margin (HUMAN_ASSUMED)",
+    "vertical profile: HUMAN_ASSUMED: large considered purchase, long design/permit cycle, strong spring-summer peak; high ticket makes per-lead viable but long cycle makes flat rent hard to justify early."
+   ],
+   "verticalProfileBasis": "HUMAN_ASSUMED: large considered purchase, long design/permit cycle, strong spring-summer peak; high ticket makes per-lead viable but long cycle makes flat rent hard to justify early."
+  },
+  {
+   "experimentId": "W1-B3-003",
+   "cohort": "B3-CITY-CONTROL",
+   "assetType": "standalone-site",
+   "service": "Pool Builder",
+   "serviceSlug": "pool-builder",
+   "geography": "Prosper",
+   "state": "TX",
+   "isHubPage": false,
+   "hubDomain": null,
+   "preferredDomain": "poolbuilderprospertx.com",
+   "old": {
+    "composite": null,
+    "A": null,
+    "O": 36,
+    "bucket": null,
+    "measuredVolume": 10,
+    "volumeState": "measured",
+    "F": null,
+    "E": null
+   },
+   "new": {
+    "searchOpportunity": 29,
+    "searchOpportunityGate": "FAIL",
+    "capturability": 36,
+    "capturabilityGate": "FAIL",
+    "monetizationQuality": 44,
+    "monetizationGate": "PASS",
+    "demandState": "MEASURED_LOCAL",
+    "attributableDemand": 10,
+    "demandCeiling": 10,
+    "viableRenters": 3,
+    "gates": {
+     "demand": "FAIL",
+     "capturability": "FAIL",
+     "renterDepth": "PASS",
+     "economics": "PASS"
+    },
+    "decision": "EXPERIMENTAL",
+    "confidence": 0.64,
+    "recommendedMonetizationModel": "per-lead (long sales cycle makes flat rent hard to justify before the renter sees ROI)",
+    "leadValueUsd": 1700,
+    "expectedLeadsPerMonth": 0.3
+   },
+   "decisionChanged": true,
+   "reasons": [
+    "Deployed to answer pre-registered hypothesis H2 (city control anchoring the demand gradient). This is NOT a weaker buy signal: the asset is justified by the information it produces, not by expected revenue.",
+    "demand gate FAILED — Attributable demand 10/mo is below the 100/mo floor.",
+    "capturability gate FAILED — Organic capturability 36 is below the 45 floor — the organic results are effectively uncapturable for an organic-only site, regardless of how weak the map pack is."
+   ],
+   "experimentJustification": "Deployed to answer pre-registered hypothesis H2 (city control anchoring the demand gradient). This is NOT a weaker buy signal: the asset is justified by the information it produces, not by expected revenue.",
+   "explanations": {
+    "demand": "Attributable demand 10/mo is below the 100/mo floor.",
+    "capturability": "Organic capturability 36 is below the 45 floor — the organic results are effectively uncapturable for an organic-only site, regardless of how weak the map pack is.",
+    "monetization": "~0.3 leads/mo × $1700 per lead ≈ $510/mo of renter gross profit. Sales cycle ~90 days, attribution clarity 70%."
+   },
+   "humanAssumed": [
+    "ticketAvg (HUMAN_ASSUMED)",
+    "margin (HUMAN_ASSUMED)",
+    "vertical profile: HUMAN_ASSUMED: large considered purchase, long design/permit cycle, strong spring-summer peak; high ticket makes per-lead viable but long cycle makes flat rent hard to justify early."
+   ],
+   "verticalProfileBasis": "HUMAN_ASSUMED: large considered purchase, long design/permit cycle, strong spring-summer peak; high ticket makes per-lead viable but long cycle makes flat rent hard to justify early."
+  },
+  {
+   "experimentId": "W1-C-001",
+   "cohort": "C-MODEL-VALIDATION",
+   "assetType": "standalone-site",
+   "service": "Metal Roofing",
+   "serviceSlug": "metal-roofing",
+   "geography": "Rochester",
+   "state": "MN",
+   "isHubPage": false,
+   "hubDomain": null,
+   "preferredDomain": "metalroofingrochester.com",
+   "old": {
+    "composite": 61,
+    "A": 76,
+    "O": 20,
+    "bucket": "LOW-HANGING",
+    "measuredVolume": 110,
+    "volumeState": "measured-upper-bound-shared-city-name",
+    "F": 50,
+    "E": 42
+   },
+   "new": {
+    "searchOpportunity": null,
+    "searchOpportunityGate": "UNKNOWN",
+    "capturability": 20,
+    "capturabilityGate": "FAIL",
+    "monetizationQuality": null,
+    "monetizationGate": "UNKNOWN",
+    "demandState": "MEASURED_UPPER_BOUND",
+    "attributableDemand": null,
+    "demandCeiling": 110,
+    "viableRenters": 2,
+    "gates": {
+     "demand": "UNKNOWN",
+     "capturability": "FAIL",
+     "renterDepth": "PASS",
+     "economics": "UNKNOWN"
+    },
+    "decision": "EXPERIMENTAL",
+    "confidence": 0.44,
+    "recommendedMonetizationModel": "per-lead",
+    "leadValueUsd": 875,
+    "expectedLeadsPerMonth": null
+   },
+   "decisionChanged": true,
+   "reasons": [
+    "Deployed to answer pre-registered hypothesis H1 (model validation: MODEL DISAGREEMENT (largest, ~58 pts)). This is NOT a weaker buy signal: the asset is justified by the information it produces, not by expected revenue.",
+    "demand gate UNKNOWN — Demand is an UPPER BOUND of 110/mo shared across same-named markets, not measured local demand. Treating it as local demand would overstate this opportunity.",
+    "capturability gate FAILED — Organic capturability 20 is below the 45 floor — the organic results are effectively uncapturable for an organic-only site, regardless of how weak the map pack is.",
+    "economics gate UNKNOWN — Monetization cannot be projected: demand is not attributable to this market, so expected lead flow is unknown. This is not the same as low value — it is unmeasured."
+   ],
+   "experimentJustification": "Deployed to answer pre-registered hypothesis H1 (model validation: MODEL DISAGREEMENT (largest, ~58 pts)). This is NOT a weaker buy signal: the asset is justified by the information it produces, not by expected revenue.",
+   "explanations": {
+    "demand": "Demand is an UPPER BOUND of 110/mo shared across same-named markets, not measured local demand. Treating it as local demand would overstate this opportunity.",
+    "capturability": "Organic capturability 20 is below the 45 floor — the organic results are effectively uncapturable for an organic-only site, regardless of how weak the map pack is.",
+    "monetization": "Monetization cannot be projected: demand is not attributable to this market, so expected lead flow is unknown. This is not the same as low value — it is unmeasured."
+   },
+   "humanAssumed": [
+    "ticketAvg (HUMAN_ASSUMED)",
+    "margin (HUMAN_ASSUMED)",
+    "vertical profile: HUMAN_ASSUMED: partly storm-driven, so urgency is higher than remodels."
+   ],
+   "verticalProfileBasis": "HUMAN_ASSUMED: partly storm-driven, so urgency is higher than remodels."
+  },
+  {
+   "experimentId": "W1-C-002",
+   "cohort": "C-MODEL-VALIDATION",
+   "assetType": "standalone-site",
+   "service": "Basement Waterproofing",
+   "serviceSlug": "basement-waterproofing",
+   "geography": "Naperville",
+   "state": "IL",
+   "isHubPage": false,
+   "hubDomain": null,
+   "preferredDomain": "basementwaterproofingofnaperville.com",
+   "old": {
+    "composite": 66,
+    "A": 77,
+    "O": 32,
+    "bucket": "LOW-HANGING",
+    "measuredVolume": 210,
+    "volumeState": "measured",
+    "F": 50,
+    "E": 65
+   },
+   "new": {
+    "searchOpportunity": 68,
+    "searchOpportunityGate": "PASS",
+    "capturability": 32,
+    "capturabilityGate": "FAIL",
+    "monetizationQuality": 61,
+    "monetizationGate": "PASS",
+    "demandState": "MEASURED_LOCAL",
+    "attributableDemand": 210,
+    "demandCeiling": 210,
+    "viableRenters": 3,
+    "gates": {
+     "demand": "PASS",
+     "capturability": "FAIL",
+     "renterDepth": "PASS",
+     "economics": "PASS"
+    },
+    "decision": "EXPERIMENTAL",
+    "confidence": 0.64,
+    "recommendedMonetizationModel": "per-lead",
+    "leadValueUsd": 432,
+    "expectedLeadsPerMonth": 6.3
+   },
+   "decisionChanged": true,
+   "reasons": [
+    "Deployed to answer pre-registered hypothesis H1 (model validation: MODEL DISAGREEMENT (second, ~49 pts)). This is NOT a weaker buy signal: the asset is justified by the information it produces, not by expected revenue.",
+    "capturability gate FAILED — Organic capturability 32 is below the 45 floor — the organic results are effectively uncapturable for an organic-only site, regardless of how weak the map pack is."
+   ],
+   "experimentJustification": "Deployed to answer pre-registered hypothesis H1 (model validation: MODEL DISAGREEMENT (second, ~49 pts)). This is NOT a weaker buy signal: the asset is justified by the information it produces, not by expected revenue.",
+   "explanations": {
+    "demand": "210/mo of locally attributable demand with commercial-intent score 82.",
+    "capturability": "Organic capturability 32 is below the 45 floor — the organic results are effectively uncapturable for an organic-only site, regardless of how weak the map pack is.",
+    "monetization": "~6.3 leads/mo × $432 per lead ≈ $2722/mo of renter gross profit. Sales cycle ~30 days, attribution clarity 75%."
+   },
+   "humanAssumed": [
+    "ticketAvg (HUMAN_ASSUMED)",
+    "margin (HUMAN_ASSUMED)",
+    "vertical profile: HUMAN_ASSUMED: problem-driven (water intrusion) so urgency and close rate are higher."
+   ],
+   "verticalProfileBasis": "HUMAN_ASSUMED: problem-driven (water intrusion) so urgency and close rate are higher."
+  },
+  {
+   "experimentId": "W1-C-003",
+   "cohort": "C-MODEL-VALIDATION",
+   "assetType": "standalone-site",
+   "service": "Bathroom Remodeling",
+   "serviceSlug": "bathroom-remodel",
+   "geography": "Bellevue",
+   "state": "NE",
+   "isHubPage": false,
+   "hubDomain": null,
+   "preferredDomain": "bathroomremodelingbellevuene.com",
+   "old": {
+    "composite": 85,
+    "A": 92,
+    "O": 58,
+    "bucket": "UNICORN",
+    "measuredVolume": 2400,
+    "volumeState": "measured-upper-bound-shared-city-name",
+    "F": 92,
+    "E": 65
+   },
+   "new": {
+    "searchOpportunity": null,
+    "searchOpportunityGate": "UNKNOWN",
+    "capturability": 58,
+    "capturabilityGate": "PASS",
+    "monetizationQuality": null,
+    "monetizationGate": "UNKNOWN",
+    "demandState": "MEASURED_UPPER_BOUND",
+    "attributableDemand": null,
+    "demandCeiling": 2400,
+    "viableRenters": 3,
+    "gates": {
+     "demand": "UNKNOWN",
+     "capturability": "PASS",
+     "renterDepth": "PASS",
+     "economics": "UNKNOWN"
+    },
+    "decision": "EXPERIMENTAL",
+    "confidence": 0.44,
+    "recommendedMonetizationModel": "per-lead",
+    "leadValueUsd": 576,
+    "expectedLeadsPerMonth": null
+   },
+   "decisionChanged": true,
+   "reasons": [
+    "Deployed to answer pre-registered hypothesis H1 (model validation: A HIGH / ORGANIC MODERATE + SHARED-NAME DEMAND). This is NOT a weaker buy signal: the asset is justified by the information it produces, not by expected revenue.",
+    "demand gate UNKNOWN — Demand is an UPPER BOUND of 2400/mo shared across same-named markets, not measured local demand. Treating it as local demand would overstate this opportunity.",
+    "economics gate UNKNOWN — Monetization cannot be projected: demand is not attributable to this market, so expected lead flow is unknown. This is not the same as low value — it is unmeasured."
+   ],
+   "experimentJustification": "Deployed to answer pre-registered hypothesis H1 (model validation: A HIGH / ORGANIC MODERATE + SHARED-NAME DEMAND). This is NOT a weaker buy signal: the asset is justified by the information it produces, not by expected revenue.",
+   "explanations": {
+    "demand": "Demand is an UPPER BOUND of 2400/mo shared across same-named markets, not measured local demand. Treating it as local demand would overstate this opportunity.",
+    "capturability": "Organic capturability 58 clears the 55 bar. Map-pack conditions are excluded: without a Google Business Profile we cannot rank in a pack, so its weakness is not ours to capture.",
+    "monetization": "Monetization cannot be projected: demand is not attributable to this market, so expected lead flow is unknown. This is not the same as low value — it is unmeasured."
+   },
+   "humanAssumed": [
+    "ticketAvg (HUMAN_ASSUMED)",
+    "margin (HUMAN_ASSUMED)",
+    "vertical profile: HUMAN_ASSUMED: considered remodel purchase, moderate cycle, largely aseasonal."
+   ],
+   "verticalProfileBasis": "HUMAN_ASSUMED: considered remodel purchase, moderate cycle, largely aseasonal."
+  },
+  {
+   "experimentId": "W1-C-004",
+   "cohort": "C-MODEL-VALIDATION",
+   "assetType": "standalone-site",
+   "service": "House Cleaning",
+   "serviceSlug": "house-cleaning",
+   "geography": "Orlando",
+   "state": "FL",
+   "isHubPage": false,
+   "hubDomain": null,
+   "preferredDomain": "housecleaningoforlando.com",
+   "old": {
+    "composite": 69,
+    "A": 74,
+    "O": 50,
+    "bucket": "LOW-HANGING",
+    "measuredVolume": 2900,
+    "volumeState": "measured",
+    "F": 34,
+    "E": 86
+   },
+   "new": {
+    "searchOpportunity": 88,
+    "searchOpportunityGate": "PASS",
+    "capturability": 50,
+    "capturabilityGate": "UNKNOWN",
+    "monetizationQuality": 62,
+    "monetizationGate": "PASS",
+    "demandState": "MEASURED_LOCAL",
+    "attributableDemand": 2900,
+    "demandCeiling": 2900,
+    "viableRenters": 3,
+    "gates": {
+     "demand": "PASS",
+     "capturability": "UNKNOWN",
+     "renterDepth": "PASS",
+     "economics": "PASS"
+    },
+    "decision": "EXPERIMENTAL",
+    "confidence": 0.64,
+    "recommendedMonetizationModel": "per-qualified-call (attribution is clean enough to bill per call)",
+    "leadValueUsd": 25,
+    "expectedLeadsPerMonth": 87
+   },
+   "decisionChanged": true,
+   "reasons": [
+    "Deployed to answer pre-registered hypothesis H1 (model validation: WEAK ECONOMICS / HIGH DEMAND). This is NOT a weaker buy signal: the asset is justified by the information it produces, not by expected revenue.",
+    "capturability gate UNKNOWN — Organic capturability 50 sits between the 45 floor and the 55 bar — winnable but slow and uncertain."
+   ],
+   "experimentJustification": "Deployed to answer pre-registered hypothesis H1 (model validation: WEAK ECONOMICS / HIGH DEMAND). This is NOT a weaker buy signal: the asset is justified by the information it produces, not by expected revenue.",
+   "explanations": {
+    "demand": "2900/mo of locally attributable demand with commercial-intent score 82.",
+    "capturability": "Organic capturability 50 sits between the 45 floor and the 55 bar — winnable but slow and uncertain.",
+    "monetization": "~87.0 leads/mo × $25 per lead ≈ $2175/mo of renter gross profit. Sales cycle ~3 days, attribution clarity 85%."
+   },
+   "humanAssumed": [
+    "ticketAvg (HUMAN_ASSUMED)",
+    "margin (HUMAN_ASSUMED)",
+    "vertical profile: HUMAN_ASSUMED: fast decision, recurring revenue for the renter, but low ticket and less sophisticated operators."
+   ],
+   "verticalProfileBasis": "HUMAN_ASSUMED: fast decision, recurring revenue for the renter, but low ticket and less sophisticated operators."
+  },
+  {
+   "experimentId": "W1-C-005",
+   "cohort": "C-MODEL-VALIDATION",
+   "assetType": "standalone-site",
+   "service": "Kitchen Remodeling",
+   "serviceSlug": "kitchen-remodel",
+   "geography": "Rockville",
+   "state": "MD",
+   "isHubPage": false,
+   "hubDomain": null,
+   "preferredDomain": "kitchenremodelingrockvillemd.com",
+   "old": {
+    "composite": 67,
+    "A": 45,
+    "O": 24,
+    "bucket": "HIGH-VALUE",
+    "measuredVolume": 210,
+    "volumeState": "measured-upper-bound-shared-city-name",
+    "F": 66,
+    "E": 100
+   },
+   "new": {
+    "searchOpportunity": null,
+    "searchOpportunityGate": "UNKNOWN",
+    "capturability": 24,
+    "capturabilityGate": "FAIL",
+    "monetizationQuality": null,
+    "monetizationGate": "UNKNOWN",
+    "demandState": "MEASURED_UPPER_BOUND",
+    "attributableDemand": null,
+    "demandCeiling": 210,
+    "viableRenters": 3,
+    "gates": {
+     "demand": "UNKNOWN",
+     "capturability": "FAIL",
+     "renterDepth": "PASS",
+     "economics": "UNKNOWN"
+    },
+    "decision": "EXPERIMENTAL",
+    "confidence": 0.44,
+    "recommendedMonetizationModel": "per-lead",
+    "leadValueUsd": 840,
+    "expectedLeadsPerMonth": null
+   },
+   "decisionChanged": true,
+   "reasons": [
+    "Deployed to answer pre-registered hypothesis H1 (model validation: STRONG RENTER DEPTH / HARD SERP). This is NOT a weaker buy signal: the asset is justified by the information it produces, not by expected revenue.",
+    "demand gate UNKNOWN — Demand is an UPPER BOUND of 210/mo shared across same-named markets, not measured local demand. Treating it as local demand would overstate this opportunity.",
+    "capturability gate FAILED — Organic capturability 24 is below the 45 floor — the organic results are effectively uncapturable for an organic-only site, regardless of how weak the map pack is.",
+    "economics gate UNKNOWN — Monetization cannot be projected: demand is not attributable to this market, so expected lead flow is unknown. This is not the same as low value — it is unmeasured."
+   ],
+   "experimentJustification": "Deployed to answer pre-registered hypothesis H1 (model validation: STRONG RENTER DEPTH / HARD SERP). This is NOT a weaker buy signal: the asset is justified by the information it produces, not by expected revenue.",
+   "explanations": {
+    "demand": "Demand is an UPPER BOUND of 210/mo shared across same-named markets, not measured local demand. Treating it as local demand would overstate this opportunity.",
+    "capturability": "Organic capturability 24 is below the 45 floor — the organic results are effectively uncapturable for an organic-only site, regardless of how weak the map pack is.",
+    "monetization": "Monetization cannot be projected: demand is not attributable to this market, so expected lead flow is unknown. This is not the same as low value — it is unmeasured."
+   },
+   "humanAssumed": [
+    "ticketAvg (HUMAN_ASSUMED)",
+    "margin (HUMAN_ASSUMED)",
+    "vertical profile: HUMAN_ASSUMED: larger and slower than bathroom; same attribution profile."
+   ],
+   "verticalProfileBasis": "HUMAN_ASSUMED: larger and slower than bathroom; same attribution profile."
+  },
+  {
+   "experimentId": "W1-C-006",
+   "cohort": "C-MODEL-VALIDATION",
+   "assetType": "standalone-site",
+   "service": "Appliance Repair",
+   "serviceSlug": "appliance-repair",
+   "geography": "Aurora",
+   "state": "IL",
+   "isHubPage": false,
+   "hubDomain": null,
+   "preferredDomain": "appliancerepairofaurora.com",
+   "old": {
+    "composite": 61,
+    "A": 67,
+    "O": 39,
+    "bucket": "LOW-HANGING",
+    "measuredVolume": 1300,
+    "volumeState": "measured-upper-bound-shared-city-name",
+    "F": 34,
+    "E": 53
+   },
+   "new": {
+    "searchOpportunity": null,
+    "searchOpportunityGate": "UNKNOWN",
+    "capturability": 39,
+    "capturabilityGate": "FAIL",
+    "monetizationQuality": null,
+    "monetizationGate": "UNKNOWN",
+    "demandState": "MEASURED_UPPER_BOUND",
+    "attributableDemand": null,
+    "demandCeiling": 1300,
+    "viableRenters": 2,
+    "gates": {
+     "demand": "UNKNOWN",
+     "capturability": "FAIL",
+     "renterDepth": "PASS",
+     "economics": "UNKNOWN"
+    },
+    "decision": "EXPERIMENTAL",
+    "confidence": 0.44,
+    "recommendedMonetizationModel": "per-qualified-call (attribution is clean enough to bill per call)",
+    "leadValueUsd": 80,
+    "expectedLeadsPerMonth": null
+   },
+   "decisionChanged": true,
+   "reasons": [
+    "Deployed to answer pre-registered hypothesis H1 (model validation: V0 vs V2 THESIS / WEAK ECONOMICS). This is NOT a weaker buy signal: the asset is justified by the information it produces, not by expected revenue.",
+    "demand gate UNKNOWN — Demand is an UPPER BOUND of 1300/mo shared across same-named markets, not measured local demand. Treating it as local demand would overstate this opportunity.",
+    "capturability gate FAILED — Organic capturability 39 is below the 45 floor — the organic results are effectively uncapturable for an organic-only site, regardless of how weak the map pack is.",
+    "economics gate UNKNOWN — Monetization cannot be projected: demand is not attributable to this market, so expected lead flow is unknown. This is not the same as low value — it is unmeasured."
+   ],
+   "experimentJustification": "Deployed to answer pre-registered hypothesis H1 (model validation: V0 vs V2 THESIS / WEAK ECONOMICS). This is NOT a weaker buy signal: the asset is justified by the information it produces, not by expected revenue.",
+   "explanations": {
+    "demand": "Demand is an UPPER BOUND of 1300/mo shared across same-named markets, not measured local demand. Treating it as local demand would overstate this opportunity.",
+    "capturability": "Organic capturability 39 is below the 45 floor — the organic results are effectively uncapturable for an organic-only site, regardless of how weak the map pack is.",
+    "monetization": "Monetization cannot be projected: demand is not attributable to this market, so expected lead flow is unknown. This is not the same as low value — it is unmeasured."
+   },
+   "humanAssumed": [
+    "ticketAvg (HUMAN_ASSUMED)",
+    "margin (HUMAN_ASSUMED)",
+    "vertical profile: HUMAN_ASSUMED: emergency/urgent, same-day decision, excellent attribution via call tracking, but very low ticket."
+   ],
+   "verticalProfileBasis": "HUMAN_ASSUMED: emergency/urgent, same-day decision, excellent attribution via call tracking, but very low ticket."
+  }
+ ]
+}
