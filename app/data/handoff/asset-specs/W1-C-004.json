@@ -1,0 +1,204 @@
+{
+ "specVersion": "asset-spec-2.0.0",
+ "generatedAt": "2026-08-14T22:56:15.601Z",
+ "frozenBaseline": "2026-08-12",
+ "experimentId": "W1-C-004",
+ "identity": {
+  "service": "House Cleaning",
+  "serviceSlug": "house-cleaning",
+  "geography": "Orlando",
+  "state": "FL",
+  "geographyType": "city",
+  "parentCity": null,
+  "cohort": "C-MODEL-VALIDATION",
+  "treatment": "standalone-city-site",
+  "matchedPairId": null,
+  "matchedWith": null
+ },
+ "decision": {
+  "classification": "EXPERIMENTAL",
+  "gates": {
+   "demand": "PASS",
+   "capturability": "UNKNOWN",
+   "renterDepth": "PASS",
+   "economics": "PASS"
+  },
+  "prePurchaseGate": "PASS",
+  "hypothesis": "2,900/mo, A=74, organic 30, but F=34 (~$10 gross profit per lead). Tests the buckets-1.1.0 rentability floor: can volume compensate for thin per-lead value?",
+  "successCondition": "Achieves >=$300/mo rent => the rentability floor is too strict and is discarding viable assets.",
+  "failureCondition": "Ranks but cannot be rented => the floor is validated and should perhaps rise."
+ },
+ "build": {
+  "assetType": "standalone-site",
+  "domain": "housecleaningoforlando.com",
+  "urlArchitecture": "housecleaningoforlando.com (root targets the city+service query)",
+  "domainStatus": "verified-available-at-freeze — RE-CHECK AND PURCHASE BEFORE BUILD",
+  "contentDirective": "SERP-derived commercial service page; identical build standard to Group A so the comparison is not confounded by build quality.",
+  "primaryKeyword": "House Cleaning Orlando",
+  "contentBarWords": 273,
+  "competitorDomainAgeYears": 19.5,
+  "siteMap": {
+   "path": "/",
+   "label": "House Cleaning — Orlando",
+   "kind": "home",
+   "children": [
+    {
+     "path": "/services/",
+     "label": "Services",
+     "kind": "service",
+     "children": [
+      {
+       "path": "/services/house-cleaning/",
+       "label": "House Cleaning",
+       "kind": "service"
+      },
+      {
+       "path": "/services/house-cleaning-service/",
+       "label": "House Cleaning Service",
+       "kind": "service"
+      },
+      {
+       "path": "/services/garage-door-repair/",
+       "label": "Garage Door Repair",
+       "kind": "service"
+      },
+      {
+       "path": "/services/pressure-washing/",
+       "label": "Pressure Washing",
+       "kind": "service"
+      },
+      {
+       "path": "/services/appliance-repair/",
+       "label": "Appliance Repair",
+       "kind": "service"
+      },
+      {
+       "path": "/services/dumpster-rental/",
+       "label": "Dumpster Rental",
+       "kind": "service"
+      },
+      {
+       "path": "/services/air-duct-cleaning/",
+       "label": "Air Duct Cleaning",
+       "kind": "service"
+      },
+      {
+       "path": "/services/lawn-mowing-service/",
+       "label": "Lawn Mowing Service",
+       "kind": "service"
+      }
+     ]
+    }
+   ]
+  },
+  "estimatedPages": 9,
+  "internalLinking": [
+   "Home links to every service page and the top service areas",
+   "Each service page links to its Service × Area variants",
+   "Area pages cross-link to sibling areas to distribute authority",
+   "Every commercial page links back to a single conversion path"
+  ],
+  "cannibalizationGuidance": [
+   "Point the home page at \"House Cleaning Orlando\" and make the head service page a supporting overview, or drop the separate service page entirely.",
+   "House Cleaning Service overlap with the head service. Consolidate them into one page with sections unless each has separately measured demand."
+  ],
+  "visualAssets": [
+   "before/after rooms",
+   "team/trust imagery",
+   "checklist graphics"
+  ],
+  "localSignalsAvailable": [
+   "population profile",
+   "household income profile",
+   "measured competitor content depth (~273 words)"
+  ],
+  "localSignalsMissing": [
+   "surrounding service areas",
+   "verified landmarks / climate / local regulation / local pricing evidence (not collected — must not be fabricated at build time)"
+  ],
+  "doNotFabricate": "Local facts (landmarks, climate, regulations, pricing) were NOT collected. Build pages only from evidence in this spec or verified at build time — never invent local claims."
+ },
+ "serpToBeat": {
+  "organicScore": 50,
+  "organicVerdict": "ORGANIC-CONTESTED",
+  "organicVersion": "organic-v1.2",
+  "dimensionA": 74,
+  "top5": [
+   "1. twomaidscleaning.com [local-specialist]",
+   "2. reddit.com [directory]",
+   "3. groupon.com [national-content]",
+   "4. maidpro.com [local-specialist]",
+   "5. merrymaids.com [local-specialist]"
+  ],
+  "structure": {
+   "distinctHostsTop5": 5,
+   "displaceableTop5": 2,
+   "hardLocalTop3": 1,
+   "geoTargetedCompetitorsTop5": 3
+  },
+  "intentClass": "LOCAL_COMMERCIAL",
+  "localPack": {
+   "mapPackSize": 3,
+   "avgReviews": 174,
+   "note": "market evidence only"
+  }
+ },
+ "economics": {
+  "note": "ALL HUMAN_ASSUMED until live data replaces them. Never present these as measured.",
+  "ticketAssumed": 200,
+  "marginAssumed": 0.5,
+  "leadValueAssumedUsd": 10,
+  "modelledMonthlyGpUsd": 2175,
+  "recommendedMonetizationModel": "per-qualified-call (attribution is clean enough to bill per call)",
+  "viableRenters": 3,
+  "demandState": "MEASURED_LOCAL",
+  "measuredVolume": 2900,
+  "volumeState": "measured",
+  "costBasis": {
+   "domainFirstYearUsd": 12.18,
+   "contentUsd": 8,
+   "deployUsd": 5,
+   "monthlyUsd": 1.5
+  }
+ },
+ "outcomeContract": {
+  "endpoint": "POST {rankrentos}/api/outcomes  (Authorization: Bearer <HANDOFF_TOKEN>)",
+  "joinKey": "experimentId",
+  "metrics": [
+   "asset.published.date",
+   "asset.indexed.date",
+   "asset.firstimpression.date",
+   "asset.firstrank.date",
+   "asset.firstlead.date",
+   "asset.firstrevenue.date",
+   "asset.rank.check",
+   "asset.impressions.count",
+   "asset.clicks.count",
+   "asset.sessions.count",
+   "asset.calls.count",
+   "asset.forms.count",
+   "asset.leads.count",
+   "asset.leads.qualified",
+   "asset.leadvalue.realized",
+   "asset.renter.outreach",
+   "asset.renter.responses",
+   "asset.renter.acquired",
+   "asset.rent.monthly",
+   "asset.revenue.total",
+   "asset.cost.operating"
+  ],
+  "rankingCadence": "weekly from publishDate through week 12, then fortnightly through week 26",
+  "queriesToTrack": {
+   "primary": "1 — the exact service+geography query the asset targets",
+   "secondary": "2-4 close variants",
+   "communityModified": "community assets only: community-name and service+community queries",
+   "unpredicted": "any query Search Console reports impressions for that no keyword tool predicted — the direct test of hyper-local under-measurement"
+  },
+  "nullRule": "UNKNOWN is never zero. Do not post a metric you did not measure; for a rank check where the site is absent from the top 100, post position 'notFound' — never 101 or 0."
+ },
+ "provenance": {
+  "experiment": "experiment-2",
+  "rawSerp": "out/experiment-2/raw/serp-house_cleaning_Orlando_FL.json",
+  "scoreModel": "ai-v1.0.0"
+ }
+}

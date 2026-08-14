@@ -1,0 +1,263 @@
+{
+ "specVersion": "asset-spec-2.0.0",
+ "generatedAt": "2026-08-14T22:56:15.601Z",
+ "frozenBaseline": "2026-08-12",
+ "experimentId": "W1-B1-009",
+ "identity": {
+  "service": "Pool Builder",
+  "serviceSlug": "pool-builder",
+  "geography": "Newman Village",
+  "state": "TX",
+  "geographyType": "master-planned-community",
+  "parentCity": "Frisco",
+  "cohort": "B1-NTX-STANDALONE",
+  "treatment": "TREATMENT-S-standalone-hyperlocal-domain",
+  "matchedPairId": "NTX-P5",
+  "matchedWith": "Harvest"
+ },
+ "decision": {
+  "classification": "EXPERIMENTAL",
+  "gates": {
+   "demand": "UNKNOWN",
+   "capturability": "PASS",
+   "renterDepth": "PASS",
+   "economics": "UNKNOWN"
+  },
+  "prePurchaseGate": "PASS",
+  "hypothesis": "Keyword tools report zero volume for \"pool builder Newman Village\", yet homeowners in a 800-home affluent community may search by community name. A dedicated hyperlocal domain should maximise exact-match relevance. Paired against Harvest on the hub to isolate architecture.",
+  "successCondition": ">=100 impressions/month on community-modified queries within 6 months, OR >=1 qualified lead. Architecture comparison is judged on WITHIN-PAIR difference in time-to-first-impression, time-to-top-20 and impressions at 6 months.",
+  "failureCondition": "indexed but <20 impressions/month after 6 months across ALL community-modified queries while city controls perform in line with measured volume — falsifies hyper-local under-measurement. Architecture verdict is void if fewer than 4 of 6 pairs produce interpretable data."
+ },
+ "build": {
+  "assetType": "standalone-site",
+  "domain": "poolbuildernewmanvillage.com",
+  "urlArchitecture": "poolbuildernewmanvillage.com (root targets the community query)",
+  "domainStatus": "verified-available-at-freeze — RE-CHECK AND PURCHASE BEFORE BUILD",
+  "contentDirective": "Identical specification across BOTH treatments: same visual quality, conversion architecture, topical coverage, schema, publishing window, indexing workflow and tracking. Only the architecture differs.",
+  "primaryKeyword": "Pool Builder Newman Village",
+  "contentBarWords": null,
+  "competitorDomainAgeYears": null,
+  "siteMap": {
+   "path": "/",
+   "label": "Pool Builder — Newman Village",
+   "kind": "home",
+   "children": [
+    {
+     "path": "/services/",
+     "label": "Services",
+     "kind": "service",
+     "children": [
+      {
+       "path": "/services/pool-builder/",
+       "label": "Pool Builder",
+       "kind": "service"
+      },
+      {
+       "path": "/services/water-damage-restoration/",
+       "label": "Water Damage Restoration",
+       "kind": "service"
+      },
+      {
+       "path": "/services/sprinkler-repair/",
+       "label": "Sprinkler Repair",
+       "kind": "service"
+      },
+      {
+       "path": "/services/bathroom-remodeling/",
+       "label": "Bathroom Remodeling",
+       "kind": "service"
+      },
+      {
+       "path": "/services/kitchen-remodeling/",
+       "label": "Kitchen Remodeling",
+       "kind": "service"
+      },
+      {
+       "path": "/services/foundation-repair/",
+       "label": "Foundation Repair",
+       "kind": "service"
+      },
+      {
+       "path": "/services/window-replacement/",
+       "label": "Window Replacement",
+       "kind": "service"
+      },
+      {
+       "path": "/services/fire-damage-restoration/",
+       "label": "Fire Damage Restoration",
+       "kind": "service"
+      }
+     ]
+    },
+    {
+     "path": "/areas/",
+     "label": "Service Areas",
+     "kind": "area",
+     "children": [
+      {
+       "path": "/areas/fields/",
+       "label": "Fields",
+       "kind": "area",
+       "children": [
+        {
+         "path": "/areas/fields/pool-builder/",
+         "label": "Pool Builder in Fields",
+         "kind": "service-area"
+        },
+        {
+         "path": "/areas/fields/water-damage-restoration/",
+         "label": "Water Damage Restoration in Fields",
+         "kind": "service-area"
+        },
+        {
+         "path": "/areas/fields/sprinkler-repair/",
+         "label": "Sprinkler Repair in Fields",
+         "kind": "service-area"
+        }
+       ]
+      },
+      {
+       "path": "/areas/phillips-creek-ranch/",
+       "label": "Phillips Creek Ranch",
+       "kind": "area",
+       "children": [
+        {
+         "path": "/areas/phillips-creek-ranch/pool-builder/",
+         "label": "Pool Builder in Phillips Creek Ranch",
+         "kind": "service-area"
+        },
+        {
+         "path": "/areas/phillips-creek-ranch/water-damage-restoration/",
+         "label": "Water Damage Restoration in Phillips Creek Ranch",
+         "kind": "service-area"
+        },
+        {
+         "path": "/areas/phillips-creek-ranch/sprinkler-repair/",
+         "label": "Sprinkler Repair in Phillips Creek Ranch",
+         "kind": "service-area"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "estimatedPages": 17,
+  "internalLinking": [
+   "Home links to every service page and the top service areas",
+   "Each service page links to its Service × Area variants",
+   "Area pages cross-link to sibling areas to distribute authority",
+   "Every commercial page links back to a single conversion path"
+  ],
+  "cannibalizationGuidance": [
+   "Point the home page at \"Pool Builder Newman Village\" and make the head service page a supporting overview, or drop the separate service page entirely.",
+   "Pool Remodeling overlap with the head service. Consolidate them into one page with sections unless each has separately measured demand."
+  ],
+  "visualAssets": [
+   "completed pool photography",
+   "before/after backyard transformations",
+   "3D design renders",
+   "construction-process sequence",
+   "lighting/night shots"
+  ],
+  "localSignalsAvailable": [
+   "household income profile",
+   "community housing scale (~800 homes)"
+  ],
+  "localSignalsMissing": [
+   "surrounding service areas",
+   "population profile",
+   "competitor content depth",
+   "verified landmarks / climate / local regulation / local pricing evidence (not collected — must not be fabricated at build time)"
+  ],
+  "doNotFabricate": "Local facts (landmarks, climate, regulations, pricing) were NOT collected. Build pages only from evidence in this spec or verified at build time — never invent local claims."
+ },
+ "serpToBeat": {
+  "organicScore": 65,
+  "organicVerdict": "ORGANIC-VIABLE",
+  "organicVersion": "organic-v1.2",
+  "dimensionA": null,
+  "top5": [
+   "1. cheneygroup.com [adjacent-not-this-service]",
+   "2. selahpools.com [local-specialist]",
+   "3. youtube.com [social]",
+   "4. robertsonpools.com [local-specialist]",
+   "5. candysdirt.com [adjacent-not-this-service]"
+  ],
+  "structure": {
+   "distinctHostsTop5": 5,
+   "displaceableTop5": 3,
+   "hardLocalTop3": 1,
+   "geoTargetedCompetitorsTop5": 0
+  },
+  "intentClass": "LOCAL_COMMERCIAL",
+  "localPack": {
+   "note": "map pack inherited from the parent city; Google renders no distinct community pack, so this asset must win ORGANIC"
+  }
+ },
+ "economics": {
+  "note": "ALL HUMAN_ASSUMED until live data replaces them. Never present these as measured.",
+  "ticketAssumed": 85000,
+  "marginAssumed": 0.25,
+  "leadValueAssumedUsd": 2125,
+  "modelledMonthlyGpUsd": null,
+  "recommendedMonetizationModel": "per-lead (long sales cycle makes flat rent hard to justify before the renter sees ROI)",
+  "viableRenters": 2,
+  "demandState": "UNKNOWN",
+  "measuredVolume": 0,
+  "volumeState": "provider-reports-zero — THE HYPOTHESIS UNDER TEST, not a validated demand figure",
+  "costBasis": {
+   "domainFirstYearUsd": 12.18,
+   "contentUsd": 8,
+   "deployUsd": 5,
+   "monthlyUsd": 1.5
+  }
+ },
+ "outcomeContract": {
+  "endpoint": "POST {rankrentos}/api/outcomes  (Authorization: Bearer <HANDOFF_TOKEN>)",
+  "joinKey": "experimentId",
+  "metrics": [
+   "asset.published.date",
+   "asset.indexed.date",
+   "asset.firstimpression.date",
+   "asset.firstrank.date",
+   "asset.firstlead.date",
+   "asset.firstrevenue.date",
+   "asset.rank.check",
+   "asset.impressions.count",
+   "asset.clicks.count",
+   "asset.sessions.count",
+   "asset.calls.count",
+   "asset.forms.count",
+   "asset.leads.count",
+   "asset.leads.qualified",
+   "asset.leadvalue.realized",
+   "asset.renter.outreach",
+   "asset.renter.responses",
+   "asset.renter.acquired",
+   "asset.rent.monthly",
+   "asset.revenue.total",
+   "asset.cost.operating"
+  ],
+  "rankingCadence": "weekly from publishDate through week 12, then fortnightly through week 26",
+  "queriesToTrack": {
+   "primary": "1 — the exact service+geography query the asset targets",
+   "secondary": "2-4 close variants",
+   "communityModified": "community assets only: community-name and service+community queries",
+   "unpredicted": "any query Search Console reports impressions for that no keyword tool predicted — the direct test of hyper-local under-measurement"
+  },
+  "nullRule": "UNKNOWN is never zero. Do not post a metric you did not measure; for a rank check where the site is absent from the top 100, post position 'notFound' — never 101 or 0."
+ },
+ "provenance": {
+  "rawSerp": "out/wave-1-experiment/raw/serp-pool_builder_Newman_Village_TX.json",
+  "serviceSelection": "out/wave-1-experiment/nt-service-ranking.json",
+  "communityMeta": {
+   "name": "Newman Village",
+   "city": "Frisco",
+   "state": "TX",
+   "homes": 800,
+   "status": "mature",
+   "note": "luxury, Mediterranean-style custom"
+  }
+ }
+}

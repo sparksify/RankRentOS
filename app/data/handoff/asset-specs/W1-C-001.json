@@ -1,0 +1,204 @@
+{
+ "specVersion": "asset-spec-2.0.0",
+ "generatedAt": "2026-08-14T22:56:15.601Z",
+ "frozenBaseline": "2026-08-12",
+ "experimentId": "W1-C-001",
+ "identity": {
+  "service": "Metal Roofing",
+  "serviceSlug": "metal-roofing",
+  "geography": "Rochester",
+  "state": "MN",
+  "geographyType": "city",
+  "parentCity": null,
+  "cohort": "C-MODEL-VALIDATION",
+  "treatment": "standalone-city-site",
+  "matchedPairId": null,
+  "matchedWith": null
+ },
+ "decision": {
+  "classification": "EXPERIMENTAL",
+  "gates": {
+   "demand": "UNKNOWN",
+   "capturability": "FAIL",
+   "renterDepth": "PASS",
+   "economics": "UNKNOWN"
+  },
+  "prePurchaseGate": "PASS_WITH_WARNING",
+  "hypothesis": "Dimension A says 76 (credited for a weak map pack); organic-v1.1 says 18 — the organic top-5 is real roofers explicitly targeting Rochester. The single cleanest test of which rankability model predicts reality.",
+  "successCondition": "Reaches top-10 within 6 months => organic-v1.1 wrongly discounts map-pack evidence and Dimension A should stand.",
+  "failureCondition": "Never reaches top-20 => A's map-pack credit is confirmed spurious and A must be rebuilt around organic structure as A-2.0.0."
+ },
+ "build": {
+  "assetType": "standalone-site",
+  "domain": "metalroofingrochester.com",
+  "urlArchitecture": "metalroofingrochester.com (root targets the city+service query)",
+  "domainStatus": "verified-available-at-freeze — RE-CHECK AND PURCHASE BEFORE BUILD",
+  "contentDirective": "SERP-derived commercial service page; identical build standard to Group A so the comparison is not confounded by build quality.",
+  "primaryKeyword": "Metal Roofing Rochester",
+  "contentBarWords": 944,
+  "competitorDomainAgeYears": 18.1,
+  "siteMap": {
+   "path": "/",
+   "label": "Metal Roofing — Rochester",
+   "kind": "home",
+   "children": [
+    {
+     "path": "/services/",
+     "label": "Services",
+     "kind": "service",
+     "children": [
+      {
+       "path": "/services/metal-roofing/",
+       "label": "Metal Roofing",
+       "kind": "service"
+      },
+      {
+       "path": "/services/bathroom-remodeling/",
+       "label": "Bathroom Remodeling",
+       "kind": "service"
+      },
+      {
+       "path": "/services/kitchen-remodeling/",
+       "label": "Kitchen Remodeling",
+       "kind": "service"
+      },
+      {
+       "path": "/services/window-replacement/",
+       "label": "Window Replacement",
+       "kind": "service"
+      },
+      {
+       "path": "/services/basement-waterproofing/",
+       "label": "Basement Waterproofing",
+       "kind": "service"
+      },
+      {
+       "path": "/services/chimney-repair/",
+       "label": "Chimney Repair",
+       "kind": "service"
+      },
+      {
+       "path": "/services/water-damage-restoration/",
+       "label": "Water Damage Restoration",
+       "kind": "service"
+      },
+      {
+       "path": "/services/asbestos-removal/",
+       "label": "Asbestos Removal",
+       "kind": "service"
+      }
+     ]
+    }
+   ]
+  },
+  "estimatedPages": 9,
+  "internalLinking": [
+   "Home links to every service page and the top service areas",
+   "Each service page links to its Service × Area variants",
+   "Area pages cross-link to sibling areas to distribute authority",
+   "Every commercial page links back to a single conversion path"
+  ],
+  "cannibalizationGuidance": [
+   "Point the home page at \"Metal Roofing Rochester\" and make the head service page a supporting overview, or drop the separate service page entirely."
+  ],
+  "visualAssets": [
+   "roof profile photography",
+   "material samples",
+   "drone project shots",
+   "installation sequence"
+  ],
+  "localSignalsAvailable": [
+   "population profile",
+   "household income profile",
+   "measured competitor content depth (~944 words)"
+  ],
+  "localSignalsMissing": [
+   "surrounding service areas",
+   "verified landmarks / climate / local regulation / local pricing evidence (not collected — must not be fabricated at build time)"
+  ],
+  "doNotFabricate": "Local facts (landmarks, climate, regulations, pricing) were NOT collected. Build pages only from evidence in this spec or verified at build time — never invent local claims."
+ },
+ "serpToBeat": {
+  "organicScore": 20,
+  "organicVerdict": "ORGANIC-BRUTAL",
+  "organicVersion": "organic-v1.2",
+  "dimensionA": 76,
+  "top5": [
+   "1. stevegentryconstruction.com [local-specialist]",
+   "2. priorityconstructionservices.com [local-specialist]",
+   "3. reddit.com [directory]",
+   "4. eriehome.com [national-brand]",
+   "5. collins-mrc.com [local-specialist]"
+  ],
+  "structure": {
+   "distinctHostsTop5": 5,
+   "displaceableTop5": 1,
+   "hardLocalTop3": 2,
+   "geoTargetedCompetitorsTop5": 4
+  },
+  "intentClass": "LOCAL_COMMERCIAL",
+  "localPack": {
+   "mapPackSize": 3,
+   "avgReviews": 43,
+   "note": "market evidence only"
+  }
+ },
+ "economics": {
+  "note": "ALL HUMAN_ASSUMED until live data replaces them. Never present these as measured.",
+  "ticketAssumed": 25000,
+  "marginAssumed": 0.35,
+  "leadValueAssumedUsd": 875,
+  "modelledMonthlyGpUsd": null,
+  "recommendedMonetizationModel": "per-lead",
+  "viableRenters": 2,
+  "demandState": "MEASURED_UPPER_BOUND",
+  "measuredVolume": 110,
+  "volumeState": "measured-upper-bound-shared-city-name",
+  "costBasis": {
+   "domainFirstYearUsd": 12.18,
+   "contentUsd": 8,
+   "deployUsd": 5,
+   "monthlyUsd": 1.5
+  }
+ },
+ "outcomeContract": {
+  "endpoint": "POST {rankrentos}/api/outcomes  (Authorization: Bearer <HANDOFF_TOKEN>)",
+  "joinKey": "experimentId",
+  "metrics": [
+   "asset.published.date",
+   "asset.indexed.date",
+   "asset.firstimpression.date",
+   "asset.firstrank.date",
+   "asset.firstlead.date",
+   "asset.firstrevenue.date",
+   "asset.rank.check",
+   "asset.impressions.count",
+   "asset.clicks.count",
+   "asset.sessions.count",
+   "asset.calls.count",
+   "asset.forms.count",
+   "asset.leads.count",
+   "asset.leads.qualified",
+   "asset.leadvalue.realized",
+   "asset.renter.outreach",
+   "asset.renter.responses",
+   "asset.renter.acquired",
+   "asset.rent.monthly",
+   "asset.revenue.total",
+   "asset.cost.operating"
+  ],
+  "rankingCadence": "weekly from publishDate through week 12, then fortnightly through week 26",
+  "queriesToTrack": {
+   "primary": "1 — the exact service+geography query the asset targets",
+   "secondary": "2-4 close variants",
+   "communityModified": "community assets only: community-name and service+community queries",
+   "unpredicted": "any query Search Console reports impressions for that no keyword tool predicted — the direct test of hyper-local under-measurement"
+  },
+  "nullRule": "UNKNOWN is never zero. Do not post a metric you did not measure; for a rank check where the site is absent from the top 100, post position 'notFound' — never 101 or 0."
+ },
+ "provenance": {
+  "experiment": "experiment-3",
+  "rawSerp": "out/experiment-3/raw/serp-metal_roofing_Rochester_MN.json",
+  "scoreModel": "ai-v1.0.0"
+ }
+}

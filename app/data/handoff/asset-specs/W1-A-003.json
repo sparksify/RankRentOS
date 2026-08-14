@@ -1,0 +1,414 @@
+{
+ "specVersion": "asset-spec-2.0.0",
+ "generatedAt": "2026-08-14T22:56:15.600Z",
+ "frozenBaseline": "2026-08-12",
+ "experimentId": "W1-A-003",
+ "identity": {
+  "service": "Window Replacement",
+  "serviceSlug": "window-replacement",
+  "geography": "Temecula",
+  "state": "CA",
+  "geographyType": "city",
+  "parentCity": null,
+  "cohort": "A-EXPLOITATION",
+  "treatment": "standalone-city-site",
+  "matchedPairId": null,
+  "matchedWith": null
+ },
+ "decision": {
+  "classification": "REVENUE_CANDIDATE",
+  "gates": {
+   "demand": "PASS",
+   "capturability": "PASS",
+   "renterDepth": "PASS",
+   "economics": "PASS"
+  },
+  "prePurchaseGate": "PASS_WITH_WARNING",
+  "hypothesis": "An asset with real economics AND a beatable organic SERP should rank and rent. A=49 vs organic=58; where they disagree this asset also contributes model-validation evidence.",
+  "successCondition": "top-10 organic for the primary query within 6 months AND >=1 inbound lead within 9 months.",
+  "failureCondition": "no top-20 within 6 months, OR top-10 with zero leads after 3 further months (which falsifies demand, not rankability)."
+ },
+ "build": {
+  "assetType": "standalone-site",
+  "domain": "windowreplacementtemecula.com",
+  "urlArchitecture": "windowreplacementtemecula.com (root targets the city+service query)",
+  "domainStatus": "verified-available-at-freeze — RE-CHECK AND PURCHASE BEFORE BUILD",
+  "contentDirective": "SERP-derived, not a fixed word count: this is a commercial service query, so the deployment engine should build a commercial service/location experience benchmarked against the observed content bar, not a long informational article.",
+  "primaryKeyword": "Window Replacement Temecula",
+  "contentBarWords": 672,
+  "competitorDomainAgeYears": 16.1,
+  "siteMap": {
+   "path": "/",
+   "label": "Window Replacement — Temecula",
+   "kind": "home",
+   "children": [
+    {
+     "path": "/services/",
+     "label": "Services",
+     "kind": "service",
+     "children": [
+      {
+       "path": "/services/window-replacement/",
+       "label": "Window Replacement",
+       "kind": "service"
+      },
+      {
+       "path": "/services/bathroom-remodeling/",
+       "label": "Bathroom Remodeling",
+       "kind": "service"
+      },
+      {
+       "path": "/services/kitchen-remodeling/",
+       "label": "Kitchen Remodeling",
+       "kind": "service"
+      },
+      {
+       "path": "/services/water-damage-restoration/",
+       "label": "Water Damage Restoration",
+       "kind": "service"
+      }
+     ]
+    },
+    {
+     "path": "/areas/",
+     "label": "Service Areas",
+     "kind": "area",
+     "children": [
+      {
+       "path": "/areas/irvine/",
+       "label": "Irvine",
+       "kind": "area",
+       "children": [
+        {
+         "path": "/areas/irvine/window-replacement/",
+         "label": "Window Replacement in Irvine",
+         "kind": "service-area"
+        },
+        {
+         "path": "/areas/irvine/bathroom-remodeling/",
+         "label": "Bathroom Remodeling in Irvine",
+         "kind": "service-area"
+        },
+        {
+         "path": "/areas/irvine/kitchen-remodeling/",
+         "label": "Kitchen Remodeling in Irvine",
+         "kind": "service-area"
+        }
+       ]
+      },
+      {
+       "path": "/areas/hayward/",
+       "label": "Hayward",
+       "kind": "area",
+       "children": [
+        {
+         "path": "/areas/hayward/window-replacement/",
+         "label": "Window Replacement in Hayward",
+         "kind": "service-area"
+        },
+        {
+         "path": "/areas/hayward/bathroom-remodeling/",
+         "label": "Bathroom Remodeling in Hayward",
+         "kind": "service-area"
+        },
+        {
+         "path": "/areas/hayward/kitchen-remodeling/",
+         "label": "Kitchen Remodeling in Hayward",
+         "kind": "service-area"
+        }
+       ]
+      },
+      {
+       "path": "/areas/dublin/",
+       "label": "Dublin",
+       "kind": "area",
+       "children": [
+        {
+         "path": "/areas/dublin/window-replacement/",
+         "label": "Window Replacement in Dublin",
+         "kind": "service-area"
+        },
+        {
+         "path": "/areas/dublin/bathroom-remodeling/",
+         "label": "Bathroom Remodeling in Dublin",
+         "kind": "service-area"
+        },
+        {
+         "path": "/areas/dublin/kitchen-remodeling/",
+         "label": "Kitchen Remodeling in Dublin",
+         "kind": "service-area"
+        }
+       ]
+      },
+      {
+       "path": "/areas/pleasanton/",
+       "label": "Pleasanton",
+       "kind": "area",
+       "children": [
+        {
+         "path": "/areas/pleasanton/window-replacement/",
+         "label": "Window Replacement in Pleasanton",
+         "kind": "service-area"
+        },
+        {
+         "path": "/areas/pleasanton/bathroom-remodeling/",
+         "label": "Bathroom Remodeling in Pleasanton",
+         "kind": "service-area"
+        },
+        {
+         "path": "/areas/pleasanton/kitchen-remodeling/",
+         "label": "Kitchen Remodeling in Pleasanton",
+         "kind": "service-area"
+        }
+       ]
+      },
+      {
+       "path": "/areas/livermore/",
+       "label": "Livermore",
+       "kind": "area",
+       "children": [
+        {
+         "path": "/areas/livermore/window-replacement/",
+         "label": "Window Replacement in Livermore",
+         "kind": "service-area"
+        },
+        {
+         "path": "/areas/livermore/bathroom-remodeling/",
+         "label": "Bathroom Remodeling in Livermore",
+         "kind": "service-area"
+        },
+        {
+         "path": "/areas/livermore/kitchen-remodeling/",
+         "label": "Kitchen Remodeling in Livermore",
+         "kind": "service-area"
+        }
+       ]
+      },
+      {
+       "path": "/areas/berkeley/",
+       "label": "Berkeley",
+       "kind": "area",
+       "children": [
+        {
+         "path": "/areas/berkeley/window-replacement/",
+         "label": "Window Replacement in Berkeley",
+         "kind": "service-area"
+        },
+        {
+         "path": "/areas/berkeley/bathroom-remodeling/",
+         "label": "Bathroom Remodeling in Berkeley",
+         "kind": "service-area"
+        },
+        {
+         "path": "/areas/berkeley/kitchen-remodeling/",
+         "label": "Kitchen Remodeling in Berkeley",
+         "kind": "service-area"
+        }
+       ]
+      },
+      {
+       "path": "/areas/roseville/",
+       "label": "Roseville",
+       "kind": "area",
+       "children": [
+        {
+         "path": "/areas/roseville/window-replacement/",
+         "label": "Window Replacement in Roseville",
+         "kind": "service-area"
+        },
+        {
+         "path": "/areas/roseville/bathroom-remodeling/",
+         "label": "Bathroom Remodeling in Roseville",
+         "kind": "service-area"
+        },
+        {
+         "path": "/areas/roseville/kitchen-remodeling/",
+         "label": "Kitchen Remodeling in Roseville",
+         "kind": "service-area"
+        }
+       ]
+      },
+      {
+       "path": "/areas/westminster/",
+       "label": "Westminster",
+       "kind": "area",
+       "children": [
+        {
+         "path": "/areas/westminster/window-replacement/",
+         "label": "Window Replacement in Westminster",
+         "kind": "service-area"
+        },
+        {
+         "path": "/areas/westminster/bathroom-remodeling/",
+         "label": "Bathroom Remodeling in Westminster",
+         "kind": "service-area"
+        },
+        {
+         "path": "/areas/westminster/kitchen-remodeling/",
+         "label": "Kitchen Remodeling in Westminster",
+         "kind": "service-area"
+        }
+       ]
+      },
+      {
+       "path": "/areas/lakewood/",
+       "label": "Lakewood",
+       "kind": "area",
+       "children": [
+        {
+         "path": "/areas/lakewood/window-replacement/",
+         "label": "Window Replacement in Lakewood",
+         "kind": "service-area"
+        },
+        {
+         "path": "/areas/lakewood/bathroom-remodeling/",
+         "label": "Bathroom Remodeling in Lakewood",
+         "kind": "service-area"
+        },
+        {
+         "path": "/areas/lakewood/kitchen-remodeling/",
+         "label": "Kitchen Remodeling in Lakewood",
+         "kind": "service-area"
+        }
+       ]
+      },
+      {
+       "path": "/areas/fairfield/",
+       "label": "Fairfield",
+       "kind": "area",
+       "children": [
+        {
+         "path": "/areas/fairfield/window-replacement/",
+         "label": "Window Replacement in Fairfield",
+         "kind": "service-area"
+        },
+        {
+         "path": "/areas/fairfield/bathroom-remodeling/",
+         "label": "Bathroom Remodeling in Fairfield",
+         "kind": "service-area"
+        },
+        {
+         "path": "/areas/fairfield/kitchen-remodeling/",
+         "label": "Kitchen Remodeling in Fairfield",
+         "kind": "service-area"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "estimatedPages": 45,
+  "internalLinking": [
+   "Home links to every service page and the top service areas",
+   "Each service page links to its Service × Area variants",
+   "Area pages cross-link to sibling areas to distribute authority",
+   "Every commercial page links back to a single conversion path"
+  ],
+  "cannibalizationGuidance": [
+   "Point the home page at \"Window Replacement Temecula\" and make the head service page a supporting overview, or drop the separate service page entirely.",
+   "Planned page count materially exceeds the number of distinct search intents — build the intents that exist rather than filling a template."
+  ],
+  "visualAssets": [
+   "before/after facade",
+   "product cutaway diagrams",
+   "installation process",
+   "energy-efficiency graphics"
+  ],
+  "localSignalsAvailable": [
+   "10 named surrounding areas",
+   "population profile",
+   "household income profile",
+   "measured competitor content depth (~672 words)"
+  ],
+  "localSignalsMissing": [
+   "verified landmarks / climate / local regulation / local pricing evidence (not collected — must not be fabricated at build time)"
+  ],
+  "doNotFabricate": "Local facts (landmarks, climate, regulations, pricing) were NOT collected. Build pages only from evidence in this spec or verified at build time — never invent local claims."
+ },
+ "serpToBeat": {
+  "organicScore": 58,
+  "organicVerdict": "ORGANIC-CONTESTED",
+  "organicVersion": "organic-v1.2",
+  "dimensionA": 49,
+  "top5": [
+   "1. yelp.com [directory]",
+   "2. temeculawindowrepair.com [local-specialist]",
+   "3. reddit.com [directory]",
+   "4. temeculaglass.com [adjacent-not-this-service]",
+   "5. lowestpriceautoglass.net [local-specialist]"
+  ],
+  "structure": {
+   "distinctHostsTop5": 5,
+   "displaceableTop5": 3,
+   "hardLocalTop3": 1,
+   "geoTargetedCompetitorsTop5": 2
+  },
+  "intentClass": "LOCAL_COMMERCIAL",
+  "localPack": {
+   "mapPackSize": 3,
+   "avgReviews": 1152,
+   "note": "market evidence only — excluded from organic scoring"
+  }
+ },
+ "economics": {
+  "note": "ALL HUMAN_ASSUMED until live data replaces them. Never present these as measured.",
+  "ticketAssumed": 12000,
+  "marginAssumed": 0.35,
+  "leadValueAssumedUsd": 420,
+  "modelledMonthlyGpUsd": 2117,
+  "recommendedMonetizationModel": "per-lead",
+  "viableRenters": 3,
+  "demandState": "MEASURED_LOCAL",
+  "measuredVolume": 140,
+  "volumeState": "measured",
+  "costBasis": {
+   "domainFirstYearUsd": 12.18,
+   "contentUsd": 8,
+   "deployUsd": 5,
+   "monthlyUsd": 1.5
+  }
+ },
+ "outcomeContract": {
+  "endpoint": "POST {rankrentos}/api/outcomes  (Authorization: Bearer <HANDOFF_TOKEN>)",
+  "joinKey": "experimentId",
+  "metrics": [
+   "asset.published.date",
+   "asset.indexed.date",
+   "asset.firstimpression.date",
+   "asset.firstrank.date",
+   "asset.firstlead.date",
+   "asset.firstrevenue.date",
+   "asset.rank.check",
+   "asset.impressions.count",
+   "asset.clicks.count",
+   "asset.sessions.count",
+   "asset.calls.count",
+   "asset.forms.count",
+   "asset.leads.count",
+   "asset.leads.qualified",
+   "asset.leadvalue.realized",
+   "asset.renter.outreach",
+   "asset.renter.responses",
+   "asset.renter.acquired",
+   "asset.rent.monthly",
+   "asset.revenue.total",
+   "asset.cost.operating"
+  ],
+  "rankingCadence": "weekly from publishDate through week 12, then fortnightly through week 26",
+  "queriesToTrack": {
+   "primary": "1 — the exact service+geography query the asset targets",
+   "secondary": "2-4 close variants",
+   "communityModified": "community assets only: community-name and service+community queries",
+   "unpredicted": "any query Search Console reports impressions for that no keyword tool predicted — the direct test of hyper-local under-measurement"
+  },
+  "nullRule": "UNKNOWN is never zero. Do not post a metric you did not measure; for a rank check where the site is absent from the top 100, post position 'notFound' — never 101 or 0."
+ },
+ "provenance": {
+  "experiment": "experiment-3",
+  "rawSerp": "out/experiment-3/raw/serp-window_replacement_Temecula_CA.json",
+  "scoreModel": "ai-v1.0.0",
+  "weights": "w-balanced-v1.1",
+  "buckets": "buckets-1.1.0"
+ }
+}

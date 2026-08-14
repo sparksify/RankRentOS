@@ -1,0 +1,212 @@
+{
+ "specVersion": "asset-spec-2.0.0",
+ "generatedAt": "2026-08-14T22:56:15.601Z",
+ "frozenBaseline": "2026-08-12",
+ "experimentId": "W1-B3-003",
+ "identity": {
+  "service": "Pool Builder",
+  "serviceSlug": "pool-builder",
+  "geography": "Prosper",
+  "state": "TX",
+  "geographyType": "city-control",
+  "parentCity": null,
+  "cohort": "B3-CITY-CONTROL",
+  "treatment": "control-standalone-city-site",
+  "matchedPairId": null,
+  "matchedWith": null
+ },
+ "decision": {
+  "classification": "EXPERIMENTAL",
+  "gates": {
+   "demand": "FAIL",
+   "capturability": "FAIL",
+   "renterDepth": "PASS",
+   "economics": "PASS"
+  },
+  "prePurchaseGate": "PASS_WITH_WARNING",
+  "hypothesis": "If impressions track measured volume across the gradient, keyword tools are accurate and the community bet fails. If Prosper and the community assets over-perform their measured volume, the tools systematically under-measure hyper-local demand.",
+  "successCondition": "n/a — control; judged only as a calibration reference for the community assets.",
+  "failureCondition": "n/a — control."
+ },
+ "build": {
+  "assetType": "standalone-site",
+  "domain": "poolbuilderprospertx.com",
+  "urlArchitecture": "poolbuilderprospertx.com (root targets the city query)",
+  "domainStatus": "verified-available-at-freeze — RE-CHECK AND PURCHASE BEFORE BUILD",
+  "contentDirective": "same specification as the community assets so the control is comparable",
+  "primaryKeyword": "Pool Builder Prosper",
+  "contentBarWords": null,
+  "competitorDomainAgeYears": null,
+  "siteMap": {
+   "path": "/",
+   "label": "Pool Builder — Prosper",
+   "kind": "home",
+   "children": [
+    {
+     "path": "/services/",
+     "label": "Services",
+     "kind": "service",
+     "children": [
+      {
+       "path": "/services/pool-builder/",
+       "label": "Pool Builder",
+       "kind": "service"
+      }
+     ]
+    },
+    {
+     "path": "/areas/",
+     "label": "Service Areas",
+     "kind": "area",
+     "children": [
+      {
+       "path": "/areas/frisco/",
+       "label": "Frisco",
+       "kind": "area",
+       "children": [
+        {
+         "path": "/areas/frisco/pool-builder/",
+         "label": "Pool Builder in Frisco",
+         "kind": "service-area"
+        }
+       ]
+      },
+      {
+       "path": "/areas/mckinney/",
+       "label": "Mckinney",
+       "kind": "area",
+       "children": [
+        {
+         "path": "/areas/mckinney/pool-builder/",
+         "label": "Pool Builder in Mckinney",
+         "kind": "service-area"
+        }
+       ]
+      },
+      {
+       "path": "/areas/plano/",
+       "label": "Plano",
+       "kind": "area",
+       "children": [
+        {
+         "path": "/areas/plano/pool-builder/",
+         "label": "Pool Builder in Plano",
+         "kind": "service-area"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "estimatedPages": 8,
+  "internalLinking": [
+   "Home links to every service page and the top service areas",
+   "Each service page links to its Service × Area variants",
+   "Area pages cross-link to sibling areas to distribute authority",
+   "Every commercial page links back to a single conversion path"
+  ],
+  "cannibalizationGuidance": [
+   "Point the home page at \"Pool Builder Prosper\" and make the head service page a supporting overview, or drop the separate service page entirely.",
+   "Planned page count materially exceeds the number of distinct search intents — build the intents that exist rather than filling a template."
+  ],
+  "visualAssets": [
+   "completed pool photography",
+   "before/after backyard transformations",
+   "3D design renders",
+   "construction-process sequence",
+   "lighting/night shots"
+  ],
+  "localSignalsAvailable": [
+   "3 named surrounding areas",
+   "measured competitor content depth (~655 words)"
+  ],
+  "localSignalsMissing": [
+   "population profile",
+   "household income profile",
+   "verified landmarks / climate / local regulation / local pricing evidence (not collected — must not be fabricated at build time)"
+  ],
+  "doNotFabricate": "Local facts (landmarks, climate, regulations, pricing) were NOT collected. Build pages only from evidence in this spec or verified at build time — never invent local claims."
+ },
+ "serpToBeat": {
+  "organicScore": 36,
+  "organicVerdict": "ORGANIC-BRUTAL",
+  "organicVersion": "organic-v1.2",
+  "dimensionA": null,
+  "top5": [
+   "1. riverbendsandler.com [local-specialist]",
+   "2. canyonoakpools.com [local-specialist]",
+   "3. prestigepp.com [local-specialist]",
+   "4. facebook.com [directory]",
+   "5. houzz.com [directory]"
+  ],
+  "structure": {
+   "distinctHostsTop5": 5,
+   "displaceableTop5": 2,
+   "hardLocalTop3": 3,
+   "geoTargetedCompetitorsTop5": 3
+  },
+  "intentClass": "LOCAL_COMMERCIAL",
+  "localPack": {
+   "mapPackSize": 3,
+   "avgReviews": 295,
+   "note": "market evidence only"
+  }
+ },
+ "economics": {
+  "note": "ALL HUMAN_ASSUMED until live data replaces them. Never present these as measured.",
+  "ticketAssumed": 85000,
+  "marginAssumed": 0.25,
+  "leadValueAssumedUsd": 2125,
+  "modelledMonthlyGpUsd": 510,
+  "recommendedMonetizationModel": "per-lead (long sales cycle makes flat rent hard to justify before the renter sees ROI)",
+  "viableRenters": 3,
+  "demandState": "MEASURED_LOCAL",
+  "measuredVolume": 10,
+  "volumeState": "measured",
+  "costBasis": {
+   "domainFirstYearUsd": 12.18,
+   "contentUsd": 8,
+   "deployUsd": 5,
+   "monthlyUsd": 1.5
+  }
+ },
+ "outcomeContract": {
+  "endpoint": "POST {rankrentos}/api/outcomes  (Authorization: Bearer <HANDOFF_TOKEN>)",
+  "joinKey": "experimentId",
+  "metrics": [
+   "asset.published.date",
+   "asset.indexed.date",
+   "asset.firstimpression.date",
+   "asset.firstrank.date",
+   "asset.firstlead.date",
+   "asset.firstrevenue.date",
+   "asset.rank.check",
+   "asset.impressions.count",
+   "asset.clicks.count",
+   "asset.sessions.count",
+   "asset.calls.count",
+   "asset.forms.count",
+   "asset.leads.count",
+   "asset.leads.qualified",
+   "asset.leadvalue.realized",
+   "asset.renter.outreach",
+   "asset.renter.responses",
+   "asset.renter.acquired",
+   "asset.rent.monthly",
+   "asset.revenue.total",
+   "asset.cost.operating"
+  ],
+  "rankingCadence": "weekly from publishDate through week 12, then fortnightly through week 26",
+  "queriesToTrack": {
+   "primary": "1 — the exact service+geography query the asset targets",
+   "secondary": "2-4 close variants",
+   "communityModified": "community assets only: community-name and service+community queries",
+   "unpredicted": "any query Search Console reports impressions for that no keyword tool predicted — the direct test of hyper-local under-measurement"
+  },
+  "nullRule": "UNKNOWN is never zero. Do not post a metric you did not measure; for a rank check where the site is absent from the top 100, post position 'notFound' — never 101 or 0."
+ },
+ "provenance": {
+  "rawSerp": "out/wave-1-experiment/raw/serp-pool_builder_Prosper_TX.json"
+ }
+}

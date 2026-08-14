@@ -1,0 +1,232 @@
+{
+ "specVersion": "asset-spec-2.0.0",
+ "generatedAt": "2026-08-14T22:56:15.600Z",
+ "frozenBaseline": "2026-08-12",
+ "experimentId": "W1-B2-002",
+ "identity": {
+  "service": "Pool Builder",
+  "serviceSlug": "pool-builder",
+  "geography": "Legacy Gardens",
+  "state": "TX",
+  "geographyType": "master-planned-community",
+  "parentCity": "Prosper",
+  "cohort": "B2-NTX-REGIONAL-HUB",
+  "treatment": "TREATMENT-H-page-on-regional-hub",
+  "matchedPairId": "NTX-P1",
+  "matchedWith": "Sutton Fields"
+ },
+ "decision": {
+  "classification": "EXPERIMENTAL",
+  "gates": {
+   "demand": "UNKNOWN",
+   "capturability": "PASS",
+   "renterDepth": "PASS",
+   "economics": "UNKNOWN"
+  },
+  "prePurchaseGate": "PASS_WITH_WARNING",
+  "hypothesis": "Same demand hypothesis as its pair Sutton Fields, but delivered as a page on a regional authority domain. Tests whether shared site-level authority and internal linking outrank a dedicated hyperlocal domain — or whether exact-match hyperlocal focus wins.",
+  "successCondition": ">=100 impressions/month on community-modified queries within 6 months, OR >=1 qualified lead. Architecture comparison is judged on WITHIN-PAIR difference in time-to-first-impression, time-to-top-20 and impressions at 6 months.",
+  "failureCondition": "indexed but <20 impressions/month after 6 months across ALL community-modified queries while city controls perform in line with measured volume — falsifies hyper-local under-measurement. Architecture verdict is void if fewer than 4 of 6 pairs produce interpretable data."
+ },
+ "build": {
+  "assetType": "hub-page",
+  "domain": "poolbuildersnorthtexas.com",
+  "urlArchitecture": "poolbuildersnorthtexas.com/legacy-gardens/",
+  "domainStatus": "verified-available-at-freeze — RE-CHECK AND PURCHASE BEFORE BUILD",
+  "contentDirective": "Identical specification across BOTH treatments: same visual quality, conversion architecture, topical coverage, schema, publishing window, indexing workflow and tracking. Only the architecture differs.",
+  "primaryKeyword": "Pool Builder Legacy Gardens",
+  "contentBarWords": null,
+  "competitorDomainAgeYears": null,
+  "siteMap": {
+   "path": "/",
+   "label": "Pool Builder — Legacy Gardens",
+   "kind": "home",
+   "children": [
+    {
+     "path": "/services/",
+     "label": "Services",
+     "kind": "service",
+     "children": [
+      {
+       "path": "/services/pool-builder/",
+       "label": "Pool Builder",
+       "kind": "service"
+      }
+     ]
+    },
+    {
+     "path": "/areas/",
+     "label": "Service Areas",
+     "kind": "area",
+     "children": [
+      {
+       "path": "/areas/windsong-ranch/",
+       "label": "Windsong Ranch",
+       "kind": "area",
+       "children": [
+        {
+         "path": "/areas/windsong-ranch/pool-builder/",
+         "label": "Pool Builder in Windsong Ranch",
+         "kind": "service-area"
+        }
+       ]
+      },
+      {
+       "path": "/areas/star-trail/",
+       "label": "Star Trail",
+       "kind": "area",
+       "children": [
+        {
+         "path": "/areas/star-trail/pool-builder/",
+         "label": "Pool Builder in Star Trail",
+         "kind": "service-area"
+        }
+       ]
+      },
+      {
+       "path": "/areas/whitley-place/",
+       "label": "Whitley Place",
+       "kind": "area",
+       "children": [
+        {
+         "path": "/areas/whitley-place/pool-builder/",
+         "label": "Pool Builder in Whitley Place",
+         "kind": "service-area"
+        }
+       ]
+      },
+      {
+       "path": "/areas/the-preserve/",
+       "label": "The Preserve",
+       "kind": "area",
+       "children": [
+        {
+         "path": "/areas/the-preserve/pool-builder/",
+         "label": "Pool Builder in The Preserve",
+         "kind": "service-area"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "estimatedPages": 10,
+  "internalLinking": [
+   "Home links to every service page and the top service areas",
+   "Each service page links to its Service × Area variants",
+   "Area pages cross-link to sibling areas to distribute authority",
+   "Every commercial page links back to a single conversion path"
+  ],
+  "cannibalizationGuidance": [
+   "Point the home page at \"Pool Builder Legacy Gardens\" and make the head service page a supporting overview, or drop the separate service page entirely.",
+   "Planned page count materially exceeds the number of distinct search intents — build the intents that exist rather than filling a template."
+  ],
+  "visualAssets": [
+   "completed pool photography",
+   "before/after backyard transformations",
+   "3D design renders",
+   "construction-process sequence",
+   "lighting/night shots"
+  ],
+  "localSignalsAvailable": [
+   "4 named surrounding areas",
+   "community housing scale (~400 homes)"
+  ],
+  "localSignalsMissing": [
+   "population profile",
+   "household income profile",
+   "competitor content depth",
+   "verified landmarks / climate / local regulation / local pricing evidence (not collected — must not be fabricated at build time)"
+  ],
+  "doNotFabricate": "Local facts (landmarks, climate, regulations, pricing) were NOT collected. Build pages only from evidence in this spec or verified at build time — never invent local claims."
+ },
+ "serpToBeat": {
+  "organicScore": 79,
+  "organicVerdict": "ORGANIC-VIABLE",
+  "organicVersion": "organic-v1.2",
+  "dimensionA": null,
+  "top5": [
+   "1. rislandhomes.com [adjacent-not-this-service]",
+   "2. foleypools.com [local-specialist]",
+   "3. homes.com [adjacent-not-this-service]",
+   "4. rislandus.com [adjacent-not-this-service]",
+   "5. youtube.com [social]"
+  ],
+  "structure": {
+   "distinctHostsTop5": 5,
+   "displaceableTop5": 4,
+   "hardLocalTop3": 1,
+   "geoTargetedCompetitorsTop5": 0
+  },
+  "intentClass": "MIXED_COMMERCIAL",
+  "localPack": {
+   "note": "map pack inherited from the parent city; Google renders no distinct community pack, so this asset must win ORGANIC"
+  }
+ },
+ "economics": {
+  "note": "ALL HUMAN_ASSUMED until live data replaces them. Never present these as measured.",
+  "ticketAssumed": 85000,
+  "marginAssumed": 0.25,
+  "leadValueAssumedUsd": 2125,
+  "modelledMonthlyGpUsd": null,
+  "recommendedMonetizationModel": "per-lead (long sales cycle makes flat rent hard to justify before the renter sees ROI)",
+  "viableRenters": 3,
+  "demandState": "UNKNOWN",
+  "measuredVolume": 0,
+  "volumeState": "provider-reports-zero — THE HYPOTHESIS UNDER TEST, not a validated demand figure",
+  "costBasis": {
+   "domainFirstYearUsd": 0,
+   "contentUsd": 8,
+   "deployUsd": 5,
+   "monthlyUsd": 0.5
+  }
+ },
+ "outcomeContract": {
+  "endpoint": "POST {rankrentos}/api/outcomes  (Authorization: Bearer <HANDOFF_TOKEN>)",
+  "joinKey": "experimentId",
+  "metrics": [
+   "asset.published.date",
+   "asset.indexed.date",
+   "asset.firstimpression.date",
+   "asset.firstrank.date",
+   "asset.firstlead.date",
+   "asset.firstrevenue.date",
+   "asset.rank.check",
+   "asset.impressions.count",
+   "asset.clicks.count",
+   "asset.sessions.count",
+   "asset.calls.count",
+   "asset.forms.count",
+   "asset.leads.count",
+   "asset.leads.qualified",
+   "asset.leadvalue.realized",
+   "asset.renter.outreach",
+   "asset.renter.responses",
+   "asset.renter.acquired",
+   "asset.rent.monthly",
+   "asset.revenue.total",
+   "asset.cost.operating"
+  ],
+  "rankingCadence": "weekly from publishDate through week 12, then fortnightly through week 26",
+  "queriesToTrack": {
+   "primary": "1 — the exact service+geography query the asset targets",
+   "secondary": "2-4 close variants",
+   "communityModified": "community assets only: community-name and service+community queries",
+   "unpredicted": "any query Search Console reports impressions for that no keyword tool predicted — the direct test of hyper-local under-measurement"
+  },
+  "nullRule": "UNKNOWN is never zero. Do not post a metric you did not measure; for a rank check where the site is absent from the top 100, post position 'notFound' — never 101 or 0."
+ },
+ "provenance": {
+  "rawSerp": "out/wave-1-experiment/raw/serp-pool_builder_Legacy_Gardens_TX.json",
+  "serviceSelection": "out/wave-1-experiment/nt-service-ranking.json",
+  "communityMeta": {
+   "name": "Legacy Gardens",
+   "city": "Prosper",
+   "state": "TX",
+   "homes": 400,
+   "status": "active-buildout",
+   "note": "luxury custom, large lots"
+  }
+ }
+}

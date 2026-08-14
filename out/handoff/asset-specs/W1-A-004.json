@@ -1,0 +1,282 @@
+{
+ "specVersion": "asset-spec-2.0.0",
+ "generatedAt": "2026-08-14T22:56:15.600Z",
+ "frozenBaseline": "2026-08-12",
+ "experimentId": "W1-A-004",
+ "identity": {
+  "service": "Window Replacement",
+  "serviceSlug": "window-replacement",
+  "geography": "Vancouver",
+  "state": "WA",
+  "geographyType": "city",
+  "parentCity": null,
+  "cohort": "A-EXPLOITATION",
+  "treatment": "standalone-city-site",
+  "matchedPairId": null,
+  "matchedWith": null
+ },
+ "decision": {
+  "classification": "REVENUE_CANDIDATE",
+  "gates": {
+   "demand": "PASS",
+   "capturability": "PASS",
+   "renterDepth": "PASS",
+   "economics": "PASS"
+  },
+  "prePurchaseGate": "PASS_WITH_WARNING",
+  "hypothesis": "An asset with real economics AND a beatable organic SERP should rank and rent. A=57 vs organic=57; where they disagree this asset also contributes model-validation evidence.",
+  "successCondition": "top-10 organic for the primary query within 6 months AND >=1 inbound lead within 9 months.",
+  "failureCondition": "no top-20 within 6 months, OR top-10 with zero leads after 3 further months (which falsifies demand, not rankability)."
+ },
+ "build": {
+  "assetType": "standalone-site",
+  "domain": "windowreplacementvancouverwa.com",
+  "urlArchitecture": "windowreplacementvancouverwa.com (root targets the city+service query)",
+  "domainStatus": "verified-available-at-freeze — RE-CHECK AND PURCHASE BEFORE BUILD",
+  "contentDirective": "SERP-derived, not a fixed word count: this is a commercial service query, so the deployment engine should build a commercial service/location experience benchmarked against the observed content bar, not a long informational article.",
+  "primaryKeyword": "Window Replacement Vancouver",
+  "contentBarWords": 2669,
+  "competitorDomainAgeYears": 28.5,
+  "siteMap": {
+   "path": "/",
+   "label": "Window Replacement — Vancouver",
+   "kind": "home",
+   "children": [
+    {
+     "path": "/services/",
+     "label": "Services",
+     "kind": "service",
+     "children": [
+      {
+       "path": "/services/window-replacement/",
+       "label": "Window Replacement",
+       "kind": "service"
+      },
+      {
+       "path": "/services/water-damage-restoration/",
+       "label": "Water Damage Restoration",
+       "kind": "service"
+      },
+      {
+       "path": "/services/kitchen-remodeling/",
+       "label": "Kitchen Remodeling",
+       "kind": "service"
+      },
+      {
+       "path": "/services/bathroom-remodeling/",
+       "label": "Bathroom Remodeling",
+       "kind": "service"
+      }
+     ]
+    },
+    {
+     "path": "/areas/",
+     "label": "Service Areas",
+     "kind": "area",
+     "children": [
+      {
+       "path": "/areas/bellevue/",
+       "label": "Bellevue",
+       "kind": "area",
+       "children": [
+        {
+         "path": "/areas/bellevue/window-replacement/",
+         "label": "Window Replacement in Bellevue",
+         "kind": "service-area"
+        },
+        {
+         "path": "/areas/bellevue/water-damage-restoration/",
+         "label": "Water Damage Restoration in Bellevue",
+         "kind": "service-area"
+        },
+        {
+         "path": "/areas/bellevue/kitchen-remodeling/",
+         "label": "Kitchen Remodeling in Bellevue",
+         "kind": "service-area"
+        }
+       ]
+      },
+      {
+       "path": "/areas/everett/",
+       "label": "Everett",
+       "kind": "area",
+       "children": [
+        {
+         "path": "/areas/everett/window-replacement/",
+         "label": "Window Replacement in Everett",
+         "kind": "service-area"
+        },
+        {
+         "path": "/areas/everett/water-damage-restoration/",
+         "label": "Water Damage Restoration in Everett",
+         "kind": "service-area"
+        },
+        {
+         "path": "/areas/everett/kitchen-remodeling/",
+         "label": "Kitchen Remodeling in Everett",
+         "kind": "service-area"
+        }
+       ]
+      },
+      {
+       "path": "/areas/lakewood/",
+       "label": "Lakewood",
+       "kind": "area",
+       "children": [
+        {
+         "path": "/areas/lakewood/window-replacement/",
+         "label": "Window Replacement in Lakewood",
+         "kind": "service-area"
+        },
+        {
+         "path": "/areas/lakewood/water-damage-restoration/",
+         "label": "Water Damage Restoration in Lakewood",
+         "kind": "service-area"
+        },
+        {
+         "path": "/areas/lakewood/kitchen-remodeling/",
+         "label": "Kitchen Remodeling in Lakewood",
+         "kind": "service-area"
+        }
+       ]
+      },
+      {
+       "path": "/areas/kennewick/",
+       "label": "Kennewick",
+       "kind": "area",
+       "children": [
+        {
+         "path": "/areas/kennewick/window-replacement/",
+         "label": "Window Replacement in Kennewick",
+         "kind": "service-area"
+        },
+        {
+         "path": "/areas/kennewick/water-damage-restoration/",
+         "label": "Water Damage Restoration in Kennewick",
+         "kind": "service-area"
+        },
+        {
+         "path": "/areas/kennewick/kitchen-remodeling/",
+         "label": "Kitchen Remodeling in Kennewick",
+         "kind": "service-area"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "estimatedPages": 21,
+  "internalLinking": [
+   "Home links to every service page and the top service areas",
+   "Each service page links to its Service × Area variants",
+   "Area pages cross-link to sibling areas to distribute authority",
+   "Every commercial page links back to a single conversion path"
+  ],
+  "cannibalizationGuidance": [
+   "Point the home page at \"Window Replacement Vancouver\" and make the head service page a supporting overview, or drop the separate service page entirely.",
+   "Planned page count materially exceeds the number of distinct search intents — build the intents that exist rather than filling a template."
+  ],
+  "visualAssets": [
+   "before/after facade",
+   "product cutaway diagrams",
+   "installation process",
+   "energy-efficiency graphics"
+  ],
+  "localSignalsAvailable": [
+   "4 named surrounding areas",
+   "population profile",
+   "household income profile",
+   "measured competitor content depth (~2669 words)"
+  ],
+  "localSignalsMissing": [
+   "verified landmarks / climate / local regulation / local pricing evidence (not collected — must not be fabricated at build time)"
+  ],
+  "doNotFabricate": "Local facts (landmarks, climate, regulations, pricing) were NOT collected. Build pages only from evidence in this spec or verified at build time — never invent local claims."
+ },
+ "serpToBeat": {
+  "organicScore": 57,
+  "organicVerdict": "ORGANIC-CONTESTED",
+  "organicVersion": "organic-v1.2",
+  "dimensionA": 57,
+  "top5": [
+   "1. homedepot.com [directory]",
+   "2. mrhandyman.com [franchise]",
+   "3. reddit.com [directory]",
+   "4. speedyglass.com [adjacent-not-this-service]",
+   "5. vancouverglass.com [adjacent-not-this-service]"
+  ],
+  "structure": {
+   "distinctHostsTop5": 5,
+   "displaceableTop5": 4,
+   "hardLocalTop3": 1,
+   "geoTargetedCompetitorsTop5": 1
+  },
+  "intentClass": "MIXED_COMMERCIAL",
+  "localPack": {
+   "mapPackSize": 3,
+   "avgReviews": 25,
+   "note": "market evidence only — excluded from organic scoring"
+  }
+ },
+ "economics": {
+  "note": "ALL HUMAN_ASSUMED until live data replaces them. Never present these as measured.",
+  "ticketAssumed": 12000,
+  "marginAssumed": 0.35,
+  "leadValueAssumedUsd": 420,
+  "modelledMonthlyGpUsd": 1663,
+  "recommendedMonetizationModel": "per-lead",
+  "viableRenters": 3,
+  "demandState": "MEASURED_LOCAL",
+  "measuredVolume": 110,
+  "volumeState": "measured",
+  "costBasis": {
+   "domainFirstYearUsd": 12.18,
+   "contentUsd": 8,
+   "deployUsd": 5,
+   "monthlyUsd": 1.5
+  }
+ },
+ "outcomeContract": {
+  "endpoint": "POST {rankrentos}/api/outcomes  (Authorization: Bearer <HANDOFF_TOKEN>)",
+  "joinKey": "experimentId",
+  "metrics": [
+   "asset.published.date",
+   "asset.indexed.date",
+   "asset.firstimpression.date",
+   "asset.firstrank.date",
+   "asset.firstlead.date",
+   "asset.firstrevenue.date",
+   "asset.rank.check",
+   "asset.impressions.count",
+   "asset.clicks.count",
+   "asset.sessions.count",
+   "asset.calls.count",
+   "asset.forms.count",
+   "asset.leads.count",
+   "asset.leads.qualified",
+   "asset.leadvalue.realized",
+   "asset.renter.outreach",
+   "asset.renter.responses",
+   "asset.renter.acquired",
+   "asset.rent.monthly",
+   "asset.revenue.total",
+   "asset.cost.operating"
+  ],
+  "rankingCadence": "weekly from publishDate through week 12, then fortnightly through week 26",
+  "queriesToTrack": {
+   "primary": "1 — the exact service+geography query the asset targets",
+   "secondary": "2-4 close variants",
+   "communityModified": "community assets only: community-name and service+community queries",
+   "unpredicted": "any query Search Console reports impressions for that no keyword tool predicted — the direct test of hyper-local under-measurement"
+  },
+  "nullRule": "UNKNOWN is never zero. Do not post a metric you did not measure; for a rank check where the site is absent from the top 100, post position 'notFound' — never 101 or 0."
+ },
+ "provenance": {
+  "experiment": "experiment-3",
+  "rawSerp": "out/experiment-3/raw/serp-window_replacement_Vancouver_WA.json",
+  "scoreModel": "ai-v1.0.0",
+  "weights": "w-balanced-v1.1",
+  "buckets": "buckets-1.1.0"
+ }
+}

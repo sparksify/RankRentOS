@@ -1,0 +1,184 @@
+{
+ "specVersion": "asset-spec-2.0.0",
+ "generatedAt": "2026-08-14T22:56:15.601Z",
+ "frozenBaseline": "2026-08-12",
+ "experimentId": "W1-C-003",
+ "identity": {
+  "service": "Bathroom Remodeling",
+  "serviceSlug": "bathroom-remodel",
+  "geography": "Bellevue",
+  "state": "NE",
+  "geographyType": "city",
+  "parentCity": null,
+  "cohort": "C-MODEL-VALIDATION",
+  "treatment": "standalone-city-site",
+  "matchedPairId": null,
+  "matchedWith": null
+ },
+ "decision": {
+  "classification": "EXPERIMENTAL",
+  "gates": {
+   "demand": "UNKNOWN",
+   "capturability": "PASS",
+   "renterDepth": "PASS",
+   "economics": "UNKNOWN"
+  },
+  "prePurchaseGate": "PASS",
+  "hypothesis": "Highest composite in the dataset (85, A=92) but organic-v1.1 only 58, and its 2,400/mo is shared with Bellevue WA. SERP verified local to NE. Tests both the model gap and whether shared-name volume is capturable.",
+  "successCondition": "Meaningful local impressions => shared-name markets are investable and should stop being discounted.",
+  "failureCondition": "Negligible impressions => shared-name volume must be excluded from scoring entirely."
+ },
+ "build": {
+  "assetType": "standalone-site",
+  "domain": "bathroomremodelingbellevuene.com",
+  "urlArchitecture": "bathroomremodelingbellevuene.com (root targets the city+service query)",
+  "domainStatus": "verified-available-at-freeze — RE-CHECK AND PURCHASE BEFORE BUILD",
+  "contentDirective": "SERP-derived commercial service page; identical build standard to Group A so the comparison is not confounded by build quality.",
+  "primaryKeyword": "Bathroom Remodeling Bellevue",
+  "contentBarWords": 208,
+  "competitorDomainAgeYears": 3.9,
+  "siteMap": {
+   "path": "/",
+   "label": "Bathroom Remodeling — Bellevue",
+   "kind": "home",
+   "children": [
+    {
+     "path": "/services/",
+     "label": "Services",
+     "kind": "service",
+     "children": [
+      {
+       "path": "/services/bathroom-remodeling/",
+       "label": "Bathroom Remodeling",
+       "kind": "service"
+      },
+      {
+       "path": "/services/kitchen-remodeling/",
+       "label": "Kitchen Remodeling",
+       "kind": "service"
+      },
+      {
+       "path": "/services/window-replacement/",
+       "label": "Window Replacement",
+       "kind": "service"
+      },
+      {
+       "path": "/services/water-damage-restoration/",
+       "label": "Water Damage Restoration",
+       "kind": "service"
+      }
+     ]
+    }
+   ]
+  },
+  "estimatedPages": 5,
+  "internalLinking": [
+   "Home links to every service page and the top service areas",
+   "Each service page links to its Service × Area variants",
+   "Area pages cross-link to sibling areas to distribute authority",
+   "Every commercial page links back to a single conversion path"
+  ],
+  "cannibalizationGuidance": [
+   "Point the home page at \"Bathroom Remodeling Bellevue\" and make the head service page a supporting overview, or drop the separate service page entirely."
+  ],
+  "visualAssets": [
+   "before/after bathrooms",
+   "tile and fixture detail",
+   "renders",
+   "process timeline"
+  ],
+  "localSignalsAvailable": [
+   "population profile",
+   "household income profile",
+   "measured competitor content depth (~208 words)"
+  ],
+  "localSignalsMissing": [
+   "surrounding service areas",
+   "verified landmarks / climate / local regulation / local pricing evidence (not collected — must not be fabricated at build time)"
+  ],
+  "doNotFabricate": "Local facts (landmarks, climate, regulations, pricing) were NOT collected. Build pages only from evidence in this spec or verified at build time — never invent local claims."
+ },
+ "serpToBeat": {
+  "organicScore": 58,
+  "organicVerdict": "ORGANIC-CONTESTED",
+  "organicVersion": "organic-v1.2",
+  "dimensionA": 92,
+  "top5": [
+   "1. thumbtack.com [directory]",
+   "2. bpbathrooms.com [local-specialist]",
+   "3. yelp.com [directory]",
+   "4. bunzandsonzconstruction.com [local-specialist]",
+   "5. newlookomaha.com [local-specialist]"
+  ],
+  "structure": {
+   "distinctHostsTop5": 5,
+   "displaceableTop5": 2,
+   "hardLocalTop3": 1,
+   "geoTargetedCompetitorsTop5": 3
+  },
+  "intentClass": "LOCAL_COMMERCIAL",
+  "localPack": {
+   "mapPackSize": 3,
+   "avgReviews": 60,
+   "note": "market evidence only"
+  }
+ },
+ "economics": {
+  "note": "ALL HUMAN_ASSUMED until live data replaces them. Never present these as measured.",
+  "ticketAssumed": 18000,
+  "marginAssumed": 0.32,
+  "leadValueAssumedUsd": 576,
+  "modelledMonthlyGpUsd": null,
+  "recommendedMonetizationModel": "per-lead",
+  "viableRenters": 3,
+  "demandState": "MEASURED_UPPER_BOUND",
+  "measuredVolume": 2400,
+  "volumeState": "measured-upper-bound-shared-city-name",
+  "costBasis": {
+   "domainFirstYearUsd": 12.18,
+   "contentUsd": 8,
+   "deployUsd": 5,
+   "monthlyUsd": 1.5
+  }
+ },
+ "outcomeContract": {
+  "endpoint": "POST {rankrentos}/api/outcomes  (Authorization: Bearer <HANDOFF_TOKEN>)",
+  "joinKey": "experimentId",
+  "metrics": [
+   "asset.published.date",
+   "asset.indexed.date",
+   "asset.firstimpression.date",
+   "asset.firstrank.date",
+   "asset.firstlead.date",
+   "asset.firstrevenue.date",
+   "asset.rank.check",
+   "asset.impressions.count",
+   "asset.clicks.count",
+   "asset.sessions.count",
+   "asset.calls.count",
+   "asset.forms.count",
+   "asset.leads.count",
+   "asset.leads.qualified",
+   "asset.leadvalue.realized",
+   "asset.renter.outreach",
+   "asset.renter.responses",
+   "asset.renter.acquired",
+   "asset.rent.monthly",
+   "asset.revenue.total",
+   "asset.cost.operating"
+  ],
+  "rankingCadence": "weekly from publishDate through week 12, then fortnightly through week 26",
+  "queriesToTrack": {
+   "primary": "1 — the exact service+geography query the asset targets",
+   "secondary": "2-4 close variants",
+   "communityModified": "community assets only: community-name and service+community queries",
+   "unpredicted": "any query Search Console reports impressions for that no keyword tool predicted — the direct test of hyper-local under-measurement"
+  },
+  "nullRule": "UNKNOWN is never zero. Do not post a metric you did not measure; for a rank check where the site is absent from the top 100, post position 'notFound' — never 101 or 0."
+ },
+ "provenance": {
+  "experiment": "experiment-3",
+  "rawSerp": "out/experiment-3/raw/serp-bathroom_remodel_Bellevue_NE.json",
+  "scoreModel": "ai-v1.0.0"
+ }
+}

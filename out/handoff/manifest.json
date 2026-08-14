@@ -1,0 +1,344 @@
+{
+ "specVersion": "asset-spec-2.0.0",
+ "generatedAt": "2026-08-14T22:56:15.601Z",
+ "frozenBaseline": "2026-08-12",
+ "decisionModel": "decision-v2.0.0",
+ "counts": {
+  "specs": 26,
+  "websites": 21,
+  "revenueCandidates": 5,
+  "experimental": 21
+ },
+ "hubDomain": "poolbuildersnorthtexas.com",
+ "matchedPairs": [
+  {
+   "id": "NTX-P1",
+   "s": "Sutton Fields",
+   "h": "Legacy Gardens",
+   "basis": "both VIRGIN, active-buildout, organic 82 vs 79 (Δ3) — the two strongest virgin communities"
+  },
+  {
+   "id": "NTX-P2",
+   "s": "Sandbrock Ranch",
+   "h": "Star Trail",
+   "basis": "both VIRGIN, active-buildout, organic 66 vs 67 (Δ1) and 1,400 vs 1,300 homes — the tightest match in the experiment"
+  },
+  {
+   "id": "NTX-P3",
+   "s": "Painted Tree",
+   "h": "Stonebridge Ranch",
+   "basis": "both VIRGIN, both in McKinney (parent city and its SERP held constant), both large (3,400 vs 7,000 homes), organic 73 vs 63"
+  },
+  {
+   "id": "NTX-P4",
+   "s": "Mosaic",
+   "h": "Union Park",
+   "basis": "both INCUMBENT-TARGETED, active-buildout, organic 67 vs 73 (Δ6), 3,000 vs 2,000 homes"
+  },
+  {
+   "id": "NTX-P5",
+   "s": "Newman Village",
+   "h": "Harvest",
+   "basis": "both INCUMBENT-TARGETED, organic 65 vs 64 (Δ1) — the tightest incumbent match"
+  },
+  {
+   "id": "NTX-P6",
+   "s": "Cambridge Crossing",
+   "h": "Trinity Falls",
+   "basis": "both INCUMBENT-TARGETED, active-buildout, organic 57 vs 60 (Δ3)"
+  }
+ ],
+ "deployOrder": [
+  "1. Cohort B together (B1+B2+B3) — the architecture experiment is only interpretable launched as one batch, and pool seasonality rewards speed",
+  "2. Group A revenue candidates",
+  "3. Group C model-validation assets"
+ ],
+ "specs": [
+  {
+   "experimentId": "W1-A-001",
+   "service": "Bathroom Remodeling",
+   "geography": "Arvada",
+   "state": "CO",
+   "cohort": "A-EXPLOITATION",
+   "assetType": "standalone-site",
+   "domain": "bathroomremodelingofarvada.com",
+   "classification": "REVENUE_CANDIDATE",
+   "file": "asset-specs/W1-A-001.json"
+  },
+  {
+   "experimentId": "W1-A-002",
+   "service": "Window Replacement",
+   "geography": "Midland",
+   "state": "TX",
+   "cohort": "A-EXPLOITATION",
+   "assetType": "standalone-site",
+   "domain": "windowreplacementmidland.com",
+   "classification": "REVENUE_CANDIDATE",
+   "file": "asset-specs/W1-A-002.json"
+  },
+  {
+   "experimentId": "W1-A-003",
+   "service": "Window Replacement",
+   "geography": "Temecula",
+   "state": "CA",
+   "cohort": "A-EXPLOITATION",
+   "assetType": "standalone-site",
+   "domain": "windowreplacementtemecula.com",
+   "classification": "REVENUE_CANDIDATE",
+   "file": "asset-specs/W1-A-003.json"
+  },
+  {
+   "experimentId": "W1-A-004",
+   "service": "Window Replacement",
+   "geography": "Vancouver",
+   "state": "WA",
+   "cohort": "A-EXPLOITATION",
+   "assetType": "standalone-site",
+   "domain": "windowreplacementvancouverwa.com",
+   "classification": "REVENUE_CANDIDATE",
+   "file": "asset-specs/W1-A-004.json"
+  },
+  {
+   "experimentId": "W1-A-005",
+   "service": "Kitchen Remodeling",
+   "geography": "Frisco",
+   "state": "TX",
+   "cohort": "A-EXPLOITATION",
+   "assetType": "standalone-site",
+   "domain": "kitchenremodelingfriscotx.com",
+   "classification": "REVENUE_CANDIDATE",
+   "file": "asset-specs/W1-A-005.json"
+  },
+  {
+   "experimentId": "W1-B1-001",
+   "service": "Pool Builder",
+   "geography": "Sutton Fields",
+   "state": "TX",
+   "cohort": "B1-NTX-STANDALONE",
+   "assetType": "standalone-site",
+   "domain": "poolbuildersuttonfields.com",
+   "classification": "EXPERIMENTAL",
+   "file": "asset-specs/W1-B1-001.json"
+  },
+  {
+   "experimentId": "W1-B2-002",
+   "service": "Pool Builder",
+   "geography": "Legacy Gardens",
+   "state": "TX",
+   "cohort": "B2-NTX-REGIONAL-HUB",
+   "assetType": "hub-page",
+   "domain": "poolbuildersnorthtexas.com",
+   "classification": "EXPERIMENTAL",
+   "file": "asset-specs/W1-B2-002.json"
+  },
+  {
+   "experimentId": "W1-B1-003",
+   "service": "Pool Builder",
+   "geography": "Sandbrock Ranch",
+   "state": "TX",
+   "cohort": "B1-NTX-STANDALONE",
+   "assetType": "standalone-site",
+   "domain": "poolbuildersandbrockranch.com",
+   "classification": "EXPERIMENTAL",
+   "file": "asset-specs/W1-B1-003.json"
+  },
+  {
+   "experimentId": "W1-B2-004",
+   "service": "Pool Builder",
+   "geography": "Star Trail",
+   "state": "TX",
+   "cohort": "B2-NTX-REGIONAL-HUB",
+   "assetType": "hub-page",
+   "domain": "poolbuildersnorthtexas.com",
+   "classification": "EXPERIMENTAL",
+   "file": "asset-specs/W1-B2-004.json"
+  },
+  {
+   "experimentId": "W1-B1-005",
+   "service": "Pool Builder",
+   "geography": "Painted Tree",
+   "state": "TX",
+   "cohort": "B1-NTX-STANDALONE",
+   "assetType": "standalone-site",
+   "domain": "poolbuilderpaintedtree.com",
+   "classification": "EXPERIMENTAL",
+   "file": "asset-specs/W1-B1-005.json"
+  },
+  {
+   "experimentId": "W1-B2-006",
+   "service": "Pool Builder",
+   "geography": "Stonebridge Ranch",
+   "state": "TX",
+   "cohort": "B2-NTX-REGIONAL-HUB",
+   "assetType": "hub-page",
+   "domain": "poolbuildersnorthtexas.com",
+   "classification": "EXPERIMENTAL",
+   "file": "asset-specs/W1-B2-006.json"
+  },
+  {
+   "experimentId": "W1-B1-007",
+   "service": "Pool Builder",
+   "geography": "Mosaic",
+   "state": "TX",
+   "cohort": "B1-NTX-STANDALONE",
+   "assetType": "standalone-site",
+   "domain": "poolbuildermosaic.com",
+   "classification": "EXPERIMENTAL",
+   "file": "asset-specs/W1-B1-007.json"
+  },
+  {
+   "experimentId": "W1-B2-008",
+   "service": "Pool Builder",
+   "geography": "Union Park",
+   "state": "TX",
+   "cohort": "B2-NTX-REGIONAL-HUB",
+   "assetType": "hub-page",
+   "domain": "poolbuildersnorthtexas.com",
+   "classification": "EXPERIMENTAL",
+   "file": "asset-specs/W1-B2-008.json"
+  },
+  {
+   "experimentId": "W1-B1-009",
+   "service": "Pool Builder",
+   "geography": "Newman Village",
+   "state": "TX",
+   "cohort": "B1-NTX-STANDALONE",
+   "assetType": "standalone-site",
+   "domain": "poolbuildernewmanvillage.com",
+   "classification": "EXPERIMENTAL",
+   "file": "asset-specs/W1-B1-009.json"
+  },
+  {
+   "experimentId": "W1-B2-010",
+   "service": "Pool Builder",
+   "geography": "Harvest",
+   "state": "TX",
+   "cohort": "B2-NTX-REGIONAL-HUB",
+   "assetType": "hub-page",
+   "domain": "poolbuildersnorthtexas.com",
+   "classification": "EXPERIMENTAL",
+   "file": "asset-specs/W1-B2-010.json"
+  },
+  {
+   "experimentId": "W1-B1-011",
+   "service": "Pool Builder",
+   "geography": "Cambridge Crossing",
+   "state": "TX",
+   "cohort": "B1-NTX-STANDALONE",
+   "assetType": "standalone-site",
+   "domain": "poolbuildercambridgecrossing.com",
+   "classification": "EXPERIMENTAL",
+   "file": "asset-specs/W1-B1-011.json"
+  },
+  {
+   "experimentId": "W1-B2-012",
+   "service": "Pool Builder",
+   "geography": "Trinity Falls",
+   "state": "TX",
+   "cohort": "B2-NTX-REGIONAL-HUB",
+   "assetType": "hub-page",
+   "domain": "poolbuildersnorthtexas.com",
+   "classification": "EXPERIMENTAL",
+   "file": "asset-specs/W1-B2-012.json"
+  },
+  {
+   "experimentId": "W1-B3-001",
+   "service": "Pool Builder",
+   "geography": "Frisco",
+   "state": "TX",
+   "cohort": "B3-CITY-CONTROL",
+   "assetType": "standalone-site",
+   "domain": "poolbuilderfriscotx.com",
+   "classification": "EXPERIMENTAL",
+   "file": "asset-specs/W1-B3-001.json"
+  },
+  {
+   "experimentId": "W1-B3-002",
+   "service": "Pool Builder",
+   "geography": "McKinney",
+   "state": "TX",
+   "cohort": "B3-CITY-CONTROL",
+   "assetType": "standalone-site",
+   "domain": "poolbuildermckinneytx.com",
+   "classification": "EXPERIMENTAL",
+   "file": "asset-specs/W1-B3-002.json"
+  },
+  {
+   "experimentId": "W1-B3-003",
+   "service": "Pool Builder",
+   "geography": "Prosper",
+   "state": "TX",
+   "cohort": "B3-CITY-CONTROL",
+   "assetType": "standalone-site",
+   "domain": "poolbuilderprospertx.com",
+   "classification": "EXPERIMENTAL",
+   "file": "asset-specs/W1-B3-003.json"
+  },
+  {
+   "experimentId": "W1-C-001",
+   "service": "Metal Roofing",
+   "geography": "Rochester",
+   "state": "MN",
+   "cohort": "C-MODEL-VALIDATION",
+   "assetType": "standalone-site",
+   "domain": "metalroofingrochester.com",
+   "classification": "EXPERIMENTAL",
+   "file": "asset-specs/W1-C-001.json"
+  },
+  {
+   "experimentId": "W1-C-002",
+   "service": "Basement Waterproofing",
+   "geography": "Naperville",
+   "state": "IL",
+   "cohort": "C-MODEL-VALIDATION",
+   "assetType": "standalone-site",
+   "domain": "basementwaterproofingofnaperville.com",
+   "classification": "EXPERIMENTAL",
+   "file": "asset-specs/W1-C-002.json"
+  },
+  {
+   "experimentId": "W1-C-003",
+   "service": "Bathroom Remodeling",
+   "geography": "Bellevue",
+   "state": "NE",
+   "cohort": "C-MODEL-VALIDATION",
+   "assetType": "standalone-site",
+   "domain": "bathroomremodelingbellevuene.com",
+   "classification": "EXPERIMENTAL",
+   "file": "asset-specs/W1-C-003.json"
+  },
+  {
+   "experimentId": "W1-C-004",
+   "service": "House Cleaning",
+   "geography": "Orlando",
+   "state": "FL",
+   "cohort": "C-MODEL-VALIDATION",
+   "assetType": "standalone-site",
+   "domain": "housecleaningoforlando.com",
+   "classification": "EXPERIMENTAL",
+   "file": "asset-specs/W1-C-004.json"
+  },
+  {
+   "experimentId": "W1-C-005",
+   "service": "Kitchen Remodeling",
+   "geography": "Rockville",
+   "state": "MD",
+   "cohort": "C-MODEL-VALIDATION",
+   "assetType": "standalone-site",
+   "domain": "kitchenremodelingrockvillemd.com",
+   "classification": "EXPERIMENTAL",
+   "file": "asset-specs/W1-C-005.json"
+  },
+  {
+   "experimentId": "W1-C-006",
+   "service": "Appliance Repair",
+   "geography": "Aurora",
+   "state": "IL",
+   "cohort": "C-MODEL-VALIDATION",
+   "assetType": "standalone-site",
+   "domain": "appliancerepairofaurora.com",
+   "classification": "EXPERIMENTAL",
+   "file": "asset-specs/W1-C-006.json"
+  }
+ ]
+}

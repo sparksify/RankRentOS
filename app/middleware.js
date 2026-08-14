@@ -7,6 +7,9 @@ export async function middleware(req) {
   if (
     pathname.startsWith("/login") ||
     pathname.startsWith("/api/login") ||
+    pathname.startsWith("/api/handoff") ||    // machine-to-machine: bearer-authed in the route
+    pathname.startsWith("/api/outcomes") ||   // machine-to-machine: bearer-authed in the route
+
     pathname.startsWith("/_next") ||
     pathname === "/favicon.ico"
   ) {

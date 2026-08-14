@@ -1,0 +1,269 @@
+{
+ "specVersion": "asset-spec-2.0.0",
+ "generatedAt": "2026-08-14T22:56:15.600Z",
+ "frozenBaseline": "2026-08-12",
+ "experimentId": "W1-A-001",
+ "identity": {
+  "service": "Bathroom Remodeling",
+  "serviceSlug": "bathroom-remodel",
+  "geography": "Arvada",
+  "state": "CO",
+  "geographyType": "city",
+  "parentCity": null,
+  "cohort": "A-EXPLOITATION",
+  "treatment": "standalone-city-site",
+  "matchedPairId": null,
+  "matchedWith": null
+ },
+ "decision": {
+  "classification": "REVENUE_CANDIDATE",
+  "gates": {
+   "demand": "PASS",
+   "capturability": "PASS",
+   "renterDepth": "PASS",
+   "economics": "PASS"
+  },
+  "prePurchaseGate": "PASS",
+  "hypothesis": "An asset with real economics AND a beatable organic SERP should rank and rent. A=83 vs organic=62; where they disagree this asset also contributes model-validation evidence.",
+  "successCondition": "top-10 organic for the primary query within 6 months AND >=1 inbound lead within 9 months.",
+  "failureCondition": "no top-20 within 6 months, OR top-10 with zero leads after 3 further months (which falsifies demand, not rankability)."
+ },
+ "build": {
+  "assetType": "standalone-site",
+  "domain": "bathroomremodelingofarvada.com",
+  "urlArchitecture": "bathroomremodelingofarvada.com (root targets the city+service query)",
+  "domainStatus": "verified-available-at-freeze — RE-CHECK AND PURCHASE BEFORE BUILD",
+  "contentDirective": "SERP-derived, not a fixed word count: this is a commercial service query, so the deployment engine should build a commercial service/location experience benchmarked against the observed content bar, not a long informational article.",
+  "primaryKeyword": "Bathroom Remodeling Arvada",
+  "contentBarWords": 757,
+  "competitorDomainAgeYears": 13.9,
+  "siteMap": {
+   "path": "/",
+   "label": "Bathroom Remodeling — Arvada",
+   "kind": "home",
+   "children": [
+    {
+     "path": "/services/",
+     "label": "Services",
+     "kind": "service",
+     "children": [
+      {
+       "path": "/services/bathroom-remodeling/",
+       "label": "Bathroom Remodeling",
+       "kind": "service"
+      },
+      {
+       "path": "/services/kitchen-remodeling/",
+       "label": "Kitchen Remodeling",
+       "kind": "service"
+      }
+     ]
+    },
+    {
+     "path": "/areas/",
+     "label": "Service Areas",
+     "kind": "area",
+     "children": [
+      {
+       "path": "/areas/westminster/",
+       "label": "Westminster",
+       "kind": "area",
+       "children": [
+        {
+         "path": "/areas/westminster/bathroom-remodeling/",
+         "label": "Bathroom Remodeling in Westminster",
+         "kind": "service-area"
+        },
+        {
+         "path": "/areas/westminster/kitchen-remodeling/",
+         "label": "Kitchen Remodeling in Westminster",
+         "kind": "service-area"
+        }
+       ]
+      },
+      {
+       "path": "/areas/boulder/",
+       "label": "Boulder",
+       "kind": "area",
+       "children": [
+        {
+         "path": "/areas/boulder/bathroom-remodeling/",
+         "label": "Bathroom Remodeling in Boulder",
+         "kind": "service-area"
+        },
+        {
+         "path": "/areas/boulder/kitchen-remodeling/",
+         "label": "Kitchen Remodeling in Boulder",
+         "kind": "service-area"
+        }
+       ]
+      },
+      {
+       "path": "/areas/lakewood/",
+       "label": "Lakewood",
+       "kind": "area",
+       "children": [
+        {
+         "path": "/areas/lakewood/bathroom-remodeling/",
+         "label": "Bathroom Remodeling in Lakewood",
+         "kind": "service-area"
+        },
+        {
+         "path": "/areas/lakewood/kitchen-remodeling/",
+         "label": "Kitchen Remodeling in Lakewood",
+         "kind": "service-area"
+        }
+       ]
+      },
+      {
+       "path": "/areas/longmont/",
+       "label": "Longmont",
+       "kind": "area",
+       "children": [
+        {
+         "path": "/areas/longmont/bathroom-remodeling/",
+         "label": "Bathroom Remodeling in Longmont",
+         "kind": "service-area"
+        },
+        {
+         "path": "/areas/longmont/kitchen-remodeling/",
+         "label": "Kitchen Remodeling in Longmont",
+         "kind": "service-area"
+        }
+       ]
+      },
+      {
+       "path": "/areas/loveland/",
+       "label": "Loveland",
+       "kind": "area",
+       "children": [
+        {
+         "path": "/areas/loveland/bathroom-remodeling/",
+         "label": "Bathroom Remodeling in Loveland",
+         "kind": "service-area"
+        },
+        {
+         "path": "/areas/loveland/kitchen-remodeling/",
+         "label": "Kitchen Remodeling in Loveland",
+         "kind": "service-area"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "estimatedPages": 18,
+  "internalLinking": [
+   "Home links to every service page and the top service areas",
+   "Each service page links to its Service × Area variants",
+   "Area pages cross-link to sibling areas to distribute authority",
+   "Every commercial page links back to a single conversion path"
+  ],
+  "cannibalizationGuidance": [
+   "Point the home page at \"Bathroom Remodeling Arvada\" and make the head service page a supporting overview, or drop the separate service page entirely.",
+   "Planned page count materially exceeds the number of distinct search intents — build the intents that exist rather than filling a template."
+  ],
+  "visualAssets": [
+   "before/after bathrooms",
+   "tile and fixture detail",
+   "renders",
+   "process timeline"
+  ],
+  "localSignalsAvailable": [
+   "5 named surrounding areas",
+   "population profile",
+   "household income profile",
+   "measured competitor content depth (~757 words)"
+  ],
+  "localSignalsMissing": [
+   "verified landmarks / climate / local regulation / local pricing evidence (not collected — must not be fabricated at build time)"
+  ],
+  "doNotFabricate": "Local facts (landmarks, climate, regulations, pricing) were NOT collected. Build pages only from evidence in this spec or verified at build time — never invent local claims."
+ },
+ "serpToBeat": {
+  "organicScore": 62,
+  "organicVerdict": "ORGANIC-CONTESTED",
+  "organicVersion": "organic-v1.2",
+  "dimensionA": 83,
+  "top5": [
+   "1. westshorehome.com [national-brand]",
+   "2. reddit.com [directory]",
+   "3. jmwoodworks.com [adjacent-not-this-service]",
+   "4. houzz.com [directory]",
+   "5. arvadahomepro.com [local-specialist]"
+  ],
+  "structure": {
+   "distinctHostsTop5": 5,
+   "displaceableTop5": 3,
+   "hardLocalTop3": 1,
+   "geoTargetedCompetitorsTop5": 2
+  },
+  "intentClass": "LOCAL_COMMERCIAL",
+  "localPack": {
+   "mapPackSize": 3,
+   "avgReviews": 19,
+   "note": "market evidence only — excluded from organic scoring"
+  }
+ },
+ "economics": {
+  "note": "ALL HUMAN_ASSUMED until live data replaces them. Never present these as measured.",
+  "ticketAssumed": 18000,
+  "marginAssumed": 0.32,
+  "leadValueAssumedUsd": 576,
+  "modelledMonthlyGpUsd": 6739,
+  "recommendedMonetizationModel": "per-lead",
+  "viableRenters": 3,
+  "demandState": "MEASURED_LOCAL",
+  "measuredVolume": 390,
+  "volumeState": "measured",
+  "costBasis": {
+   "domainFirstYearUsd": 12.18,
+   "contentUsd": 8,
+   "deployUsd": 5,
+   "monthlyUsd": 1.5
+  }
+ },
+ "outcomeContract": {
+  "endpoint": "POST {rankrentos}/api/outcomes  (Authorization: Bearer <HANDOFF_TOKEN>)",
+  "joinKey": "experimentId",
+  "metrics": [
+   "asset.published.date",
+   "asset.indexed.date",
+   "asset.firstimpression.date",
+   "asset.firstrank.date",
+   "asset.firstlead.date",
+   "asset.firstrevenue.date",
+   "asset.rank.check",
+   "asset.impressions.count",
+   "asset.clicks.count",
+   "asset.sessions.count",
+   "asset.calls.count",
+   "asset.forms.count",
+   "asset.leads.count",
+   "asset.leads.qualified",
+   "asset.leadvalue.realized",
+   "asset.renter.outreach",
+   "asset.renter.responses",
+   "asset.renter.acquired",
+   "asset.rent.monthly",
+   "asset.revenue.total",
+   "asset.cost.operating"
+  ],
+  "rankingCadence": "weekly from publishDate through week 12, then fortnightly through week 26",
+  "queriesToTrack": {
+   "primary": "1 — the exact service+geography query the asset targets",
+   "secondary": "2-4 close variants",
+   "communityModified": "community assets only: community-name and service+community queries",
+   "unpredicted": "any query Search Console reports impressions for that no keyword tool predicted — the direct test of hyper-local under-measurement"
+  },
+  "nullRule": "UNKNOWN is never zero. Do not post a metric you did not measure; for a rank check where the site is absent from the top 100, post position 'notFound' — never 101 or 0."
+ },
+ "provenance": {
+  "experiment": "experiment-3",
+  "rawSerp": "out/experiment-3/raw/serp-bathroom_remodel_Arvada_CO.json",
+  "scoreModel": "ai-v1.0.0",
+  "weights": "w-balanced-v1.1",
+  "buckets": "buckets-1.1.0"
+ }
+}

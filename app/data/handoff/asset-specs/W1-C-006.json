@@ -1,0 +1,204 @@
+{
+ "specVersion": "asset-spec-2.0.0",
+ "generatedAt": "2026-08-14T22:56:15.601Z",
+ "frozenBaseline": "2026-08-12",
+ "experimentId": "W1-C-006",
+ "identity": {
+  "service": "Appliance Repair",
+  "serviceSlug": "appliance-repair",
+  "geography": "Aurora",
+  "state": "IL",
+  "geographyType": "city",
+  "parentCity": null,
+  "cohort": "C-MODEL-VALIDATION",
+  "treatment": "standalone-city-site",
+  "matchedPairId": null,
+  "matchedWith": null
+ },
+ "decision": {
+  "classification": "EXPERIMENTAL",
+  "gates": {
+   "demand": "UNKNOWN",
+   "capturability": "FAIL",
+   "renterDepth": "PASS",
+   "economics": "UNKNOWN"
+  },
+  "prePurchaseGate": "PASS_WITH_WARNING",
+  "hypothesis": "V0 favoured commodity high-volume services; V2 bucketed only 1 of 16. 1,300/mo, A=67, organic 39, F=34.",
+  "successCondition": "Ranks and rents easily => V2's pessimism about commodity services is wrong and the family should be re-opened.",
+  "failureCondition": "Fails => the fragmented-local family stays suppressed and we stop spending research on it."
+ },
+ "build": {
+  "assetType": "standalone-site",
+  "domain": "appliancerepairofaurora.com",
+  "urlArchitecture": "appliancerepairofaurora.com (root targets the city+service query)",
+  "domainStatus": "verified-available-at-freeze — RE-CHECK AND PURCHASE BEFORE BUILD",
+  "contentDirective": "SERP-derived commercial service page; identical build standard to Group A so the comparison is not confounded by build quality.",
+  "primaryKeyword": "Appliance Repair Aurora",
+  "contentBarWords": 549,
+  "competitorDomainAgeYears": 12.9,
+  "siteMap": {
+   "path": "/",
+   "label": "Appliance Repair — Aurora",
+   "kind": "home",
+   "children": [
+    {
+     "path": "/services/",
+     "label": "Services",
+     "kind": "service",
+     "children": [
+      {
+       "path": "/services/appliance-repair/",
+       "label": "Appliance Repair",
+       "kind": "service"
+      },
+      {
+       "path": "/services/garage-door-repair/",
+       "label": "Garage Door Repair",
+       "kind": "service"
+      },
+      {
+       "path": "/services/junk-removal/",
+       "label": "Junk Removal",
+       "kind": "service"
+      },
+      {
+       "path": "/services/windshield-replacement/",
+       "label": "Windshield Replacement",
+       "kind": "service"
+      },
+      {
+       "path": "/services/air-duct-cleaning/",
+       "label": "Air Duct Cleaning",
+       "kind": "service"
+      },
+      {
+       "path": "/services/dumpster-rental/",
+       "label": "Dumpster Rental",
+       "kind": "service"
+      },
+      {
+       "path": "/services/mobile-mechanic/",
+       "label": "Mobile Mechanic",
+       "kind": "service"
+      },
+      {
+       "path": "/services/lawn-mowing-service/",
+       "label": "Lawn Mowing Service",
+       "kind": "service"
+      }
+     ]
+    }
+   ]
+  },
+  "estimatedPages": 9,
+  "internalLinking": [
+   "Home links to every service page and the top service areas",
+   "Each service page links to its Service × Area variants",
+   "Area pages cross-link to sibling areas to distribute authority",
+   "Every commercial page links back to a single conversion path"
+  ],
+  "cannibalizationGuidance": [
+   "Point the home page at \"Appliance Repair Aurora\" and make the head service page a supporting overview, or drop the separate service page entirely.",
+   "Air Duct Cleaning overlap with the head service. Consolidate them into one page with sections unless each has separately measured demand."
+  ],
+  "visualAssets": [
+   "technician imagery",
+   "brand/badge trust marks",
+   "diagnostic diagrams"
+  ],
+  "localSignalsAvailable": [
+   "population profile",
+   "household income profile",
+   "measured competitor content depth (~549 words)"
+  ],
+  "localSignalsMissing": [
+   "surrounding service areas",
+   "verified landmarks / climate / local regulation / local pricing evidence (not collected — must not be fabricated at build time)"
+  ],
+  "doNotFabricate": "Local facts (landmarks, climate, regulations, pricing) were NOT collected. Build pages only from evidence in this spec or verified at build time — never invent local claims."
+ },
+ "serpToBeat": {
+  "organicScore": 39,
+  "organicVerdict": "ORGANIC-BRUTAL",
+  "organicVersion": "organic-v1.2",
+  "dimensionA": 67,
+  "top5": [
+   "1. leonardiappliance.com [local-specialist]",
+   "2. yelp.com [directory]",
+   "3. repair.geappliances.com [local-specialist]",
+   "4. thumbtack.com [directory]",
+   "5. appliance-aaa.com [local-specialist]"
+  ],
+  "structure": {
+   "distinctHostsTop5": 5,
+   "displaceableTop5": 2,
+   "hardLocalTop3": 2,
+   "geoTargetedCompetitorsTop5": 3
+  },
+  "intentClass": "LOCAL_COMMERCIAL",
+  "localPack": {
+   "mapPackSize": 3,
+   "avgReviews": 73,
+   "note": "market evidence only"
+  }
+ },
+ "economics": {
+  "note": "ALL HUMAN_ASSUMED until live data replaces them. Never present these as measured.",
+  "ticketAssumed": 325,
+  "marginAssumed": 0.7,
+  "leadValueAssumedUsd": 23,
+  "modelledMonthlyGpUsd": null,
+  "recommendedMonetizationModel": "per-qualified-call (attribution is clean enough to bill per call)",
+  "viableRenters": 2,
+  "demandState": "MEASURED_UPPER_BOUND",
+  "measuredVolume": 1300,
+  "volumeState": "measured-upper-bound-shared-city-name",
+  "costBasis": {
+   "domainFirstYearUsd": 12.18,
+   "contentUsd": 8,
+   "deployUsd": 5,
+   "monthlyUsd": 1.5
+  }
+ },
+ "outcomeContract": {
+  "endpoint": "POST {rankrentos}/api/outcomes  (Authorization: Bearer <HANDOFF_TOKEN>)",
+  "joinKey": "experimentId",
+  "metrics": [
+   "asset.published.date",
+   "asset.indexed.date",
+   "asset.firstimpression.date",
+   "asset.firstrank.date",
+   "asset.firstlead.date",
+   "asset.firstrevenue.date",
+   "asset.rank.check",
+   "asset.impressions.count",
+   "asset.clicks.count",
+   "asset.sessions.count",
+   "asset.calls.count",
+   "asset.forms.count",
+   "asset.leads.count",
+   "asset.leads.qualified",
+   "asset.leadvalue.realized",
+   "asset.renter.outreach",
+   "asset.renter.responses",
+   "asset.renter.acquired",
+   "asset.rent.monthly",
+   "asset.revenue.total",
+   "asset.cost.operating"
+  ],
+  "rankingCadence": "weekly from publishDate through week 12, then fortnightly through week 26",
+  "queriesToTrack": {
+   "primary": "1 — the exact service+geography query the asset targets",
+   "secondary": "2-4 close variants",
+   "communityModified": "community assets only: community-name and service+community queries",
+   "unpredicted": "any query Search Console reports impressions for that no keyword tool predicted — the direct test of hyper-local under-measurement"
+  },
+  "nullRule": "UNKNOWN is never zero. Do not post a metric you did not measure; for a rank check where the site is absent from the top 100, post position 'notFound' — never 101 or 0."
+ },
+ "provenance": {
+  "experiment": "experiment-2",
+  "rawSerp": "out/experiment-2/raw/serp-appliance_repair_Aurora_IL.json",
+  "scoreModel": "ai-v1.0.0"
+ }
+}
