@@ -1,0 +1,304 @@
+{
+ "service": {
+  "label": "Sprinkler Repair",
+  "kw": "sprinkler repair",
+  "slug": "sprinkler-repair",
+  "ticket": 1200,
+  "margin": 0.5
+ },
+ "hubDomain": "sprinklerrepairnorthtexas.com",
+ "hubAvail": true,
+ "results": [
+  {
+   "name": "Frisco",
+   "city": "Frisco",
+   "type": "city",
+   "query": "sprinkler repair Frisco TX",
+   "organic": 37,
+   "verdict": "ORGANIC-BRUTAL",
+   "structure": {
+    "distinctHosts": 5,
+    "displaceable": 2,
+    "hardLocal": 1,
+    "geoTargeted": 3
+   },
+   "intentClass": "LOCAL_COMMERCIAL",
+   "intentVerdict": "PASS",
+   "mapPackSize": 3,
+   "avgMapReviews": 279,
+   "viableRenters": 3,
+   "relevantOperators": 10,
+   "top5": [
+    "1. friscotexas.gov [reference]",
+    "2. yelp.com [directory]",
+    "3. luxtexaslandscaping.com [local-specialist]",
+    "4. wetwilliessprinkler.com [local-specialist]",
+    "5. cititurf.com [local-specialist]"
+   ],
+   "domains": {
+    "sprinklerrepairfrisco.com": false,
+    "friscosprinklerrepair.com": false,
+    "sprinklerrepairfriscotx.com": false
+   },
+   "preferredDomain": null
+  },
+  {
+   "name": "McKinney",
+   "city": "McKinney",
+   "type": "city",
+   "query": "sprinkler repair McKinney TX",
+   "organic": 70,
+   "verdict": "ORGANIC-VIABLE",
+   "structure": {
+    "distinctHosts": 5,
+    "displaceable": 4,
+    "hardLocal": 0,
+    "geoTargeted": 1
+   },
+   "intentClass": "LOCAL_COMMERCIAL",
+   "intentVerdict": "PASS",
+   "mapPackSize": 3,
+   "avgMapReviews": 138,
+   "viableRenters": 3,
+   "relevantOperators": 9,
+   "top5": [
+    "1. facebook.com [directory]",
+    "2. thumbtack.com [directory]",
+    "3. yelp.com [directory]",
+    "4. livingwaterirrigationok.com [local-specialist]",
+    "5. reddit.com [directory]"
+   ],
+   "domains": {
+    "sprinklerrepairmckinney.com": false,
+    "mckinneysprinklerrepair.com": false,
+    "sprinklerrepairmckinneytx.com": false
+   },
+   "preferredDomain": null
+  },
+  {
+   "name": "Prosper",
+   "city": "Prosper",
+   "type": "city",
+   "query": "sprinkler repair Prosper TX",
+   "organic": 30,
+   "verdict": "ORGANIC-BRUTAL",
+   "structure": {
+    "distinctHosts": 5,
+    "displaceable": 2,
+    "hardLocal": 2,
+    "geoTargeted": 3
+   },
+   "intentClass": "LOCAL_COMMERCIAL",
+   "intentVerdict": "PASS",
+   "mapPackSize": 3,
+   "avgMapReviews": 125,
+   "viableRenters": 3,
+   "relevantOperators": 11,
+   "top5": [
+    "1. prosper-sprinkler-repair.com [local-specialist]",
+    "2. yelp.com [directory]",
+    "3. bwcirrigation.com [local-specialist]",
+    "4. prospertx.gov [reference]",
+    "5. texaswaterboys.com [local-specialist]"
+   ],
+   "domains": {
+    "sprinklerrepairprosper.com": false,
+    "prospersprinklerrepair.com": false,
+    "sprinklerrepairprospertx.com": true
+   },
+   "preferredDomain": "sprinklerrepairprospertx.com"
+  },
+  {
+   "name": "Sutton Fields",
+   "city": "Celina",
+   "type": "community",
+   "query": "sprinkler repair Sutton Fields Celina TX",
+   "organic": 64,
+   "verdict": "ORGANIC-CONTESTED",
+   "structure": {
+    "distinctHosts": 5,
+    "displaceable": 3,
+    "hardLocal": 1,
+    "geoTargeted": 0
+   },
+   "intentClass": "LOCAL_COMMERCIAL",
+   "intentVerdict": "PASS",
+   "mapPackSize": 3,
+   "avgMapReviews": 125,
+   "viableRenters": 3,
+   "relevantOperators": 10,
+   "top5": [
+    "1. yelp.com [directory]",
+    "2. celina-sprinkler-repair.com [local-specialist]",
+    "3. facebook.com [directory]",
+    "4. jbellservices.com [local-specialist]",
+    "5. angi.com [directory]"
+   ],
+   "domains": {
+    "sprinklerrepairsuttonfields.com": true,
+    "suttonfieldssprinklerrepair.com": true
+   },
+   "preferredDomain": "sprinklerrepairsuttonfields.com"
+  },
+  {
+   "name": "Painted Tree",
+   "city": "McKinney",
+   "type": "community",
+   "query": "sprinkler repair Painted Tree McKinney TX",
+   "organic": 67,
+   "verdict": "ORGANIC-VIABLE",
+   "structure": {
+    "distinctHosts": 5,
+    "displaceable": 3,
+    "hardLocal": 1,
+    "geoTargeted": 0
+   },
+   "intentClass": "LOCAL_COMMERCIAL",
+   "intentVerdict": "PASS",
+   "mapPackSize": 3,
+   "avgMapReviews": 175,
+   "viableRenters": 3,
+   "relevantOperators": 11,
+   "top5": [
+    "1. cititurf.com [local-specialist]",
+    "2. yelp.com [directory]",
+    "3. paintedtreetx.com [adjacent-not-this-service]",
+    "4. headtoheadirrigationsystems.com [local-specialist]",
+    "5. facebook.com [directory]"
+   ],
+   "domains": {
+    "sprinklerrepairpaintedtree.com": true,
+    "paintedtreesprinklerrepair.com": true
+   },
+   "preferredDomain": "sprinklerrepairpaintedtree.com"
+  },
+  {
+   "name": "Sandbrock Ranch",
+   "city": "Aubrey",
+   "type": "community",
+   "query": "sprinkler repair Sandbrock Ranch Aubrey TX",
+   "organic": 51,
+   "verdict": "ORGANIC-CONTESTED",
+   "structure": {
+    "distinctHosts": 5,
+    "displaceable": 2,
+    "hardLocal": 2,
+    "geoTargeted": 0
+   },
+   "intentClass": "LOCAL_COMMERCIAL",
+   "intentVerdict": "PASS",
+   "mapPackSize": 3,
+   "avgMapReviews": 28,
+   "viableRenters": 3,
+   "relevantOperators": 11,
+   "top5": [
+    "1. ccssprinkler.com [local-specialist]",
+    "2. yelp.com [directory]",
+    "3. aubrey-sprinkler-repair.com [local-specialist]",
+    "4. facebook.com [directory]",
+    "5. callwhaledone.com [local-specialist]"
+   ],
+   "domains": {
+    "sprinklerrepairsandbrockranch.com": true,
+    "sandbrockranchsprinklerrepair.com": true
+   },
+   "preferredDomain": "sprinklerrepairsandbrockranch.com"
+  },
+  {
+   "name": "Star Trail",
+   "city": "Prosper",
+   "type": "community",
+   "query": "sprinkler repair Star Trail Prosper TX",
+   "organic": 49,
+   "verdict": "ORGANIC-CONTESTED",
+   "structure": {
+    "distinctHosts": 5,
+    "displaceable": 2,
+    "hardLocal": 2,
+    "geoTargeted": 0
+   },
+   "intentClass": "LOCAL_COMMERCIAL",
+   "intentVerdict": "PASS",
+   "mapPackSize": 0,
+   "avgMapReviews": null,
+   "viableRenters": 0,
+   "relevantOperators": 8,
+   "top5": [
+    "1. texaswaterboys.com [local-specialist]",
+    "2. yelp.com [directory]",
+    "3. wetwilliessprinkler.com [local-specialist]",
+    "4. facebook.com [directory]",
+    "5. tgirrigation.com [local-specialist]"
+   ],
+   "domains": {
+    "sprinklerrepairstartrail.com": true,
+    "startrailsprinklerrepair.com": true
+   },
+   "preferredDomain": "sprinklerrepairstartrail.com"
+  },
+  {
+   "name": "Trinity Falls",
+   "city": "McKinney",
+   "type": "community",
+   "query": "sprinkler repair Trinity Falls McKinney TX",
+   "organic": 40,
+   "verdict": "ORGANIC-BRUTAL",
+   "structure": {
+    "distinctHosts": 5,
+    "displaceable": 1,
+    "hardLocal": 2,
+    "geoTargeted": 0
+   },
+   "intentClass": "LOCAL_COMMERCIAL",
+   "intentVerdict": "PASS",
+   "mapPackSize": 4,
+   "avgMapReviews": 150,
+   "viableRenters": 4,
+   "relevantOperators": 12,
+   "top5": [
+    "1. txirrigators.com [local-specialist]",
+    "2. yelp.com [directory]",
+    "3. nxtgenilm.com [local-specialist]",
+    "4. jcapexhomeservices.com [local-specialist]",
+    "5. cititurf.com [local-specialist]"
+   ],
+   "domains": {
+    "sprinklerrepairtrinityfalls.com": true,
+    "trinityfallssprinklerrepair.com": true
+   },
+   "preferredDomain": "sprinklerrepairtrinityfalls.com"
+  },
+  {
+   "name": "Union Park",
+   "city": "Aubrey",
+   "type": "community",
+   "query": "sprinkler repair Union Park Aubrey TX",
+   "organic": 53,
+   "verdict": "ORGANIC-CONTESTED",
+   "structure": {
+    "distinctHosts": 5,
+    "displaceable": 2,
+    "hardLocal": 2,
+    "geoTargeted": 0
+   },
+   "intentClass": "LOCAL_COMMERCIAL",
+   "intentVerdict": "PASS",
+   "mapPackSize": 0,
+   "avgMapReviews": null,
+   "viableRenters": 0,
+   "relevantOperators": 8,
+   "top5": [
+    "1. ccssprinkler.com [local-specialist]",
+    "2. yelp.com [directory]",
+    "3. littleelmlawncare.com [local-specialist]",
+    "4. texaswaterboys.com [local-specialist]",
+    "5. facebook.com [directory]"
+   ],
+   "domains": {
+    "sprinklerrepairunionpark.com": true,
+    "unionparksprinklerrepair.com": true
+   },
+   "preferredDomain": "sprinklerrepairunionpark.com"
+  }
+ ]
+}

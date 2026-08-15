@@ -1,0 +1,167 @@
+{
+ "actualCost": 0.09,
+ "rows": [
+  {
+   "id": "landscape-lighting",
+   "label": "Landscape Lighting",
+   "kw": "landscape lighting",
+   "ticket": 6500,
+   "margin": 0.45,
+   "transactionalFit": 4,
+   "communityFit": 4,
+   "seasonNow": 5,
+   "metroVol": 90,
+   "citiesWithDemand": 1,
+   "measuredCities": 4,
+   "unknownCities": 4,
+   "cpcMedian": 15.79,
+   "leadValue": 293,
+   "perCity": [
+    "Plano 50",
+    "McKinney 20",
+    "Frisco 10",
+    "Argyle 10"
+   ],
+   "fitness": 74
+  },
+  {
+   "id": "sprinkler-repair",
+   "label": "Sprinkler Repair",
+   "kw": "sprinkler repair",
+   "ticket": 1200,
+   "margin": 0.5,
+   "transactionalFit": 5,
+   "communityFit": 4,
+   "seasonNow": 3,
+   "metroVol": 1220,
+   "citiesWithDemand": 5,
+   "measuredCities": 6,
+   "unknownCities": 2,
+   "cpcMedian": 17.1,
+   "leadValue": 60,
+   "perCity": [
+    "Frisco 390",
+    "Plano 390",
+    "McKinney 320",
+    "Little Elm 70",
+    "Prosper 40",
+    "Argyle 10"
+   ],
+   "fitness": 67
+  },
+  {
+   "id": "epoxy-garage",
+   "label": "Epoxy Garage Floor",
+   "kw": "epoxy garage floor",
+   "ticket": 3500,
+   "margin": 0.55,
+   "transactionalFit": 5,
+   "communityFit": 5,
+   "seasonNow": 3,
+   "metroVol": 20,
+   "citiesWithDemand": 0,
+   "measuredCities": 2,
+   "unknownCities": 6,
+   "cpcMedian": null,
+   "leadValue": 193,
+   "perCity": [
+    "Prosper 10",
+    "Frisco 10"
+   ],
+   "fitness": 64
+  },
+  {
+   "id": "christmas-lights",
+   "label": "Christmas Light Installation",
+   "kw": "christmas light installation",
+   "ticket": 1500,
+   "margin": 0.55,
+   "transactionalFit": 5,
+   "communityFit": 5,
+   "seasonNow": 5,
+   "metroVol": 140,
+   "citiesWithDemand": 3,
+   "measuredCities": 4,
+   "unknownCities": 4,
+   "cpcMedian": 1.25,
+   "leadValue": 83,
+   "perCity": [
+    "Frisco 50",
+    "McKinney 40",
+    "Plano 40",
+    "Little Elm 10"
+   ],
+   "fitness": 61
+  },
+  {
+   "id": "exterior-painting",
+   "label": "Exterior Painting",
+   "kw": "exterior painting",
+   "ticket": 6000,
+   "margin": 0.4,
+   "transactionalFit": 4,
+   "communityFit": 3,
+   "seasonNow": 3,
+   "metroVol": 100,
+   "citiesWithDemand": 1,
+   "measuredCities": 5,
+   "unknownCities": 3,
+   "cpcMedian": 46.4,
+   "leadValue": 240,
+   "perCity": [
+    "Plano 50",
+    "McKinney 20",
+    "Prosper 10",
+    "Celina 10",
+    "Frisco 10"
+   ],
+   "fitness": 60
+  },
+  {
+   "id": "fence-staining",
+   "label": "Fence Staining",
+   "kw": "fence staining",
+   "ticket": 1200,
+   "margin": 0.55,
+   "transactionalFit": 5,
+   "communityFit": 4,
+   "seasonNow": 4,
+   "metroVol": 170,
+   "citiesWithDemand": 3,
+   "measuredCities": 5,
+   "unknownCities": 3,
+   "cpcMedian": 20.79,
+   "leadValue": 66,
+   "perCity": [
+    "Frisco 50",
+    "McKinney 50",
+    "Plano 50",
+    "Prosper 10",
+    "Celina 10"
+   ],
+   "fitness": 54
+  },
+  {
+   "id": "pressure-washing",
+   "label": "Pressure Washing",
+   "kw": "pressure washing",
+   "ticket": 400,
+   "margin": 0.6,
+   "transactionalFit": 5,
+   "communityFit": 3,
+   "seasonNow": 3,
+   "metroVol": 310,
+   "citiesWithDemand": 3,
+   "measuredCities": 3,
+   "unknownCities": 5,
+   "cpcMedian": 5.15,
+   "leadValue": 24,
+   "perCity": [
+    "Frisco 170",
+    "Plano 110",
+    "McKinney 30"
+   ],
+   "fitness": 46
+  }
+ ]
+}
