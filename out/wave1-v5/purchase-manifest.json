@@ -1,0 +1,40 @@
+{
+ "generatedAt": "2026-08-17T02:20:05.956Z",
+ "version": "purchase-manifest-v1",
+ "rule": "A good $12 experiment is not a good rank-and-rent asset. Every domain carries its bet type BEFORE purchase; labels flow into specs and the cockpit and may not be reinterpreted after launch.",
+ "objective": "boring recurring revenue — renter durability (churn/complaints/retention) is a first-class outcome, not an afterthought",
+ "counts": {
+  "domains": 22,
+  "revenue": 8,
+  "experimental": 14,
+  "estimatedCostUsd": 267.96
+ },
+ "bets": {
+  "REVENUE": [
+   "bathroomremodelingofarvada.com",
+   "windowreplacementmidland.com",
+   "windowreplacementtemecula.com",
+   "windowreplacementvancouverwa.com",
+   "kitchenremodelingfriscotx.com",
+   "bathroomremodelingtemecula.com",
+   "windowreplacementdublinca.com",
+   "bathroomremodelingogden.com"
+  ],
+  "EXPERIMENTAL": [
+   "sprinklerrepairoffrisco.com",
+   "sprinklerrepairofmckinney.com",
+   "sprinklerrepairprospertx.com",
+   "sprinklerrepairsuttonfields.com",
+   "paintedtreesprinklerrepair.com",
+   "sprinklerrepairsandbrockranch.com",
+   "sprinklerrepairstartrail.com",
+   "sprinklerrepairnorthtexas.com",
+   "metalroofingrochester.com",
+   "basementwaterproofingofnaperville.com",
+   "bathroomremodelingbellevuene.com",
+   "housecleaningoforlando.com",
+   "kitchenremodelingrockvillemd.com",
+   "appliancerepairofaurora.com"
+  ]
+ }
+}

@@ -11,6 +11,7 @@ const ALLOWED = new Set([
   "asset.sessions.count", "asset.calls.count", "asset.forms.count", "asset.leads.count",
   "asset.leads.qualified", "asset.leadvalue.realized", "asset.renter.outreach", "asset.renter.responses",
   "asset.renter.acquired", "asset.rent.monthly", "asset.revenue.total", "asset.cost.operating",
+  "asset.renter.churned.date", "asset.renter.complaints", "asset.renter.retention.months",
 ]);
 let validIds = null;
 function knownExperimentIds() {
